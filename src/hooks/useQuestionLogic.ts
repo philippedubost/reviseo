@@ -73,6 +73,14 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
       setIsPaused(false);
       setShowResult(false);
       
+      // Debug logging
+      console.log('Lesson completed in hook:', { 
+        currentQuestionIndex, 
+        questionsLength: questions.length, 
+        score, 
+        onComplete: !!onComplete 
+      });
+      
       // Session completed
       if (onComplete) {
         onComplete(score);

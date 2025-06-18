@@ -3,16 +3,53 @@
 import { useSearchParams, useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getLessonById } from '@/src/data/lessons';
 
 export default function LessonCompletePage() {
   const searchParams = useSearchParams();
   const params = useParams();
   const router = useRouter();
   
-  const score = Number(searchParams.get('score')) || 0;
+  const scoreParam = searchParams.get('score');
+  const score = scoreParam ? Number(scoreParam) : 0;
   const lessonId = Number(params.id);
-  const maxScore = 50; // Total possible score for lesson 1
+  const lesson = getLessonById(lessonId);
+  
+  // Debug logging
+  console.log('Complete page loaded:', { score, lessonId, lesson: !!lesson, scoreParam });
+  
+  // Validate score
+  if (isNaN(score) || score < 0) {
+    console.error('Invalid score:', scoreParam);
+  }
+  
+  // If no score provided, redirect to lesson page
+  if (!scoreParam) {
+    console.log('No score provided, redirecting to lesson page');
+    router.push(`/maths/lesson/${lessonId}`);
+    return null;
+  }
+  
+  // Calculate max score dynamically based on the lesson
+  const maxScore = lesson ? lesson.questions.reduce((total, q) => total + q.points, 0) : 50;
   const percentage = Math.round((score / maxScore) * 100);
+
+  // Handle case where lesson is not found
+  if (!lesson) {
+    return (
+      <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
+        <div className="text-white text-center">
+          <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
+          <button 
+            onClick={() => router.push('/maths')}
+            className="btn bg-[#00baff] text-white font-bold px-6 py-2 rounded-lg"
+          >
+            Retour aux leçons
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   const getPerformanceMessage = () => {
     if (percentage >= 90) return "Excellent ! Tu es un champion ! 🏆";
@@ -103,6 +140,14 @@ export default function LessonCompletePage() {
                 📚 Autres leçons
               </button>
             </Link>
+            
+            {/* Debug button for testing */}
+            <button 
+              onClick={() => console.log('Complete page test:', { score, maxScore, percentage, lessonId })}
+              className="btn bg-[#ff6b6b] text-white hover:bg-[#ff5252] transition-colors"
+            >
+              🐛 Debug Info
+            </button>
           </div>
         </div>
       </div>

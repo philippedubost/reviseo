@@ -20,15 +20,23 @@ export default function LessonPage() {
   const { updateLessonProgress } = useLessonProgress();
   const lesson = getLessonById(lessonId);
   
+  // Debug logging
+  console.log('Lesson page loaded:', { 
+    lessonId, 
+    lesson: !!lesson, 
+    questionsCount: lesson?.questions.length,
+    lessonTitle: lesson?.title,
+    firstQuestion: lesson?.questions[0]?.question
+  });
+  
   const [lessonScore, setLessonScore] = useState(0);
   const [completedQuestions, setCompletedQuestions] = useState(0);
 
   // Gérer la fin de session
   const handleSessionComplete = (finalScore: number) => {
-    // Rediriger vers la page principale après un court délai
-    setTimeout(() => {
-      router.push('/maths');
-    }, 2000);
+    console.log('Session completed with score:', finalScore, 'rawScore:', rawScore);
+    // Rediriger vers la page de completion avec le score brut (points)
+    router.push(`/maths/lesson/${lessonId}/complete?score=${rawScore}`);
   };
   
   const {
@@ -55,6 +63,14 @@ export default function LessonPage() {
   } = useQuestionLogic({ 
     questions: lesson?.questions || [],
     onComplete: handleSessionComplete
+  });
+
+  // Debug logging for questions
+  console.log('Questions passed to hook:', { 
+    questionsCount: lesson?.questions?.length || 0,
+    currentQuestionIndex,
+    isLastQuestion,
+    rawScore
   });
 
   // Sauvegarder la progression quand une question est terminée

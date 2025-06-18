@@ -10,6 +10,7 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
+import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 import { useLessonProgress } from '@/src/hooks/useLessonProgress';
 
 export default function HistoireGeoLessonPage() {
@@ -101,12 +102,7 @@ export default function HistoireGeoLessonPage() {
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <button 
-            onClick={() => router.push('/histoire-geo')}
-            className="btn bg-[#00baff] text-white font-bold px-6 py-2 rounded-lg"
-          >
-            Retour aux leçons
-          </button>
+          <BackToLessonsButton subject="histoire-geo" />
         </div>
       </div>
     );

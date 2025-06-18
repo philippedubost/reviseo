@@ -1,9 +1,21 @@
+import { useMemo } from 'react';
+
 interface AnswerOptionsProps {
   options: string[];
   correctAnswer: string;
   selectedAnswer: string;
   showResult: boolean;
   onAnswerSelect: (answer: string) => void;
+}
+
+// Fonction pour mélanger un tableau (algorithme Fisher-Yates)
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
 export default function AnswerOptions({
@@ -13,10 +25,15 @@ export default function AnswerOptions({
   showResult,
   onAnswerSelect
 }: AnswerOptionsProps) {
+  // Mélanger les options à chaque rendu pour éviter le biais de la première réponse
+  const shuffledOptions = useMemo(() => {
+    return shuffleArray(options);
+  }, [options]);
+
   return (
     <div className="w-full mb-6">
       <div className="flex flex-col gap-3 max-w-md mx-auto">
-        {options.map((option, idx) => {
+        {shuffledOptions.map((option, idx) => {
           let state = '';
           if (showResult) {
             if (option === correctAnswer) state = 'correct';
@@ -25,7 +42,7 @@ export default function AnswerOptions({
           
           return (
             <button
-              key={idx}
+              key={`${option}-${idx}`}
               className={`answer-option text-base font-bold py-3 px-4 rounded-lg ${
                 state === 'correct' ? 'bg-[#2ecc71] text-[#181c24] border-2 border-[#2ecc71]' :
                 state === 'incorrect' ? 'bg-[#ff4d6d] text-white border-2 border-[#ff4d6d]' :

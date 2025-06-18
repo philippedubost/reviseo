@@ -13,6 +13,7 @@ export default function MathsPage() {
     totalScore, 
     completedLessons, 
     currentStreak, 
+    globalProgress,
     getLessonProgressPercentage 
   } = useLessonProgress();
 
@@ -29,10 +30,6 @@ export default function MathsPage() {
   const getDifficultyIndicator = (difficulty: string) => {
     if (difficulty === 'hard') return '🔥';
     return null;
-  };
-
-  const getProgressPercentage = () => {
-    return lessons.length > 0 ? (completedLessons / lessons.length) * 100 : 0;
   };
 
   const getProgressColor = (percentage: number) => {
@@ -53,7 +50,7 @@ export default function MathsPage() {
       {/* Progress Bar */}
       <div className="mx-2 mt-2 mb-2">
         <div className="progress-bar">
-          <div className="progress-bar-inner" style={{ width: `${getProgressPercentage()}%` }}></div>
+          <div className="progress-bar-inner" style={{ width: `${globalProgress}%` }}></div>
         </div>
       </div>
 

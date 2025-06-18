@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllLessons, type Lesson } from '../../src/data/histoireGeoLessons';
+import { getAllLessons, type Lesson } from '../../src/data/francaisLessons';
 import StatsBadges from '../../src/components/StatsBadges';
 import { useLessonProgress } from '../../src/hooks/useLessonProgress';
 
-export default function HistoireGeoPage() {
+export default function FrancaisPage() {
   const { 
     lessons, 
     totalScore, 
@@ -15,14 +15,14 @@ export default function HistoireGeoPage() {
     currentStreak, 
     globalProgress,
     getLessonProgressPercentage 
-  } = useLessonProgress('histoireGeo');
+  } = useLessonProgress('francais');
 
   const [survivalRecord, setSurvivalRecord] = useState(0);
 
   // Charger le record de survival depuis localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const savedRecord = localStorage.getItem('histoireGeoSurvivalRecord');
+      const savedRecord = localStorage.getItem('francaisSurvivalRecord');
       setSurvivalRecord(savedRecord ? parseInt(savedRecord) : 0);
     }
   }, []);
@@ -65,7 +65,7 @@ export default function HistoireGeoPage() {
 
       {/* Main Content */}
       <div className="flex-1 px-2 pb-16">
-        <h1 className="text-xl font-bold text-white mb-4 w-full text-center">Histoire-Géographie</h1>
+        <h1 className="text-xl font-bold text-white mb-4 w-full text-center">Français</h1>
         
         <div className="w-full flex flex-col gap-3">
           {lessons.map((lesson) => {
@@ -77,7 +77,7 @@ export default function HistoireGeoPage() {
               <div
                 key={lesson.id}
                 className="card flex flex-col items-center justify-center py-4 px-3 w-full cursor-pointer transition-all duration-200 hover:opacity-90 hover:scale-[1.02] hover:shadow-lg relative overflow-hidden"
-                onClick={() => window.location.assign(`/histoire-geo/lesson/${lesson.id}`)}
+                onClick={() => window.location.assign(`/francais/lesson/${lesson.id}`)}
               >
                 {/* Difficulty Indicator */}
                 {difficultyIndicator && (
@@ -104,7 +104,7 @@ export default function HistoireGeoPage() {
                 </div>
                 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b6b] to-[#ee5a24] opacity-0 hover:opacity-10 transition-opacity duration-200 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#e74c3c] to-[#f39c12] opacity-0 hover:opacity-10 transition-opacity duration-200 pointer-events-none"></div>
               </div>
             );
           })}
@@ -112,7 +112,7 @@ export default function HistoireGeoPage() {
 
         {/* Survival Mode Button - Tout en bas */}
         <div className="w-full mt-4">
-          <Link href="/histoire-geo/practice">
+          <Link href="/francais/practice">
             <div className="card flex flex-col items-center justify-center py-4 px-3 w-full cursor-pointer transition-all duration-200 hover:opacity-80 hover:scale-[1.02] bg-gradient-to-r from-[#ff6b6b] to-[#ee5a24] border-2 border-transparent hover:border-[#ff6b6b]">
               <div className="mb-1 text-3xl">💀</div>
               <div className="text-base font-bold text-white mb-1 text-center">Mode Survival</div>
@@ -130,9 +130,9 @@ export default function HistoireGeoPage() {
           <button
             onClick={() => {
               if (typeof window !== 'undefined') {
-                localStorage.removeItem('histoireGeoLessonProgress');
-                localStorage.removeItem('histoireGeoSurvivalRecord');
-                localStorage.removeItem('histoireGeoCurrentStreak');
+                localStorage.removeItem('francaisLessonProgress');
+                localStorage.removeItem('francaisSurvivalRecord');
+                localStorage.removeItem('francaisCurrentStreak');
                 window.location.reload();
               }
             }}

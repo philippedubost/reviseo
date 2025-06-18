@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { getLessonById, getRandomQuestions, type Question } from '@/src/data/lessons';
+import { getLessonById, getRandomQuestions, type Question } from '@/src/data/francaisLessons';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 import ProgressBar from '@/src/components/ProgressBar';
 import StatsBadges from '@/src/components/StatsBadges';
@@ -10,15 +10,14 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 import { useLessonProgress } from '@/src/hooks/useLessonProgress';
 
-export default function LessonPage() {
+export default function FrancaisLessonPage() {
   const params = useParams();
   const router = useRouter();
   const lessonId = parseInt(params.id as string);
   
-  const { updateLessonProgress } = useLessonProgress();
+  const { updateLessonProgress } = useLessonProgress('francais');
   const lesson = getLessonById(lessonId);
   
   // Get 10 random questions from the lesson
@@ -32,7 +31,7 @@ export default function LessonPage() {
   }, [lesson, lessonId]);
   
   // Debug logging
-  console.log('Lesson page loaded:', { 
+  console.log('Français lesson page loaded:', { 
     lessonId, 
     lesson: !!lesson, 
     questionsCount: lessonQuestions.length,
@@ -47,7 +46,7 @@ export default function LessonPage() {
   const handleSessionComplete = (finalScore: number) => {
     console.log('Session completed with score:', finalScore, 'rawScore:', rawScore);
     // Rediriger vers la page de completion avec le score brut (points)
-    router.push(`/maths/lesson/${lessonId}/complete?score=${rawScore}`);
+    router.push(`/francais/lesson/${lessonId}/complete?score=${rawScore}`);
   };
   
   const {
@@ -102,7 +101,12 @@ export default function LessonPage() {
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject="maths" />
+          <button 
+            onClick={() => router.push('/francais')}
+            className="btn bg-[#00baff] text-white font-bold px-6 py-2 rounded-lg"
+          >
+            Retour aux leçons
+          </button>
         </div>
       </div>
     );

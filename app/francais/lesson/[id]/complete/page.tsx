@@ -3,10 +3,10 @@
 import { useSearchParams, useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getLessonById } from '@/src/data/lessons';
+import { getLessonById } from '@/src/data/francaisLessons';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 
-export default function LessonCompletePage() {
+export default function FrancaisLessonCompletePage() {
   const searchParams = useSearchParams();
   const params = useParams();
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function LessonCompletePage() {
   const lesson = getLessonById(lessonId);
   
   // Debug logging
-  console.log('Complete page loaded:', { score, lessonId, lesson: !!lesson, scoreParam });
+  console.log('Français complete page loaded:', { score, lessonId, lesson: !!lesson, scoreParam });
   
   // Validate score
   if (isNaN(score) || score < 0) {
@@ -27,7 +27,7 @@ export default function LessonCompletePage() {
   // If no score provided, redirect to lesson page
   if (!scoreParam) {
     console.log('No score provided, redirecting to lesson page');
-    router.push(`/maths/lesson/${lessonId}`);
+    router.push(`/francais/lesson/${lessonId}`);
     return null;
   }
   
@@ -41,7 +41,7 @@ export default function LessonCompletePage() {
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject="maths" />
+          <BackToLessonsButton subject="francais" />
         </div>
       </div>
     );
@@ -125,14 +125,14 @@ export default function LessonCompletePage() {
 
           {/* Action Buttons */}
           <div className="flex flex-col gap-3 w-full">
-            <Link href={`/maths/lesson/${lessonId}`}>
+            <Link href={`/francais/lesson/${lessonId}`}>
               <button className="btn bg-[#232a36] text-white hover:bg-[#2a323e] transition-colors">
                 🔄 Recommencer
               </button>
             </Link>
             
             <BackToLessonsButton 
-              subject="maths" 
+              subject="francais" 
               className="btn bg-[#2ecc71] text-[#181c24] hover:bg-[#27ae60] transition-colors"
             >
               📚 Autres leçons
@@ -155,13 +155,13 @@ export default function LessonCompletePage() {
           <div className="card flex flex-col py-6 px-4 w-full">
             <h3 className="text-lg font-bold text-white mb-4 text-center">Prochaine leçon</h3>
             <div className="flex items-center space-x-4 mb-4">
-              <div className="text-3xl">⚖️</div>
+              <div className="text-3xl">✍️</div>
               <div className="flex-1">
-                <h4 className="text-base font-semibold text-white">Équations</h4>
-                <p className="text-white/80 text-sm">Équations du premier degré</p>
+                <h4 className="text-base font-semibold text-white">Orthographe et Vocabulaire</h4>
+                <p className="text-white/80 text-sm">Règles d'orthographe, étymologie</p>
               </div>
             </div>
-            <Link href="/maths/lesson/2">
+            <Link href="/francais/lesson/2">
               <button className="btn bg-[#00baff] text-white hover:bg-[#0099cc] transition-colors">
                 Commencer
               </button>

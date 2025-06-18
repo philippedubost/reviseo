@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { getAllLessons, type Lesson } from '../data/lessons';
 import { getAllLessons as getAllHistoireGeoLessons } from '../data/histoireGeoLessons';
+import { getAllLessons as getAllFrancaisLessons } from '../data/francaisLessons';
+import { getAllLessons as getAllSciencesLessons } from '../data/sciencesLessons';
 
-export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
+export function useLessonProgress(subject: 'maths' | 'histoireGeo' | 'francais' | 'sciences' = 'maths') {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [totalScore, setTotalScore] = useState(0);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
+  const [globalProgress, setGlobalProgress] = useState(0);
 
   // Déterminer les clés localStorage selon la matière
   const getStorageKeys = () => {
@@ -15,6 +18,16 @@ export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
         return {
           progress: 'histoireGeoLessonProgress',
           streak: 'histoireGeoCurrentStreak'
+        };
+      case 'francais':
+        return {
+          progress: 'francaisLessonProgress',
+          streak: 'francaisCurrentStreak'
+        };
+      case 'sciences':
+        return {
+          progress: 'sciencesLessonProgress',
+          streak: 'sciencesCurrentStreak'
         };
       default:
         return {
@@ -68,10 +81,43 @@ export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
     return (lessonProgress.completedQuestions / lesson.questions.length) * 100;
   };
 
+  // Calculer la progression globale basée sur toutes les leçons
+  const calculateGlobalProgress = (updatedLessons: Lesson[]): number => {
+    if (updatedLessons.length === 0) return 0;
+    
+    let totalCompletedQuestions = 0;
+    let totalQuestions = 0;
+    
+    updatedLessons.forEach(lesson => {
+      const progress = loadProgress();
+      const lessonProgress = progress[lesson.id];
+      const completedQuestions = lessonProgress?.completedQuestions || 0;
+      
+      totalCompletedQuestions += completedQuestions;
+      totalQuestions += lesson.questions.length;
+    });
+    
+    return totalQuestions > 0 ? (totalCompletedQuestions / totalQuestions) * 100 : 0;
+  };
+
   // Initialiser les données
   useEffect(() => {
     // Charger les leçons selon la matière
-    const allLessons = subject === 'histoireGeo' ? getAllHistoireGeoLessons() : getAllLessons();
+    let allLessons: Lesson[];
+    switch (subject) {
+      case 'histoireGeo':
+        allLessons = getAllHistoireGeoLessons();
+        break;
+      case 'francais':
+        allLessons = getAllFrancaisLessons();
+        break;
+      case 'sciences':
+        allLessons = getAllSciencesLessons();
+        break;
+      default:
+        allLessons = getAllLessons();
+    }
+    
     const progress = loadProgress();
     
     // Mettre à jour les leçons avec la progression sauvegardée
@@ -90,9 +136,11 @@ export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
     // Calculer les statistiques globales
     const completed = updatedLessons.filter(lesson => lesson.completed).length;
     const totalScore = updatedLessons.reduce((total, lesson) => total + (lesson.score || 0), 0);
+    const globalProgressValue = calculateGlobalProgress(updatedLessons);
     
     setCompletedLessons(completed);
     setTotalScore(totalScore);
+    setGlobalProgress(globalProgressValue);
     
     // Charger le streak depuis localStorage
     const keys = getStorageKeys();
@@ -105,6 +153,7 @@ export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
     totalScore,
     completedLessons,
     currentStreak,
+    globalProgress,
     updateLessonProgress,
     getLessonProgressPercentage
   };

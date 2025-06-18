@@ -14,7 +14,7 @@ export default function AnswerOptions({
   onAnswerSelect
 }: AnswerOptionsProps) {
   return (
-    <div className="w-full px-4">
+    <div className="w-full mb-6">
       <div className="flex flex-col gap-3 max-w-md mx-auto">
         {options.map((option, idx) => {
           let state = '';

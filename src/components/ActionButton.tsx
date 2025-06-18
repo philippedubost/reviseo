@@ -24,7 +24,7 @@ export default function ActionButton({
   onNext
 }: ActionButtonProps) {
   return (
-    <div className="flex justify-center px-4 pt-4">
+    <div className="flex justify-center">
       {!showResult && questionType === 'calculation' ? (
         <button
           className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"

@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import { Lexend } from "next/font/google";
 import Header from "../src/components/Header";
 import "./globals.css";
+import { usePathname } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,23 +18,25 @@ const geistMono = Geist_Mono({
 
 const lexend = Lexend({ subsets: ["latin"], weight: ["400", "700"] });
 
-export const metadata: Metadata = {
-  title: "Reviseo - Apprentissage Interactif",
-  description: "Apprenez les mathématiques de manière interactive et amusante",
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  
+  // Hide header for maths lesson and practice pages
+  const shouldHideHeader = pathname?.includes('/maths/lesson/') || pathname === '/maths/practice';
+  
   return (
     <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${lexend.className} antialiased`}
       >
-        <Header />
-        <main className="min-h-screen bg-[#181c24]">{children}</main>
+        {!shouldHideHeader && <Header />}
+        <main className={`${shouldHideHeader ? 'h-screen' : 'min-h-screen'} bg-[#181c24] ${shouldHideHeader ? 'overflow-hidden' : ''}`}>
+          {children}
+        </main>
       </body>
     </html>
   );

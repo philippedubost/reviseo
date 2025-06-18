@@ -129,13 +129,13 @@ export default function MathsPage() {
         </div>
 
         {/* Reset Scores Button */}
-        <div className="w-full mt-3">
+        <div className="w-full mt-4">
           <button
             onClick={() => {
-              if (confirm('Êtes-vous sûr de vouloir réinitialiser tous les scores ? Cette action ne peut pas être annulée.')) {
-                // Nettoyer localStorage
-                localStorage.clear();
-                // Recharger la page pour mettre à jour l'affichage
+              if (typeof window !== 'undefined') {
+                localStorage.removeItem('lessonProgress');
+                localStorage.removeItem('survivalRecord');
+                localStorage.removeItem('currentStreak');
                 window.location.reload();
               }
             }}

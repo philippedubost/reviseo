@@ -124,12 +124,12 @@ export default function PracticePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#181c24] flex flex-col">
+    <div className="h-screen bg-[#181c24] flex flex-col">
       {/* Titre du mode Survival */}
-      <div className="text-center mt-4 mb-2 px-4">
-        <h1 className="text-xl font-bold text-white mb-1">Mode Survival</h1>
-        <p className="text-[#b0b8c1] text-sm">Répondez au plus de questions sans vous tromper</p>
-        <div className="text-sm text-[#ffd700] mt-1">
+      <div className="text-center pt-2 pb-1 px-4">
+        <h1 className="text-lg font-bold text-white mb-1">Mode Survival</h1>
+        <p className="text-[#b0b8c1] text-xs">Répondez au plus de questions sans vous tromper</p>
+        <div className="text-xs text-[#ffd700] mt-1">
           🏆 Record: {survivalRecord} questions
         </div>
       </div>
@@ -151,7 +151,7 @@ export default function PracticePage() {
       />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col justify-start px-4 pt-4">
         {currentQuestion && (
           <>
             <QuestionDisplay

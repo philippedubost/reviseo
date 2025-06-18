@@ -87,11 +87,11 @@ export default function LessonPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#181c24] flex flex-col">
+    <div className="h-screen bg-[#181c24] flex flex-col">
       {/* Titre de la leçon */}
-      <div className="text-center mt-4 mb-2 px-4">
-        <h1 className="text-xl font-bold text-white mb-1">{lesson.title}</h1>
-        <p className="text-[#b0b8c1] text-sm">{lesson.description}</p>
+      <div className="text-center pt-2 pb-1 px-4">
+        <h1 className="text-lg font-bold text-white mb-1">{lesson.title}</h1>
+        <p className="text-[#b0b8c1] text-xs">{lesson.description}</p>
       </div>
 
       {/* Progress Bar */}
@@ -111,7 +111,7 @@ export default function LessonPage() {
       />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col justify-start px-4 pt-4">
         {currentQuestion && (
           <>
             <QuestionDisplay

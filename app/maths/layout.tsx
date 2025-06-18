@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { Lexend } from "next/font/google";
@@ -14,11 +13,6 @@ const geistMono = Geist_Mono({
 });
 
 const lexend = Lexend({ subsets: ["latin"], weight: ["400", "700"] });
-
-export const metadata: Metadata = {
-  title: "Mathématiques - Reviseo",
-  description: "Apprentissage des mathématiques",
-};
 
 export default function MathsLayout({
   children,

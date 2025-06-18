@@ -36,7 +36,7 @@ export default function QuestionDisplay({
   };
 
   return (
-    <div className="flex-1 flex flex-col items-center px-4 pt-4">
+    <div className="flex flex-col items-center mb-6">
       <div className="text-center max-w-2xl w-full">
         {type === 'calculation' ? (
           <>
@@ -44,20 +44,22 @@ export default function QuestionDisplay({
               {question}
             </div>
             {latex && (
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mb-4">
                 <BlockMath math={latex} />
                 <span className="text-2xl font-bold" style={{ color: 'var(--mascot-color)' }}>=</span>
-                <input
-                  type="text"
-                  className="input text-center text-lg font-bold w-24 ml-2"
-                  placeholder="?"
-                  value={selectedAnswer}
-                  onChange={e => !showResult && onAnswerChange(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  disabled={showResult}
-                />
               </div>
             )}
+            <div className="w-full flex justify-center">
+              <input
+                type="text"
+                className="input text-center text-lg font-bold w-full max-w-md"
+                placeholder="Votre réponse"
+                value={selectedAnswer}
+                onChange={e => !showResult && onAnswerChange(e.target.value)}
+                onKeyDown={handleKeyDown}
+                disabled={showResult}
+              />
+            </div>
           </>
         ) : (
           <>

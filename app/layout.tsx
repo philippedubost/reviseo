@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Link from "next/link";
+import { Lexend } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +14,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const lexend = Lexend({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +28,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend.className} antialiased`}
       >
-        {children}
+        {/* Minimal, centered header with very large logo */}
+        <header className="w-full sticky top-0 z-40 bg-[#181c24] flex items-center justify-center py-6 border-b border-[#232a36]">
+          <Image src="/images/logo.png" alt="Logo Reviseo" width={160} height={96} priority style={{objectFit:'contain',height:'96px',width:'auto'}} />
+        </header>
+        <main className="pt-2 min-h-screen bg-[#181c24]">{children}</main>
       </body>
     </html>
   );

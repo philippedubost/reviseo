@@ -36,27 +36,27 @@ This project now includes a comprehensive random question selection system that 
 
 1. **Nombres et Calculs** (Numbers and Calculations)
    - Fractions, powers, square roots
-   - 5 questions available
+   - 10 random questions per session
 
 2. **Géométrie** (Geometry)
    - Pythagorean theorem, trigonometry
-   - 3 questions available
+   - 10 random questions per session
 
 3. **Fonctions** (Functions)
    - Linear and affine functions
-   - 3 questions available
+   - 10 random questions per session
 
 4. **Statistiques** (Statistics)
    - Mean, median, range
-   - 3 questions available
+   - 10 random questions per session
 
 5. **Probabilités** (Probabilities)
    - Simple and conditional probabilities
-   - 3 questions available
+   - 10 random questions per session
 
 6. **Équations** (Equations)
    - First and second degree equations
-   - 3 questions available
+   - 10 random questions per session
 
 ## Usage Examples
 

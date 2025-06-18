@@ -1687,9 +1687,9 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 // Get random questions from a lesson
-export function getRandomQuestions(lessonId: number, count: number = 8): Question[] {
+export function getRandomQuestions(lessonId: number, count: number = 10): Question[] {
   // Use the new difficulty-ordered function by default
-  if (count === 8) {
+  if (count === 10) {
     return getRandomQuestionsInDifficultyOrder(lessonId);
   }
   
@@ -1698,7 +1698,7 @@ export function getRandomQuestions(lessonId: number, count: number = 8): Questio
   return shuffle(lesson.questions).slice(0, Math.min(count, lesson.questions.length));
 }
 
-// New function: Get 8 random questions in difficulty order
+// New function: Get 10 random questions in difficulty order
 export function getRandomQuestionsInDifficultyOrder(lessonId: number): Question[] {
   const lesson = lessons.find(l => l.id === lessonId);
   if (!lesson) return [];
@@ -1713,8 +1713,8 @@ export function getRandomQuestionsInDifficultyOrder(lessonId: number): Question[
   const selectedQuestions: Question[] = [];
   
   // Select questions from each difficulty level
-  // Try to get 3 from difficulty 1, 3 from difficulty 2, and 2 from difficulty 3
-  const targetCounts = [3, 3, 2];
+  // Try to get 4 from difficulty 1, 4 from difficulty 2, and 2 from difficulty 3
+  const targetCounts = [4, 4, 2];
   
   for (let difficulty = 1; difficulty <= 3; difficulty++) {
     const availableQuestions = questionsByDifficulty[difficulty];
@@ -1728,18 +1728,18 @@ export function getRandomQuestionsInDifficultyOrder(lessonId: number): Question[
   }
   
   // If we don't have enough questions, fill with random questions from any difficulty
-  if (selectedQuestions.length < 8) {
+  if (selectedQuestions.length < 10) {
     const remainingQuestions = lesson.questions.filter(q => 
       !selectedQuestions.some(selected => selected.id === q.id)
     );
-    const additionalQuestions = shuffle(remainingQuestions).slice(0, 8 - selectedQuestions.length);
+    const additionalQuestions = shuffle(remainingQuestions).slice(0, 10 - selectedQuestions.length);
     selectedQuestions.push(...additionalQuestions);
   }
   
-  // Sort by difficulty and return exactly 8 questions
+  // Sort by difficulty and return exactly 10 questions
   return selectedQuestions
     .sort((a, b) => a.difficulty - b.difficulty)
-    .slice(0, 8);
+    .slice(0, 10);
 }
 
 // Get random questions from all lessons

@@ -1,23 +1,42 @@
 import { useState, useEffect } from 'react';
 import { getAllLessons, type Lesson } from '../data/lessons';
+import { getAllLessons as getAllHistoireGeoLessons } from '../data/histoireGeoLessons';
 
-export function useLessonProgress() {
+export function useLessonProgress(subject: 'maths' | 'histoireGeo' = 'maths') {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [totalScore, setTotalScore] = useState(0);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
 
+  // Déterminer les clés localStorage selon la matière
+  const getStorageKeys = () => {
+    switch (subject) {
+      case 'histoireGeo':
+        return {
+          progress: 'histoireGeoLessonProgress',
+          streak: 'histoireGeoCurrentStreak'
+        };
+      default:
+        return {
+          progress: 'lessonProgress',
+          streak: 'currentStreak'
+        };
+    }
+  };
+
   // Charger les données depuis localStorage
   const loadProgress = (): Record<number, { completedQuestions: number; score: number }> => {
     if (typeof window === 'undefined') return {};
-    const saved = localStorage.getItem('lessonProgress');
+    const keys = getStorageKeys();
+    const saved = localStorage.getItem(keys.progress);
     return saved ? JSON.parse(saved) : {};
   };
 
   // Sauvegarder les données dans localStorage
   const saveProgress = (progress: Record<number, { completedQuestions: number; score: number }>) => {
     if (typeof window === 'undefined') return;
-    localStorage.setItem('lessonProgress', JSON.stringify(progress));
+    const keys = getStorageKeys();
+    localStorage.setItem(keys.progress, JSON.stringify(progress));
   };
 
   // Mettre à jour la progression d'une leçon
@@ -51,7 +70,8 @@ export function useLessonProgress() {
 
   // Initialiser les données
   useEffect(() => {
-    const allLessons = getAllLessons();
+    // Charger les leçons selon la matière
+    const allLessons = subject === 'histoireGeo' ? getAllHistoireGeoLessons() : getAllLessons();
     const progress = loadProgress();
     
     // Mettre à jour les leçons avec la progression sauvegardée
@@ -74,10 +94,11 @@ export function useLessonProgress() {
     setCompletedLessons(completed);
     setTotalScore(totalScore);
     
-    // Simuler un streak (dans une vraie app, ceci viendrait d'une API)
-    const savedStreak = localStorage.getItem('currentStreak');
+    // Charger le streak depuis localStorage
+    const keys = getStorageKeys();
+    const savedStreak = localStorage.getItem(keys.streak);
     setCurrentStreak(savedStreak ? parseInt(savedStreak) : 0);
-  }, []);
+  }, [subject]);
 
   return {
     lessons,

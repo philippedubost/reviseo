@@ -3,20 +3,24 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#181c24] px-4 pt-6">
-      <h1 className="text-2xl font-bold text-white mb-6 w-full max-w-xs text-left">Mes Matières</h1>
-      {/* Main Subject Card */}
-      <div className="card flex flex-col items-center justify-center w-full max-w-xs py-8 mb-8 shadow-lg">
-        <div className="mb-4">
-          <span className="text-5xl">🔢</span>
+    <div className="flex flex-col">
+      {/* Main Content */}
+      <div className="flex-1 px-2 pb-16">
+        <h1 className="text-xl font-bold text-white mb-4 w-full text-center">Mes Matières</h1>
+        
+        {/* Main Subject Card */}
+        <div className="w-full flex flex-col gap-3">
+          <Link href="/maths" className="w-full">
+            <div className="card flex flex-col items-center justify-center py-4 px-3 w-full cursor-pointer transition-all duration-200 hover:opacity-90 hover:scale-[1.02] hover:shadow-lg relative overflow-hidden">
+              <div className="mb-1 text-3xl">🔢</div>
+              <div className="text-base font-bold text-white mb-1 text-center">Mathématiques</div>
+              <div className="text-[#b0b8c1] text-center mb-3 text-xs">Algèbre, géométrie, statistiques</div>
+              
+              {/* Hover Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#00baff] to-[#2ecc71] opacity-0 hover:opacity-10 transition-opacity duration-200 pointer-events-none"></div>
+            </div>
+          </Link>
         </div>
-        <h2 className="text-2xl font-bold text-white mb-2">Mathématiques</h2>
-        <p className="text-[#b0b8c1] text-center mb-6">Algèbre, géométrie, statistiques</p>
-        <Link href="/maths" className="w-full">
-          <button className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full mt-2">
-            Commencer
-          </button>
-        </Link>
       </div>
     </div>
   );

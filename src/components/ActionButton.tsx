@@ -9,6 +9,7 @@ interface ActionButtonProps {
   isPaused: boolean;
   onVerify: () => void;
   onNext: () => void;
+  onSkip?: () => void;
 }
 
 export default function ActionButton({
@@ -21,18 +22,41 @@ export default function ActionButton({
   isLastQuestion,
   isPaused,
   onVerify,
-  onNext
+  onNext,
+  onSkip
 }: ActionButtonProps) {
   return (
-    <div className="flex justify-center">
-      {!showResult && questionType === 'calculation' ? (
-        <button
-          className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"
-          onClick={onVerify}
-          disabled={!selectedAnswer}
-        >
-          Vérifier
-        </button>
+    <div className="flex flex-col gap-2">
+      {!showResult ? (
+        <div className="flex flex-col gap-2">
+          {questionType === 'calculation' ? (
+            <button
+              className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"
+              onClick={onVerify}
+              disabled={!selectedAnswer}
+            >
+              Vérifier
+            </button>
+          ) : (
+            <button
+              className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"
+              onClick={onVerify}
+              disabled={!selectedAnswer}
+            >
+              Valider
+            </button>
+          )}
+          
+          {/* Skip button - only show when no answer is selected */}
+          {!selectedAnswer && onSkip && (
+            <button
+              className="btn bg-[#6c757d] text-white text-sm w-full max-w-md opacity-80 hover:opacity-100 transition-opacity"
+              onClick={onSkip}
+            >
+              ⏭️ Passer cette question
+            </button>
+          )}
+        </div>
       ) : showResult && (!showOverlay || isPaused) ? (
         <button
           className={`btn text-lg font-bold w-full max-w-md ${isCorrect ? 'bg-[#00baff] text-white' : 'bg-[#ff4d6d] text-white'}`}

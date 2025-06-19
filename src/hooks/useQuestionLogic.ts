@@ -4,21 +4,25 @@ import { compareAnswers } from '../utils/answerValidation';
 
 interface UseQuestionLogicProps {
   questions: Question[];
-  onComplete?: (score: number) => void;
+  onComplete?: (score: number, totalQuestions: number, correctAnswers: number) => void;
+  onAnswer?: (isCorrect: boolean) => void; // Callback for XP and streak updates
 }
 
-export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProps) {
+export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestionLogicProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [score, setScore] = useState(0);
+  const [sessionScore, setSessionScore] = useState(0);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [totalQuestions, setTotalQuestions] = useState(0);
   const [streak, setStreak] = useState(0);
   const [countdown, setCountdown] = useState<number | null>(null);
   const [showOverlay, setShowOverlay] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const [currentEmoji, setCurrentEmoji] = useState('🎉');
   const [isPaused, setIsPaused] = useState(false);
+  const [skippedQuestions, setSkippedQuestions] = useState<number[]>([]);
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -35,11 +39,17 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
       const correct = compareAnswers(answer, currentQuestion.correctAnswer);
       setIsCorrect(correct);
       setShowResult(true);
+      
       if (correct) {
-        setScore(score + currentQuestion.points);
-        setStreak(streak + 1);
+        setCorrectAnswers(prev => prev + 1);
+        setStreak(prev => prev + 1);
       } else {
         setStreak(0);
+      }
+      
+      // Call the onAnswer callback for XP and streak updates
+      if (onAnswer) {
+        onAnswer(correct);
       }
     }
   };
@@ -49,16 +59,29 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
     const correct = compareAnswers(selectedAnswer, currentQuestion.correctAnswer);
     setIsCorrect(correct);
     setShowResult(true);
+    
     if (correct) {
-      setScore(score + currentQuestion.points);
-      setStreak(streak + 1);
+      setCorrectAnswers(prev => prev + 1);
+      setStreak(prev => prev + 1);
     } else {
       setStreak(0);
     }
+    
+    // Call the onAnswer callback for XP and streak updates
+    if (onAnswer) {
+      onAnswer(correct);
+    }
+  };
+
+  const handleSkip = () => {
+    // Mark question as skipped (no XP gain/loss, no streak change)
+    setSkippedQuestions(prev => [...prev, currentQuestionIndex]);
+    setShowResult(true);
+    setIsCorrect(false); // Show as incorrect for UI purposes
   };
 
   const handleNext = () => {
-    // Réinitialiser l'état de pause
+    // Reset pause state
     setIsPaused(false);
     setCountdown(null);
     
@@ -67,23 +90,28 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
       setSelectedAnswer('');
       setShowResult(false);
     } else {
-      // Session completed - arrêter le countdown et l'overlay
+      // Session completed - stop countdown and overlay
       setShowOverlay(false);
       setCountdown(null);
       setIsPaused(false);
       setShowResult(false);
       
+      // Calculate final session score (percentage of correct answers)
+      const finalScore = questions.length > 0 ? Math.round((correctAnswers / questions.length) * 100) : 0;
+      
       // Debug logging
       console.log('Lesson completed in hook:', { 
         currentQuestionIndex, 
         questionsLength: questions.length, 
-        score, 
+        correctAnswers,
+        totalQuestions: questions.length,
+        finalScore,
         onComplete: !!onComplete 
       });
       
       // Session completed
       if (onComplete) {
-        onComplete(score);
+        onComplete(finalScore, questions.length, correctAnswers);
       }
     }
   };
@@ -127,9 +155,8 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
   const progress = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0;
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
   
-  // Calculer le score en pourcentage
-  const totalPossiblePoints = questions.reduce((total, q) => total + q.points, 0);
-  const scorePercentage = totalPossiblePoints > 0 ? Math.round((score / totalPossiblePoints) * 100) : 0;
+  // Calculate session score as percentage
+  const sessionScorePercentage = questions.length > 0 ? Math.round((correctAnswers / questions.length) * 100) : 0;
 
   return {
     currentQuestion,
@@ -137,8 +164,9 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
     selectedAnswer,
     showResult,
     isCorrect,
-    score: scorePercentage, // Retourner le pourcentage au lieu du score brut
-    rawScore: score, // Score brut pour la sauvegarde
+    sessionScore: sessionScorePercentage,
+    correctAnswers,
+    totalQuestions: questions.length,
     streak,
     countdown,
     showOverlay,
@@ -147,9 +175,11 @@ export function useQuestionLogic({ questions, onComplete }: UseQuestionLogicProp
     progress,
     isLastQuestion,
     isPaused,
+    skippedQuestions,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
+    handleSkip,
     handleNext,
     togglePause
   };

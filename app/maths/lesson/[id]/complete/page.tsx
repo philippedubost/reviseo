@@ -1,57 +1,33 @@
 'use client';
 
-import { useSearchParams, useParams, useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { getLessonById } from '@/src/data/lessons';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
+import { useLessonProgress } from '@/src/hooks/useLessonProgress';
 
 export default function LessonCompletePage() {
-  const searchParams = useSearchParams();
   const params = useParams();
-  const router = useRouter();
+  const searchParams = useSearchParams();
+  const lessonId = parseInt(params.id as string);
   
-  const scoreParam = searchParams.get('score');
-  const score = scoreParam ? Number(scoreParam) : 0;
-  const lessonId = Number(params.id);
+  const { totalXP, currentStreak, bestStreak, getLessonProgressPercentage } = useLessonProgress('maths');
   const lesson = getLessonById(lessonId);
   
-  // Debug logging
-  console.log('Complete page loaded:', { score, lessonId, lesson: !!lesson, scoreParam });
+  // Get session results from URL params
+  const score = parseInt(searchParams.get('score') || '0');
+  const total = parseInt(searchParams.get('total') || '0');
+  const correct = parseInt(searchParams.get('correct') || '0');
   
-  // Validate score
-  if (isNaN(score) || score < 0) {
-    console.error('Invalid score:', scoreParam);
-  }
-  
-  // If no score provided, redirect to lesson page
-  if (!scoreParam) {
-    console.log('No score provided, redirecting to lesson page');
-    router.push(`/maths/lesson/${lessonId}`);
-    return null;
-  }
-  
-  // Calculate max score dynamically based on the lesson
-  const maxScore = lesson ? lesson.questions.reduce((total, q) => total + q.points, 0) : 50;
-  const percentage = Math.round((score / maxScore) * 100);
-
-  // Handle case where lesson is not found
-  if (!lesson) {
-    return (
-      <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
-        <div className="text-white text-center">
-          <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject="maths" />
-        </div>
-      </div>
-    );
-  }
+  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const maxScore = total;
 
   const getPerformanceMessage = () => {
-    if (percentage >= 90) return "Excellent ! Tu es un champion ! 🏆";
-    if (percentage >= 70) return "Très bien ! Continue comme ça ! 🌟";
-    if (percentage >= 50) return "Bien ! Tu progresses ! 💪";
-    return "Pas mal ! Continue à t'entraîner ! 📚";
+    if (percentage >= 90) return "Excellent travail ! Tu es un champion !";
+    if (percentage >= 70) return "Très bien ! Continue comme ça !";
+    if (percentage >= 50) return "Bien joué ! Tu progresses !";
+    return "Continue à t'entraîner, tu vas y arriver !";
   };
 
   const getPerformanceEmoji = () => {
@@ -60,6 +36,9 @@ export default function LessonCompletePage() {
     if (percentage >= 50) return "💪";
     return "📚";
   };
+
+  // Get lesson progress info
+  const lessonProgress = lesson ? getLessonProgressPercentage(lesson) : 0;
 
   return (
     <div className="min-h-screen bg-[#181c24] flex flex-col items-center px-4 pt-6">
@@ -77,10 +56,10 @@ export default function LessonCompletePage() {
             {getPerformanceMessage()}
           </p>
 
-          {/* Score Display */}
+          {/* Session Results */}
           <div className="w-full mb-6">
             <div className="text-3xl font-bold text-white mb-2 text-center">
-              {score} / {maxScore} points
+              {correct} / {total} réponses correctes
             </div>
             <div className="text-lg text-white/80 mb-4 text-center">
               {percentage}% de réussite
@@ -104,22 +83,45 @@ export default function LessonCompletePage() {
             </div>
           </div>
 
+          {/* Lesson Progress vs Session */}
+          <div className="w-full mb-6">
+            <div className="text-center mb-3">
+              <div className="text-sm text-[#b0b8c1] mb-1">Progression de la leçon</div>
+              <div className="text-lg font-bold text-white">{Math.round(lessonProgress)}%</div>
+            </div>
+            
+            {lessonProgress > 0 && (
+              <div className="progress-bar mb-2">
+                <div 
+                  className="progress-bar-inner"
+                  style={{ width: `${lessonProgress}%` }}
+                ></div>
+              </div>
+            )}
+            
+            {percentage > lessonProgress && (
+              <div className="text-center text-sm text-[#2ecc71]">
+                🎉 Nouveau record pour cette leçon !
+              </div>
+            )}
+          </div>
+
           {/* Achievements */}
           <div className="grid grid-cols-3 gap-4 mb-6 w-full">
             <div className="bg-[#232a36] rounded-lg p-3 text-center">
               <div className="text-2xl mb-1">🔥</div>
-              <div className="text-white font-semibold text-sm">Streak</div>
-              <div className="text-white/60 text-xs">5</div>
+              <div className="text-white font-semibold text-sm">Streak actuel</div>
+              <div className="text-white/60 text-xs">{currentStreak}</div>
             </div>
             <div className="bg-[#232a36] rounded-lg p-3 text-center">
               <div className="text-2xl mb-1">⭐</div>
-              <div className="text-white font-semibold text-sm">Score</div>
-              <div className="text-white/60 text-xs">{score} points</div>
+              <div className="text-white font-semibold text-sm">XP Total</div>
+              <div className="text-white/60 text-xs">{totalXP} points</div>
             </div>
             <div className="bg-[#232a36] rounded-lg p-3 text-center">
-              <div className="text-2xl mb-1">🎯</div>
-              <div className="text-white font-semibold text-sm">Précision</div>
-              <div className="text-white/60 text-xs">{percentage}%</div>
+              <div className="text-2xl mb-1">🏆</div>
+              <div className="text-white font-semibold text-sm">Meilleur streak</div>
+              <div className="text-white/60 text-xs">{bestStreak}</div>
             </div>
           </div>
 
@@ -137,33 +139,21 @@ export default function LessonCompletePage() {
             >
               📚 Autres leçons
             </BackToLessonsButton>
-            
-            {/* Debug button for testing */}
-            <button 
-              onClick={() => console.log('Complete page test:', { score, maxScore, percentage, lessonId })}
-              className="btn bg-[#ff6b6b] text-white hover:bg-[#ff5252] transition-colors"
-            >
-              🐛 Debug Info
-            </button>
           </div>
         </div>
       </div>
 
       {/* Next Lesson Preview */}
-      {lessonId === 1 && (
+      {lesson && (
         <div className="w-full max-w-xs">
-          <div className="card flex flex-col py-6 px-4 w-full">
-            <h3 className="text-lg font-bold text-white mb-4 text-center">Prochaine leçon</h3>
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="text-3xl">⚖️</div>
-              <div className="flex-1">
-                <h4 className="text-base font-semibold text-white">Équations</h4>
-                <p className="text-white/80 text-sm">Équations du premier degré</p>
-              </div>
-            </div>
-            <Link href="/maths/lesson/2">
-              <button className="btn bg-[#00baff] text-white hover:bg-[#0099cc] transition-colors">
-                Commencer
+          <div className="card p-4">
+            <h3 className="text-white font-semibold mb-2">Prochaine leçon suggérée</h3>
+            <p className="text-[#b0b8c1] text-sm mb-3">
+              Continue ton apprentissage avec la leçon suivante
+            </p>
+            <Link href="/maths">
+              <button className="btn bg-[#00baff] text-white hover:bg-[#0099cc] transition-colors w-full">
+                📚 Voir toutes les leçons
               </button>
             </Link>
           </div>

@@ -18,7 +18,7 @@ export default function LessonPage() {
   const router = useRouter();
   const lessonId = parseInt(params.id as string);
   
-  const { updateLessonProgress } = useLessonProgress();
+  const { updateLessonProgress, addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress('maths');
   const lesson = getLessonById(lessonId);
   
   // Get 10 random questions from the lesson
@@ -40,14 +40,19 @@ export default function LessonPage() {
     firstQuestion: lessonQuestions[0]?.question
   });
   
-  const [lessonScore, setLessonScore] = useState(0);
-  const [completedQuestions, setCompletedQuestions] = useState(0);
+  const [sessionScore, setSessionScore] = useState(0);
 
-  // Gérer la fin de session
-  const handleSessionComplete = (finalScore: number) => {
-    console.log('Session completed with score:', finalScore, 'rawScore:', rawScore);
-    // Rediriger vers la page de completion avec le score brut (points)
-    router.push(`/maths/lesson/${lessonId}/complete?score=${rawScore}`);
+  // Handle session completion
+  const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {
+    console.log('Session completed:', { finalScore, totalQuestions, correctAnswers });
+    // Redirect to completion page with session data
+    router.push(`/maths/lesson/${lessonId}/complete?score=${finalScore}&total=${totalQuestions}&correct=${correctAnswers}`);
+  };
+
+  // Handle individual answer for XP and streak updates
+  const handleAnswer = (isCorrect: boolean) => {
+    addXP(isCorrect);
+    updateStreak(isCorrect);
   };
   
   const {
@@ -56,8 +61,9 @@ export default function LessonPage() {
     selectedAnswer,
     showResult,
     isCorrect,
-    score,
-    rawScore,
+    sessionScore: currentSessionScore,
+    correctAnswers,
+    totalQuestions,
     streak,
     countdown,
     showOverlay,
@@ -66,14 +72,17 @@ export default function LessonPage() {
     progress,
     isLastQuestion,
     isPaused,
+    skippedQuestions,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
+    handleSkip,
     handleNext,
     togglePause
   } = useQuestionLogic({ 
     questions: lessonQuestions,
-    onComplete: handleSessionComplete
+    onComplete: handleSessionComplete,
+    onAnswer: handleAnswer
   });
 
   // Debug logging for questions
@@ -81,21 +90,18 @@ export default function LessonPage() {
     questionsCount: lessonQuestions.length || 0,
     currentQuestionIndex,
     isLastQuestion,
-    rawScore
+    correctAnswers,
+    totalQuestions
   });
 
-  // Sauvegarder la progression quand une question est terminée
+  // Save progress when session is completed
   useEffect(() => {
-    if (showResult && lesson && currentQuestionIndex < lessonQuestions.length) {
-      const newCompletedQuestions = completedQuestions + 1;
-      
-      setCompletedQuestions(newCompletedQuestions);
-      setLessonScore(score); // Utiliser le pourcentage pour l'affichage
-      
-      // Sauvegarder dans localStorage avec le score brut du hook
-      updateLessonProgress(lessonId, newCompletedQuestions, rawScore);
+    if (isLastQuestion && showResult && lesson) {
+      setSessionScore(currentSessionScore);
+      // Save lesson progress with session score and completed questions
+      updateLessonProgress(lessonId, currentSessionScore, totalQuestions);
     }
-  }, [showResult, isCorrect, lesson, lessonId, updateLessonProgress, currentQuestionIndex, score, rawScore, completedQuestions, lessonQuestions.length]);
+  }, [isLastQuestion, showResult, lesson, lessonId, updateLessonProgress, currentSessionScore, totalQuestions]);
 
   if (!lesson) {
     return (
@@ -110,7 +116,7 @@ export default function LessonPage() {
 
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Titre de la leçon */}
+      {/* Lesson title */}
       <div className="text-center pt-2 pb-1 px-4">
         <h1 className="text-lg font-bold text-white mb-1">{lesson.title}</h1>
         <p className="text-[#b0b8c1] text-xs">{lesson.description}</p>
@@ -119,17 +125,19 @@ export default function LessonPage() {
       {/* Progress Bar */}
       <ProgressBar 
         progress={progress}
-        score={lessonScore}
+        score={currentSessionScore}
         showScore={false}
       />
 
       {/* Stats Badges */}
       <StatsBadges 
-        streak={streak}
-        score={lessonScore}
-        completedLessons={0}
-        totalLessons={1}
+        xp={totalXP}
+        currentStreak={currentStreak}
+        bestStreak={bestStreak}
+        currentQuestion={currentQuestionIndex + 1}
+        totalQuestions={totalQuestions}
         showProgress={false}
+        showStreaks={true}
       />
 
       {/* Main Content */}
@@ -167,6 +175,7 @@ export default function LessonPage() {
               isPaused={isPaused}
               onVerify={handleSubmit}
               onNext={handleNext}
+              onSkip={handleSkip}
             />
           </>
         )}

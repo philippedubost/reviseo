@@ -10,35 +10,69 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
+import BackToLessonsButton from '@/src/components/BackToLessonsButton';
+import { useLessonProgress } from '@/src/hooks/useLessonProgress';
 
 export default function PracticePage() {
   const router = useRouter();
+  const { addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress('maths');
+  
   const [questions, setQuestions] = useState<Question[]>([]);
   const [survivalScore, setSurvivalScore] = useState(0);
-  const [gameOver, setGameOver] = useState(false);
   const [survivalRecord, setSurvivalRecord] = useState(0);
 
+  // Load survival record from localStorage
   useEffect(() => {
-    // Charger le record existant
     if (typeof window !== 'undefined') {
-      const savedRecord = localStorage.getItem('survivalRecord');
+      const savedRecord = localStorage.getItem('mathsSurvivalRecord');
       setSurvivalRecord(savedRecord ? parseInt(savedRecord) : 0);
     }
   }, []);
 
+  // Generate random questions
   useEffect(() => {
-    // Get random questions from all lessons
-    const randomQuestions = getRandomQuestionsFromAllLessons(50); // Plus de questions pour le survival
+    const randomQuestions = getRandomQuestionsFromAllLessons(50); // More questions for survival mode
     setQuestions(randomQuestions);
   }, []);
 
+  // Handle session completion (game over)
+  const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {
+    console.log('Survival mode completed:', { finalScore, totalQuestions, correctAnswers });
+    
+    // Update survival record if better
+    if (correctAnswers > survivalRecord) {
+      setSurvivalRecord(correctAnswers);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('mathsSurvivalRecord', correctAnswers.toString());
+      }
+    }
+    
+    // Redirect to home page or show game over screen
+    router.push('/maths');
+  };
+
+  // Handle individual answer for XP and streak updates
+  const handleAnswer = (isCorrect: boolean) => {
+    addXP(isCorrect);
+    updateStreak(isCorrect);
+    
+    if (isCorrect) {
+      setSurvivalScore(prev => prev + 1);
+    } else {
+      // Game over on wrong answer
+      handleSessionComplete(0, 0, survivalScore);
+    }
+  };
+  
   const {
     currentQuestion,
     currentQuestionIndex,
     selectedAnswer,
     showResult,
     isCorrect,
-    score,
+    sessionScore: currentSessionScore,
+    correctAnswers,
+    totalQuestions,
     streak,
     countdown,
     showOverlay,
@@ -47,85 +81,22 @@ export default function PracticePage() {
     progress,
     isLastQuestion,
     isPaused,
+    skippedQuestions,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
+    handleSkip,
     handleNext,
     togglePause
-  } = useQuestionLogic({ questions });
-
-  // Gérer le game over en mode survival
-  useEffect(() => {
-    if (showResult && !isCorrect) {
-      setGameOver(true);
-      setSurvivalScore(currentQuestionIndex);
-      
-      // Mettre à jour le record si nécessaire
-      if (currentQuestionIndex > survivalRecord) {
-        const newRecord = currentQuestionIndex;
-        setSurvivalRecord(newRecord);
-        localStorage.setItem('survivalRecord', newRecord.toString());
-      }
-    }
-  }, [showResult, isCorrect, currentQuestionIndex, survivalRecord]);
-
-  const handleRestart = () => {
-    setGameOver(false);
-    setSurvivalScore(0);
-    window.location.reload(); // Recharger avec de nouvelles questions
-  };
-
-  const handleBackToMenu = () => {
-    router.push('/maths');
-  };
-
-  if (questions.length === 0) {
-    return (
-      <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
-        <div className="text-white text-center">
-          <h1 className="text-2xl font-bold mb-4">Chargement...</h1>
-        </div>
-      </div>
-    );
-  }
-
-  if (gameOver) {
-    return (
-      <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
-        <div className="text-white text-center max-w-md mx-4">
-          <div className="text-6xl mb-6">💀</div>
-          <h1 className="text-3xl font-bold mb-4 text-[#ff6b6b]">GAME OVER</h1>
-          <div className="text-xl mb-2">Score: {survivalScore} questions</div>
-          <div className="text-lg mb-6 text-[#ffd700]">
-            🏆 Record: {survivalRecord} questions
-          </div>
-          {survivalScore === survivalRecord && survivalScore > 0 && (
-            <div className="text-lg mb-6 text-[#2ecc71]">
-              🎉 Nouveau record !
-            </div>
-          )}
-          <div className="flex flex-col gap-3">
-            <button
-              onClick={handleRestart}
-              className="btn bg-[#ff6b6b] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#ff5252] transition-colors"
-            >
-              🔄 Recommencer
-            </button>
-            <button
-              onClick={handleBackToMenu}
-              className="btn bg-[#232a36] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#2c3440] transition-colors"
-            >
-              🏠 Retour au menu
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  } = useQuestionLogic({ 
+    questions,
+    onComplete: handleSessionComplete,
+    onAnswer: handleAnswer
+  });
 
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Titre du mode Survival */}
+      {/* Survival Mode Title */}
       <div className="text-center pt-2 pb-1 px-4">
         <h1 className="text-lg font-bold text-white mb-1">Mode Survival</h1>
         <p className="text-[#b0b8c1] text-xs">Répondez au plus de questions sans vous tromper</p>
@@ -143,11 +114,13 @@ export default function PracticePage() {
 
       {/* Stats Badges */}
       <StatsBadges 
-        streak={streak}
-        score={survivalScore}
-        completedLessons={0}
-        totalLessons={1}
+        xp={totalXP}
+        currentStreak={currentStreak}
+        bestStreak={bestStreak}
+        currentQuestion={currentQuestionIndex + 1}
+        totalQuestions={totalQuestions}
         showProgress={false}
+        showStreaks={true}
       />
 
       {/* Main Content */}
@@ -185,6 +158,7 @@ export default function PracticePage() {
               isPaused={isPaused}
               onVerify={handleSubmit}
               onNext={handleNext}
+              onSkip={handleSkip}
             />
           </>
         )}

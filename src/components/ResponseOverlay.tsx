@@ -40,22 +40,24 @@ export default function ResponseOverlay({
         </div>
         <div className={`text-sm mb-6 ${isCorrect ? 'text-[#181c24]/60' : 'text-white/60'}`}>
           {isPaused ? (
-            <span>⏸️ Pause - Cliquez pour continuer</span>
+            <span>⏸️ Pause - Cliquez sur Suivant pour continuer</span>
           ) : (
             <span>Question suivante dans {countdown} seconde{countdown !== 1 ? 's' : ''}</span>
           )}
         </div>
         <div className="flex gap-3 justify-center">
-          <button
-            onClick={onTogglePause}
-            className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
-              isCorrect 
-                ? 'bg-[#181c24] text-[#2ecc71] hover:bg-[#181c24]/90' 
-                : 'bg-white text-[#ff4d6d] hover:bg-white/90'
-            }`}
-          >
-            {isPaused ? '▶️ Continuer' : '⏸️ Pause'}
-          </button>
+          {!isPaused && (
+            <button
+              onClick={onTogglePause}
+              className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                isCorrect 
+                  ? 'bg-[#181c24] text-[#2ecc71] hover:bg-[#181c24]/90' 
+                  : 'bg-white text-[#ff4d6d] hover:bg-white/90'
+              }`}
+            >
+              ⏸️ Pause
+            </button>
+          )}
           <button
             onClick={onNext}
             className={`px-4 py-2 rounded-lg font-semibold transition-colors ${

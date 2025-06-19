@@ -391,11 +391,12 @@ export const lessons: Lesson[] = [
       },
       {
         id: 4,
-        type: 'calculation',
+        type: 'multiple-choice',
         difficulty: 2,
-        question: 'Dans un triangle rectangle, si l\'hypoténuse mesure 10 cm et un angle aigu mesure 30°, quelle est la longueur du côté adjacent à cet angle ?',
-        correctAnswer: '8.66',
-        explanation: 'cos(30°) = côté adjacent / hypoténuse, donc côté adjacent = 10 × cos(30°) ≈ 8.66',
+        question: "Dans un triangle rectangle, si l'hypoténuse mesure 10 cm et un angle aigu mesure 30°, quelle est la longueur du côté adjacent à cet angle ?",
+        options: ['5 cm', '8.66 cm', '10 cm', '15 cm'],
+        correctAnswer: '8.66 cm',
+        explanation: 'cos(30°) = côté adjacent / hypoténuse, donc côté adjacent = 10 × cos(30°) ≈ 8.66 cm',
         points: 10
       },
       {
@@ -486,11 +487,12 @@ export const lessons: Lesson[] = [
       },
       {
         id: 14,
-        type: 'calculation',
+        type: 'multiple-choice',
         difficulty: 2,
-        question: 'Dans un triangle rectangle, si l\'hypoténuse mesure 15 cm et un angle aigu mesure 45°, quelle est la longueur du côté opposé ?',
-        correctAnswer: '10.61',
-        explanation: 'sin(45°) = côté opposé / hypoténuse, donc côté opposé = 15 × sin(45°) ≈ 10.61',
+        question: "Dans un triangle rectangle, si l'hypoténuse mesure 15 cm et un angle aigu mesure 45°, quelle est la longueur du côté opposé ?",
+        options: ['10.61 cm', '7.5 cm', '12 cm', '15 cm'],
+        correctAnswer: '10.61 cm',
+        explanation: 'sin(45°) = côté opposé / hypoténuse, donc côté opposé = 15 × sin(45°) ≈ 10.61 cm',
         points: 10
       },
       {
@@ -581,11 +583,12 @@ export const lessons: Lesson[] = [
       },
       {
         id: 24,
-        type: 'calculation',
+        type: 'multiple-choice',
         difficulty: 2,
-        question: 'Dans un triangle rectangle, si l\'hypoténuse mesure 20 cm et un angle aigu mesure 60°, quelle est la longueur du côté adjacent ?',
-        correctAnswer: '10',
-        explanation: 'cos(60°) = côté adjacent / hypoténuse, donc côté adjacent = 20 × cos(60°) = 20 × 0.5 = 10',
+        question: "Dans un triangle rectangle, si l'hypoténuse mesure 20 cm et un angle aigu mesure 60°, quelle est la longueur du côté adjacent ?",
+        options: ['10 cm', '20 cm', '17.32 cm', '15 cm'],
+        correctAnswer: '10 cm',
+        explanation: 'cos(60°) = côté adjacent / hypoténuse, donc côté adjacent = 20 × cos(60°) = 20 × 0.5 = 10 cm',
         points: 10
       },
       {

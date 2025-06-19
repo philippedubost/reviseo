@@ -29,41 +29,32 @@ export default function ActionButton({
     <div className="flex flex-col gap-2">
       {!showResult ? (
         <div className="flex flex-col gap-2">
-          {questionType === 'calculation' ? (
-            <button
-              className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"
-              onClick={onVerify}
-              disabled={!selectedAnswer}
-            >
-              Vérifier
-            </button>
-          ) : (
-            <button
-              className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold w-full max-w-md"
-              onClick={onVerify}
-              disabled={!selectedAnswer}
-            >
-              Valider
-            </button>
-          )}
-          
-          {/* Skip button - only show when no answer is selected */}
-          {!selectedAnswer && onSkip && (
-            <button
-              className="btn bg-[#6c757d] text-white text-sm w-full max-w-md opacity-80 hover:opacity-100 transition-opacity"
-              onClick={onSkip}
-            >
-              ⏭️ Passer cette question
-            </button>
-          )}
+          {/* Action buttons row */}
+          <div className="flex gap-2 w-[95%] mx-auto">
+            {/* Main action button (Valider/Vérifier) - only for calculation questions */}
+            {questionType === 'calculation' && (
+              <button
+                className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold flex-1"
+                onClick={onVerify}
+                disabled={!selectedAnswer}
+              >
+                Vérifier
+              </button>
+            )}
+            
+            {/* Skip button - only show when no answer is selected */}
+            {!selectedAnswer && onSkip && (
+              <button
+                className={`btn bg-[#6c757d] text-white text-sm hover:bg-[#5a6268] transition-colors border border-[#495057] ${
+                  questionType === 'calculation' ? 'flex-1' : 'w-[95%] mx-auto'
+                }`}
+                onClick={onSkip}
+              >
+                ⏭️ Passer
+              </button>
+            )}
+          </div>
         </div>
-      ) : showResult && (!showOverlay || isPaused) ? (
-        <button
-          className={`btn text-lg font-bold w-full max-w-md ${isCorrect ? 'bg-[#00baff] text-white' : 'bg-[#ff4d6d] text-white'}`}
-          onClick={onNext}
-        >
-          {isLastQuestion ? 'Terminer' : `Question suivante${countdown !== null && !isPaused ? ` (${countdown})` : ''}`}
-        </button>
       ) : null}
     </div>
   );

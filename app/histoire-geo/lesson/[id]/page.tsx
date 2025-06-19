@@ -45,9 +45,9 @@ export default function HistoireGeoLessonPage() {
 
   // Gérer la fin de session
   const handleSessionComplete = (finalScore: number) => {
-    console.log('Session completed with score:', finalScore, 'rawScore:', rawScore);
-    // Rediriger vers la page de completion avec le score brut (points)
-    router.push(`/histoire-geo/lesson/${lessonId}/complete?score=${rawScore}`);
+    console.log('Session completed with score:', finalScore);
+    // Rediriger vers la page de completion avec le score (pourcentage)
+    router.push(`/histoire-geo/lesson/${lessonId}/complete?score=${finalScore}`);
   };
   
   const {
@@ -56,8 +56,7 @@ export default function HistoireGeoLessonPage() {
     selectedAnswer,
     showResult,
     isCorrect,
-    score,
-    rawScore,
+    sessionScore,
     streak,
     countdown,
     showOverlay,
@@ -81,21 +80,19 @@ export default function HistoireGeoLessonPage() {
     questionsCount: lessonQuestions.length || 0,
     currentQuestionIndex,
     isLastQuestion,
-    rawScore
+    sessionScore
   });
 
   // Sauvegarder la progression quand une question est terminée
   useEffect(() => {
     if (showResult && lesson && currentQuestionIndex < lessonQuestions.length) {
       const newCompletedQuestions = completedQuestions + 1;
-      
       setCompletedQuestions(newCompletedQuestions);
-      setLessonScore(score); // Utiliser le pourcentage pour l'affichage
-      
-      // Sauvegarder dans localStorage avec le score brut du hook
-      updateLessonProgress(lessonId, newCompletedQuestions, rawScore);
+      setLessonScore(sessionScore); // Utiliser le pourcentage pour l'affichage
+      // Sauvegarder dans localStorage avec le score (pourcentage)
+      updateLessonProgress(lessonId, sessionScore, newCompletedQuestions);
     }
-  }, [showResult, isCorrect, lesson, lessonId, updateLessonProgress, currentQuestionIndex, score, rawScore, completedQuestions, lessonQuestions.length]);
+  }, [showResult, isCorrect, lesson, lessonId, updateLessonProgress, currentQuestionIndex, sessionScore, completedQuestions, lessonQuestions.length]);
 
   if (!lesson) {
     return (
@@ -125,8 +122,6 @@ export default function HistoireGeoLessonPage() {
 
       {/* Stats Badges */}
       <StatsBadges 
-        streak={streak}
-        score={lessonScore}
         completedLessons={0}
         totalLessons={1}
         showProgress={false}

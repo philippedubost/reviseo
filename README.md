@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reviseo - Plateforme de Révision Interactive
 
-## Getting Started
+Une application web moderne pour la révision et la préparation aux examens, spécialement conçue pour le brevet des collèges.
 
-First, run the development server:
+## 🎯 Fonctionnalités
 
+- **📚 Matières Multiples** : Mathématiques, Français, Sciences, Histoire-Géographie
+- **🎓 Leçons Structurées** : Contenu progressif et adapté au niveau
+- **🎲 Questions Aléatoires** : Évite la mémorisation par cœur
+- **📊 Suivi de Progression** : Statistiques détaillées et objectifs
+- **🔄 Interface Intuitive** : Navigation fluide et responsive
+
+## 🚀 Démarrage Rapide
+
+### Prérequis
+- Node.js 18+ 
+- npm ou yarn
+
+### Installation
 ```bash
+# Cloner le projet
+git clone [url-du-repo]
+cd reviseo
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Structure du Projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+reviseo/
+├── app/                    # Pages Next.js (App Router)
+├── src/
+│   ├── components/         # Composants React réutilisables
+│   ├── data/              # Données des leçons
+│   ├── hooks/             # Hooks personnalisés
+│   └── utils/             # Utilitaires
+├── public/                # Assets statiques
+└── docs/                  # Documentation technique
+    ├── CHANGELOG.md       # Historique des versions
+    └── changelog/         # Détails des améliorations
+```
 
-## Learn More
+## 🛠️ Technologies
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework** : Next.js 14 (App Router)
+- **Langage** : TypeScript
+- **Styling** : Tailwind CSS
+- **État** : React Hooks
+- **Déploiement** : Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **[Changelog complet](./docs/CHANGELOG.md)** - Historique des versions et améliorations
+- **[Documentation technique](./docs/)** - Détails d'implémentation
+- **[Améliorations détaillées](./docs/changelog/)** - Documentation spécifique
 
-## Deploy on Vercel
+## 🎨 Fonctionnalités Clés
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Système de Questions
+- Mélange aléatoire des options (algorithme Fisher-Yates)
+- Questions non répétitives pour un apprentissage optimal
+- Validation intelligente des réponses
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Navigation Améliorée
+- Bouton de retour contextuel
+- Historique de navigation
+- Interface responsive
+
+### Suivi de Progression
+- Barres de progression visuelles
+- Statistiques par matière
+- Système de récompenses
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créez une branche pour votre fonctionnalité
+3. Committez vos changements
+4. Poussez vers la branche
+5. Ouvrez une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+---
+
+**Reviseo** - Rendez l'apprentissage plus efficace et engageant ! 🚀

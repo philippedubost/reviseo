@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { getRandomQuestionsFromAllLessons, type Question } from '@/src/data/histoireGeoLessons';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 import ProgressBar from '@/src/components/ProgressBar';
 import StatsBadges from '@/src/components/StatsBadges';
@@ -10,39 +9,70 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
+import { useLessonProgress, type Subject } from '@/src/hooks/useLessonProgress';
+import type { Question } from '@/src/data/lessons';
 
-export default function HistoireGeoPracticePage() {
+interface GenericPracticePageProps {
+  subject: Subject;
+  subjectPath: string;
+  subjectName: string;
+  getRandomQuestionsFromAllLessons: (count: number) => Question[];
+}
+
+export default function GenericPracticePage({ 
+  subject, 
+  subjectPath, 
+  subjectName, 
+  getRandomQuestionsFromAllLessons 
+}: GenericPracticePageProps) {
   const router = useRouter();
+  const { addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
+  
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [survivalScore, setSurvivalScore] = useState(0);
   const [survivalRecord, setSurvivalRecord] = useState(0);
-  const [currentRecord, setCurrentRecord] = useState(0);
 
-  // Charger le record de survival depuis localStorage
+  // Load survival record from localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const savedRecord = localStorage.getItem('histoireGeoSurvivalRecord');
+      const savedRecord = localStorage.getItem(`${subject}SurvivalRecord`);
       setSurvivalRecord(savedRecord ? parseInt(savedRecord) : 0);
     }
-  }, []);
+  }, [subject]);
 
-  // Générer des questions aléatoires
+  // Generate random questions
   useEffect(() => {
-    const randomQuestions = getRandomQuestionsFromAllLessons(50); // Plus de questions pour le survival
+    const randomQuestions = getRandomQuestionsFromAllLessons(50); // More questions for survival mode
     setQuestions(randomQuestions);
-  }, []);
+  }, [getRandomQuestionsFromAllLessons]);
 
-  // Gérer la fin de session (game over)
+  // Handle session completion (game over)
   const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {
-    console.log('Survival session ended:', { finalScore, totalQuestions, correctAnswers, questionsAnswered: currentRecord });
+    console.log('Survival mode completed:', { finalScore, totalQuestions, correctAnswers });
     
-    // Mettre à jour le record si nécessaire
-    if (currentRecord > survivalRecord) {
-      localStorage.setItem('histoireGeoSurvivalRecord', currentRecord.toString());
-      setSurvivalRecord(currentRecord);
+    // Update survival record if better
+    if (correctAnswers > survivalRecord) {
+      setSurvivalRecord(correctAnswers);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(`${subject}SurvivalRecord`, correctAnswers.toString());
+      }
     }
     
-    // Rediriger vers une page de game over ou retour à l'accueil
-    router.push('/histoire-geo');
+    // Redirect to home page or show game over screen
+    router.push(`/${subjectPath}`);
+  };
+
+  // Handle individual answer for XP and streak updates
+  const handleAnswer = (isCorrect: boolean) => {
+    addXP(isCorrect);
+    updateStreak(isCorrect);
+    
+    if (isCorrect) {
+      setSurvivalScore(prev => prev + 1);
+    } else {
+      // Game over on wrong answer
+      handleSessionComplete(0, 0, survivalScore);
+    }
   };
   
   const {
@@ -71,68 +101,38 @@ export default function HistoireGeoPracticePage() {
     togglePause
   } = useQuestionLogic({ 
     questions,
-    onComplete: handleSessionComplete
+    onComplete: handleSessionComplete,
+    onAnswer: handleAnswer
   });
-
-  // Mettre à jour le compteur de questions répondues
-  useEffect(() => {
-    if (showResult) {
-      setCurrentRecord(currentQuestionIndex + 1);
-    }
-  }, [showResult, currentQuestionIndex]);
-
-  // Gérer la réponse incorrecte (game over immédiat)
-  useEffect(() => {
-    if (showResult && !isCorrect) {
-      // Mettre à jour le record si nécessaire
-      if (currentRecord > survivalRecord) {
-        localStorage.setItem('histoireGeoSurvivalRecord', currentRecord.toString());
-        setSurvivalRecord(currentRecord);
-      }
-      
-      // Attendre un peu avant de rediriger
-      setTimeout(() => {
-        router.push('/histoire-geo');
-      }, 2000);
-    }
-  }, [showResult, isCorrect, currentRecord, survivalRecord, router]);
 
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Titre */}
+      {/* Survival Mode Title */}
       <div className="text-center pt-2 pb-1 px-4">
-        <h1 className="text-lg font-bold text-white mb-1">Mode Survival - Histoire-Géo</h1>
-        <p className="text-[#b0b8c1] text-xs">Réponds au plus de questions sans te tromper</p>
+        <h1 className="text-lg font-bold text-white mb-1">Mode Survival - {subjectName}</h1>
+        <p className="text-[#b0b8c1] text-xs">Répondez au plus de questions sans vous tromper</p>
+        <div className="text-xs text-[#ffd700] mt-1">
+          🏆 Record: {survivalRecord} questions
+        </div>
       </div>
 
       {/* Progress Bar */}
       <ProgressBar 
         progress={progress}
-        score={currentRecord}
+        score={survivalScore}
         showScore={false}
       />
 
       {/* Stats Badges */}
       <StatsBadges 
-        xp={currentRecord}
-        currentStreak={streak}
-        bestStreak={survivalRecord}
+        xp={totalXP}
+        currentStreak={currentStreak}
+        bestStreak={bestStreak}
         currentQuestion={currentQuestionIndex + 1}
         totalQuestions={totalQuestions}
         showProgress={false}
         showStreaks={true}
       />
-
-      {/* Record Display */}
-      <div className="px-4 py-2">
-        <div className="card p-3 text-center">
-          <div className="text-sm text-[#b0b8c1] mb-1">Questions répondues</div>
-          <div className="text-2xl font-bold text-white">{currentRecord}</div>
-          <div className="text-xs text-[#ffd700] mt-1">
-            🏆 Record: {survivalRecord} questions
-          </div>
-        </div>
-      </div>
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col justify-start px-4 pt-4">
@@ -189,26 +189,6 @@ export default function HistoireGeoPracticePage() {
           />
         )}
       </div>
-
-      {/* Game Over Warning */}
-      {showResult && !isCorrect && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="card p-6 text-center max-w-sm mx-4">
-            <div className="text-4xl mb-4">💀</div>
-            <h2 className="text-xl font-bold text-white mb-2">Game Over !</h2>
-            <p className="text-[#b0b8c1] mb-4">
-              Tu as répondu à {currentRecord} questions correctement.
-              {currentRecord > survivalRecord && ' Nouveau record ! 🏆'}
-            </p>
-            <button 
-              onClick={() => router.push('/histoire-geo')}
-              className="btn bg-[#00baff] text-white font-bold px-6 py-2 rounded-lg"
-            >
-              Retour à l'accueil
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 } 

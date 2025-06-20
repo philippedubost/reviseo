@@ -1,3 +1,5 @@
+'use client';
+
 import GenericSubjectPage from '@/src/components/GenericSubjectPage';
 import { getAllLessons } from '@/src/data/lessons';
 import { useLessonProgress } from '@/src/hooks/useLessonProgress';

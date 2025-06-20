@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { getAllLessons, type Lesson } from '../data/lessons';
 import { getAllLessons as getAllHistoireGeoLessons } from '../data/histoireGeoLessons';

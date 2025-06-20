@@ -18,7 +18,7 @@ export default function HistoireGeoLessonPage() {
   const router = useRouter();
   const lessonId = parseInt(params.id as string);
   
-  const { updateLessonProgress } = useLessonProgress('histoireGeo');
+  const { updateLessonProgress, addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress('histoireGeo');
   const lesson = getLessonById(lessonId);
   
   // Get 10 random questions from the lesson
@@ -40,14 +40,19 @@ export default function HistoireGeoLessonPage() {
     firstQuestion: lessonQuestions[0]?.question
   });
   
-  const [lessonScore, setLessonScore] = useState(0);
-  const [completedQuestions, setCompletedQuestions] = useState(0);
+  const [sessionScore, setSessionScore] = useState(0);
 
-  // Gérer la fin de session
-  const handleSessionComplete = (finalScore: number) => {
-    console.log('Session completed with score:', finalScore);
-    // Rediriger vers la page de completion avec le score (pourcentage)
-    router.push(`/histoire-geo/lesson/${lessonId}/complete?score=${finalScore}`);
+  // Handle session completion
+  const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {
+    console.log('Session completed:', { finalScore, totalQuestions, correctAnswers });
+    // Redirect to completion page with session data
+    router.push(`/histoire-geo/lesson/${lessonId}/complete?score=${finalScore}&total=${totalQuestions}&correct=${correctAnswers}`);
+  };
+
+  // Handle individual answer for XP and streak updates
+  const handleAnswer = (isCorrect: boolean) => {
+    addXP(isCorrect);
+    updateStreak(isCorrect);
   };
   
   const {
@@ -56,7 +61,9 @@ export default function HistoireGeoLessonPage() {
     selectedAnswer,
     showResult,
     isCorrect,
-    sessionScore,
+    sessionScore: currentSessionScore,
+    correctAnswers,
+    totalQuestions,
     streak,
     countdown,
     showOverlay,
@@ -65,14 +72,17 @@ export default function HistoireGeoLessonPage() {
     progress,
     isLastQuestion,
     isPaused,
+    skippedQuestions,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
+    handleSkip,
     handleNext,
     togglePause
   } = useQuestionLogic({ 
     questions: lessonQuestions,
-    onComplete: handleSessionComplete
+    onComplete: handleSessionComplete,
+    onAnswer: handleAnswer
   });
 
   // Debug logging for questions
@@ -80,19 +90,18 @@ export default function HistoireGeoLessonPage() {
     questionsCount: lessonQuestions.length || 0,
     currentQuestionIndex,
     isLastQuestion,
-    sessionScore
+    correctAnswers,
+    totalQuestions
   });
 
-  // Sauvegarder la progression quand une question est terminée
+  // Save progress when session is completed
   useEffect(() => {
-    if (showResult && lesson && currentQuestionIndex < lessonQuestions.length) {
-      const newCompletedQuestions = completedQuestions + 1;
-      setCompletedQuestions(newCompletedQuestions);
-      setLessonScore(sessionScore); // Utiliser le pourcentage pour l'affichage
-      // Sauvegarder dans localStorage avec le score (pourcentage)
-      updateLessonProgress(lessonId, sessionScore, newCompletedQuestions);
+    if (isLastQuestion && showResult && lesson) {
+      setSessionScore(currentSessionScore);
+      // Save lesson progress with session score and completed questions
+      updateLessonProgress(lessonId, currentSessionScore, totalQuestions);
     }
-  }, [showResult, isCorrect, lesson, lessonId, updateLessonProgress, currentQuestionIndex, sessionScore, completedQuestions, lessonQuestions.length]);
+  }, [isLastQuestion, showResult, lesson, lessonId, updateLessonProgress, currentSessionScore, totalQuestions]);
 
   if (!lesson) {
     return (
@@ -116,15 +125,19 @@ export default function HistoireGeoLessonPage() {
       {/* Progress Bar */}
       <ProgressBar 
         progress={progress}
-        score={lessonScore}
+        score={currentSessionScore}
         showScore={false}
       />
 
       {/* Stats Badges */}
       <StatsBadges 
-        completedLessons={0}
-        totalLessons={1}
+        xp={totalXP}
+        currentStreak={currentStreak}
+        bestStreak={bestStreak}
+        currentQuestion={currentQuestionIndex + 1}
+        totalQuestions={totalQuestions}
         showProgress={false}
+        showStreaks={true}
       />
 
       {/* Main Content */}
@@ -162,6 +175,7 @@ export default function HistoireGeoLessonPage() {
               isPaused={isPaused}
               onVerify={handleSubmit}
               onNext={handleNext}
+              onSkip={handleSkip}
             />
           </>
         )}

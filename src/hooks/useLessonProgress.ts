@@ -1,12 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getAllLessons, type Lesson } from '../data/lessons';
-import { getAllLessons as getAllHistoireGeoLessons } from '../data/histoireGeoLessons';
-import { getAllLessons as getAllFrancaisLessons } from '../data/francaisLessons';
-import { getAllLessons as getAllSciencesLessons } from '../data/sciencesLessons';
+import { getAllSubjects, getSubjectById, getAllLessonsForSubject, type Subject, type Lesson } from '../data/subjects';
 
-export type Subject = 'maths' | 'histoireGeo' | 'francais' | 'sciences';
+export type SubjectType = 'maths' | 'histoireGeo' | 'francais' | 'sciences';
 
 interface LessonProgress {
   completedQuestions: number;
@@ -22,7 +19,7 @@ interface SubjectProgress {
   lessonsProgress: Record<number, LessonProgress>;
 }
 
-export function useLessonProgress(subject: Subject = 'maths') {
+export function useLessonProgress(subject: SubjectType = 'maths') {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [totalXP, setTotalXP] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
@@ -161,22 +158,8 @@ export function useLessonProgress(subject: Subject = 'maths') {
 
   // Initialize data
   useEffect(() => {
-    // Load lessons based on subject
-    let allLessons: Lesson[];
-    switch (subject) {
-      case 'histoireGeo':
-        allLessons = getAllHistoireGeoLessons();
-        break;
-      case 'francais':
-        allLessons = getAllFrancaisLessons();
-        break;
-      case 'sciences':
-        allLessons = getAllSciencesLessons();
-        break;
-      default:
-        allLessons = getAllLessons();
-    }
-    
+    // Load lessons from unified data structure
+    const allLessons = getAllLessonsForSubject(subject);
     const progress = loadProgress();
     
     // Update lessons with saved progress

@@ -1,77 +1,102 @@
 'use client';
 
-import { useSearchParams, useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
-import type { Lesson } from '@/src/data/lessons';
 import { useState, useEffect } from 'react';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
+import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
+import { getLessonById, type Lesson } from '@/src/data/subjects';
+import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 
 interface GenericLessonCompletePageProps {
   subjectPath: string;
-  subjectName: string;
 }
 
+// Mapping from subject path to Subject type
+const subjectPathToType: Record<string, SubjectType> = {
+  'maths': 'maths',
+  'francais': 'francais',
+  'sciences': 'sciences',
+  'histoire-geo': 'histoireGeo'
+};
+
 export default function GenericLessonCompletePage({ 
-  subjectPath, 
-  subjectName
+  subjectPath
 }: GenericLessonCompletePageProps) {
-  const searchParams = useSearchParams();
   const params = useParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const lessonId = parseInt(params.id as string);
   
-  const scoreParam = searchParams.get('score');
-  const totalParam = searchParams.get('total');
-  const correctParam = searchParams.get('correct');
+  const subject = subjectPathToType[subjectPath];
+  const { updateLessonProgress, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
   
-  const score = scoreParam ? Number(scoreParam) : 0;
-  const total = totalParam ? Number(totalParam) : 0;
-  const correct = correctParam ? Number(correctParam) : 0;
-  const lessonId = Number(params.id);
+  // Get session data from URL params
+  const sessionScore = parseInt(searchParams.get('score') || '0');
+  const totalQuestions = parseInt(searchParams.get('total') || '0');
+  const correctAnswers = parseInt(searchParams.get('correct') || '0');
   
-  // Get lesson based on subject path
+  // Get lesson data
   const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
   
   useEffect(() => {
-    let getLessonById: (id: number) => Lesson | undefined;
-    
-    switch (subjectPath) {
-      case 'maths':
-        getLessonById = require('@/src/data/lessons').getLessonById;
-        break;
-      case 'francais':
-        getLessonById = require('@/src/data/francaisLessons').getLessonById;
-        break;
-      case 'histoire-geo':
-        getLessonById = require('@/src/data/histoireGeoLessons').getLessonById;
-        break;
-      case 'sciences':
-        getLessonById = require('@/src/data/sciencesLessons').getLessonById;
-        break;
-      default:
-        getLessonById = require('@/src/data/lessons').getLessonById;
-    }
-    
-    const currentLesson = getLessonById(lessonId);
+    const currentLesson = getLessonById(subject, lessonId);
     setLesson(currentLesson);
-  }, [subjectPath, lessonId]);
+  }, [subject, lessonId]);
   
-  // Debug logging
-  console.log(`${subjectName} complete page loaded:`, { score, total, correct, lessonId, lesson: !!lesson, scoreParam });
+  // Calculate percentage
+  const percentage = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
   
-  // Validate score
-  if (isNaN(score) || score < 0) {
-    console.error('Invalid score:', scoreParam);
-  }
+  // Determine emoji and message based on performance
+  const getPerformanceData = () => {
+    if (percentage >= 90) {
+      return {
+        emoji: '🏆',
+        message: 'Excellent ! Vous maîtrisez parfaitement cette leçon !',
+        color: 'text-[#ffd700]'
+      };
+    } else if (percentage >= 70) {
+      return {
+        emoji: '🎉',
+        message: 'Très bien ! Vous avez une bonne compréhension.',
+        color: 'text-[#2ecc71]'
+      };
+    } else if (percentage >= 50) {
+      return {
+        emoji: '👍',
+        message: 'Pas mal ! Continuez à vous entraîner.',
+        color: 'text-[#f39c12]'
+      };
+    } else {
+      return {
+        emoji: '💪',
+        message: 'Ne vous découragez pas ! La pratique rend parfait.',
+        color: 'text-[#e74c3c]'
+      };
+    }
+  };
   
-  // If no score provided, redirect to lesson page
-  if (!scoreParam) {
-    console.log('No score provided, redirecting to lesson page');
+  const performance = getPerformanceData();
+  
+  // Save progress when component mounts
+  useEffect(() => {
+    if (lesson && sessionScore > 0) {
+      updateLessonProgress(lessonId, sessionScore, totalQuestions);
+    }
+  }, [lesson, lessonId, sessionScore, totalQuestions, updateLessonProgress]);
+  
+  const handleRetry = () => {
     router.push(`/${subjectPath}/lesson/${lessonId}`);
-    return null;
-  }
+  };
+  
+  const handleNextLesson = () => {
+    // Find next lesson
+    const nextLessonId = lessonId + 1;
+    router.push(`/${subjectPath}/lesson/${nextLessonId}`);
+  };
+  
+  const handleBackToLessons = () => {
+    router.push(`/${subjectPath}`);
+  };
 
-  // Handle case where lesson is not found
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
@@ -83,101 +108,76 @@ export default function GenericLessonCompletePage({
     );
   }
 
-  // Calculate performance metrics
-  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const isPerfect = percentage === 100;
-  const isGood = percentage >= 80;
-  const isPassing = percentage >= 60;
-
-  const getPerformanceEmoji = () => {
-    if (isPerfect) return '🏆';
-    if (isGood) return '🎉';
-    if (isPassing) return '✅';
-    return '💪';
-  };
-
-  const getPerformanceMessage = () => {
-    if (isPerfect) return 'Parfait ! Excellent travail !';
-    if (isGood) return 'Très bien ! Continue comme ça !';
-    if (isPassing) return 'Bien joué ! Tu progresses !';
-    return 'Continue à t\'entraîner, tu vas y arriver !';
-  };
-
-  const getPerformanceColor = () => {
-    if (isPerfect) return 'text-[#ffd700]';
-    if (isGood) return 'text-[#2ecc71]';
-    if (isPassing) return 'text-[#f39c12]';
-    return 'text-[#e74c3c]';
-  };
-
   return (
-    <div className="min-h-screen bg-[#181c24] flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-md flex flex-col items-center">
-        {/* Performance Display */}
-        <div className="card p-6 text-center mb-6 w-full">
-          <div className="text-6xl mb-4">{getPerformanceEmoji()}</div>
-          <h1 className="text-2xl font-bold text-white mb-2">{getPerformanceMessage()}</h1>
-          <p className="text-[#b0b8c1] mb-4">
-            Tu as répondu à {correct} questions correctement sur {total}
-          </p>
-          
-          {/* Score Display */}
-          <div className={`text-4xl font-bold mb-2 ${getPerformanceColor()}`}>
-            {percentage}%
-          </div>
-          
-          {/* Score Bar */}
-          <div className="w-full bg-[#232a36] rounded-full h-3 mb-4">
-            <div 
-              className={`h-3 rounded-full transition-all duration-1000 ${
-                isPerfect ? 'bg-[#ffd700]' :
-                isGood ? 'bg-[#2ecc71]' :
-                isPassing ? 'bg-[#f39c12]' : 'bg-[#e74c3c]'
-              }`}
-              style={{ width: `${percentage}%` }}
-            ></div>
-          </div>
-          
-          {/* Lesson Info */}
-          <div className="text-sm text-[#b0b8c1]">
-            <p className="font-semibold text-white">{lesson.title}</p>
-            <p>{lesson.description}</p>
-          </div>
-        </div>
+    <div className="min-h-screen bg-[#181c24] flex flex-col">
+      {/* Header */}
+      <div className="text-center pt-8 pb-6 px-4">
+        <div className="text-6xl mb-4">{performance.emoji}</div>
+        <h1 className="text-2xl font-bold text-white mb-2">Leçon terminée !</h1>
+        <p className={`text-lg font-semibold ${performance.color} mb-2`}>
+          {performance.message}
+        </p>
+        <p className="text-[#b0b8c1] text-sm">{lesson.title}</p>
+      </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-3 w-full">
-          <Link href={`/${subjectPath}/lesson/${lessonId}`}>
-            <button className="btn bg-[#232a36] text-white hover:bg-[#2a323e] transition-colors w-full">
-              🔄 Recommencer
-            </button>
-          </Link>
+      {/* Stats Cards */}
+      <div className="px-4 mb-6">
+        <div className="grid grid-cols-2 gap-4">
+          {/* Score Card */}
+          <div className="card p-4 text-center">
+            <div className="text-2xl font-bold text-white mb-1">{percentage}%</div>
+            <div className="text-[#b0b8c1] text-xs">Score</div>
+          </div>
           
-          <BackToLessonsButton 
-            subject={subjectPath as 'maths' | 'francais' | 'histoire-geo' | 'sciences'} 
-            className="btn bg-[#2ecc71] text-[#181c24] hover:bg-[#27ae60] transition-colors w-full"
-          >
-            📚 Autres leçons
-          </BackToLessonsButton>
+          {/* Questions Card */}
+          <div className="card p-4 text-center">
+            <div className="text-2xl font-bold text-white mb-1">{correctAnswers}/{totalQuestions}</div>
+            <div className="text-[#b0b8c1] text-xs">Réponses correctes</div>
+          </div>
         </div>
       </div>
 
-      {/* Next Lesson Preview */}
-      {lesson && (
-        <div className="w-full max-w-xs mt-6">
-          <div className="card p-4">
-            <h3 className="text-white font-semibold mb-2">Prochaine leçon suggérée</h3>
-            <p className="text-[#b0b8c1] text-sm mb-3">
-              Continue ton apprentissage avec la leçon suivante
-            </p>
-            <Link href={`/${subjectPath}`}>
-              <button className="btn bg-[#00baff] text-white hover:bg-[#0099cc] transition-colors w-full">
-                📚 Voir toutes les leçons
-              </button>
-            </Link>
+      {/* XP and Streak Info */}
+      <div className="px-4 mb-6">
+        <div className="card p-4">
+          <div className="flex justify-between items-center mb-3">
+            <span className="text-[#b0b8c1] text-sm">XP Total</span>
+            <span className="text-white font-semibold">{totalXP}</span>
+          </div>
+          <div className="flex justify-between items-center mb-3">
+            <span className="text-[#b0b8c1] text-sm">Série actuelle</span>
+            <span className="text-white font-semibold">{currentStreak}</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="text-[#b0b8c1] text-sm">Meilleure série</span>
+            <span className="text-white font-semibold">{bestStreak}</span>
           </div>
         </div>
-      )}
+      </div>
+
+      {/* Action Buttons */}
+      <div className="px-4 mb-6 space-y-3">
+        <button
+          onClick={handleRetry}
+          className="w-full bg-[#2ecc71] hover:bg-[#27ae60] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+        >
+          🔄 Réessayer
+        </button>
+        
+        <button
+          onClick={handleNextLesson}
+          className="w-full bg-[#3498db] hover:bg-[#2980b9] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+        >
+          ➡️ Leçon suivante
+        </button>
+        
+        <button
+          onClick={handleBackToLessons}
+          className="w-full bg-[#95a5a6] hover:bg-[#7f8c8d] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+        >
+          📚 Retour aux leçons
+        </button>
+      </div>
     </div>
   );
 } 

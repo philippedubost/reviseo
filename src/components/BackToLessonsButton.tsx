@@ -1,41 +1,23 @@
-import { useRouter } from 'next/navigation';
+'use client';
+
+import Link from 'next/link';
 
 interface BackToLessonsButtonProps {
-  subject: 'maths' | 'francais' | 'histoire-geo' | 'sciences';
+  subject: string;
   className?: string;
   children?: React.ReactNode;
 }
 
 export default function BackToLessonsButton({ 
   subject, 
-  className = "btn bg-[#00baff] text-white font-bold px-6 py-2 rounded-lg",
-  children 
+  className = "btn bg-[#232a36] text-white hover:bg-[#2a323e] transition-colors",
+  children = "📚 Retour aux leçons"
 }: BackToLessonsButtonProps) {
-  const router = useRouter();
-
-  const getSubjectPath = () => {
-    switch (subject) {
-      case 'francais':
-        return '/francais';
-      case 'histoire-geo':
-        return '/histoire-geo';
-      case 'sciences':
-        return '/sciences';
-      default:
-        return '/maths';
-    }
-  };
-
-  const handleClick = () => {
-    router.push(getSubjectPath());
-  };
-
   return (
-    <button 
-      onClick={handleClick}
-      className={className}
-    >
-      {children || 'Retour aux leçons'}
-    </button>
+    <Link href={`/${subject}`}>
+      <button className={className}>
+        {children}
+      </button>
+    </Link>
   );
 } 

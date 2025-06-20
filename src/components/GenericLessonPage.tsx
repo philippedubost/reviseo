@@ -10,15 +10,15 @@ import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
-import { useLessonProgress, type Subject } from '@/src/hooks/useLessonProgress';
-import type { Question, Lesson } from '@/src/data/lessons';
+import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
+import { getLessonById, getRandomQuestions, type Question, type Lesson } from '@/src/data/subjects';
 
 interface GenericLessonPageProps {
   subjectPath: string;
 }
 
 // Mapping from subject path to Subject type
-const subjectPathToType: Record<string, Subject> = {
+const subjectPathToType: Record<string, SubjectType> = {
   'maths': 'maths',
   'francais': 'francais',
   'sciences': 'sciences',
@@ -40,36 +40,11 @@ export default function GenericLessonPage({
   const [lessonQuestions, setLessonQuestions] = useState<Question[]>([]);
   
   useEffect(() => {
-    let getLessonById: (id: number) => Lesson | undefined;
-    let getRandomQuestions: (lessonId: number, count: number) => Question[];
-    
-    switch (subject) {
-      case 'maths':
-        getLessonById = require('@/src/data/lessons').getLessonById;
-        getRandomQuestions = require('@/src/data/lessons').getRandomQuestions;
-        break;
-      case 'francais':
-        getLessonById = require('@/src/data/francaisLessons').getLessonById;
-        getRandomQuestions = require('@/src/data/francaisLessons').getRandomQuestions;
-        break;
-      case 'histoireGeo':
-        getLessonById = require('@/src/data/histoireGeoLessons').getLessonById;
-        getRandomQuestions = require('@/src/data/histoireGeoLessons').getRandomQuestions;
-        break;
-      case 'sciences':
-        getLessonById = require('@/src/data/sciencesLessons').getLessonById;
-        getRandomQuestions = require('@/src/data/sciencesLessons').getRandomQuestions;
-        break;
-      default:
-        getLessonById = require('@/src/data/lessons').getLessonById;
-        getRandomQuestions = require('@/src/data/lessons').getRandomQuestions;
-    }
-    
-    const currentLesson = getLessonById(lessonId);
+    const currentLesson = getLessonById(subject, lessonId);
     setLesson(currentLesson);
     
     if (currentLesson) {
-      const randomQuestions = getRandomQuestions(lessonId, 10);
+      const randomQuestions = getRandomQuestions(subject, lessonId, 10);
       setLessonQuestions(randomQuestions);
     }
   }, [subject, lessonId]);

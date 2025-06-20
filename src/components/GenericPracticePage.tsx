@@ -9,11 +9,11 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import AnswerOptions from '@/src/components/AnswerOptions';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import ActionButton from '@/src/components/ActionButton';
-import { useLessonProgress, type Subject } from '@/src/hooks/useLessonProgress';
-import type { Question } from '@/src/data/lessons';
+import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
+import { getRandomQuestionsFromAllLessons, type Question } from '@/src/data/subjects';
 
 interface GenericPracticePageProps {
-  subject: Subject;
+  subject: SubjectType;
   subjectPath: string;
   subjectName: string;
 }
@@ -38,28 +38,9 @@ export default function GenericPracticePage({
     }
   }, [subject]);
 
-  // Generate random questions - import function based on subject
+  // Generate random questions from unified data structure
   useEffect(() => {
-    let getRandomQuestionsFromAllLessons: (count: number) => Question[];
-    
-    switch (subject) {
-      case 'maths':
-        getRandomQuestionsFromAllLessons = require('@/src/data/lessons').getRandomQuestionsFromAllLessons;
-        break;
-      case 'francais':
-        getRandomQuestionsFromAllLessons = require('@/src/data/francaisLessons').getRandomQuestionsFromAllLessons;
-        break;
-      case 'histoireGeo':
-        getRandomQuestionsFromAllLessons = require('@/src/data/histoireGeoLessons').getRandomQuestionsFromAllLessons;
-        break;
-      case 'sciences':
-        getRandomQuestionsFromAllLessons = require('@/src/data/sciencesLessons').getRandomQuestionsFromAllLessons;
-        break;
-      default:
-        getRandomQuestionsFromAllLessons = require('@/src/data/lessons').getRandomQuestionsFromAllLessons;
-    }
-    
-    const randomQuestions = getRandomQuestionsFromAllLessons(50);
+    const randomQuestions = getRandomQuestionsFromAllLessons(subject, 50);
     setQuestions(randomQuestions);
   }, [subject]);
 

@@ -5,17 +5,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 import type { Lesson } from '@/src/data/lessons';
+import { useState, useEffect } from 'react';
 
 interface GenericLessonCompletePageProps {
   subjectPath: string;
   subjectName: string;
-  getLessonById: (id: number) => Lesson | undefined;
 }
 
 export default function GenericLessonCompletePage({ 
   subjectPath, 
-  subjectName, 
-  getLessonById 
+  subjectName
 }: GenericLessonCompletePageProps) {
   const searchParams = useSearchParams();
   const params = useParams();
@@ -29,7 +28,33 @@ export default function GenericLessonCompletePage({
   const total = totalParam ? Number(totalParam) : 0;
   const correct = correctParam ? Number(correctParam) : 0;
   const lessonId = Number(params.id);
-  const lesson = getLessonById(lessonId);
+  
+  // Get lesson based on subject path
+  const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
+  
+  useEffect(() => {
+    let getLessonById: (id: number) => Lesson | undefined;
+    
+    switch (subjectPath) {
+      case 'maths':
+        getLessonById = require('@/src/data/lessons').getLessonById;
+        break;
+      case 'francais':
+        getLessonById = require('@/src/data/francaisLessons').getLessonById;
+        break;
+      case 'histoire-geo':
+        getLessonById = require('@/src/data/histoireGeoLessons').getLessonById;
+        break;
+      case 'sciences':
+        getLessonById = require('@/src/data/sciencesLessons').getLessonById;
+        break;
+      default:
+        getLessonById = require('@/src/data/lessons').getLessonById;
+    }
+    
+    const currentLesson = getLessonById(lessonId);
+    setLesson(currentLesson);
+  }, [subjectPath, lessonId]);
   
   // Debug logging
   console.log(`${subjectName} complete page loaded:`, { score, total, correct, lessonId, lesson: !!lesson, scoreParam });

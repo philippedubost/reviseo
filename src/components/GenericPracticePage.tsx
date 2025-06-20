@@ -16,14 +16,12 @@ interface GenericPracticePageProps {
   subject: Subject;
   subjectPath: string;
   subjectName: string;
-  getRandomQuestionsFromAllLessons: (count: number) => Question[];
 }
 
 export default function GenericPracticePage({ 
   subject, 
   subjectPath, 
-  subjectName, 
-  getRandomQuestionsFromAllLessons 
+  subjectName
 }: GenericPracticePageProps) {
   const router = useRouter();
   const { addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
@@ -40,11 +38,30 @@ export default function GenericPracticePage({
     }
   }, [subject]);
 
-  // Generate random questions
+  // Generate random questions - import function based on subject
   useEffect(() => {
-    const randomQuestions = getRandomQuestionsFromAllLessons(50); // More questions for survival mode
+    let getRandomQuestionsFromAllLessons: (count: number) => Question[];
+    
+    switch (subject) {
+      case 'maths':
+        getRandomQuestionsFromAllLessons = require('@/src/data/lessons').getRandomQuestionsFromAllLessons;
+        break;
+      case 'francais':
+        getRandomQuestionsFromAllLessons = require('@/src/data/francaisLessons').getRandomQuestionsFromAllLessons;
+        break;
+      case 'histoireGeo':
+        getRandomQuestionsFromAllLessons = require('@/src/data/histoireGeoLessons').getRandomQuestionsFromAllLessons;
+        break;
+      case 'sciences':
+        getRandomQuestionsFromAllLessons = require('@/src/data/sciencesLessons').getRandomQuestionsFromAllLessons;
+        break;
+      default:
+        getRandomQuestionsFromAllLessons = require('@/src/data/lessons').getRandomQuestionsFromAllLessons;
+    }
+    
+    const randomQuestions = getRandomQuestionsFromAllLessons(50);
     setQuestions(randomQuestions);
-  }, [getRandomQuestionsFromAllLessons]);
+  }, [subject]);
 
   // Handle session completion (game over)
   const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {

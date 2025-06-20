@@ -14,10 +14,7 @@ import { useLessonProgress, type Subject } from '@/src/hooks/useLessonProgress';
 import type { Question, Lesson } from '@/src/data/lessons';
 
 interface GenericLessonPageProps {
-  subject: Subject;
   subjectPath: string;
-  getLessonById: (id: number) => Lesson | undefined;
-  getRandomQuestions: (lessonId: number, count: number) => Question[];
 }
 
 // Mapping from subject path to Subject type
@@ -29,27 +26,53 @@ const subjectPathToType: Record<string, Subject> = {
 };
 
 export default function GenericLessonPage({ 
-  subjectPath, 
-  getLessonById, 
-  getRandomQuestions 
-}: Omit<GenericLessonPageProps, 'subject'>) {
+  subjectPath
+}: GenericLessonPageProps) {
   const params = useParams();
   const router = useRouter();
   const lessonId = parseInt(params.id as string);
   
   const subject = subjectPathToType[subjectPath];
   const { updateLessonProgress, addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
-  const lesson = getLessonById(lessonId);
   
-  // Get 10 random questions from the lesson
+  // Get lesson and questions based on subject
+  const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
   const [lessonQuestions, setLessonQuestions] = useState<Question[]>([]);
   
   useEffect(() => {
-    if (lesson) {
+    let getLessonById: (id: number) => Lesson | undefined;
+    let getRandomQuestions: (lessonId: number, count: number) => Question[];
+    
+    switch (subject) {
+      case 'maths':
+        getLessonById = require('@/src/data/lessons').getLessonById;
+        getRandomQuestions = require('@/src/data/lessons').getRandomQuestions;
+        break;
+      case 'francais':
+        getLessonById = require('@/src/data/francaisLessons').getLessonById;
+        getRandomQuestions = require('@/src/data/francaisLessons').getRandomQuestions;
+        break;
+      case 'histoireGeo':
+        getLessonById = require('@/src/data/histoireGeoLessons').getLessonById;
+        getRandomQuestions = require('@/src/data/histoireGeoLessons').getRandomQuestions;
+        break;
+      case 'sciences':
+        getLessonById = require('@/src/data/sciencesLessons').getLessonById;
+        getRandomQuestions = require('@/src/data/sciencesLessons').getRandomQuestions;
+        break;
+      default:
+        getLessonById = require('@/src/data/lessons').getLessonById;
+        getRandomQuestions = require('@/src/data/lessons').getRandomQuestions;
+    }
+    
+    const currentLesson = getLessonById(lessonId);
+    setLesson(currentLesson);
+    
+    if (currentLesson) {
       const randomQuestions = getRandomQuestions(lessonId, 10);
       setLessonQuestions(randomQuestions);
     }
-  }, [lesson, lessonId, getRandomQuestions]);
+  }, [subject, lessonId]);
   
   // Debug logging
   console.log(`${subject} lesson page loaded:`, { 

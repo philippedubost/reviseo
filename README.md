@@ -4,7 +4,7 @@ Une application web moderne pour la révision et la préparation aux examens, sp
 
 ## 🎯 Fonctionnalités
 
-- **📚 Matières Multiples** : Mathématiques, Français, Sciences, Histoire-Géographie
+- **📚 Matières Multiples** : Mathématiques, Français, Sciences
 - **🎓 Leçons Structurées** : Contenu progressif et adapté au niveau
 - **🎲 Questions Aléatoires** : Évite la mémorisation par cœur
 - **📊 Suivi de Progression** : Statistiques détaillées et objectifs

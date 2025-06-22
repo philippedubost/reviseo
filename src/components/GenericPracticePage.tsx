@@ -1,16 +1,20 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
-import ProgressBar from '@/src/components/ProgressBar';
-import StatsBadges from '@/src/components/StatsBadges';
-import QuestionDisplay from '@/src/components/QuestionDisplay';
-import AnswerOptions from '@/src/components/AnswerOptions';
-import ResponseOverlay from '@/src/components/ResponseOverlay';
+import { useParams, useRouter } from 'next/navigation';
+import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
+import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
+import type { Question } from '@/src/data/types';
+import { getRandomQuestionsFromAllLessons } from '@/src/data/subjects';
+import QuestionDisplay from './QuestionDisplay';
+import ResponseOverlay from './ResponseOverlay';
+import ProgressBar from './ProgressBar';
+import StatsBadges from './StatsBadges';
+import BackToLessonsButton from './BackToLessonsButton';
+import FlagButton from './FlagButton';
 import ActionButton from '@/src/components/ActionButton';
-import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
-import { getRandomQuestionsFromAllLessons, type Question } from '@/src/data/subjects';
+import AnswerOptions from './AnswerOptions';
+import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 
 interface GenericPracticePageProps {
   subject: SubjectType;
@@ -24,7 +28,7 @@ export default function GenericPracticePage({
   subjectName
 }: GenericPracticePageProps) {
   const router = useRouter();
-  const { addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
+  const { addXP, updateStreak, totalXP, currentStreak, bestStreak, calculateSubjectProgress } = useLessonProgress(subject);
   
   const [questions, setQuestions] = useState<Question[]>([]);
   const [survivalScore, setSurvivalScore] = useState(0);
@@ -43,6 +47,9 @@ export default function GenericPracticePage({
     const randomQuestions = getRandomQuestionsFromAllLessons(subject, 50);
     setQuestions(randomQuestions);
   }, [subject]);
+
+  // Calculate subject progress percentage
+  const subjectProgressPercentage = calculateSubjectProgress();
 
   // Handle session completion (game over)
   const handleSessionComplete = (finalScore: number, totalQuestions: number, correctAnswers: number) => {
@@ -130,6 +137,7 @@ export default function GenericPracticePage({
         totalQuestions={totalQuestions}
         showProgress={false}
         showStreaks={true}
+        subjectProgress={subjectProgressPercentage}
       />
 
       {/* Main Content */}
@@ -144,6 +152,9 @@ export default function GenericPracticePage({
               onAnswerChange={setSelectedAnswer}
               onAnswerSelect={handleAnswerSelect}
               onSubmit={handleSubmit}
+              questionId={currentQuestion.id}
+              subjectId={subject}
+              isPracticeMode={true}
             />
 
             {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (

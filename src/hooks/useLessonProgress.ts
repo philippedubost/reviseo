@@ -1,12 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getAllSubjects, getSubjectById, getAllLessonsForSubject, type Subject, type Lesson } from '../data/subjects';
+import { getAllSubjects, getSubjectById, getAllLessonsForSubject } from '../data/subjects';
+import type { Subject, Lesson } from '../data/types';
 
-export type SubjectType = 'maths' | 'histoireGeo' | 'francais' | 'sciences';
+export type SubjectType = 'maths' | 'francais' | 'sciences';
 
 interface LessonProgress {
   completedQuestions: number;
+  correctAnswers: number; // Track correct answers for this lesson
   bestScore: number; // Best percentage achieved in one session (0-100)
   lastAttemptScore: number; // Last session score
   totalAttempts: number;
@@ -17,6 +19,8 @@ interface SubjectProgress {
   currentStreak: number;
   bestStreak: number;
   lessonsProgress: Record<number, LessonProgress>;
+  totalCorrectAnswers: number; // Track total correct answers across all lessons
+  totalQuestionsAnswered: number; // Track total questions answered across all lessons
 }
 
 export function useLessonProgress(subject: SubjectType = 'maths') {
@@ -29,8 +33,6 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
   // Get storage keys for the subject
   const getStorageKey = () => {
     switch (subject) {
-      case 'histoireGeo':
-        return 'histoireGeoProgress';
       case 'francais':
         return 'francaisProgress';
       case 'sciences':
@@ -47,7 +49,9 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
         totalXP: 0,
         currentStreak: 0,
         bestStreak: 0,
-        lessonsProgress: {}
+        lessonsProgress: {},
+        totalCorrectAnswers: 0,
+        totalQuestionsAnswered: 0
       };
     }
     
@@ -57,7 +61,9 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
       totalXP: 0,
       currentStreak: 0,
       bestStreak: 0,
-      lessonsProgress: {}
+      lessonsProgress: {},
+      totalCorrectAnswers: 0,
+      totalQuestionsAnswered: 0
     };
   };
 
@@ -69,10 +75,11 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
   };
 
   // Update lesson progress with best score tracking
-  const updateLessonProgress = (lessonId: number, sessionScore: number, completedQuestions: number) => {
+  const updateLessonProgress = (lessonId: number, sessionScore: number, completedQuestions: number, correctAnswers: number) => {
     const progress = loadProgress();
     const existingProgress = progress.lessonsProgress[lessonId] || {
       completedQuestions: 0,
+      correctAnswers: 0,
       bestScore: 0,
       lastAttemptScore: 0,
       totalAttempts: 0
@@ -81,10 +88,22 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     // Update lesson progress
     progress.lessonsProgress[lessonId] = {
       completedQuestions: Math.max(existingProgress.completedQuestions, completedQuestions),
+      correctAnswers: Math.max(existingProgress.correctAnswers, correctAnswers),
       bestScore: Math.max(existingProgress.bestScore, sessionScore),
       lastAttemptScore: sessionScore,
       totalAttempts: existingProgress.totalAttempts + 1
     };
+
+    // Update total correct answers and questions answered
+    let totalCorrect = 0;
+    let totalQuestions = 0;
+    Object.values(progress.lessonsProgress).forEach(lessonProgress => {
+      totalCorrect += lessonProgress.correctAnswers || 0;
+      totalQuestions += lessonProgress.completedQuestions || 0;
+    });
+    
+    progress.totalCorrectAnswers = totalCorrect;
+    progress.totalQuestionsAnswered = totalQuestions;
 
     saveProgress(progress);
     
@@ -97,7 +116,8 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
               completedQuestions: progress.lessonsProgress[lessonId].completedQuestions,
               completed: progress.lessonsProgress[lessonId].completedQuestions === lesson.questions.length,
               bestScore: progress.lessonsProgress[lessonId].bestScore,
-              lastAttemptScore: progress.lessonsProgress[lessonId].lastAttemptScore
+              lastAttemptScore: progress.lessonsProgress[lessonId].lastAttemptScore,
+              correctAnswers: progress.lessonsProgress[lessonId].correctAnswers
             }
           : lesson
       )
@@ -137,23 +157,56 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     return lessonProgress.bestScore;
   };
 
-  // Calculate global progress for the subject (average of best scores)
+  // Calculate global progress for the subject (average of all lesson progresses)
   const calculateGlobalProgress = (updatedLessons: Lesson[]): number => {
-    if (updatedLessons.length === 0) return 0;
-    
-    let totalBestScore = 0;
-    let lessonsWithAttempts = 0;
-    
+    if (updatedLessons.length === 0) {
+      return 0;
+    }
+
+    const progress = loadProgress();
+    let totalBestScores = 0;
+
     updatedLessons.forEach(lesson => {
-      const progress = loadProgress();
       const lessonProgress = progress.lessonsProgress[lesson.id];
-      if (lessonProgress && lessonProgress.totalAttempts > 0) {
-        totalBestScore += lessonProgress.bestScore;
-        lessonsWithAttempts += 1;
+      if (lessonProgress) {
+        totalBestScores += lessonProgress.bestScore || 0;
       }
     });
+
+    return totalBestScores / updatedLessons.length;
+  };
+
+  // Calculate subject progress percentage (correct answers / total questions)
+  const calculateSubjectProgress = (): number => {
+    const progress = loadProgress();
     
-    return lessonsWithAttempts > 0 ? totalBestScore / lessonsWithAttempts : 0;
+    // Ensure we have valid numbers
+    const totalCorrect = Number(progress.totalCorrectAnswers) || 0;
+    const totalQuestions = Number(progress.totalQuestionsAnswered) || 0;
+    
+    if (totalQuestions === 0) {
+      return 0;
+    }
+    
+    const percentage = (totalCorrect / totalQuestions) * 100;
+    return Math.round(percentage);
+  };
+
+  // Recalculate totals from lessons progress (for backward compatibility)
+  const recalculateTotals = (progress: SubjectProgress): SubjectProgress => {
+    let totalCorrect = 0;
+    let totalQuestions = 0;
+    
+    Object.values(progress.lessonsProgress).forEach(lessonProgress => {
+      totalCorrect += Number(lessonProgress.correctAnswers) || 0;
+      totalQuestions += Number(lessonProgress.completedQuestions) || 0;
+    });
+    
+    return {
+      ...progress,
+      totalCorrectAnswers: totalCorrect,
+      totalQuestionsAnswered: totalQuestions
+    };
   };
 
   // Initialize data
@@ -162,22 +215,29 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     const allLessons = getAllLessonsForSubject(subject);
     const progress = loadProgress();
     
+    // Recalculate totals for backward compatibility
+    const updatedProgress = recalculateTotals(progress);
+    if (JSON.stringify(progress) !== JSON.stringify(updatedProgress)) {
+      saveProgress(updatedProgress);
+    }
+    
     // Update lessons with saved progress
     const updatedLessons = allLessons.map(lesson => {
-      const lessonProgress = progress.lessonsProgress[lesson.id];
+      const lessonProgress = updatedProgress.lessonsProgress[lesson.id];
       return {
         ...lesson,
         completedQuestions: lessonProgress?.completedQuestions || 0,
         completed: lessonProgress?.completedQuestions === lesson.questions.length,
         bestScore: lessonProgress?.bestScore || 0,
-        lastAttemptScore: lessonProgress?.lastAttemptScore || 0
+        lastAttemptScore: lessonProgress?.lastAttemptScore || 0,
+        correctAnswers: lessonProgress?.correctAnswers || 0
       };
     });
 
     setLessons(updatedLessons);
-    setTotalXP(progress.totalXP);
-    setCurrentStreak(progress.currentStreak);
-    setBestStreak(progress.bestStreak);
+    setTotalXP(updatedProgress.totalXP);
+    setCurrentStreak(updatedProgress.currentStreak);
+    setBestStreak(updatedProgress.bestStreak);
     setGlobalProgress(calculateGlobalProgress(updatedLessons));
   }, [subject]);
 
@@ -190,6 +250,7 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     updateLessonProgress,
     addXP,
     updateStreak,
-    getLessonProgressPercentage
+    getLessonProgressPercentage,
+    calculateSubjectProgress
   };
 } 

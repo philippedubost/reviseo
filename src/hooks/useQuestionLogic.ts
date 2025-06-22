@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { Question } from '../data/lessons';
 import { compareAnswers } from '../utils/answerValidation';
 
@@ -80,7 +80,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     setIsCorrect(false); // Show as incorrect for UI purposes
   };
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     // Reset pause state
     setIsPaused(false);
     setCountdown(null);
@@ -114,7 +114,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
         onComplete(finalScore, questions.length, correctAnswers);
       }
     }
-  };
+  }, [currentQuestionIndex, questions.length, correctAnswers, onComplete]);
 
   const togglePause = () => {
     setIsPaused(!isPaused);
@@ -150,7 +150,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     }
     const timer = setTimeout(() => setCountdown((c) => (c !== null ? c - 1 : null)), 1000);
     return () => clearTimeout(timer);
-  }, [countdown, isPaused, currentQuestionIndex, questions.length]);
+  }, [countdown, isPaused, currentQuestionIndex, questions.length, handleNext]);
 
   const progress = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0;
   const isLastQuestion = currentQuestionIndex === questions.length - 1;

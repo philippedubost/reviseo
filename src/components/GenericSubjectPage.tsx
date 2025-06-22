@@ -1,12 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
-import { getSubjectById, getAllLessonsForSubject, type Lesson } from '@/src/data/subjects';
-import ProgressBar from '@/src/components/ProgressBar';
-import StatsBadges from '@/src/components/StatsBadges';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
+import { useParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
+import type { Lesson } from '@/src/data/types';
+import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
+import SubjectCard from './SubjectCard';
+import ProgressBar from './ProgressBar';
+import StatsBadges from './StatsBadges';
+import QuestionSelector from './QuestionSelector';
+import BackToLessonsButton from './BackToLessonsButton';
 
 interface GenericSubjectPageProps {
   subject: SubjectType;
@@ -29,8 +33,15 @@ export default function GenericSubjectPage({
     currentStreak, 
     bestStreak, 
     globalProgress,
-    getLessonProgressPercentage 
+    getLessonProgressPercentage,
+    calculateSubjectProgress
   } = useLessonProgress(subject);
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   // Get subject data for additional info
   const [subjectData, setSubjectData] = useState<any>(null);
@@ -40,11 +51,13 @@ export default function GenericSubjectPage({
     setSubjectData(data);
   }, [subject]);
 
+  // Calculate subject progress percentage
+  const subjectProgressPercentage = calculateSubjectProgress();
+
   return (
     <div className="min-h-screen bg-[#181c24] flex flex-col">
       {/* Header */}
       <div className="text-center pt-4 pb-2 px-4">
-        <div className="text-4xl mb-2">{subjectIcon}</div>
         <h1 className="text-xl font-bold text-white mb-1">{subjectName}</h1>
         {subjectData && (
           <p className="text-[#b0b8c1] text-sm">{subjectData.description}</p>
@@ -60,13 +73,14 @@ export default function GenericSubjectPage({
 
       {/* Stats Badges */}
       <StatsBadges 
-        xp={totalXP}
-        currentStreak={currentStreak}
-        bestStreak={bestStreak}
+        xp={isClient ? totalXP : 0}
+        currentStreak={isClient ? currentStreak : 0}
+        bestStreak={isClient ? bestStreak : 0}
         currentQuestion={0}
         totalQuestions={0}
         showProgress={false}
         showStreaks={true}
+        subjectProgress={isClient ? subjectProgressPercentage : 0}
       />
 
       {/* Lessons Grid */}
@@ -89,11 +103,6 @@ export default function GenericSubjectPage({
                         <p className="text-[#b0b8c1] text-xs">{lesson.description}</p>
                       </div>
                     </div>
-                    
-                    {/* Status Icon */}
-                    <div className="text-lg">
-                      {isCompleted ? '✅' : isStarted ? '🔄' : '⏳'}
-                    </div>
                   </div>
 
                   {/* Progress Bar */}
@@ -110,7 +119,7 @@ export default function GenericSubjectPage({
                   {/* Progress Info */}
                   <div className="flex justify-between items-center text-xs">
                     <span className="text-[#b0b8c1]">
-                      {lesson.completedQuestions || 0}/{lesson.questions.length} questions
+                      {lesson.correctAnswers || 0}/{lesson.questions.length} questions
                     </span>
                     <span className={`font-semibold ${
                       isCompleted ? 'text-[#2ecc71]' : 

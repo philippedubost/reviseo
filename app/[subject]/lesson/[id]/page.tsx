@@ -22,10 +22,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { subject: string; id: string } 
+  params: Promise<{ subject: string; id: string }> 
 }) {
-  const lessonId = parseInt(params.id);
-  const lesson = getLessonById(params.subject, lessonId);
+  const { subject: subjectId, id: lessonIdStr } = await params;
+  const lessonId = parseInt(lessonIdStr);
+  const lesson = getLessonById(subjectId, lessonId);
   
   if (!lesson) {
     return {
@@ -39,20 +40,21 @@ export async function generateMetadata({
   };
 }
 
-export default function LessonPage({ 
+export default async function LessonPage({ 
   params 
 }: { 
-  params: { subject: string; id: string } 
+  params: Promise<{ subject: string; id: string }> 
 }) {
-  const lessonId = parseInt(params.id);
-  const lesson = getLessonById(params.subject, lessonId);
+  const { subject: subjectId, id: lessonIdStr } = await params;
+  const lessonId = parseInt(lessonIdStr);
+  const lesson = getLessonById(subjectId, lessonId);
   
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <a href={`/${params.subject}`} className="text-[#00baff] hover:underline">
+          <a href={`/${subjectId}`} className="text-[#00baff] hover:underline">
             Retour aux leçons
           </a>
         </div>
@@ -61,6 +63,6 @@ export default function LessonPage({
   }
 
   return (
-    <GenericLessonPage subjectPath={params.subject} />
+    <GenericLessonPage subjectPath={subjectId} />
   );
 } 

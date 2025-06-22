@@ -1,10 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
-import { getLessonById, type Lesson } from '@/src/data/subjects';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
+import { getLessonById } from '@/src/data/subjects';
+import type { Lesson } from '@/src/data/types';
+import BackToLessonsButton from './BackToLessonsButton';
+import ProgressBar from './ProgressBar';
+import StatsBadges from './StatsBadges';
+import ActionButton from './ActionButton';
 
 interface GenericLessonCompletePageProps {
   subjectPath: string;
@@ -14,8 +18,7 @@ interface GenericLessonCompletePageProps {
 const subjectPathToType: Record<string, SubjectType> = {
   'maths': 'maths',
   'francais': 'francais',
-  'sciences': 'sciences',
-  'histoire-geo': 'histoireGeo'
+  'sciences': 'sciences'
 };
 
 export default function GenericLessonCompletePage({ 
@@ -36,6 +39,9 @@ export default function GenericLessonCompletePage({
   
   // Get lesson data
   const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
+  
+  // Ref to track if progress has been saved to prevent infinite re-renders
+  const progressSavedRef = useRef(false);
   
   useEffect(() => {
     const currentLesson = getLessonById(subject, lessonId);
@@ -76,12 +82,13 @@ export default function GenericLessonCompletePage({
   
   const performance = getPerformanceData();
   
-  // Save progress when component mounts
+  // Save progress when component mounts (only once)
   useEffect(() => {
-    if (lesson && sessionScore > 0) {
-      updateLessonProgress(lessonId, sessionScore, totalQuestions);
+    if (lesson && sessionScore > 0 && !progressSavedRef.current) {
+      progressSavedRef.current = true;
+      updateLessonProgress(lessonId, sessionScore, totalQuestions, correctAnswers);
     }
-  }, [lesson, lessonId, sessionScore, totalQuestions, updateLessonProgress]);
+  }, [lesson, lessonId, sessionScore, totalQuestions, correctAnswers, updateLessonProgress]);
   
   const handleRetry = () => {
     router.push(`/${subjectPath}/lesson/${lessonId}`);
@@ -102,7 +109,7 @@ export default function GenericLessonCompletePage({
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'histoire-geo' | 'sciences'} />
+          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'sciences'} />
         </div>
       </div>
     );

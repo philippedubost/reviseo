@@ -7,17 +7,6 @@ Ce fichier documente toutes les améliorations et modifications apportées au pr
 - [Version 1.0.0 - Fonctionnalités de Base](#version-100---fonctionnalités-de-base)
 - [Version 1.1.0 - Améliorations UX](#version-110---améliorations-ux)
 - [Version 1.2.0 - Optimisations et Corrections](#version-120---optimisations-et-corrections)
-- [Version 1.3.0 - Nouvelles Matières](#version-130---nouvelles-matières)
-
----
-
-## Version 1.3.0 - Nouvelles Matières
-
-### 🎯 Ajout de l'Histoire-Géographie
-- **Nouvelle matière** : Module complet Histoire-Géographie
-- **Contenu** : Leçons structurées avec questions d'évaluation
-- **Interface** : Navigation dédiée et progression spécifique
-- **Détails** : Voir [HISTOIRE_GEO_README.md](./changelog/HISTOIRE_GEO_README.md)
 
 ---
 
@@ -86,7 +75,6 @@ Chaque entrée du changelog suit ce format :
 
 | Version | Date | Principales Améliorations |
 |---------|------|---------------------------|
-| 1.3.0 | 2024 | Ajout Histoire-Géographie |
 | 1.2.0 | 2024 | Mélange options, questions aléatoires |
 | 1.1.0 | 2024 | Navigation et progression améliorées |
 | 1.0.0 | 2024 | Module brevet complet |

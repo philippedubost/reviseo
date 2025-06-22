@@ -3,6 +3,7 @@
 import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
+import FlagButton from './FlagButton';
 
 interface QuestionDisplayProps {
   question: string;
@@ -13,6 +14,11 @@ interface QuestionDisplayProps {
   onAnswerChange: (answer: string) => void;
   onAnswerSelect: (answer: string) => void;
   onSubmit?: () => void;
+  // Flagging props
+  questionId?: number;
+  subjectId?: string;
+  lessonId?: number;
+  isPracticeMode?: boolean;
 }
 
 export default function QuestionDisplay({
@@ -23,7 +29,11 @@ export default function QuestionDisplay({
   showResult,
   onAnswerChange,
   onAnswerSelect,
-  onSubmit
+  onSubmit,
+  questionId,
+  subjectId,
+  lessonId,
+  isPracticeMode = false
 }: QuestionDisplayProps) {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showResult && e.key === 'Enter' && selectedAnswer.trim()) {
@@ -40,8 +50,19 @@ export default function QuestionDisplay({
       <div className="text-center max-w-2xl w-full">
         {type === 'calculation' ? (
           <>
-            <div className="text-lg font-bold mb-3" style={{ color: 'var(--mascot-color)' }}>
-              {question}
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="text-lg font-bold" style={{ color: 'var(--mascot-color)' }}>
+                {question}
+              </div>
+              {questionId && subjectId && (
+                <FlagButton
+                  questionId={questionId}
+                  subjectId={subjectId}
+                  lessonId={lessonId}
+                  questionText={question}
+                  isPracticeMode={isPracticeMode}
+                />
+              )}
             </div>
             {latex && (
               <div className="flex justify-center items-center gap-2 mb-4">
@@ -63,8 +84,19 @@ export default function QuestionDisplay({
           </>
         ) : (
           <>
-            <div className="text-lg font-bold mb-3" style={{ color: 'var(--mascot-color)' }}>
-              {question}
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="text-lg font-bold" style={{ color: 'var(--mascot-color)' }}>
+                {question}
+              </div>
+              {questionId && subjectId && (
+                <FlagButton
+                  questionId={questionId}
+                  subjectId={subjectId}
+                  lessonId={lessonId}
+                  questionText={question}
+                  isPracticeMode={isPracticeMode}
+                />
+              )}
             </div>
             {latex && (
               <div className="flex justify-center">

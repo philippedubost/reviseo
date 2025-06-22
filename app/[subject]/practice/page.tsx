@@ -10,9 +10,10 @@ export async function generateStaticParams() {
 }
 
 // Validate subject parameter
-export async function generateMetadata({ params }: { params: { subject: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ subject: string }> }) {
+  const { subject: subjectId } = await params;
   const subjects = getAllSubjects();
-  const subject = subjects.find(s => s.id === params.subject);
+  const subject = subjects.find(s => s.id === subjectId);
   
   if (!subject) {
     return {
@@ -26,9 +27,10 @@ export async function generateMetadata({ params }: { params: { subject: string }
   };
 }
 
-export default function PracticePage({ params }: { params: { subject: string } }) {
+export default async function PracticePage({ params }: { params: Promise<{ subject: string }> }) {
+  const { subject: subjectId } = await params;
   const subjects = getAllSubjects();
-  const subject = subjects.find(s => s.id === params.subject);
+  const subject = subjects.find(s => s.id === subjectId);
   
   if (!subject) {
     return (
@@ -45,7 +47,7 @@ export default function PracticePage({ params }: { params: { subject: string } }
 
   return (
     <GenericPracticePage
-      subject={subject.id as 'maths' | 'francais' | 'histoireGeo' | 'sciences'}
+      subject={subject.id as 'maths' | 'francais' | 'sciences'}
       subjectPath={subject.id}
       subjectName={subject.name}
     />

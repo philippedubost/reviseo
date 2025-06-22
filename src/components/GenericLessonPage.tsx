@@ -2,16 +2,19 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
+import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
+import type { Question, Lesson } from '@/src/data/types';
+import { getLessonById, getRandomQuestions } from '@/src/data/subjects';
+import QuestionDisplay from './QuestionDisplay';
+import ResponseOverlay from './ResponseOverlay';
+import ProgressBar from './ProgressBar';
+import StatsBadges from './StatsBadges';
+import BackToLessonsButton from './BackToLessonsButton';
+import FlagButton from './FlagButton';
+import ActionButton from './ActionButton';
+import AnswerOptions from './AnswerOptions';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
-import ProgressBar from '@/src/components/ProgressBar';
-import StatsBadges from '@/src/components/StatsBadges';
-import QuestionDisplay from '@/src/components/QuestionDisplay';
-import AnswerOptions from '@/src/components/AnswerOptions';
-import ResponseOverlay from '@/src/components/ResponseOverlay';
-import ActionButton from '@/src/components/ActionButton';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
-import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
-import { getLessonById, getRandomQuestions, type Question, type Lesson } from '@/src/data/subjects';
 
 interface GenericLessonPageProps {
   subjectPath: string;
@@ -21,8 +24,7 @@ interface GenericLessonPageProps {
 const subjectPathToType: Record<string, SubjectType> = {
   'maths': 'maths',
   'francais': 'francais',
-  'sciences': 'sciences',
-  'histoire-geo': 'histoireGeo'
+  'sciences': 'sciences'
 };
 
 export default function GenericLessonPage({ 
@@ -33,7 +35,7 @@ export default function GenericLessonPage({
   const lessonId = parseInt(params.id as string);
   
   const subject = subjectPathToType[subjectPath];
-  const { updateLessonProgress, addXP, updateStreak, totalXP, currentStreak, bestStreak } = useLessonProgress(subject);
+  const { updateLessonProgress, addXP, updateStreak, totalXP, currentStreak, bestStreak, calculateSubjectProgress } = useLessonProgress(subject);
   
   // Get lesson and questions based on subject
   const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
@@ -103,6 +105,23 @@ export default function GenericLessonPage({
     onAnswer: handleAnswer
   });
 
+  // Handle Enter key to trigger "suivant" when overlay is shown
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Enter' && showOverlay && !isExiting) {
+        handleNext();
+      }
+    };
+
+    if (showOverlay) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [showOverlay, isExiting]);
+
   // Debug logging for questions
   console.log('Questions passed to hook:', { 
     questionsCount: lessonQuestions.length || 0,
@@ -116,17 +135,20 @@ export default function GenericLessonPage({
   useEffect(() => {
     if (isLastQuestion && showResult && lesson) {
       setSessionScore(currentSessionScore);
-      // Save lesson progress with session score and completed questions
-      updateLessonProgress(lessonId, currentSessionScore, totalQuestions);
+      // Save lesson progress with session score, completed questions, and correct answers
+      updateLessonProgress(lessonId, currentSessionScore, totalQuestions, correctAnswers);
     }
-  }, [isLastQuestion, showResult, lesson, lessonId, updateLessonProgress, currentSessionScore, totalQuestions]);
+  }, [isLastQuestion, showResult, lesson, lessonId, updateLessonProgress, currentSessionScore, totalQuestions, correctAnswers]);
+
+  // Calculate subject progress percentage
+  const subjectProgressPercentage = calculateSubjectProgress();
 
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'histoire-geo' | 'sciences'} />
+          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'sciences'} />
         </div>
       </div>
     );
@@ -156,6 +178,7 @@ export default function GenericLessonPage({
         totalQuestions={totalQuestions}
         showProgress={false}
         showStreaks={true}
+        subjectProgress={subjectProgressPercentage}
       />
 
       {/* Main Content */}
@@ -170,6 +193,9 @@ export default function GenericLessonPage({
               onAnswerChange={setSelectedAnswer}
               onAnswerSelect={handleAnswerSelect}
               onSubmit={handleSubmit}
+              questionId={currentQuestion.id}
+              subjectId={subject}
+              lessonId={lessonId}
             />
 
             {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (

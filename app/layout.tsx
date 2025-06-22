@@ -25,8 +25,10 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   
-  // Hide header for maths lesson and practice pages
-  const shouldHideHeader = pathname?.includes('/maths/lesson/') || pathname === '/maths/practice';
+  // Hide header for maths lesson and practice pages, and subject pages
+  const shouldHideHeader = pathname?.includes('/maths/lesson/') || 
+                          pathname === '/maths/practice' ||
+                          pathname?.match(/^\/[^\/]+$/); // Hide for subject pages like /maths, /francais, etc.
   
   return (
     <html lang="fr">

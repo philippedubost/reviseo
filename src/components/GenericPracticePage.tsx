@@ -15,7 +15,7 @@ import FlagButton from './FlagButton';
 import ActionButton from '@/src/components/ActionButton';
 import AnswerOptions from './AnswerOptions';
 import ExitButton from './ExitButton';
-import Confetti from './Confetti';
+import ConfettiManager from './ConfettiManager';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 
 interface GenericPracticePageProps {
@@ -40,8 +40,7 @@ export default function GenericPracticePage({
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
   const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
   const [isSkipped, setIsSkipped] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
-  const [confettiStreak, setConfettiStreak] = useState(0);
+  const [previousStreak, setPreviousStreak] = useState(0);
 
   // Load survival record from localStorage
   useEffect(() => {
@@ -82,18 +81,12 @@ export default function GenericPracticePage({
     setLastAnswerCorrect(isCorrect);
     setShowAnswerFeedback(true);
     
+    // Store previous streak for confetti comparison
+    setPreviousStreak(currentStreak);
+    
     // Add XP and update streak
     addXP(isCorrect);
     updateStreak(isCorrect);
-    
-    // Check for confetti triggers
-    if (isCorrect) {
-      const newStreak = currentStreak + 1;
-      if (newStreak === 2 || newStreak === 5 || newStreak === 10 || newStreak === 20) {
-        setConfettiStreak(newStreak);
-        setShowConfetti(true);
-      }
-    }
     
     if (isCorrect) {
       setSurvivalScore(prev => prev + 1);
@@ -160,11 +153,11 @@ export default function GenericPracticePage({
 
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Confetti */}
-      <Confetti 
-        show={showConfetti} 
-        streak={confettiStreak} 
-        onComplete={() => setShowConfetti(false)}
+      {/* Confetti Manager */}
+      <ConfettiManager 
+        currentStreak={currentStreak} 
+        previousStreak={previousStreak}
+        isCorrect={lastAnswerCorrect ?? undefined}
       />
 
       {/* Survival Mode Title with exit button */}

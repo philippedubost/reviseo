@@ -10,6 +10,7 @@ import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import ActionButton from './ActionButton';
 import ExitButton from './ExitButton';
+import ConfettiManager from './ConfettiManager';
 
 interface GenericLessonCompletePageProps {
   subjectPath: string;
@@ -110,6 +111,20 @@ export default function GenericLessonCompletePage({
     router.push(`/${subjectPath}`);
   };
 
+  // Get subject color based on subjectPath
+  const getSubjectColor = () => {
+    switch (subjectPath) {
+      case 'maths':
+        return 'from-[#ff6b6b]';
+      case 'francais':
+        return 'from-[#4ecdc4]';
+      case 'sciences':
+        return 'from-[#a8e6cf]';
+      default:
+        return 'from-[#ffd700]';
+    }
+  };
+
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
@@ -123,6 +138,14 @@ export default function GenericLessonCompletePage({
 
   return (
     <div className="min-h-screen bg-[#181c24] flex flex-col">
+      {/* Confetti Manager for lesson completion */}
+      <ConfettiManager 
+        currentStreak={0} 
+        previousStreak={0}
+        isLessonComplete={true}
+        subjectColor={getSubjectColor()}
+      />
+
       {/* Header with exit button */}
       <div className="relative text-center pt-8 pb-6 px-4">
         {/* Exit Button - Top Right */}

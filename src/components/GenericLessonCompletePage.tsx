@@ -9,6 +9,7 @@ import BackToLessonsButton from './BackToLessonsButton';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import ActionButton from './ActionButton';
+import ExitButton from './ExitButton';
 
 interface GenericLessonCompletePageProps {
   subjectPath: string;
@@ -104,6 +105,11 @@ export default function GenericLessonCompletePage({
     router.push(`/${subjectPath}`);
   };
 
+  // Handle exit
+  const handleExit = () => {
+    router.push(`/${subjectPath}`);
+  };
+
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
@@ -117,8 +123,13 @@ export default function GenericLessonCompletePage({
 
   return (
     <div className="min-h-screen bg-[#181c24] flex flex-col">
-      {/* Header */}
-      <div className="text-center pt-8 pb-6 px-4">
+      {/* Header with exit button */}
+      <div className="relative text-center pt-8 pb-6 px-4">
+        {/* Exit Button - Top Right */}
+        <div className="absolute right-4 top-4 z-10">
+          <ExitButton onExit={handleExit} />
+        </div>
+        
         <div className="text-6xl mb-4">{performance.emoji}</div>
         <h1 className="text-2xl font-bold text-white mb-2">Leçon terminée !</h1>
         <p className={`text-lg font-semibold ${performance.color} mb-2`}>

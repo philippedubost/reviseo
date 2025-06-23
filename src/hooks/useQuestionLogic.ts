@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { Question } from '../data/lessons';
+import type { Question } from '../data/types';
 import { compareAnswers } from '../utils/answerValidation';
 
 interface UseQuestionLogicProps {
@@ -13,6 +13,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [isSkipped, setIsSkipped] = useState(false);
   const [sessionScore, setSessionScore] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
@@ -38,6 +39,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     if (currentQuestion.options) {
       const correct = compareAnswers(answer, currentQuestion.correctAnswer);
       setIsCorrect(correct);
+      setIsSkipped(false);
       setShowResult(true);
       
       if (correct) {
@@ -47,7 +49,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
         setStreak(0);
       }
       
-      // Call the onAnswer callback for XP and streak updates
+      // Call the onAnswer callback for XP and streak updates (only for actual answers, not skips)
       if (onAnswer) {
         onAnswer(correct);
       }
@@ -58,6 +60,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     if (!selectedAnswer) return;
     const correct = compareAnswers(selectedAnswer, currentQuestion.correctAnswer);
     setIsCorrect(correct);
+    setIsSkipped(false);
     setShowResult(true);
     
     if (correct) {
@@ -67,7 +70,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
       setStreak(0);
     }
     
-    // Call the onAnswer callback for XP and streak updates
+    // Call the onAnswer callback for XP and streak updates (only for actual answers, not skips)
     if (onAnswer) {
       onAnswer(correct);
     }
@@ -77,7 +80,9 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     // Mark question as skipped (no XP gain/loss, no streak change)
     setSkippedQuestions(prev => [...prev, currentQuestionIndex]);
     setShowResult(true);
-    setIsCorrect(false); // Show as incorrect for UI purposes
+    setIsSkipped(true);
+    setIsCorrect(false); // Keep false for UI purposes but we know it's a skip
+    // Note: We don't call onAnswer here, so no XP/streak changes occur
   };
 
   const handleNext = useCallback(() => {
@@ -164,6 +169,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     selectedAnswer,
     showResult,
     isCorrect,
+    isSkipped,
     sessionScore: sessionScorePercentage,
     correctAnswers,
     totalQuestions: questions.length,

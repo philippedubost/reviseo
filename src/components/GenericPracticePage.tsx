@@ -14,6 +14,8 @@ import BackToLessonsButton from './BackToLessonsButton';
 import FlagButton from './FlagButton';
 import ActionButton from '@/src/components/ActionButton';
 import AnswerOptions from './AnswerOptions';
+import ExitButton from './ExitButton';
+import Confetti from './Confetti';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 
 interface GenericPracticePageProps {
@@ -33,6 +35,13 @@ export default function GenericPracticePage({
   const [questions, setQuestions] = useState<Question[]>([]);
   const [survivalScore, setSurvivalScore] = useState(0);
   const [survivalRecord, setSurvivalRecord] = useState(0);
+  
+  // State for answer feedback animations
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
+  const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
+  const [isSkipped, setIsSkipped] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [confettiStreak, setConfettiStreak] = useState(0);
 
   // Load survival record from localStorage
   useEffect(() => {
@@ -69,8 +78,22 @@ export default function GenericPracticePage({
 
   // Handle individual answer for XP and streak updates
   const handleAnswer = (isCorrect: boolean) => {
+    // Set answer feedback state for animations
+    setLastAnswerCorrect(isCorrect);
+    setShowAnswerFeedback(true);
+    
+    // Add XP and update streak
     addXP(isCorrect);
     updateStreak(isCorrect);
+    
+    // Check for confetti triggers
+    if (isCorrect) {
+      const newStreak = currentStreak + 1;
+      if (newStreak === 2 || newStreak === 5 || newStreak === 10 || newStreak === 20) {
+        setConfettiStreak(newStreak);
+        setShowConfetti(true);
+      }
+    }
     
     if (isCorrect) {
       setSurvivalScore(prev => prev + 1);
@@ -78,6 +101,25 @@ export default function GenericPracticePage({
       // Game over on wrong answer
       handleSessionComplete(0, 0, survivalScore);
     }
+    
+    // Reset feedback state after animation (3 seconds)
+    setTimeout(() => {
+      setShowAnswerFeedback(false);
+    }, 3000);
+  };
+
+  // Handle skip (no XP/streak changes)
+  const handleSkip = () => {
+    // Skip doesn't affect XP or streak, so we don't call handleAnswer
+    // The useQuestionLogic hook will handle the skip internally
+    setIsSkipped(true);
+    setShowAnswerFeedback(true);
+    
+    // Reset skip state after animation
+    setTimeout(() => {
+      setIsSkipped(false);
+      setShowAnswerFeedback(false);
+    }, 3000);
   };
   
   const {
@@ -86,6 +128,7 @@ export default function GenericPracticePage({
     selectedAnswer,
     showResult,
     isCorrect,
+    isSkipped: isSkippedFromHook,
     sessionScore: currentSessionScore,
     correctAnswers,
     totalQuestions,
@@ -101,7 +144,7 @@ export default function GenericPracticePage({
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
-    handleSkip,
+    handleSkip: handleSkipFromHook,
     handleNext,
     togglePause
   } = useQuestionLogic({ 
@@ -110,10 +153,27 @@ export default function GenericPracticePage({
     onAnswer: handleAnswer
   });
 
+  // Handle exit
+  const handleExit = () => {
+    router.push(`/${subjectPath}`);
+  };
+
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Survival Mode Title */}
-      <div className="text-center pt-2 pb-1 px-4">
+      {/* Confetti */}
+      <Confetti 
+        show={showConfetti} 
+        streak={confettiStreak} 
+        onComplete={() => setShowConfetti(false)}
+      />
+
+      {/* Survival Mode Title with exit button */}
+      <div className="relative text-center pt-2 pb-1 px-4">
+        {/* Exit Button - Top Right */}
+        <div className="absolute right-4 top-2 z-10">
+          <ExitButton onExit={handleExit} />
+        </div>
+        
         <h1 className="text-lg font-bold text-white mb-1">Mode Survival - {subjectName}</h1>
         <p className="text-[#b0b8c1] text-xs">Répondez au plus de questions sans vous tromper</p>
         <div className="text-xs text-[#ffd700] mt-1">
@@ -138,6 +198,9 @@ export default function GenericPracticePage({
         showProgress={false}
         showStreaks={true}
         subjectProgress={subjectProgressPercentage}
+        lastAnswerCorrect={lastAnswerCorrect}
+        showAnswerFeedback={showAnswerFeedback}
+        isSkipped={isSkipped}
       />
 
       {/* Main Content */}
@@ -178,7 +241,7 @@ export default function GenericPracticePage({
               isPaused={isPaused}
               onVerify={handleSubmit}
               onNext={handleNext}
-              onSkip={handleSkip}
+              onSkip={handleSkipFromHook}
             />
           </>
         )}
@@ -189,6 +252,7 @@ export default function GenericPracticePage({
             show={showOverlay}
             isExiting={isExiting}
             isCorrect={isCorrect}
+            isSkipped={isSkippedFromHook}
             explanation={currentQuestion.explanation}
             countdown={countdown}
             emoji={currentEmoji}

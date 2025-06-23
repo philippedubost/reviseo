@@ -1,3 +1,7 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
 interface StatsBadgesProps {
   xp?: number;
   currentStreak?: number;
@@ -9,6 +13,17 @@ interface StatsBadgesProps {
   showProgress?: boolean;
   showStreaks?: boolean;
   subjectProgress?: number;
+  // New props for reactive animations
+  lastAnswerCorrect?: boolean | null;
+  showAnswerFeedback?: boolean;
+  isSkipped?: boolean;
+}
+
+interface PopupAnimation {
+  id: string;
+  text: string;
+  type: 'xp' | 'streak';
+  isCorrect: boolean;
 }
 
 export default function StatsBadges({ 
@@ -21,8 +36,58 @@ export default function StatsBadges({
   totalLessons,
   showProgress = false,
   showStreaks = true,
-  subjectProgress
+  subjectProgress,
+  lastAnswerCorrect = null,
+  showAnswerFeedback = false,
+  isSkipped = false
 }: StatsBadgesProps) {
+  const [xpAnimation, setXpAnimation] = useState(false);
+  const [streakAnimation, setStreakAnimation] = useState(false);
+  const [popups, setPopups] = useState<PopupAnimation[]>([]);
+
+  // Handle answer feedback animations
+  useEffect(() => {
+    if (showAnswerFeedback && lastAnswerCorrect !== null && !isSkipped) {
+      // Flash animations
+      setXpAnimation(true);
+      setStreakAnimation(true);
+      
+      // Create popup animations
+      const newPopups: PopupAnimation[] = [];
+      
+      // XP popup
+      newPopups.push({
+        id: `xp-${Date.now()}`,
+        text: lastAnswerCorrect ? '+10' : '-5',
+        type: 'xp',
+        isCorrect: lastAnswerCorrect
+      });
+      
+      // Streak popup
+      if (showStreaks) {
+        newPopups.push({
+          id: `streak-${Date.now()}`,
+          text: lastAnswerCorrect ? '+1' : '💀',
+          type: 'streak',
+          isCorrect: lastAnswerCorrect
+        });
+      }
+      
+      setPopups(prev => [...prev, ...newPopups]);
+      
+      // Reset flash animations after 300ms
+      setTimeout(() => {
+        setXpAnimation(false);
+        setStreakAnimation(false);
+      }, 300);
+      
+      // Remove popups after animation completes (3 seconds)
+      setTimeout(() => {
+        setPopups(prev => prev.filter(popup => !newPopups.find(np => np.id === popup.id)));
+      }, 3000);
+    }
+  }, [showAnswerFeedback, lastAnswerCorrect, showStreaks, isSkipped]);
+
   const getProgressPercentage = () => {
     if (subjectProgress !== undefined) {
       return subjectProgress;
@@ -44,19 +109,47 @@ export default function StatsBadges({
   };
 
   return (
-    <div className="mx-2 mb-2">
+    <div className="mx-2 mb-2 relative">
       <div className="flex justify-between mb-2">
         {/* XP Badge */}
-        <div className="flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2">
+        <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
+          xpAnimation ? 'bg-yellow-500 scale-110 shadow-lg shadow-yellow-500/50 animate-badgeFlash' : ''
+        }`}>
           <span className="text-lg">⭐</span>
           <div className="text-white text-sm font-semibold">{xp || 0}</div>
+          
+          {/* XP Popup */}
+          {popups.filter(p => p.type === 'xp').map((popup) => (
+            <div
+              key={popup.id}
+              className={`absolute -top-4 left-1/2 transform -translate-x-1/2 text-sm font-bold animate-popupFloat ${
+                popup.isCorrect ? 'text-yellow-400' : 'text-red-400'
+              }`}
+            >
+              {popup.text}
+            </div>
+          ))}
         </div>
         
         {/* Current Streak Badge */}
         {showStreaks && (
-          <div className="flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2">
+          <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
+            streakAnimation ? 'bg-orange-500 scale-110 shadow-lg shadow-orange-500/50 animate-badgeFlash' : ''
+          }`}>
             <span className="text-lg">🔥</span>
             <div className="text-white text-sm font-semibold">{currentStreak || 0}</div>
+            
+            {/* Streak Popup */}
+            {popups.filter(p => p.type === 'streak').map((popup) => (
+              <div
+                key={popup.id}
+                className={`absolute -top-4 left-1/2 transform -translate-x-1/2 text-sm font-bold animate-popupFloat ${
+                  popup.isCorrect ? 'text-orange-400' : 'text-red-400'
+                }`}
+              >
+                {popup.text}
+              </div>
+            ))}
           </div>
         )}
         

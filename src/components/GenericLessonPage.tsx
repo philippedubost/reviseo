@@ -14,6 +14,8 @@ import BackToLessonsButton from './BackToLessonsButton';
 import FlagButton from './FlagButton';
 import ActionButton from './ActionButton';
 import AnswerOptions from './AnswerOptions';
+import ExitButton from './ExitButton';
+import Confetti from './Confetti';
 import { useQuestionLogic } from '@/src/hooks/useQuestionLogic';
 
 interface GenericLessonPageProps {
@@ -40,6 +42,13 @@ export default function GenericLessonPage({
   // Get lesson and questions based on subject
   const [lesson, setLesson] = useState<Lesson | undefined>(undefined);
   const [lessonQuestions, setLessonQuestions] = useState<Question[]>([]);
+  
+  // State for answer feedback animations
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
+  const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
+  const [isSkipped, setIsSkipped] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [confettiStreak, setConfettiStreak] = useState(0);
   
   useEffect(() => {
     const currentLesson = getLessonById(subject, lessonId);
@@ -71,8 +80,41 @@ export default function GenericLessonPage({
 
   // Handle individual answer for XP and streak updates
   const handleAnswer = (isCorrect: boolean) => {
+    // Set answer feedback state for animations
+    setLastAnswerCorrect(isCorrect);
+    setShowAnswerFeedback(true);
+    
+    // Add XP and update streak
     addXP(isCorrect);
     updateStreak(isCorrect);
+    
+    // Check for confetti triggers
+    if (isCorrect) {
+      const newStreak = currentStreak + 1;
+      if (newStreak === 2 || newStreak === 5 || newStreak === 10 || newStreak === 20) {
+        setConfettiStreak(newStreak);
+        setShowConfetti(true);
+      }
+    }
+    
+    // Reset feedback state after animation (3 seconds)
+    setTimeout(() => {
+      setShowAnswerFeedback(false);
+    }, 3000);
+  };
+
+  // Handle skip (no XP/streak changes)
+  const handleSkip = () => {
+    // Skip doesn't affect XP or streak, so we don't call handleAnswer
+    // The useQuestionLogic hook will handle the skip internally
+    setIsSkipped(true);
+    setShowAnswerFeedback(true);
+    
+    // Reset skip state after animation
+    setTimeout(() => {
+      setIsSkipped(false);
+      setShowAnswerFeedback(false);
+    }, 3000);
   };
   
   const {
@@ -81,6 +123,7 @@ export default function GenericLessonPage({
     selectedAnswer,
     showResult,
     isCorrect,
+    isSkipped: isSkippedFromHook,
     sessionScore: currentSessionScore,
     correctAnswers,
     totalQuestions,
@@ -96,7 +139,7 @@ export default function GenericLessonPage({
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
-    handleSkip,
+    handleSkip: handleSkipFromHook,
     handleNext,
     togglePause
   } = useQuestionLogic({ 
@@ -143,6 +186,11 @@ export default function GenericLessonPage({
   // Calculate subject progress percentage
   const subjectProgressPercentage = calculateSubjectProgress();
 
+  // Handle exit
+  const handleExit = () => {
+    router.push(`/${subjectPath}`);
+  };
+
   if (!lesson) {
     return (
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
@@ -156,8 +204,20 @@ export default function GenericLessonPage({
 
   return (
     <div className="h-screen bg-[#181c24] flex flex-col">
-      {/* Lesson title */}
-      <div className="text-center pt-2 pb-1 px-4">
+      {/* Confetti */}
+      <Confetti 
+        show={showConfetti} 
+        streak={confettiStreak} 
+        onComplete={() => setShowConfetti(false)}
+      />
+
+      {/* Lesson title with exit button */}
+      <div className="relative text-center pt-2 pb-1 px-4">
+        {/* Exit Button - Top Right */}
+        <div className="absolute right-4 top-2 z-10">
+          <ExitButton onExit={handleExit} />
+        </div>
+        
         <h1 className="text-lg font-bold text-white mb-1">{lesson.title}</h1>
         <p className="text-[#b0b8c1] text-xs">{lesson.description}</p>
       </div>
@@ -179,6 +239,9 @@ export default function GenericLessonPage({
         showProgress={false}
         showStreaks={true}
         subjectProgress={subjectProgressPercentage}
+        lastAnswerCorrect={lastAnswerCorrect}
+        showAnswerFeedback={showAnswerFeedback}
+        isSkipped={isSkipped}
       />
 
       {/* Main Content */}
@@ -219,7 +282,7 @@ export default function GenericLessonPage({
               isPaused={isPaused}
               onVerify={handleSubmit}
               onNext={handleNext}
-              onSkip={handleSkip}
+              onSkip={handleSkipFromHook}
             />
           </>
         )}
@@ -230,6 +293,7 @@ export default function GenericLessonPage({
             show={showOverlay}
             isExiting={isExiting}
             isCorrect={isCorrect}
+            isSkipped={isSkippedFromHook}
             explanation={currentQuestion.explanation}
             countdown={countdown}
             emoji={currentEmoji}

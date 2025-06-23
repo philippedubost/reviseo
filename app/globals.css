@@ -180,6 +180,50 @@ input, .input {
   }
 }
 
+/* Badge Feedback Animations */
+@keyframes badgeFlash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popupFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-15px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+  }
+}
+
+@keyframes popupBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 .animate-jumpIn {
   animation: jumpIn 0.6s ease-out forwards;
 }
@@ -194,4 +238,29 @@ input, .input {
 
 .animate-jumpOut {
   animation: jumpOut 0.4s ease-in forwards;
+}
+
+.animate-badgeFlash {
+  animation: badgeFlash 0.3s ease-in-out;
+}
+
+.animate-popupFloat {
+  animation: popupFloat 3s ease-out forwards;
+}
+
+.animate-popupBounce {
+  animation: popupBounce 3s ease-in-out;
+}
+
+/* Exit Button Override */
+.exit-button {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0.5rem !important;
+  font-size: inherit !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  width: auto !important;
+  box-shadow: none !important;
 }

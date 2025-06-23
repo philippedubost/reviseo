@@ -1,5 +1,6 @@
 import GenericLessonCompletePage from '@/src/components/GenericLessonCompletePage';
 import { getAllSubjects, getLessonById } from '@/src/data/subjects';
+import { Suspense } from "react";
 
 // Generate static params for all lessons
 export async function generateStaticParams() {
@@ -63,6 +64,8 @@ export default async function LessonCompletePage({
   }
 
   return (
-    <GenericLessonCompletePage subjectPath={subjectId} />
+    <Suspense>
+      <GenericLessonCompletePage subjectPath={subjectId} />
+    </Suspense>
   );
 } 

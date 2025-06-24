@@ -95,8 +95,9 @@ export default function GenericSubjectPage({
         <div className="grid grid-cols-1 gap-3">
           {lessons.map((lesson) => {
             const progressPercentage = getLessonProgressPercentage(lesson);
-            const isCompleted = lesson.completed;
-            const isStarted = (lesson.completedQuestions || 0) > 0;
+            // Use progress data from the hook instead of lesson properties
+            const isCompleted = progressPercentage >= 100;
+            const isStarted = progressPercentage > 0;
             
             return (
               <Link key={lesson.id} href={`/${subjectPath}/lesson/${lesson.id}`}>
@@ -126,7 +127,7 @@ export default function GenericSubjectPage({
                   {/* Progress Info */}
                   <div className="flex justify-between items-center text-xs">
                     <span className="text-[#b0b8c1]">
-                      {lesson.correctAnswers || 0}/{lesson.questions.length} questions
+                      {Math.round((progressPercentage / 100) * lesson.questions.length)}/{lesson.questions.length} questions
                     </span>
                     <span className={`font-semibold ${
                       isCompleted ? 'text-[#2ecc71]' : 

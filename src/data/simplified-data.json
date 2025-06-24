@@ -512,6 +512,156 @@
           ]
         }
       ]
+    },
+    {
+      "id": "terminale",
+      "name": "Terminale",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Mathématiques",
+          "icon": "🔢",
+          "description": "Analyse, géométrie, probabilités",
+          "color": "from-[#8e44ad] to-[#9b59b6]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Fonctions et Dérivées",
+              "description": "Étude des fonctions et calcul différentiel",
+              "icon": "📈",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la dérivée de f(x) = x² ?",
+                  "options": ["x", "2x", "x²", "2x²"],
+                  "correctAnswer": "2x",
+                  "explanation": "La dérivée de x² est 2x selon la règle de dérivation des puissances",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la dérivée de f(x) = e^x ?",
+                  "options": ["e^x", "x·e^x", "e^(x-1)", "ln(x)"],
+                  "correctAnswer": "e^x",
+                  "explanation": "La dérivée de e^x est e^x, c'est une propriété remarquable de la fonction exponentielle",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'un point d'inflexion ?",
+                  "options": ["Un maximum", "Un minimum", "Un point où la courbure change", "Un point d'intersection"],
+                  "correctAnswer": "Un point où la courbure change",
+                  "explanation": "Un point d'inflexion est un point où la courbe change de concavité",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "francais",
+          "name": "Français",
+          "icon": "📚",
+          "description": "Littérature, philosophie, analyse",
+          "color": "from-[#c0392b] to-[#e74c3c]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "La Poésie Moderne",
+              "description": "Analyse des poèmes du XXe siècle",
+              "icon": "✍️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un vers libre ?",
+                  "options": ["Un vers sans rime", "Un vers sans mètre fixe", "Un vers sans ponctuation", "Un vers sans sens"],
+                  "correctAnswer": "Un vers sans mètre fixe",
+                  "explanation": "Le vers libre n'obéit pas à un mètre fixe, contrairement aux vers classiques",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une métaphore ?",
+                  "options": ["Une comparaison avec 'comme'", "Une comparaison directe", "Une répétition", "Une rime"],
+                  "correctAnswer": "Une comparaison directe",
+                  "explanation": "La métaphore est une comparaison directe sans mot de liaison",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que l'oxymore ?",
+                  "options": ["Une répétition", "Une contradiction apparente", "Une rime", "Une allitération"],
+                  "correctAnswer": "Une contradiction apparente",
+                  "explanation": "L'oxymore associe deux termes contradictoires (ex: 'obscure clarté')",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philosophie",
+          "name": "Philosophie",
+          "icon": "🤔",
+          "description": "Réflexion philosophique et concepts",
+          "color": "from-[#2c3e50] to-[#34495e]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "La Conscience",
+              "description": "Notions de conscience et d'inconscient",
+              "icon": "🧠",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la conscience réflexive ?",
+                  "options": ["La conscience immédiate", "La conscience qui se prend pour objet", "L'inconscient", "La perception"],
+                  "correctAnswer": "La conscience qui se prend pour objet",
+                  "explanation": "La conscience réflexive est la capacité de la conscience à se penser elle-même",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qui a introduit le concept d'inconscient ?",
+                  "options": ["Descartes", "Freud", "Sartre", "Platon"],
+                  "correctAnswer": "Freud",
+                  "explanation": "Freud a développé la théorie de l'inconscient au début du XXe siècle",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que le cogito cartésien ?",
+                  "options": ["Je pense donc je suis", "Je doute donc je suis", "Je sens donc je suis", "Je vois donc je suis"],
+                  "correctAnswer": "Je pense donc je suis",
+                  "explanation": "Le cogito est la formule latine 'Cogito ergo sum' de Descartes",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 } 

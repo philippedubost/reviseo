@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { getAllSubjects, getSubjectById, getAllLessonsForSubject } from '../data/simplified-service';
 import type { Subject, Lesson } from '../data/simplified-service';
 
-export type SubjectType = 'maths' | 'francais' | 'sciences' | 'histoire-geo';
+export type SubjectType = 'maths' | 'francais' | 'sciences' | 'histoire-geo' | 'philosophie';
 
 interface LessonProgress {
   completedQuestions: number;
@@ -30,13 +30,17 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
   const [bestStreak, setBestStreak] = useState(0);
   const [globalProgress, setGlobalProgress] = useState(0);
 
-  // Get storage keys for the subject
+  // Get storage key for the subject
   const getStorageKey = () => {
     switch (subject) {
       case 'francais':
         return 'francaisProgress';
       case 'sciences':
         return 'sciencesProgress';
+      case 'histoire-geo':
+        return 'histoireGeoProgress';
+      case 'philosophie':
+        return 'philosophieProgress';
       default:
         return 'mathsProgress';
     }
@@ -198,8 +202,8 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     let totalQuestions = 0;
     
     Object.values(progress.lessonsProgress).forEach(lessonProgress => {
-      totalCorrect += Number(lessonProgress.correctAnswers) || 0;
-      totalQuestions += Number(lessonProgress.completedQuestions) || 0;
+      totalCorrect += lessonProgress.correctAnswers || 0;
+      totalQuestions += lessonProgress.completedQuestions || 0;
     });
     
     return {
@@ -209,36 +213,54 @@ export function useLessonProgress(subject: SubjectType = 'maths') {
     };
   };
 
-  // Initialize data
+  // Load initial data
   useEffect(() => {
-    // Load lessons from unified data structure
-    const allLessons = getAllLessonsForSubject(subject);
-    const progress = loadProgress();
-    
-    // Recalculate totals for backward compatibility
-    const updatedProgress = recalculateTotals(progress);
-    if (JSON.stringify(progress) !== JSON.stringify(updatedProgress)) {
-      saveProgress(updatedProgress);
-    }
-    
-    // Update lessons with saved progress
-    const updatedLessons = allLessons.map(lesson => {
-      const lessonProgress = updatedProgress.lessonsProgress[lesson.id];
-      return {
-        ...lesson,
-        completedQuestions: lessonProgress?.completedQuestions || 0,
-        completed: lessonProgress?.completedQuestions === lesson.questions.length,
-        bestScore: lessonProgress?.bestScore || 0,
-        lastAttemptScore: lessonProgress?.lastAttemptScore || 0,
-        correctAnswers: lessonProgress?.correctAnswers || 0
-      };
-    });
+    const loadInitialData = () => {
+      try {
+        const subjectData = getSubjectById(subject);
+        if (subjectData) {
+          const updatedLessons = subjectData.lessons.map(lesson => ({
+            ...lesson,
+            completedQuestions: 0,
+            completed: false,
+            bestScore: 0,
+            lastAttemptScore: 0,
+            correctAnswers: 0
+          }));
+          
+          setLessons(updatedLessons);
+          
+          // Load progress from localStorage
+          const progress = loadProgress();
+          setTotalXP(progress.totalXP);
+          setCurrentStreak(progress.currentStreak);
+          setBestStreak(progress.bestStreak);
+          
+          // Update lessons with progress data
+          const lessonsWithProgress = updatedLessons.map(lesson => {
+            const lessonProgress = progress.lessonsProgress[lesson.id];
+            if (lessonProgress) {
+              return {
+                ...lesson,
+                completedQuestions: lessonProgress.completedQuestions,
+                completed: lessonProgress.completedQuestions === lesson.questions.length,
+                bestScore: lessonProgress.bestScore,
+                lastAttemptScore: lessonProgress.lastAttemptScore,
+                correctAnswers: lessonProgress.correctAnswers
+              };
+            }
+            return lesson;
+          });
+          
+          setLessons(lessonsWithProgress);
+          setGlobalProgress(calculateGlobalProgress(lessonsWithProgress));
+        }
+      } catch (error) {
+        console.error('Error loading lesson progress:', error);
+      }
+    };
 
-    setLessons(updatedLessons);
-    setTotalXP(updatedProgress.totalXP);
-    setCurrentStreak(updatedProgress.currentStreak);
-    setBestStreak(updatedProgress.bestStreak);
-    setGlobalProgress(calculateGlobalProgress(updatedLessons));
+    loadInitialData();
   }, [subject]);
 
   return {

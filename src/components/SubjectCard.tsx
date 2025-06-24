@@ -7,9 +7,10 @@ import ProgressCircle from './ProgressCircle';
 
 interface SubjectCardProps {
   subject: Subject;
+  levelId?: string;
 }
 
-export default function SubjectCard({ subject }: SubjectCardProps) {
+export default function SubjectCard({ subject, levelId }: SubjectCardProps) {
   const { globalProgress } = useLessonProgress(subject.id as SubjectType);
   const lessonCount = subject.lessons.length;
 
@@ -18,8 +19,11 @@ export default function SubjectCard({ subject }: SubjectCardProps) {
   const toColor = colors[1].replace('to-[', '').replace(']', '');
   const gradient = `linear-gradient(to right, ${fromColor}, ${toColor})`;
 
+  // Construire le lien avec le levelId si fourni
+  const linkHref = levelId ? `/${levelId}/${subject.id}` : `/${subject.id}`;
+
   return (
-    <Link href={`/${subject.id}`} className="w-full">
+    <Link href={linkHref} className="w-full">
       <div 
         className="card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl"
         style={{ background: gradient }}

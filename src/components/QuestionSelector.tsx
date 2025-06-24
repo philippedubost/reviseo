@@ -4,35 +4,31 @@ import { useState } from 'react';
 import { 
   getRandomQuestions, 
   getRandomQuestionsFromAllLessons, 
-  getQuestionsByDifficulty,
-  getAllLessons,
+  getAllSubjects,
   type Question 
-} from '@/src/data/lessons';
+} from '@/src/data/simplified-service';
 
 interface QuestionSelectorProps {
   onQuestionsSelected: (questions: Question[]) => void;
 }
 
 export default function QuestionSelector({ onQuestionsSelected }: QuestionSelectorProps) {
+  const [selectedSubject, setSelectedSubject] = useState<string>('maths');
   const [selectedLesson, setSelectedLesson] = useState<number>(1);
-  const [selectedDifficulty, setSelectedDifficulty] = useState<1 | 2 | 3>(1);
   const [questionCount, setQuestionCount] = useState(5);
-  const [mode, setMode] = useState<'lesson' | 'all' | 'difficulty'>('lesson');
+  const [mode, setMode] = useState<'lesson' | 'all'>('lesson');
   
-  const lessons = getAllLessons();
+  const subjects = getAllSubjects();
 
   const handleGenerateQuestions = () => {
     let questions: Question[] = [];
     
     switch (mode) {
       case 'lesson':
-        questions = getRandomQuestions(selectedLesson, questionCount);
+        questions = getRandomQuestions(selectedSubject, selectedLesson, questionCount);
         break;
       case 'all':
-        questions = getRandomQuestionsFromAllLessons(questionCount);
-        break;
-      case 'difficulty':
-        questions = getQuestionsByDifficulty(selectedDifficulty, questionCount);
+        questions = getRandomQuestionsFromAllLessons(selectedSubject, questionCount);
         break;
     }
     
@@ -54,7 +50,22 @@ export default function QuestionSelector({ onQuestionsSelected }: QuestionSelect
           >
             <option value="lesson">Questions d'une leçon spécifique</option>
             <option value="all">Questions de toutes les leçons</option>
-            <option value="difficulty">Questions par difficulté</option>
+          </select>
+        </div>
+
+        {/* Subject Selection */}
+        <div>
+          <label className="block text-sm font-medium mb-2">Matière :</label>
+          <select 
+            value={selectedSubject} 
+            onChange={(e) => setSelectedSubject(e.target.value)}
+            className="w-full p-2 bg-[#181c24] text-white rounded border border-[#232a36]"
+          >
+            {subjects.map(subject => (
+              <option key={subject.id} value={subject.id}>
+                {subject.name}
+              </option>
+            ))}
           </select>
         </div>
 
@@ -67,27 +78,11 @@ export default function QuestionSelector({ onQuestionsSelected }: QuestionSelect
               onChange={(e) => setSelectedLesson(Number(e.target.value))}
               className="w-full p-2 bg-[#181c24] text-white rounded border border-[#232a36]"
             >
-              {lessons.map(lesson => (
+              {subjects.find(s => s.id === selectedSubject)?.lessons.map(lesson => (
                 <option key={lesson.id} value={lesson.id}>
                   {lesson.title}
                 </option>
               ))}
-            </select>
-          </div>
-        )}
-
-        {/* Difficulty Selection (only for difficulty mode) */}
-        {mode === 'difficulty' && (
-          <div>
-            <label className="block text-sm font-medium mb-2">Difficulté :</label>
-            <select 
-              value={selectedDifficulty} 
-              onChange={(e) => setSelectedDifficulty(Number(e.target.value) as 1 | 2 | 3)}
-              className="w-full p-2 bg-[#181c24] text-white rounded border border-[#232a36]"
-            >
-              <option value={1}>Facile</option>
-              <option value={2}>Moyen</option>
-              <option value={3}>Difficile</option>
             </select>
           </div>
         )}

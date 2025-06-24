@@ -1,4 +1,4 @@
-import { getAllSubjects } from "@/src/data/subjects";
+import { getAllSubjects } from "@/src/data/simplified-service";
 import SubjectCard from "@/src/components/SubjectCard";
 
 export default function Home() {

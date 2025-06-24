@@ -1,5 +1,5 @@
 import GenericSubjectPage from '@/src/components/GenericSubjectPage';
-import { getAllSubjects } from '@/src/data/subjects';
+import { getAllSubjects } from '@/src/data/simplified-service';
 
 // Generate static params for all subjects
 export async function generateStaticParams() {
@@ -47,7 +47,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ subjec
 
   return (
     <GenericSubjectPage
-      subject={subject.id as 'maths' | 'francais' | 'sciences'}
+      subject={subject.id as 'maths' | 'francais' | 'sciences' | 'histoire-geo'}
       subjectPath={subject.id}
       subjectName={subject.name}
       subjectIcon={subject.icon}

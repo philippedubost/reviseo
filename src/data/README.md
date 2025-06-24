@@ -113,4 +113,122 @@ const easyQuestions = getQuestionsByDifficulty(lesson.questions, 1, 3);
 
 ## Migration Notes
 
-This structure replaces the previous flat file organization where all data was in separate files. The new structure provides better organization, type safety, and maintainability while preserving all existing functionality. 
+This structure replaces the previous flat file organization where all data was in separate files. The new structure provides better organization, type safety, and maintainability while preserving all existing functionality.
+
+# Guide d'utilisation - Structure de données simplifiée
+
+## 🚀 Structure actuelle
+
+**1 niveau** : Troisième  
+**2 matières** : Mathématiques, Français  
+**1 leçon par matière** avec **11 questions** chacune  
+**10 questions tirées au sort** par session
+
+## 📁 Fichier principal
+
+Toutes les données sont dans : `src/data/simplified-data.json`
+
+## ➕ Comment ajouter du contenu
+
+### 1. Ajouter un nouveau niveau
+
+```json
+{
+  "id": "quatrieme",
+  "name": "Quatrième",
+  "subjects": [...]
+}
+```
+
+### 2. Ajouter une nouvelle matière
+
+Dans le niveau souhaité, ajouter dans `subjects` :
+
+```json
+{
+  "id": "histoire",
+  "name": "Histoire",
+  "icon": "🏛️",
+  "description": "Histoire de France et du monde",
+  "color": "from-[#8B4513] to-[#D2691E]",
+  "lessons": [...]
+}
+```
+
+### 3. Ajouter une nouvelle leçon
+
+Dans la matière souhaitée, ajouter dans `lessons` :
+
+```json
+{
+  "id": 2,
+  "title": "Géométrie",
+  "description": "Théorème de Pythagore",
+  "icon": "📐",
+  "difficulty": "medium",
+  "questions": [...]
+}
+```
+
+### 4. Ajouter des questions
+
+Dans la leçon souhaitée, ajouter dans `questions` :
+
+```json
+{
+  "id": 12,
+  "type": "multiple-choice",
+  "difficulty": 2,
+  "question": "Quelle est la formule du théorème de Pythagore ?",
+  "options": ["a²+b²=c²", "a+b=c", "a²-b²=c²", "a×b=c"],
+  "correctAnswer": "a²+b²=c²",
+  "explanation": "Dans un triangle rectangle, a²+b²=c²",
+  "points": 10
+}
+```
+
+## 🎯 Avantages de cette structure
+
+### Pour Cursor :
+- ✅ **Un seul fichier** à ouvrir/modifier
+- ✅ **Recherche globale** : Ctrl+Shift+F sur tout le contenu
+- ✅ **Édition rapide** : Pas d'imports multiples
+- ✅ **Validation facile** : Un seul schéma
+
+### Pour le développement :
+- ✅ **Performance** : Chargement en une fois
+- ✅ **Simplicité** : Structure plate et claire
+- ✅ **Extensibilité** : Ajout atomique facile
+- ✅ **Maintenance** : Un seul point de vérité
+
+## 🔧 Utilisation dans le code
+
+```typescript
+import { dataService } from '@/src/data/simplified-service';
+
+// Récupérer tous les sujets
+const subjects = dataService.getAllSubjects();
+
+// Récupérer 10 questions aléatoires d'une leçon
+const questions = dataService.getRandomQuestions('maths', 1, 10);
+
+// Récupérer les questions par difficulté
+const easyQuestions = dataService.getQuestionsByDifficulty('maths', 1, 5);
+```
+
+## 📝 Conseils pour l'ajout de contenu
+
+1. **Copier-coller** : Utilisez les questions existantes comme modèle
+2. **IDs uniques** : Assurez-vous que les IDs sont uniques dans chaque leçon
+3. **Difficulté progressive** : Mélangez les difficultés (1, 2, 3)
+4. **Explications claires** : Toujours expliquer pourquoi la réponse est correcte
+5. **Options réalistes** : Les mauvaises réponses doivent être plausibles
+
+## 🎲 Logique de tirage au sort
+
+- **11 questions** dans chaque leçon
+- **10 questions** tirées au sort par session
+- **Mélange aléatoire** pour éviter la répétition
+- **Possibilité** de filtrer par difficulté
+
+Cette structure vous permet d'ajouter du contenu de manière **atomique** et **simple**, tout en gardant une **performance optimale** ! 

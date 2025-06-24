@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
-import type { Lesson } from '@/src/data/types';
+import { getSubjectById, getAllLessonsForSubject } from '@/src/data/simplified-service';
+import type { Lesson } from '@/src/data/simplified-service';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
 import SubjectCard from './SubjectCard';
 import ProgressBar from './ProgressBar';

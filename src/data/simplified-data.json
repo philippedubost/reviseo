@@ -1,0 +1,517 @@
+{
+  "levels": [
+    {
+      "id": "troisieme",
+      "name": "Troisième",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Mathématiques",
+          "icon": "🔢",
+          "description": "Algèbre, géométrie, statistiques",
+          "color": "from-[#00baff] to-[#2ecc71]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Nombres et Calculs",
+              "description": "Fractions, puissances, racines carrées",
+              "icon": "🔢",
+              "difficulty": "easy",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la valeur de √25 ?",
+                  "options": ["3", "4", "5", "6"],
+                  "correctAnswer": "5",
+                  "explanation": "La racine carrée de 25 est 5 car 5 × 5 = 25",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "calculation",
+                  "difficulty": 1,
+                  "question": "Calcule 2³ × 2²",
+                  "correctAnswer": "32",
+                  "explanation": "2³ = 8 et 2² = 4, donc 8 × 4 = 32",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle fraction est équivalente à 0.75 ?",
+                  "options": ["1/4", "2/3", "3/4", "4/5"],
+                  "correctAnswer": "3/4",
+                  "explanation": "0.75 = 75/100 = 3/4",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "calculation",
+                  "difficulty": 2,
+                  "question": "Calcule √16 + √9",
+                  "correctAnswer": "7",
+                  "explanation": "√16 = 4 et √9 = 3, donc 4 + 3 = 7",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la valeur de 5⁻² ?",
+                  "options": ["1/25", "1/10", "25", "10"],
+                  "correctAnswer": "1/25",
+                  "explanation": "5⁻² = 1/5² = 1/25",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "calculation",
+                  "difficulty": 2,
+                  "question": "Calcule (2/3) × (3/4)",
+                  "correctAnswer": "0.5",
+                  "explanation": "(2/3) × (3/4) = 6/12 = 1/2 = 0.5",
+                  "points": 10
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la valeur de √50 ?",
+                  "options": ["5√2", "7", "5", "10"],
+                  "correctAnswer": "5√2",
+                  "explanation": "√50 = √(25 × 2) = √25 × √2 = 5√2",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "calculation",
+                  "difficulty": 3,
+                  "question": "Calcule 3⁴ ÷ 3²",
+                  "correctAnswer": "9",
+                  "explanation": "3⁴ ÷ 3² = 3^(4-2) = 3² = 9",
+                  "points": 10
+                },
+                {
+                  "id": 9,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la valeur de √36 ?",
+                  "options": ["4", "5", "6", "7"],
+                  "correctAnswer": "6",
+                  "explanation": "La racine carrée de 36 est 6 car 6 × 6 = 36",
+                  "points": 10
+                },
+                {
+                  "id": 10,
+                  "type": "calculation",
+                  "difficulty": 1,
+                  "question": "Calcule 4² + 3²",
+                  "correctAnswer": "25",
+                  "explanation": "4² = 16 et 3² = 9, donc 16 + 9 = 25",
+                  "points": 10
+                },
+                {
+                  "id": 11,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle fraction est équivalente à 0.5 ?",
+                  "options": ["1/3", "1/2", "2/3", "3/4"],
+                  "correctAnswer": "1/2",
+                  "explanation": "0.5 = 5/10 = 1/2",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "francais",
+          "name": "Français",
+          "icon": "📝",
+          "description": "Grammaire, littérature, expression",
+          "color": "from-[#e74c3c] to-[#f39c12]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Grammaire de Base",
+              "description": "Classes grammaticales et fonctions",
+              "icon": "📝",
+              "difficulty": "easy",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la classe grammaticale du mot 'rapidement' ?",
+                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
+                  "correctAnswer": "Adverbe",
+                  "explanation": "'Rapidement' est un adverbe car il modifie le verbe",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Dans 'Le chat dort', quelle est la fonction de 'chat' ?",
+                  "options": ["Sujet", "COD", "Attribut", "Complément"],
+                  "correctAnswer": "Sujet",
+                  "explanation": "'Chat' est le sujet du verbe 'dort'",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la classe grammaticale de 'beau' ?",
+                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
+                  "correctAnswer": "Adjectif",
+                  "explanation": "'Beau' est un adjectif qualificatif",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans 'Je mange une pomme', quelle est la fonction de 'pomme' ?",
+                  "options": ["Sujet", "COD", "Attribut", "Complément"],
+                  "correctAnswer": "COD",
+                  "explanation": "'Pomme' est le complément d'objet direct du verbe 'mange'",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la classe grammaticale de 'et' ?",
+                  "options": ["Conjonction", "Préposition", "Adverbe", "Pronom"],
+                  "correctAnswer": "Conjonction",
+                  "explanation": "'Et' est une conjonction de coordination",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans 'Il est content', quelle est la fonction de 'content' ?",
+                  "options": ["Sujet", "COD", "Attribut", "Complément"],
+                  "correctAnswer": "Attribut",
+                  "explanation": "'Content' est l'attribut du sujet 'il'",
+                  "points": 10
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la classe grammaticale de 'lequel' ?",
+                  "options": ["Pronom", "Déterminant", "Adverbe", "Conjonction"],
+                  "correctAnswer": "Pronom",
+                  "explanation": "'Lequel' est un pronom relatif",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Dans 'Le livre de Paul', quelle est la fonction de 'de Paul' ?",
+                  "options": ["COD", "Attribut", "Complément du nom", "Complément circonstanciel"],
+                  "correctAnswer": "Complément du nom",
+                  "explanation": "'De Paul' complète le nom 'livre'",
+                  "points": 10
+                },
+                {
+                  "id": 9,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la classe grammaticale de 'dans' ?",
+                  "options": ["Conjonction", "Préposition", "Adverbe", "Pronom"],
+                  "correctAnswer": "Préposition",
+                  "explanation": "'Dans' est une préposition",
+                  "points": 10
+                },
+                {
+                  "id": 10,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Dans 'Marie chante', quelle est la fonction de 'Marie' ?",
+                  "options": ["Sujet", "COD", "Attribut", "Complément"],
+                  "correctAnswer": "Sujet",
+                  "explanation": "'Marie' est le sujet du verbe 'chante'",
+                  "points": 10
+                },
+                {
+                  "id": 11,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quelle est la classe grammaticale de 'très' ?",
+                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
+                  "correctAnswer": "Adverbe",
+                  "explanation": "'Très' est un adverbe d'intensité",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sciences",
+          "name": "Sciences",
+          "icon": "🧪",
+          "description": "Physique, chimie, biologie, géologie",
+          "color": "from-[#9b59b6] to-[#8e44ad]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Énergie et Matière",
+              "description": "Transformations chimiques et physiques",
+              "icon": "⚗️",
+              "difficulty": "easy",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce qu'une transformation chimique ?",
+                  "options": ["Un changement d'état", "Une réaction qui forme de nouveaux produits", "Un changement de température", "Un changement de volume"],
+                  "correctAnswer": "Une réaction qui forme de nouveaux produits",
+                  "explanation": "Une transformation chimique produit de nouvelles substances avec des propriétés différentes",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quel est le symbole chimique du fer ?",
+                  "options": ["Fe", "Fr", "Fi", "F"],
+                  "correctAnswer": "Fe",
+                  "explanation": "Fe vient du latin 'ferrum' qui signifie fer",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce que la photosynthèse ?",
+                  "options": ["Un processus de respiration", "Un processus de fabrication de matière organique", "Un processus de digestion", "Un processus de reproduction"],
+                  "correctAnswer": "Un processus de fabrication de matière organique",
+                  "explanation": "La photosynthèse permet aux plantes de fabriquer leur matière organique à partir de CO2 et d'eau",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel est le rôle des mitochondries ?",
+                  "options": ["La photosynthèse", "La respiration cellulaire", "La division cellulaire", "La digestion"],
+                  "correctAnswer": "La respiration cellulaire",
+                  "explanation": "Les mitochondries sont les centrales énergétiques de la cellule",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un atome ?",
+                  "options": ["La plus petite partie d'un élément", "Une molécule", "Un ion", "Un électron"],
+                  "correctAnswer": "La plus petite partie d'un élément",
+                  "explanation": "Un atome est la plus petite unité d'un élément chimique qui conserve ses propriétés",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel est le pH d'une solution neutre ?",
+                  "options": ["0", "7", "14", "10"],
+                  "correctAnswer": "7",
+                  "explanation": "Le pH neutre est 7, en dessous c'est acide, au-dessus c'est basique",
+                  "points": 10
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que l'ADN ?",
+                  "options": ["Un sucre", "Un lipide", "Une protéine", "Un acide nucléique"],
+                  "correctAnswer": "Un acide nucléique",
+                  "explanation": "L'ADN (acide désoxyribonucléique) contient l'information génétique",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quel est le principe de la conservation de la masse ?",
+                  "options": ["La masse se perd", "La masse se crée", "La masse reste constante", "La masse varie"],
+                  "correctAnswer": "La masse reste constante",
+                  "explanation": "Dans une transformation chimique, la masse totale des réactifs égale la masse totale des produits",
+                  "points": 10
+                },
+                {
+                  "id": 9,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quel est le symbole chimique de l'oxygène ?",
+                  "options": ["Ox", "O", "Oy", "Og"],
+                  "correctAnswer": "O",
+                  "explanation": "O est le symbole chimique de l'oxygène",
+                  "points": 10
+                },
+                {
+                  "id": 10,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce qu'un écosystème ?",
+                  "options": ["Un organisme", "Un ensemble d'êtres vivants et leur milieu", "Une espèce", "Un habitat"],
+                  "correctAnswer": "Un ensemble d'êtres vivants et leur milieu",
+                  "explanation": "Un écosystème comprend les êtres vivants et leur environnement physique",
+                  "points": 10
+                },
+                {
+                  "id": 11,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quel est l'état de l'eau à 0°C ?",
+                  "options": ["Liquide", "Solide", "Gazeux", "Plasma"],
+                  "correctAnswer": "Solide",
+                  "explanation": "À 0°C, l'eau se solidifie et devient de la glace",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "histoire-geo",
+          "name": "Histoire-Géographie",
+          "icon": "🌍",
+          "description": "Histoire de France et géographie mondiale",
+          "color": "from-[#1e3a8a] to-[#3b82f6]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "La Révolution Française",
+              "description": "Les événements de 1789 et leurs conséquences",
+              "icon": "⚔️",
+              "difficulty": "easy",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "En quelle année a eu lieu la prise de la Bastille ?",
+                  "options": ["1789", "1790", "1788", "1791"],
+                  "correctAnswer": "1789",
+                  "explanation": "La prise de la Bastille a eu lieu le 14 juillet 1789",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quel était le roi de France en 1789 ?",
+                  "options": ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVII"],
+                  "correctAnswer": "Louis XVI",
+                  "explanation": "Louis XVI était roi de France au début de la Révolution",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce que le Tiers État ?",
+                  "options": ["La noblesse", "Le clergé", "Le peuple", "L'armée"],
+                  "correctAnswer": "Le peuple",
+                  "explanation": "Le Tiers État représentait 98% de la population française",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel document a été adopté le 26 août 1789 ?",
+                  "options": ["La Constitution", "La Déclaration des Droits de l'Homme", "Le Code Civil", "La Charte"],
+                  "correctAnswer": "La Déclaration des Droits de l'Homme",
+                  "explanation": "La Déclaration des Droits de l'Homme et du Citoyen a été adoptée le 26 août 1789",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la Terreur ?",
+                  "options": ["Une période de paix", "Une période de répression", "Une période de prospérité", "Une période de guerre"],
+                  "correctAnswer": "Une période de répression",
+                  "explanation": "La Terreur (1793-1794) fut une période de répression politique intense",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel général est devenu empereur en 1804 ?",
+                  "options": ["Napoléon Bonaparte", "Napoléon III", "Louis XVIII", "Charles X"],
+                  "correctAnswer": "Napoléon Bonaparte",
+                  "explanation": "Napoléon Bonaparte est devenu empereur des Français en 1804",
+                  "points": 10
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la Constitution de 1791 ?",
+                  "options": ["Une monarchie absolue", "Une monarchie constitutionnelle", "Une république", "Un empire"],
+                  "correctAnswer": "Une monarchie constitutionnelle",
+                  "explanation": "La Constitution de 1791 établit une monarchie constitutionnelle",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quel était le slogan de la Révolution ?",
+                  "options": ["Liberté, Égalité, Fraternité", "Paix, Amour, Harmonie", "Justice, Vérité, Honneur", "Unité, Force, Courage"],
+                  "correctAnswer": "Liberté, Égalité, Fraternité",
+                  "explanation": "Liberté, Égalité, Fraternité est devenu la devise de la République française",
+                  "points": 10
+                },
+                {
+                  "id": 9,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce qu'un sans-culotte ?",
+                  "options": ["Un noble", "Un révolutionnaire populaire", "Un prêtre", "Un soldat"],
+                  "correctAnswer": "Un révolutionnaire populaire",
+                  "explanation": "Les sans-culottes étaient des révolutionnaires populaires parisiens",
+                  "points": 10
+                },
+                {
+                  "id": 10,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Quel événement marque la fin de la monarchie en 1792 ?",
+                  "options": ["La prise de la Bastille", "L'exécution du roi", "La proclamation de la République", "Le coup d'État de Napoléon"],
+                  "correctAnswer": "La proclamation de la République",
+                  "explanation": "La République est proclamée le 22 septembre 1792",
+                  "points": 10
+                },
+                {
+                  "id": 11,
+                  "type": "multiple-choice",
+                  "difficulty": 1,
+                  "question": "Qu'est-ce que la Vendée ?",
+                  "options": ["Une ville", "Une région en révolte", "Un parti politique", "Un journal"],
+                  "correctAnswer": "Une région en révolte",
+                  "explanation": "La Vendée était une région royaliste qui s'est révoltée contre la Révolution",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,8 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import type { Subject } from '../data/types';
-import { getAllLessonsForSubject } from '../data/subjects';
+import type { Subject } from '../data/simplified-service';
 import { useLessonProgress, SubjectType } from '../hooks/useLessonProgress';
 import ProgressCircle from './ProgressCircle';
 
@@ -12,10 +11,7 @@ interface SubjectCardProps {
 
 export default function SubjectCard({ subject }: SubjectCardProps) {
   const { globalProgress } = useLessonProgress(subject.id as SubjectType);
-  
-  // Get the correct lesson count for each subject
-  const lessons = getAllLessonsForSubject(subject.id);
-  const lessonCount = lessons.length;
+  const lessonCount = subject.lessons.length;
 
   const colors = subject.color.split(' ');
   const fromColor = colors[0].replace('from-[', '').replace(']', '');
@@ -33,7 +29,7 @@ export default function SubjectCard({ subject }: SubjectCardProps) {
           <div>
             <div className="text-lg font-bold text-white">{subject.name}</div>
             <div className="text-gray-200 text-xs">
-              {lessonCount} leçons
+              {lessonCount} leçon{lessonCount > 1 ? 's' : ''}
             </div>
           </div>
         </div>

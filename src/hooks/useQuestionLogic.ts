@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { Question } from '../data/types';
+import type { Question } from '../data/simplified-service';
 import { compareAnswers } from '../utils/answerValidation';
 
 interface UseQuestionLogicProps {

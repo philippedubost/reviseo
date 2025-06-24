@@ -1,5 +1,5 @@
 import GenericLessonPage from '@/src/components/GenericLessonPage';
-import { getAllSubjects, getLessonById } from '@/src/data/subjects';
+import { getAllSubjects, getLessonById } from '@/src/data/simplified-service';
 
 // Generate static params for all lessons
 export async function generateStaticParams() {

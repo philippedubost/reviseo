@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getAllSubjects, getSubjectById, getAllLessonsForSubject } from '../data/subjects';
-import type { Subject, Lesson } from '../data/types';
+import { getAllSubjects, getSubjectById, getAllLessonsForSubject } from '../data/simplified-service';
+import type { Subject, Lesson } from '../data/simplified-service';
 
-export type SubjectType = 'maths' | 'francais' | 'sciences';
+export type SubjectType = 'maths' | 'francais' | 'sciences' | 'histoire-geo';
 
 interface LessonProgress {
   completedQuestions: number;

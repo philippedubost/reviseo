@@ -1,5 +1,5 @@
 import GenericLessonCompletePage from '@/src/components/GenericLessonCompletePage';
-import { getAllSubjects, getLessonById } from '@/src/data/subjects';
+import { getAllSubjects, getLessonById } from '@/src/data/simplified-service';
 import { Suspense } from "react";
 
 // Generate static params for all lessons

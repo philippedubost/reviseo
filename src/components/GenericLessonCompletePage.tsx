@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useLessonProgress, type SubjectType } from '@/src/hooks/useLessonProgress';
-import { getLessonById } from '@/src/data/subjects';
-import type { Lesson } from '@/src/data/types';
+import { getLessonById } from '@/src/data/simplified-service';
+import type { Lesson } from '@/src/data/simplified-service';
 import BackToLessonsButton from './BackToLessonsButton';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
@@ -20,7 +20,8 @@ interface GenericLessonCompletePageProps {
 const subjectPathToType: Record<string, SubjectType> = {
   'maths': 'maths',
   'francais': 'francais',
-  'sciences': 'sciences'
+  'sciences': 'sciences',
+  'histoire-geo': 'histoire-geo'
 };
 
 export default function GenericLessonCompletePage({ 

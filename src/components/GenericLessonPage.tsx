@@ -3,9 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
-import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
-import type { Question, Lesson } from '@/src/data/types';
-import { getLessonById, getRandomQuestions } from '@/src/data/subjects';
+import { getSubjectById, getAllLessonsForSubject, getLessonById, getRandomQuestions } from '@/src/data/simplified-service';
+import type { Question, Lesson } from '@/src/data/simplified-service';
 import QuestionDisplay from './QuestionDisplay';
 import ResponseOverlay from './ResponseOverlay';
 import ProgressBar from './ProgressBar';
@@ -26,7 +25,8 @@ interface GenericLessonPageProps {
 const subjectPathToType: Record<string, SubjectType> = {
   'maths': 'maths',
   'francais': 'francais',
-  'sciences': 'sciences'
+  'sciences': 'sciences',
+  'histoire-geo': 'histoire-geo'
 };
 
 export default function GenericLessonPage({ 
@@ -189,7 +189,7 @@ export default function GenericLessonPage({
       <div className="min-h-screen bg-[#181c24] flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Leçon non trouvée</h1>
-          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'sciences'} />
+          <BackToLessonsButton subject={subjectPath as 'maths' | 'francais' | 'sciences' | 'histoire-geo'} />
         </div>
       </div>
     );

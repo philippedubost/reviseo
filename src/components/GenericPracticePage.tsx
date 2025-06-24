@@ -3,9 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
-import { getSubjectById, getAllLessonsForSubject } from '@/src/data/subjects';
-import type { Question } from '@/src/data/types';
-import { getRandomQuestionsFromAllLessons } from '@/src/data/subjects';
+import { getSubjectById, getAllLessonsForSubject, getRandomQuestionsFromAllLessons } from '@/src/data/simplified-service';
+import type { Question } from '@/src/data/simplified-service';
 import QuestionDisplay from './QuestionDisplay';
 import ResponseOverlay from './ResponseOverlay';
 import ProgressBar from './ProgressBar';

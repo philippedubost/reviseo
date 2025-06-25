@@ -1,26 +1,19 @@
 'use client';
 
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useSearchParams, useRouter, useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { dataService } from '@/src/data/simplified-service';
 import ConfettiManager from '@/src/components/ConfettiManager';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
 
-interface CompletePageProps {
-  params: {
-    level: string;
-    subject: string;
-    id: string;
-  };
-}
-
-export default function CompletePage({ params }: CompletePageProps) {
+export default function CompletePage() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const lessonId = Number(params.id);
+  const params = useParams();
+  const lessonId = Number(params.id as string);
   const subjectId = params.subject as SubjectType;
-  const levelId = params.level;
+  const levelId = params.level as string;
   
   const score = Number(searchParams.get('score')) || 0;
   const total = Number(searchParams.get('total')) || 0;

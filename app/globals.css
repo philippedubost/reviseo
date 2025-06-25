@@ -1,44 +1,46 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #0f172a;
   --foreground: #f1f5f9;
+  --card: #1e293b;
+  --card-foreground: #f1f5f9;
+  --popover: #1e293b;
+  --popover-foreground: #f1f5f9;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #475569;
+  --secondary-foreground: #f1f5f9;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: #475569;
+  --accent-foreground: #f1f5f9;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #475569;
+  --input: #475569;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+  --button: #475569;
   --accent-green: #10b981;
   --accent-blue: #3b82f6;
-  --accent-yellow: #f59e0b;
-  --accent-red: #ef4444;
-  --mascot-color: #ec8501;
-  --card: #1e293b;
-  --button: #334155;
-  --button-active: #10b981;
-  --border: #475569;
-  --radius: 1.5rem;
-  --font-sans: 'Inter', 'Geist', 'Arial', sans-serif;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background) !important;
-  color: var(--foreground) !important;
-  font-family: var(--font-sans);
-  margin: 0;
-  padding: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
-/* Force dark theme everywhere */
 html, body {
   background-color: #0f172a !important;
   color: #f1f5f9 !important;
 }
 
 /* Override any hardcoded backgrounds */
-.bg-\[#232a36\], 
+.bg-dark-gray, 
 [class*="bg-[#232a36]"] {
   background-color: #1e293b !important;
 }
@@ -107,12 +109,13 @@ button, .btn {
   font-weight: bold;
   margin: 0.5rem 0;
   width: 100%;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 button:active, .btn:active, button.selected, .btn.selected {
   background: var(--accent-green);
   color: #ffffff;
+  transform: scale(0.95);
 }
 
 .card, .answer-option {
@@ -123,6 +126,14 @@ button:active, .btn:active, button.selected, .btn.selected {
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   font-size: 1.1rem;
   border: 1px solid var(--border);
+  transition: transform 0.1s, box-shadow 0.1s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.card:active, .answer-option:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  background-color: var(--accent) !important;
 }
 
 input, .input {

@@ -16,6 +16,18 @@ export default function Home() {
     }
   };
 
+  // Niveaux disponibles (cliquables)
+  const availableLevels = ['troisieme', 'terminale'];
+  
+  // Niveaux à venir (grisés)
+  const upcomingLevels = [
+    { id: 'sixieme', name: 'Sixième', emoji: '📚', description: 'Début du collège' },
+    { id: 'cinquieme', name: 'Cinquième', emoji: '🎯', description: 'Collège' },
+    { id: 'quatrieme', name: 'Quatrième', emoji: '⚡', description: 'Collège' },
+    { id: 'seconde', name: 'Seconde', emoji: '🚀', description: 'Début du lycée' },
+    { id: 'premiere', name: 'Première', emoji: '💎', description: 'Lycée' }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen bg-[#181c24]">
       {/* Header */}
@@ -26,6 +38,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="flex-1 px-2 pb-16">
         <div className="w-full flex flex-col gap-3">
+          {/* Niveaux disponibles */}
           {levels.map((level) => (
             <button
               key={level.id}
@@ -58,6 +71,23 @@ export default function Home() {
               </div>
               <div className="text-2xl">→</div>
             </button>
+          ))}
+
+          {/* Niveaux à venir (grisés) */}
+          {upcomingLevels.map((level) => (
+            <div
+              key={level.id}
+              className="card flex items-center justify-between p-4 w-full relative overflow-hidden rounded-2xl text-gray-400 border border-gray-600 bg-gray-800 opacity-60 cursor-not-allowed"
+            >
+              <div className="flex items-center gap-4">
+                <div className="text-3xl">{level.emoji}</div>
+                <div>
+                  <div className="text-lg font-bold">{level.name}</div>
+                  <div className="text-gray-500 text-sm">{level.description}</div>
+                </div>
+              </div>
+              <div className="text-2xl text-gray-500">🔒</div>
+            </div>
           ))}
         </div>
       </div>

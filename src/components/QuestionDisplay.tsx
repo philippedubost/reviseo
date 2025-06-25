@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
@@ -67,32 +68,84 @@ export default function QuestionDisplay({
   };
 
   return (
-    <div className="flex flex-col items-center mb-6">
+    <motion.div 
+      className="flex flex-col items-center mb-6"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: [0.4, 0.0, 0.2, 1] }}
+    >
       <div className="text-center max-w-2xl w-full">
         {(type === 'calculation' || type === 'input') ? (
           <>
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="text-lg font-bold" style={{ color: 'var(--mascot-color)' }}>
+            <motion.div 
+              className="flex items-center justify-center gap-2 mb-3"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <motion.div 
+                className="text-lg font-bold"
+                style={{ color: 'var(--mascot-color)' }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 {question}
-              </div>
+              </motion.div>
               {questionId && subjectId && (
-                <FlagButton
-                  questionId={questionId}
-                  subjectId={subjectId}
-                  lessonId={lessonId}
-                  questionText={question}
-                  isPracticeMode={isPracticeMode}
-                />
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                >
+                  <FlagButton
+                    questionId={questionId}
+                    subjectId={subjectId}
+                    lessonId={lessonId}
+                    questionText={question}
+                    isPracticeMode={isPracticeMode}
+                  />
+                </motion.div>
               )}
-            </div>
+            </motion.div>
             {latex && (
-              <div className="flex justify-center items-center gap-2 mb-4">
-                <BlockMath math={latex} />
-                <span className="text-2xl font-bold" style={{ color: 'var(--mascot-color)' }}>=</span>
-              </div>
+              <motion.div 
+                className="flex justify-center items-center gap-2 mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <motion.div
+                  initial={{ scale: 0.8 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  <BlockMath math={latex} />
+                </motion.div>
+                <motion.span 
+                  className="text-2xl font-bold"
+                  style={{ color: 'var(--mascot-color)' }}
+                  animate={{ 
+                    scale: [1, 1.2, 1],
+                    rotate: [0, 5, -5, 0]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatDelay: 3
+                  }}
+                >
+                  =
+                </motion.span>
+              </motion.div>
             )}
-            <div className="w-full flex flex-col items-center justify-center">
-              <input
+            <motion.div 
+              className="w-full flex flex-col items-center justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              <motion.input
                 ref={inputRef}
                 type="text"
                 className="input text-center text-lg font-bold w-full max-w-md"
@@ -101,38 +154,88 @@ export default function QuestionDisplay({
                 onChange={e => !showResult && onAnswerChange(e.target.value)}
                 onKeyDown={handleKeyDown}
                 disabled={showResult}
+                whileFocus={{ 
+                  scale: 1.02,
+                  boxShadow: "0 0 0 2px rgba(59, 130, 246, 0.5)"
+                }}
+                transition={{ duration: 0.2 }}
               />
               {!showResult && onSubmit && (
-                <button
-                  className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold px-6 mt-2"
+                <motion.button
+                  className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold px-6 mt-2 relative overflow-hidden"
                   onClick={onSubmit}
                   disabled={!selectedAnswer.trim()}
+                  whileHover={{ 
+                    scale: 1.05,
+                    transition: { duration: 0.2 }
+                  }}
+                  whileTap={{ 
+                    scale: 0.95,
+                    transition: { duration: 0.1 }
+                  }}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.6 }}
                 >
-                  Valider
-                </button>
+                  {/* Ripple effect */}
+                  <motion.div
+                    className="absolute inset-0 bg-white opacity-0"
+                    whileHover={{ opacity: 0.1 }}
+                    transition={{ duration: 0.2 }}
+                  />
+                  <span className="relative z-10">Valider</span>
+                </motion.button>
               )}
-            </div>
+            </motion.div>
           </>
         ) : (
           <>
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="text-lg font-bold" style={{ color: 'var(--mascot-color)' }}>
+            <motion.div 
+              className="flex items-center justify-center gap-2 mb-3"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <motion.div 
+                className="text-lg font-bold"
+                style={{ color: 'var(--mascot-color)' }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 {question}
-              </div>
+              </motion.div>
               {questionId && subjectId && (
-                <FlagButton
-                  questionId={questionId}
-                  subjectId={subjectId}
-                  lessonId={lessonId}
-                  questionText={question}
-                  isPracticeMode={isPracticeMode}
-                />
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                >
+                  <FlagButton
+                    questionId={questionId}
+                    subjectId={subjectId}
+                    lessonId={lessonId}
+                    questionText={question}
+                    isPracticeMode={isPracticeMode}
+                  />
+                </motion.div>
               )}
-            </div>
+            </motion.div>
             {latex && (
-              <div className="flex justify-center">
-                <BlockMath math={latex} />
-              </div>
+              <motion.div 
+                className="flex justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <motion.div
+                  initial={{ scale: 0.8 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  <BlockMath math={latex} />
+                </motion.div>
+              </motion.div>
             )}
             {type === 'multiple-choice' && options.length > 0 && (
               <AnswerOptions
@@ -146,6 +249,6 @@ export default function QuestionDisplay({
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 } 

@@ -3,6 +3,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Lexend } from "next/font/google";
 import Header from "../src/components/Header";
+import PageTransition from "../src/components/PageTransition";
 import "./globals.css";
 import { usePathname } from "next/navigation";
 
@@ -28,7 +29,8 @@ export default function RootLayout({
   // Hide header for maths lesson and practice pages, and subject pages
   const shouldHideHeader = pathname?.includes('/lesson/') || 
                         pathname === '/maths/practice' ||
-                        pathname?.match(/^\/[^\/]+$/); // Hide for subject pages like /maths, /francais, etc.
+                        pathname?.match(/^\/[^\/]+$/) || // Hide for level pages like /maths, /francais, etc.
+                        pathname?.match(/^\/[^\/]+\/[^\/]+$/); // Hide for subject pages like /maths/francais, /maths/mathematiques, etc.
   
   return (
     <html lang="fr" data-theme="dark" className="dark">
@@ -43,7 +45,9 @@ export default function RootLayout({
       >
         {!shouldHideHeader && <Header />}
         <main className={`min-h-screen bg-[#181c24]`}>
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
         </main>
       </body>
     </html>

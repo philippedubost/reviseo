@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { getFlaggedQuestions, unflagQuestion, type FlaggedQuestion } from '@/src/utils/questionFlagging';
 
 export default function FlaggedQuestionsPage() {
+  const router = useRouter();
   const [flaggedQuestions, setFlaggedQuestions] = useState<FlaggedQuestion[]>([]);
   const [filteredQuestions, setFilteredQuestions] = useState<FlaggedQuestion[]>([]);
   const [selectedSubject, setSelectedSubject] = useState<string>('all');
@@ -85,10 +87,11 @@ export default function FlaggedQuestionsPage() {
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold">Questions Signalées</h1>
           <button
-            onClick={exportToCSV}
-            className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors"
+            onClick={() => router.push('/')}
+            className="text-gray-400 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+            title="Retour à l'accueil"
           >
-            📊 Exporter CSV
+            ✕
           </button>
         </div>
 
@@ -148,6 +151,16 @@ export default function FlaggedQuestionsPage() {
               <div className="text-sm text-gray-400">Matières concernées</div>
             </div>
           </div>
+        </div>
+
+        {/* Export Button */}
+        <div className="flex justify-end mb-6">
+          <button
+            onClick={exportToCSV}
+            className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors"
+          >
+            📊 Exporter CSV
+          </button>
         </div>
 
         {/* Questions List */}

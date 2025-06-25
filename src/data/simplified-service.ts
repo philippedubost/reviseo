@@ -85,17 +85,25 @@ export class DataService {
     const lesson = this.getLessonById(subjectId, lessonId, levelId);
     if (!lesson) return [];
     
-    const shuffled = [...lesson.questions].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.min(count, lesson.questions.length));
+    // Mélanger TOUTES les questions de la leçon de manière aléatoire
+    const allQuestions = this.shuffleArray([...lesson.questions]);
+    
+    // Prendre les premières 'count' questions du mélange
+    return allQuestions.slice(0, Math.min(count, allQuestions.length));
   }
 
   public getRandomQuestionsFromAllLessons(subjectId: string, count: number = 10, levelId?: string): Question[] {
     const subject = this.getSubjectById(subjectId, levelId);
     if (!subject) return [];
     
+    // Récupérer toutes les questions de toutes les leçons
     const allQuestions = subject.lessons.flatMap(lesson => lesson.questions);
-    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.min(count, allQuestions.length));
+    
+    // Mélanger TOUTES les questions de manière aléatoire
+    const shuffledQuestions = this.shuffleArray([...allQuestions]);
+    
+    // Prendre les premières 'count' questions du mélange
+    return shuffledQuestions.slice(0, Math.min(count, allQuestions.length));
   }
 
   public getQuestionsByDifficulty(subjectId: string, difficulty: 1 | 2 | 3, count: number = 10, levelId?: string): Question[] {
@@ -105,8 +113,18 @@ export class DataService {
     const filteredQuestions = subject.lessons.flatMap(lesson => 
       lesson.questions.filter(q => q.difficulty === difficulty)
     );
-    const shuffled = [...filteredQuestions].sort(() => 0.5 - Math.random());
+    const shuffled = this.shuffleArray([...filteredQuestions]);
     return shuffled.slice(0, Math.min(count, filteredQuestions.length));
+  }
+
+  // Fonction utilitaire pour mélanger un tableau (algorithme Fisher-Yates)
+  private shuffleArray<T>(array: T[]): T[] {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
   }
 
   // Fonctions utilitaires

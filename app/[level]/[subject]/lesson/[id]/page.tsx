@@ -14,7 +14,6 @@ import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
 import FlagButton from '@/src/components/FlagButton';
 import ActionButton from '@/src/components/ActionButton';
-import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 
 interface LessonPageProps {
   params: {
@@ -39,10 +38,12 @@ export default function LessonPage({ params }: LessonPageProps) {
 
   const {
     updateLessonProgress,
+    addXP,
+    updateStreak,
     totalXP,
     currentStreak,
     bestStreak
-  } = useLessonProgress(subjectId);
+  } = useLessonProgress(subjectId, levelId);
 
   const {
     currentQuestion,
@@ -76,6 +77,9 @@ export default function LessonPage({ params }: LessonPageProps) {
       router.push(`/${levelId}/${subjectId}/lesson/${lessonId}/complete?score=${score}&total=${totalQuestions}&correct=${correctAnswers}`);
     },
     onAnswer: (isCorrect) => {
+      addXP(isCorrect);
+      updateStreak(isCorrect);
+      
       setLastAnswerCorrect(isCorrect);
       setShowAnswerFeedback(true);
       setTimeout(() => setShowAnswerFeedback(false), 1000);
@@ -116,10 +120,15 @@ export default function LessonPage({ params }: LessonPageProps) {
       {/* Header */}
       <div className="px-4 py-4 border-b border-gray-700">
         <div className="flex items-center justify-between">
-          <BackToLessonsButton 
-            subject={subjectId}
-          />
-          <div className="flex items-center gap-2">
+          <div className="flex-1 min-w-0">
+            <div className="text-sm text-gray-400 truncate">
+              {subject?.name}
+            </div>
+            <div className="text-base font-semibold text-white truncate">
+              {lesson?.title}
+            </div>
+          </div>
+          <div className="flex items-center gap-2 flex-shrink-0">
             {currentQuestion && (
               <FlagButton
                 questionId={currentQuestion.id}
@@ -158,6 +167,8 @@ export default function LessonPage({ params }: LessonPageProps) {
             showResult={showResult}
             onAnswerChange={setSelectedAnswer}
             onAnswerSelect={handleAnswerSelect}
+            options={currentQuestion.options}
+            correctAnswer={currentQuestion.correctAnswer}
             questionId={currentQuestion.id}
             subjectId={subjectId}
             lessonId={lessonId}

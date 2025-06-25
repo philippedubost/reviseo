@@ -23,27 +23,30 @@ interface SubjectProgress {
   totalQuestionsAnswered: number; // Track total questions answered across all lessons
 }
 
-export function useLessonProgress(subject: SubjectType = 'maths') {
+export function useLessonProgress(subject: SubjectType = 'maths', level: string = 'troisieme') {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [totalXP, setTotalXP] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
   const [globalProgress, setGlobalProgress] = useState(0);
 
-  // Get storage key for the subject
+  // Get storage key for the subject and level
   const getStorageKey = () => {
-    switch (subject) {
-      case 'francais':
-        return 'francaisProgress';
-      case 'sciences':
-        return 'sciencesProgress';
-      case 'histoire-geo':
-        return 'histoireGeoProgress';
-      case 'philosophie':
-        return 'philosophieProgress';
-      default:
-        return 'mathsProgress';
-    }
+    const subjectKey = (() => {
+      switch (subject) {
+        case 'francais':
+          return 'francais';
+        case 'sciences':
+          return 'sciences';
+        case 'histoire-geo':
+          return 'histoireGeo';
+        case 'philosophie':
+          return 'philosophie';
+        default:
+          return 'maths';
+      }
+    })();
+    return `${subjectKey}Progress_${level}`;
   };
 
   // Load progress from localStorage

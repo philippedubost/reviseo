@@ -3,7 +3,7 @@ import simplifiedData from './simplified-data.json';
 // Types simplifiés
 export interface Question {
   id: number;
-  type: 'multiple-choice' | 'calculation';
+  type: 'multiple-choice' | 'calculation' | 'input';
   difficulty: 1 | 2 | 3;
   question: string;
   options?: string[];

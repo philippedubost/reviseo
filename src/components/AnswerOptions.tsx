@@ -18,6 +18,11 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
+// Fonction pour déterminer si les options sont courtes
+function areOptionsShort(options: string[]): boolean {
+  return options.every(option => option.length <= 8);
+}
+
 export default function AnswerOptions({
   options,
   correctAnswer,
@@ -30,9 +35,15 @@ export default function AnswerOptions({
     return shuffleArray(options);
   }, [options]);
 
+  const isShortOptions = areOptionsShort(shuffledOptions);
+
   return (
     <div className="w-full mb-6">
-      <div className="flex flex-col gap-3 max-w-md mx-auto">
+      <div className={`${
+        isShortOptions 
+          ? 'grid grid-cols-2 gap-3 max-w-md mx-auto' 
+          : 'flex flex-col gap-3 max-w-md mx-auto'
+      }`}>
         {shuffledOptions.map((option, idx) => {
           let state = '';
           if (showResult) {

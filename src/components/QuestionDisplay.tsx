@@ -4,16 +4,20 @@ import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
 import FlagButton from './FlagButton';
+import AnswerOptions from './AnswerOptions';
 
 interface QuestionDisplayProps {
   question: string;
   latex?: string;
-  type: 'multiple-choice' | 'calculation';
+  type: 'multiple-choice' | 'calculation' | 'input';
   selectedAnswer: string;
   showResult: boolean;
   onAnswerChange: (answer: string) => void;
   onAnswerSelect: (answer: string) => void;
   onSubmit?: () => void;
+  // Multiple choice props
+  options?: string[];
+  correctAnswer?: string;
   // Flagging props
   questionId?: number;
   subjectId?: string;
@@ -30,6 +34,8 @@ export default function QuestionDisplay({
   onAnswerChange,
   onAnswerSelect,
   onSubmit,
+  options = [],
+  correctAnswer = '',
   questionId,
   subjectId,
   lessonId,
@@ -37,7 +43,7 @@ export default function QuestionDisplay({
 }: QuestionDisplayProps) {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showResult && e.key === 'Enter' && selectedAnswer.trim()) {
-      if (type === 'calculation' && onSubmit) {
+      if ((type === 'calculation' || type === 'input') && onSubmit) {
         onSubmit();
       } else {
         onAnswerSelect(selectedAnswer.trim());
@@ -48,7 +54,7 @@ export default function QuestionDisplay({
   return (
     <div className="flex flex-col items-center mb-6">
       <div className="text-center max-w-2xl w-full">
-        {type === 'calculation' ? (
+        {(type === 'calculation' || type === 'input') ? (
           <>
             <div className="flex items-center justify-center gap-2 mb-3">
               <div className="text-lg font-bold" style={{ color: 'var(--mascot-color)' }}>
@@ -102,6 +108,15 @@ export default function QuestionDisplay({
               <div className="flex justify-center">
                 <BlockMath math={latex} />
               </div>
+            )}
+            {type === 'multiple-choice' && options.length > 0 && (
+              <AnswerOptions
+                options={options}
+                correctAnswer={correctAnswer}
+                selectedAnswer={selectedAnswer}
+                showResult={showResult}
+                onAnswerSelect={onAnswerSelect}
+              />
             )}
           </>
         )}

@@ -6,6 +6,16 @@ export default function Home() {
   const router = useRouter();
   const levels = dataService.getAllLevels();
 
+  const getLevelGradient = (levelId: string) => {
+    if (levelId === 'troisieme') {
+      return 'linear-gradient(to right, #667eea, #764ba2)';
+    } else if (levelId === 'terminale') {
+      return 'linear-gradient(to right, #4facfe, #00f2fe)';
+    } else {
+      return 'linear-gradient(to right, #00baff, #0099cc)';
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#181c24]">
       {/* Header */}
@@ -19,7 +29,8 @@ export default function Home() {
           {levels.map((level) => (
             <button
               key={level.id}
-              className="card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#00baff] to-[#0099cc] text-white border border-[#2ecc71]"
+              className="card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl text-white border border-[#2ecc71]"
+              style={{ background: getLevelGradient(level.id) }}
               onClick={() => router.push(`/${level.id}`)}
             >
               <div className="flex items-center gap-4">

@@ -13,116 +13,154 @@
           "lessons": [
             {
               "id": 1,
-              "title": "Nombres et Calculs",
-              "description": "Fractions, puissances, racines carrées",
+              "title": "Nombres entiers et opérations",
+              "description": "Calcul mental, priorités, propriétés des entiers",
               "icon": "🔢",
               "difficulty": "easy",
               "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la valeur de √25 ?",
-                  "options": ["3", "4", "5", "6"],
-                  "correctAnswer": "5",
-                  "explanation": "La racine carrée de 25 est 5 car 5 × 5 = 25",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "calculation",
-                  "difficulty": 1,
-                  "question": "Calcule 2³ × 2²",
-                  "correctAnswer": "32",
-                  "explanation": "2³ = 8 et 2² = 4, donc 8 × 4 = 32",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle fraction est équivalente à 0.75 ?",
-                  "options": ["1/4", "2/3", "3/4", "4/5"],
-                  "correctAnswer": "3/4",
-                  "explanation": "0.75 = 75/100 = 3/4",
-                  "points": 10
-                },
-                {
-                  "id": 4,
-                  "type": "calculation",
-                  "difficulty": 2,
-                  "question": "Calcule √16 + √9",
-                  "correctAnswer": "7",
-                  "explanation": "√16 = 4 et √9 = 3, donc 4 + 3 = 7",
-                  "points": 10
-                },
-                {
-                  "id": 5,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quelle est la valeur de 5⁻² ?",
-                  "options": ["1/25", "1/10", "25", "10"],
-                  "correctAnswer": "1/25",
-                  "explanation": "5⁻² = 1/5² = 1/25",
-                  "points": 10
-                },
-                {
-                  "id": 6,
-                  "type": "calculation",
-                  "difficulty": 2,
-                  "question": "Calcule (2/3) × (3/4)",
-                  "correctAnswer": "0.5",
-                  "explanation": "(2/3) × (3/4) = 6/12 = 1/2 = 0.5",
-                  "points": 10
-                },
-                {
-                  "id": 7,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quelle est la valeur de √50 ?",
-                  "options": ["5√2", "7", "5", "10"],
-                  "correctAnswer": "5√2",
-                  "explanation": "√50 = √(25 × 2) = √25 × √2 = 5√2",
-                  "points": 10
-                },
-                {
-                  "id": 8,
-                  "type": "calculation",
-                  "difficulty": 3,
-                  "question": "Calcule 3⁴ ÷ 3²",
-                  "correctAnswer": "9",
-                  "explanation": "3⁴ ÷ 3² = 3^(4-2) = 3² = 9",
-                  "points": 10
-                },
-                {
-                  "id": 9,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la valeur de √36 ?",
-                  "options": ["4", "5", "6", "7"],
-                  "correctAnswer": "6",
-                  "explanation": "La racine carrée de 36 est 6 car 6 × 6 = 36",
-                  "points": 10
-                },
-                {
-                  "id": 10,
-                  "type": "calculation",
-                  "difficulty": 1,
-                  "question": "Calcule 4² + 3²",
-                  "correctAnswer": "25",
-                  "explanation": "4² = 16 et 3² = 9, donc 16 + 9 = 25",
-                  "points": 10
-                },
-                {
-                  "id": 11,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle fraction est équivalente à 0.5 ?",
-                  "options": ["1/3", "1/2", "2/3", "3/4"],
-                  "correctAnswer": "1/2",
-                  "explanation": "0.5 = 5/10 = 1/2",
-                  "points": 10
-                }
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le résultat de 7 × 8 ?","options":["54","56","58","64"],"correctAnswer":"56","explanation":"7 × 8 = 56.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : 12 + 15 = ___","correctAnswer":"27","explanation":"12 + 15 = 27.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus grand nombre ?","options":["98","89","79","69"],"correctAnswer":"98","explanation":"98 est le plus grand.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : 100 - 37 = ___","correctAnswer":"63","explanation":"100 - 37 = 63.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Combien font 9 × 6 ?","options":["54","45","36","63"],"correctAnswer":"54","explanation":"9 × 6 = 54.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : 8 × 7 = ___","correctAnswer":"56","explanation":"8 × 7 = 56.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le résultat de 45 ÷ 5 ?","options":["8","9","10","7"],"correctAnswer":"9","explanation":"45 ÷ 5 = 9.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : 81 ÷ 9 = ___","correctAnswer":"9","explanation":"81 ÷ 9 = 9.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le résultat de 13 + 17 ?","options":["30","31","29","28"],"correctAnswer":"30","explanation":"13 + 17 = 30.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : 50 - 23 = ___","correctAnswer":"27","explanation":"50 - 23 = 27.","points":10}
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Fractions et décimaux",
+              "description": "Opérations simples sur les fractions et les nombres décimaux",
+              "icon": "➗",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle fraction est équivalente à 0,5 ?","options":["1/2","1/3","2/3","1/4"],"correctAnswer":"1/2","explanation":"0,5 = 1/2.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : 0,25 = ___/100","correctAnswer":"25","explanation":"0,25 = 25/100.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Combien font 1/4 + 1/4 ?","options":["1/2","1/4","2/4","3/4"],"correctAnswer":"1/2","explanation":"1/4 + 1/4 = 2/4 = 1/2.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : 0,1 × 10 = ___","correctAnswer":"1","explanation":"0,1 × 10 = 1.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle est la fraction la plus grande ?","options":["1/2","1/3","1/4","1/5"],"correctAnswer":"1/2","explanation":"1/2 est la plus grande.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : 0,75 = ___/100","correctAnswer":"75","explanation":"0,75 = 75/100.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Combien font 0,2 + 0,3 ?","options":["0,5","0,4","0,6","0,7"],"correctAnswer":"0,5","explanation":"0,2 + 0,3 = 0,5.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : 1/5 × 10 = ___","correctAnswer":"2","explanation":"1/5 × 10 = 2.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle fraction est équivalente à 0,75 ?","options":["3/4","1/2","2/3","1/4"],"correctAnswer":"3/4","explanation":"0,75 = 3/4.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : 0,6 = ___/10","correctAnswer":"6","explanation":"0,6 = 6/10.","points":10}
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Proportionnalité et pourcentages",
+              "description": "Problèmes de proportionnalité et calculs de pourcentages simples",
+              "icon": "📊",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Si 3 pommes coûtent 6€, combien coûtent 6 pommes ?","options":["12€","9€","6€","18€"],"correctAnswer":"12€","explanation":"Le prix double : 6 × 2 = 12€.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : 10% de 50 = ___","correctAnswer":"5","explanation":"10% de 50 = 5.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le pourcentage de 25 sur 100 ?","options":["25%","50%","10%","75%"],"correctAnswer":"25%","explanation":"25 sur 100 = 25%.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : 20% de 30 = ___","correctAnswer":"6","explanation":"20% de 30 = 6.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Si 4 stylos coûtent 8€, combien coûtent 2 stylos ?","options":["4€","2€","6€","8€"],"correctAnswer":"4€","explanation":"8 ÷ 2 = 4€.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : 50% de 18 = ___","correctAnswer":"9","explanation":"50% de 18 = 9.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le pourcentage de 12 sur 24 ?","options":["50%","25%","75%","10%"],"correctAnswer":"50%","explanation":"12/24 = 0,5 = 50%.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : 25% de 40 = ___","correctAnswer":"10","explanation":"25% de 40 = 10.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Si 5 livres coûtent 20€, combien coûte 1 livre ?","options":["4€","5€","10€","20€"],"correctAnswer":"4€","explanation":"20 ÷ 5 = 4€.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : 30% de 10 = ___","correctAnswer":"3","explanation":"30% de 10 = 3.","points":10}
+              ]
+            },
+            {
+              "id": 4,
+              "title": "Géométrie plane",
+              "description": "Triangles, quadrilatères, périmètres et aires",
+              "icon": "📐",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Combien de côtés a un hexagone ?","options":["5","6","7","8"],"correctAnswer":"6","explanation":"Un hexagone a 6 côtés.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Un triangle a ___ côtés.","correctAnswer":"3","explanation":"Un triangle a 3 côtés.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le périmètre d'un carré de côté 4 cm ?","options":["8 cm","12 cm","16 cm","4 cm"],"correctAnswer":"16 cm","explanation":"4 × 4 = 16 cm.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Un rectangle a ___ angles droits.","correctAnswer":"4","explanation":"Un rectangle a 4 angles droits.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Combien de diagonales a un carré ?","options":["1","2","3","4"],"correctAnswer":"2","explanation":"Un carré a 2 diagonales.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : L'aire d'un carré de côté 5 cm est ___ cm².","correctAnswer":"25","explanation":"5 × 5 = 25 cm².","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le périmètre d'un triangle équilatéral de côté 3 cm ?","options":["6 cm","9 cm","12 cm","3 cm"],"correctAnswer":"9 cm","explanation":"3 × 3 = 9 cm.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : L'aire d'un rectangle de 2 cm sur 6 cm est ___ cm².","correctAnswer":"12","explanation":"2 × 6 = 12 cm².","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Combien d'angles droits dans un triangle rectangle ?","options":["1","2","3","0"],"correctAnswer":"1","explanation":"Un triangle rectangle a 1 angle droit.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Un carré a ___ côtés égaux.","correctAnswer":"4","explanation":"Un carré a 4 côtés égaux.","points":10}
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Grandeurs et mesures",
+              "description": "Conversions, unités, mesures usuelles",
+              "icon": "📏",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Combien de centimètres dans un mètre ?","options":["10","100","1000","10000"],"correctAnswer":"100","explanation":"1 mètre = 100 centimètres.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : 1 km = ___ m","correctAnswer":"1000","explanation":"1 km = 1000 m.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Combien de grammes dans un kilogramme ?","options":["100","1000","10","10000"],"correctAnswer":"1000","explanation":"1 kg = 1000 g.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : 1 L = ___ mL","correctAnswer":"1000","explanation":"1 L = 1000 mL.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Combien de minutes dans une heure ?","options":["60","100","24","30"],"correctAnswer":"60","explanation":"1 heure = 60 minutes.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : 1 semaine = ___ jours","correctAnswer":"7","explanation":"1 semaine = 7 jours.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Combien de secondes dans une minute ?","options":["60","100","10","30"],"correctAnswer":"60","explanation":"1 minute = 60 secondes.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : 1 an = ___ mois","correctAnswer":"12","explanation":"1 an = 12 mois.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Combien de millimètres dans un centimètre ?","options":["1","10","100","1000"],"correctAnswer":"10","explanation":"1 cm = 10 mm.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : 1 jour = ___ heures","correctAnswer":"24","explanation":"1 jour = 24 heures.","points":10}
+              ]
+            },
+            {
+              "id": 6,
+              "title": "Statistiques et organisation de données",
+              "description": "Lire, interpréter et représenter des données",
+              "icon": "📈",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le mode de la série : 2, 3, 3, 5, 7 ?","options":["2","3","5","7"],"correctAnswer":"3","explanation":"3 apparaît le plus souvent.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : La moyenne de 4 et 6 est ___","correctAnswer":"5","explanation":"(4+6)/2 = 5.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus petit nombre ?","options":["2","3","5","7"],"correctAnswer":"2","explanation":"2 est le plus petit.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le plus grand nombre de 2, 3, 5 est ___","correctAnswer":"5","explanation":"5 est le plus grand.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Combien de valeurs dans la série : 1, 2, 3, 4 ?","options":["3","4","5","6"],"correctAnswer":"4","explanation":"Il y a 4 valeurs.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La médiane de 1, 3, 5 est ___","correctAnswer":"3","explanation":"3 est la médiane.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le total de 2, 4, 6 ?","options":["10","12","8","6"],"correctAnswer":"12","explanation":"2+4+6=12.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La moyenne de 10, 20, 30 est ___","correctAnswer":"20","explanation":"(10+20+30)/3=20.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le mode de la série : 1, 2, 2, 3 ?","options":["1","2","3","4"],"correctAnswer":"2","explanation":"2 apparaît le plus souvent.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Le total de 5, 5, 5 est ___","correctAnswer":"15","explanation":"5+5+5=15.","points":10}
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Problèmes et raisonnement logique",
+              "description": "Résolution de problèmes simples et logique",
+              "icon": "🧠",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Si Paul a 3 pommes et en achète 2, combien en a-t-il ?","options":["4","5","6","3"],"correctAnswer":"5","explanation":"3+2=5.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Si tu as 10€ et dépenses 4€, il te reste ___€","correctAnswer":"6","explanation":"10-4=6.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Si un train part à 8h et arrive à 10h, combien de temps dure le trajet ?","options":["1h","2h","3h","4h"],"correctAnswer":"2h","explanation":"10h-8h=2h.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Si tu doubles 7, tu obtiens ___","correctAnswer":"14","explanation":"7×2=14.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Si une boîte contient 5 stylos rouges et 3 bleus, combien de stylos au total ?","options":["7","8","9","6"],"correctAnswer":"8","explanation":"5+3=8.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Si tu partages 12 bonbons entre 4 amis, chacun reçoit ___","correctAnswer":"3","explanation":"12/4=3.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Si tu ajoutes 9 à 6, tu obtiens ?","options":["14","15","16","13"],"correctAnswer":"15","explanation":"9+6=15.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Si tu enlèves 5 à 20, il reste ___","correctAnswer":"15","explanation":"20-5=15.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Si tu triples 4, tu obtiens ?","options":["8","10","12","16"],"correctAnswer":"12","explanation":"4×3=12.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Si tu ajoutes 11 à 9, tu obtiens ___","correctAnswer":"20","explanation":"11+9=20.","points":10}
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Initiation à l'algèbre",
+              "description": "Premières équations et expressions simples",
+              "icon": "🧮",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Si x = 3, combien vaut 2x ?","options":["5","6","7","8"],"correctAnswer":"6","explanation":"2×3=6.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Si x = 4, x + 5 = ___","correctAnswer":"9","explanation":"4+5=9.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Si x = 2, combien vaut x² ?","options":["2","4","6","8"],"correctAnswer":"4","explanation":"2²=4.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Si x = 5, 3x = ___","correctAnswer":"15","explanation":"3×5=15.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Si x = 1, combien vaut x + 7 ?","options":["6","7","8","9"],"correctAnswer":"8","explanation":"1+7=8.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Si x = 6, x - 2 = ___","correctAnswer":"4","explanation":"6-2=4.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Si x = 10, combien vaut x ÷ 2 ?","options":["4","5","6","7"],"correctAnswer":"5","explanation":"10÷2=5.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Si x = 8, x/4 = ___","correctAnswer":"2","explanation":"8/4=2.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Si x = 7, combien vaut x + x ?","options":["12","13","14","15"],"correctAnswer":"14","explanation":"7+7=14.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Si x = 9, x - 3 = ___","correctAnswer":"6","explanation":"9-3=6.","points":10}
               ]
             }
           ]
@@ -136,121 +174,154 @@
           "lessons": [
             {
               "id": 1,
-              "title": "Grammaire de Base",
-              "description": "Classes grammaticales et fonctions",
+              "title": "Grammaire de base",
+              "description": "Classes grammaticales et fonctions simples",
               "icon": "📝",
               "difficulty": "easy",
               "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la classe grammaticale du mot 'rapidement' ?",
-                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
-                  "correctAnswer": "Adverbe",
-                  "explanation": "'Rapidement' est un adverbe car il modifie le verbe",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Dans 'Le chat dort', quelle est la fonction de 'chat' ?",
-                  "options": ["Sujet", "COD", "Attribut", "Complément"],
-                  "correctAnswer": "Sujet",
-                  "explanation": "'Chat' est le sujet du verbe 'dort'",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la classe grammaticale de 'beau' ?",
-                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
-                  "correctAnswer": "Adjectif",
-                  "explanation": "'Beau' est un adjectif qualificatif",
-                  "points": 10
-                },
-                {
-                  "id": 4,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Dans 'Je mange une pomme', quelle est la fonction de 'pomme' ?",
-                  "options": ["Sujet", "COD", "Attribut", "Complément"],
-                  "correctAnswer": "COD",
-                  "explanation": "'Pomme' est le complément d'objet direct du verbe 'mange'",
-                  "points": 10
-                },
-                {
-                  "id": 5,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quelle est la classe grammaticale de 'et' ?",
-                  "options": ["Conjonction", "Préposition", "Adverbe", "Pronom"],
-                  "correctAnswer": "Conjonction",
-                  "explanation": "'Et' est une conjonction de coordination",
-                  "points": 10
-                },
-                {
-                  "id": 6,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Dans 'Il est content', quelle est la fonction de 'content' ?",
-                  "options": ["Sujet", "COD", "Attribut", "Complément"],
-                  "correctAnswer": "Attribut",
-                  "explanation": "'Content' est l'attribut du sujet 'il'",
-                  "points": 10
-                },
-                {
-                  "id": 7,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quelle est la classe grammaticale de 'lequel' ?",
-                  "options": ["Pronom", "Déterminant", "Adverbe", "Conjonction"],
-                  "correctAnswer": "Pronom",
-                  "explanation": "'Lequel' est un pronom relatif",
-                  "points": 10
-                },
-                {
-                  "id": 8,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Dans 'Le livre de Paul', quelle est la fonction de 'de Paul' ?",
-                  "options": ["COD", "Attribut", "Complément du nom", "Complément circonstanciel"],
-                  "correctAnswer": "Complément du nom",
-                  "explanation": "'De Paul' complète le nom 'livre'",
-                  "points": 10
-                },
-                {
-                  "id": 9,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la classe grammaticale de 'dans' ?",
-                  "options": ["Conjonction", "Préposition", "Adverbe", "Pronom"],
-                  "correctAnswer": "Préposition",
-                  "explanation": "'Dans' est une préposition",
-                  "points": 10
-                },
-                {
-                  "id": 10,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Dans 'Marie chante', quelle est la fonction de 'Marie' ?",
-                  "options": ["Sujet", "COD", "Attribut", "Complément"],
-                  "correctAnswer": "Sujet",
-                  "explanation": "'Marie' est le sujet du verbe 'chante'",
-                  "points": 10
-                },
-                {
-                  "id": 11,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quelle est la classe grammaticale de 'très' ?",
-                  "options": ["Nom", "Verbe", "Adverbe", "Adjectif"],
-                  "correctAnswer": "Adverbe",
-                  "explanation": "'Très' est un adverbe d'intensité",
-                  "points": 10
-                }
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale du mot 'vite' ?","options":["Nom","Verbe","Adverbe","Adjectif"],"correctAnswer":"Adverbe","explanation":"'Vite' est un adverbe.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le chat ___ sur le toit.","correctAnswer":"dort","explanation":"Le chat dort sur le toit.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle est la fonction de 'chien' dans 'Le chien aboie' ?","options":["Sujet","COD","Attribut","Complément"],"correctAnswer":"Sujet","explanation":"'Chien' est le sujet.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Il ___ un livre.","correctAnswer":"lit","explanation":"Il lit un livre.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale de 'bleu' ?","options":["Nom","Verbe","Adverbe","Adjectif"],"correctAnswer":"Adjectif","explanation":"'Bleu' est un adjectif.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Elle est très ___ (heureuse).","correctAnswer":"heureuse","explanation":"Elle est très heureuse.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle est la fonction de 'pomme' dans 'Je mange une pomme' ?","options":["Sujet","COD","Attribut","Complément"],"correctAnswer":"COD","explanation":"'Pomme' est le COD.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Nous ___ à l'école.","correctAnswer":"allons","explanation":"Nous allons à l'école.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale de 'et' ?","options":["Conjonction","Préposition","Adverbe","Pronom"],"correctAnswer":"Conjonction","explanation":"'Et' est une conjonction.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Il fait ___ (beau) aujourd'hui.","correctAnswer":"beau","explanation":"Il fait beau aujourd'hui.","points":10}
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Conjugaison de base",
+              "description": "Présent, futur, passé composé",
+              "icon": "⏳",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le verbe conjugué au présent ?","options":["Je mange","J'ai mangé","Je mangerai","Je mangeais"],"correctAnswer":"Je mange","explanation":"'Je mange' est au présent.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Demain, je ___ (aller) à la piscine.","correctAnswer":"irai","explanation":"Demain, j'irai à la piscine (futur).","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le verbe au passé composé ?","options":["Je mange","J'ai mangé","Je mangerai","Je mangeais"],"correctAnswer":"J'ai mangé","explanation":"'J'ai mangé' est au passé composé.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Hier, tu ___ (finir) tes devoirs.","correctAnswer":"as fini","explanation":"Hier, tu as fini tes devoirs (passé composé).","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le verbe au futur ?","options":["Je mange","J'ai mangé","Je mangerai","Je mangeais"],"correctAnswer":"Je mangerai","explanation":"'Je mangerai' est au futur.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Nous ___ (être) contents demain.","correctAnswer":"serons","explanation":"Nous serons contents demain (futur).","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le verbe à l'imparfait ?","options":["Je mange","J'ai mangé","Je mangerai","Je mangeais"],"correctAnswer":"Je mangeais","explanation":"'Je mangeais' est à l'imparfait.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Il ___ (avoir) un chien quand il était petit.","correctAnswer":"avait","explanation":"Il avait un chien (imparfait).","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le verbe au présent ?","options":["Je mange","J'ai mangé","Je mangerai","Je mangeais"],"correctAnswer":"Je mange","explanation":"'Je mange' est au présent.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Vous ___ (faire) du sport chaque semaine.","correctAnswer":"faites","explanation":"Vous faites du sport (présent).","points":10}
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Orthographe courante",
+              "description": "Accords, homophones, mots fréquents",
+              "icon": "✏️",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel mot est correctement orthographié ?","options":["apelle","appelle","apellez","apell"],"correctAnswer":"appelle","explanation":"'Appelle' est correct.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Il ___ (prendre) son cartable.","correctAnswer":"prend","explanation":"Il prend son cartable.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est l'homophone de 'verre' ?","options":["vert","vers","ver","tout ça"],"correctAnswer":"vert","explanation":"'Vert' est un homophone de 'verre'.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Elle ___ (être) en retard.","correctAnswer":"est","explanation":"Elle est en retard.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel mot est un nom ?","options":["manger","livre","vite","bleu"],"correctAnswer":"livre","explanation":"'Livre' est un nom.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Nous ___ (avoir) une idée.","correctAnswer":"avons","explanation":"Nous avons une idée.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel mot est un adjectif ?","options":["grand","manger","vite","livre"],"correctAnswer":"grand","explanation":"'Grand' est un adjectif.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Tu ___ (aller) à l'école.","correctAnswer":"vas","explanation":"Tu vas à l'école.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel mot est un verbe ?","options":["manger","livre","vite","bleu"],"correctAnswer":"manger","explanation":"'Manger' est un verbe.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Ils ___ (finir) leurs devoirs.","correctAnswer":"finissent","explanation":"Ils finissent leurs devoirs.","points":10}
+              ]
+            },
+            {
+              "id": 4,
+              "title": "Compréhension de texte",
+              "description": "Questions sur de courts textes",
+              "icon": "📖",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Dans le texte : 'Le chat dort sur le canapé', où dort le chat ?","options":["Sur le lit","Sur le canapé","Sous la table","Dans la cuisine"],"correctAnswer":"Sur le canapé","explanation":"Le chat dort sur le canapé.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le ___ dort sur le canapé.","correctAnswer":"chat","explanation":"Le chat dort sur le canapé.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Dans le texte : 'Paul mange une pomme', que mange Paul ?","options":["Une poire","Une pomme","Une banane","Un gâteau"],"correctAnswer":"Une pomme","explanation":"Paul mange une pomme.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Paul mange une ___ .","correctAnswer":"pomme","explanation":"Paul mange une pomme.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Dans le texte : 'Marie lit un livre', que fait Marie ?","options":["Elle écrit","Elle lit","Elle court","Elle chante"],"correctAnswer":"Elle lit","explanation":"Marie lit un livre.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Marie ___ un livre.","correctAnswer":"lit","explanation":"Marie lit un livre.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Dans le texte : 'Le chien court vite', comment court le chien ?","options":["Lentement","Vite","Silencieusement","En zigzag"],"correctAnswer":"Vite","explanation":"Le chien court vite.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le chien court ___ .","correctAnswer":"vite","explanation":"Le chien court vite.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Dans le texte : 'Lucie chante une chanson', que fait Lucie ?","options":["Elle danse","Elle chante","Elle lit","Elle mange"],"correctAnswer":"Elle chante","explanation":"Lucie chante une chanson.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Lucie ___ une chanson.","correctAnswer":"chante","explanation":"Lucie chante une chanson.","points":10}
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Vocabulaire courant",
+              "description": "Mots de la vie quotidienne et synonymes",
+              "icon": "📚",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le synonyme de 'rapide' ?","options":["lent","vite","fort","petit"],"correctAnswer":"vite","explanation":"'Vite' est synonyme de 'rapide'.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le contraire de 'grand' est ___ .","correctAnswer":"petit","explanation":"Le contraire de 'grand' est 'petit'.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le synonyme de 'content' ?","options":["triste","heureux","fatigué","fâché"],"correctAnswer":"heureux","explanation":"'Heureux' est synonyme de 'content'.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le contraire de 'jour' est ___ .","correctAnswer":"nuit","explanation":"Le contraire de 'jour' est 'nuit'.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le synonyme de 'maison' ?","options":["appartement","habitation","immeuble","chambre"],"correctAnswer":"habitation","explanation":"'Habitation' est synonyme de 'maison'.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Le contraire de 'chaud' est ___ .","correctAnswer":"froid","explanation":"Le contraire de 'chaud' est 'froid'.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le synonyme de 'difficile' ?","options":["simple","facile","compliqué","rapide"],"correctAnswer":"compliqué","explanation":"'Compliqué' est synonyme de 'difficile'.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le contraire de 'haut' est ___ .","correctAnswer":"bas","explanation":"Le contraire de 'haut' est 'bas'.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le synonyme de 'parler' ?","options":["écouter","dire","chanter","lire"],"correctAnswer":"dire","explanation":"'Dire' est synonyme de 'parler'.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Le contraire de 'ouvrir' est ___ .","correctAnswer":"fermer","explanation":"Le contraire de 'ouvrir' est 'fermer'.","points":10}
+              ]
+            },
+            {
+              "id": 6,
+              "title": "Expression écrite",
+              "description": "Formuler des phrases simples et cohérentes",
+              "icon": "🖊️",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase est correcte ?","options":["Je vais à l'école.","Je vais école à.","École je vais à.","À l'école je vais."],"correctAnswer":"Je vais à l'école.","explanation":"'Je vais à l'école.' est correcte.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Il ___ (être) en retard.","correctAnswer":"est","explanation":"Il est en retard.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase est correcte ?","options":["Nous mangeons une pomme.","Nous une pomme mangeons.","Mangeons nous une pomme.","Une pomme nous mangeons."],"correctAnswer":"Nous mangeons une pomme.","explanation":"'Nous mangeons une pomme.' est correcte.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Elle ___ (avoir) un chat.","correctAnswer":"a","explanation":"Elle a un chat.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase est correcte ?","options":["Tu lis un livre.","Tu un livre lis.","Lis tu un livre.","Livre tu lis un."],"correctAnswer":"Tu lis un livre.","explanation":"'Tu lis un livre.' est correcte.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Nous ___ (faire) du sport.","correctAnswer":"faisons","explanation":"Nous faisons du sport.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase est correcte ?","options":["Vous jouez au foot.","Vous au foot jouez.","Jouez vous au foot.","Au foot vous jouez."],"correctAnswer":"Vous jouez au foot.","explanation":"'Vous jouez au foot.' est correcte.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Ils ___ (venir) demain.","correctAnswer":"viennent","explanation":"Ils viennent demain.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase est correcte ?","options":["Je prends le bus.","Je le bus prends.","Prends je le bus.","Le bus je prends."],"correctAnswer":"Je prends le bus.","explanation":"'Je prends le bus.' est correcte.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Tu ___ (voir) un film.","correctAnswer":"vois","explanation":"Tu vois un film.","points":10}
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Genres et accords",
+              "description": "Genre des noms, accords en genre et en nombre",
+              "icon": "👩‍🎓",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le féminin de 'acteur' ?","options":["acteuse","actrice","acteurse","acteure"],"correctAnswer":"actrice","explanation":"Le féminin de 'acteur' est 'actrice'.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Un ___ (fille) est venue.","correctAnswer":"fille","explanation":"Une fille est venue.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le pluriel de 'cheval' ?","options":["chevals","chevaux","chevales","chevalx"],"correctAnswer":"chevaux","explanation":"Le pluriel de 'cheval' est 'chevaux'.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Des ___ (enfant) jouent.","correctAnswer":"enfants","explanation":"Des enfants jouent.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le féminin de 'lion' ?","options":["lione","lionne","lionette","lionesse"],"correctAnswer":"lionne","explanation":"Le féminin de 'lion' est 'lionne'.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Les ___ (homme) travaillent.","correctAnswer":"hommes","explanation":"Les hommes travaillent.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le pluriel de 'journal' ?","options":["journals","journaux","journalx","journales"],"correctAnswer":"journaux","explanation":"Le pluriel de 'journal' est 'journaux'.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Les ___ (femme) chantent.","correctAnswer":"femmes","explanation":"Les femmes chantent.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le féminin de 'serveur' ?","options":["serveure","serveuse","serveurx","serveurse"],"correctAnswer":"serveuse","explanation":"Le féminin de 'serveur' est 'serveuse'.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Des ___ (ami) arrivent.","correctAnswer":"amis","explanation":"Des amis arrivent.","points":10}
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Petite production écrite",
+              "description": "Rédiger de courtes phrases ou réponses",
+              "icon": "📝",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase répond à la question : 'Comment ça va ?' ?","options":["J'ai 10 ans.","Je vais bien.","Il fait beau.","Je mange."],"correctAnswer":"Je vais bien.","explanation":"'Je vais bien.' répond à 'Comment ça va ?'.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Je m'appelle ___ .","correctAnswer":"(prénom)","explanation":"On attend un prénom.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase répond à la question : 'Quel âge as-tu ?' ?","options":["J'ai 10 ans.","Je vais bien.","Il fait beau.","Je mange."],"correctAnswer":"J'ai 10 ans.","explanation":"'J'ai 10 ans.' répond à 'Quel âge as-tu ?'.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : J'habite à ___ .","correctAnswer":"(ville)","explanation":"On attend une ville.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase répond à la question : 'Où habites-tu ?' ?","options":["J'habite à Paris.","Je vais bien.","Il fait beau.","Je mange."],"correctAnswer":"J'habite à Paris.","explanation":"'J'habite à Paris.' répond à 'Où habites-tu ?'.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Mon animal préféré est ___ .","correctAnswer":"(animal)","explanation":"On attend un animal.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase répond à la question : 'Quel est ton animal préféré ?' ?","options":["Mon animal préféré est le chat.","Je vais bien.","Il fait beau.","Je mange."],"correctAnswer":"Mon animal préféré est le chat.","explanation":"'Mon animal préféré est le chat.' répond à la question.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : J'aime ___ .","correctAnswer":"(activité)","explanation":"On attend une activité.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle phrase répond à la question : 'Qu'est-ce que tu aimes faire ?' ?","options":["J'aime lire.","Je vais bien.","Il fait beau.","Je mange."],"correctAnswer":"J'aime lire.","explanation":"'J'aime lire.' répond à la question.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Mon plat préféré est ___ .","correctAnswer":"(plat)","explanation":"On attend un plat.","points":10}
               ]
             }
           ]
@@ -264,121 +335,154 @@
           "lessons": [
             {
               "id": 1,
-              "title": "Énergie et Matière",
-              "description": "Transformations chimiques et physiques",
-              "icon": "⚗️",
+              "title": "Le vivant et ses besoins",
+              "description": "Nutrition, respiration, reproduction",
+              "icon": "🌱",
               "difficulty": "easy",
               "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce qu'une transformation chimique ?",
-                  "options": ["Un changement d'état", "Une réaction qui forme de nouveaux produits", "Un changement de température", "Un changement de volume"],
-                  "correctAnswer": "Une réaction qui forme de nouveaux produits",
-                  "explanation": "Une transformation chimique produit de nouvelles substances avec des propriétés différentes",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quel est le symbole chimique du fer ?",
-                  "options": ["Fe", "Fr", "Fi", "F"],
-                  "correctAnswer": "Fe",
-                  "explanation": "Fe vient du latin 'ferrum' qui signifie fer",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce que la photosynthèse ?",
-                  "options": ["Un processus de respiration", "Un processus de fabrication de matière organique", "Un processus de digestion", "Un processus de reproduction"],
-                  "correctAnswer": "Un processus de fabrication de matière organique",
-                  "explanation": "La photosynthèse permet aux plantes de fabriquer leur matière organique à partir de CO2 et d'eau",
-                  "points": 10
-                },
-                {
-                  "id": 4,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quel est le rôle des mitochondries ?",
-                  "options": ["La photosynthèse", "La respiration cellulaire", "La division cellulaire", "La digestion"],
-                  "correctAnswer": "La respiration cellulaire",
-                  "explanation": "Les mitochondries sont les centrales énergétiques de la cellule",
-                  "points": 10
-                },
-                {
-                  "id": 5,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'un atome ?",
-                  "options": ["La plus petite partie d'un élément", "Une molécule", "Un ion", "Un électron"],
-                  "correctAnswer": "La plus petite partie d'un élément",
-                  "explanation": "Un atome est la plus petite unité d'un élément chimique qui conserve ses propriétés",
-                  "points": 10
-                },
-                {
-                  "id": 6,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quel est le pH d'une solution neutre ?",
-                  "options": ["0", "7", "14", "10"],
-                  "correctAnswer": "7",
-                  "explanation": "Le pH neutre est 7, en dessous c'est acide, au-dessus c'est basique",
-                  "points": 10
-                },
-                {
-                  "id": 7,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que l'ADN ?",
-                  "options": ["Un sucre", "Un lipide", "Une protéine", "Un acide nucléique"],
-                  "correctAnswer": "Un acide nucléique",
-                  "explanation": "L'ADN (acide désoxyribonucléique) contient l'information génétique",
-                  "points": 10
-                },
-                {
-                  "id": 8,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quel est le principe de la conservation de la masse ?",
-                  "options": ["La masse se perd", "La masse se crée", "La masse reste constante", "La masse varie"],
-                  "correctAnswer": "La masse reste constante",
-                  "explanation": "Dans une transformation chimique, la masse totale des réactifs égale la masse totale des produits",
-                  "points": 10
-                },
-                {
-                  "id": 9,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quel est le symbole chimique de l'oxygène ?",
-                  "options": ["Ox", "O", "Oy", "Og"],
-                  "correctAnswer": "O",
-                  "explanation": "O est le symbole chimique de l'oxygène",
-                  "points": 10
-                },
-                {
-                  "id": 10,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce qu'un écosystème ?",
-                  "options": ["Un organisme", "Un ensemble d'êtres vivants et leur milieu", "Une espèce", "Un habitat"],
-                  "correctAnswer": "Un ensemble d'êtres vivants et leur milieu",
-                  "explanation": "Un écosystème comprend les êtres vivants et leur environnement physique",
-                  "points": 10
-                },
-                {
-                  "id": 11,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quel est l'état de l'eau à 0°C ?",
-                  "options": ["Liquide", "Solide", "Gazeux", "Plasma"],
-                  "correctAnswer": "Solide",
-                  "explanation": "À 0°C, l'eau se solidifie et devient de la glace",
-                  "points": 10
-                }
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel organe permet de respirer chez l'humain ?","options":["Le cœur","Le foie","Les poumons","L'estomac"],"correctAnswer":"Les poumons","explanation":"Les poumons permettent la respiration.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Les plantes ont besoin de ___ pour faire la photosynthèse.","correctAnswer":"lumière","explanation":"La lumière est nécessaire à la photosynthèse.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle des racines ?","options":["Respirer","Absorber l'eau","Faire des fruits","Bouger"],"correctAnswer":"Absorber l'eau","explanation":"Les racines absorbent l'eau et les sels minéraux.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Les animaux mangent pour obtenir de l'___ .","correctAnswer":"énergie","explanation":"La nourriture apporte de l'énergie.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel organe pompe le sang ?","options":["Le cerveau","Le cœur","Le poumon","Le rein"],"correctAnswer":"Le cœur","explanation":"Le cœur pompe le sang.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Les humains respirent de l'___ .","correctAnswer":"oxygène","explanation":"Nous respirons de l'oxygène.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle des feuilles ?","options":["Absorber l'eau","Faire la photosynthèse","Bouger","Respirer"],"correctAnswer":"Faire la photosynthèse","explanation":"Les feuilles font la photosynthèse.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Les fleurs produisent des ___ .","correctAnswer":"graines","explanation":"Les fleurs produisent des graines.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du squelette ?","options":["Protéger le cerveau","Donner une forme au corps","Respirer","Digérer"],"correctAnswer":"Donner une forme au corps","explanation":"Le squelette donne une forme et protège certains organes.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Les muscles permettent de ___ .","correctAnswer":"bouger","explanation":"Les muscles permettent le mouvement.","points":10}
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Matière et états physiques",
+              "description": "Solide, liquide, gaz, changements d'état",
+              "icon": "🧊",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est l'état de l'eau à 0°C ?","options":["Liquide","Solide","Gazeux","Plasma"],"correctAnswer":"Solide","explanation":"À 0°C, l'eau est solide (glace).","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'eau bout à ___ °C.","correctAnswer":"100","explanation":"L'eau bout à 100°C.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est l'état de l'eau à température ambiante ?","options":["Solide","Liquide","Gazeux","Plasma"],"correctAnswer":"Liquide","explanation":"À température ambiante, l'eau est liquide.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La glace est de l'eau à l'état ___ .","correctAnswer":"solide","explanation":"La glace est de l'eau solide.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel changement d'état transforme un liquide en gaz ?","options":["Fusion","Ébullition","Condensation","Solidification"],"correctAnswer":"Ébullition","explanation":"L'ébullition transforme un liquide en gaz.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La condensation transforme un gaz en ___ .","correctAnswer":"liquide","explanation":"La condensation donne un liquide.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est l'état du dioxyde de carbone à température ambiante ?","options":["Solide","Liquide","Gazeux","Plasma"],"correctAnswer":"Gazeux","explanation":"Le CO2 est un gaz à température ambiante.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La fusion transforme un solide en ___ .","correctAnswer":"liquide","explanation":"La fusion donne un liquide.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est l'état de la vapeur d'eau ?","options":["Solide","Liquide","Gazeux","Plasma"],"correctAnswer":"Gazeux","explanation":"La vapeur d'eau est un gaz.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La solidification transforme un liquide en ___ .","correctAnswer":"solide","explanation":"La solidification donne un solide.","points":10}
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Énergie et transformations",
+              "description": "Sources, formes et transferts d'énergie",
+              "icon": "⚡",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la principale source d'énergie sur Terre ?","options":["Le vent","Le Soleil","Le pétrole","L'eau"],"correctAnswer":"Le Soleil","explanation":"Le Soleil est la principale source d'énergie.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'énergie électrique se transporte par des ___ .","correctAnswer":"fils","explanation":"L'électricité circule dans des fils.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle transformation d'énergie a lieu dans une ampoule ?","options":["Chimique en thermique","Électrique en lumineuse","Mécanique en chimique","Thermique en mécanique"],"correctAnswer":"Électrique en lumineuse","explanation":"L'ampoule transforme l'électricité en lumière.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : L'énergie du vent est appelée énergie ___ .","correctAnswer":"éolienne","explanation":"L'énergie du vent est éolienne.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle énergie utilise une pile ?","options":["Chimique","Thermique","Mécanique","Lumineuse"],"correctAnswer":"Chimique","explanation":"Une pile utilise de l'énergie chimique.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : L'énergie solaire vient du ___ .","correctAnswer":"Soleil","explanation":"L'énergie solaire vient du Soleil.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle énergie chauffe l'eau dans un chauffe-eau solaire ?","options":["Éolienne","Solaire","Chimique","Mécanique"],"correctAnswer":"Solaire","explanation":"Le chauffe-eau solaire utilise l'énergie solaire.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : L'énergie thermique est liée à la ___ .","correctAnswer":"chaleur","explanation":"L'énergie thermique est la chaleur.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle énergie fait tourner une éolienne ?","options":["Solaire","Chimique","Éolienne","Thermique"],"correctAnswer":"Éolienne","explanation":"Le vent fait tourner l'éolienne.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : L'énergie mécanique est liée au ___ .","correctAnswer":"mouvement","explanation":"L'énergie mécanique est liée au mouvement.","points":10}
+              ]
+            },
+            {
+              "id": 4,
+              "title": "La matière et ses transformations",
+              "description": "Mélanges, réactions chimiques, propriétés",
+              "icon": "🧪",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un mélange homogène ?","options":["On voit plusieurs phases","On ne distingue pas les constituants","C'est solide","C'est gazeux"],"correctAnswer":"On ne distingue pas les constituants","explanation":"Un mélange homogène est uniforme.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'eau salée est un mélange ___ .","correctAnswer":"homogène","explanation":"L'eau salée est homogène.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'une réaction chimique ?","options":["Un changement d'état","Une transformation avec de nouvelles substances","Un mélange","Une évaporation"],"correctAnswer":"Une transformation avec de nouvelles substances","explanation":"Une réaction chimique crée de nouvelles substances.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le sel dissous dans l'eau forme une ___ .","correctAnswer":"solution","explanation":"Le sel dissous forme une solution.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le symbole chimique de l'eau ?","options":["O2","H2O","CO2","HO"],"correctAnswer":"H2O","explanation":"H2O est la formule de l'eau.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Le symbole chimique du dioxygène est ___ .","correctAnswer":"O2","explanation":"O2 est le symbole du dioxygène.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un atome ?","options":["La plus petite partie d'un élément","Une molécule","Un ion","Un électron"],"correctAnswer":"La plus petite partie d'un élément","explanation":"Un atome est la plus petite unité d'un élément.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le symbole chimique du carbone est ___ .","correctAnswer":"C","explanation":"C est le symbole du carbone.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'une molécule ?","options":["Un atome","Un ensemble d'atomes liés","Un ion","Un électron"],"correctAnswer":"Un ensemble d'atomes liés","explanation":"Une molécule est un ensemble d'atomes liés.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Le symbole chimique du fer est ___ .","correctAnswer":"Fe","explanation":"Fe est le symbole du fer.","points":10}
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Le corps humain",
+              "description": "Organes, fonctions, hygiène",
+              "icon": "🦴",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel organe filtre le sang ?","options":["Le cœur","Le foie","Le rein","Le poumon"],"correctAnswer":"Le rein","explanation":"Le rein filtre le sang.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le cerveau contrôle le ___ .","correctAnswer":"corps","explanation":"Le cerveau contrôle le corps.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel organe permet de digérer les aliments ?","options":["Le cœur","Le foie","L'estomac","Le rein"],"correctAnswer":"L'estomac","explanation":"L'estomac digère les aliments.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Les os forment le ___ .","correctAnswer":"squelette","explanation":"Les os forment le squelette.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel organe permet de voir ?","options":["L'œil","Le nez","La bouche","L'oreille"],"correctAnswer":"L'œil","explanation":"L'œil permet de voir.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Les oreilles servent à ___ .","correctAnswer":"entendre","explanation":"Les oreilles servent à entendre.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel organe permet de sentir les odeurs ?","options":["L'œil","Le nez","La bouche","L'oreille"],"correctAnswer":"Le nez","explanation":"Le nez sent les odeurs.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Les dents servent à ___ .","correctAnswer":"mâcher","explanation":"Les dents servent à mâcher.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel organe permet de goûter ?","options":["La langue","Le nez","L'œil","L'oreille"],"correctAnswer":"La langue","explanation":"La langue goûte les aliments.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Les mains servent à ___ .","correctAnswer":"toucher","explanation":"Les mains servent à toucher.","points":10}
+              ]
+            },
+            {
+              "id": 6,
+              "title": "La Terre et l'espace",
+              "description": "Planètes, saisons, phénomènes naturels",
+              "icon": "🌍",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la planète la plus proche du Soleil ?","options":["Vénus","Terre","Mercure","Mars"],"correctAnswer":"Mercure","explanation":"Mercure est la plus proche du Soleil.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : La Terre tourne autour du ___ .","correctAnswer":"Soleil","explanation":"La Terre tourne autour du Soleil.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Combien de saisons y a-t-il ?","options":["2","3","4","5"],"correctAnswer":"4","explanation":"Il y a 4 saisons.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La Lune tourne autour de la ___ .","correctAnswer":"Terre","explanation":"La Lune tourne autour de la Terre.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel phénomène naturel provoque le tonnerre ?","options":["La pluie","Le vent","L'éclair","La neige"],"correctAnswer":"L'éclair","explanation":"Le tonnerre suit l'éclair.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : L'équinoxe marque le début du ___ .","correctAnswer":"printemps","explanation":"L'équinoxe de printemps.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle est la planète rouge ?","options":["Mars","Jupiter","Saturne","Vénus"],"correctAnswer":"Mars","explanation":"Mars est la planète rouge.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La Terre est une ___ .","correctAnswer":"planète","explanation":"La Terre est une planète.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel astre éclaire la nuit ?","options":["Le Soleil","La Lune","Mars","Vénus"],"correctAnswer":"La Lune","explanation":"La Lune éclaire la nuit.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : L'été est la saison la plus ___ .","correctAnswer":"chaude","explanation":"L'été est la saison la plus chaude.","points":10}
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Les êtres vivants et leur environnement",
+              "description": "Écosystèmes, chaînes alimentaires, adaptation",
+              "icon": "🌳",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un écosystème ?","options":["Un animal","Un ensemble d'êtres vivants et leur milieu","Une plante","Un organe"],"correctAnswer":"Un ensemble d'êtres vivants et leur milieu","explanation":"Un écosystème comprend les êtres vivants et leur environnement.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Les animaux mangent des ___ .","correctAnswer":"plantes","explanation":"Les animaux mangent des plantes ou d'autres animaux.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'une chaîne alimentaire ?","options":["Une suite de repas","Une suite d'êtres vivants qui se mangent","Un organe","Un phénomène naturel"],"correctAnswer":"Une suite d'êtres vivants qui se mangent","explanation":"La chaîne alimentaire relie les êtres vivants par l'alimentation.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Les plantes produisent de l'___ .","correctAnswer":"oxygène","explanation":"Les plantes produisent de l'oxygène.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un prédateur ?","options":["Un animal qui mange d'autres animaux","Un animal qui mange des plantes","Une plante","Un organe"],"correctAnswer":"Un animal qui mange d'autres animaux","explanation":"Un prédateur chasse d'autres animaux.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Les herbivores mangent des ___ .","correctAnswer":"plantes","explanation":"Les herbivores mangent des plantes.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'une adaptation ?","options":["Un changement de saison","Une modification pour survivre","Un organe","Un phénomène naturel"],"correctAnswer":"Une modification pour survivre","explanation":"L'adaptation aide à survivre.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Les carnivores mangent de la ___ .","correctAnswer":"viande","explanation":"Les carnivores mangent de la viande.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un producteur dans une chaîne alimentaire ?","options":["Un animal","Une plante","Un organe","Un phénomène naturel"],"correctAnswer":"Une plante","explanation":"Les plantes sont des producteurs.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Les décomposeurs transforment la matière ___ .","correctAnswer":"morte","explanation":"Les décomposeurs transforment la matière morte.","points":10}
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Découvertes et expériences",
+              "description": "Méthode scientifique, observation, expériences simples",
+              "icon": "🔬",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Que fait un scientifique ?","options":["Il observe et expérimente","Il cuisine","Il joue","Il chante"],"correctAnswer":"Il observe et expérimente","explanation":"Le scientifique observe et expérimente.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : On utilise un ___ pour observer les étoiles.","correctAnswer":"télescope","explanation":"On observe les étoiles avec un télescope.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel instrument permet de voir des cellules ?","options":["Télescope","Loupe","Microscope","Lunette"],"correctAnswer":"Microscope","explanation":"Le microscope permet de voir des cellules.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : On mesure la température avec un ___ .","correctAnswer":"thermomètre","explanation":"On mesure la température avec un thermomètre.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Que fait-on lors d'une expérience scientifique ?","options":["On observe","On cuisine","On joue","On chante"],"correctAnswer":"On observe","explanation":"On observe lors d'une expérience.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : On mesure la masse avec une ___ .","correctAnswer":"balance","explanation":"On mesure la masse avec une balance.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel instrument mesure le temps ?","options":["Balance","Montre","Microscope","Télescope"],"correctAnswer":"Montre","explanation":"La montre mesure le temps.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : On mesure la longueur avec une ___ .","correctAnswer":"règle","explanation":"On mesure la longueur avec une règle.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel instrument permet de mesurer un liquide ?","options":["Règle","Éprouvette","Montre","Microscope"],"correctAnswer":"Éprouvette","explanation":"L'éprouvette mesure un liquide.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : On note les résultats dans un ___ .","correctAnswer":"cahier","explanation":"On note les résultats dans un cahier.","points":10}
               ]
             }
           ]
@@ -392,121 +496,154 @@
           "lessons": [
             {
               "id": 1,
-              "title": "La Révolution Française",
-              "description": "Les événements de 1789 et leurs conséquences",
+              "title": "Révolution française",
+              "description": "Événements majeurs de 1789 et conséquences",
               "icon": "⚔️",
               "difficulty": "easy",
               "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "En quelle année a eu lieu la prise de la Bastille ?",
-                  "options": ["1789", "1790", "1788", "1791"],
-                  "correctAnswer": "1789",
-                  "explanation": "La prise de la Bastille a eu lieu le 14 juillet 1789",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quel était le roi de France en 1789 ?",
-                  "options": ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVII"],
-                  "correctAnswer": "Louis XVI",
-                  "explanation": "Louis XVI était roi de France au début de la Révolution",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce que le Tiers État ?",
-                  "options": ["La noblesse", "Le clergé", "Le peuple", "L'armée"],
-                  "correctAnswer": "Le peuple",
-                  "explanation": "Le Tiers État représentait 98% de la population française",
-                  "points": 10
-                },
-                {
-                  "id": 4,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quel document a été adopté le 26 août 1789 ?",
-                  "options": ["La Constitution", "La Déclaration des Droits de l'Homme", "Le Code Civil", "La Charte"],
-                  "correctAnswer": "La Déclaration des Droits de l'Homme",
-                  "explanation": "La Déclaration des Droits de l'Homme et du Citoyen a été adoptée le 26 août 1789",
-                  "points": 10
-                },
-                {
-                  "id": 5,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce que la Terreur ?",
-                  "options": ["Une période de paix", "Une période de répression", "Une période de prospérité", "Une période de guerre"],
-                  "correctAnswer": "Une période de répression",
-                  "explanation": "La Terreur (1793-1794) fut une période de répression politique intense",
-                  "points": 10
-                },
-                {
-                  "id": 6,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quel général est devenu empereur en 1804 ?",
-                  "options": ["Napoléon Bonaparte", "Napoléon III", "Louis XVIII", "Charles X"],
-                  "correctAnswer": "Napoléon Bonaparte",
-                  "explanation": "Napoléon Bonaparte est devenu empereur des Français en 1804",
-                  "points": 10
-                },
-                {
-                  "id": 7,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que la Constitution de 1791 ?",
-                  "options": ["Une monarchie absolue", "Une monarchie constitutionnelle", "Une république", "Un empire"],
-                  "correctAnswer": "Une monarchie constitutionnelle",
-                  "explanation": "La Constitution de 1791 établit une monarchie constitutionnelle",
-                  "points": 10
-                },
-                {
-                  "id": 8,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quel était le slogan de la Révolution ?",
-                  "options": ["Liberté, Égalité, Fraternité", "Paix, Amour, Harmonie", "Justice, Vérité, Honneur", "Unité, Force, Courage"],
-                  "correctAnswer": "Liberté, Égalité, Fraternité",
-                  "explanation": "Liberté, Égalité, Fraternité est devenu la devise de la République française",
-                  "points": 10
-                },
-                {
-                  "id": 9,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce qu'un sans-culotte ?",
-                  "options": ["Un noble", "Un révolutionnaire populaire", "Un prêtre", "Un soldat"],
-                  "correctAnswer": "Un révolutionnaire populaire",
-                  "explanation": "Les sans-culottes étaient des révolutionnaires populaires parisiens",
-                  "points": 10
-                },
-                {
-                  "id": 10,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Quel événement marque la fin de la monarchie en 1792 ?",
-                  "options": ["La prise de la Bastille", "L'exécution du roi", "La proclamation de la République", "Le coup d'État de Napoléon"],
-                  "correctAnswer": "La proclamation de la République",
-                  "explanation": "La République est proclamée le 22 septembre 1792",
-                  "points": 10
-                },
-                {
-                  "id": 11,
-                  "type": "multiple-choice",
-                  "difficulty": 1,
-                  "question": "Qu'est-ce que la Vendée ?",
-                  "options": ["Une ville", "Une région en révolte", "Un parti politique", "Un journal"],
-                  "correctAnswer": "Une région en révolte",
-                  "explanation": "La Vendée était une région royaliste qui s'est révoltée contre la Révolution",
-                  "points": 10
-                }
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"En quelle année a eu lieu la prise de la Bastille ?","options":["1789","1790","1788","1791"],"correctAnswer":"1789","explanation":"La prise de la Bastille a eu lieu le 14 juillet 1789.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : La Déclaration des Droits de l'Homme a été adoptée en ___ .","correctAnswer":"1789","explanation":"La Déclaration a été adoptée en 1789.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel roi régnait en 1789 ?","options":["Louis XIV","Louis XV","Louis XVI","Louis XVII"],"correctAnswer":"Louis XVI","explanation":"Louis XVI était roi en 1789.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le Tiers État représentait ___% de la population.","correctAnswer":"98","explanation":"Le Tiers État représentait 98%.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel document a été adopté le 26 août 1789 ?","options":["La Constitution","La Déclaration des Droits de l'Homme","Le Code Civil","La Charte"],"correctAnswer":"La Déclaration des Droits de l'Homme","explanation":"La Déclaration a été adoptée le 26 août 1789.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La Terreur a eu lieu en ___ .","correctAnswer":"1793-1794","explanation":"La Terreur : 1793-1794.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel général est devenu empereur en 1804 ?","options":["Napoléon Bonaparte","Napoléon III","Louis XVIII","Charles X"],"correctAnswer":"Napoléon Bonaparte","explanation":"Napoléon Bonaparte est devenu empereur en 1804.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le slogan de la Révolution est 'Liberté, ___, Fraternité'.","correctAnswer":"Égalité","explanation":"Liberté, Égalité, Fraternité.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Qu'est-ce qu'un sans-culotte ?","options":["Un noble","Un révolutionnaire populaire","Un prêtre","Un soldat"],"correctAnswer":"Un révolutionnaire populaire","explanation":"Les sans-culottes étaient des révolutionnaires populaires.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La République est proclamée en ___ .","correctAnswer":"1792","explanation":"La République est proclamée en 1792.","points":10}
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Première Guerre mondiale",
+              "description": "Causes, déroulement, conséquences",
+              "icon": "🪖",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"En quelle année a commencé la Première Guerre mondiale ?","options":["1912","1914","1916","1918"],"correctAnswer":"1914","explanation":"La guerre commence en 1914.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'armistice a été signé en ___ .","correctAnswer":"1918","explanation":"L'armistice a été signé en 1918.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel événement a déclenché la guerre ?","options":["Assassinat de l'archiduc","Révolution russe","Traité de Versailles","Débarquement"],"correctAnswer":"Assassinat de l'archiduc","explanation":"L'assassinat de l'archiduc François-Ferdinand.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La bataille de la Marne a eu lieu en ___ .","correctAnswer":"1914","explanation":"La bataille de la Marne : 1914.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel traité met fin à la guerre ?","options":["Traité de Versailles","Traité de Paris","Traité de Rome","Traité de Londres"],"correctAnswer":"Traité de Versailles","explanation":"Le traité de Versailles met fin à la guerre.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La France fait partie des ___ .","correctAnswer":"Alliés","explanation":"La France est dans les Alliés.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel pays n'était pas dans la Triple Entente ?","options":["France","Royaume-Uni","Allemagne","Russie"],"correctAnswer":"Allemagne","explanation":"L'Allemagne n'était pas dans la Triple Entente.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Les tranchées étaient des ___ .","correctAnswer":"fossés","explanation":"Les tranchées étaient des fossés.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le nom du traité de paix ?","options":["Versailles","Paris","Rome","Londres"],"correctAnswer":"Versailles","explanation":"Le traité de Versailles.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La guerre a duré ___ ans.","correctAnswer":"4","explanation":"La guerre a duré 4 ans.","points":10}
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Seconde Guerre mondiale",
+              "description": "Conflit mondial, Résistance, Shoah",
+              "icon": "🌏",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"En quelle année a commencé la Seconde Guerre mondiale ?","options":["1937","1938","1939","1940"],"correctAnswer":"1939","explanation":"La guerre commence en 1939.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : La France est occupée en ___ .","correctAnswer":"1940","explanation":"La France est occupée en 1940.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel pays a libéré Paris en 1944 ?","options":["Royaume-Uni","États-Unis","URSS","Italie"],"correctAnswer":"États-Unis","explanation":"Les États-Unis ont libéré Paris.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le débarquement a eu lieu en ___ .","correctAnswer":"1944","explanation":"Le débarquement : 1944.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le nom du chef de la France libre ?","options":["Pétain","De Gaulle","Churchill","Hitler"],"correctAnswer":"De Gaulle","explanation":"De Gaulle était chef de la France libre.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La Shoah désigne l'extermination des ___ .","correctAnswer":"Juifs","explanation":"La Shoah désigne l'extermination des Juifs.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le nom du traité de paix ?","options":["Versailles","Paris","Rome","Potsdam"],"correctAnswer":"Potsdam","explanation":"Le traité de Potsdam.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La guerre finit en ___ .","correctAnswer":"1945","explanation":"La guerre finit en 1945.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le nom du mur construit à Berlin ?","options":["Mur de Paris","Mur de Londres","Mur de Berlin","Mur de Rome"],"correctAnswer":"Mur de Berlin","explanation":"Le mur de Berlin.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La Résistance lutte contre les ___ .","correctAnswer":"nazis","explanation":"La Résistance lutte contre les nazis.","points":10}
+              ]
+            },
+            {
+              "id": 4,
+              "title": "La France et ses régions",
+              "description": "Géographie de la France, régions, fleuves",
+              "icon": "🗺️",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la capitale de la France ?","options":["Lyon","Marseille","Paris","Toulouse"],"correctAnswer":"Paris","explanation":"La capitale est Paris.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le plus long fleuve de France est la ___ .","correctAnswer":"Loire","explanation":"La Loire est le plus long fleuve.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle région est au sud de la France ?","options":["Normandie","Bretagne","Provence","Île-de-France"],"correctAnswer":"Provence","explanation":"La Provence est au sud.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La montagne la plus haute de France est le ___ .","correctAnswer":"Mont Blanc","explanation":"Le Mont Blanc est le plus haut sommet.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle mer borde le sud de la France ?","options":["Mer du Nord","Mer Méditerranée","Océan Atlantique","Mer Noire"],"correctAnswer":"Mer Méditerranée","explanation":"La Méditerranée borde le sud.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La Bretagne est une ___ .","correctAnswer":"région","explanation":"La Bretagne est une région.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle ville est célèbre pour son vin ?","options":["Bordeaux","Lille","Nice","Dijon"],"correctAnswer":"Bordeaux","explanation":"Bordeaux est célèbre pour son vin.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La Corse est une ___ .","correctAnswer":"île","explanation":"La Corse est une île.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle région est célèbre pour ses châteaux ?","options":["Alsace","Normandie","Loire","Bretagne"],"correctAnswer":"Loire","explanation":"La Loire est célèbre pour ses châteaux.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Paris est traversée par la ___ .","correctAnswer":"Seine","explanation":"La Seine traverse Paris.","points":10}
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Europe et Union européenne",
+              "description": "Pays, capitales, institutions",
+              "icon": "🇪🇺",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la capitale de l'Allemagne ?","options":["Berlin","Munich","Francfort","Hambourg"],"correctAnswer":"Berlin","explanation":"La capitale est Berlin.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'Union européenne compte ___ pays membres.","correctAnswer":"27","explanation":"L'UE compte 27 pays membres.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel pays n'est pas dans l'UE ?","options":["France","Espagne","Suisse","Italie"],"correctAnswer":"Suisse","explanation":"La Suisse n'est pas dans l'UE.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La monnaie de l'UE est l'___ .","correctAnswer":"euro","explanation":"La monnaie est l'euro.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle institution siège à Strasbourg ?","options":["Parlement européen","Commission européenne","Conseil européen","Banque centrale"],"correctAnswer":"Parlement européen","explanation":"Le Parlement européen siège à Strasbourg.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La capitale de l'Espagne est ___ .","correctAnswer":"Madrid","explanation":"La capitale de l'Espagne est Madrid.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel pays a quitté l'UE en 2020 ?","options":["France","Royaume-Uni","Italie","Allemagne"],"correctAnswer":"Royaume-Uni","explanation":"Le Royaume-Uni a quitté l'UE en 2020.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La capitale de l'Italie est ___ .","correctAnswer":"Rome","explanation":"La capitale de l'Italie est Rome.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel pays est le plus grand de l'UE ?","options":["France","Allemagne","Espagne","Pologne"],"correctAnswer":"France","explanation":"La France est le plus grand pays de l'UE.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La capitale de la Belgique est ___ .","correctAnswer":"Bruxelles","explanation":"La capitale de la Belgique est Bruxelles.","points":10}
+              ]
+            },
+            {
+              "id": 6,
+              "title": "Géographie mondiale",
+              "description": "Continents, océans, pays du monde",
+              "icon": "🌎",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Combien y a-t-il de continents ?","options":["5","6","7","8"],"correctAnswer":"7","explanation":"Il y a 7 continents.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : L'océan le plus grand est l'océan ___ .","correctAnswer":"Pacifique","explanation":"L'océan Pacifique est le plus grand.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus grand pays du monde ?","options":["Chine","États-Unis","Russie","Canada"],"correctAnswer":"Russie","explanation":"La Russie est le plus grand pays.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : Le plus petit continent est l'___ .","correctAnswer":"Océanie","explanation":"L'Océanie est le plus petit continent.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel pays a la plus grande population ?","options":["Inde","Chine","États-Unis","Brésil"],"correctAnswer":"Chine","explanation":"La Chine a la plus grande population.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Le Nil est un ___ .","correctAnswer":"fleuve","explanation":"Le Nil est un fleuve.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus haut sommet du monde ?","options":["Mont Blanc","Everest","K2","Kilimandjaro"],"correctAnswer":"Everest","explanation":"L'Everest est le plus haut sommet.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le Sahara est un ___ .","correctAnswer":"désert","explanation":"Le Sahara est un désert.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus long fleuve du monde ?","options":["Nil","Amazonie","Yangtsé","Mississippi"],"correctAnswer":"Nil","explanation":"Le Nil est le plus long fleuve.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : L'Australie est un ___ .","correctAnswer":"pays","explanation":"L'Australie est un pays.","points":10}
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Citoyenneté et institutions",
+              "description": "Droits, devoirs, institutions françaises",
+              "icon": "🏛️",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quel est le symbole de la République française ?","options":["Le coq","La Marianne","Le lion","La tour Eiffel"],"correctAnswer":"La Marianne","explanation":"La Marianne est le symbole de la République.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le président de la République est élu pour ___ ans.","correctAnswer":"5","explanation":"Le président est élu pour 5 ans.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du Parlement ?","options":["Faire les lois","Appliquer les lois","Contrôler la police","Gérer les écoles"],"correctAnswer":"Faire les lois","explanation":"Le Parlement fait les lois.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La devise de la France est 'Liberté, ___, Fraternité'.","correctAnswer":"Égalité","explanation":"Liberté, Égalité, Fraternité.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du maire ?","options":["Gérer la commune","Faire les lois","Gérer l'armée","Gérer l'école"],"correctAnswer":"Gérer la commune","explanation":"Le maire gère la commune.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Le drapeau français est ___, blanc, rouge.","correctAnswer":"bleu","explanation":"Le drapeau est bleu, blanc, rouge.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du président ?","options":["Gérer la commune","Représenter la France","Faire les lois","Gérer l'école"],"correctAnswer":"Représenter la France","explanation":"Le président représente la France.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Le 14 juillet est la fête ___ .","correctAnswer":"nationale","explanation":"Le 14 juillet est la fête nationale.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du Conseil constitutionnel ?","options":["Contrôler la constitutionnalité des lois","Gérer la commune","Faire les lois","Gérer l'école"],"correctAnswer":"Contrôler la constitutionnalité des lois","explanation":"Le Conseil constitutionnel contrôle les lois.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Le suffrage universel est le droit de ___ .","correctAnswer":"vote","explanation":"Le suffrage universel est le droit de vote.","points":10}
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Repères chronologiques et cartes",
+              "description": "Dates clés, lecture de cartes, frises",
+              "icon": "🗓️",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"En quelle année a eu lieu la Révolution française ?","options":["1789","1792","1804","1815"],"correctAnswer":"1789","explanation":"La Révolution a eu lieu en 1789.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : La Première Guerre mondiale a commencé en ___ .","correctAnswer":"1914","explanation":"La guerre commence en 1914.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"En quelle année la Seconde Guerre mondiale s'est-elle terminée ?","options":["1940","1942","1945","1950"],"correctAnswer":"1945","explanation":"La guerre s'est terminée en 1945.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : La République est proclamée en ___ .","correctAnswer":"1792","explanation":"La République est proclamée en 1792.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus long fleuve de France ?","options":["Seine","Loire","Garonne","Rhin"],"correctAnswer":"Loire","explanation":"La Loire est le plus long fleuve.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : La capitale de la France est ___ .","correctAnswer":"Paris","explanation":"La capitale est Paris.","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus haut sommet de France ?","options":["Mont Blanc","Mont Ventoux","Pic du Midi","Puy de Dôme"],"correctAnswer":"Mont Blanc","explanation":"Le Mont Blanc est le plus haut sommet.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : La France est en ___ .","correctAnswer":"Europe","explanation":"La France est en Europe.","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le plus grand océan du monde ?","options":["Atlantique","Indien","Arctique","Pacifique"],"correctAnswer":"Pacifique","explanation":"Le Pacifique est le plus grand océan.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : La Seconde Guerre mondiale a fini en ___ .","correctAnswer":"1945","explanation":"La guerre a fini en 1945.","points":10}
               ]
             }
           ]

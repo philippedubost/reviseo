@@ -1,6 +1,7 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { dataService } from '@/src/data/simplified-service';
 import ConfettiManager from '@/src/components/ConfettiManager';
@@ -27,7 +28,7 @@ export default function CompletePage({ params }: CompletePageProps) {
   
   const lesson = dataService.getLessonById(subjectId, lessonId, levelId);
   const subject = dataService.getSubjectById(subjectId, levelId);
-  const { totalXP, currentStreak, bestStreak } = useLessonProgress(subjectId);
+  const { totalXP, currentStreak, bestStreak } = useLessonProgress(subjectId, levelId);
 
   if (!lesson || !subject) {
     return (
@@ -80,59 +81,53 @@ export default function CompletePage({ params }: CompletePageProps) {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 px-4 py-8 flex flex-col items-center justify-center">
+      <div className="flex-1 px-4 py-4 flex flex-col items-center justify-start">
         {/* Score Display */}
-        <div className="text-center mb-8">
-          <div className="text-6xl mb-4">🎉</div>
-          <h2 className="text-2xl font-bold text-white mb-2">{getScoreMessage()}</h2>
-          <div className={`text-4xl font-bold mb-2 ${getScoreColor()}`}>
+        <div className="text-center mb-6">
+          <div className="text-8xl mb-2">🎉</div>
+          <h2 className="text-xl font-bold text-white mb-1">{getScoreMessage()}</h2>
+          <div className={`text-3xl font-bold mb-1 ${getScoreColor()}`}>
             {score}%
           </div>
-          <div className="text-gray-400">
+          <div className="text-gray-400 text-sm">
             {correct} bonnes réponses sur {total} questions
           </div>
         </div>
 
         {/* Stats */}
-        <div className="w-full max-w-md mb-8">
-          <div className="bg-[#232a36] rounded-lg p-4 space-y-3">
+        <div className="w-full max-w-sm mb-6">
+          <div className="bg-[#232a36] rounded-lg p-3 space-y-2">
             <div className="flex justify-between">
-              <span className="text-gray-400">XP Total :</span>
+              <span className="text-gray-400 text-sm">XP Total :</span>
               <span className="text-white font-bold">{totalXP}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400">Série actuelle :</span>
+              <span className="text-gray-400 text-sm">Série actuelle :</span>
               <span className="text-white font-bold">{currentStreak}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400">Meilleure série :</span>
+              <span className="text-gray-400 text-sm">Meilleure série :</span>
               <span className="text-white font-bold">{bestStreak}</span>
             </div>
           </div>
         </div>
 
         {/* Action Buttons */}
-        <div className="w-full max-w-md space-y-3">
+        <div className="w-full max-w-sm space-y-2">
           <Link href={`/${levelId}/${subjectId}/lesson/${lessonId}`}>
-            <button className="btn bg-[#2ecc71] text-white w-full">
+            <button className="btn bg-[#2ecc71] text-white w-full py-2">
               🔄 Recommencer cette leçon
             </button>
           </Link>
           
-          <Link href={`/${levelId}/${subjectId}/practice`}>
-            <button className="btn bg-[#3498db] text-white w-full">
-              🎯 Mode entraînement
-            </button>
-          </Link>
-          
           <Link href={`/${levelId}/${subjectId}`}>
-            <button className="btn bg-[#232a36] text-white w-full">
+            <button className="btn bg-[#232a36] text-white w-full py-2">
               📚 Autres leçons
             </button>
           </Link>
           
           <Link href={`/${levelId}`}>
-            <button className="btn bg-[#6c757d] text-white w-full">
+            <button className="btn bg-[#6c757d] text-white w-full py-2">
               🏠 Retour aux matières
             </button>
           </Link>

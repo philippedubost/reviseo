@@ -40,7 +40,7 @@ export default function PracticePage({ params }: PracticePageProps) {
     totalXP,
     currentStreak,
     bestStreak
-  } = useLessonProgress(subjectId);
+  } = useLessonProgress(subjectId, levelId);
 
   const {
     currentQuestion,

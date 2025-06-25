@@ -11,7 +11,7 @@ interface SubjectCardProps {
 }
 
 export default function SubjectCard({ subject, levelId }: SubjectCardProps) {
-  const { globalProgress } = useLessonProgress(subject.id as SubjectType);
+  const { globalProgress } = useLessonProgress(subject.id as SubjectType, levelId || 'troisieme');
   const lessonCount = subject.lessons.length;
 
   const colors = subject.color.split(' ');

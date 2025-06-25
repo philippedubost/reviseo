@@ -24,7 +24,7 @@ export default function PracticeCompletePage({ params }: PracticeCompletePagePro
   const correct = Number(searchParams.get('correct')) || 0;
   
   const subject = dataService.getSubjectById(subjectId, levelId);
-  const { totalXP, currentStreak, bestStreak } = useLessonProgress(subjectId);
+  const { totalXP, currentStreak, bestStreak } = useLessonProgress(subjectId, levelId);
 
   if (!subject) {
     return (

@@ -122,30 +122,24 @@ export default function LessonPage() {
             </div>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
-            {currentQuestion && (
-              <FlagButton
-                questionId={currentQuestion.id}
-                subjectId={subjectId}
-                lessonId={lessonId}
-                questionText={currentQuestion.question}
-              />
-            )}
             <ExitButton onExit={handleExit} />
           </div>
         </div>
       </div>
 
       {/* Stats Badges */}
-      <StatsBadges
-        xp={totalXP}
-        currentStreak={currentStreak}
-        bestStreak={bestStreak}
-        currentQuestion={currentQuestionIndex + 1}
-        totalQuestions={totalQuestions}
-        lastAnswerCorrect={lastAnswerCorrect}
-        showAnswerFeedback={showAnswerFeedback}
-        isSkipped={isSkipped}
-      />
+      <div className="px-4 mt-4">
+        <StatsBadges
+          xp={totalXP}
+          currentStreak={currentStreak}
+          bestStreak={bestStreak}
+          currentQuestion={currentQuestionIndex + 1}
+          totalQuestions={totalQuestions}
+          lastAnswerCorrect={lastAnswerCorrect}
+          showAnswerFeedback={showAnswerFeedback}
+          isSkipped={isSkipped}
+        />
+      </div>
 
       {/* Progress Bar */}
       <ProgressBar progress={progress} />
@@ -160,6 +154,7 @@ export default function LessonPage() {
             showResult={showResult}
             onAnswerChange={setSelectedAnswer}
             onAnswerSelect={handleAnswerSelect}
+            onSubmit={handleSubmit}
             options={currentQuestion.options}
             correctAnswer={currentQuestion.correctAnswer}
             questionId={currentQuestion.id}

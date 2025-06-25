@@ -76,7 +76,7 @@ export default function QuestionDisplay({
                 <span className="text-2xl font-bold" style={{ color: 'var(--mascot-color)' }}>=</span>
               </div>
             )}
-            <div className="w-full flex justify-center">
+            <div className="w-full flex flex-col items-center justify-center">
               <input
                 type="text"
                 className="input text-center text-lg font-bold w-full max-w-md"
@@ -86,6 +86,15 @@ export default function QuestionDisplay({
                 onKeyDown={handleKeyDown}
                 disabled={showResult}
               />
+              {!showResult && onSubmit && (
+                <button
+                  className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold px-6 mt-2"
+                  onClick={onSubmit}
+                  disabled={!selectedAnswer.trim()}
+                >
+                  Valider
+                </button>
+              )}
             </div>
           </>
         ) : (

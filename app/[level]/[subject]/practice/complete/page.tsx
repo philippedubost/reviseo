@@ -1,23 +1,17 @@
 'use client';
 
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useSearchParams, useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { dataService } from '@/src/data/simplified-service';
 import ConfettiManager from '@/src/components/ConfettiManager';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
 
-interface PracticeCompletePageProps {
-  params: {
-    level: string;
-    subject: string;
-  };
-}
-
-export default function PracticeCompletePage({ params }: PracticeCompletePageProps) {
+export default function PracticeCompletePage() {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const params = useParams();
   const subjectId = params.subject as SubjectType;
-  const levelId = params.level;
+  const levelId = params.level as string;
   
   const score = Number(searchParams.get('score')) || 0;
   const total = Number(searchParams.get('total')) || 0;

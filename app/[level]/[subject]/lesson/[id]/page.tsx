@@ -15,19 +15,12 @@ import ExitButton from '@/src/components/ExitButton';
 import FlagButton from '@/src/components/FlagButton';
 import ActionButton from '@/src/components/ActionButton';
 
-interface LessonPageProps {
-  params: {
-    level: string;
-    subject: string;
-    id: string;
-  };
-}
-
-export default function LessonPage({ params }: LessonPageProps) {
+export default function LessonPage() {
   const router = useRouter();
-  const lessonId = Number(params.id);
+  const params = useParams();
+  const lessonId = Number(params.id as string);
   const subjectId = params.subject as SubjectType;
-  const levelId = params.level;
+  const levelId = params.level as string;
   
   const lesson = dataService.getLessonById(subjectId, lessonId, levelId);
   const subject = dataService.getSubjectById(subjectId, levelId);

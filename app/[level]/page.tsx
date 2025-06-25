@@ -1,15 +1,14 @@
+'use client';
+
 import { dataService } from "@/src/data/simplified-service";
 import SubjectCard from "@/src/components/SubjectCard";
 import { notFound } from "next/navigation";
+import { useParams } from "next/navigation";
 
-interface LevelPageProps {
-  params: {
-    level: string;
-  };
-}
-
-export default function LevelPage({ params }: LevelPageProps) {
-  const level = dataService.getLevelById(params.level);
+export default function LevelPage() {
+  const params = useParams();
+  const levelId = params.level as string;
+  const level = dataService.getLevelById(levelId);
   
   if (!level) {
     notFound();

@@ -16,17 +16,11 @@ import FlagButton from '@/src/components/FlagButton';
 import ActionButton from '@/src/components/ActionButton';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 
-interface PracticePageProps {
-  params: {
-    level: string;
-    subject: string;
-  };
-}
-
-export default function PracticePage({ params }: PracticePageProps) {
+export default function PracticePage() {
   const router = useRouter();
+  const params = useParams();
   const subjectId = params.subject as SubjectType;
-  const levelId = params.level;
+  const levelId = params.level as string;
   
   const subject = dataService.getSubjectById(subjectId, levelId);
   const [questions, setQuestions] = useState(dataService.getRandomQuestionsFromAllLessons(subjectId, 10, levelId));

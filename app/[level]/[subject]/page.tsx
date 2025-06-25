@@ -5,17 +5,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { useLessonProgress } from "@/src/hooks/useLessonProgress";
 import ProgressCircle from "@/src/components/ProgressCircle";
+import { useParams } from "next/navigation";
 
-interface SubjectPageProps {
-  params: {
-    level: string;
-    subject: string;
-  };
-}
-
-export default function SubjectPage({ params }: SubjectPageProps) {
-  const subject = dataService.getSubjectById(params.subject, params.level);
-  const { getLessonProgressPercentage } = useLessonProgress(params.subject as any, params.level);
+export default function SubjectPage() {
+  const params = useParams();
+  const levelId = params.level as string;
+  const subjectId = params.subject as string;
+  const subject = dataService.getSubjectById(subjectId as any, levelId);
+  const { getLessonProgressPercentage } = useLessonProgress(subjectId as any, levelId);
   
   if (!subject) {
     notFound();
@@ -40,7 +37,7 @@ export default function SubjectPage({ params }: SubjectPageProps) {
       {/* Header avec navigation */}
       <div className="px-4 py-4 border-b border-gray-700">
         <div className="flex items-center gap-3">
-          <Link href={`/${params.level}`} className="text-white text-lg">←</Link>
+          <Link href={`/${levelId}`} className="text-white text-lg">←</Link>
           <div>
             <h1 className="text-xl font-bold text-white">{subject.name}</h1>
             <p className="text-sm text-gray-400">{subject.description}</p>
@@ -59,7 +56,7 @@ export default function SubjectPage({ params }: SubjectPageProps) {
             return (
               <Link 
                 key={lesson.id} 
-                href={`/${params.level}/${params.subject}/lesson/${lesson.id}`}
+                href={`/${levelId}/${subjectId}/lesson/${lesson.id}`}
                 className="w-full"
               >
                 <div className="card flex items-center justify-between p-3 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl bg-[#232a36] text-white">
@@ -82,7 +79,7 @@ export default function SubjectPage({ params }: SubjectPageProps) {
         {/* Practice Button */}
         <div className="mt-6">
           <Link 
-            href={`/${params.level}/${params.subject}/practice`}
+            href={`/${levelId}/${subjectId}/practice`}
             className="w-full"
           >
             <div className="card flex items-center justify-center p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#2ecc71] to-[#27ae60] text-white">

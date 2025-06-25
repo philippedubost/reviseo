@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   // Niveaux disponibles (cliquables)
-  const availableLevels = ['troisieme', 'terminale'];
+  const availableLevels = ['troisieme'];
   
   // Niveaux à venir (grisés)
   const upcomingLevels = [
@@ -25,7 +25,8 @@ export default function Home() {
     { id: 'cinquieme', name: 'Cinquième', emoji: '🎯', description: 'Collège' },
     { id: 'quatrieme', name: 'Quatrième', emoji: '⚡', description: 'Collège' },
     { id: 'seconde', name: 'Seconde', emoji: '🚀', description: 'Début du lycée' },
-    { id: 'premiere', name: 'Première', emoji: '💎', description: 'Lycée' }
+    { id: 'premiere', name: 'Première', emoji: '💎', description: 'Lycée' },
+    { id: 'terminale', name: 'Terminale', emoji: '👑', description: 'Bac' }
   ];
 
   return (

@@ -24,6 +24,12 @@ Ce fichier documente toutes les améliorations et modifications apportées au pr
 - **Implémentation** : Algorithme de sélection aléatoire intelligent
 - **Détails** : Voir [RANDOM_QUESTIONS_README.md](./changelog/RANDOM_QUESTIONS_README.md)
 
+### ⌨️ Clavier Numérique Automatique
+- **Amélioration** : Affichage automatique du clavier numérique sur mobile
+- **Fonctionnalité** : Optimisation pour les questions de saisie manuelle
+- **UX** : Saisie plus rapide et intuitive des réponses numériques
+- **Détails** : Voir [KEYBOARD_NUMERIC_README.md](./KEYBOARD_NUMERIC_README.md)
+
 ---
 
 ## Version 1.1.0 - Améliorations UX

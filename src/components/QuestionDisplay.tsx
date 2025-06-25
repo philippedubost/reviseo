@@ -148,6 +148,12 @@ export default function QuestionDisplay({
               <motion.input
                 ref={inputRef}
                 type="text"
+                inputMode="decimal"
+                pattern="[0-9,.]*"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck="false"
                 className="input text-center text-lg font-bold w-full max-w-md"
                 placeholder="Votre réponse"
                 value={selectedAnswer}

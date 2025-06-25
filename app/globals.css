@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #1e293b;
+  --background: #0f172a;
+  --foreground: #f1f5f9;
   --accent-green: #10b981;
   --accent-blue: #3b82f6;
   --accent-yellow: #f59e0b;
   --accent-red: #ef4444;
   --mascot-color: #ec8501;
-  --card: #ffffff;
-  --button: #f1f5f9;
+  --card: #1e293b;
+  --button: #334155;
   --button-active: #10b981;
-  --border: #e2e8f0;
+  --border: #475569;
   --radius: 1.5rem;
   --font-sans: 'Inter', 'Geist', 'Arial', sans-serif;
 }
@@ -23,26 +23,78 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f1f5f9;
-    --card: #1e293b;
-    --button: #334155;
-    --border: #475569;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--background) !important;
+  color: var(--foreground) !important;
   font-family: var(--font-sans);
   margin: 0;
   padding: 0;
 }
 
+/* Force dark theme everywhere */
+html, body {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Override any hardcoded backgrounds */
+.bg-\[#232a36\], 
+[class*="bg-[#232a36]"] {
+  background-color: #1e293b !important;
+}
+
+/* Ensure cards have dark background */
+.card, 
+.answer-option,
+[class*="card"],
+[class*="bg-white"],
+[class*="bg-gray-50"],
+[class*="bg-gray-100"] {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+
+/* Force dark theme on all elements */
 * {
   box-sizing: border-box;
+}
+
+/* Specific overrides for embedded browsers and iframes */
+html[data-theme="dark"],
+html.dark,
+body[data-theme="dark"],
+body.dark {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Override any potential light theme classes */
+.light,
+[class*="light"],
+[class*="bg-white"],
+[class*="bg-gray-50"],
+[class*="bg-gray-100"],
+[class*="bg-slate-50"],
+[class*="bg-zinc-50"] {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+/* Ensure text is always visible on dark background */
+.text-black,
+[class*="text-black"],
+[class*="text-gray-900"],
+[class*="text-slate-900"] {
+  color: #f1f5f9 !important;
+}
+
+/* Force dark borders */
+.border-gray-200,
+.border-gray-300,
+[class*="border-gray-200"],
+[class*="border-gray-300"] {
+  border-color: #475569 !important;
 }
 
 button, .btn {

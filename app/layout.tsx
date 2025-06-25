@@ -31,9 +31,15 @@ export default function RootLayout({
                         pathname?.match(/^\/[^\/]+$/); // Hide for subject pages like /maths, /francais, etc.
   
   return (
-    <html lang="fr">
+    <html lang="fr" data-theme="dark" className="dark">
+      <head>
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="supported-color-schemes" content="dark" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${lexend.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend.className} antialiased dark`}
+        data-theme="dark"
       >
         {!shouldHideHeader && <Header />}
         <main className={`min-h-screen bg-[#181c24]`}>

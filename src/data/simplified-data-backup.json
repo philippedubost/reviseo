@@ -316,6 +316,41 @@
                 {"id":25,"type":"multiple-choice","difficulty":3,"question":"Si x = 5, combien vaut 3x² + 2x - 7 ?","options":["68","73","78","83"],"correctAnswer":"78","explanation":"3×5²+2×5-7=3×25+10-7=75+10-7=78.","points":20},
                 {"id":10,"type":"input","difficulty":1,"question":"Complète : Si x = 9, x - 3 = ___","correctAnswer":"6","explanation":"9-3=6.","points":10}
               ]
+            },
+            {
+              "id": 8,
+              "title": "Ponctuation et majuscules",
+              "description": "Points, virgules, guillemets, majuscules",
+              "icon": "📝",
+              "difficulty": "easy",
+              "questions": [
+                {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle ponctuation termine une phrase ?","options":["virgule","point","tiret","parenthèse"],"correctAnswer":"point","explanation":"Le point termine une phrase.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Je vais à l'école ___","correctAnswer":".","explanation":"Je vais à l'école.","points":10},
+                {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle ponctuation sépare les éléments d'une liste ?","options":["point","virgule","tiret","parenthèse"],"correctAnswer":"virgule","explanation":"La virgule sépare les éléments d'une liste.","points":10},
+                {"id":4,"type":"input","difficulty":1,"question":"Complète : J'ai acheté des pommes ___ des poires ___ des bananes.","correctAnswer":",,","explanation":"J'ai acheté des pommes, des poires, des bananes.","points":10},
+                {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle ponctuation encadre une citation ?","options":["parenthèses","guillemets","tirets","points"],"correctAnswer":"guillemets","explanation":"Les guillemets encadrent une citation.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Il a dit ___ Bonjour ___","correctAnswer":"\"\"","explanation":"Il a dit \"Bonjour\".","points":10},
+                {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle ponctuation marque une question ?","options":["point","point d'exclamation","point d'interrogation","virgule"],"correctAnswer":"point d'interrogation","explanation":"Le point d'interrogation marque une question.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Comment vas-tu ___","correctAnswer":"?","explanation":"Comment vas-tu ?","points":10},
+                {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle ponctuation marque l'étonnement ?","options":["point","point d'exclamation","point d'interrogation","virgule"],"correctAnswer":"point d'exclamation","explanation":"Le point d'exclamation marque l'étonnement.","points":10},
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Quel beau temps ___","correctAnswer":"!","explanation":"Quel beau temps !","points":10},
+                {"id":11,"type":"multiple-choice","difficulty":2,"question":"Quelle ponctuation encadre une explication ?","options":["guillemets","parenthèses","tirets","points"],"correctAnswer":"parenthèses","explanation":"Les parenthèses encadrent une explication.","points":15},
+                {"id":12,"type":"input","difficulty":2,"question":"Complète : Paris (la capitale de la France) est belle ___","correctAnswer":".","explanation":"Paris (la capitale de la France) est belle.","points":15},
+                {"id":13,"type":"multiple-choice","difficulty":2,"question":"Quelle ponctuation marque une pause dans la lecture ?","options":["point","virgule","tiret","parenthèse"],"correctAnswer":"virgule","explanation":"La virgule marque une pause dans la lecture.","points":15},
+                {"id":14,"type":"input","difficulty":2,"question":"Complète : Quand il fait beau ___ nous sortons.","correctAnswer":",","explanation":"Quand il fait beau, nous sortons.","points":15},
+                {"id":15,"type":"multiple-choice","difficulty":2,"question":"Quelle ponctuation encadre un dialogue ?","options":["parenthèses","guillemets","tirets","points"],"correctAnswer":"guillemets","explanation":"Les guillemets encadrent un dialogue.","points":15},
+                {"id":16,"type":"input","difficulty":2,"question":"Complète : ___ Où vas-tu ? ___ demanda-t-il.","correctAnswer":"\"\"","explanation":"\"Où vas-tu ?\" demanda-t-il.","points":15},
+                {"id":17,"type":"multiple-choice","difficulty":2,"question":"Quelle ponctuation marque une énumération ?","options":["points","virgules","tirets","parenthèses"],"correctAnswer":"virgules","explanation":"Les virgules marquent une énumération.","points":15},
+                {"id":18,"type":"input","difficulty":2,"question":"Complète : J'aime le rouge ___ le bleu ___ le vert.","correctAnswer":",,","explanation":"J'aime le rouge, le bleu, le vert.","points":15},
+                {"id":19,"type":"multiple-choice","difficulty":3,"question":"Quelle ponctuation marque une incise ?","options":["parenthèses","tirets","guillemets","points"],"correctAnswer":"tirets","explanation":"Les tirets marquent une incise.","points":20},
+                {"id":20,"type":"input","difficulty":3,"question":"Complète : Le chat ___ un animal domestique ___ dort.","correctAnswer":"--","explanation":"Le chat -- un animal domestique -- dort.","points":20},
+                {"id":21,"type":"multiple-choice","difficulty":3,"question":"Quelle ponctuation marque une ellipse ?","options":["points de suspension","virgules","tirets","parenthèses"],"correctAnswer":"points de suspension","explanation":"Les points de suspension marquent une ellipse.","points":20},
+                {"id":22,"type":"input","difficulty":3,"question":"Complète : Je ne sais pas ___","correctAnswer":"...","explanation":"Je ne sais pas...","points":20},
+                {"id":23,"type":"multiple-choice","difficulty":3,"question":"Quelle ponctuation marque une alternative ?","options":["barre oblique","tiret","parenthèse","virgule"],"correctAnswer":"barre oblique","explanation":"La barre oblique marque une alternative.","points":20},
+                {"id":24,"type":"input","difficulty":3,"question":"Complète : Il est professeur ___ médecin.","correctAnswer":"/","explanation":"Il est professeur / médecin.","points":20},
+                {"id":25,"type":"multiple-choice","difficulty":3,"question":"Quelle ponctuation marque une citation dans une citation ?","options":["guillemets simples","guillemets doubles","parenthèses","tirets"],"correctAnswer":"guillemets simples","explanation":"Les guillemets simples marquent une citation dans une citation.","points":20},
+                {"id":26,"type":"input","difficulty":3,"question":"Complète : Il a dit ___ 'Je viens' ___","correctAnswer":"\"\"","explanation":"Il a dit \"'Je viens'\".","points":20}
+              ]
             }
           ]
         },

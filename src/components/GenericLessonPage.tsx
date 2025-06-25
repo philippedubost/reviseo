@@ -55,7 +55,9 @@ export default function GenericLessonPage({
     
     if (currentLesson) {
       const randomQuestions = getRandomQuestions(subject, lessonId, 10);
-      setLessonQuestions(randomQuestions);
+      // Sort questions by difficulty (1 = easy, 2 = medium, 3 = hard)
+      const sortedQuestions = randomQuestions.sort((a, b) => a.difficulty - b.difficulty);
+      setLessonQuestions(sortedQuestions);
     }
   }, [subject, lessonId]);
   

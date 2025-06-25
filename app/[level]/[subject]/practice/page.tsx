@@ -15,6 +15,7 @@ import ExitButton from '@/src/components/ExitButton';
 import FlagButton from '@/src/components/FlagButton';
 import ActionButton from '@/src/components/ActionButton';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
+import type { Question } from '@/src/data/simplified-service';
 
 export default function PracticePage() {
   const router = useRouter();
@@ -23,11 +24,21 @@ export default function PracticePage() {
   const levelId = params.level as string;
   
   const subject = dataService.getSubjectById(subjectId, levelId);
-  const [questions, setQuestions] = useState(dataService.getRandomQuestionsFromAllLessons(subjectId, 10, levelId));
+  const [questions, setQuestions] = useState<Question[]>([]);
   
   const [previousStreak, setPreviousStreak] = useState(0);
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
   const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
+
+  // Load random questions once when component mounts
+  useEffect(() => {
+    if (subject) {
+      const randomQuestions = dataService.getRandomQuestionsFromAllLessons(subjectId, 10, levelId);
+      // Sort questions by difficulty (1 = easy, 2 = medium, 3 = hard)
+      const sortedQuestions = randomQuestions.sort((a, b) => a.difficulty - b.difficulty);
+      setQuestions(sortedQuestions);
+    }
+  }, [subject, subjectId, levelId]);
 
   const {
     updateLessonProgress,

@@ -14,6 +14,7 @@ import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
 import FlagButton from '@/src/components/FlagButton';
 import ActionButton from '@/src/components/ActionButton';
+import type { Question } from '@/src/data/simplified-service';
 
 export default function LessonPage() {
   const router = useRouter();
@@ -25,9 +26,22 @@ export default function LessonPage() {
   const lesson = dataService.getLessonById(subjectId, lessonId, levelId);
   const subject = dataService.getSubjectById(subjectId, levelId);
   
+  // Pre-select 10 random questions once when component mounts
+  const [randomQuestions, setRandomQuestions] = useState<Question[]>([]);
+  
   const [previousStreak, setPreviousStreak] = useState(0);
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
   const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
+
+  // Load random questions once when component mounts
+  useEffect(() => {
+    if (lesson) {
+      const questions = dataService.getRandomQuestions(subjectId, lessonId, 10, levelId);
+      // Sort questions by difficulty (1 = easy, 2 = medium, 3 = hard)
+      const sortedQuestions = questions.sort((a, b) => a.difficulty - b.difficulty);
+      setRandomQuestions(sortedQuestions);
+    }
+  }, [lesson, subjectId, lessonId, levelId]);
 
   const {
     updateLessonProgress,
@@ -64,7 +78,7 @@ export default function LessonPage() {
     handleNext,
     togglePause
   } = useQuestionLogic({
-    questions: lesson?.questions || [],
+    questions: randomQuestions,
     onComplete: (score, totalQuestions, correctAnswers) => {
       updateLessonProgress(lessonId, score, totalQuestions, correctAnswers);
       router.push(`/${levelId}/${subjectId}/lesson/${lessonId}/complete?score=${score}&total=${totalQuestions}&correct=${correctAnswers}`);

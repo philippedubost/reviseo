@@ -52,7 +52,9 @@ export default function GenericPracticePage({
   // Generate random questions from unified data structure
   useEffect(() => {
     const randomQuestions = getRandomQuestionsFromAllLessons(subject, 50);
-    setQuestions(randomQuestions);
+    // Sort questions by difficulty (1 = easy, 2 = medium, 3 = hard)
+    const sortedQuestions = randomQuestions.sort((a, b) => a.difficulty - b.difficulty);
+    setQuestions(sortedQuestions);
   }, [subject]);
 
   // Calculate subject progress percentage

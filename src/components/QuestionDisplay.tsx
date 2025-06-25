@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef, useEffect } from 'react';
 import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
@@ -41,6 +42,20 @@ export default function QuestionDisplay({
   lessonId,
   isPracticeMode = false
 }: QuestionDisplayProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Focus automatique sur l'input pour les questions de type 'input'
+  useEffect(() => {
+    if (type === 'input' && !showResult && inputRef.current) {
+      // Petit délai pour s'assurer que le DOM est rendu
+      const timer = setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [type, showResult]);
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showResult && e.key === 'Enter' && selectedAnswer.trim()) {
       if ((type === 'calculation' || type === 'input') && onSubmit) {
@@ -78,6 +93,7 @@ export default function QuestionDisplay({
             )}
             <div className="w-full flex flex-col items-center justify-center">
               <input
+                ref={inputRef}
                 type="text"
                 className="input text-center text-lg font-bold w-full max-w-md"
                 placeholder="Votre réponse"

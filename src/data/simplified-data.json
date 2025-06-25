@@ -180,15 +180,15 @@
               "difficulty": "easy",
               "questions": [
                 {"id":1,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale du mot 'vite' ?","options":["Nom","Verbe","Adverbe","Adjectif"],"correctAnswer":"Adverbe","explanation":"'Vite' est un adverbe.","points":10},
-                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le chat ___ sur le toit.","correctAnswer":"dort","explanation":"Le chat dort sur le toit.","points":10},
+                {"id":2,"type":"input","difficulty":1,"question":"Complète : Le chat ___ (dormir) sur le toit.","correctAnswer":"dort","explanation":"Le chat dort sur le toit.","points":10},
                 {"id":3,"type":"multiple-choice","difficulty":1,"question":"Quelle est la fonction de 'chien' dans 'Le chien aboie' ?","options":["Sujet","COD","Attribut","Complément"],"correctAnswer":"Sujet","explanation":"'Chien' est le sujet.","points":10},
                 {"id":4,"type":"input","difficulty":1,"question":"Complète : Il ___ un livre.","correctAnswer":"lit","explanation":"Il lit un livre.","points":10},
                 {"id":5,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale de 'bleu' ?","options":["Nom","Verbe","Adverbe","Adjectif"],"correctAnswer":"Adjectif","explanation":"'Bleu' est un adjectif.","points":10},
-                {"id":6,"type":"input","difficulty":1,"question":"Complète : Elle est très ___ (heureuse).","correctAnswer":"heureuse","explanation":"Elle est très heureuse.","points":10},
+                {"id":6,"type":"input","difficulty":1,"question":"Complète : Elle est très ___ (intelligente).","correctAnswer":"intelligente","explanation":"Elle est très intelligente.","points":10},
                 {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quelle est la fonction de 'pomme' dans 'Je mange une pomme' ?","options":["Sujet","COD","Attribut","Complément"],"correctAnswer":"COD","explanation":"'Pomme' est le COD.","points":10},
-                {"id":8,"type":"input","difficulty":1,"question":"Complète : Nous ___ à l'école.","correctAnswer":"allons","explanation":"Nous allons à l'école.","points":10},
+                {"id":8,"type":"input","difficulty":1,"question":"Complète : Nous ___ (aller) à l'école.","correctAnswer":"allons","explanation":"Nous allons à l'école.","points":10},
                 {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quelle est la classe grammaticale de 'et' ?","options":["Conjonction","Préposition","Adverbe","Pronom"],"correctAnswer":"Conjonction","explanation":"'Et' est une conjonction.","points":10},
-                {"id":10,"type":"input","difficulty":1,"question":"Complète : Il fait ___ (beau) aujourd'hui.","correctAnswer":"beau","explanation":"Il fait beau aujourd'hui.","points":10}
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Il fait ___ (froid) aujourd'hui.","correctAnswer":"froid","explanation":"Il fait froid aujourd'hui.","points":10}
               ]
             },
             {
@@ -349,7 +349,7 @@
                 {"id":7,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle des feuilles ?","options":["Absorber l'eau","Faire la photosynthèse","Bouger","Respirer"],"correctAnswer":"Faire la photosynthèse","explanation":"Les feuilles font la photosynthèse.","points":10},
                 {"id":8,"type":"input","difficulty":1,"question":"Complète : Les fleurs produisent des ___ .","correctAnswer":"graines","explanation":"Les fleurs produisent des graines.","points":10},
                 {"id":9,"type":"multiple-choice","difficulty":1,"question":"Quel est le rôle du squelette ?","options":["Protéger le cerveau","Donner une forme au corps","Respirer","Digérer"],"correctAnswer":"Donner une forme au corps","explanation":"Le squelette donne une forme et protège certains organes.","points":10},
-                {"id":10,"type":"input","difficulty":1,"question":"Complète : Les muscles permettent de ___ .","correctAnswer":"bouger","explanation":"Les muscles permettent le mouvement.","points":10}
+                {"id":10,"type":"input","difficulty":1,"question":"Complète : Les muscles permettent de ___ (se déplacer).","correctAnswer":"bouger","explanation":"Les muscles permettent le mouvement.","points":10}
               ]
             },
             {

@@ -40,7 +40,9 @@ export default function Home() {
       <div className="flex-1 px-2 pb-16">
         <div className="w-full flex flex-col gap-3">
           {/* Niveaux disponibles */}
-          {levels.map((level) => (
+          {levels
+            .filter(level => availableLevels.includes(level.id))
+            .map((level) => (
             <button
               key={level.id}
               className="card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl text-white border border-[#2ecc71]"

@@ -174,6 +174,7 @@ export default function LessonPage() {
             questionId={currentQuestion.id}
             subjectId={subjectId}
             lessonId={lessonId}
+            difficulty={currentQuestion.difficulty}
           />
         )}
       </div>

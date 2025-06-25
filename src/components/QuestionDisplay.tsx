@@ -25,6 +25,41 @@ interface QuestionDisplayProps {
   subjectId?: string;
   lessonId?: number;
   isPracticeMode?: boolean;
+  // Difficulty prop
+  difficulty?: number;
+}
+
+// Composant pour afficher le label de difficulté
+function DifficultyLabel({ difficulty }: { difficulty: number }) {
+  const getDifficultyInfo = (diff: number) => {
+    switch (diff) {
+      case 1:
+        return { label: 'Facile', color: '#10b981', bgColor: '#d1fae5' };
+      case 2:
+        return { label: 'Moyen', color: '#f59e0b', bgColor: '#fef3c7' };
+      case 3:
+        return { label: 'Difficile', color: '#ef4444', bgColor: '#fee2e2' };
+      default:
+        return { label: 'Facile', color: '#10b981', bgColor: '#d1fae5' };
+    }
+  };
+
+  const { label, color, bgColor } = getDifficultyInfo(difficulty);
+
+  return (
+    <motion.div
+      className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium mb-3"
+      style={{ 
+        backgroundColor: bgColor,
+        color: color
+      }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
+    >
+      {label}
+    </motion.div>
+  );
 }
 
 export default function QuestionDisplay({
@@ -41,7 +76,8 @@ export default function QuestionDisplay({
   questionId,
   subjectId,
   lessonId,
-  isPracticeMode = false
+  isPracticeMode = false,
+  difficulty = 1
 }: QuestionDisplayProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -75,6 +111,9 @@ export default function QuestionDisplay({
       transition={{ duration: 0.6, ease: [0.4, 0.0, 0.2, 1] }}
     >
       <div className="text-center max-w-2xl w-full">
+        {/* Difficulty Label */}
+        <DifficultyLabel difficulty={difficulty} />
+        
         {(type === 'calculation' || type === 'input') ? (
           <>
             <motion.div 

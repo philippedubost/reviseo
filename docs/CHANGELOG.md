@@ -30,6 +30,12 @@ Ce fichier documente toutes les améliorations et modifications apportées au pr
 - **UX** : Saisie plus rapide et intuitive des réponses numériques
 - **Détails** : Voir [KEYBOARD_NUMERIC_README.md](./KEYBOARD_NUMERIC_README.md)
 
+### 🎯 Clavier Numérique Conditionnel
+- **Amélioration** : Affichage intelligent du clavier selon le type de réponse
+- **Fonctionnalité** : Détection automatique des réponses numériques vs textuelles
+- **UX** : Clavier numérique pour maths/années, alphabétique pour français
+- **Détails** : Voir [CLAVIER_NUMERIQUE_CONDITIONNEL_README.md](./CLAVIER_NUMERIQUE_CONDITIONNEL_README.md)
+
 ---
 
 ## Version 1.1.0 - Améliorations UX

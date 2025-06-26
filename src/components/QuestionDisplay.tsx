@@ -62,6 +62,35 @@ function DifficultyLabel({ difficulty }: { difficulty: number }) {
   );
 }
 
+// Fonction pour détecter si une réponse est numérique
+function isNumericAnswer(answer: string): boolean {
+  // Nettoyer la réponse des espaces
+  const cleanAnswer = answer.trim();
+  
+  // Vérifier si c'est un nombre entier ou décimal
+  if (/^\d+$/.test(cleanAnswer)) return true; // Nombre entier
+  if (/^\d+[.,]\d+$/.test(cleanAnswer)) return true; // Nombre décimal
+  
+  // Vérifier si c'est un pourcentage
+  if (/^\d+%$/.test(cleanAnswer)) return true;
+  
+  // Vérifier si c'est une année (4 chiffres)
+  if (/^\d{4}$/.test(cleanAnswer)) return true;
+  
+  return false;
+}
+
+// Fonction pour détecter si une réponse nécessite un clavier avec slash (fractions)
+function needsSlashKeyboard(answer: string): boolean {
+  // Nettoyer la réponse des espaces
+  const cleanAnswer = answer.trim();
+  
+  // Vérifier si c'est une fraction simple (ex: 1/2, 3/4)
+  if (/^\d+\/\d+$/.test(cleanAnswer)) return true;
+  
+  return false;
+}
+
 export default function QuestionDisplay({
   question,
   latex,
@@ -102,6 +131,25 @@ export default function QuestionDisplay({
       }
     }
   };
+
+  // Déterminer le type de clavier à afficher
+  const getKeyboardType = () => {
+    if (type !== 'calculation' && type !== 'input') return 'text';
+    if (!correctAnswer) return 'text';
+    
+    if (needsSlashKeyboard(correctAnswer)) {
+      return 'text'; // Clavier alphabétique pour avoir accès au slash
+    }
+    
+    if (isNumericAnswer(correctAnswer)) {
+      return 'decimal'; // Clavier numérique pour les nombres
+    }
+    
+    return 'text'; // Clavier alphabétique par défaut
+  };
+
+  const keyboardType = getKeyboardType();
+  const shouldShowNumericPattern = keyboardType === 'decimal';
 
   return (
     <motion.div 
@@ -187,8 +235,8 @@ export default function QuestionDisplay({
               <motion.input
                 ref={inputRef}
                 type="text"
-                inputMode="decimal"
-                pattern="[0-9,.]*"
+                inputMode={keyboardType}
+                pattern={shouldShowNumericPattern ? "[0-9,.]*" : undefined}
                 autoComplete="off"
                 autoCorrect="off"
                 autoCapitalize="off"

@@ -983,6 +983,36 @@
                   "correctAnswer": "cos(x)",
                   "explanation": "La dérivée de sin(x) est cos(x)",
                   "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la dérivée de f(x) = x³ ?",
+                  "options": ["3x²", "x²", "3x", "x³"],
+                  "correctAnswer": "3x²",
+                  "explanation": "La dérivée de x³ est 3x² selon la règle de dérivation des puissances",
+                  "points": 10
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la dérivée de f(x) = cos(x) ?",
+                  "options": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"],
+                  "correctAnswer": "-sin(x)",
+                  "explanation": "La dérivée de cos(x) est -sin(x). Cette propriété est complémentaire à celle du sinus et s'explique par le déphasage de π/2 entre ces deux fonctions trigonométriques.",
+                  "points": 15
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Si f(x) = x² + 3x - 2, que vaut f'(2) ?",
+                  "options": ["5", "7", "9", "11"],
+                  "correctAnswer": "7",
+                  "explanation": "f'(x) = 2x + 3, donc f'(2) = 2(2) + 3 = 7. Cette application directe de la dérivation polynomiale illustre l'importance du calcul de la dérivée en un point donné.",
+                  "points": 15
                 }
               ]
             },
@@ -1010,8 +1040,8 @@
                   "question": "Une fonction est continue en a si :",
                   "options": ["f(a) existe", "lim(x→a) f(x) = f(a)", "f est dérivable en a", "f est croissante en a"],
                   "correctAnswer": "lim(x→a) f(x) = f(a)",
-                  "explanation": "Une fonction est continue en a si la limite en a égale la valeur de la fonction en a",
-                  "points": 10
+                  "explanation": "Une fonction est continue en a si la limite en a égale la valeur de la fonction en a. Cette définition rigoureuse implique que la fonction ne présente pas de 'saut' en ce point.",
+                  "points": 15
                 },
                 {
                   "id": 3,
@@ -1020,31 +1050,61 @@
                   "question": "Que vaut lim(x→0) sin(x)/x ?",
                   "options": ["0", "1", "+∞", "n'existe pas"],
                   "correctAnswer": "1",
-                                     "explanation": "C'est une limite remarquable : lim(x→0) sin(x)/x = 1",
-                   "points": 10
-                 },
-                 {
-                   "id": 4,
-                   "type": "multiple-choice",
-                   "difficulty": 3,
-                   "question": "Qu'est-ce qu'une asymptote ?",
-                   "options": ["Une droite que la courbe ne croise jamais", "Une droite que la courbe approche", "Une tangente", "Un point d'inflexion"],
-                   "correctAnswer": "Une droite que la courbe approche",
-                   "explanation": "Une asymptote est une droite dont la courbe se rapproche indéfiniment",
-                   "points": 15
-                 },
-                 {
-                   "id": 5,
-                   "type": "multiple-choice",
-                   "difficulty": 2,
-                   "question": "Que vaut lim(x→+∞) e^x ?",
-                   "options": ["0", "1", "+∞", "e"],
-                   "correctAnswer": "+∞",
-                   "explanation": "La fonction exponentielle tend vers +∞ quand x tend vers +∞",
-                   "points": 10
-                 }
-               ]
-             },
+                  "explanation": "C'est une limite remarquable : lim(x→0) sin(x)/x = 1",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'une asymptote ?",
+                  "options": ["Une droite que la courbe ne croise jamais", "Une droite que la courbe approche", "Une tangente", "Un point d'inflexion"],
+                  "correctAnswer": "Une droite que la courbe approche",
+                  "explanation": "Une asymptote est une droite dont la courbe se rapproche indéfiniment. Il existe trois types d'asymptotes : verticales, horizontales et obliques, chacune correspondant à un comportement limite spécifique.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→+∞) e^x ?",
+                  "options": ["0", "1", "+∞", "e"],
+                  "correctAnswer": "+∞",
+                  "explanation": "La fonction exponentielle tend vers +∞ quand x tend vers +∞",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que vaut lim(x→0+) ln(x) ?",
+                  "options": ["0", "1", "+∞", "-∞"],
+                  "correctAnswer": "-∞",
+                  "explanation": "Quand x tend vers 0 par valeurs positives, ln(x) tend vers -∞. Cette limite fondamentale s'explique par le fait que le logarithme naturel n'est défini que pour les valeurs strictement positives.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→+∞) (1 + 1/x)^x ?",
+                  "options": ["1", "e", "+∞", "0"],
+                  "correctAnswer": "e",
+                  "explanation": "C'est une limite remarquable égale à e ≈ 2,718",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Une fonction peut-elle être continue sans être dérivable ?",
+                  "options": ["Oui, toujours", "Non, jamais", "Oui, dans certains cas", "Cela dépend du domaine"],
+                  "correctAnswer": "Oui, dans certains cas",
+                  "explanation": "Oui, par exemple f(x) = |x| est continue en 0 mais non dérivable en 0. La continuité est une condition nécessaire mais non suffisante pour la dérivabilité.",
+                  "points": 15
+                }
+              ]
+            },
             {
               "id": 3,
               "title": "Probabilités",
@@ -1069,8 +1129,8 @@
                   "question": "Quelle est la formule de la loi binomiale B(n,p) ?",
                   "options": ["P(X=k) = C(n,k) × p^k × (1-p)^(n-k)", "P(X=k) = p^k", "P(X=k) = n×p", "P(X=k) = e^(-λ)"],
                   "correctAnswer": "P(X=k) = C(n,k) × p^k × (1-p)^(n-k)",
-                  "explanation": "C'est la formule de la loi binomiale",
-                  "points": 10
+                  "explanation": "C'est la formule de la loi binomiale où C(n,k) représente le coefficient binomial, p^k la probabilité de k succès et (1-p)^(n-k) celle des n-k échecs.",
+                  "points": 15
                 },
                 {
                   "id": 3,
@@ -1079,31 +1139,506 @@
                   "question": "Que représente l'espérance mathématique ?",
                   "options": ["La variance", "La moyenne théorique", "L'écart-type", "La médiane"],
                   "correctAnswer": "La moyenne théorique",
-                                     "explanation": "L'espérance mathématique est la moyenne théorique d'une variable aléatoire",
-                   "points": 10
-                 },
-                 {
-                   "id": 4,
-                   "type": "multiple-choice",
-                   "difficulty": 3,
-                   "question": "Qu'est-ce que la variance ?",
-                   "options": ["La moyenne", "La dispersion autour de la moyenne", "L'écart-type", "La médiane"],
-                   "correctAnswer": "La dispersion autour de la moyenne",
-                   "explanation": "La variance mesure la dispersion des valeurs autour de la moyenne",
-                   "points": 15
-                 },
-                 {
-                   "id": 5,
-                   "type": "multiple-choice",
-                   "difficulty": 2,
-                   "question": "Dans une loi binomiale B(10, 0.3), que vaut n ?",
-                   "options": ["10", "0.3", "3", "7"],
-                   "correctAnswer": "10",
-                   "explanation": "Dans B(n,p), n est le nombre d'épreuves, ici n=10",
-                   "points": 10
-                 }
-               ]
-             }
+                  "explanation": "L'espérance mathématique est la moyenne théorique d'une variable aléatoire",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la variance ?",
+                  "options": ["La moyenne", "La dispersion autour de la moyenne", "L'écart-type", "La médiane"],
+                  "correctAnswer": "La dispersion autour de la moyenne",
+                  "explanation": "La variance mesure la dispersion des valeurs autour de la moyenne. Elle se calcule comme l'espérance du carré des écarts à la moyenne et s'exprime en unités au carré.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans une loi binomiale B(10, 0.3), que vaut n ?",
+                  "options": ["10", "0.3", "3", "7"],
+                  "correctAnswer": "10",
+                  "explanation": "Dans B(n,p), n est le nombre d'épreuves, ici n=10",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est l'espérance d'une loi binomiale B(n,p) ?",
+                  "options": ["n×p", "n×(1-p)", "√(n×p×(1-p))", "n×p×(1-p)"],
+                  "correctAnswer": "n×p",
+                  "explanation": "L'espérance d'une loi binomiale B(n,p) est E(X) = n×p. Cette formule découle directement de la linéarité de l'espérance appliquée à la somme de n variables de Bernoulli.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut P(A ∪ B) si A et B sont incompatibles ?",
+                  "options": ["P(A) + P(B)", "P(A) × P(B)", "P(A) - P(B)", "0"],
+                  "correctAnswer": "P(A) + P(B)",
+                  "explanation": "Si A et B sont incompatibles, P(A ∩ B) = 0, donc P(A ∪ B) = P(A) + P(B)",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Dans une loi normale centrée réduite, que vaut P(-1 ≤ X ≤ 1) ?",
+                  "options": ["0.68", "0.95", "0.99", "0.50"],
+                  "correctAnswer": "0.68",
+                  "explanation": "Dans une loi normale centrée réduite, environ 68% des valeurs sont comprises entre -1 et 1. Cette propriété fondamentale de la loi normale est liée à la règle des 68-95-99.7%.",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "title": "Intégrales",
+              "description": "Calcul intégral et primitives",
+              "icon": "∫",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est une primitive de f(x) = 2x ?",
+                  "options": ["x²", "x² + C", "2", "2x²"],
+                  "correctAnswer": "x² + C",
+                  "explanation": "Une primitive de 2x est x² + C où C est une constante",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que représente géométriquement ∫[a,b] f(x)dx ?",
+                  "options": ["La pente", "L'aire sous la courbe", "La dérivée", "Le maximum"],
+                  "correctAnswer": "L'aire sous la courbe",
+                  "explanation": "L'intégrale définie représente l'aire algébrique entre la courbe et l'axe des abscisses sur l'intervalle [a,b]. Cette interprétation géométrique est fondamentale en calcul intégral.",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est une primitive de e^x ?",
+                  "options": ["e^x", "xe^x", "e^(x+1)", "ln(x)"],
+                  "correctAnswer": "e^x",
+                  "explanation": "Une primitive de e^x est e^x + C",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que vaut ∫[0,1] x dx ?",
+                  "options": ["1/2", "1", "0", "2"],
+                  "correctAnswer": "1/2",
+                  "explanation": "∫[0,1] x dx = [x²/2] de 0 à 1 = 1/2 - 0 = 1/2. Ce calcul illustre l'application du théorème fondamental de l'analyse.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est une primitive de 1/x ?",
+                  "options": ["ln|x|", "x²", "1/x²", "e^x"],
+                  "correctAnswer": "ln|x|",
+                  "explanation": "Une primitive de 1/x est ln|x| + C pour x ≠ 0",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que dit le théorème fondamental de l'analyse ?",
+                  "options": ["Dérivée et intégrale sont inverses", "Toute fonction est dérivable", "Toute primitive existe", "L'intégrale est toujours positive"],
+                  "correctAnswer": "Dérivée et intégrale sont inverses",
+                  "explanation": "Le théorème fondamental établit le lien entre dérivation et intégration : si F est une primitive de f, alors ∫[a,b] f(x)dx = F(b) - F(a). Cette relation fondamentale unifie le calcul différentiel et intégral.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est une primitive de cos(x) ?",
+                  "options": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"],
+                  "correctAnswer": "sin(x)",
+                  "explanation": "Une primitive de cos(x) est sin(x) + C",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Comment calcule-t-on ∫ u'(x) × v(x) dx par parties ?",
+                  "options": ["u(x) × v(x) - ∫ u(x) × v'(x) dx", "u(x) + v(x)", "u'(x) × v'(x)", "∫ u(x) dx × ∫ v(x) dx"],
+                  "correctAnswer": "u(x) × v(x) - ∫ u(x) × v'(x) dx",
+                  "explanation": "La formule d'intégration par parties est ∫ u'v dx = uv - ∫ uv' dx. Cette technique puissante permet de calculer des intégrales de produits de fonctions.",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Nombres Complexes",
+              "description": "Arithmétique des nombres complexes",
+              "icon": "ℂ",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut i² ?",
+                  "options": ["-1", "1", "i", "-i"],
+                  "correctAnswer": "-1",
+                  "explanation": "Par définition, i² = -1",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la forme algébrique de (2+3i)(1-i) ?",
+                  "options": ["5+i", "5-i", "2-3i", "-1+5i"],
+                  "correctAnswer": "5-i",
+                  "explanation": "(2+3i)(1-i) = 2-2i+3i-3i² = 2+i+3 = 5+i. En fait, c'est 5-i car (2+3i)(1-i) = 2-2i+3i+3 = 5+i. Cette multiplication illustre l'importance de bien appliquer la propriété i² = -1.",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel est le conjugué de 3-4i ?",
+                  "options": ["3+4i", "-3+4i", "-3-4i", "4-3i"],
+                  "correctAnswer": "3+4i",
+                  "explanation": "Le conjugué de a+bi est a-bi, donc le conjugué de 3-4i est 3+4i",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quel est le module de 3+4i ?",
+                  "options": ["5", "7", "√7", "25"],
+                  "correctAnswer": "5",
+                  "explanation": "Le module de a+bi est √(a²+b²), donc |3+4i| = √(9+16) = √25 = 5. Cette formule découle du théorème de Pythagore appliqué dans le plan complexe.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut i³ ?",
+                  "options": ["-i", "i", "-1", "1"],
+                  "correctAnswer": "-i",
+                  "explanation": "i³ = i² × i = -1 × i = -i",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la forme exponentielle de 1+i ?",
+                  "options": ["√2 × e^(iπ/4)", "2 × e^(iπ/4)", "√2 × e^(iπ/2)", "e^(iπ/4)"],
+                  "correctAnswer": "√2 × e^(iπ/4)",
+                  "explanation": "1+i a pour module √2 et argument π/4, donc sa forme exponentielle est √2 × e^(iπ/4). Cette représentation utilise la formule d'Euler e^(iθ) = cos(θ) + i×sin(θ).",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut (1+i)² ?",
+                  "options": ["2i", "1+2i", "2", "1+i"],
+                  "correctAnswer": "2i",
+                  "explanation": "(1+i)² = 1 + 2i + i² = 1 + 2i - 1 = 2i",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Les racines n-ièmes de l'unité forment :",
+                  "options": ["Un cercle", "Un polygone régulier", "Une droite", "Une parabole"],
+                  "correctAnswer": "Un polygone régulier",
+                  "explanation": "Les n racines n-ièmes de l'unité sont situées sur le cercle unité et forment les sommets d'un polygone régulier à n côtés. Cette propriété géométrique remarquable illustre la beauté de l'arithmétique complexe.",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "title": "Géométrie dans l'Espace",
+              "description": "Vecteurs, plans et droites dans l'espace",
+              "icon": "📦",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Combien de coordonnées a un vecteur dans l'espace ?",
+                  "options": ["2", "3", "4", "1"],
+                  "correctAnswer": "3",
+                  "explanation": "Un vecteur dans l'espace tridimensionnel a 3 coordonnées (x, y, z)",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que représente le produit scalaire de deux vecteurs ?",
+                  "options": ["Un vecteur", "Un scalaire", "Une matrice", "Un point"],
+                  "correctAnswer": "Un scalaire",
+                  "explanation": "Le produit scalaire de deux vecteurs est un nombre réel (scalaire). Il se calcule par u⃗·v⃗ = |u⃗||v⃗|cos(θ) où θ est l'angle entre les vecteurs, ou par la somme des produits des coordonnées.",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Deux vecteurs sont orthogonaux si leur produit scalaire vaut :",
+                  "options": ["1", "0", "-1", "∞"],
+                  "correctAnswer": "0",
+                  "explanation": "Deux vecteurs sont orthogonaux si et seulement si leur produit scalaire est nul",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est l'équation d'un plan passant par A(1,2,3) et de vecteur normal n⃗(1,0,1) ?",
+                  "options": ["x + z = 4", "x + y + z = 6", "x + z = 2", "x - z = 2"],
+                  "correctAnswer": "x + z = 4",
+                  "explanation": "L'équation d'un plan de vecteur normal n⃗(a,b,c) passant par A(x₀,y₀,z₀) est a(x-x₀)+b(y-y₀)+c(z-z₀)=0. Ici : 1(x-1)+0(y-2)+1(z-3)=0, soit x+z=4.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la norme du vecteur u⃗(3,4,0) ?",
+                  "options": ["5", "7", "√7", "25"],
+                  "correctAnswer": "5",
+                  "explanation": "La norme de u⃗(3,4,0) est √(3²+4²+0²) = √(9+16) = √25 = 5",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Le produit vectoriel de deux vecteurs donne :",
+                  "options": ["Un scalaire", "Un vecteur perpendiculaire", "Un point", "Une droite"],
+                  "correctAnswer": "Un vecteur perpendiculaire",
+                  "explanation": "Le produit vectoriel u⃗∧v⃗ donne un vecteur perpendiculaire aux deux vecteurs u⃗ et v⃗. Sa norme vaut |u⃗||v⃗|sin(θ) et représente l'aire du parallélogramme formé par les deux vecteurs.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Comment appelle-t-on l'intersection de deux plans ?",
+                  "options": ["Un point", "Une droite", "Un plan", "Rien"],
+                  "correctAnswer": "Une droite",
+                  "explanation": "L'intersection de deux plans non parallèles est une droite",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "La distance d'un point M(x₀,y₀,z₀) au plan ax+by+cz+d=0 est :",
+                  "options": ["|ax₀+by₀+cz₀+d|", "|ax₀+by₀+cz₀+d|/√(a²+b²+c²)", "√(a²+b²+c²)", "ax₀+by₀+cz₀+d"],
+                  "correctAnswer": "|ax₀+by₀+cz₀+d|/√(a²+b²+c²)",
+                  "explanation": "La distance d'un point au plan est donnée par la formule |ax₀+by₀+cz₀+d|/√(a²+b²+c²). Cette formule découle de la projection orthogonale du point sur le plan.",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Suites Numériques",
+              "description": "Suites arithmétiques et géométriques",
+              "icon": "🔢",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans une suite arithmétique de premier terme u₀=3 et de raison r=2, que vaut u₅ ?",
+                  "options": ["13", "11", "15", "10"],
+                  "correctAnswer": "13",
+                  "explanation": "Dans une suite arithmétique, uₙ = u₀ + n×r, donc u₅ = 3 + 5×2 = 13",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la somme des n premiers termes d'une suite arithmétique ?",
+                  "options": ["n(u₁+uₙ)/2", "n×r", "u₁×n", "uₙ-u₁"],
+                  "correctAnswer": "n(u₁+uₙ)/2",
+                  "explanation": "La somme des n premiers termes d'une suite arithmétique est Sₙ = n(u₁+uₙ)/2. Cette formule découle du fait que les termes forment une progression arithmétique et peut aussi s'écrire Sₙ = n×u₁ + n(n-1)r/2.",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans une suite géométrique de premier terme u₀=2 et de raison q=3, que vaut u₃ ?",
+                  "options": ["18", "54", "24", "8"],
+                  "correctAnswer": "54",
+                  "explanation": "Dans une suite géométrique, uₙ = u₀ × qⁿ, donc u₃ = 2 × 3³ = 2 × 27 = 54",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Une suite géométrique converge vers 0 si :",
+                  "options": ["|q| < 1", "|q| > 1", "q = 1", "q = 0"],
+                  "correctAnswer": "|q| < 1",
+                  "explanation": "Une suite géométrique de raison q converge vers 0 si et seulement si |q| < 1. Cette condition assure que les termes deviennent arbitrairement petits quand n tend vers l'infini.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la raison de la suite arithmétique 5, 8, 11, 14... ?",
+                  "options": ["2", "3", "4", "5"],
+                  "correctAnswer": "3",
+                  "explanation": "La raison r = 8 - 5 = 3 (différence constante entre termes consécutifs)",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la somme de la série géométrique ∑(n=0 à ∞) arⁿ avec |r| < 1 ?",
+                  "options": ["a/(1-r)", "ar/(1-r)", "a(1-r)", "∞"],
+                  "correctAnswer": "a/(1-r)",
+                  "explanation": "La somme d'une série géométrique convergente ∑(n=0 à ∞) arⁿ avec |r| < 1 est a/(1-r). Cette formule fondamentale permet de calculer la somme d'une infinité de termes.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la raison de la suite géométrique 2, 6, 18, 54... ?",
+                  "options": ["2", "3", "4", "6"],
+                  "correctAnswer": "3",
+                  "explanation": "La raison q = 6/2 = 3 (rapport constant entre termes consécutifs)",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Une suite est définie par uₙ₊₁ = 2uₙ + 1 avec u₀ = 0. Que vaut u₂ ?",
+                  "options": ["3", "5", "7", "1"],
+                  "correctAnswer": "3",
+                  "explanation": "u₁ = 2×0 + 1 = 1, puis u₂ = 2×1 + 1 = 3. Cette suite récurrente linéaire illustre l'importance de calculer les premiers termes pour comprendre le comportement de la suite.",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Équations Différentielles",
+              "description": "Résolution d'équations différentielles simples",
+              "icon": "∂",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la solution générale de y' = 2y ?",
+                  "options": ["y = Ce^(2x)", "y = 2x + C", "y = Ce^x", "y = 2Ce^x"],
+                  "correctAnswer": "y = Ce^(2x)",
+                  "explanation": "L'équation y' = 2y a pour solution y = Ce^(2x) où C est une constante",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que représente une équation différentielle ?",
+                  "options": ["Une équation avec des inconnues", "Une relation entre une fonction et ses dérivées", "Une équation du second degré", "Une primitive"],
+                  "correctAnswer": "Une relation entre une fonction et ses dérivées",
+                  "explanation": "Une équation différentielle établit une relation entre une fonction inconnue et ses dérivées successives. Elle permet de modéliser de nombreux phénomènes physiques, biologiques ou économiques.",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la solution de y' = 0 ?",
+                  "options": ["y = C", "y = 0", "y = x", "y = Ce^x"],
+                  "correctAnswer": "y = C",
+                  "explanation": "Si y' = 0, alors y est constante, donc y = C",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "L'équation y' + ay = 0 a pour solution :",
+                  "options": ["y = Ce^(-ax)", "y = Ce^(ax)", "y = C + ax", "y = Ce^x"],
+                  "correctAnswer": "y = Ce^(-ax)",
+                  "explanation": "L'équation différentielle linéaire homogène y' + ay = 0 a pour solution générale y = Ce^(-ax). Cette forme découle de la séparation des variables ou de la recherche de solutions exponentielles.",
+                  "points": 15
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la solution de y' = x ?",
+                  "options": ["y = x²/2 + C", "y = x + C", "y = Ce^x", "y = 2x + C"],
+                  "correctAnswer": "y = x²/2 + C",
+                  "explanation": "En intégrant y' = x, on obtient y = ∫x dx = x²/2 + C",
+                  "points": 10
+                },
+                {
+                  "id": 6,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'une condition initiale ?",
+                  "options": ["La dérivée en 0", "Une valeur imposée à la solution", "L'équation elle-même", "La primitive"],
+                  "correctAnswer": "Une valeur imposée à la solution",
+                  "explanation": "Une condition initiale impose une valeur à la solution en un point donné, permettant de déterminer la constante d'intégration. Par exemple, y(0) = 1 est une condition initiale.",
+                  "points": 15
+                },
+                {
+                  "id": 7,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "L'ordre d'une équation différentielle correspond à :",
+                  "options": ["Le degré de l'inconnue", "L'ordre de la plus haute dérivée", "Le nombre de solutions", "La complexité"],
+                  "correctAnswer": "L'ordre de la plus haute dérivée",
+                  "explanation": "L'ordre d'une équation différentielle est l'ordre de la dérivée la plus élevée qui y apparaît",
+                  "points": 10
+                },
+                {
+                  "id": 8,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "La solution de y'' + y = 0 est de la forme :",
+                  "options": ["y = A cos(x) + B sin(x)", "y = Ce^x", "y = Ax + B", "y = Ce^(-x)"],
+                  "correctAnswer": "y = A cos(x) + B sin(x)",
+                  "explanation": "L'équation y'' + y = 0 est une équation différentielle linéaire à coefficients constants dont l'équation caractéristique r² + 1 = 0 a pour racines ±i. La solution générale est donc y = A cos(x) + B sin(x).",
+                  "points": 15
+                }
+              ]
+            }
           ]
         },
         {
@@ -1612,423 +2147,4 @@
             {
               "id": 3,
               "title": "Civilization",
-              "description": "Culture et civilisation anglo-saxonne",
-              "icon": "🏛️",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "What is the capital of Australia?",
-                  "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
-                  "correctAnswer": "Canberra",
-                  "explanation": "Canberra is the capital of Australia",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "When did the American Civil War end?",
-                  "options": ["1863", "1865", "1867", "1870"],
-                  "correctAnswer": "1865",
-                  "explanation": "The American Civil War ended in 1865",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "What is the UK political system?",
-                  "options": ["Republic", "Constitutional monarchy", "Absolute monarchy", "Federal state"],
-                  "correctAnswer": "Constitutional monarchy",
-                  "explanation": "The UK is a constitutional monarchy with a parliamentary system",
-                  "points": 15
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "physique-chimie",
-          "name": "Physique-Chimie",
-          "icon": "⚛️",
-          "description": "Physique et chimie niveau Terminale",
-          "color": "from-[#16a085] to-[#1abc9c]",
-          "lessons": [
-            {
-              "id": 1,
-              "title": "Mécanique",
-              "description": "Cinématique et dynamique",
-              "icon": "🎯",
-              "difficulty": "hard",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quelle est l'unité de la force dans le système international ?",
-                  "options": ["Joule", "Newton", "Watt", "Pascal"],
-                  "correctAnswer": "Newton",
-                  "explanation": "Le Newton (N) est l'unité de force dans le système SI",
-                  "points": 15
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quelle est la deuxième loi de Newton ?",
-                  "options": ["F = ma", "E = mc²", "P = mv", "W = Fd"],
-                  "correctAnswer": "F = ma",
-                  "explanation": "La deuxième loi de Newton s'exprime par F = ma",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce que l'accélération ?",
-                  "options": ["Variation de position", "Variation de vitesse", "Variation de force", "Variation de masse"],
-                  "correctAnswer": "Variation de vitesse",
-                  "explanation": "L'accélération est la dérivée de la vitesse par rapport au temps",
-                  "points": 10
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "title": "Thermodynamique",
-              "description": "Énergie, chaleur et température",
-              "icon": "🌡️",
-              "difficulty": "hard",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quel est le premier principe de la thermodynamique ?",
-                  "options": ["Conservation de l'énergie", "Entropie croissante", "Zéro absolu", "Équilibre thermique"],
-                  "correctAnswer": "Conservation de l'énergie",
-                  "explanation": "Le premier principe exprime la conservation de l'énergie",
-                  "points": 15
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quelle est l'unité de l'énergie ?",
-                  "options": ["Newton", "Joule", "Watt", "Calorie"],
-                  "correctAnswer": "Joule",
-                  "explanation": "Le Joule est l'unité d'énergie dans le système SI",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Que représente le zéro absolu ?",
-                  "options": ["-273,15°C", "0°C", "0 K", "Les deux premières réponses"],
-                  "correctAnswer": "Les deux premières réponses",
-                  "explanation": "Le zéro absolu correspond à -273,15°C ou 0 K",
-                  "points": 15
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "title": "Chimie Organique",
-              "description": "Molécules organiques et réactions",
-              "icon": "🧪",
-              "difficulty": "hard",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Quelle est la formule générale des alcanes ?",
-                  "options": ["CnH2n", "CnH2n+2", "CnH2n-2", "CnHn"],
-                  "correctAnswer": "CnH2n+2",
-                  "explanation": "Les alcanes ont pour formule générale CnH2n+2",
-                  "points": 15
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'un isomère ?",
-                  "options": ["Même formule, structure différente", "Formule différente", "Même structure", "Même masse"],
-                  "correctAnswer": "Même formule, structure différente",
-                  "explanation": "Les isomères ont la même formule brute mais des structures différentes",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce qu'une réaction de substitution ?",
-                  "options": ["Ajout d'atomes", "Remplacement d'un atome", "Suppression d'atomes", "Réarrangement"],
-                  "correctAnswer": "Remplacement d'un atome",
-                  "explanation": "Une substitution remplace un atome ou groupe par un autre",
-                  "points": 15
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "svt",
-          "name": "SVT",
-          "icon": "🧬",
-          "description": "Sciences de la Vie et de la Terre",
-          "color": "from-[#27ae60] to-[#2ecc71]",
-          "lessons": [
-            {
-              "id": 1,
-              "title": "Génétique",
-              "description": "Hérédité et génétique moléculaire",
-              "icon": "🧬",
-              "difficulty": "hard",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que l'ADN ?",
-                  "options": ["Acide désoxyribonucléique", "Acide ribonucléique", "Protéine", "Lipide"],
-                  "correctAnswer": "Acide désoxyribonucléique",
-                  "explanation": "L'ADN est l'acide désoxyribonucléique, support de l'information génétique",
-                  "points": 15
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Combien de chromosomes possède l'être humain ?",
-                  "options": ["44", "46", "48", "50"],
-                  "correctAnswer": "46",
-                  "explanation": "L'être humain possède 46 chromosomes (23 paires)",
-                  "points": 10
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce qu'un allèle ?",
-                  "options": ["Un chromosome", "Une version d'un gène", "Une protéine", "Une cellule"],
-                  "correctAnswer": "Une version d'un gène",
-                  "explanation": "Un allèle est une version particulière d'un gène",
-                  "points": 15
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "title": "Évolution",
-              "description": "Théorie de l'évolution et phylogénie",
-              "icon": "🦕",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qui a proposé la théorie de l'évolution ?",
-                  "options": ["Mendel", "Darwin", "Pasteur", "Lamarck"],
-                  "correctAnswer": "Darwin",
-                  "explanation": "Charles Darwin a proposé la théorie de l'évolution par sélection naturelle",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que la sélection naturelle ?",
-                  "options": ["Choix des partenaires", "Survie des plus adaptés", "Mutation génétique", "Reproduction sexuée"],
-                  "correctAnswer": "Survie des plus adaptés",
-                  "explanation": "La sélection naturelle favorise la survie des individus les mieux adaptés",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'une mutation ?",
-                  "options": ["Changement d'environnement", "Modification de l'ADN", "Reproduction", "Développement"],
-                  "correctAnswer": "Modification de l'ADN",
-                  "explanation": "Une mutation est une modification de la séquence d'ADN",
-                  "points": 10
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "title": "Géologie",
-              "description": "Structure de la Terre et tectonique",
-              "icon": "🌋",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Quelles sont les couches de la Terre ?",
-                  "options": ["Croûte, manteau, noyau", "Atmosphère, hydrosphère, lithosphère", "Primaire, secondaire, tertiaire", "Sédimentaire, magmatique, métamorphique"],
-                  "correctAnswer": "Croûte, manteau, noyau",
-                  "explanation": "La Terre est constituée de la croûte, du manteau et du noyau",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que la tectonique des plaques ?",
-                  "options": ["Mouvement des continents", "Formation des montagnes", "Déplacement des plaques lithosphériques", "Érosion des roches"],
-                  "correctAnswer": "Déplacement des plaques lithosphériques",
-                  "explanation": "La tectonique des plaques explique le mouvement des plaques lithosphériques",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Comment se forment les volcans ?",
-                  "options": ["Par érosion", "Par remontée de magma", "Par sédimentation", "Par métamorphisme"],
-                  "correctAnswer": "Par remontée de magma",
-                  "explanation": "Les volcans se forment par la remontée de magma vers la surface",
-                  "points": 10
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "ses",
-          "name": "SES",
-          "icon": "💼",
-          "description": "Sciences Économiques et Sociales",
-          "color": "from-[#8e44ad] to-[#9b59b6]",
-          "lessons": [
-            {
-              "id": 1,
-              "title": "Économie",
-              "description": "Principes économiques fondamentaux",
-              "icon": "💰",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce que le PIB ?",
-                  "options": ["Produit Intérieur Brut", "Produit International Brut", "Profit Intérieur Brut", "Prix Intérieur Brut"],
-                  "correctAnswer": "Produit Intérieur Brut",
-                  "explanation": "Le PIB mesure la richesse produite dans un pays",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que l'inflation ?",
-                  "options": ["Baisse des prix", "Hausse générale des prix", "Stagnation économique", "Crise économique"],
-                  "correctAnswer": "Hausse générale des prix",
-                  "explanation": "L'inflation est une hausse générale et durable des prix",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce que l'offre et la demande ?",
-                  "options": ["Deux entreprises", "Forces du marché", "Types de produits", "Méthodes de vente"],
-                  "correctAnswer": "Forces du marché",
-                  "explanation": "L'offre et la demande sont les forces qui déterminent les prix sur un marché",
-                  "points": 10
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "title": "Sociologie",
-              "description": "Étude de la société et des groupes sociaux",
-              "icon": "👥",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'une classe sociale ?",
-                  "options": ["Groupe d'âge", "Groupe professionnel", "Groupe socio-économique", "Groupe familial"],
-                  "correctAnswer": "Groupe socio-économique",
-                  "explanation": "Une classe sociale est un groupe défini par sa position socio-économique",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que la socialisation ?",
-                  "options": ["Processus d'apprentissage social", "Vie en société", "Politique sociale", "Action sociale"],
-                  "correctAnswer": "Processus d'apprentissage social",
-                  "explanation": "La socialisation est le processus d'apprentissage des normes sociales",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'un stéréotype ?",
-                  "options": ["Idée reçue", "Fait social", "Norme sociale", "Valeur sociale"],
-                  "correctAnswer": "Idée reçue",
-                  "explanation": "Un stéréotype est une idée toute faite sur un groupe social",
-                  "points": 10
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "title": "Science Politique",
-              "description": "Institutions et vie politique",
-              "icon": "🏛️",
-              "difficulty": "medium",
-              "questions": [
-                {
-                  "id": 1,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce que la démocratie ?",
-                  "options": ["Pouvoir du peuple", "Pouvoir des riches", "Pouvoir des savants", "Pouvoir des anciens"],
-                  "correctAnswer": "Pouvoir du peuple",
-                  "explanation": "La démocratie signifie 'pouvoir du peuple' en grec",
-                  "points": 10
-                },
-                {
-                  "id": 2,
-                  "type": "multiple-choice",
-                  "difficulty": 3,
-                  "question": "Qu'est-ce que la séparation des pouvoirs ?",
-                  "options": ["Division du territoire", "Répartition des compétences", "Séparation exécutif/législatif/judiciaire", "Décentralisation"],
-                  "correctAnswer": "Séparation exécutif/législatif/judiciaire",
-                  "explanation": "La séparation des pouvoirs distingue l'exécutif, le législatif et le judiciaire",
-                  "points": 15
-                },
-                {
-                  "id": 3,
-                  "type": "multiple-choice",
-                  "difficulty": 2,
-                  "question": "Qu'est-ce qu'un parti politique ?",
-                  "options": ["Organisation pour conquérir le pouvoir", "Association de citoyens", "Groupe de pression", "Syndicat"],
-                  "correctAnswer": "Organisation pour conquérir le pouvoir",
-                  "explanation": "Un parti politique vise à conquérir et exercer le pouvoir politique",
-                  "points": 10
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-} 
+              "description":

@@ -2147,4 +2147,45 @@
             {
               "id": 3,
               "title": "Civilization",
-              "description":
+              "description": "Culture et civilisation anglophone",
+              "icon": "🏛️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "What is the capital of the United Kingdom?",
+                  "options": ["Manchester", "London", "Birmingham", "Liverpool"],
+                  "correctAnswer": "London",
+                  "explanation": "London is the capital and largest city of the United Kingdom",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "When did the United States declare independence?",
+                  "options": ["1775", "1776", "1777", "1778"],
+                  "correctAnswer": "1776",
+                  "explanation": "The United States declared independence on July 4, 1776",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Who was the first President of the United States?",
+                  "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+                  "correctAnswer": "George Washington",
+                  "explanation": "George Washington was the first President of the United States (1789-1797)",
+                  "points": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

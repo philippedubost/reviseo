@@ -1,0 +1,5139 @@
+{
+  "id": "cinquieme",
+  "name": "Cinquième",
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathématiques",
+      "icon": "🔢",
+      "description": "Nombres relatifs, calcul littéral",
+      "color": "from-[#00baff] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Nombres relatifs",
+          "description": "Introduction aux nombres négatifs",
+          "icon": "➖",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le résultat de (-3) + (+5) ?",
+              "correctAnswer": "+2",
+              "explanation": "(-3) + (+5) = +2",
+              "points": 10,
+              "options": [
+                "-8",
+                "-2",
+                "+2",
+                "+8"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : (-7) - (-4) = ___",
+              "correctAnswer": "-3",
+              "explanation": "(-7) - (-4) = (-7) + (+4) = -3",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel nombre est le plus petit ?",
+              "correctAnswer": "-5",
+              "explanation": "-5 est le plus petit nombre.",
+              "points": 10,
+              "options": [
+                "-5",
+                "-2",
+                "0",
+                "+3"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : (-2) × (+6) = ___",
+              "correctAnswer": "-12",
+              "explanation": "(-2) × (+6) = -12",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le résultat de (+8) ÷ (-2) ?",
+              "correctAnswer": "-4",
+              "explanation": "(+8) ÷ (-2) = -4",
+              "points": 15,
+              "options": [
+                "-4",
+                "-6",
+                "+4",
+                "+6"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : |-7| = ___",
+              "correctAnswer": "7",
+              "explanation": "La valeur absolue de -7 est 7",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Quel est le résultat de (-3) × (-4) + (-2) ?",
+              "correctAnswer": "10",
+              "explanation": "(-3) × (-4) = +12, puis +12 + (-2) = +10",
+              "points": 20,
+              "options": [
+                "10",
+                "14",
+                "-10",
+                "-14"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Complète : (-15) ÷ (+3) - (-2) = ___",
+              "correctAnswer": "-3",
+              "explanation": "(-15) ÷ (+3) = -5, puis -5 - (-2) = -5 + 2 = -3",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Calcul littéral",
+          "description": "Addition, soustraction, multiplication",
+          "icon": "🔢",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Que vaut 3x si x = 2 ?",
+              "correctAnswer": "6",
+              "explanation": "3x = 3 × 2 = 6",
+              "points": 10,
+              "options": [
+                "5",
+                "6",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 5a + 2a = ___",
+              "correctAnswer": "7a",
+              "explanation": "5a + 2a = (5 + 2)a = 7a",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle expression est égale à 2(x + 3) ?",
+              "correctAnswer": "2x + 6",
+              "explanation": "2(x + 3) = 2x + 6",
+              "points": 10,
+              "options": [
+                "2x + 3",
+                "2x + 6",
+                "x + 6",
+                "2x + 9"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 4x - x = ___",
+              "correctAnswer": "3x",
+              "explanation": "4x - x = (4 - 1)x = 3x",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Que vaut x² si x = -3 ?",
+              "correctAnswer": "9",
+              "explanation": "(-3)² = (-3) × (-3) = 9",
+              "points": 15,
+              "options": [
+                "-9",
+                "-6",
+                "6",
+                "9"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 3(2x + 1) = ___",
+              "correctAnswer": "6x + 3",
+              "explanation": "3(2x + 1) = 6x + 3",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Quelle est la valeur de 2x + 3 si x = -1 ?",
+              "correctAnswer": "1",
+              "explanation": "2(-1) + 3 = -2 + 3 = 1",
+              "points": 20,
+              "options": [
+                "-1",
+                "1",
+                "5",
+                "-5"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Complète : x² - 4x si x = 5 : ___",
+              "correctAnswer": "5",
+              "explanation": "5² - 4(5) = 25 - 20 = 5",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Fractions",
+          "description": "Opérations sur les fractions",
+          "icon": "➗",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fractions niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fractions niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fractions niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fractions niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fractions niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fractions niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fractions niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fractions niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fractions - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Proportionnalité",
+          "description": "Expressions avec des lettres",
+          "icon": "📝",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de proportionnalité niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de proportionnalité niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de proportionnalité niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de proportionnalité niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de proportionnalité niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de proportionnalité niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de proportionnalité niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de proportionnalité niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour proportionnalité - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Géométrie plane",
+          "description": "Résolution d'équations du premier degré",
+          "icon": "⚖️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Statistiques",
+          "description": "Calculs d'aires et périmètres",
+          "icon": "📐",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Angles et triangles",
+          "description": "Propriétés et constructions",
+          "icon": "🔺",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de angles niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de angles niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de angles niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de angles niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de angles niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de angles niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de angles niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de angles niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour angles - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Aires et périmètres",
+          "description": "Diagrammes et interprétation",
+          "icon": "📊",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de périmètres niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de périmètres niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de périmètres niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de périmètres niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de périmètres niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de périmètres niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de périmètres niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de périmètres niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour périmètres - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "francais",
+      "name": "Français",
+      "icon": "📝",
+      "description": "Classes grammaticales, littérature médiévale",
+      "color": "from-[#e74c3c] to-[#f39c12]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Classes grammaticales",
+          "description": "Sujet, COD, COI, compléments",
+          "icon": "🔍",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'rapidement' ?",
+              "correctAnswer": "adverbe",
+              "explanation": "Les mots en -ment sont généralement des adverbes.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "adverbe",
+                "verbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Quel est l'infinitif du verbe 'ils chantent' ?",
+              "correctAnswer": "chanter",
+              "explanation": "Le verbe 'chantent' a pour infinitif 'chanter'",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Le mot 'maison' est :",
+              "correctAnswer": "féminin",
+              "explanation": "On dit 'une maison', donc c'est féminin.",
+              "points": 10,
+              "options": [
+                "masculin",
+                "féminin",
+                "neutre",
+                "variable"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Conjugue 'avoir' à la 1ère personne du pluriel au présent : nous ___",
+              "correctAnswer": "avons",
+              "explanation": "Nous avons",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Le chat noir dort', quel est l'adjectif ?",
+              "correctAnswer": "noir",
+              "explanation": "'Noir' qualifie le nom 'chat', c'est un adjectif.",
+              "points": 15,
+              "options": [
+                "chat",
+                "noir",
+                "dort",
+                "le"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Quel est le participe passé de 'prendre' ?",
+              "correctAnswer": "pris",
+              "explanation": "Le participe passé de 'prendre' est 'pris'",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Quelle est la fonction du mot 'livre' dans 'Je lis un livre' ?",
+              "correctAnswer": "COD",
+              "explanation": "'Livre' est complément d'objet direct du verbe 'lis'.",
+              "points": 20,
+              "options": [
+                "sujet",
+                "COD",
+                "COI",
+                "attribut"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Transforme au passé composé : 'Il mange' → Il ___",
+              "correctAnswer": "a mangé",
+              "explanation": "Le passé composé de 'il mange' est 'il a mangé'",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Conjugaison",
+          "description": "Passé composé, plus-que-parfait",
+          "icon": "⏰",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de conjugaison niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de conjugaison niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Orthographe",
+          "description": "Règles d'accord",
+          "icon": "✏️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de orthographe niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de orthographe niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Vocabulaire",
+          "description": "Littérature médiévale",
+          "icon": "⚔️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de vocabulaire niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de vocabulaire niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Littérature médiévale",
+          "description": "Structure narrative",
+          "icon": "🗺️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de littérature médiévale niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature médiévale - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Analyse de texte",
+          "description": "Expression des sentiments",
+          "icon": "💝",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse de texte niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse de texte niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse de texte niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse de texte niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse de texte niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse de texte niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse de texte niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse de texte niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse de texte - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Expression écrite",
+          "description": "Molière et la comédie",
+          "icon": "😄",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Poésie médiévale",
+          "description": "Présenter et défendre une idée",
+          "icon": "💭",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de poésie niveau cinquieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de poésie niveau cinquieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de poésie niveau cinquieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de poésie niveau cinquieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de poésie niveau cinquieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de poésie niveau cinquieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de poésie niveau cinquieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de poésie niveau cinquieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour poésie - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "histoire-geo",
+      "name": "Histoire-Géographie",
+      "icon": "🌍",
+      "description": "Moyen Âge, géographie de l'Europe",
+      "color": "from-[#d35400] to-[#e67e22]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Empires du haut Moyen Âge",
+          "icon": "👑",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Naissance et conquêtes musulmanes",
+          "icon": "🕌",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Seigneurs, paysans et chevaliers",
+          "icon": "⚔️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Christianisme et pouvoir religieux",
+          "icon": "⛪",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Essor urbain médiéval",
+          "icon": "🏘️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "États et peuples européens",
+          "icon": "🌍",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Économie et environnement",
+          "icon": "🏭",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Contrastes mondiaux",
+          "icon": "📊",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau cinquieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svt",
+      "name": "Sciences et Vie de la Terre",
+      "icon": "🌱",
+      "description": "Respiration, géologie",
+      "color": "from-[#27ae60] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Systèmes respiratoire et circulatoire",
+          "icon": "❤️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Transformation des aliments",
+          "icon": "🍎",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Coordination des fonctions",
+          "icon": "🤸",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Érosion et sédimentation",
+          "icon": "🏔️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Atmosphère et climats",
+          "icon": "🌤️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Impact sur l'environnement",
+          "icon": "🏭",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Transformation géologique",
+          "icon": "🗻",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Exploitation et préservation",
+          "icon": "💎",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau cinquieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anglais",
+      "name": "Anglais",
+      "icon": "🇬🇧",
+      "description": "Temps verbaux, vie quotidienne",
+      "color": "from-[#2980b9] to-[#3498db]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Habitudes et vérités générales",
+          "icon": "⏰",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Actions en cours",
+          "icon": "🏃",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Actions passées terminées",
+          "icon": "📅",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Will et going to",
+          "icon": "🔮",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Interrogation en anglais",
+          "icon": "❓",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Repas et habitudes alimentaires",
+          "icon": "🍕",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Transports et destinations",
+          "icon": "✈️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Parties du corps et santé",
+          "icon": "👤",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau cinquieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5187 @@
+{
+  "id": "quatrieme",
+  "name": "Quatrième",
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathématiques",
+      "icon": "🔢",
+      "description": "Pythagore, calcul littéral avancé",
+      "color": "from-[#00baff] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Théorème de Pythagore",
+          "description": "Triangle rectangle et calculs",
+          "icon": "🔺",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans un triangle rectangle, quel côté est l'hypoténuse ?",
+              "correctAnswer": "Celui en face de l'angle droit",
+              "explanation": "L'hypoténuse est le côté opposé à l'angle droit.",
+              "points": 10,
+              "options": [
+                "Le plus court",
+                "Le plus long",
+                "Celui en face de l'angle droit",
+                "N'importe lequel"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Si a = 3 et b = 4, que vaut √(a² + b²) ?",
+              "correctAnswer": "5",
+              "explanation": "√(3² + 4²) = √(9 + 16) = √25 = 5",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Le théorème de Pythagore s'écrit :",
+              "correctAnswer": "a² + b² = c²",
+              "explanation": "Dans un triangle rectangle : a² + b² = c²",
+              "points": 10,
+              "options": [
+                "a + b = c",
+                "a² + b² = c²",
+                "a × b = c",
+                "a² - b² = c²"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Dans un triangle rectangle, si a = 5 et c = 13, que vaut b ?",
+              "correctAnswer": "12",
+              "explanation": "b² = c² - a² = 13² - 5² = 169 - 25 = 144, donc b = 12",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Un triangle de côtés 6, 8, 10 est-il rectangle ?",
+              "correctAnswer": "Oui",
+              "explanation": "6² + 8² = 36 + 64 = 100 = 10², donc c'est un triangle rectangle.",
+              "points": 15,
+              "options": [
+                "Oui",
+                "Non",
+                "Impossible à dire",
+                "Cela dépend"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Quelle est la longueur de l'hypoténuse si a = 9 et b = 12 ?",
+              "correctAnswer": "15",
+              "explanation": "c = √(9² + 12²) = √(81 + 144) = √225 = 15",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Dans un triangle rectangle, si l'hypoténuse mesure 25 et un côté mesure 15, que mesure l'autre côté ?",
+              "correctAnswer": "20",
+              "explanation": "b² = 25² - 15² = 625 - 225 = 400, donc b = 20",
+              "points": 20,
+              "options": [
+                "10",
+                "20",
+                "30",
+                "40"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Un triangle a pour côtés 7, 24, et 25. Quelle est l'aire du triangle ?",
+              "correctAnswer": "84",
+              "explanation": "C'est un triangle rectangle (7² + 24² = 25²). Aire = (7 × 24) ÷ 2 = 84",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Calcul littéral",
+          "description": "Développement et factorisation",
+          "icon": "📝",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de Thalès niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de Thalès niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de Thalès niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de Thalès niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de Thalès niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de Thalès niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de Thalès niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de Thalès niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour Thalès - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Équations",
+          "description": "Résolution d'équations complexes",
+          "icon": "⚖️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de calcul littéral niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de calcul littéral niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de calcul littéral niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de calcul littéral niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de calcul littéral niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de calcul littéral niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de calcul littéral niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de calcul littéral niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour calcul littéral - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Théorème de Thalès",
+          "description": "Fractions et nombres décimaux",
+          "icon": "🔢",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de équations niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de équations niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Cosinus",
+          "description": "Fonctions linéaires",
+          "icon": "📈",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de cosinus niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de cosinus niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de cosinus niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de cosinus niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de cosinus niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de cosinus niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de cosinus niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de cosinus niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour cosinus - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Puissances",
+          "description": "Volumes et sections",
+          "icon": "📦",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de puissances niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de puissances niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Statistiques",
+          "description": "Symétries et rotations",
+          "icon": "🔄",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Volumes",
+          "description": "Moyennes pondérées et médiane",
+          "icon": "📊",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de volumes niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de volumes niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de volumes niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de volumes niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de volumes niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de volumes niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de volumes niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de volumes niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour volumes - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "francais",
+      "name": "Français",
+      "icon": "📝",
+      "description": "Nouvelle fantastique, théâtre",
+      "color": "from-[#e74c3c] to-[#f39c12]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Théâtre classique",
+          "description": "Relatives, conjonctives",
+          "icon": "🔗",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théâtre niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théâtre niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théâtre niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théâtre niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théâtre niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théâtre niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de théâtre niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de théâtre niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théâtre - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Nouvelle fantastique",
+          "description": "Subjonctif, conditionnel",
+          "icon": "⏰",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de nouvelle niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de nouvelle niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de nouvelle niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de nouvelle niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de nouvelle niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de nouvelle niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de nouvelle niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de nouvelle niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour nouvelle - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Grammaire avancée",
+          "description": "Métaphore, comparaison",
+          "icon": "🎨",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de grammaire avancée niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire avancée - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Conjugaison complexe",
+          "description": "Maupassant, Poe",
+          "icon": "👻",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de conjugaison niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de conjugaison niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de conjugaison niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de conjugaison niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour conjugaison - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Analyse littéraire",
+          "description": "Tragédie et comédie",
+          "icon": "🎭",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse littéraire niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse littéraire - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Expression argumentée",
+          "description": "Littérature et société",
+          "icon": "✊",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Vocabulaire littéraire",
+          "description": "Information et opinion",
+          "icon": "📰",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de vocabulaire niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de vocabulaire niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de vocabulaire niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de vocabulaire niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour vocabulaire - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Orthographe avancée",
+          "description": "Lettres officielles et privées",
+          "icon": "✉️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau quatrieme - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau quatrieme - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de orthographe niveau quatrieme - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau quatrieme - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau quatrieme - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de orthographe niveau quatrieme - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de orthographe niveau quatrieme - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de orthographe niveau quatrieme - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour orthographe - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "histoire-geo",
+      "name": "Histoire-Géographie",
+      "icon": "🌍",
+      "description": "XVIIIe-XIXe siècles, mondialisation",
+      "color": "from-[#d35400] to-[#e67e22]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Philosophie et société d'Ancien Régime",
+          "icon": "💡",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "1789-1799 : transformation politique",
+          "icon": "🗽",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Empire et conquêtes",
+          "icon": "👨‍⚔️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Révolutions industrielles",
+          "icon": "🏭",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Transformations sociales",
+          "icon": "🎭",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Agriculture, industrie, services",
+          "icon": "🌾",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Migrations et tourisme",
+          "icon": "✈️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Échanges et interdépendances",
+          "icon": "🌐",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau quatrieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svt",
+      "name": "Sciences et Vie de la Terre",
+      "icon": "🌱",
+      "description": "Nutrition, reproduction",
+      "color": "from-[#27ae60] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Volcanisme et séismes",
+          "icon": "🌋",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Gamètes et fécondation",
+          "icon": "🧬",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Hérédité et caractères",
+          "icon": "👨‍👩‍👧‍👦",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Communication nerveuse et hormonale",
+          "icon": "🧠",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Besoins nutritionnels",
+          "icon": "🥗",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Microbes et immunité",
+          "icon": "🦠",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Santé et environnement",
+          "icon": "🌱",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Sélection naturelle",
+          "icon": "🦕",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau quatrieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anglais",
+      "name": "Anglais",
+      "icon": "🇬🇧",
+      "description": "Temps complexes, voix passive",
+      "color": "from-[#2980b9] to-[#3498db]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Lien passé-présent",
+          "icon": "🔗",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Actions passées en cours",
+          "icon": "⏳",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Hypothèses et politesse",
+          "icon": "🤔",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Voix passive",
+          "icon": "🔄",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Discours rapporté",
+          "icon": "💬",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Presse, télévision, internet",
+          "icon": "📺",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Écologie et protection",
+          "icon": "🌍",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Internet et réseaux sociaux",
+          "icon": "💻",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau quatrieme - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

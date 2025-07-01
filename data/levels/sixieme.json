@@ -1,0 +1,4251 @@
+{
+  "id": "sixieme",
+  "name": "Sixième",
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathématiques",
+      "icon": "🔢",
+      "description": "Nombres décimaux, géométrie, proportionnalité",
+      "color": "from-[#00baff] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Nombres entiers et décimaux",
+          "description": "Écriture, comparaison et opérations",
+          "icon": "🔢",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le chiffre des unités dans 3 427 ?",
+              "correctAnswer": "7",
+              "explanation": "Le chiffre des unités est le dernier chiffre à droite.",
+              "points": 10,
+              "options": [
+                "3",
+                "4",
+                "2",
+                "7"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 3,5 + 2,8 = ___",
+              "correctAnswer": "6,3",
+              "explanation": "3,5 + 2,8 = 6,3",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel nombre est le plus grand ?",
+              "correctAnswer": "12,5",
+              "explanation": "12,5 = 12,50 = 12,500, tous sont égaux.",
+              "points": 10,
+              "options": [
+                "12,5",
+                "12,05",
+                "12,50",
+                "12,500"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 15,7 - 8,3 = ___",
+              "correctAnswer": "7,4",
+              "explanation": "15,7 - 8,3 = 7,4",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien font 2,5 × 4 ?",
+              "correctAnswer": "10",
+              "explanation": "2,5 × 4 = 10",
+              "points": 15,
+              "options": [
+                "8",
+                "9",
+                "10",
+                "11"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 18,6 ÷ 3 = ___",
+              "correctAnswer": "6,2",
+              "explanation": "18,6 ÷ 3 = 6,2",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le résultat de 7,25 + 3,8 ?",
+              "correctAnswer": "11,05",
+              "explanation": "7,25 + 3,8 = 11,05",
+              "points": 15,
+              "options": [
+                "10,05",
+                "11,05",
+                "10,15",
+                "11,15"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 45,6 - 17,9 = ___",
+              "correctAnswer": "27,7",
+              "explanation": "45,6 - 17,9 = 27,7",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Fractions simples",
+          "description": "Fractions usuelles et opérations de base",
+          "icon": "➗",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle fraction représente la moitié ?",
+              "correctAnswer": "1/2",
+              "explanation": "1/2 représente la moitié.",
+              "points": 10,
+              "options": [
+                "1/3",
+                "1/2",
+                "1/4",
+                "2/3"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 1/4 + 1/4 = ___",
+              "correctAnswer": "1/2",
+              "explanation": "1/4 + 1/4 = 2/4 = 1/2",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle fraction est équivalente à 2/4 ?",
+              "correctAnswer": "1/2",
+              "explanation": "2/4 = 1/2",
+              "points": 10,
+              "options": [
+                "1/2",
+                "1/3",
+                "3/4",
+                "2/3"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 3/4 - 1/4 = ___",
+              "correctAnswer": "1/2",
+              "explanation": "3/4 - 1/4 = 2/4 = 1/2",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien font 2/3 + 1/3 ?",
+              "correctAnswer": "1",
+              "explanation": "2/3 + 1/3 = 3/3 = 1",
+              "points": 15,
+              "options": [
+                "3/6",
+                "1",
+                "3/3",
+                "2/6"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 5/6 - 2/6 = ___",
+              "correctAnswer": "1/2",
+              "explanation": "5/6 - 2/6 = 3/6 = 1/2",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle fraction est la plus grande ?",
+              "correctAnswer": "1/2",
+              "explanation": "1/2 = 0,5 est la plus grande.",
+              "points": 15,
+              "options": [
+                "2/5",
+                "3/7",
+                "1/2",
+                "4/9"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 7/8 - 3/8 = ___",
+              "correctAnswer": "1/2",
+              "explanation": "7/8 - 3/8 = 4/8 = 1/2",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Géométrie plane",
+          "description": "Figures géométriques et mesures",
+          "icon": "📐",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de côtés a un triangle ?",
+              "correctAnswer": "3",
+              "explanation": "Un triangle a 3 côtés.",
+              "points": 10,
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Un carré a ___ angles droits.",
+              "correctAnswer": "4",
+              "explanation": "Un carré a 4 angles droits.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le périmètre d'un carré de côté 5 cm ?",
+              "correctAnswer": "20 cm",
+              "explanation": "Périmètre = 4 × 5 = 20 cm",
+              "points": 10,
+              "options": [
+                "10 cm",
+                "15 cm",
+                "20 cm",
+                "25 cm"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'aire d'un rectangle de 4 cm sur 3 cm est ___ cm².",
+              "correctAnswer": "12",
+              "explanation": "Aire = 4 × 3 = 12 cm²",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien de côtés a un hexagone ?",
+              "correctAnswer": "6",
+              "explanation": "Un hexagone a 6 côtés.",
+              "points": 15,
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le périmètre d'un rectangle de 6 cm sur 4 cm est ___ cm.",
+              "correctAnswer": "20",
+              "explanation": "Périmètre = 2 × (6 + 4) = 20 cm",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est l'aire d'un carré de côté 7 cm ?",
+              "correctAnswer": "49 cm²",
+              "explanation": "Aire = 7 × 7 = 49 cm²",
+              "points": 15,
+              "options": [
+                "14 cm²",
+                "28 cm²",
+                "49 cm²",
+                "35 cm²"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'aire d'un triangle de base 8 cm et hauteur 6 cm est ___ cm².",
+              "correctAnswer": "24",
+              "explanation": "Aire = (8 × 6) ÷ 2 = 24 cm²",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Proportionnalité",
+          "description": "Tableaux de proportionnalité et échelles",
+          "icon": "📊",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Si 2 stylos coûtent 4€, combien coûtent 4 stylos ?",
+              "correctAnswer": "8€",
+              "explanation": "4 stylos coûtent 2 × 4 = 8€",
+              "points": 10,
+              "options": [
+                "6€",
+                "8€",
+                "10€",
+                "12€"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Si 3 pommes coûtent 6€, 6 pommes coûtent ___€",
+              "correctAnswer": "12",
+              "explanation": "6 pommes coûtent 2 × 6 = 12€",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Si 5 kg coûtent 15€, combien coûte 1 kg ?",
+              "correctAnswer": "3€",
+              "explanation": "1 kg coûte 15 ÷ 5 = 3€",
+              "points": 10,
+              "options": [
+                "2€",
+                "3€",
+                "4€",
+                "5€"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Si 4 m de tissu coûtent 20€, 8 m coûtent ___€",
+              "correctAnswer": "40",
+              "explanation": "8 m coûtent 2 × 20 = 40€",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Si 6 litres coûtent 18€, combien coûtent 10 litres ?",
+              "correctAnswer": "30€",
+              "explanation": "1L = 3€, donc 10L = 30€",
+              "points": 15,
+              "options": [
+                "25€",
+                "28€",
+                "30€",
+                "32€"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Si 7 objets pèsent 21 kg, 12 objets pèsent ___ kg",
+              "correctAnswer": "36",
+              "explanation": "1 objet = 3 kg, donc 12 objets = 36 kg",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Sur une carte à l'échelle 1/1000, 5 cm représentent quelle distance réelle ?",
+              "correctAnswer": "50 m",
+              "explanation": "5 cm × 1000 = 5000 cm = 50 m",
+              "points": 15,
+              "options": [
+                "50 m",
+                "500 m",
+                "5 m",
+                "5000 m"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Si 9 articles coûtent 45€, 15 articles coûtent ___€",
+              "correctAnswer": "75",
+              "explanation": "1 article = 5€, donc 15 articles = 75€",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Statistiques simples",
+          "description": "Lecture de graphiques et moyennes",
+          "icon": "📈",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la moyenne de 8, 10 et 12 ?",
+              "correctAnswer": "10",
+              "explanation": "(8 + 10 + 12) ÷ 3 = 10",
+              "points": 10,
+              "options": [
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La moyenne de 5, 7, 9 est ___",
+              "correctAnswer": "7",
+              "explanation": "(5 + 7 + 9) ÷ 3 = 7",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans la série 3, 5, 5, 7, quel est le mode ?",
+              "correctAnswer": "5",
+              "explanation": "5 apparaît le plus souvent.",
+              "points": 10,
+              "options": [
+                "3",
+                "5",
+                "7",
+                "6"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La médiane de 2, 4, 6 est ___",
+              "correctAnswer": "4",
+              "explanation": "4 est la valeur centrale.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la moyenne de 12, 15, 18, 21 ?",
+              "correctAnswer": "16,5",
+              "explanation": "(12 + 15 + 18 + 21) ÷ 4 = 16,5",
+              "points": 15,
+              "options": [
+                "16",
+                "16,5",
+                "17",
+                "17,5"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'étendue de la série 5, 8, 12, 15 est ___",
+              "correctAnswer": "10",
+              "explanation": "Étendue = 15 - 5 = 10",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans la série 2, 3, 4, 4, 5, quelle est la médiane ?",
+              "correctAnswer": "4",
+              "explanation": "4 est la valeur centrale.",
+              "points": 15,
+              "options": [
+                "3",
+                "3,5",
+                "4",
+                "4,5"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La moyenne de 6, 8, 10, 12, 14 est ___",
+              "correctAnswer": "10",
+              "explanation": "(6 + 8 + 10 + 12 + 14) ÷ 5 = 10",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Mesures et conversions",
+          "description": "Unités de mesure et conversions",
+          "icon": "📏",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de centimètres dans 1 mètre ?",
+              "correctAnswer": "100",
+              "explanation": "1 m = 100 cm",
+              "points": 10,
+              "options": [
+                "10",
+                "100",
+                "1000",
+                "10000"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 2 km = ___ m",
+              "correctAnswer": "2000",
+              "explanation": "2 km = 2000 m",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de grammes dans 1 kilogramme ?",
+              "correctAnswer": "1000",
+              "explanation": "1 kg = 1000 g",
+              "points": 10,
+              "options": [
+                "100",
+                "1000",
+                "10",
+                "10000"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : 3 L = ___ mL",
+              "correctAnswer": "3000",
+              "explanation": "3 L = 3000 mL",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien de minutes dans 2 heures ?",
+              "correctAnswer": "120",
+              "explanation": "2 h = 120 min",
+              "points": 15,
+              "options": [
+                "100",
+                "120",
+                "140",
+                "160"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 2,5 m = ___ cm",
+              "correctAnswer": "250",
+              "explanation": "2,5 m = 250 cm",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien de millimètres dans 3,2 cm ?",
+              "correctAnswer": "32",
+              "explanation": "3,2 cm = 32 mm",
+              "points": 15,
+              "options": [
+                "32",
+                "320",
+                "3,2",
+                "0,32"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : 1,5 kg = ___ g",
+              "correctAnswer": "1500",
+              "explanation": "1,5 kg = 1500 g",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Angles et constructions",
+          "description": "Mesure d'angles et constructions géométriques",
+          "icon": "📐",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien mesure un angle droit ?",
+              "correctAnswer": "90°",
+              "explanation": "Un angle droit mesure 90°.",
+              "points": 10,
+              "options": [
+                "45°",
+                "90°",
+                "180°",
+                "360°"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Un angle plat mesure ___°",
+              "correctAnswer": "180",
+              "explanation": "Un angle plat mesure 180°.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment appelle-t-on un angle de 45° ?",
+              "correctAnswer": "Aigu",
+              "explanation": "Un angle aigu mesure moins de 90°.",
+              "points": 10,
+              "options": [
+                "Droit",
+                "Aigu",
+                "Obtus",
+                "Plat"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Un angle de 120° est un angle ___",
+              "correctAnswer": "obtus",
+              "explanation": "Un angle obtus mesure plus de 90°.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la somme des angles d'un triangle ?",
+              "correctAnswer": "180°",
+              "explanation": "La somme des angles d'un triangle est 180°.",
+              "points": 15,
+              "options": [
+                "90°",
+                "180°",
+                "270°",
+                "360°"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans un triangle rectangle, les deux angles aigus font ensemble ___°",
+              "correctAnswer": "90",
+              "explanation": "90° + angle1 + angle2 = 180°, donc angle1 + angle2 = 90°",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'angles droits dans un rectangle ?",
+              "correctAnswer": "4",
+              "explanation": "Un rectangle a 4 angles droits.",
+              "points": 15,
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Un angle de 30° et un angle de 60° sont ___",
+              "correctAnswer": "complémentaires",
+              "explanation": "30° + 60° = 90°, ils sont complémentaires.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Problèmes et logique",
+          "description": "Résolution de problèmes mathématiques",
+          "icon": "🧠",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Pierre a 15 billes. Il en donne 6 à son frère. Combien lui en reste-t-il ?",
+              "correctAnswer": "9",
+              "explanation": "15 - 6 = 9 billes",
+              "points": 10,
+              "options": [
+                "8",
+                "9",
+                "10",
+                "11"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Marie a 24€. Elle achète un livre à 8€. Il lui reste ___€",
+              "correctAnswer": "16",
+              "explanation": "24 - 8 = 16€",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Un paquet contient 12 bonbons. Combien de bonbons dans 3 paquets ?",
+              "correctAnswer": "36",
+              "explanation": "12 × 3 = 36 bonbons",
+              "points": 10,
+              "options": [
+                "15",
+                "24",
+                "36",
+                "48"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Si je partage 20 images entre 4 amis, chacun reçoit ___ images",
+              "correctAnswer": "5",
+              "explanation": "20 ÷ 4 = 5 images",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Un rectangle a un périmètre de 20 cm et une largeur de 3 cm. Quelle est sa longueur ?",
+              "correctAnswer": "7 cm",
+              "explanation": "Périmètre = 2(L + l), donc 20 = 2(L + 3), L = 7 cm",
+              "points": 15,
+              "options": [
+                "6 cm",
+                "7 cm",
+                "8 cm",
+                "9 cm"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans une classe de 28 élèves, il y a 12 filles. Il y a ___ garçons",
+              "correctAnswer": "16",
+              "explanation": "28 - 12 = 16 garçons",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Paul achète 3 cahiers à 2,50€ chacun. Combien paie-t-il ?",
+              "correctAnswer": "7,50€",
+              "explanation": "3 × 2,50 = 7,50€",
+              "points": 15,
+              "options": [
+                "6,50€",
+                "7€",
+                "7,50€",
+                "8€"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Si 5 pommes coûtent 3€, 15 pommes coûtent ___€",
+              "correctAnswer": "9",
+              "explanation": "15 pommes = 3 × 5 pommes, donc 3 × 3 = 9€",
+              "points": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "francais",
+      "name": "Français",
+      "icon": "📝",
+      "description": "Grammaire, orthographe, littérature",
+      "color": "from-[#e74c3c] to-[#f39c12]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Classes grammaticales",
+          "description": "Noms, adjectifs, verbes, déterminants",
+          "icon": "📝",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Conjugaison présent",
+          "description": "Présent de l'indicatif",
+          "icon": "⏰",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Conjugue 'être' à la 1ère personne du singulier",
+              "correctAnswer": "je suis",
+              "explanation": "La 1ère personne du singulier de 'être' est 'je suis'.",
+              "points": 10,
+              "options": [
+                "je suis",
+                "tu es",
+                "il est",
+                "nous sommes"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Tu ___ (avoir) de la chance",
+              "correctAnswer": "as",
+              "explanation": "La 2ème personne du singulier de 'avoir' est 'as'.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment conjugue-t-on 'finir' à la 3ème personne du pluriel ?",
+              "correctAnswer": "ils finissent",
+              "explanation": "Les verbes du 2ème groupe prennent '-issent' au présent.",
+              "points": 10,
+              "options": [
+                "ils finissent",
+                "ils finisent",
+                "ils finirent",
+                "ils finiraient"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Nous ___ (aller) au cinéma",
+              "correctAnswer": "allons",
+              "explanation": "'Aller' est irrégulier : nous allons.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la terminaison des verbes du 1er groupe à la 2ème personne du singulier ?",
+              "correctAnswer": "-es",
+              "explanation": "Les verbes en -er font 'tu chantes', 'tu manges'...",
+              "points": 15,
+              "options": [
+                "-s",
+                "-es",
+                "-x",
+                "-t"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Elle ___ (pouvoir) venir demain",
+              "correctAnswer": "peut",
+              "explanation": "'Pouvoir' fait 'elle peut' à la 3ème personne du singulier.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment conjugue-t-on 'faire' à la 1ère personne du pluriel ?",
+              "correctAnswer": "nous faisons",
+              "explanation": "'Faire' donne 'nous faisons' au présent.",
+              "points": 15,
+              "options": [
+                "nous faisons",
+                "nous fesons",
+                "nous faisons",
+                "nous faites"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Vous ___ (prendre) le bus",
+              "correctAnswer": "prenez",
+              "explanation": "'Prendre' fait 'vous prenez' à la 2ème personne du pluriel.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Orthographe lexicale",
+          "description": "Mots courants et homophones",
+          "icon": "✏️",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Lecture et compréhension",
+          "description": "Textes narratifs simples",
+          "icon": "📖",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Expression écrite",
+          "description": "Récit et description",
+          "icon": "✍️",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Poésie",
+          "description": "Découverte des rimes et rythmes",
+          "icon": "🎭",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Théâtre",
+          "description": "Dialogue et mise en scène",
+          "icon": "🎪",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Mythologie",
+          "description": "Récits mythologiques",
+          "icon": "🏛️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la classe grammaticale du mot 'beau' dans 'un beau livre' ?",
+              "correctAnswer": "adjectif",
+              "explanation": "'Beau' qualifie le nom 'livre', c'est un adjectif qualificatif.",
+              "points": 10,
+              "options": [
+                "nom",
+                "adjectif",
+                "verbe",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le mot 'rapidement' est un ___",
+              "correctAnswer": "adverbe",
+              "explanation": "'Rapidement' modifie le verbe, c'est un adverbe de manière.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Dans 'Le chat dort', quel est le déterminant ?",
+              "correctAnswer": "Le",
+              "explanation": "'Le' détermine le nom 'chat', c'est un déterminant défini.",
+              "points": 10,
+              "options": [
+                "Le",
+                "chat",
+                "dort",
+                "aucun"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Dans 'Elle chante bien', le pronom personnel est ___",
+              "correctAnswer": "Elle",
+              "explanation": "'Elle' remplace un nom féminin, c'est un pronom personnel.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle est la classe du mot 'sous' dans 'sous la table' ?",
+              "correctAnswer": "préposition",
+              "explanation": "'Sous' établit un rapport de lieu, c'est une préposition.",
+              "points": 15,
+              "options": [
+                "nom",
+                "préposition",
+                "conjonction",
+                "adverbe"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Le mot 'et' est une ___",
+              "correctAnswer": "conjonction",
+              "explanation": "'Et' relie des éléments, c'est une conjonction de coordination.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Dans 'Mes amis arrivent', quelle est la classe de 'Mes' ?",
+              "correctAnswer": "déterminant",
+              "explanation": "'Mes' détermine le nom 'amis', c'est un déterminant possessif.",
+              "points": 15,
+              "options": [
+                "pronom",
+                "déterminant",
+                "adjectif",
+                "nom"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : Dans 'Il court vite', l'adverbe est ___",
+              "correctAnswer": "vite",
+              "explanation": "'Vite' modifie le verbe 'court', c'est un adverbe de manière.",
+              "points": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "histoire-geo",
+      "name": "Histoire-Géographie",
+      "icon": "🌍",
+      "description": "Antiquité, géographie de la France",
+      "color": "from-[#d35400] to-[#e67e22]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Les débuts de l'humanité",
+          "description": "Préhistoire et premiers hommes",
+          "icon": "🦴",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "La révolution néolithique",
+          "description": "Agriculture et sédentarisation",
+          "icon": "🌾",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "L'Orient ancien",
+          "description": "Mésopotamie et Égypte",
+          "icon": "🏛️",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "La Grèce antique",
+          "description": "Cités grecques et démocratie",
+          "icon": "🏛️",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Rome antique",
+          "description": "République et Empire romain",
+          "icon": "🏺",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "La France : reliefs et climats",
+          "description": "Géographie physique française",
+          "icon": "🗻",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "La France : population et villes",
+          "description": "Démographie et urbanisation",
+          "icon": "🏙️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "La France dans l'Europe",
+          "description": "Position et relations européennes",
+          "icon": "🇪🇺",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+              "correctAnswer": "-52",
+              "explanation": "La bataille d'Alésia oppose César à Vercingétorix en -52.",
+              "points": 10,
+              "options": [
+                "-52",
+                "-58",
+                "-50",
+                "-49"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La capitale de la France est ___",
+              "correctAnswer": "Paris",
+              "explanation": "Paris est la capitale et la plus grande ville de France.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Qui était l'empereur romain lors de la naissance du christianisme ?",
+              "correctAnswer": "Auguste",
+              "explanation": "Jésus naît sous le règne d'Auguste (27 av. J.-C. - 14 apr. J.-C.).",
+              "points": 10,
+              "options": [
+                "César",
+                "Auguste",
+                "Néron",
+                "Trajan"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : Le fleuve le plus long de France est ___",
+              "correctAnswer": "la Loire",
+              "explanation": "La Loire mesure 1 012 km, c'est le plus long fleuve français.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+              "correctAnswer": "Égyptienne",
+              "explanation": "Les pyramides de Gizeh sont construites par les pharaons égyptiens.",
+              "points": 15,
+              "options": [
+                "Grecque",
+                "Romaine",
+                "Égyptienne",
+                "Mésopotamienne"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La plus haute montagne de France est ___",
+              "correctAnswer": "le mont Blanc",
+              "explanation": "Le mont Blanc culmine à 4 809 mètres dans les Alpes.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "En quelle année Charlemagne est-il couronné empereur ?",
+              "correctAnswer": "800",
+              "explanation": "Charlemagne est couronné empereur par le pape Léon III en 800.",
+              "points": 15,
+              "options": [
+                "768",
+                "800",
+                "814",
+                "843"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La mer qui borde la côte méditerranéenne française est ___",
+              "correctAnswer": "la mer Méditerranée",
+              "explanation": "La France a une façade sur la mer Méditerranée au sud.",
+              "points": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svt",
+      "name": "Sciences et Vie de la Terre",
+      "icon": "🌱",
+      "description": "Environnement, êtres vivants",
+      "color": "from-[#27ae60] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Unité et diversité du vivant",
+          "description": "Classification des êtres vivants",
+          "icon": "🌿",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Fonctions de nutrition",
+          "description": "Digestion et respiration",
+          "icon": "🫁",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Fonctions de relation",
+          "description": "Système nerveux et sens",
+          "icon": "🧠",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Fonction de reproduction",
+          "description": "Reproduction des êtres vivants",
+          "icon": "🐣",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Peuplement des milieux",
+          "description": "Colonisation par les êtres vivants",
+          "icon": "🌍",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Origine de la matière",
+          "description": "Matière organique et minérale",
+          "icon": "⚛️",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Des pratiques au service",
+          "description": "Agriculture et environnement",
+          "icon": "🌾",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "La planète Terre",
+          "description": "Environnement et géologie",
+          "icon": "🌍",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Combien de chromosomes possède l'espèce humaine ?",
+              "correctAnswer": "46",
+              "explanation": "L'espèce humaine possède 46 chromosomes (23 paires).",
+              "points": 10,
+              "options": [
+                "44",
+                "46",
+                "48",
+                "50"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : L'organe principal de la respiration est ___",
+              "correctAnswer": "le poumon",
+              "explanation": "Les poumons permettent les échanges gazeux avec le sang.",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la fonction principale du cœur ?",
+              "correctAnswer": "Pomper le sang",
+              "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+              "points": 10,
+              "options": [
+                "Digérer",
+                "Respirer",
+                "Pomper le sang",
+                "Filtrer"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : La photosynthèse se réalise grâce à ___",
+              "correctAnswer": "la chlorophylle",
+              "explanation": "La chlorophylle capte la lumière pour la photosynthèse.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+              "correctAnswer": "O2",
+              "explanation": "Les plantes produisent de l'oxygène lors de la photosynthèse.",
+              "points": 15,
+              "options": [
+                "CO2",
+                "O2",
+                "N2",
+                "H2"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : La cellule est l'unité de base du ___",
+              "correctAnswer": "vivant",
+              "explanation": "Tous les êtres vivants sont constitués d'une ou plusieurs cellules.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Combien d'os possède le squelette humain adulte ?",
+              "correctAnswer": "206",
+              "explanation": "Le squelette humain adulte compte environ 206 os.",
+              "points": 15,
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : L'ADN se trouve dans le ___ de la cellule",
+              "correctAnswer": "noyau",
+              "explanation": "L'ADN est localisé dans le noyau des cellules eucaryotes.",
+              "points": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anglais",
+      "name": "Anglais",
+      "icon": "🇬🇧",
+      "description": "Bases de la langue anglaise",
+      "color": "from-[#2980b9] to-[#3498db]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Alphabet et prononciation",
+          "description": "Sons et lettres anglaises",
+          "icon": "🔤",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Se présenter",
+          "description": "Nom, âge, nationalité",
+          "icon": "👋",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "La famille",
+          "description": "Membres de la famille",
+          "icon": "👨‍👩‍👧‍👦",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Les couleurs et nombres",
+          "description": "Vocabulaire de base",
+          "icon": "🌈",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "L'école et les matières",
+          "description": "Système scolaire",
+          "icon": "🏫",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Les animaux",
+          "description": "Animaux domestiques et sauvages",
+          "icon": "🐕",
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "La maison",
+          "description": "Pièces et mobilier",
+          "icon": "🏠",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Les loisirs",
+          "description": "Activités et hobbies",
+          "icon": "⚽",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Comment dit-on 'bonjour' en anglais ?",
+              "correctAnswer": "Good morning",
+              "explanation": "'Good morning' signifie 'bonjour' le matin.",
+              "points": 10,
+              "options": [
+                "Good morning",
+                "Good night",
+                "Good bye",
+                "Good luck"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : I ___ a student",
+              "correctAnswer": "am",
+              "explanation": "Avec 'I', on utilise 'am' (I am a student).",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quel est le pluriel de 'child' ?",
+              "correctAnswer": "children",
+              "explanation": "'Child' fait 'children' au pluriel (pluriel irrégulier).",
+              "points": 10,
+              "options": [
+                "childs",
+                "children",
+                "childes",
+                "child"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Complète : She ___ to school every day",
+              "correctAnswer": "goes",
+              "explanation": "Avec 'she', le verbe 'go' devient 'goes' au présent simple.",
+              "points": 10
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Comment dit-on 'rouge' en anglais ?",
+              "correctAnswer": "red",
+              "explanation": "'Red' signifie 'rouge' en anglais.",
+              "points": 15,
+              "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : There ___ two cats in the garden",
+              "correctAnswer": "are",
+              "explanation": "Avec un sujet pluriel, on utilise 'are'.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Quel est le passé de 'eat' ?",
+              "correctAnswer": "ate",
+              "explanation": "'Eat' fait 'ate' au passé (verbe irrégulier).",
+              "points": 15,
+              "options": [
+                "eated",
+                "ate",
+                "eaten",
+                "eating"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Complète : I don't ___ coffee",
+              "correctAnswer": "like",
+              "explanation": "Après 'don't', on utilise l'infinitif sans 'to'.",
+              "points": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "created": "2024-07-01",
+  "structure": "modular",
+  "total_levels": 7,
+  "total_subjects": 35,
+  "total_lessons": 280,
+  "total_questions": 2240,
+  "levels": [
+    {
+      "id": "sixieme",
+      "name": "Sixième",
+      "file": "levels/sixieme.json",
+      "subjects": 5
+    },
+    {
+      "id": "cinquieme",
+      "name": "Cinquième",
+      "file": "levels/cinquieme.json",
+      "subjects": 5
+    },
+    {
+      "id": "quatrieme",
+      "name": "Quatrième",
+      "file": "levels/quatrieme.json",
+      "subjects": 5
+    },
+    {
+      "id": "troisieme",
+      "name": "Troisième",
+      "file": "levels/troisieme.json",
+      "subjects": 5
+    },
+    {
+      "id": "seconde",
+      "name": "Seconde",
+      "file": "levels/seconde.json",
+      "subjects": 5
+    },
+    {
+      "id": "premiere",
+      "name": "Première",
+      "file": "levels/premiere.json",
+      "subjects": 5
+    },
+    {
+      "id": "terminale",
+      "name": "Terminale",
+      "file": "levels/terminale.json",
+      "subjects": 5
+    }
+  ]
+}

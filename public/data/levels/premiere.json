@@ -1,0 +1,5187 @@
+{
+  "id": "premiere",
+  "name": "Première",
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathématiques",
+      "icon": "🔢",
+      "description": "Dérivées, suites, probabilités",
+      "color": "from-[#00baff] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Dérivation",
+          "description": "Nombre dérivé et fonction dérivée",
+          "icon": "📈",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la dérivée de f(x) = 3x² ?",
+              "correctAnswer": "6x",
+              "explanation": "f'(x) = 3 × 2x = 6x",
+              "points": 10,
+              "options": [
+                "3x",
+                "6x",
+                "3x²",
+                "6x²"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Si f(x) = x³, que vaut f'(x) ?",
+              "correctAnswer": "3x²",
+              "explanation": "La dérivée de x³ est 3x²",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "La dérivée d'une constante est :",
+              "correctAnswer": "0",
+              "explanation": "La dérivée d'une fonction constante est 0",
+              "points": 10,
+              "options": [
+                "1",
+                "0",
+                "La constante",
+                "x"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Quelle est la dérivée de f(x) = 2x³ - 5x + 1 ?",
+              "correctAnswer": "6x² - 5",
+              "explanation": "f'(x) = 6x² - 5 + 0 = 6x² - 5",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "La fonction f(x) = x² - 4x + 3 est croissante sur :",
+              "correctAnswer": "[2;+∞[",
+              "explanation": "f'(x) = 2x - 4 > 0 ⟺ x > 2",
+              "points": 15,
+              "options": [
+                "]-∞;2[",
+                "[2;+∞[",
+                "ℝ",
+                "Aucun intervalle"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "En quel point la fonction f(x) = x² - 6x + 8 admet-elle un minimum ?",
+              "correctAnswer": "3",
+              "explanation": "f'(x) = 2x - 6 = 0 ⟺ x = 3",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "L'équation de la tangente à f(x) = x² au point d'abscisse 1 est :",
+              "correctAnswer": "y = 2x - 1",
+              "explanation": "f(1) = 1, f'(1) = 2, donc y = 2(x-1) + 1 = 2x - 1",
+              "points": 20,
+              "options": [
+                "y = 2x - 1",
+                "y = 2x + 1",
+                "y = x + 1",
+                "y = x - 1"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Quelle est la dérivée de f(x) = (2x + 1)³ ?",
+              "correctAnswer": "6(2x + 1)²",
+              "explanation": "En utilisant la dérivée composée : f'(x) = 3(2x + 1)² × 2 = 6(2x + 1)²",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Suites numériques",
+          "description": "Variations et extremums",
+          "icon": "📊",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de suites niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de suites niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de suites niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de suites niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de suites niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de suites niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de suites niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de suites niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour suites - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Probabilités",
+          "description": "Suites arithmétiques et géométriques",
+          "icon": "🔢",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de probabilités niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de probabilités niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de probabilités niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de probabilités niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de probabilités niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de probabilités niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de probabilités niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de probabilités niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour probabilités - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Fonctions exponentielles",
+          "description": "Croissance exponentielle",
+          "icon": "📈",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fonctions exponentielles niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions exponentielles - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Fonctions logarithmes",
+          "description": "Arbres et formules",
+          "icon": "🌳",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de fonctions logarithmes niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour fonctions logarithmes - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Géométrie dans l'espace",
+          "description": "Lois de probabilité",
+          "icon": "🎲",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie dans l'espace niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Statistiques",
+          "description": "Vecteurs et colinéarité",
+          "icon": "➡️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Primitives et intégrales",
+          "description": "Applications géométriques",
+          "icon": "📐",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de intégrales niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de intégrales niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de intégrales niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de intégrales niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de intégrales niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de intégrales niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de intégrales niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de intégrales niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour intégrales - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "francais",
+      "name": "Français",
+      "icon": "📝",
+      "description": "Bac français, commentaire, dissertation",
+      "color": "from-[#e74c3c] to-[#f39c12]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Commentaire littéraire",
+          "description": "Analyse de texte",
+          "icon": "🔍",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de commentaire niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de commentaire niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de commentaire niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de commentaire niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de commentaire niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de commentaire niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de commentaire niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de commentaire niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour commentaire - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Dissertation",
+          "description": "Plan et argumentation",
+          "icon": "✍️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de dissertation niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de dissertation niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de dissertation niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de dissertation niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de dissertation niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de dissertation niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de dissertation niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de dissertation niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour dissertation - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Préparation oral",
+          "description": "Synthèse et reformulation",
+          "icon": "📝",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de oral niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de oral niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de oral niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de oral niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de oral niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de oral niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de oral niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de oral niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour oral - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Littérature française",
+          "description": "XXe et XXIe siècles",
+          "icon": "📚",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de littérature niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de littérature niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de littérature niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de littérature niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour littérature - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Grammaire stylistique",
+          "description": "Renouveau dramatique",
+          "icon": "🎪",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de grammaire niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de grammaire niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de grammaire niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de grammaire niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour grammaire - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Expression écrite avancée",
+          "description": "Vers libre et prose poétique",
+          "icon": "🎨",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de expression écrite niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de expression écrite niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de expression écrite niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour expression écrite - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Analyse stylistique",
+          "description": "Humanisme aux Lumières",
+          "icon": "💡",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse stylistique niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse stylistique niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de analyse stylistique niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse stylistique niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse stylistique niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de analyse stylistique niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse stylistique niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de analyse stylistique niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour analyse stylistique - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Culture littéraire",
+          "description": "Entretien et présentation",
+          "icon": "🎤",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de culture générale niveau premiere - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de culture générale niveau premiere - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de culture générale niveau premiere - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de culture générale niveau premiere - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de culture générale niveau premiere - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de culture générale niveau premiere - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de culture générale niveau premiere - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de culture générale niveau premiere - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour culture générale - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "histoire-geo",
+      "name": "Histoire-Géographie",
+      "icon": "🌍",
+      "description": "Révolutions, métropolisation",
+      "color": "from-[#d35400] to-[#e67e22]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "XVIIe-XVIIIe siècles",
+          "icon": "🗽",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Transformations économiques",
+          "icon": "🏭",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Construction des États-nations",
+          "icon": "🏛️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Expansion européenne",
+          "icon": "🗺️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Urbanisation mondiale",
+          "icon": "🏙️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Recompositions territoriales",
+          "icon": "🌍",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Évolutions contemporaines",
+          "icon": "🇫🇷",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Enjeux et perspectives",
+          "icon": "🇪🇺",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau premiere - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svt",
+      "name": "Sciences et Vie de la Terre",
+      "icon": "🌱",
+      "description": "Génétique, dynamique terrestre",
+      "color": "from-[#27ae60] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Génétique et évolution",
+          "icon": "🧬",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Structure et évolution de la Terre",
+          "icon": "🌍",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Fonctionnement des écosystèmes",
+          "icon": "🌲",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Diversité et pathologies",
+          "icon": "👥",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Ressources et alternatives",
+          "icon": "⚡",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Défenses spécifiques",
+          "icon": "🛡️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Système nerveux et adaptation",
+          "icon": "🧠",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Reproduction humaine",
+          "icon": "👶",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau premiere - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anglais",
+      "name": "Anglais",
+      "icon": "🇬🇧",
+      "description": "Thèmes culturels avancés",
+      "color": "from-[#2980b9] to-[#3498db]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1",
+          "description": "Grammaire complexe",
+          "icon": "📝",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2",
+          "description": "Courants littéraires",
+          "icon": "📖",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3",
+          "description": "Histoire des pays anglophones",
+          "icon": "🏛️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4",
+          "description": "Problèmes de société",
+          "icon": "⚖️",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5",
+          "description": "Arts dans le monde anglophone",
+          "icon": "🎨",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6",
+          "description": "Innovations technologiques",
+          "icon": "🔬",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7",
+          "description": "Mondialisation et enjeux",
+          "icon": "🌐",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8",
+          "description": "Défis du futur",
+          "icon": "🚀",
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau premiere - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5187 @@
+{
+  "id": "troisieme",
+  "name": "Troisième",
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathématiques",
+      "icon": "🔢",
+      "description": "Fonctions, équations, géométrie",
+      "color": "from-[#00baff] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Fonctions linéaires et affines",
+          "description": "Étude des fonctions du premier degré",
+          "icon": "📈",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Une fonction linéaire a pour forme :",
+              "correctAnswer": "f(x) = ax",
+              "explanation": "Une fonction linéaire passe par l'origine, donc f(x) = ax.",
+              "points": 10,
+              "options": [
+                "f(x) = ax + b",
+                "f(x) = ax",
+                "f(x) = x²",
+                "f(x) = a"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "input",
+              "difficulty": 1,
+              "question": "Si f(x) = 3x, que vaut f(4) ?",
+              "correctAnswer": "12",
+              "explanation": "f(4) = 3 × 4 = 12",
+              "points": 10
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Quelle est la représentation graphique d'une fonction linéaire ?",
+              "correctAnswer": "Une droite passant par l'origine",
+              "explanation": "Une fonction linéaire est représentée par une droite qui passe par l'origine.",
+              "points": 10,
+              "options": [
+                "Une parabole",
+                "Une droite passant par l'origine",
+                "Une hyperbole",
+                "Un cercle"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Quelle est la pente de la droite d'équation y = -2x + 5 ?",
+              "correctAnswer": "-2",
+              "explanation": "Dans y = ax + b, a est la pente. Ici a = -2.",
+              "points": 15
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "La fonction f(x) = 2x + 3 est :",
+              "correctAnswer": "Affine",
+              "explanation": "f(x) = 2x + 3 est une fonction affine car elle a la forme ax + b avec b ≠ 0.",
+              "points": 15,
+              "options": [
+                "Linéaire",
+                "Affine",
+                "Quadratique",
+                "Constante"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "input",
+              "difficulty": 2,
+              "question": "Si g(x) = -x + 7, quelle est l'ordonnée à l'origine ?",
+              "correctAnswer": "7",
+              "explanation": "L'ordonnée à l'origine est la valeur de g(0) = 7.",
+              "points": 15
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Deux droites parallèles ont :",
+              "correctAnswer": "La même pente",
+              "explanation": "Deux droites sont parallèles si et seulement si elles ont la même pente.",
+              "points": 20,
+              "options": [
+                "La même ordonnée à l'origine",
+                "La même pente",
+                "Le même point d'intersection",
+                "La même équation"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "input",
+              "difficulty": 3,
+              "question": "Trouve l'équation de la droite passant par (0,3) et (2,7) :",
+              "correctAnswer": "y = 2x + 3",
+              "explanation": "Pente = (7-3)/(2-0) = 2. Ordonnée à l'origine = 3. Donc y = 2x + 3.",
+              "points": 20
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Équations et inéquations",
+          "description": "Étude de équations et inéquations",
+          "icon": "⚖️",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations et inéquations niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations et inéquations niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de équations et inéquations niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations et inéquations niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations et inéquations niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de équations et inéquations niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de équations et inéquations niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de équations et inéquations niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour équations et inéquations - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Théorème de Thalès",
+          "description": "Étude de théorème de thalès",
+          "icon": "📐",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théorème de thalès niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théorème de thalès niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de théorème de thalès niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théorème de thalès niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théorème de thalès niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de théorème de thalès niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de théorème de thalès niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de théorème de thalès niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour théorème de thalès - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Trigonométrie",
+          "description": "Étude de trigonométrie",
+          "icon": "📊",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de trigonométrie niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de trigonométrie niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de trigonométrie niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de trigonométrie niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de trigonométrie niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de trigonométrie niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de trigonométrie niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de trigonométrie niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour trigonométrie - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Statistiques et probabilités",
+          "description": "Étude de statistiques et probabilités",
+          "icon": "📈",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de statistiques et probabilités niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour statistiques et probabilités - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Puissances et racines",
+          "description": "Étude de puissances et racines",
+          "icon": "√",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances et racines niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances et racines niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de puissances et racines niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances et racines niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances et racines niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de puissances et racines niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de puissances et racines niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de puissances et racines niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour puissances et racines - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Géométrie dans l'espace",
+          "description": "Étude de géométrie dans l'espace",
+          "icon": "🎲",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de géométrie dans l'espace niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour géométrie dans l'espace - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Problèmes de synthèse",
+          "description": "Étude de problèmes de synthèse",
+          "icon": "🧠",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de problèmes de synthèse niveau troisième - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour problèmes de synthèse - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "francais",
+      "name": "Français",
+      "icon": "📝",
+      "description": "Brevet, argumentation, littérature",
+      "color": "from-[#e74c3c] to-[#f39c12]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1 de Français",
+          "description": "Description leçon 1",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2 de Français",
+          "description": "Description leçon 2",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3 de Français",
+          "description": "Description leçon 3",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4 de Français",
+          "description": "Description leçon 4",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5 de Français",
+          "description": "Description leçon 5",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6 de Français",
+          "description": "Description leçon 6",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7 de Français",
+          "description": "Description leçon 7",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8 de Français",
+          "description": "Description leçon 8",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de français niveau troisième - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour français - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "histoire-geo",
+      "name": "Histoire-Géographie",
+      "icon": "🌍",
+      "description": "XXe siècle, géopolitique mondiale",
+      "color": "from-[#d35400] to-[#e67e22]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1 de Histoire-Géographie",
+          "description": "Description leçon 1",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2 de Histoire-Géographie",
+          "description": "Description leçon 2",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3 de Histoire-Géographie",
+          "description": "Description leçon 3",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4 de Histoire-Géographie",
+          "description": "Description leçon 4",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5 de Histoire-Géographie",
+          "description": "Description leçon 5",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6 de Histoire-Géographie",
+          "description": "Description leçon 6",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7 de Histoire-Géographie",
+          "description": "Description leçon 7",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8 de Histoire-Géographie",
+          "description": "Description leçon 8",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de histoire-géographie niveau troisième - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour histoire-géographie - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svt",
+      "name": "Sciences et Vie de la Terre",
+      "icon": "🌱",
+      "description": "Génétique, évolution, environnement",
+      "color": "from-[#27ae60] to-[#2ecc71]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1 de Sciences et Vie de la Terre",
+          "description": "Description leçon 1",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2 de Sciences et Vie de la Terre",
+          "description": "Description leçon 2",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3 de Sciences et Vie de la Terre",
+          "description": "Description leçon 3",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4 de Sciences et Vie de la Terre",
+          "description": "Description leçon 4",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5 de Sciences et Vie de la Terre",
+          "description": "Description leçon 5",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6 de Sciences et Vie de la Terre",
+          "description": "Description leçon 6",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7 de Sciences et Vie de la Terre",
+          "description": "Description leçon 7",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8 de Sciences et Vie de la Terre",
+          "description": "Description leçon 8",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de sciences et vie de la terre niveau troisième - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour sciences et vie de la terre - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anglais",
+      "name": "Anglais",
+      "icon": "🇬🇧",
+      "description": "Niveau B1, communication avancée",
+      "color": "from-[#2980b9] to-[#3498db]",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Leçon 1 de Anglais",
+          "description": "Description leçon 1",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 1 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 1 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leçon 2 de Anglais",
+          "description": "Description leçon 2",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 2 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 2 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leçon 3 de Anglais",
+          "description": "Description leçon 3",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 3 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 3 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Leçon 4 de Anglais",
+          "description": "Description leçon 4",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 4 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 4 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Leçon 5 de Anglais",
+          "description": "Description leçon 5",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 5 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 5 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Leçon 6 de Anglais",
+          "description": "Description leçon 6",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 6 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 6 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Leçon 7 de Anglais",
+          "description": "Description leçon 7",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 7 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 7 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Leçon 8 de Anglais",
+          "description": "Description leçon 8",
+          "icon": "📚",
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": 1,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 1",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 1",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 2,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 2",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 2",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 3,
+              "type": "multiple-choice",
+              "difficulty": 1,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 3",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 3",
+              "points": 10,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 4,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 4",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 4",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 5,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 5",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 5",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 6,
+              "type": "multiple-choice",
+              "difficulty": 2,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 6",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 6",
+              "points": 15,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 7,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 7",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 7",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            },
+            {
+              "id": 8,
+              "type": "multiple-choice",
+              "difficulty": 3,
+              "question": "Question de anglais niveau troisième - Leçon 8 - Question 8",
+              "correctAnswer": "Option A",
+              "explanation": "Explication pour anglais - Leçon 8 - Question 8",
+              "points": 20,
+              "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

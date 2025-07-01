@@ -963,9 +963,147 @@
                   "correctAnswer": "Un point où la courbure change",
                   "explanation": "Un point d'inflexion est un point où la courbe change de concavité",
                   "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la dérivée de f(x) = ln(x) ?",
+                  "options": ["1/x", "x", "ln(x)", "e^x"],
+                  "correctAnswer": "1/x",
+                  "explanation": "La dérivée de ln(x) est 1/x",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la dérivée de f(x) = sin(x) ?",
+                  "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+                  "correctAnswer": "cos(x)",
+                  "explanation": "La dérivée de sin(x) est cos(x)",
+                  "points": 10
                 }
               ]
-            }
+            },
+            {
+              "id": 2,
+              "title": "Limites et Continuité",
+              "description": "Calcul de limites et étude de la continuité",
+              "icon": "🎯",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→+∞) 1/x ?",
+                  "options": ["0", "1", "+∞", "-∞"],
+                  "correctAnswer": "0",
+                  "explanation": "Quand x tend vers +∞, 1/x tend vers 0",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Une fonction est continue en a si :",
+                  "options": ["f(a) existe", "lim(x→a) f(x) = f(a)", "f est dérivable en a", "f est croissante en a"],
+                  "correctAnswer": "lim(x→a) f(x) = f(a)",
+                  "explanation": "Une fonction est continue en a si la limite en a égale la valeur de la fonction en a",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→0) sin(x)/x ?",
+                  "options": ["0", "1", "+∞", "n'existe pas"],
+                  "correctAnswer": "1",
+                                     "explanation": "C'est une limite remarquable : lim(x→0) sin(x)/x = 1",
+                   "points": 10
+                 },
+                 {
+                   "id": 4,
+                   "type": "multiple-choice",
+                   "difficulty": 3,
+                   "question": "Qu'est-ce qu'une asymptote ?",
+                   "options": ["Une droite que la courbe ne croise jamais", "Une droite que la courbe approche", "Une tangente", "Un point d'inflexion"],
+                   "correctAnswer": "Une droite que la courbe approche",
+                   "explanation": "Une asymptote est une droite dont la courbe se rapproche indéfiniment",
+                   "points": 15
+                 },
+                 {
+                   "id": 5,
+                   "type": "multiple-choice",
+                   "difficulty": 2,
+                   "question": "Que vaut lim(x→+∞) e^x ?",
+                   "options": ["0", "1", "+∞", "e"],
+                   "correctAnswer": "+∞",
+                   "explanation": "La fonction exponentielle tend vers +∞ quand x tend vers +∞",
+                   "points": 10
+                 }
+               ]
+             },
+            {
+              "id": 3,
+              "title": "Probabilités",
+              "description": "Lois de probabilité et statistiques",
+              "icon": "🎲",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans une loi normale, quel pourcentage des valeurs se trouve dans l'intervalle [μ-σ, μ+σ] ?",
+                  "options": ["68%", "95%", "99%", "50%"],
+                  "correctAnswer": "68%",
+                  "explanation": "Environ 68% des valeurs se trouvent à moins d'un écart-type de la moyenne",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la formule de la loi binomiale B(n,p) ?",
+                  "options": ["P(X=k) = C(n,k) × p^k × (1-p)^(n-k)", "P(X=k) = p^k", "P(X=k) = n×p", "P(X=k) = e^(-λ)"],
+                  "correctAnswer": "P(X=k) = C(n,k) × p^k × (1-p)^(n-k)",
+                  "explanation": "C'est la formule de la loi binomiale",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que représente l'espérance mathématique ?",
+                  "options": ["La variance", "La moyenne théorique", "L'écart-type", "La médiane"],
+                  "correctAnswer": "La moyenne théorique",
+                                     "explanation": "L'espérance mathématique est la moyenne théorique d'une variable aléatoire",
+                   "points": 10
+                 },
+                 {
+                   "id": 4,
+                   "type": "multiple-choice",
+                   "difficulty": 3,
+                   "question": "Qu'est-ce que la variance ?",
+                   "options": ["La moyenne", "La dispersion autour de la moyenne", "L'écart-type", "La médiane"],
+                   "correctAnswer": "La dispersion autour de la moyenne",
+                   "explanation": "La variance mesure la dispersion des valeurs autour de la moyenne",
+                   "points": 15
+                 },
+                 {
+                   "id": 5,
+                   "type": "multiple-choice",
+                   "difficulty": 2,
+                   "question": "Dans une loi binomiale B(10, 0.3), que vaut n ?",
+                   "options": ["10", "0.3", "3", "7"],
+                   "correctAnswer": "10",
+                   "explanation": "Dans B(n,p), n est le nombre d'épreuves, ici n=10",
+                   "points": 10
+                 }
+               ]
+             }
           ]
         },
         {
@@ -1010,6 +1148,104 @@
                   "options": ["Une répétition", "Une contradiction apparente", "Une rime", "Une allitération"],
                   "correctAnswer": "Une contradiction apparente",
                   "explanation": "L'oxymore associe deux termes contradictoires (ex: 'obscure clarté')",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une allitération ?",
+                  "options": ["Répétition de consonnes", "Répétition de voyelles", "Une rime", "Une métaphore"],
+                  "correctAnswer": "Répétition de consonnes",
+                  "explanation": "L'allitération est la répétition de consonnes identiques",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une assonance ?",
+                  "options": ["Répétition de consonnes", "Répétition de voyelles", "Une rime", "Une métaphore"],
+                  "correctAnswer": "Répétition de voyelles",
+                  "explanation": "L'assonance est la répétition de voyelles identiques",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Le Roman au XIXe siècle",
+              "description": "Étude du roman réaliste et naturaliste",
+              "icon": "📖",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qui a écrit 'Madame Bovary' ?",
+                  "options": ["Balzac", "Flaubert", "Zola", "Stendhal"],
+                  "correctAnswer": "Flaubert",
+                  "explanation": "Gustave Flaubert a écrit 'Madame Bovary' en 1857",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que le réalisme en littérature ?",
+                  "options": ["Décrire la réalité telle qu'elle est", "Idéaliser la réalité", "Critiquer la société", "Raconter des histoires fantastiques"],
+                  "correctAnswer": "Décrire la réalité telle qu'elle est",
+                  "explanation": "Le réalisme vise à représenter fidèlement la réalité",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qui est le chef de file du naturalisme ?",
+                  "options": ["Balzac", "Flaubert", "Zola", "Maupassant"],
+                  "correctAnswer": "Zola",
+                  "explanation": "Émile Zola est le principal théoricien et représentant du naturalisme",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "L'Argumentation",
+              "description": "Techniques argumentatives et essai",
+              "icon": "💭",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'un argument ad hominem ?",
+                  "options": ["Un argument logique", "Une attaque contre la personne", "Un exemple concret", "Une citation d'autorité"],
+                  "correctAnswer": "Une attaque contre la personne",
+                  "explanation": "L'argument ad hominem consiste à attaquer la personne plutôt que ses idées",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une thèse ?",
+                  "options": ["Un exemple", "Une idée défendue", "Un argument", "Une conclusion"],
+                  "correctAnswer": "Une idée défendue",
+                  "explanation": "La thèse est l'idée principale que l'auteur défend",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un argument d'autorité ?",
+                  "options": ["Citer un expert", "Donner un ordre", "Utiliser la force", "Critiquer l'adversaire"],
+                  "correctAnswer": "Citer un expert",
+                  "explanation": "L'argument d'autorité consiste à citer une source reconnue pour appuyer son propos",
                   "points": 10
                 }
               ]
@@ -1058,6 +1294,734 @@
                   "options": ["Je pense donc je suis", "Je doute donc je suis", "Je sens donc je suis", "Je vois donc je suis"],
                   "correctAnswer": "Je pense donc je suis",
                   "explanation": "Le cogito est la formule latine 'Cogito ergo sum' de Descartes",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Selon Freud, quelles sont les trois instances de l'appareil psychique ?",
+                  "options": ["Ça, Moi, Surmoi", "Conscient, Préconscient, Inconscient", "Âme, Corps, Esprit", "Raison, Passion, Volonté"],
+                  "correctAnswer": "Ça, Moi, Surmoi",
+                  "explanation": "Freud distingue le Ça (pulsions), le Moi (réalité) et le Surmoi (morale)",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la mauvaise foi selon Sartre ?",
+                  "options": ["Mentir aux autres", "Se mentir à soi-même", "Être de mauvaise humeur", "Critiquer autrui"],
+                  "correctAnswer": "Se mentir à soi-même",
+                  "explanation": "La mauvaise foi consiste à se mentir à soi-même pour fuir sa liberté",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "La Liberté",
+              "description": "Libre arbitre, déterminisme et responsabilité",
+              "icon": "🕊️",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le déterminisme ?",
+                  "options": ["Tout est décidé par la volonté", "Tout est causé par des causes antérieures", "Rien n'est prévisible", "Tout dépend du hasard"],
+                  "correctAnswer": "Tout est causé par des causes antérieures",
+                  "explanation": "Le déterminisme affirme que tout événement est causé par des causes antérieures",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Selon Sartre, l'homme est-il libre ?",
+                  "options": ["Non, il est déterminé", "Oui, condamné à être libre", "Parfois seulement", "Cela dépend des circonstances"],
+                  "correctAnswer": "Oui, condamné à être libre",
+                  "explanation": "Pour Sartre, l'homme est 'condamné à être libre' et responsable de ses choix",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le libre arbitre ?",
+                  "options": ["La capacité de choisir librement", "L'absence de contraintes", "La possibilité de tout faire", "L'indépendance totale"],
+                  "correctAnswer": "La capacité de choisir librement",
+                  "explanation": "Le libre arbitre est la faculté de choisir en toute liberté",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "La Vérité",
+              "description": "Connaissance, vérité et illusion",
+              "icon": "💡",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la vérité selon la conception classique ?",
+                  "options": ["L'opinion majoritaire", "La correspondance avec la réalité", "Ce qui est utile", "Ce qui plaît"],
+                  "correctAnswer": "La correspondance avec la réalité",
+                  "explanation": "La conception classique définit la vérité comme adéquation avec la réalité",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le doute méthodique de Descartes ?",
+                  "options": ["Douter de tout par scepticisme", "Douter pour mieux croire", "Douter provisoirement pour trouver le certain", "Ne jamais douter"],
+                  "correctAnswer": "Douter provisoirement pour trouver le certain",
+                  "explanation": "Le doute cartésien est méthodique : on doute pour trouver une vérité indubitable",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un préjugé ?",
+                  "options": ["Une vérité évidente", "Une opinion non fondée", "Un raisonnement logique", "Une connaissance scientifique"],
+                  "correctAnswer": "Une opinion non fondée",
+                  "explanation": "Un préjugé est une opinion adoptée sans examen critique",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "histoire-geo",
+          "name": "Histoire-Géographie",
+          "icon": "🌍",
+          "description": "Histoire et géographie niveau Terminale",
+          "color": "from-[#d35400] to-[#e67e22]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "La Guerre Froide",
+              "description": "Bipolarisation du monde (1947-1991)",
+              "icon": "❄️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quand commence la Guerre Froide ?",
+                  "options": ["1945", "1947", "1949", "1950"],
+                  "correctAnswer": "1947",
+                  "explanation": "La Guerre Froide débute en 1947 avec la doctrine Truman",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que le plan Marshall ?",
+                  "options": ["Plan militaire", "Aide économique américaine", "Alliance militaire", "Blocus de Berlin"],
+                  "correctAnswer": "Aide économique américaine",
+                  "explanation": "Le plan Marshall est une aide économique des États-Unis à l'Europe",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quand tombe le mur de Berlin ?",
+                  "options": ["1987", "1989", "1991", "1993"],
+                  "correctAnswer": "1989",
+                  "explanation": "Le mur de Berlin tombe le 9 novembre 1989",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Décolonisation",
+              "description": "Fin des empires coloniaux",
+              "icon": "🗺️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quand l'Inde devient-elle indépendante ?",
+                  "options": ["1945", "1947", "1950", "1952"],
+                  "correctAnswer": "1947",
+                  "explanation": "L'Inde devient indépendante en 1947",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qui dirigeait l'indépendance de l'Inde ?",
+                  "options": ["Gandhi", "Nehru", "Gandhi et Nehru", "Churchill"],
+                  "correctAnswer": "Gandhi et Nehru",
+                  "explanation": "Gandhi et Nehru ont mené l'indépendance indienne",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quand l'Algérie devient-elle indépendante ?",
+                  "options": ["1960", "1962", "1964", "1965"],
+                  "correctAnswer": "1962",
+                  "explanation": "L'Algérie devient indépendante en 1962",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Mondialisation",
+              "description": "Processus de mondialisation contemporaine",
+              "icon": "🌐",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la mondialisation ?",
+                  "options": ["Échanges mondiaux", "Uniformisation culturelle", "Intégration économique mondiale", "Toutes les réponses"],
+                  "correctAnswer": "Toutes les réponses",
+                  "explanation": "La mondialisation englobe tous ces aspects",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'une firme transnationale ?",
+                  "options": ["Entreprise nationale", "Entreprise multinationale", "Organisation internationale", "Banque centrale"],
+                  "correctAnswer": "Entreprise multinationale",
+                  "explanation": "Une FTN opère dans plusieurs pays",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quel est un effet de la mondialisation ?",
+                  "options": ["Isolement des pays", "Interdépendance croissante", "Autarcie", "Fermeture des frontières"],
+                  "correctAnswer": "Interdépendance croissante",
+                  "explanation": "La mondialisation accroît l'interdépendance entre les pays",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anglais",
+          "name": "Anglais LV1",
+          "icon": "🇬🇧",
+          "description": "Langue vivante anglaise",
+          "color": "from-[#2980b9] to-[#3498db]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Grammar Advanced",
+              "description": "Grammaire anglaise niveau avancé",
+              "icon": "📝",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Which is correct: 'I have been living here ___ 5 years'?",
+                  "options": ["since", "for", "during", "from"],
+                  "correctAnswer": "for",
+                  "explanation": "'For' is used with duration of time",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "What's the correct form: 'If I ___ rich, I would travel the world'?",
+                  "options": ["am", "was", "were", "will be"],
+                  "correctAnswer": "were",
+                  "explanation": "Use 'were' in hypothetical conditions with 'if'",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Choose the correct passive form: 'They built this house in 1990'",
+                  "options": ["This house built in 1990", "This house was built in 1990", "This house is built in 1990", "This house has built in 1990"],
+                  "correctAnswer": "This house was built in 1990",
+                  "explanation": "Past passive: was/were + past participle",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Literature",
+              "description": "Littérature anglaise et américaine",
+              "icon": "📚",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Who wrote 'To Kill a Mockingbird'?",
+                  "options": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+                  "correctAnswer": "Harper Lee",
+                  "explanation": "Harper Lee wrote 'To Kill a Mockingbird' in 1960",
+                  "points": 15
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "What is a metaphor?",
+                  "options": ["Direct comparison without 'like' or 'as'", "Comparison using 'like' or 'as'", "Giving human qualities to objects", "Exaggeration"],
+                  "correctAnswer": "Direct comparison without 'like' or 'as'",
+                  "explanation": "A metaphor is a direct comparison without using 'like' or 'as'",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Which period is Shakespeare from?",
+                  "options": ["Medieval", "Renaissance", "Victorian", "Modern"],
+                  "correctAnswer": "Renaissance",
+                  "explanation": "Shakespeare lived during the Renaissance period (1564-1616)",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Civilization",
+              "description": "Culture et civilisation anglo-saxonne",
+              "icon": "🏛️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "What is the capital of Australia?",
+                  "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+                  "correctAnswer": "Canberra",
+                  "explanation": "Canberra is the capital of Australia",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "When did the American Civil War end?",
+                  "options": ["1863", "1865", "1867", "1870"],
+                  "correctAnswer": "1865",
+                  "explanation": "The American Civil War ended in 1865",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "What is the UK political system?",
+                  "options": ["Republic", "Constitutional monarchy", "Absolute monarchy", "Federal state"],
+                  "correctAnswer": "Constitutional monarchy",
+                  "explanation": "The UK is a constitutional monarchy with a parliamentary system",
+                  "points": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "physique-chimie",
+          "name": "Physique-Chimie",
+          "icon": "⚛️",
+          "description": "Physique et chimie niveau Terminale",
+          "color": "from-[#16a085] to-[#1abc9c]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Mécanique",
+              "description": "Cinématique et dynamique",
+              "icon": "🎯",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est l'unité de la force dans le système international ?",
+                  "options": ["Joule", "Newton", "Watt", "Pascal"],
+                  "correctAnswer": "Newton",
+                  "explanation": "Le Newton (N) est l'unité de force dans le système SI",
+                  "points": 15
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la deuxième loi de Newton ?",
+                  "options": ["F = ma", "E = mc²", "P = mv", "W = Fd"],
+                  "correctAnswer": "F = ma",
+                  "explanation": "La deuxième loi de Newton s'exprime par F = ma",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que l'accélération ?",
+                  "options": ["Variation de position", "Variation de vitesse", "Variation de force", "Variation de masse"],
+                  "correctAnswer": "Variation de vitesse",
+                  "explanation": "L'accélération est la dérivée de la vitesse par rapport au temps",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Thermodynamique",
+              "description": "Énergie, chaleur et température",
+              "icon": "🌡️",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quel est le premier principe de la thermodynamique ?",
+                  "options": ["Conservation de l'énergie", "Entropie croissante", "Zéro absolu", "Équilibre thermique"],
+                  "correctAnswer": "Conservation de l'énergie",
+                  "explanation": "Le premier principe exprime la conservation de l'énergie",
+                  "points": 15
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est l'unité de l'énergie ?",
+                  "options": ["Newton", "Joule", "Watt", "Calorie"],
+                  "correctAnswer": "Joule",
+                  "explanation": "Le Joule est l'unité d'énergie dans le système SI",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Que représente le zéro absolu ?",
+                  "options": ["-273,15°C", "0°C", "0 K", "Les deux premières réponses"],
+                  "correctAnswer": "Les deux premières réponses",
+                  "explanation": "Le zéro absolu correspond à -273,15°C ou 0 K",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Chimie Organique",
+              "description": "Molécules organiques et réactions",
+              "icon": "🧪",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la formule générale des alcanes ?",
+                  "options": ["CnH2n", "CnH2n+2", "CnH2n-2", "CnHn"],
+                  "correctAnswer": "CnH2n+2",
+                  "explanation": "Les alcanes ont pour formule générale CnH2n+2",
+                  "points": 15
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un isomère ?",
+                  "options": ["Même formule, structure différente", "Formule différente", "Même structure", "Même masse"],
+                  "correctAnswer": "Même formule, structure différente",
+                  "explanation": "Les isomères ont la même formule brute mais des structures différentes",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'une réaction de substitution ?",
+                  "options": ["Ajout d'atomes", "Remplacement d'un atome", "Suppression d'atomes", "Réarrangement"],
+                  "correctAnswer": "Remplacement d'un atome",
+                  "explanation": "Une substitution remplace un atome ou groupe par un autre",
+                  "points": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svt",
+          "name": "SVT",
+          "icon": "🧬",
+          "description": "Sciences de la Vie et de la Terre",
+          "color": "from-[#27ae60] to-[#2ecc71]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Génétique",
+              "description": "Hérédité et génétique moléculaire",
+              "icon": "🧬",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que l'ADN ?",
+                  "options": ["Acide désoxyribonucléique", "Acide ribonucléique", "Protéine", "Lipide"],
+                  "correctAnswer": "Acide désoxyribonucléique",
+                  "explanation": "L'ADN est l'acide désoxyribonucléique, support de l'information génétique",
+                  "points": 15
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Combien de chromosomes possède l'être humain ?",
+                  "options": ["44", "46", "48", "50"],
+                  "correctAnswer": "46",
+                  "explanation": "L'être humain possède 46 chromosomes (23 paires)",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'un allèle ?",
+                  "options": ["Un chromosome", "Une version d'un gène", "Une protéine", "Une cellule"],
+                  "correctAnswer": "Une version d'un gène",
+                  "explanation": "Un allèle est une version particulière d'un gène",
+                  "points": 15
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Évolution",
+              "description": "Théorie de l'évolution et phylogénie",
+              "icon": "🦕",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qui a proposé la théorie de l'évolution ?",
+                  "options": ["Mendel", "Darwin", "Pasteur", "Lamarck"],
+                  "correctAnswer": "Darwin",
+                  "explanation": "Charles Darwin a proposé la théorie de l'évolution par sélection naturelle",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la sélection naturelle ?",
+                  "options": ["Choix des partenaires", "Survie des plus adaptés", "Mutation génétique", "Reproduction sexuée"],
+                  "correctAnswer": "Survie des plus adaptés",
+                  "explanation": "La sélection naturelle favorise la survie des individus les mieux adaptés",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une mutation ?",
+                  "options": ["Changement d'environnement", "Modification de l'ADN", "Reproduction", "Développement"],
+                  "correctAnswer": "Modification de l'ADN",
+                  "explanation": "Une mutation est une modification de la séquence d'ADN",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Géologie",
+              "description": "Structure de la Terre et tectonique",
+              "icon": "🌋",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelles sont les couches de la Terre ?",
+                  "options": ["Croûte, manteau, noyau", "Atmosphère, hydrosphère, lithosphère", "Primaire, secondaire, tertiaire", "Sédimentaire, magmatique, métamorphique"],
+                  "correctAnswer": "Croûte, manteau, noyau",
+                  "explanation": "La Terre est constituée de la croûte, du manteau et du noyau",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la tectonique des plaques ?",
+                  "options": ["Mouvement des continents", "Formation des montagnes", "Déplacement des plaques lithosphériques", "Érosion des roches"],
+                  "correctAnswer": "Déplacement des plaques lithosphériques",
+                  "explanation": "La tectonique des plaques explique le mouvement des plaques lithosphériques",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Comment se forment les volcans ?",
+                  "options": ["Par érosion", "Par remontée de magma", "Par sédimentation", "Par métamorphisme"],
+                  "correctAnswer": "Par remontée de magma",
+                  "explanation": "Les volcans se forment par la remontée de magma vers la surface",
+                  "points": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ses",
+          "name": "SES",
+          "icon": "💼",
+          "description": "Sciences Économiques et Sociales",
+          "color": "from-[#8e44ad] to-[#9b59b6]",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Économie",
+              "description": "Principes économiques fondamentaux",
+              "icon": "💰",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que le PIB ?",
+                  "options": ["Produit Intérieur Brut", "Produit International Brut", "Profit Intérieur Brut", "Prix Intérieur Brut"],
+                  "correctAnswer": "Produit Intérieur Brut",
+                  "explanation": "Le PIB mesure la richesse produite dans un pays",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que l'inflation ?",
+                  "options": ["Baisse des prix", "Hausse générale des prix", "Stagnation économique", "Crise économique"],
+                  "correctAnswer": "Hausse générale des prix",
+                  "explanation": "L'inflation est une hausse générale et durable des prix",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que l'offre et la demande ?",
+                  "options": ["Deux entreprises", "Forces du marché", "Types de produits", "Méthodes de vente"],
+                  "correctAnswer": "Forces du marché",
+                  "explanation": "L'offre et la demande sont les forces qui déterminent les prix sur un marché",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Sociologie",
+              "description": "Étude de la société et des groupes sociaux",
+              "icon": "👥",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une classe sociale ?",
+                  "options": ["Groupe d'âge", "Groupe professionnel", "Groupe socio-économique", "Groupe familial"],
+                  "correctAnswer": "Groupe socio-économique",
+                  "explanation": "Une classe sociale est un groupe défini par sa position socio-économique",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la socialisation ?",
+                  "options": ["Processus d'apprentissage social", "Vie en société", "Politique sociale", "Action sociale"],
+                  "correctAnswer": "Processus d'apprentissage social",
+                  "explanation": "La socialisation est le processus d'apprentissage des normes sociales",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un stéréotype ?",
+                  "options": ["Idée reçue", "Fait social", "Norme sociale", "Valeur sociale"],
+                  "correctAnswer": "Idée reçue",
+                  "explanation": "Un stéréotype est une idée toute faite sur un groupe social",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Science Politique",
+              "description": "Institutions et vie politique",
+              "icon": "🏛️",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la démocratie ?",
+                  "options": ["Pouvoir du peuple", "Pouvoir des riches", "Pouvoir des savants", "Pouvoir des anciens"],
+                  "correctAnswer": "Pouvoir du peuple",
+                  "explanation": "La démocratie signifie 'pouvoir du peuple' en grec",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que la séparation des pouvoirs ?",
+                  "options": ["Division du territoire", "Répartition des compétences", "Séparation exécutif/législatif/judiciaire", "Décentralisation"],
+                  "correctAnswer": "Séparation exécutif/législatif/judiciaire",
+                  "explanation": "La séparation des pouvoirs distingue l'exécutif, le législatif et le judiciaire",
+                  "points": 15
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un parti politique ?",
+                  "options": ["Organisation pour conquérir le pouvoir", "Association de citoyens", "Groupe de pression", "Syndicat"],
+                  "correctAnswer": "Organisation pour conquérir le pouvoir",
+                  "explanation": "Un parti politique vise à conquérir et exercer le pouvoir politique",
                   "points": 10
                 }
               ]

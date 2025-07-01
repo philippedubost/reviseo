@@ -359,15 +359,15 @@
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de inéquations niveau seconde - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 8",
+              "question": "Résoudre l'inéquation -x² + 5x - 6 ≥ 0",
+              "correctAnswer": "[2 ; 3]",
+              "explanation": "-x² + 5x - 6 = -(x² - 5x + 6) = -(x-2)(x-3). Le trinôme est positif entre les racines 2 et 3.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "[2 ; 3]",
+                "]-∞ ; 2] ∪ [3 ; +∞[",
+                "]2 ; 3[",
+                "]-∞ ; 2[ ∪ ]3 ; +∞["
               ]
             }
           ]
@@ -413,15 +413,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de géométrie analytique niveau seconde - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie analytique - Question 3",
+              "question": "Quelle est l'équation de la droite passant par l'origine et de coefficient directeur 2 ?",
+              "correctAnswer": "y = 2x",
+              "explanation": "Une droite passant par l'origine a pour équation y = mx où m est le coefficient directeur. Ici m = 2, donc y = 2x.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "y = 2x",
+                "y = x + 2",
+                "y = 2x + 1",
+                "x = 2y"
               ]
             },
             {
@@ -512,15 +512,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 1",
+              "question": "Quelle est la moyenne de la série : 12, 15, 18, 20, 25 ?",
+              "correctAnswer": "18",
+              "explanation": "Moyenne = (12 + 15 + 18 + 20 + 25) ÷ 5 = 90 ÷ 5 = 18.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "18",
+                "17",
+                "19",
+                "20"
               ]
             },
             {
@@ -800,15 +800,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau seconde - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 3",
+              "question": "Quelle est la valeur de cos(0) ?",
+              "correctAnswer": "1",
+              "explanation": "cos(0) = 1. C'est une valeur remarquable à connaître.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1",
+                "0",
+                "-1",
+                "√2/2"
               ]
             },
             {
@@ -914,15 +914,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de vecteurs niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vecteurs - Question 2",
+              "question": "Que représente le vecteur nul ?",
+              "correctAnswer": "Un vecteur de longueur nulle",
+              "explanation": "Le vecteur nul est un vecteur dont la norme (longueur) est égale à zéro. Il n'a pas de direction définie.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un vecteur de longueur nulle",
+                "Un vecteur de longueur 1",
+                "Un vecteur horizontal",
+                "Un vecteur vertical"
               ]
             },
             {

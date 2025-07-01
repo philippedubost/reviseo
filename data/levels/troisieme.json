@@ -125,15 +125,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 1",
+              "question": "Résoudre l'équation 3x - 7 = 2x + 5",
+              "correctAnswer": "x = 12",
+              "explanation": "3x - 7 = 2x + 5 ⟺ 3x - 2x = 5 + 7 ⟺ x = 12.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 12",
+                "x = 2",
+                "x = -2",
+                "x = 6"
               ]
             },
             {
@@ -383,15 +383,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 1",
+              "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté adjacent / hypoténuse",
+              "explanation": "Le cosinus d'un angle aigu dans un triangle rectangle est le rapport du côté adjacent à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté adjacent / hypoténuse",
+                "côté opposé / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté adjacent"
               ]
             },
             {

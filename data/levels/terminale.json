@@ -125,15 +125,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de dérivation avancée niveau terminale - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour dérivation avancée - Question 1",
+              "question": "Quelle est la dérivée de ln(x) ?",
+              "correctAnswer": "1/x",
+              "explanation": "La dérivée du logarithme népérien est (ln(x))' = 1/x pour x > 0.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/x",
+                "x",
+                "ln(x)",
+                "e^x"
               ]
             },
             {
@@ -254,15 +254,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de intégration niveau terminale - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour intégration - Question 1",
+              "question": "Que représente l'intégrale ∫₀¹ x dx ?",
+              "correctAnswer": "L'aire sous la courbe y = x de 0 à 1",
+              "explanation": "L'intégrale représente l'aire sous la courbe de la fonction entre les bornes d'intégration.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'aire sous la courbe y = x de 0 à 1",
+                "La dérivée de x",
+                "La valeur de x en 1",
+                "La pente de la tangente"
               ]
             },
             {

@@ -647,15 +647,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 3",
+              "question": "Dans la série 5, 8, 8, 10, 12, 8, quelle est la valeur modale ?",
+              "correctAnswer": "8",
+              "explanation": "La valeur modale (ou mode) est la valeur qui apparaît le plus souvent. Ici, 8 apparaît 3 fois.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "5",
+                "10",
+                "12"
               ]
             },
             {
@@ -806,15 +806,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de angles niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 5",
+              "question": "Deux angles supplémentaires ont pour somme :",
+              "correctAnswer": "180°",
+              "explanation": "Deux angles sont supplémentaires quand leur somme est égale à 180° (un angle plat).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "180°",
+                "90°",
+                "360°",
+                "270°"
               ]
             },
             {
@@ -905,15 +905,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de périmètres niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 3",
+              "question": "Quel est le périmètre d'un triangle équilatéral de côté 6 cm ?",
+              "correctAnswer": "18 cm",
+              "explanation": "Un triangle équilatéral a ses 3 côtés égaux. Périmètre = 3 × 6 = 18 cm.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "18 cm",
+                "12 cm",
+                "24 cm",
+                "36 cm"
               ]
             },
             {
@@ -1178,15 +1178,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de conjugaison niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 5",
+              "question": "Quel temps est utilisé dans : 'Hier, nous avons visité le musée' ?",
+              "correctAnswer": "Passé composé",
+              "explanation": "Le passé composé se forme avec l'auxiliaire avoir ou être + participe passé. Ici : avons (avoir) + visité.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Passé composé",
+                "Imparfait",
+                "Passé simple",
+                "Plus-que-parfait"
               ]
             },
             {

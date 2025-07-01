@@ -125,15 +125,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de suites niveau premiere - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour suites - Question 1",
+              "question": "Qu'est-ce qu'une suite arithmétique ?",
+              "correctAnswer": "Une suite où la différence entre deux termes consécutifs est constante",
+              "explanation": "Une suite arithmétique a une raison constante : un+1 = un + r.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une suite où la différence entre deux termes consécutifs est constante",
+                "Une suite où le rapport entre deux termes consécutifs est constant",
+                "Une suite croissante",
+                "Une suite convergente"
               ]
             },
             {
@@ -254,15 +254,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de probabilités niveau premiere - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 1",
+              "question": "Quelle est la probabilité de l'union de deux événements incompatibles A et B ?",
+              "correctAnswer": "P(A) + P(B)",
+              "explanation": "Si A et B sont incompatibles (A ∩ B = ∅), alors P(A ∪ B) = P(A) + P(B).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "P(A) + P(B)",
+                "P(A) × P(B)",
+                "P(A) + P(B) - P(A ∩ B)",
+                "P(A) - P(B)"
               ]
             },
             {
@@ -383,15 +383,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fonctions exponentielles niveau premiere - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 1",
+              "question": "Quelle est la dérivée de la fonction f(x) = eˣ ?",
+              "correctAnswer": "eˣ",
+              "explanation": "La fonction exponentielle est sa propre dérivée : (eˣ)' = eˣ.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "eˣ",
+                "xeˣ⁻¹",
+                "1",
+                "ln(x)"
               ]
             },
             {

@@ -125,30 +125,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 1",
+              "question": "Le théorème de Thalès s'applique dans quelle configuration ?",
+              "correctAnswer": "Deux droites parallèles coupées par deux sécantes",
+              "explanation": "Le théorème de Thalès s'applique quand on a deux droites parallèles coupées par deux droites sécantes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Deux droites parallèles coupées par deux sécantes",
+                "Deux droites perpendiculaires",
+                "Un triangle rectangle",
+                "Deux cercles qui se coupent"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 2",
+              "question": "Si AB/AC = DE/DF, alors les droites (BD) et (CE) sont :",
+              "correctAnswer": "parallèles",
+              "explanation": "D'après la réciproque du théorème de Thalès, si les rapports sont égaux, alors les droites sont parallèles.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "parallèles",
+                "perpendiculaires",
+                "sécantes",
+                "confondues"
               ]
             },
             {
@@ -254,15 +254,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 1",
+              "question": "Développer l'expression 3(x + 2)",
+              "correctAnswer": "3x + 6",
+              "explanation": "On applique la distributivité : 3(x + 2) = 3 × x + 3 × 2 = 3x + 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3x + 6",
+                "3x + 2",
+                "x + 6",
+                "3x + 5"
               ]
             },
             {
@@ -383,15 +383,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 1",
+              "question": "Résoudre l'équation 2x + 5 = 13",
+              "correctAnswer": "x = 4",
+              "explanation": "2x + 5 = 13 ⟺ 2x = 13 - 5 ⟺ 2x = 8 ⟺ x = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 9",
+                "x = 6",
+                "x = 2"
               ]
             },
             {

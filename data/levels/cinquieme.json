@@ -230,60 +230,60 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fractions niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 1",
+              "question": "Quelle est la fraction simplifiée de 12/18 ?",
+              "correctAnswer": "2/3",
+              "explanation": "Pour simplifier 12/18, on divise le numérateur et le dénominateur par leur PGCD. PGCD(12,18) = 6. Donc 12/18 = 2/3.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2/3",
+                "3/4",
+                "1/2",
+                "4/6"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fractions niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 2",
+              "question": "Que représente la fraction 3/4 ?",
+              "correctAnswer": "3 parts sur 4 parts égales",
+              "explanation": "Une fraction a/b représente a parts d'un tout divisé en b parts égales. Donc 3/4 représente 3 parts sur 4 parts égales.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3 parts sur 4 parts égales",
+                "4 parts sur 3 parts égales",
+                "3 fois 4",
+                "4 divisé par 3"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fractions niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 3",
+              "question": "Comment additionner 1/3 + 1/6 ?",
+              "correctAnswer": "3/6 = 1/2",
+              "explanation": "Pour additionner des fractions, il faut un dénominateur commun. 1/3 = 2/6, donc 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3/6 = 1/2",
+                "2/9",
+                "1/9",
+                "2/3"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de fractions niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 4",
+              "question": "Quel est le résultat de 2/5 × 3/4 ?",
+              "correctAnswer": "6/20 = 3/10",
+              "explanation": "Pour multiplier des fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux : (2×3)/(5×4) = 6/20 = 3/10.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6/20 = 3/10",
+                "5/9",
+                "6/9 = 2/3",
+                "8/20 = 2/5"
               ]
             },
             {
@@ -359,30 +359,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de proportionnalité niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 1",
+              "question": "Si 3 kg de pommes coûtent 9 €, combien coûtent 5 kg de pommes ?",
+              "correctAnswer": "15 €",
+              "explanation": "C'est un problème de proportionnalité. 3 kg → 9 €, donc 1 kg → 3 €. Par conséquent, 5 kg → 5 × 3 = 15 €.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "15 €",
+                "12 €",
+                "18 €",
+                "27 €"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de proportionnalité niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 2",
+              "question": "Une voiture consomme 6 litres pour 100 km. Combien consomme-t-elle pour 250 km ?",
+              "correctAnswer": "15 litres",
+              "explanation": "Proportionnalité : 100 km → 6 L, donc 250 km → (250 × 6) ÷ 100 = 15 litres.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "15 litres",
+                "12 litres",
+                "18 litres",
+                "20 litres"
               ]
             },
             {
@@ -488,15 +488,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de géométrie niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 1",
+              "question": "Combien d'axes de symétrie possède un triangle équilatéral ?",
+              "correctAnswer": "3",
+              "explanation": "Un triangle équilatéral possède 3 axes de symétrie : chaque médiatrice d'un côté est un axe de symétrie.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3",
+                "1",
+                "2",
+                "0"
               ]
             },
             {
@@ -746,30 +746,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de angles niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 1",
+              "question": "Quelle est la mesure d'un angle droit ?",
+              "correctAnswer": "90°",
+              "explanation": "Un angle droit mesure exactement 90 degrés. C'est l'angle formé par deux droites perpendiculaires.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "90°",
+                "180°",
+                "45°",
+                "360°"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de angles niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 2",
+              "question": "Comment appelle-t-on un angle plus grand que 90° et plus petit que 180° ?",
+              "correctAnswer": "Angle obtus",
+              "explanation": "Un angle obtus est un angle dont la mesure est comprise entre 90° et 180°.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Angle obtus",
+                "Angle aigu",
+                "Angle droit",
+                "Angle plat"
               ]
             },
             {
@@ -875,30 +875,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de périmètres niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 1",
+              "question": "Quel est le périmètre d'un carré de côté 5 cm ?",
+              "correctAnswer": "20 cm",
+              "explanation": "Le périmètre d'un carré = 4 × côté. Donc P = 4 × 5 = 20 cm.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "20 cm",
+                "25 cm",
+                "10 cm",
+                "15 cm"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de périmètres niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 2",
+              "question": "Quel est le périmètre d'un rectangle de longueur 8 cm et de largeur 3 cm ?",
+              "correctAnswer": "22 cm",
+              "explanation": "Le périmètre d'un rectangle = 2 × (longueur + largeur). Donc P = 2 × (8 + 3) = 2 × 11 = 22 cm.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "22 cm",
+                "24 cm",
+                "16 cm",
+                "11 cm"
               ]
             },
             {
@@ -1118,30 +1118,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 1",
+              "question": "Quelle est la forme correcte du verbe 'finir' à la 2e personne du singulier au présent ?",
+              "correctAnswer": "tu finis",
+              "explanation": "Le verbe 'finir' est un verbe du 2e groupe. Au présent, 2e personne du singulier : tu finis (radical fin- + terminaison -is).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "tu finis",
+                "tu finit",
+                "tu finies",
+                "tu finir"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 2",
+              "question": "Comment conjugue-t-on le verbe 'être' à la 1ère personne du pluriel au présent ?",
+              "correctAnswer": "nous sommes",
+              "explanation": "Le verbe 'être' est irrégulier. À la 1ère personne du pluriel au présent : nous sommes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "nous sommes",
+                "nous êtes",
+                "nous sont",
+                "nous soyons"
               ]
             },
             {
@@ -1247,30 +1247,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de orthographe niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 1",
+              "question": "Quelle est l'orthographe correcte ?",
+              "correctAnswer": "Ils sont allés au cinéma",
+              "explanation": "Le participe passé 'allés' s'accorde avec le sujet 'ils' (masculin pluriel) quand on utilise l'auxiliaire être.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Ils sont allés au cinéma",
+                "Ils sont allé au cinéma",
+                "Ils sont aller au cinéma",
+                "Ils sont allées au cinéma"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de orthographe niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 2",
+              "question": "Quelle phrase contient une erreur d'orthographe ?",
+              "correctAnswer": "Les enfants mange des pommes",
+              "explanation": "Le verbe 'manger' doit s'accorder avec le sujet 'les enfants' (3e personne du pluriel) : 'mangent'.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les enfants mange des pommes",
+                "Les enfants mangent des pommes",
+                "L'enfant mange une pomme",
+                "Tu manges une pomme"
               ]
             },
             {
@@ -1376,30 +1376,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de vocabulaire niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 1",
+              "question": "Quel est le synonyme du mot 'content' ?",
+              "correctAnswer": "heureux",
+              "explanation": "Un synonyme est un mot qui a le même sens qu'un autre. 'Content' et 'heureux' expriment tous deux la joie, la satisfaction.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "heureux",
+                "triste",
+                "fatigué",
+                "énervé"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de vocabulaire niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 2",
+              "question": "Quel est l'antonyme (contraire) du mot 'rapide' ?",
+              "correctAnswer": "lent",
+              "explanation": "Un antonyme est un mot qui a le sens contraire d'un autre. 'Rapide' et 'lent' sont des antonymes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "lent",
+                "vite",
+                "accéléré",
+                "pressé"
               ]
             },
             {

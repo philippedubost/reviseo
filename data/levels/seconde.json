@@ -125,30 +125,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 1",
+              "question": "L'ensemble des solutions de l'équation (2x+1)(x-3) = 0 est :",
+              "correctAnswer": "{-1/2 ; 3}",
+              "explanation": "Un produit est nul si et seulement si l'un de ses facteurs est nul. 2x+1 = 0 donne x = -1/2 et x-3 = 0 donne x = 3.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "{-1/2 ; 3}",
+                "{1/2 ; -3}",
+                "∅",
+                "{-1/2 ; -3}"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 2",
+              "question": "L'équation x² + 4 = 0 :",
+              "correctAnswer": "n'admet aucune solution",
+              "explanation": "x² + 4 = 0 ⟺ x² = -4. Comme un carré est toujours positif ou nul, cette équation n'a pas de solution dans ℝ.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "n'admet aucune solution",
+                "admet une unique solution",
+                "admet deux solutions",
+                "admet une infinité de solutions"
               ]
             },
             {
@@ -254,75 +254,75 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de inéquations niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 1",
+              "question": "Quel est l'ensemble solution de l'inéquation 3x - 15 < 0 ?",
+              "correctAnswer": "]-∞ ; 5[",
+              "explanation": "3x - 15 < 0 ⟺ 3x < 15 ⟺ x < 5. L'ensemble solution est donc ]-∞ ; 5[.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "]5 ; +∞[",
+                "]-∞ ; 5[",
+                "]-∞ ; -5[",
+                "[5 ; +∞["
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de inéquations niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 2",
+              "question": "Quel est l'ensemble solution de l'inéquation -2x + 4 ≥ 0 ?",
+              "correctAnswer": "]-∞ ; 2]",
+              "explanation": "-2x + 4 ≥ 0 ⟺ 4 ≥ 2x ⟺ 2 ≥ x. L'ensemble solution est donc ]-∞ ; 2].",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "[-2 ; +∞[",
+                "[2 ; +∞[",
+                "]-∞ ; 2]",
+                "]-∞ ; -2]"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de inéquations niveau seconde - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 3",
+              "question": "Résolvez l'inéquation 5 - x > 2x - 4. L'ensemble solution est :",
+              "correctAnswer": "]-∞ ; 3[",
+              "explanation": "5 - x > 2x - 4 ⟺ 5 + 4 > 2x + x ⟺ 9 > 3x ⟺ 3 > x. L'ensemble solution est ]-∞ ; 3[.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "]3 ; +∞[",
+                "]-∞ ; 3[",
+                "]-∞ ; -3[",
+                "[3 ; +∞["
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de inéquations niveau seconde - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 4",
+              "question": "Pour quelle(s) valeur(s) de x l'expression 2x - 3 est-elle positive ?",
+              "correctAnswer": "]3/2 ; +∞[",
+              "explanation": "2x - 3 > 0 ⟺ 2x > 3 ⟺ x > 3/2. L'expression est positive pour x ∈ ]3/2 ; +∞[.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "]-∞ ; 3/2[",
+                "]3/2 ; +∞[",
+                "]-∞ ; -3/2[",
+                "]2/3 ; +∞["
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de inéquations niveau seconde - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour inéquations - Question 5",
+              "question": "L'ensemble solution de l'inéquation x(3-x) > 0 est :",
+              "correctAnswer": "]0 ; 3[",
+              "explanation": "x(3-x) > 0. Le produit est positif quand les deux facteurs ont le même signe. x = 0 et 3-x = 0 (x = 3) sont les valeurs qui annulent l'expression. Par tableau de signes : solution ]0 ; 3[.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "]-∞ ; 0[ ∪ ]3 ; +∞[",
+                "]0 ; 3[",
+                "]-∞ ; 0] ∪ [3 ; +∞[",
+                "[0 ; 3]"
               ]
             },
             {
@@ -641,30 +641,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de probabilités niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 1",
+              "question": "Quelle est la probabilité de l'événement impossible ?",
+              "correctAnswer": "P(∅) = 0",
+              "explanation": "L'événement impossible ne peut jamais se réaliser, sa probabilité est donc nulle.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "P(∅) = 0",
+                "P(∅) = 1",
+                "P(∅) = 1/2",
+                "P(∅) = -1"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de probabilités niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 2",
+              "question": "Quelle est la probabilité de l'événement certain ?",
+              "correctAnswer": "P(Ω) = 1",
+              "explanation": "L'événement certain se réalise toujours, sa probabilité est donc égale à 1.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "P(Ω) = 1",
+                "P(Ω) = 0",
+                "P(Ω) = 1/2",
+                "P(Ω) = ∞"
               ]
             },
             {
@@ -770,30 +770,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 1",
+              "question": "Quelle est la mesure en radians d'un angle de 60° ?",
+              "correctAnswer": "π/3",
+              "explanation": "Pour convertir des degrés en radians : 60° × π/180° = π/3 radians.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "π/6",
+                "π/3",
+                "π/4",
+                "π/2"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 2",
+              "question": "Combien valent cos(π/4) et sin(π/4) ?",
+              "correctAnswer": "cos(π/4) = √2/2 et sin(π/4) = √2/2",
+              "explanation": "π/4 correspond à 45°. Pour cet angle remarquable, cos(π/4) = sin(π/4) = √2/2.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "cos(π/4) = √3/2 et sin(π/4) = 1/2",
+                "cos(π/4) = 1/2 et sin(π/4) = √3/2",
+                "cos(π/4) = √2/2 et sin(π/4) = √2/2",
+                "cos(π/4) = 1 et sin(π/4) = 0"
               ]
             },
             {
@@ -899,15 +899,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de vecteurs niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vecteurs - Question 1",
+              "question": "Deux vecteurs sont égaux si et seulement si ils ont :",
+              "correctAnswer": "La même direction, le même sens et la même longueur",
+              "explanation": "Deux vecteurs sont égaux s'ils ont exactement les mêmes caractéristiques : direction, sens et norme (longueur).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La même direction",
+                "Le même sens",
+                "La même longueur",
+                "La même direction, le même sens et la même longueur"
               ]
             },
             {
@@ -1037,15 +1037,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de genres littéraires niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour genres littéraires - Question 1",
+              "question": "Quels sont les trois grands genres littéraires traditionnels ?",
+              "correctAnswer": "Épique, lyrique, dramatique",
+              "explanation": "Les trois grands genres traditionnels selon Aristote sont l'épique (récit), le lyrique (poésie) et le dramatique (théâtre).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Roman, nouvelle, conte",
+                "Épique, lyrique, dramatique",
+                "Comédie, tragédie, drame",
+                "Récit, poésie, théâtre"
               ]
             },
             {
@@ -1166,30 +1166,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de registres niveau seconde - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour registres - Question 1",
+              "question": "Quel est l'objectif du registre pathétique ?",
+              "correctAnswer": "Faire compatir le lecteur",
+              "explanation": "Le registre pathétique vise à émouvoir le lecteur et à susciter sa compassion face à la souffrance des personnages.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Faire frémir le lecteur",
+                "Indigner le lecteur",
+                "Faire compatir le lecteur",
+                "Faire imaginer le lecteur"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de registres niveau seconde - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour registres - Question 2",
+              "question": "Qu'est-ce qui caractérise une situation au registre tragique ?",
+              "correctAnswer": "La situation est sans issue",
+              "explanation": "Le registre tragique présente des personnages face à un destin inéluctable, dans une situation sans échappatoire possible.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La situation est sans issue",
+                "La situation est inquiétante",
+                "La situation est drôle",
+                "La situation est confuse"
               ]
             },
             {

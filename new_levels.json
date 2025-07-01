@@ -9790,105 +9790,105 @@
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de équations niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 2",
+                  "question": "Que signifie 'résoudre une équation' ?",
+                  "correctAnswer": "Trouver la valeur de l'inconnue",
+                  "explanation": "Résoudre une équation consiste à trouver la ou les valeurs de l'inconnue qui rendent l'égalité vraie.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Trouver la valeur de l'inconnue",
+                    "Développer l'expression",
+                    "Factoriser l'expression",
+                    "Calculer le résultat"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de équations niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 3",
+                  "question": "Quelle est la solution de l'équation x + 5 = 12 ?",
+                  "correctAnswer": "x = 7",
+                  "explanation": "Pour résoudre x + 5 = 12, on soustrait 5 des deux côtés : x = 12 - 5 = 7.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x = 7",
+                    "x = 17",
+                    "x = 5",
+                    "x = 12"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de équations niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 4",
+                  "question": "Quelle est la solution de l'équation 3x = 15 ?",
+                  "correctAnswer": "x = 5",
+                  "explanation": "Pour résoudre 3x = 15, on divise les deux côtés par 3 : x = 15 ÷ 3 = 5.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x = 5",
+                    "x = 45",
+                    "x = 12",
+                    "x = 3"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de équations niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 5",
+                  "question": "Quelle est la solution de l'équation 2x + 3 = 11 ?",
+                  "correctAnswer": "x = 4",
+                  "explanation": "2x + 3 = 11 → 2x = 11 - 3 → 2x = 8 → x = 4.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x = 4",
+                    "x = 7",
+                    "x = 14",
+                    "x = 8"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de équations niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 6",
+                  "question": "Quelle est la solution de l'équation 5x - 7 = 3x + 1 ?",
+                  "correctAnswer": "x = 4",
+                  "explanation": "5x - 7 = 3x + 1 → 5x - 3x = 1 + 7 → 2x = 8 → x = 4.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x = 4",
+                    "x = 2",
+                    "x = 8",
+                    "x = -4"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de équations niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 7",
+                  "question": "Quelle est la solution de l'équation 3(x - 2) = 2x + 4 ?",
+                  "correctAnswer": "x = 10",
+                  "explanation": "3(x - 2) = 2x + 4 → 3x - 6 = 2x + 4 → 3x - 2x = 4 + 6 → x = 10.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x = 10",
+                    "x = 2",
+                    "x = 6",
+                    "x = -2"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de équations niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 8",
+                  "question": "Combien de solutions a l'équation x² = 16 ?",
+                  "correctAnswer": "2 solutions",
+                  "explanation": "x² = 16 a deux solutions : x = 4 et x = -4, car 4² = 16 et (-4)² = 16.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2 solutions",
+                    "1 solution",
+                    "0 solution",
+                    "3 solutions"
                   ]
                 }
               ]
@@ -9904,120 +9904,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de cosinus niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 1",
+                  "question": "Dans un triangle rectangle, que représente le cosinus d'un angle ?",
+                  "correctAnswer": "Le rapport du côté adjacent sur l'hypoténuse",
+                  "explanation": "cos(angle) = côté adjacent / hypoténuse dans un triangle rectangle.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le rapport du côté adjacent sur l'hypoténuse",
+                    "Le rapport du côté opposé sur l'hypoténuse",
+                    "Le rapport du côté opposé sur le côté adjacent",
+                    "Le rapport de l'hypoténuse sur le côté adjacent"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de cosinus niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 2",
+                  "question": "Que vaut cos(60°) ?",
+                  "correctAnswer": "1/2",
+                  "explanation": "cos(60°) = 1/2. C'est une valeur remarquable à connaître.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1/2",
+                    "√3/2",
+                    "√2/2",
+                    "1"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de cosinus niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 3",
+                  "question": "Que vaut cos(0°) ?",
+                  "correctAnswer": "1",
+                  "explanation": "cos(0°) = 1. Quand l'angle est nul, le côté adjacent égale l'hypoténuse.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1",
+                    "0",
+                    "1/2",
+                    "√2/2"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de cosinus niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 4",
+                  "question": "Dans un triangle rectangle, si l'hypoténuse mesure 10 cm et un côté adjacent 8 cm, que vaut le cosinus de l'angle correspondant ?",
+                  "correctAnswer": "0,8",
+                  "explanation": "cos(angle) = côté adjacent / hypoténuse = 8 / 10 = 0,8.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "0,8",
+                    "0,6",
+                    "1,25",
+                    "0,75"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de cosinus niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 5",
+                  "question": "Que vaut cos(45°) ?",
+                  "correctAnswer": "√2/2",
+                  "explanation": "cos(45°) = √2/2 ≈ 0,707. C'est une valeur remarquable du triangle rectangle isocèle.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "√2/2",
+                    "1/2",
+                    "√3/2",
+                    "1"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de cosinus niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 6",
+                  "question": "Si cos(α) = 0,6, que vaut le côté adjacent quand l'hypoténuse mesure 15 cm ?",
+                  "correctAnswer": "9 cm",
+                  "explanation": "cos(α) = adjacent / hypoténuse, donc adjacent = cos(α) × hypoténuse = 0,6 × 15 = 9 cm.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "9 cm",
+                    "12 cm",
+                    "25 cm",
+                    "6 cm"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de cosinus niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 7",
+                  "question": "Que vaut cos(90°) ?",
+                  "correctAnswer": "0",
+                  "explanation": "cos(90°) = 0 car dans un angle droit, le côté adjacent a une longueur nulle.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "0",
+                    "1",
+                    "1/2",
+                    "√2/2"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de cosinus niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour cosinus - Question 8",
+                  "question": "Comment calculer un angle connaissant son cosinus ?",
+                  "correctAnswer": "Utiliser la fonction arccos (cos⁻¹)",
+                  "explanation": "Pour trouver un angle à partir de son cosinus, on utilise la fonction réciproque arccos ou cos⁻¹.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Utiliser la fonction arccos (cos⁻¹)",
+                    "Multiplier par 180",
+                    "Diviser par π",
+                    "Utiliser le théorème de Pythagore"
                   ]
                 }
               ]
@@ -10033,120 +10033,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de puissances niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 1",
+                  "question": "Que signifie 3⁴ ?",
+                  "correctAnswer": "3 × 3 × 3 × 3",
+                  "explanation": "3⁴ signifie 3 multiplié par lui-même 4 fois : 3 × 3 × 3 × 3 = 81.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3 × 3 × 3 × 3",
+                    "3 × 4",
+                    "3 + 3 + 3 + 3",
+                    "4 × 4 × 4"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de puissances niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 2",
+                  "question": "Que vaut 2⁵ ?",
+                  "correctAnswer": "32",
+                  "explanation": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "32",
+                    "10",
+                    "25",
+                    "16"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de puissances niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 3",
+                  "question": "Que vaut 10³ ?",
+                  "correctAnswer": "1000",
+                  "explanation": "10³ = 10 × 10 × 10 = 1000. Les puissances de 10 donnent 1 suivi de zéros.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1000",
+                    "30",
+                    "100",
+                    "300"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de puissances niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 4",
+                  "question": "Que vaut 3² × 3³ ?",
+                  "correctAnswer": "3⁵",
+                  "explanation": "3² × 3³ = 3²⁺³ = 3⁵ = 243. Règle : aᵐ × aⁿ = aᵐ⁺ⁿ.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3⁵",
+                    "3⁶",
+                    "9⁵",
+                    "6⁵"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de puissances niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 5",
+                  "question": "Que vaut 5⁶ ÷ 5² ?",
+                  "correctAnswer": "5⁴",
+                  "explanation": "5⁶ ÷ 5² = 5⁶⁻² = 5⁴ = 625. Règle : aᵐ ÷ aⁿ = aᵐ⁻ⁿ.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "5⁴",
+                    "5³",
+                    "5⁸",
+                    "25³"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de puissances niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 6",
+                  "question": "Que vaut (2³)² ?",
+                  "correctAnswer": "2⁶",
+                  "explanation": "(2³)² = 2³ˣ² = 2⁶ = 64. Règle : (aᵐ)ⁿ = aᵐˣⁿ.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2⁶",
+                    "2⁵",
+                    "4⁶",
+                    "6²"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de puissances niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 7",
+                  "question": "Que vaut 7⁰ ?",
+                  "correctAnswer": "1",
+                  "explanation": "Toute puissance 0 d'un nombre non nul vaut 1. Donc 7⁰ = 1.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1",
+                    "0",
+                    "7",
+                    "Indéfini"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de puissances niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour puissances - Question 8",
+                  "question": "Comment s'écrit 0,001 en puissance de 10 ?",
+                  "correctAnswer": "10⁻³",
+                  "explanation": "0,001 = 1/1000 = 1/10³ = 10⁻³. Les puissances négatives représentent les inverses.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "10⁻³",
+                    "10³",
+                    "3⁻¹⁰",
+                    "10⁻¹"
                   ]
                 }
               ]
@@ -10162,120 +10162,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 1",
+                  "question": "Qu'est-ce qu'une fréquence en statistiques ?",
+                  "correctAnswer": "Le rapport de l'effectif sur l'effectif total",
+                  "explanation": "La fréquence = effectif / effectif total. Elle s'exprime souvent en pourcentage.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le rapport de l'effectif sur l'effectif total",
+                    "Le nombre d'occurrences",
+                    "La valeur la plus fréquente",
+                    "La différence entre deux valeurs"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 2",
+                  "question": "Dans une série de 50 données, si une valeur apparaît 15 fois, quelle est sa fréquence ?",
+                  "correctAnswer": "0,3 ou 30%",
+                  "explanation": "Fréquence = 15/50 = 0,3 = 30%.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "0,3 ou 30%",
+                    "0,15 ou 15%",
+                    "3,33 ou 333%",
+                    "50/15"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 3",
+                  "question": "Qu'est-ce qu'un quartile ?",
+                  "correctAnswer": "Une valeur qui divise la série en quatre parts égales",
+                  "explanation": "Les quartiles (Q1, Q2, Q3) divisent une série ordonnée en quatre parties de même effectif.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une valeur qui divise la série en quatre parts égales",
+                    "La valeur la plus fréquente",
+                    "La moyenne arithmétique",
+                    "L'écart entre les valeurs extrêmes"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 4",
+                  "question": "Quel quartile correspond à la médiane ?",
+                  "correctAnswer": "Q2",
+                  "explanation": "La médiane est le deuxième quartile (Q2) car elle divise la série en deux parties égales.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Q2",
+                    "Q1",
+                    "Q3",
+                    "Q4"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 5",
+                  "question": "Qu'est-ce que l'écart interquartile ?",
+                  "correctAnswer": "Q3 - Q1",
+                  "explanation": "L'écart interquartile = Q3 - Q1. Il mesure la dispersion des 50% des valeurs centrales.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Q3 - Q1",
+                    "Q2 - Q1",
+                    "Q3 - Q2",
+                    "Maximum - Minimum"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 6",
+                  "question": "Dans un diagramme en boîte (boxplot), que représente la boîte ?",
+                  "correctAnswer": "L'intervalle entre Q1 et Q3",
+                  "explanation": "La boîte du diagramme en boîte s'étend de Q1 à Q3, contenant 50% des données centrales.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "L'intervalle entre Q1 et Q3",
+                    "L'intervalle entre minimum et maximum",
+                    "L'écart-type",
+                    "La moyenne ± l'écart-type"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de statistiques niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 7",
+                  "question": "Pour la série : 2, 5, 7, 8, 9, 12, 15, 18, quel est le premier quartile Q1 ?",
+                  "correctAnswer": "6",
+                  "explanation": "Pour 8 valeurs, Q1 est la moyenne des 2e et 3e valeurs : Q1 = (5+7)/2 = 6.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "6",
+                    "5",
+                    "7",
+                    "5,5"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de statistiques niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 8",
+                  "question": "Qu'est-ce qu'une valeur aberrante (outlier) ?",
+                  "correctAnswer": "Une valeur très éloignée des autres",
+                  "explanation": "Une valeur aberrante est une donnée qui s'écarte significativement du reste de la série statistique.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une valeur très éloignée des autres",
+                    "La valeur la plus fréquente",
+                    "La médiane de la série",
+                    "Une erreur de calcul"
                   ]
                 }
               ]
@@ -10291,120 +10291,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de volumes niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 1",
+                  "question": "Quelle est la formule du volume d'un parallélépipède rectangle ?",
+                  "correctAnswer": "Longueur × largeur × hauteur",
+                  "explanation": "Le volume d'un parallélépipède rectangle = L × l × h.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Longueur × largeur × hauteur",
+                    "Longueur × largeur",
+                    "2 × (Longueur + largeur)",
+                    "π × rayon²"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de volumes niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 2",
+                  "question": "Quel est le volume d'un cube d'arête 5 cm ?",
+                  "correctAnswer": "125 cm³",
+                  "explanation": "Volume d'un cube = arête³ = 5³ = 125 cm³.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "125 cm³",
+                    "25 cm³",
+                    "75 cm³",
+                    "15 cm³"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de volumes niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 3",
+                  "question": "Quelle est la formule du volume d'un cylindre ?",
+                  "correctAnswer": "π × r² × h",
+                  "explanation": "Le volume d'un cylindre = π × rayon² × hauteur.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "π × r² × h",
+                    "2π × r × h",
+                    "π × r × h",
+                    "4π × r²"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de volumes niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 4",
+                  "question": "Quel est le volume d'un cylindre de rayon 3 cm et de hauteur 10 cm ? (π ≈ 3,14)",
+                  "correctAnswer": "282,6 cm³",
+                  "explanation": "Volume = π × r² × h = 3,14 × 3² × 10 = 3,14 × 9 × 10 = 282,6 cm³.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "282,6 cm³",
+                    "94,2 cm³",
+                    "188,4 cm³",
+                    "30 cm³"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de volumes niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 5",
+                  "question": "Quelle est la formule du volume d'une pyramide ?",
+                  "correctAnswer": "(Aire de la base × hauteur) ÷ 3",
+                  "explanation": "Le volume d'une pyramide = (Aire de la base × hauteur) ÷ 3.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "(Aire de la base × hauteur) ÷ 3",
+                    "Aire de la base × hauteur",
+                    "3 × Aire de la base × hauteur",
+                    "π × r² × h"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de volumes niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 6",
+                  "question": "Quel est le volume d'une sphère de rayon 6 cm ? (π ≈ 3,14)",
+                  "correctAnswer": "904,32 cm³",
+                  "explanation": "Volume d'une sphère = (4π × r³) ÷ 3 = (4 × 3,14 × 6³) ÷ 3 = (4 × 3,14 × 216) ÷ 3 = 904,32 cm³.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "904,32 cm³",
+                    "452,16 cm³",
+                    "678,24 cm³",
+                    "301,44 cm³"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de volumes niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 7",
+                  "question": "Quel est le volume d'un cône de rayon 4 cm et de hauteur 9 cm ? (π ≈ 3,14)",
+                  "correctAnswer": "150,72 cm³",
+                  "explanation": "Volume d'un cône = (π × r² × h) ÷ 3 = (3,14 × 4² × 9) ÷ 3 = (3,14 × 16 × 9) ÷ 3 = 150,72 cm³.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "150,72 cm³",
+                    "452,16 cm³",
+                    "113,04 cm³",
+                    "75,36 cm³"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de volumes niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour volumes - Question 8",
+                  "question": "Si on double toutes les dimensions d'un parallélépipède, par combien est multiplié son volume ?",
+                  "correctAnswer": "8",
+                  "explanation": "Si on multiplie chaque dimension par 2, le volume est multiplié par 2³ = 8.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "8",
+                    "2",
+                    "4",
+                    "6"
                   ]
                 }
               ]
@@ -10429,120 +10429,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de théâtre niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 1",
+                  "question": "Qu'est-ce qu'une didascalie au théâtre ?",
+                  "correctAnswer": "Une indication scénique",
+                  "explanation": "Les didascalies sont les indications de mise en scène données par l'auteur (gestes, décors, ton...).",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une indication scénique",
+                    "Une réplique d'un personnage",
+                    "Le titre de la pièce",
+                    "Un changement d'acte"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de théâtre niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 2",
+                  "question": "Qu'est-ce qu'un monologue ?",
+                  "correctAnswer": "Un personnage qui parle seul",
+                  "explanation": "Un monologue est une longue réplique d'un personnage qui s'exprime seul, souvent pour révéler ses pensées.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un personnage qui parle seul",
+                    "Une conversation entre deux personnages",
+                    "Une chanson dans la pièce",
+                    "Une indication de décor"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de théâtre niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 3",
+                  "question": "Qu'est-ce qu'un aparté au théâtre ?",
+                  "correctAnswer": "Une réplique que seul le public entend",
+                  "explanation": "L'aparté est une réplique qu'un personnage prononce pour le public, censée ne pas être entendue par les autres personnages.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une réplique que seul le public entend",
+                    "Un dialogue entre deux personnages",
+                    "Une indication de décor",
+                    "Un changement de scène"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de théâtre niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 4",
+                  "question": "Qui était Molière ?",
+                  "correctAnswer": "Un dramaturge français du XVIIe siècle",
+                  "explanation": "Molière (1622-1673) était un auteur dramatique français, maître de la comédie classique.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un dramaturge français du XVIIe siècle",
+                    "Un roi de France",
+                    "Un philosophe des Lumières",
+                    "Un poète romantique"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de théâtre niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 5",
+                  "question": "Quelle est la différence principale entre comédie et tragédie ?",
+                  "correctAnswer": "La comédie fait rire, la tragédie provoque pitié et terreur",
+                  "explanation": "La comédie vise à divertir et faire rire, tandis que la tragédie suscite des émotions fortes comme la pitié et la terreur.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La comédie fait rire, la tragédie provoque pitié et terreur",
+                    "La comédie est courte, la tragédie est longue",
+                    "La comédie est moderne, la tragédie est antique",
+                    "La comédie se joue le jour, la tragédie la nuit"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de théâtre niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 6",
+                  "question": "Qu'est-ce que l'exposition dans une pièce de théâtre ?",
+                  "correctAnswer": "Le début qui présente la situation et les personnages",
+                  "explanation": "L'exposition est la partie initiale qui informe le spectateur sur le contexte, les personnages et la situation de départ.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le début qui présente la situation et les personnages",
+                    "Le moment le plus intense de l'action",
+                    "La fin de la pièce",
+                    "Le changement de décor"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de théâtre niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 7",
+                  "question": "Qu'est-ce que la règle des trois unités au théâtre classique ?",
+                  "correctAnswer": "Unité de temps, de lieu et d'action",
+                  "explanation": "La règle des trois unités impose qu'une pièce se déroule en 24h maximum, en un seul lieu, avec une seule intrigue principale.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Unité de temps, de lieu et d'action",
+                    "Trois actes, trois personnages, trois décors",
+                    "Comédie, tragédie, drame",
+                    "Exposition, nœud, dénouement"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de théâtre niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour théâtre - Question 8",
+                  "question": "Qu'est-ce que le dénouement dans une pièce de théâtre ?",
+                  "correctAnswer": "La résolution finale du conflit",
+                  "explanation": "Le dénouement est la fin de la pièce où les conflits se résolvent et où l'intrigue trouve sa conclusion.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La résolution finale du conflit",
+                    "Le moment de tension maximale",
+                    "La présentation des personnages",
+                    "Le changement d'acte"
                   ]
                 }
               ]

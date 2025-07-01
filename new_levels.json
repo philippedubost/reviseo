@@ -4483,120 +4483,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de fractions niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 1",
+                  "question": "Quelle fraction représente trois quarts ?",
+                  "correctAnswer": "3/4",
+                  "explanation": "Trois quarts s'écrit 3/4, ce qui signifie 3 parties sur 4 parties totales.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3/4",
+                    "4/3",
+                    "3/5",
+                    "5/3"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de fractions niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 2",
+                  "question": "Quelle fraction est équivalente à 1/2 ?",
+                  "correctAnswer": "2/4",
+                  "explanation": "1/2 = 2/4 car si on multiplie le numérateur et le dénominateur par 2, on obtient une fraction équivalente.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2/4",
+                    "1/4",
+                    "3/4",
+                    "1/3"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de fractions niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 3",
+                  "question": "Combien font 1/4 + 1/4 ?",
+                  "correctAnswer": "1/2",
+                  "explanation": "1/4 + 1/4 = 2/4 = 1/2. On additionne les numérateurs quand les dénominateurs sont identiques.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1/2",
+                    "2/8",
+                    "1/8",
+                    "2/4"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de fractions niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 4",
+                  "question": "Quelle fraction est la plus grande : 2/3 ou 3/4 ?",
+                  "correctAnswer": "3/4",
+                  "explanation": "Pour comparer, on peut convertir : 2/3 = 8/12 et 3/4 = 9/12. Donc 3/4 > 2/3.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3/4",
+                    "2/3",
+                    "Elles sont égales",
+                    "Impossible à déterminer"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de fractions niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 5",
+                  "question": "Combien font 3/5 - 1/5 ?",
+                  "correctAnswer": "2/5",
+                  "explanation": "3/5 - 1/5 = (3-1)/5 = 2/5. On soustrait les numérateurs quand les dénominateurs sont identiques.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2/5",
+                    "2/10",
+                    "4/5",
+                    "1/5"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de fractions niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 6",
+                  "question": "Quelle fraction représente la moitié de 2/3 ?",
+                  "correctAnswer": "1/3",
+                  "explanation": "La moitié de 2/3 = (2/3) ÷ 2 = 2/3 × 1/2 = 2/6 = 1/3.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1/3",
+                    "1/6",
+                    "2/6",
+                    "4/6"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de fractions niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 7",
+                  "question": "Combien font 2/3 + 1/6 ?",
+                  "correctAnswer": "5/6",
+                  "explanation": "Il faut mettre au même dénominateur : 2/3 = 4/6, donc 4/6 + 1/6 = 5/6.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "5/6",
+                    "3/9",
+                    "3/6",
+                    "7/6"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de fractions niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour fractions - Question 8",
+                  "question": "Quelle est la forme simplifiée de 6/9 ?",
+                  "correctAnswer": "2/3",
+                  "explanation": "6/9 = 2/3 car on peut diviser le numérateur et le dénominateur par 3.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2/3",
+                    "3/2",
+                    "6/9",
+                    "1/3"
                   ]
                 }
               ]
@@ -4612,120 +4612,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 1",
+                  "question": "Si 3 pommes coûtent 6€, combien coûtent 6 pommes ?",
+                  "correctAnswer": "12€",
+                  "explanation": "C'est une situation de proportionnalité : 6 pommes coûtent 2 fois plus, donc 6 × 2 = 12€.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "12€",
+                    "9€",
+                    "18€",
+                    "10€"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 2",
+                  "question": "Dans un tableau de proportionnalité, si la première ligne est 2, 4, 6 et la deuxième commence par 10, quelle est la suite ?",
+                  "correctAnswer": "10, 20, 30",
+                  "explanation": "Le coefficient de proportionnalité est 5 (10÷2=5), donc 4×5=20 et 6×5=30.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "10, 20, 30",
+                    "10, 14, 16",
+                    "10, 12, 14",
+                    "10, 15, 20"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 3",
+                  "question": "Si 5 stylos coûtent 15€, combien coûte 1 stylo ?",
+                  "correctAnswer": "3€",
+                  "explanation": "Pour trouver le prix unitaire, on divise : 15€ ÷ 5 stylos = 3€ par stylo.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3€",
+                    "5€",
+                    "2€",
+                    "4€"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 4",
+                  "question": "Une voiture consomme 8L d'essence pour 100km. Combien consomme-t-elle pour 250km ?",
+                  "correctAnswer": "20L",
+                  "explanation": "250km = 2,5 × 100km, donc la consommation sera 2,5 × 8L = 20L.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "20L",
+                    "16L",
+                    "25L",
+                    "18L"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 5",
+                  "question": "Sur une carte à l'échelle 1:50000, 2cm représentent quelle distance réelle ?",
+                  "correctAnswer": "1km",
+                  "explanation": "2cm sur la carte = 2cm × 50000 = 100000cm = 1000m = 1km dans la réalité.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1km",
+                    "500m",
+                    "2km",
+                    "5km"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 6",
+                  "question": "Si 4 ouvriers construisent un mur en 12 jours, combien de jours faut-il à 6 ouvriers ?",
+                  "correctAnswer": "8 jours",
+                  "explanation": "C'est une proportionnalité inverse : plus d'ouvriers = moins de temps. 4×12 = 48 jours-ouvriers, donc 48÷6 = 8 jours.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "8 jours",
+                    "18 jours",
+                    "16 jours",
+                    "9 jours"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 7",
+                  "question": "Dans une recette pour 4 personnes, il faut 200g de farine. Combien faut-il de farine pour 7 personnes ?",
+                  "correctAnswer": "350g",
+                  "explanation": "Pour 7 personnes : 200g × 7 ÷ 4 = 1400 ÷ 4 = 350g de farine.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "350g",
+                    "280g",
+                    "400g",
+                    "300g"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de proportionnalité niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour proportionnalité - Question 8",
+                  "question": "Un robinet remplit une piscine en 5 heures. À ce rythme, combien de temps faut-il pour remplir 3/4 de la piscine ?",
+                  "correctAnswer": "3h45min",
+                  "explanation": "3/4 de la piscine = 3/4 × 5h = 15/4 h = 3,75h = 3h45min.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3h45min",
+                    "4h15min",
+                    "3h30min",
+                    "4h"
                   ]
                 }
               ]
@@ -4741,120 +4741,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de géométrie niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 1",
+                  "question": "Combien de côtés a un pentagone ?",
+                  "correctAnswer": "5",
+                  "explanation": "Un pentagone est un polygone à 5 côtés. Le préfixe 'penta' signifie cinq.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "5",
+                    "4",
+                    "6",
+                    "7"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de géométrie niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 2",
+                  "question": "Quelle est l'aire d'un rectangle de longueur 8 cm et largeur 5 cm ?",
+                  "correctAnswer": "40 cm²",
+                  "explanation": "L'aire d'un rectangle = longueur × largeur = 8 × 5 = 40 cm².",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "40 cm²",
+                    "26 cm²",
+                    "13 cm²",
+                    "35 cm²"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de géométrie niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 3",
+                  "question": "Quel est le périmètre d'un carré de côté 6 cm ?",
+                  "correctAnswer": "24 cm",
+                  "explanation": "Le périmètre d'un carré = 4 × côté = 4 × 6 = 24 cm.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "24 cm",
+                    "12 cm",
+                    "36 cm",
+                    "18 cm"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de géométrie niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 4",
+                  "question": "Quelle est l'aire d'un triangle de base 10 cm et hauteur 6 cm ?",
+                  "correctAnswer": "30 cm²",
+                  "explanation": "L'aire d'un triangle = (base × hauteur) ÷ 2 = (10 × 6) ÷ 2 = 30 cm².",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "30 cm²",
+                    "60 cm²",
+                    "16 cm²",
+                    "32 cm²"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de géométrie niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 5",
+                  "question": "Combien mesure un angle droit ?",
+                  "correctAnswer": "90°",
+                  "explanation": "Un angle droit mesure exactement 90 degrés, comme l'angle d'un carré.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "90°",
+                    "180°",
+                    "45°",
+                    "60°"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de géométrie niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 6",
+                  "question": "Quel est le rayon d'un cercle dont le diamètre mesure 14 cm ?",
+                  "correctAnswer": "7 cm",
+                  "explanation": "Le rayon est la moitié du diamètre : 14 ÷ 2 = 7 cm.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "7 cm",
+                    "14 cm",
+                    "28 cm",
+                    "3,5 cm"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de géométrie niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 7",
+                  "question": "Quelle est l'aire d'un parallélogramme de base 12 cm et hauteur 8 cm ?",
+                  "correctAnswer": "96 cm²",
+                  "explanation": "L'aire d'un parallélogramme = base × hauteur = 12 × 8 = 96 cm².",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "96 cm²",
+                    "40 cm²",
+                    "20 cm²",
+                    "48 cm²"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de géométrie niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour géométrie - Question 8",
+                  "question": "Combien d'axes de symétrie a un rectangle ?",
+                  "correctAnswer": "2",
+                  "explanation": "Un rectangle a 2 axes de symétrie : un axe horizontal et un axe vertical passant par son centre.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "2",
+                    "4",
+                    "1",
+                    "0"
                   ]
                 }
               ]
@@ -4870,120 +4870,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 1",
+                  "question": "Quelle est la moyenne des nombres 4, 6, 8, 10 ?",
+                  "correctAnswer": "7",
+                  "explanation": "La moyenne = (4 + 6 + 8 + 10) ÷ 4 = 28 ÷ 4 = 7.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "7",
+                    "6",
+                    "8",
+                    "7,5"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 2",
+                  "question": "Dans la série 3, 5, 5, 7, 9, quelle est la médiane ?",
+                  "correctAnswer": "5",
+                  "explanation": "La médiane est la valeur centrale quand les données sont rangées : 3, 5, 5, 7, 9. La valeur centrale est 5.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "5",
+                    "6",
+                    "7",
+                    "5,8"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de statistiques niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 3",
+                  "question": "Dans la série 2, 4, 4, 4, 6, 8, quel est le mode ?",
+                  "correctAnswer": "4",
+                  "explanation": "Le mode est la valeur qui apparaît le plus souvent. Ici, 4 apparaît 3 fois.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "4",
+                    "2",
+                    "6",
+                    "5"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 4",
+                  "question": "Dans un diagramme en barres, quelle information indique la hauteur des barres ?",
+                  "correctAnswer": "La fréquence",
+                  "explanation": "Dans un diagramme en barres, la hauteur de chaque barre représente la fréquence (nombre d'occurrences) de chaque valeur.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La fréquence",
+                    "La valeur",
+                    "La moyenne",
+                    "La médiane"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 5",
+                  "question": "Quelle est l'étendue de la série : 12, 8, 15, 3, 20 ?",
+                  "correctAnswer": "17",
+                  "explanation": "L'étendue = valeur maximale - valeur minimale = 20 - 3 = 17.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "17",
+                    "11,6",
+                    "12",
+                    "23"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de statistiques niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 6",
+                  "question": "Dans un diagramme circulaire, si une part représente 90°, quel pourcentage représente-t-elle ?",
+                  "correctAnswer": "25%",
+                  "explanation": "90° sur 360° = 90/360 = 1/4 = 25% du cercle total.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "25%",
+                    "30%",
+                    "20%",
+                    "90%"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de statistiques niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 7",
+                  "question": "Dans une enquête sur 100 personnes, 35 préfèrent le bleu, 25 le rouge, 20 le vert et 20 le jaune. Quelle couleur a la plus grande fréquence relative ?",
+                  "correctAnswer": "Bleu",
+                  "explanation": "Le bleu a la fréquence la plus élevée avec 35/100 = 35% des réponses.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Bleu",
+                    "Rouge",
+                    "Vert",
+                    "Jaune"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de statistiques niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour statistiques - Question 8",
+                  "question": "Quelle est la moyenne pondérée si on a les notes 12 (coefficient 2), 15 (coefficient 3) et 18 (coefficient 1) ?",
+                  "correctAnswer": "14,5",
+                  "explanation": "Moyenne pondérée = (12×2 + 15×3 + 18×1) ÷ (2+3+1) = (24+45+18) ÷ 6 = 87 ÷ 6 = 14,5.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "14,5",
+                    "15",
+                    "13,5",
+                    "16"
                   ]
                 }
               ]
@@ -4999,120 +4999,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de angles niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 1",
+                  "question": "Comment appelle-t-on un angle de 180° ?",
+                  "correctAnswer": "Angle plat",
+                  "explanation": "Un angle de 180° est appelé un angle plat car il forme une ligne droite.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Angle plat",
+                    "Angle droit",
+                    "Angle aigu",
+                    "Angle obtus"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de angles niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 2",
+                  "question": "Un angle de 45° est-il aigu, droit ou obtus ?",
+                  "correctAnswer": "Aigu",
+                  "explanation": "Un angle aigu mesure moins de 90°. Comme 45° < 90°, c'est un angle aigu.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Aigu",
+                    "Droit",
+                    "Obtus",
+                    "Plat"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de angles niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 3",
+                  "question": "Quelle est la mesure d'un angle obtus ?",
+                  "correctAnswer": "Entre 90° et 180°",
+                  "explanation": "Un angle obtus mesure plus de 90° mais moins de 180°.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Entre 90° et 180°",
+                    "Moins de 90°",
+                    "Exactement 90°",
+                    "Plus de 180°"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de angles niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 4",
+                  "question": "Deux angles complémentaires ont une somme de combien de degrés ?",
+                  "correctAnswer": "90°",
+                  "explanation": "Deux angles sont complémentaires si leur somme fait 90° (un angle droit).",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "90°",
+                    "180°",
+                    "360°",
+                    "45°"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de angles niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 5",
+                  "question": "Deux angles supplémentaires ont une somme de combien de degrés ?",
+                  "correctAnswer": "180°",
+                  "explanation": "Deux angles sont supplémentaires si leur somme fait 180° (un angle plat).",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "180°",
+                    "90°",
+                    "360°",
+                    "270°"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de angles niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 6",
+                  "question": "Dans un triangle, la somme des trois angles vaut combien ?",
+                  "correctAnswer": "180°",
+                  "explanation": "Dans tout triangle, la somme des trois angles intérieurs est toujours égale à 180°.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "180°",
+                    "90°",
+                    "360°",
+                    "270°"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de angles niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 7",
+                  "question": "Si un angle mesure 35°, combien mesure son complément ?",
+                  "correctAnswer": "55°",
+                  "explanation": "Le complément d'un angle de 35° = 90° - 35° = 55°.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "55°",
+                    "145°",
+                    "65°",
+                    "125°"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de angles niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour angles - Question 8",
+                  "question": "Si un angle mesure 120°, combien mesure son supplément ?",
+                  "correctAnswer": "60°",
+                  "explanation": "Le supplément d'un angle de 120° = 180° - 120° = 60°.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "60°",
+                    "240°",
+                    "30°",
+                    "90°"
                   ]
                 }
               ]
@@ -5128,120 +5128,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de périmètres niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 1",
+                  "question": "Quel est le périmètre d'un rectangle de longueur 12 cm et largeur 8 cm ?",
+                  "correctAnswer": "40 cm",
+                  "explanation": "Périmètre d'un rectangle = 2 × (longueur + largeur) = 2 × (12 + 8) = 2 × 20 = 40 cm.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "40 cm",
+                    "96 cm",
+                    "20 cm",
+                    "32 cm"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de périmètres niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 2",
+                  "question": "Quel est le périmètre d'un triangle équilatéral de côté 9 cm ?",
+                  "correctAnswer": "27 cm",
+                  "explanation": "Un triangle équilatéral a 3 côtés égaux, donc périmètre = 3 × 9 = 27 cm.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "27 cm",
+                    "18 cm",
+                    "36 cm",
+                    "81 cm"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de périmètres niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 3",
+                  "question": "Le périmètre d'un cercle s'appelle comment ?",
+                  "correctAnswer": "Circonférence",
+                  "explanation": "Le périmètre d'un cercle s'appelle la circonférence.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Circonférence",
+                    "Diamètre",
+                    "Rayon",
+                    "Aire"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de périmètres niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 4",
+                  "question": "Quel est le périmètre d'un losange dont tous les côtés mesurent 7 cm ?",
+                  "correctAnswer": "28 cm",
+                  "explanation": "Un losange a 4 côtés égaux, donc périmètre = 4 × 7 = 28 cm.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "28 cm",
+                    "14 cm",
+                    "49 cm",
+                    "21 cm"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de périmètres niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 5",
+                  "question": "Un terrain rectangulaire a un périmètre de 60 m. Si sa largeur est de 10 m, quelle est sa longueur ?",
+                  "correctAnswer": "20 m",
+                  "explanation": "Périmètre = 2 × (longueur + largeur). Donc 60 = 2 × (longueur + 10), soit longueur = 20 m.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "20 m",
+                    "25 m",
+                    "30 m",
+                    "40 m"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de périmètres niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 6",
+                  "question": "Quel est le périmètre d'un hexagone régulier de côté 5 cm ?",
+                  "correctAnswer": "30 cm",
+                  "explanation": "Un hexagone régulier a 6 côtés égaux, donc périmètre = 6 × 5 = 30 cm.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "30 cm",
+                    "25 cm",
+                    "35 cm",
+                    "20 cm"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de périmètres niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 7",
+                  "question": "Quel est le périmètre d'un triangle isocèle ayant deux côtés de 8 cm et un côté de 6 cm ?",
+                  "correctAnswer": "22 cm",
+                  "explanation": "Périmètre = somme des trois côtés = 8 + 8 + 6 = 22 cm.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "22 cm",
+                    "16 cm",
+                    "20 cm",
+                    "24 cm"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de périmètres niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour périmètres - Question 8",
+                  "question": "Si le périmètre d'un carré est de 32 cm, quelle est la longueur de son côté ?",
+                  "correctAnswer": "8 cm",
+                  "explanation": "Périmètre d'un carré = 4 × côté. Donc côté = 32 ÷ 4 = 8 cm.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "8 cm",
+                    "4 cm",
+                    "16 cm",
+                    "12 cm"
                   ]
                 }
               ]
@@ -5371,120 +5371,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de conjugaison niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 1",
+                  "question": "Conjugue le verbe 'être' à la 3ème personne du singulier au présent de l'indicatif.",
+                  "correctAnswer": "il est",
+                  "explanation": "Le verbe 'être' se conjugue 'il est' à la 3ème personne du singulier au présent.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "il est",
+                    "il a",
+                    "il était",
+                    "il sera"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de conjugaison niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 2",
+                  "question": "Quel est l'infinitif du verbe dans la phrase : 'Nous mangeons une pomme' ?",
+                  "correctAnswer": "manger",
+                  "explanation": "L'infinitif du verbe 'mangeons' est 'manger'.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "manger",
+                    "mange",
+                    "mangé",
+                    "mangeant"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de conjugaison niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 3",
+                  "question": "Conjugue le verbe 'avoir' à la 1ère personne du pluriel au présent de l'indicatif.",
+                  "correctAnswer": "nous avons",
+                  "explanation": "Le verbe 'avoir' se conjugue 'nous avons' à la 1ère personne du pluriel au présent.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "nous avons",
+                    "nous sommes",
+                    "nous avions",
+                    "nous aurons"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de conjugaison niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 4",
+                  "question": "À quel temps est conjugué le verbe dans : 'Hier, tu as chanté' ?",
+                  "correctAnswer": "Passé composé",
+                  "explanation": "'As chanté' est conjugué au passé composé (auxiliaire avoir + participe passé).",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Passé composé",
+                    "Imparfait",
+                    "Présent",
+                    "Futur"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de conjugaison niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 5",
+                  "question": "Conjugue le verbe 'finir' à la 2ème personne du singulier au présent de l'indicatif.",
+                  "correctAnswer": "tu finis",
+                  "explanation": "Le verbe 'finir' (2ème groupe) se conjugue 'tu finis' au présent.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "tu finis",
+                    "tu fines",
+                    "tu finit",
+                    "tu finira"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de conjugaison niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 6",
+                  "question": "À quel groupe appartient le verbe 'chanter' ?",
+                  "correctAnswer": "1er groupe",
+                  "explanation": "Le verbe 'chanter' se termine par -er, il appartient donc au 1er groupe.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "1er groupe",
+                    "2ème groupe",
+                    "3ème groupe",
+                    "Auxiliaire"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de conjugaison niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 7",
+                  "question": "Conjugue le verbe 'aller' à la 3ème personne du pluriel au futur simple.",
+                  "correctAnswer": "ils iront",
+                  "explanation": "Le verbe 'aller' se conjugue 'ils iront' au futur simple (verbe irrégulier).",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "ils iront",
+                    "ils alleront",
+                    "ils vont",
+                    "ils allaient"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de conjugaison niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour conjugaison - Question 8",
+                  "question": "Quel est le participe passé du verbe 'prendre' ?",
+                  "correctAnswer": "pris",
+                  "explanation": "Le participe passé du verbe 'prendre' est 'pris' (verbe irrégulier du 3ème groupe).",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "pris",
+                    "prend",
+                    "prit",
+                    "prendu"
                   ]
                 }
               ]
@@ -5500,120 +5500,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de orthographe niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 1",
+                  "question": "Quelle est la bonne orthographe ?",
+                  "correctAnswer": "J'ai mangé",
+                  "explanation": "Le participe passé 'mangé' ne s'accorde pas avec l'auxiliaire avoir quand il n'y a pas de COD placé avant.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "J'ai mangé",
+                    "J'ai mangée",
+                    "J'ai mangés",
+                    "J'ai mangées"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de orthographe niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 2",
+                  "question": "Comment écrit-on le pluriel de 'cheval' ?",
+                  "correctAnswer": "chevaux",
+                  "explanation": "Le pluriel de 'cheval' est 'chevaux' (pluriel irrégulier en -aux).",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "chevaux",
+                    "chevals",
+                    "chevaus",
+                    "chevales"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de orthographe niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 3",
+                  "question": "Quelle est la bonne orthographe ?",
+                  "correctAnswer": "Elles sont parties",
+                  "explanation": "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet : 'elles' (féminin pluriel) → 'parties'.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Elles sont parties",
+                    "Elles sont parti",
+                    "Elles sont partis",
+                    "Elles sont partie"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de orthographe niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 4",
+                  "question": "Quelle est la bonne orthographe du son [s] ?",
+                  "correctAnswer": "Il commence",
+                  "explanation": "Devant 'e', 'i', 'y', on écrit 'c' pour faire le son [s]. Devant 'a', 'o', 'u', on écrit 'ç'.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Il commence",
+                    "Il comense",
+                    "Il commense",
+                    "Il çommence"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de orthographe niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 5",
+                  "question": "Quelle est la bonne orthographe ?",
+                  "correctAnswer": "Nous avons reçu",
+                  "explanation": "On écrit 'ç' devant 'u' pour conserver le son [s] du verbe 'recevoir'.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Nous avons reçu",
+                    "Nous avons recu",
+                    "Nous avons ressu",
+                    "Nous avons receu"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de orthographe niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 6",
+                  "question": "Comment écrit-on le féminin de 'acteur' ?",
+                  "correctAnswer": "actrice",
+                  "explanation": "Le féminin d'acteur est 'actrice' (changement de suffixe : -eur → -rice).",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "actrice",
+                    "acteure",
+                    "actresse",
+                    "acteuse"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de orthographe niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 7",
+                  "question": "Quelle est la bonne orthographe ?",
+                  "correctAnswer": "Ils se sont lavés",
+                  "explanation": "Avec un verbe pronominal, le participe passé s'accorde avec le sujet quand le pronom réfléchi est COD.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Ils se sont lavés",
+                    "Ils se sont lavé",
+                    "Ils se sont lavées",
+                    "Ils se sont lavée"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de orthographe niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour orthographe - Question 8",
+                  "question": "Quelle est la bonne orthographe ?",
+                  "correctAnswer": "Vingt-deux",
+                  "explanation": "Les nombres composés inférieurs à cent prennent un trait d'union : vingt-deux.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Vingt-deux",
+                    "Vingt deux",
+                    "Vingts-deux",
+                    "Vingts deux"
                   ]
                 }
               ]
@@ -5629,120 +5629,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 1",
+                  "question": "Quel est le synonyme de 'content' ?",
+                  "correctAnswer": "heureux",
+                  "explanation": "'Content' et 'heureux' ont le même sens : ils expriment la joie, la satisfaction.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "heureux",
+                    "triste",
+                    "fatigué",
+                    "énervé"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 2",
+                  "question": "Quel est l'antonyme de 'rapide' ?",
+                  "correctAnswer": "lent",
+                  "explanation": "'Rapide' et 'lent' sont des antonymes : ils ont des sens opposés.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "lent",
+                    "vite",
+                    "grand",
+                    "fort"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 3",
+                  "question": "Que signifie le préfixe 'dé-' dans 'défaire' ?",
+                  "correctAnswer": "Action contraire",
+                  "explanation": "Le préfixe 'dé-' exprime l'action contraire : défaire = faire le contraire de faire.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Action contraire",
+                    "Répétition",
+                    "Intensité",
+                    "Temps"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 4",
+                  "question": "Quel mot appartient au champ lexical de la mer ?",
+                  "correctAnswer": "vague",
+                  "explanation": "Le champ lexical de la mer regroupe tous les mots liés à cet univers : vague, océan, poisson, navire...",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "vague",
+                    "montagne",
+                    "forêt",
+                    "désert"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 5",
+                  "question": "Que signifie le suffixe '-tion' dans 'création' ?",
+                  "correctAnswer": "Action ou résultat",
+                  "explanation": "Le suffixe '-tion' forme des noms qui expriment l'action ou le résultat d'une action.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Action ou résultat",
+                    "Lieu",
+                    "Personne",
+                    "Qualité"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 6",
+                  "question": "Quel est le sens figuré de 'avoir le cœur sur la main' ?",
+                  "correctAnswer": "Être généreux",
+                  "explanation": "Cette expression signifie être généreux, prêt à donner ou à aider les autres.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Être généreux",
+                    "Être malade",
+                    "Être timide",
+                    "Être en colère"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 7",
+                  "question": "Quel mot de la même famille que 'terre' signifie 'qui vit sur la terre' ?",
+                  "correctAnswer": "terrestre",
+                  "explanation": "'Terrestre' appartient à la famille de 'terre' et signifie 'qui vit sur la terre'.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "terrestre",
+                    "territorial",
+                    "terrible",
+                    "terrain"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de vocabulaire niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour vocabulaire - Question 8",
+                  "question": "Quel registre de langue utilise-t-on dans 'Il pleut des cordes' ?",
+                  "correctAnswer": "Familier",
+                  "explanation": "'Il pleut des cordes' est une expression familière qui signifie 'il pleut très fort'.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Familier",
+                    "Soutenu",
+                    "Courant",
+                    "Scientifique"
                   ]
                 }
               ]
@@ -5758,120 +5758,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 1",
+                  "question": "Quel héros du Moyen Âge est associé à la Table Ronde ?",
+                  "correctAnswer": "Le roi Arthur",
+                  "explanation": "Le roi Arthur et ses chevaliers de la Table Ronde sont des héros légendaires de la littérature médiévale.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le roi Arthur",
+                    "Charlemagne",
+                    "Roland",
+                    "Perceval"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 2",
+                  "question": "Comment appelle-t-on un récit épique du Moyen Âge ?",
+                  "correctAnswer": "Une chanson de geste",
+                  "explanation": "Les chansons de geste sont des récits épiques médiévaux qui racontent les exploits de héros.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une chanson de geste",
+                    "Un fabliau",
+                    "Un lai",
+                    "Une ballade"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 3",
+                  "question": "Quel animal symbolise souvent la ruse dans les récits médiévaux ?",
+                  "correctAnswer": "Le renard",
+                  "explanation": "Dans les récits médiévaux comme le Roman de Renart, le renard symbolise la ruse et l'intelligence.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le renard",
+                    "Le lion",
+                    "L'ours",
+                    "Le loup"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 4",
+                  "question": "Quelle quête est centrale dans les romans arthuriens ?",
+                  "correctAnswer": "La quête du Graal",
+                  "explanation": "La quête du Graal (coupe sacrée) est un thème majeur des romans arthuriens du Moyen Âge.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La quête du Graal",
+                    "La conquête de l'Espagne",
+                    "La recherche de l'or",
+                    "La libération de Jérusalem"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 5",
+                  "question": "Qui était Chrétien de Troyes ?",
+                  "correctAnswer": "Un auteur de romans courtois",
+                  "explanation": "Chrétien de Troyes était un écrivain du XIIe siècle, auteur de romans courtois sur les chevaliers de la Table Ronde.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un auteur de romans courtois",
+                    "Un roi de France",
+                    "Un chevalier",
+                    "Un moine copiste"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 6",
+                  "question": "Qu'est-ce qu'un fabliau ?",
+                  "correctAnswer": "Un récit court et amusant",
+                  "explanation": "Un fabliau est un court récit en vers du Moyen Âge, souvent comique et satirique.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un récit court et amusant",
+                    "Un poème d'amour",
+                    "Un récit épique",
+                    "Une pièce de théâtre"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 7",
+                  "question": "Dans quel type de manuscrit étaient copiés les textes au Moyen Âge ?",
+                  "correctAnswer": "Les manuscrits enluminés",
+                  "explanation": "Au Moyen Âge, les textes étaient copiés à la main dans des manuscrits souvent décorés d'enluminures.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Les manuscrits enluminés",
+                    "Les livres imprimés",
+                    "Les journaux",
+                    "Les tablettes de cire"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de littérature médiévale niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour littérature médiévale - Question 8",
+                  "question": "Quelle valeur est centrale dans la littérature courtoise ?",
+                  "correctAnswer": "L'amour courtois",
+                  "explanation": "L'amour courtois, idéal de l'amour noble et raffiné, est au cœur de la littérature courtoise médiévale.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "L'amour courtois",
+                    "La guerre",
+                    "L'argent",
+                    "La vengeance"
                   ]
                 }
               ]

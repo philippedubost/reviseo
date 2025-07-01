@@ -2417,105 +2417,105 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "question": "Qu'est-ce que les Croisades ?",
+              "correctAnswer": "Des expéditions militaires pour reconquérir Jérusalem",
+              "explanation": "Les Croisades sont des expéditions militaires organisées par l'Église catholique pour reconquérir la Terre sainte (Jérusalem) aux musulmans.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des expéditions militaires pour reconquérir Jérusalem",
+                "Des pèlerinages pacifiques",
+                "Des constructions d'églises",
+                "Des missions d'évangélisation"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "question": "Qui a lancé la première Croisade en 1095 ?",
+              "correctAnswer": "Le pape Urbain II",
+              "explanation": "Le pape Urbain II a lancé la première Croisade en 1095 lors du concile de Clermont, appelant les chrétiens à libérer Jérusalem.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pape Urbain II",
+                "Le roi de France",
+                "L'empereur byzantin",
+                "Saint Bernard"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "question": "Qu'est-ce qu'un ordre religieux militaire ?",
+              "correctAnswer": "Des moines-soldats qui combattent pour la foi",
+              "explanation": "Les ordres religieux militaires comme les Templiers ou les Hospitaliers sont des communautés de moines-soldats qui combattent pour défendre la foi chrétienne.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des moines-soldats qui combattent pour la foi",
+                "Des prêtres de paroisse",
+                "Des ermites dans le désert",
+                "Des marchands chrétiens"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "question": "Qu'est-ce que l'Inquisition ?",
+              "correctAnswer": "Un tribunal religieux pour lutter contre l'hérésie",
+              "explanation": "L'Inquisition est un tribunal religieux créé par l'Église pour identifier, juger et punir les hérétiques (ceux qui s'opposent aux dogmes chrétiens).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un tribunal religieux pour lutter contre l'hérésie",
+                "Un ordre monastique",
+                "Une université",
+                "Un pèlerinage"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "question": "Qu'est-ce qu'une hérésie ?",
+              "correctAnswer": "Une doctrine contraire aux enseignements de l'Église",
+              "explanation": "Une hérésie est une doctrine ou une croyance qui s'oppose aux enseignements officiels de l'Église catholique. Les hérétiques étaient persécutés.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une doctrine contraire aux enseignements de l'Église",
+                "Une nouvelle église",
+                "Un livre religieux",
+                "Une fête religieuse"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "question": "Qu'est-ce que la querelle des investitures ?",
+              "correctAnswer": "Un conflit entre le pape et l'empereur sur la nomination des évêques",
+              "explanation": "La querelle des investitures (XIe-XIIe siècles) oppose le pape et l'empereur germanique sur le droit de nommer les évêques et de leur donner leurs pouvoirs.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un conflit entre le pape et l'empereur sur la nomination des évêques",
+                "Une guerre entre chrétiens et musulmans",
+                "Un débat théologique",
+                "Une réforme monastique"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "question": "Quel pape a affirmé la supériorité du pouvoir spirituel sur le pouvoir temporel ?",
+              "correctAnswer": "Grégoire VII",
+              "explanation": "Le pape Grégoire VII (1073-1085) a affirmé dans le Dictatus papae la supériorité du pouvoir spirituel (l'Église) sur le pouvoir temporel (les rois).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Grégoire VII",
+                "Urbain II",
+                "Innocent III",
+                "Alexandre III"
               ]
             },
             {

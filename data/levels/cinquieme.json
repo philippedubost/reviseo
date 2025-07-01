@@ -290,60 +290,60 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de fractions niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 5",
+              "question": "Comparer les fractions 3/4 et 5/6",
+              "correctAnswer": "3/4 < 5/6",
+              "explanation": "Pour comparer, on met au même dénominateur : 3/4 = 9/12 et 5/6 = 10/12. Donc 9/12 < 10/12, soit 3/4 < 5/6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3/4 < 5/6",
+                "3/4 > 5/6",
+                "3/4 = 5/6",
+                "Impossible à comparer"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de fractions niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 6",
+              "question": "Calculer 2/3 - 1/4",
+              "correctAnswer": "5/12",
+              "explanation": "Pour soustraire des fractions : 2/3 - 1/4 = 8/12 - 3/12 = 5/12.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5/12",
+                "1/7",
+                "7/12",
+                "1/12"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de fractions niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 7",
+              "question": "Quelle fraction de 24 représente 18 ?",
+              "correctAnswer": "3/4",
+              "explanation": "18 sur 24 s'écrit 18/24. En simplifiant par 6 : 18/24 = 3/4.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3/4",
+                "2/3",
+                "4/3",
+                "6/8"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de fractions niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fractions - Question 8",
+              "question": "Calculer (3/5) ÷ (2/7)",
+              "correctAnswer": "21/10",
+              "explanation": "Pour diviser par une fraction, on multiplie par son inverse : (3/5) ÷ (2/7) = (3/5) × (7/2) = 21/10.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "21/10",
+                "6/35",
+                "10/21",
+                "35/6"
               ]
             }
           ]
@@ -389,90 +389,90 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de proportionnalité niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 3",
+              "question": "Dans une recette pour 4 personnes, il faut 200g de farine. Combien faut-il de farine pour 6 personnes ?",
+              "correctAnswer": "300g",
+              "explanation": "Proportionnalité : 4 personnes → 200g, donc 1 personne → 50g. Pour 6 personnes : 6 × 50 = 300g.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "300g",
+                "250g",
+                "400g",
+                "350g"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de proportionnalité niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 4",
+              "question": "Un robinet débite 45 litres en 3 minutes. En combien de temps remplira-t-il un réservoir de 180 litres ?",
+              "correctAnswer": "12 minutes",
+              "explanation": "Débit : 45L en 3min = 15L/min. Pour 180L : 180 ÷ 15 = 12 minutes.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12 minutes",
+                "15 minutes",
+                "9 minutes",
+                "18 minutes"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de proportionnalité niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 5",
+              "question": "Sur une carte à l'échelle 1/25000, 4 cm représentent quelle distance réelle ?",
+              "correctAnswer": "1 km",
+              "explanation": "Échelle 1/25000 signifie 1 cm = 25000 cm = 250 m. Donc 4 cm = 4 × 250 m = 1000 m = 1 km.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1 km",
+                "250 m",
+                "4 km",
+                "100 m"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de proportionnalité niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 6",
+              "question": "Si 12 stylos coûtent 18 €, combien coûtent 8 stylos ?",
+              "correctAnswer": "12 €",
+              "explanation": "Prix unitaire : 18 ÷ 12 = 1,5 € par stylo. Pour 8 stylos : 8 × 1,5 = 12 €.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12 €",
+                "15 €",
+                "10 €",
+                "14 €"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de proportionnalité niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 7",
+              "question": "Une machine produit 240 pièces en 8 heures. Combien de pièces produit-elle en 5 heures ?",
+              "correctAnswer": "150 pièces",
+              "explanation": "Rendement : 240 ÷ 8 = 30 pièces/heure. En 5 heures : 30 × 5 = 150 pièces.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "150 pièces",
+                "120 pièces",
+                "180 pièces",
+                "200 pièces"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de proportionnalité niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour proportionnalité - Question 8",
+              "question": "Dans un mélange, le rapport sucre/farine est de 2:5. Si j'ai 350g de farine, combien dois-je mettre de sucre ?",
+              "correctAnswer": "140g",
+              "explanation": "Rapport 2:5 signifie 2 parts de sucre pour 5 parts de farine. 350g ÷ 5 = 70g par part. Sucre : 2 × 70 = 140g.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "140g",
+                "175g",
+                "100g",
+                "280g"
               ]
             }
           ]
@@ -503,30 +503,30 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de géométrie niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 2",
+              "question": "Quelle est la somme des angles d'un triangle ?",
+              "correctAnswer": "180°",
+              "explanation": "Dans tout triangle, la somme des trois angles est toujours égale à 180°.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "180°",
+                "360°",
+                "90°",
+                "270°"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de géométrie niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 3",
+              "question": "Comment appelle-t-on un triangle qui a deux côtés égaux ?",
+              "correctAnswer": "Triangle isocèle",
+              "explanation": "Un triangle isocèle est un triangle qui possède deux côtés de même longueur.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Triangle isocèle",
+                "Triangle équilatéral",
+                "Triangle rectangle",
+                "Triangle scalène"
               ]
             },
             {
@@ -617,30 +617,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 1",
+              "question": "Qu'est-ce que la moyenne d'une série de données ?",
+              "correctAnswer": "La somme des valeurs divisée par le nombre de valeurs",
+              "explanation": "La moyenne arithmétique s'obtient en additionnant toutes les valeurs puis en divisant par le nombre de valeurs.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La somme des valeurs divisée par le nombre de valeurs",
+                "La valeur la plus grande",
+                "La valeur du milieu",
+                "La valeur la plus fréquente"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 2",
+              "question": "Dans la série 12, 15, 18, 12, 20, 12, 16, quelle est la médiane ?",
+              "correctAnswer": "15",
+              "explanation": "On classe d'abord : 12, 12, 12, 15, 16, 18, 20. La médiane est la valeur centrale (4e valeur) : 15.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "15",
+                "12",
+                "16",
+                "14"
               ]
             },
             {
@@ -776,30 +776,30 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de angles niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 3",
+              "question": "Comment appelle-t-on un angle de 180° ?",
+              "correctAnswer": "Angle plat",
+              "explanation": "Un angle plat mesure exactement 180°. Ses deux côtés forment une ligne droite.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Angle plat",
+                "Angle droit",
+                "Angle obtus",
+                "Angle complet"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de angles niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 4",
+              "question": "Deux angles complémentaires ont pour somme :",
+              "correctAnswer": "90°",
+              "explanation": "Deux angles sont complémentaires quand leur somme est égale à 90° (un angle droit).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "90°",
+                "180°",
+                "360°",
+                "45°"
               ]
             },
             {
@@ -1148,30 +1148,30 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 3",
+              "question": "Quel est l'infinitif du verbe dans la phrase : 'Nous avons mangé' ?",
+              "correctAnswer": "manger",
+              "explanation": "L'infinitif est la forme non conjuguée du verbe. 'Mangé' est le participe passé du verbe 'manger'.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "manger",
+                "mangé",
+                "mangeons",
+                "mangeant"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de conjugaison niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 4",
+              "question": "Conjuguez le verbe 'venir' à la 3e personne du singulier au présent :",
+              "correctAnswer": "il vient",
+              "explanation": "Le verbe 'venir' est irrégulier. Au présent, 3e personne du singulier : il/elle vient.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "il vient",
+                "il viens",
+                "il venait",
+                "il viendra"
               ]
             },
             {

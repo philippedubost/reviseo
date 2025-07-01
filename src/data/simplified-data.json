@@ -963,6 +963,104 @@
                   "correctAnswer": "Un point où la courbure change",
                   "explanation": "Un point d'inflexion est un point où la courbe change de concavité",
                   "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Quelle est la dérivée de f(x) = ln(x) ?",
+                  "options": ["1/x", "x", "ln(x)", "e^x"],
+                  "correctAnswer": "1/x",
+                  "explanation": "La dérivée de ln(x) est 1/x",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la dérivée de f(x) = sin(x) ?",
+                  "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+                  "correctAnswer": "cos(x)",
+                  "explanation": "La dérivée de sin(x) est cos(x)",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Limites et Continuité",
+              "description": "Calcul de limites et étude de la continuité",
+              "icon": "🎯",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→+∞) 1/x ?",
+                  "options": ["0", "1", "+∞", "-∞"],
+                  "correctAnswer": "0",
+                  "explanation": "Quand x tend vers +∞, 1/x tend vers 0",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Une fonction est continue en a si :",
+                  "options": ["f(a) existe", "lim(x→a) f(x) = f(a)", "f est dérivable en a", "f est croissante en a"],
+                  "correctAnswer": "lim(x→a) f(x) = f(a)",
+                  "explanation": "Une fonction est continue en a si la limite en a égale la valeur de la fonction en a",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que vaut lim(x→0) sin(x)/x ?",
+                  "options": ["0", "1", "+∞", "n'existe pas"],
+                  "correctAnswer": "1",
+                  "explanation": "C'est une limite remarquable : lim(x→0) sin(x)/x = 1",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "Probabilités",
+              "description": "Lois de probabilité et statistiques",
+              "icon": "🎲",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Dans une loi normale, quel pourcentage des valeurs se trouve dans l'intervalle [μ-σ, μ+σ] ?",
+                  "options": ["68%", "95%", "99%", "50%"],
+                  "correctAnswer": "68%",
+                  "explanation": "Environ 68% des valeurs se trouvent à moins d'un écart-type de la moyenne",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Quelle est la formule de la loi binomiale B(n,p) ?",
+                  "options": ["P(X=k) = C(n,k) × p^k × (1-p)^(n-k)", "P(X=k) = p^k", "P(X=k) = n×p", "P(X=k) = e^(-λ)"],
+                  "correctAnswer": "P(X=k) = C(n,k) × p^k × (1-p)^(n-k)",
+                  "explanation": "C'est la formule de la loi binomiale",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Que représente l'espérance mathématique ?",
+                  "options": ["La variance", "La moyenne théorique", "L'écart-type", "La médiane"],
+                  "correctAnswer": "La moyenne théorique",
+                  "explanation": "L'espérance mathématique est la moyenne théorique d'une variable aléatoire",
+                  "points": 10
                 }
               ]
             }
@@ -1011,6 +1109,104 @@
                   "correctAnswer": "Une contradiction apparente",
                   "explanation": "L'oxymore associe deux termes contradictoires (ex: 'obscure clarté')",
                   "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une allitération ?",
+                  "options": ["Répétition de consonnes", "Répétition de voyelles", "Une rime", "Une métaphore"],
+                  "correctAnswer": "Répétition de consonnes",
+                  "explanation": "L'allitération est la répétition de consonnes identiques",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une assonance ?",
+                  "options": ["Répétition de consonnes", "Répétition de voyelles", "Une rime", "Une métaphore"],
+                  "correctAnswer": "Répétition de voyelles",
+                  "explanation": "L'assonance est la répétition de voyelles identiques",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Le Roman au XIXe siècle",
+              "description": "Étude du roman réaliste et naturaliste",
+              "icon": "📖",
+              "difficulty": "medium",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qui a écrit 'Madame Bovary' ?",
+                  "options": ["Balzac", "Flaubert", "Zola", "Stendhal"],
+                  "correctAnswer": "Flaubert",
+                  "explanation": "Gustave Flaubert a écrit 'Madame Bovary' en 1857",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que le réalisme en littérature ?",
+                  "options": ["Décrire la réalité telle qu'elle est", "Idéaliser la réalité", "Critiquer la société", "Raconter des histoires fantastiques"],
+                  "correctAnswer": "Décrire la réalité telle qu'elle est",
+                  "explanation": "Le réalisme vise à représenter fidèlement la réalité",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qui est le chef de file du naturalisme ?",
+                  "options": ["Balzac", "Flaubert", "Zola", "Maupassant"],
+                  "correctAnswer": "Zola",
+                  "explanation": "Émile Zola est le principal théoricien et représentant du naturalisme",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "L'Argumentation",
+              "description": "Techniques argumentatives et essai",
+              "icon": "💭",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce qu'un argument ad hominem ?",
+                  "options": ["Un argument logique", "Une attaque contre la personne", "Un exemple concret", "Une citation d'autorité"],
+                  "correctAnswer": "Une attaque contre la personne",
+                  "explanation": "L'argument ad hominem consiste à attaquer la personne plutôt que ses idées",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'une thèse ?",
+                  "options": ["Un exemple", "Une idée défendue", "Un argument", "Une conclusion"],
+                  "correctAnswer": "Une idée défendue",
+                  "explanation": "La thèse est l'idée principale que l'auteur défend",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un argument d'autorité ?",
+                  "options": ["Citer un expert", "Donner un ordre", "Utiliser la force", "Critiquer l'adversaire"],
+                  "correctAnswer": "Citer un expert",
+                  "explanation": "L'argument d'autorité consiste à citer une source reconnue pour appuyer son propos",
+                  "points": 10
                 }
               ]
             }
@@ -1058,6 +1254,104 @@
                   "options": ["Je pense donc je suis", "Je doute donc je suis", "Je sens donc je suis", "Je vois donc je suis"],
                   "correctAnswer": "Je pense donc je suis",
                   "explanation": "Le cogito est la formule latine 'Cogito ergo sum' de Descartes",
+                  "points": 10
+                },
+                {
+                  "id": 4,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Selon Freud, quelles sont les trois instances de l'appareil psychique ?",
+                  "options": ["Ça, Moi, Surmoi", "Conscient, Préconscient, Inconscient", "Âme, Corps, Esprit", "Raison, Passion, Volonté"],
+                  "correctAnswer": "Ça, Moi, Surmoi",
+                  "explanation": "Freud distingue le Ça (pulsions), le Moi (réalité) et le Surmoi (morale)",
+                  "points": 10
+                },
+                {
+                  "id": 5,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la mauvaise foi selon Sartre ?",
+                  "options": ["Mentir aux autres", "Se mentir à soi-même", "Être de mauvaise humeur", "Critiquer autrui"],
+                  "correctAnswer": "Se mentir à soi-même",
+                  "explanation": "La mauvaise foi consiste à se mentir à soi-même pour fuir sa liberté",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "La Liberté",
+              "description": "Libre arbitre, déterminisme et responsabilité",
+              "icon": "🕊️",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le déterminisme ?",
+                  "options": ["Tout est décidé par la volonté", "Tout est causé par des causes antérieures", "Rien n'est prévisible", "Tout dépend du hasard"],
+                  "correctAnswer": "Tout est causé par des causes antérieures",
+                  "explanation": "Le déterminisme affirme que tout événement est causé par des causes antérieures",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Selon Sartre, l'homme est-il libre ?",
+                  "options": ["Non, il est déterminé", "Oui, condamné à être libre", "Parfois seulement", "Cela dépend des circonstances"],
+                  "correctAnswer": "Oui, condamné à être libre",
+                  "explanation": "Pour Sartre, l'homme est 'condamné à être libre' et responsable de ses choix",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le libre arbitre ?",
+                  "options": ["La capacité de choisir librement", "L'absence de contraintes", "La possibilité de tout faire", "L'indépendance totale"],
+                  "correctAnswer": "La capacité de choisir librement",
+                  "explanation": "Le libre arbitre est la faculté de choisir en toute liberté",
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "La Vérité",
+              "description": "Connaissance, vérité et illusion",
+              "icon": "💡",
+              "difficulty": "hard",
+              "questions": [
+                {
+                  "id": 1,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce que la vérité selon la conception classique ?",
+                  "options": ["L'opinion majoritaire", "La correspondance avec la réalité", "Ce qui est utile", "Ce qui plaît"],
+                  "correctAnswer": "La correspondance avec la réalité",
+                  "explanation": "La conception classique définit la vérité comme adéquation avec la réalité",
+                  "points": 10
+                },
+                {
+                  "id": 2,
+                  "type": "multiple-choice",
+                  "difficulty": 3,
+                  "question": "Qu'est-ce que le doute méthodique de Descartes ?",
+                  "options": ["Douter de tout par scepticisme", "Douter pour mieux croire", "Douter provisoirement pour trouver le certain", "Ne jamais douter"],
+                  "correctAnswer": "Douter provisoirement pour trouver le certain",
+                  "explanation": "Le doute cartésien est méthodique : on doute pour trouver une vérité indubitable",
+                  "points": 10
+                },
+                {
+                  "id": 3,
+                  "type": "multiple-choice",
+                  "difficulty": 2,
+                  "question": "Qu'est-ce qu'un préjugé ?",
+                  "options": ["Une vérité évidente", "Une opinion non fondée", "Un raisonnement logique", "Une connaissance scientifique"],
+                  "correctAnswer": "Une opinion non fondée",
+                  "explanation": "Un préjugé est une opinion adoptée sans examen critique",
                   "points": 10
                 }
               ]

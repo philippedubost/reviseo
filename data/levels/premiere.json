@@ -185,15 +185,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de suites niveau premiere - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour suites - Question 5",
+              "question": "Quelle est la somme des 5 premiers termes d'une suite arithmétique de premier terme u₁ = 3 et de raison r = 2 ?",
+              "correctAnswer": "35",
+              "explanation": "Sₙ = n/2 × (2u₁ + (n-1)r) = 5/2 × (2×3 + 4×2) = 5/2 × 14 = 35.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "35",
+                "25",
+                "30",
+                "40"
               ]
             },
             {
@@ -299,15 +299,15 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de probabilités niveau premiere - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 4",
+              "question": "On tire successivement deux cartes d'un jeu de 52 cartes sans remise. Quelle est la probabilité que les deux soient des as ?",
+              "correctAnswer": "1/221",
+              "explanation": "P = (4/52) × (3/51) = 12/2652 = 1/221.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/221",
+                "1/169",
+                "4/52",
+                "1/13"
               ]
             },
             {
@@ -413,15 +413,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fonctions exponentielles niveau premiere - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 3",
+              "question": "Simplifier e^(ln(5))",
+              "correctAnswer": "5",
+              "explanation": "e^(ln(x)) = x pour tout x > 0, donc e^(ln(5)) = 5.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5",
+                "e",
+                "ln(5)",
+                "5e"
               ]
             },
             {

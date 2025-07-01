@@ -170,30 +170,30 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 4",
+              "question": "Résoudre l'équation x² - 5x + 6 = 0",
+              "correctAnswer": "x = 2 ou x = 3",
+              "explanation": "On factorise : x² - 5x + 6 = (x - 2)(x - 3) = 0, donc x = 2 ou x = 3.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 2 ou x = 3",
+                "x = 1 ou x = 6",
+                "x = -2 ou x = -3",
+                "x = 5 ou x = 6"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 5",
+              "question": "Résoudre l'inéquation -2x + 6 ≤ 0",
+              "correctAnswer": "x ≥ 3",
+              "explanation": "-2x + 6 ≤ 0 ⟺ -2x ≤ -6 ⟺ x ≥ 3 (on change le sens de l'inégalité en divisant par -2).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x ≥ 3",
+                "x ≤ 3",
+                "x ≥ -3",
+                "x ≤ -3"
               ]
             },
             {
@@ -428,30 +428,30 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 4",
+              "question": "Dans un triangle rectangle, si sin(30°) = 0,5, que vaut cos(60°) ?",
+              "correctAnswer": "0,5",
+              "explanation": "Dans un triangle rectangle, sin(α) = cos(90° - α). Donc sin(30°) = cos(60°) = 0,5.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "0,5",
+                "0,866",
+                "1",
+                "0"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 5",
+              "question": "Dans un triangle rectangle ABC rectangle en C, si AB = 10 et sin(A) = 0,6, que vaut BC ?",
+              "correctAnswer": "6",
+              "explanation": "sin(A) = BC/AB, donc 0,6 = BC/10, d'où BC = 0,6 × 10 = 6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "4",
+                "8",
+                "16"
               ]
             },
             {

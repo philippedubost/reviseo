@@ -284,30 +284,30 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 3",
+              "question": "Développer (x + 3)(x + 2)",
+              "correctAnswer": "x² + 5x + 6",
+              "explanation": "(x + 3)(x + 2) = x² + 2x + 3x + 6 = x² + 5x + 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x² + 5x + 6",
+                "x² + 6x + 5",
+                "x² + x + 6",
+                "x² + 6"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de calcul littéral niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 4",
+              "question": "Factoriser x² - 9",
+              "correctAnswer": "(x - 3)(x + 3)",
+              "explanation": "x² - 9 = x² - 3² est une différence de carrés : a² - b² = (a - b)(a + b).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "(x - 3)(x + 3)",
+                "(x - 9)(x + 1)",
+                "x(x - 9)",
+                "(x - 3)²"
               ]
             },
             {
@@ -428,15 +428,15 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 4",
+              "question": "Résoudre l'équation 2(x - 1) = 3x + 4",
+              "correctAnswer": "x = -6",
+              "explanation": "2(x - 1) = 3x + 4 ⟺ 2x - 2 = 3x + 4 ⟺ -x = 6 ⟺ x = -6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = -6",
+                "x = 6",
+                "x = 2",
+                "x = -2"
               ]
             },
             {
@@ -527,30 +527,30 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 2",
+              "question": "Dans un triangle rectangle ABC rectangle en C, si cos(A) = 0,6 et AC = 3, que vaut AB ?",
+              "correctAnswer": "5",
+              "explanation": "cos(A) = AC/AB, donc 0,6 = 3/AB, d'où AB = 3/0,6 = 5.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5",
+                "1,8",
+                "4",
+                "6"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 3",
+              "question": "Que vaut cos(60°) ?",
+              "correctAnswer": "0,5",
+              "explanation": "cos(60°) = 1/2 = 0,5. C'est une valeur remarquable à connaître.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "0,5",
+                "0,866",
+                "1",
+                "0"
               ]
             },
             {
@@ -671,30 +671,30 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 3",
+              "question": "Simplifier 3² × 3³",
+              "correctAnswer": "3⁵",
+              "explanation": "3² × 3³ = 3^(2+3) = 3⁵ (on additionne les exposants).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3⁵",
+                "3⁶",
+                "9³",
+                "6⁵"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 4",
+              "question": "Calculer (2³)²",
+              "correctAnswer": "64",
+              "explanation": "(2³)² = 2^(3×2) = 2⁶ = 64.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "64",
+                "36",
+                "32",
+                "12"
               ]
             },
             {
@@ -770,30 +770,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 1",
+              "question": "Qu'est-ce que la médiane d'une série statistique ?",
+              "correctAnswer": "La valeur qui partage la série en deux parties égales",
+              "explanation": "La médiane est la valeur qui sépare la série ordonnée en deux parties de même effectif.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La valeur qui partage la série en deux parties égales",
+                "La valeur la plus fréquente",
+                "La moyenne des valeurs",
+                "La différence entre max et min"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 2",
+              "question": "Dans la série {2, 4, 6, 8, 10}, quelle est la moyenne ?",
+              "correctAnswer": "6",
+              "explanation": "Moyenne = (2 + 4 + 6 + 8 + 10) ÷ 5 = 30 ÷ 5 = 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "5",
+                "7",
+                "8"
               ]
             },
             {
@@ -899,30 +899,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de volumes niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour volumes - Question 1",
+              "question": "Quelle est la formule du volume d'un cube d'arête a ?",
+              "correctAnswer": "a³",
+              "explanation": "Le volume d'un cube d'arête a est a × a × a = a³.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "a³",
+                "3a",
+                "6a²",
+                "a²"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de volumes niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour volumes - Question 2",
+              "question": "Quelle est la formule du volume d'un parallélépipède rectangle de dimensions a, b et c ?",
+              "correctAnswer": "a × b × c",
+              "explanation": "Le volume d'un parallélépipède rectangle est le produit de ses trois dimensions : V = longueur × largeur × hauteur.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "a × b × c",
+                "a + b + c",
+                "2(a + b + c)",
+                "a² + b² + c²"
               ]
             },
             {
@@ -1067,15 +1067,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 3",
+              "question": "Qu'est-ce qu'un aparté au théâtre ?",
+              "correctAnswer": "Une réplique que seul le public entend",
+              "explanation": "L'aparté est une réplique qu'un personnage prononce et que seul le public est censé entendre, pas les autres personnages.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une réplique que seul le public entend",
+                "Un dialogue entre deux personnages",
+                "Une indication de décor",
+                "Un changement de scène"
               ]
             },
             {
@@ -1424,30 +1424,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 1",
+              "question": "Conjuguez le verbe 'finir' à la 3e personne du pluriel du présent de l'indicatif.",
+              "correctAnswer": "ils finissent",
+              "explanation": "Le verbe 'finir' du 2e groupe se conjugue : ils finissent (radical + iss + ent).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ils finissent",
+                "ils finisent",
+                "ils finiront",
+                "ils ont fini"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 2",
+              "question": "Conjuguez 'voir' à la 1ère personne du singulier du passé composé.",
+              "correctAnswer": "j'ai vu",
+              "explanation": "Le verbe 'voir' se conjugue avec l'auxiliaire avoir : j'ai vu (participe passé : vu).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "j'ai vu",
+                "j'ai voir",
+                "je vois",
+                "j'ai voyé"
               ]
             },
             {

@@ -185,15 +185,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de Thalès niveau quatrieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 5",
+              "question": "Les droites (MN) et (BC) sont-elles parallèles si AM = 4, AB = 6, AN = 6 et AC = 9 ?",
+              "correctAnswer": "Oui",
+              "explanation": "AM/AB = 4/6 = 2/3 et AN/AC = 6/9 = 2/3. Les rapports sont égaux donc (MN) // (BC) d'après la réciproque de Thalès.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Oui",
+                "Non",
+                "Impossible à déterminer",
+                "Seulement si M et N sont alignés"
               ]
             },
             {
@@ -314,15 +314,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de calcul littéral niveau quatrieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 5",
+              "question": "Développer (2x - 3)²",
+              "correctAnswer": "4x² - 12x + 9",
+              "explanation": "(2x - 3)² = (2x)² - 2×(2x)×3 + 3² = 4x² - 12x + 9.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "4x² - 12x + 9",
+                "4x² + 9",
+                "4x² - 6x + 9",
+                "2x² - 6x + 9"
               ]
             },
             {
@@ -443,15 +443,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations niveau quatrieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 5",
+              "question": "Résoudre l'équation (x - 2)(x + 3) = 0",
+              "correctAnswer": "x = 2 ou x = -3",
+              "explanation": "Un produit est nul si et seulement si l'un de ses facteurs est nul : x - 2 = 0 ou x + 3 = 0.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 2 ou x = -3",
+                "x = -2 ou x = 3",
+                "x = 5 ou x = -1",
+                "x = 6"
               ]
             },
             {
@@ -557,15 +557,15 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de cosinus niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 4",
+              "question": "Dans un triangle rectangle, si l'hypoténuse mesure 13 cm et un côté de l'angle droit mesure 5 cm, que vaut le cosinus de l'angle adjacent à ce côté ?",
+              "correctAnswer": "5/13",
+              "explanation": "cos(angle) = côté adjacent / hypoténuse = 5/13.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5/13",
+                "12/13",
+                "5/12",
+                "13/5"
               ]
             },
             {
@@ -701,15 +701,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances niveau quatrieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 5",
+              "question": "Simplifier (a³)² × a⁴",
+              "correctAnswer": "a¹⁰",
+              "explanation": "(a³)² × a⁴ = a⁶ × a⁴ = a^(6+4) = a¹⁰.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "a¹⁰",
+                "a⁹",
+                "a²⁴",
+                "a¹¹"
               ]
             },
             {
@@ -800,15 +800,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 3",
+              "question": "Dans la série {2, 4, 6, 8, 10, 12, 14}, quelle est la médiane ?",
+              "correctAnswer": "8",
+              "explanation": "La série a 7 valeurs. La médiane est la valeur centrale (4e position) : 8.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "6",
+                "7",
+                "10"
               ]
             },
             {
@@ -929,15 +929,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de volumes niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour volumes - Question 3",
+              "question": "Quel est le volume d'un cylindre de rayon 3 cm et de hauteur 5 cm ?",
+              "correctAnswer": "45π cm³",
+              "explanation": "V = π × r² × h = π × 3² × 5 = π × 9 × 5 = 45π cm³.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "45π cm³",
+                "15π cm³",
+                "30π cm³",
+                "90π cm³"
               ]
             },
             {

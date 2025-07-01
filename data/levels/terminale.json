@@ -185,15 +185,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de dérivation avancée niveau terminale - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour dérivation avancée - Question 5",
+              "question": "Quelle est la dérivée de f(x) = x²e^x ?",
+              "correctAnswer": "(2x + x²)e^x",
+              "explanation": "En utilisant la règle du produit : f'(x) = 2x·e^x + x²·e^x = (2x + x²)e^x.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "(2x + x²)e^x",
+                "2xe^x",
+                "x²e^x",
+                "2x + e^x"
               ]
             },
             {
@@ -314,15 +314,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de intégration niveau terminale - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour intégration - Question 5",
+              "question": "Calculer ∫₁² (1/x) dx",
+              "correctAnswer": "ln(2)",
+              "explanation": "∫₁² (1/x) dx = [ln(x)]₁² = ln(2) - ln(1) = ln(2) - 0 = ln(2).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ln(2)",
+                "1/2",
+                "2",
+                "ln(1)"
               ]
             },
             {
@@ -413,15 +413,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fonctions exponentielles niveau terminale - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 3",
+              "question": "Que vaut ln(e²) ?",
+              "correctAnswer": "2",
+              "explanation": "ln(e²) = 2ln(e) = 2 × 1 = 2 car ln(e) = 1.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2",
+                "e²",
+                "1",
+                "0"
               ]
             },
             {

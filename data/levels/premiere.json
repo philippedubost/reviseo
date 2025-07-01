@@ -200,15 +200,15 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de suites niveau premiere - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour suites - Question 6",
+              "question": "Une suite géométrique a pour premier terme u₁ = 4 et pour raison q = 1/2. Que vaut u₅ ?",
+              "correctAnswer": "1/4",
+              "explanation": "u₅ = u₁ × q⁴ = 4 × (1/2)⁴ = 4 × (1/16) = 1/4.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/4",
+                "1/2",
+                "2",
+                "1/8"
               ]
             },
             {
@@ -314,15 +314,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de probabilités niveau premiere - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 5",
+              "question": "Dans une urne contenant 3 boules rouges et 7 boules bleues, quelle est la probabilité de tirer 2 boules rouges successivement sans remise ?",
+              "correctAnswer": "1/15",
+              "explanation": "P = (3/10) × (2/9) = 6/90 = 1/15.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/15",
+                "3/10",
+                "2/9",
+                "6/100"
               ]
             },
             {
@@ -428,15 +428,15 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de fonctions exponentielles niveau premiere - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 4",
+              "question": "Résoudre l'équation e^(2x) = e³",
+              "correctAnswer": "x = 3/2",
+              "explanation": "e^(2x) = e³ ⟺ 2x = 3 ⟺ x = 3/2.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 3/2",
+                "x = 2/3",
+                "x = 3",
+                "x = 6"
               ]
             },
             {

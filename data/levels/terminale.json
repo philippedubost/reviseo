@@ -200,15 +200,15 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de dérivation avancée niveau terminale - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour dérivation avancée - Question 6",
+              "question": "Quelle est la dérivée de f(x) = ln(x² + 1) ?",
+              "correctAnswer": "2x/(x² + 1)",
+              "explanation": "En utilisant la dérivée composée : f'(x) = (1/(x² + 1)) × 2x = 2x/(x² + 1).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2x/(x² + 1)",
+                "1/(x² + 1)",
+                "2x",
+                "ln(2x)"
               ]
             },
             {

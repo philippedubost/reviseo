@@ -215,15 +215,15 @@
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de suites niveau premiere - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour suites - Question 7",
+              "question": "Une suite géométrique a pour somme des 4 premiers termes S₄ = 15 et q = 2. Que vaut u₁ ?",
+              "correctAnswer": "1",
+              "explanation": "S₄ = u₁(1-q⁴)/(1-q) = u₁(1-16)/(1-2) = 15u₁ = 15, donc u₁ = 1.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1",
+                "2",
+                "3",
+                "15"
               ]
             },
             {
@@ -329,15 +329,15 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de probabilités niveau premiere - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour probabilités - Question 6",
+              "question": "Deux événements A et B sont indépendants avec P(A) = 0,3 et P(B) = 0,4. Que vaut P(A ∩ B) ?",
+              "correctAnswer": "0,12",
+              "explanation": "Si A et B sont indépendants, alors P(A ∩ B) = P(A) × P(B) = 0,3 × 0,4 = 0,12.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "0,12",
+                "0,7",
+                "0,58",
+                "0,24"
               ]
             },
             {
@@ -443,15 +443,15 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de fonctions exponentielles niveau premiere - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 5",
+              "question": "Quelle est la dérivée de f(x) = 3e^(x+1) ?",
+              "correctAnswer": "3e^(x+1)",
+              "explanation": "f'(x) = 3 × e^(x+1) × 1 = 3e^(x+1) (dérivée de la fonction composée).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3e^(x+1)",
+                "3e^x",
+                "e^(x+1)",
+                "3xe^(x+1)"
               ]
             },
             {

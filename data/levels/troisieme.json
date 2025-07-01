@@ -200,45 +200,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 6",
+              "question": "Résoudre l'équation x² + 3x - 10 = 0",
+              "correctAnswer": "x = 2 ou x = -5",
+              "explanation": "On factorise : x² + 3x - 10 = (x - 2)(x + 5) = 0, donc x = 2 ou x = -5.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 2 ou x = -5",
+                "x = -2 ou x = 5",
+                "x = 1 ou x = -10",
+                "x = 3 ou x = -10"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de équations et inéquations niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 7",
+              "question": "Résoudre le système : {2x + y = 7 ; x - y = 2}",
+              "correctAnswer": "x = 3, y = 1",
+              "explanation": "En additionnant les équations : 3x = 9, donc x = 3. En substituant : 3 - y = 2, donc y = 1.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 3, y = 1",
+                "x = 1, y = 3",
+                "x = 2, y = 3",
+                "x = 5, y = -3"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de équations et inéquations niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 8",
+              "question": "Résoudre l'inéquation (x - 1)(x + 3) ≥ 0",
+              "correctAnswer": "x ≤ -3 ou x ≥ 1",
+              "explanation": "Les racines sont x = 1 et x = -3. Le produit est positif à l'extérieur des racines : x ≤ -3 ou x ≥ 1.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x ≤ -3 ou x ≥ 1",
+                "-3 ≤ x ≤ 1",
+                "x ≤ 1 ou x ≥ 3",
+                "x ≥ -1 ou x ≤ 3"
               ]
             }
           ]
@@ -269,15 +269,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théorème de thalès niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 2",
+              "question": "Dans une configuration de Thalès, si AB = 8, AD = 6 et AE = 9, que vaut AC ?",
+              "correctAnswer": "12",
+              "explanation": "D'après Thalès : AB/AD = AC/AE, donc 8/6 = AC/9, d'où AC = (8×9)/6 = 12.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12",
+                "10",
+                "15",
+                "6"
               ]
             },
             {
@@ -458,15 +458,15 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 6",
+              "question": "Dans un triangle rectangle, si tan(A) = 3/4, que vaut sin(A) ?",
+              "correctAnswer": "3/5",
+              "explanation": "Si tan(A) = 3/4, alors le triangle a des côtés 3, 4, 5 (triangle rectangle). Donc sin(A) = 3/5.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3/5",
+                "4/5",
+                "3/4",
+                "4/3"
               ]
             },
             {
@@ -512,15 +512,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 1",
+              "question": "Qu'est-ce que l'étendue d'une série statistique ?",
+              "correctAnswer": "La différence entre la plus grande et la plus petite valeur",
+              "explanation": "L'étendue mesure la dispersion des données : étendue = valeur maximale - valeur minimale.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La différence entre la plus grande et la plus petite valeur",
+                "La moyenne des valeurs",
+                "La valeur qui apparaît le plus souvent",
+                "La valeur du milieu"
               ]
             },
             {
@@ -641,30 +641,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances et racines niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 1",
+              "question": "Que vaut √16 ?",
+              "correctAnswer": "4",
+              "explanation": "√16 = 4 car 4² = 16.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "4",
+                "8",
+                "2",
+                "16"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances et racines niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 2",
+              "question": "Simplifier √50",
+              "correctAnswer": "5√2",
+              "explanation": "√50 = √(25×2) = √25 × √2 = 5√2.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5√2",
+                "25√2",
+                "√50",
+                "10√5"
               ]
             },
             {
@@ -770,15 +770,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de géométrie dans l'espace niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie dans l'espace - Question 1",
+              "question": "Combien de faces a un cube ?",
+              "correctAnswer": "6",
+              "explanation": "Un cube a 6 faces carrées identiques.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "8",
+                "12",
+                "4"
               ]
             },
             {
@@ -1037,15 +1037,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 1",
+              "question": "Qu'est-ce qu'un récit autobiographique ?",
+              "correctAnswer": "Un récit où l'auteur raconte sa propre vie",
+              "explanation": "Dans un récit autobiographique, l'auteur, le narrateur et le personnage principal sont la même personne.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un récit où l'auteur raconte sa propre vie",
+                "Un récit inventé par l'auteur",
+                "Un récit sur la vie d'une autre personne",
+                "Un récit fantastique"
               ]
             },
             {

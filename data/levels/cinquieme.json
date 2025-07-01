@@ -2522,15 +2522,15 @@
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "question": "Qu'est-ce que la croisade des Albigeois ?",
+              "correctAnswer": "Une croisade contre les hérétiques cathares dans le sud de la France",
+              "explanation": "La croisade des Albigeois (1209-1229) est une croisade lancée contre les cathares, considérés comme hérétiques, dans le Languedoc (sud de la France).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une croisade contre les hérétiques cathares dans le sud de la France",
+                "Une expédition vers Jérusalem",
+                "Une guerre contre l'Angleterre",
+                "Une conquête de l'Espagne"
               ]
             }
           ]
@@ -2546,120 +2546,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "question": "Qu'est-ce qu'un bourg au Moyen Âge ?",
+              "correctAnswer": "Un village qui s'est développé autour d'un château ou d'une abbaye",
+              "explanation": "Un bourg est un village qui s'est développé et enrichi, souvent autour d'un château, d'une abbaye ou d'un carrefour commercial.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un village qui s'est développé autour d'un château ou d'une abbaye",
+                "Une grande ville",
+                "Un château fort",
+                "Une cathédrale"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "question": "Qu'est-ce qu'un bourgeois au Moyen Âge ?",
+              "correctAnswer": "Un habitant d'un bourg qui fait du commerce",
+              "explanation": "Un bourgeois est un habitant d'un bourg qui exerce une activité commerciale ou artisanale et qui a acquis une certaine richesse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un habitant d'un bourg qui fait du commerce",
+                "Un noble",
+                "Un serf",
+                "Un moine"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "question": "Qu'est-ce qu'une corporation au Moyen Âge ?",
+              "correctAnswer": "Une association d'artisans du même métier",
+              "explanation": "Une corporation est une association qui regroupe tous les artisans exerçant le même métier dans une ville pour défendre leurs intérêts.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une association d'artisans du même métier",
+                "Une grande entreprise",
+                "Un marché",
+                "Une banque"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "question": "Qu'est-ce qu'une charte de franchise ?",
+              "correctAnswer": "Un document qui accorde des libertés à une ville",
+              "explanation": "Une charte de franchise est un document accordé par un seigneur qui donne des libertés et des privilèges aux habitants d'une ville.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un document qui accorde des libertés à une ville",
+                "Un contrat commercial",
+                "Une loi royale",
+                "Un traité de paix"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "question": "Qu'est-ce qu'une foire au Moyen Âge ?",
+              "correctAnswer": "Un grand marché qui se tient plusieurs fois par an",
+              "explanation": "Une foire est un grand marché qui se tient périodiquement (quelques fois par an) et qui attire des marchands de régions lointaines.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un grand marché qui se tient plusieurs fois par an",
+                "Un marché quotidien",
+                "Une fête religieuse",
+                "Un tournoi"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "question": "Qu'est-ce qu'un beffroi ?",
+              "correctAnswer": "Une tour qui symbolise les libertés communales",
+              "explanation": "Un beffroi est une tour construite par les bourgeois d'une ville pour symboliser leurs libertés et leur indépendance face au seigneur.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une tour qui symbolise les libertés communales",
+                "Une église",
+                "Un château",
+                "Un marché couvert"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "question": "Quelles sont les foires les plus célèbres du Moyen Âge en France ?",
+              "correctAnswer": "Les foires de Champagne",
+              "explanation": "Les foires de Champagne (Troyes, Provins, Lagny, Bar-sur-Aube) sont les plus importantes d'Europe occidentale aux XIIe-XIIIe siècles.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les foires de Champagne",
+                "Les foires de Normandie",
+                "Les foires de Bretagne",
+                "Les foires de Provence"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "question": "Qu'est-ce qu'une commune au Moyen Âge ?",
+              "correctAnswer": "Une ville qui s'est révoltée pour obtenir son indépendance",
+              "explanation": "Une commune est une ville dont les habitants (bourgeois) se sont révoltés contre leur seigneur pour obtenir des libertés et une autonomie de gouvernement.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une ville qui s'est révoltée pour obtenir son indépendance",
+                "Un village agricole",
+                "Un château fort",
+                "Une abbaye"
               ]
             }
           ]
@@ -2675,75 +2675,75 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "question": "Quel roi de France a unifié le royaume au XIIIe siècle ?",
+              "correctAnswer": "Philippe Auguste",
+              "explanation": "Philippe Auguste (1180-1223) a considérablement agrandi le domaine royal en conquérant la Normandie, l'Anjou et le Poitou sur les Anglais.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Philippe Auguste",
+                "Louis VII",
+                "Saint Louis",
+                "Charles le Chauve"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "question": "Quel empire domine l'Europe centrale au Moyen Âge ?",
+              "correctAnswer": "Le Saint-Empire romain germanique",
+              "explanation": "Le Saint-Empire romain germanique, fondé en 962 par Otton Ier, domine l'Europe centrale (Allemagne, Autriche, une partie de l'Italie).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le Saint-Empire romain germanique",
+                "L'Empire byzantin",
+                "L'Empire romain",
+                "L'Empire ottoman"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "question": "Quelle est la capitale de l'Empire byzantin ?",
+              "correctAnswer": "Constantinople",
+              "explanation": "Constantinople (actuelle Istanbul) est la capitale de l'Empire byzantin, héritier de l'Empire romain d'Orient.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Constantinople",
+                "Rome",
+                "Athènes",
+                "Alexandrie"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "question": "Qu'est-ce que la Reconquista ?",
+              "correctAnswer": "La reconquête de l'Espagne par les chrétiens sur les musulmans",
+              "explanation": "La Reconquista est la reconquête progressive de la péninsule ibérique par les royaumes chrétiens sur les musulmans (VIIIe-XVe siècles).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La reconquête de l'Espagne par les chrétiens sur les musulmans",
+                "La conquête de l'Angleterre",
+                "La guerre de Cent Ans",
+                "Les croisades"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "question": "Qui a conquis l'Angleterre en 1066 ?",
+              "correctAnswer": "Guillaume le Conquérant",
+              "explanation": "Guillaume le Conquérant, duc de Normandie, a conquis l'Angleterre en 1066 en battant le roi Harold à la bataille d'Hastings.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Guillaume le Conquérant",
+                "Charlemagne",
+                "Philippe Auguste",
+                "Richard Cœur de Lion"
               ]
             },
             {

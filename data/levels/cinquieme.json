@@ -2120,30 +2120,30 @@
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "question": "Qu'est-ce que l'hommage dans la société féodale ?",
+              "correctAnswer": "La cérémonie où le vassal jure fidélité à son seigneur",
+              "explanation": "L'hommage est la cérémonie solennelle où le vassal s'agenouille, place ses mains dans celles du seigneur et lui jure fidélité.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La cérémonie où le vassal jure fidélité à son seigneur",
+                "Un impôt payé au roi",
+                "Une fête religieuse",
+                "Un combat entre chevaliers"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "question": "Qu'est-ce qu'un fief ?",
+              "correctAnswer": "Une terre donnée par le seigneur à son vassal",
+              "explanation": "Le fief est une terre (domaine) que le seigneur donne à son vassal en échange de ses services militaires et de sa fidélité.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une terre donnée par le seigneur à son vassal",
+                "Un château fort",
+                "Une armée",
+                "Une monnaie"
               ]
             }
           ]
@@ -2159,120 +2159,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "question": "Qu'est-ce qu'un seigneur au Moyen Âge ?",
+              "correctAnswer": "Un noble qui possède des terres et exerce le pouvoir",
+              "explanation": "Le seigneur est un noble qui possède des terres (seigneurie) et exerce le pouvoir politique, militaire et judiciaire sur ses domaines.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un noble qui possède des terres et exerce le pouvoir",
+                "Un paysan riche",
+                "Un prêtre",
+                "Un marchand"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "question": "Où vit le seigneur ?",
+              "correctAnswer": "Dans un château fort",
+              "explanation": "Le seigneur vit dans un château fort, construction défensive qui lui permet de protéger ses terres et sa famille des attaques.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Dans un château fort",
+                "Dans une ferme",
+                "Dans une église",
+                "Dans une ville"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "question": "Qu'est-ce qu'un serf ?",
+              "correctAnswer": "Un paysan qui appartient au seigneur",
+              "explanation": "Le serf est un paysan qui appartient au seigneur avec la terre. Il ne peut pas quitter la seigneurie sans autorisation.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un paysan qui appartient au seigneur",
+                "Un chevalier",
+                "Un marchand",
+                "Un artisan libre"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "question": "Quelles sont les trois parties d'un château fort ?",
+              "correctAnswer": "La basse-cour, la haute-cour et le donjon",
+              "explanation": "Un château fort comprend la basse-cour (écuries, ateliers), la haute-cour (logis seigneurial) et le donjon (tour de défense ultime).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La basse-cour, la haute-cour et le donjon",
+                "Les remparts, les tours et les ponts",
+                "La chapelle, la cuisine et la chambre",
+                "L'entrée, le milieu et la sortie"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "question": "Qu'est-ce que la corvée ?",
+              "correctAnswer": "Le travail gratuit que doivent les paysans au seigneur",
+              "explanation": "La corvée est le travail gratuit (généralement 3 jours par semaine) que les paysans doivent effectuer sur les terres du seigneur.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le travail gratuit que doivent les paysans au seigneur",
+                "Un impôt en argent",
+                "Une fête religieuse",
+                "Un combat"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "question": "Qu'est-ce que le cens ?",
+              "correctAnswer": "Un impôt payé par les paysans au seigneur",
+              "explanation": "Le cens est un impôt annuel (souvent en nature : blé, œufs, poules) que les paysans payent au seigneur pour cultiver sa terre.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un impôt payé par les paysans au seigneur",
+                "Un travail gratuit",
+                "Une cérémonie religieuse",
+                "Un tournoi"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "question": "Qu'est-ce que le droit de ban ?",
+              "correctAnswer": "Le pouvoir du seigneur de commander et punir",
+              "explanation": "Le droit de ban est le pouvoir du seigneur de donner des ordres, de rendre la justice et de punir dans sa seigneurie.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pouvoir du seigneur de commander et punir",
+                "Le droit de chasser",
+                "Le droit de se marier",
+                "Le droit de voyager"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "question": "Qu'est-ce que la réserve seigneuriale ?",
+              "correctAnswer": "Les terres que le seigneur garde pour lui",
+              "explanation": "La réserve seigneuriale est la partie du domaine que le seigneur garde pour lui et fait cultiver par les corvées des paysans.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les terres que le seigneur garde pour lui",
+                "Les terres données aux paysans",
+                "La forêt interdite",
+                "Le trésor du château"
               ]
             }
           ]
@@ -2288,30 +2288,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "question": "Qu'est-ce que l'Église au Moyen Âge ?",
+              "correctAnswer": "L'institution religieuse chrétienne dirigée par le pape",
+              "explanation": "L'Église est l'institution religieuse chrétienne dirigée par le pape à Rome. Elle a un pouvoir spirituel et temporel immense au Moyen Âge.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'institution religieuse chrétienne dirigée par le pape",
+                "Un bâtiment religieux",
+                "Une école",
+                "Un marché"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "question": "Qui dirige l'Église catholique ?",
+              "correctAnswer": "Le pape",
+              "explanation": "Le pape, installé à Rome, est le chef suprême de l'Église catholique. Il est considéré comme le successeur de saint Pierre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pape",
+                "Le roi",
+                "L'empereur",
+                "L'évêque"
               ]
             },
             {

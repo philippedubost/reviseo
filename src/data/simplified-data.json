@@ -2166,7 +2166,7 @@
                   "type": "multiple-choice",
                   "difficulty": 2,
                   "question": "When did the United States declare independence?",
-                  "options": ["1775", "1776", "1777", "1778"],
+                  "options": ["1774", "1775", "1776", "1777"],
                   "correctAnswer": "1776",
                   "explanation": "The United States declared independence on July 4, 1776",
                   "points": 10
@@ -2175,10 +2175,10 @@
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Who was the first President of the United States?",
-                  "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
-                  "correctAnswer": "George Washington",
-                  "explanation": "George Washington was the first President of the United States (1789-1797)",
+                  "question": "What is the Commonwealth?",
+                  "options": ["A trade organization", "Former British colonies association", "A military alliance", "An economic union"],
+                  "correctAnswer": "Former British colonies association",
+                  "explanation": "The Commonwealth is an association of former British colonies and territories",
                   "points": 15
                 }
               ]

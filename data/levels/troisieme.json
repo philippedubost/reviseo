@@ -140,15 +140,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 2",
+              "question": "Résoudre l'inéquation 2x + 3 > 7",
+              "correctAnswer": "x > 2",
+              "explanation": "2x + 3 > 7 ⟺ 2x > 7 - 3 ⟺ 2x > 4 ⟺ x > 2.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x > 2",
+                "x < 2",
+                "x > 5",
+                "x < 5"
               ]
             },
             {
@@ -254,15 +254,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théorème de thalès niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 1",
+              "question": "Dans un triangle ABC, si (MN) // (BC) avec M sur [AB] et N sur [AC], alors :",
+              "correctAnswer": "AM/AB = AN/AC = MN/BC",
+              "explanation": "C'est l'énoncé du théorème de Thalès : les rapports des segments correspondants sont égaux.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "AM/AB = AN/AC = MN/BC",
+                "AM = AN = MN",
+                "AB = AC = BC",
+                "AM × AB = AN × AC"
               ]
             },
             {
@@ -398,15 +398,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 2",
+              "question": "Dans un triangle rectangle, le sinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté opposé / hypoténuse",
+              "explanation": "Le sinus d'un angle aigu dans un triangle rectangle est le rapport du côté opposé à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté opposé / hypoténuse",
+                "côté adjacent / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté opposé"
               ]
             },
             {

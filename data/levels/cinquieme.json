@@ -1277,15 +1277,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de orthographe niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 3",
+              "question": "Quelle est la bonne orthographe ?",
+              "correctAnswer": "Elles se sont lavées",
+              "explanation": "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet. 'Elles' (féminin pluriel) → 'lavées'.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Elles se sont lavées",
+                "Elles se sont lavé",
+                "Elles se sont laver",
+                "Elles se sont lavés"
               ]
             },
             {
@@ -1406,30 +1406,30 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de vocabulaire niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 3",
+              "question": "Quel mot appartient au champ lexical de la mer ?",
+              "correctAnswer": "vague",
+              "explanation": "Le champ lexical de la mer regroupe tous les mots liés à cet univers : vague, océan, plage, marée, etc.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "vague",
+                "montagne",
+                "forêt",
+                "prairie"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de vocabulaire niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 4",
+              "question": "Qu'est-ce qu'un homonyme ?",
+              "correctAnswer": "Des mots qui se prononcent pareil mais ont des sens différents",
+              "explanation": "Les homonymes sont des mots qui ont la même prononciation mais des significations différentes (ex: ver, verre, vers).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des mots qui se prononcent pareil mais ont des sens différents",
+                "Des mots qui ont le même sens",
+                "Des mots qui riment",
+                "Des mots de la même famille"
               ]
             },
             {
@@ -1505,30 +1505,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 1",
+              "question": "Qu'est-ce qu'une chanson de geste ?",
+              "correctAnswer": "Un récit épique du Moyen Âge",
+              "explanation": "Les chansons de geste sont des récits épiques du Moyen Âge qui racontent les exploits de héros comme Roland.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un récit épique du Moyen Âge",
+                "Une chanson d'amour",
+                "Un poème lyrique",
+                "Une pièce de théâtre"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 2",
+              "question": "Qui est le héros de la Chanson de Roland ?",
+              "correctAnswer": "Roland",
+              "explanation": "Roland est le neveu de Charlemagne et le héros principal de cette chanson de geste célèbre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Roland",
+                "Lancelot",
+                "Perceval",
+                "Tristan"
               ]
             },
             {

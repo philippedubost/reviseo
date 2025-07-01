@@ -155,15 +155,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 3",
+              "question": "Dans une configuration de Thalès, si AB = 6, AC = 9 et AD = 4, que vaut AE ?",
+              "correctAnswer": "6",
+              "explanation": "D'après Thalès : AB/AD = AC/AE, donc 6/4 = 9/AE. En résolvant : AE = (9×4)/6 = 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "8",
+                "5",
+                "7"
               ]
             },
             {
@@ -269,15 +269,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 2",
+              "question": "Factoriser l'expression 2x + 6",
+              "correctAnswer": "2(x + 3)",
+              "explanation": "On met en facteur le facteur commun 2 : 2x + 6 = 2(x + 3).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2(x + 3)",
+                "(2x + 6)",
+                "2x(1 + 3)",
+                "x(2 + 6)"
               ]
             },
             {
@@ -398,15 +398,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 2",
+              "question": "Résoudre l'équation 3x - 4 = 8",
+              "correctAnswer": "x = 4",
+              "explanation": "3x - 4 = 8 ⟺ 3x = 8 + 4 ⟺ 3x = 12 ⟺ x = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 3",
+                "x = 12",
+                "x = 2"
               ]
             },
             {

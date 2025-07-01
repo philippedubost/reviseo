@@ -14833,15 +14833,15 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de inéquations niveau seconde - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour inéquations - Question 1",
+                  "question": "Quel est l'ensemble solution de l'inéquation 3x - 15 < 0 ?",
+                  "correctAnswer": "]-∞ ; 5[",
+                  "explanation": "3x - 15 < 0 ⟺ 3x < 15 ⟺ x < 5. L'ensemble solution est donc ]-∞ ; 5[.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "]5 ; +∞[",
+                    "]-∞ ; 5[",
+                    "]-∞ ; -5[",
+                    "[5 ; +∞["
                   ]
                 },
                 {

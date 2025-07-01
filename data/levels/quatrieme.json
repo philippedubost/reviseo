@@ -125,60 +125,60 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 1",
+              "question": "Le théorème de Thalès s'applique dans quelle configuration ?",
+              "correctAnswer": "Deux droites parallèles coupées par deux sécantes",
+              "explanation": "Le théorème de Thalès s'applique quand on a deux droites parallèles coupées par deux droites sécantes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Deux droites parallèles coupées par deux sécantes",
+                "Deux droites perpendiculaires",
+                "Un triangle rectangle",
+                "Deux cercles qui se coupent"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 2",
+              "question": "Si AB/AC = DE/DF, alors les droites (BD) et (CE) sont :",
+              "correctAnswer": "parallèles",
+              "explanation": "D'après la réciproque du théorème de Thalès, si les rapports sont égaux, alors les droites sont parallèles.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "parallèles",
+                "perpendiculaires",
+                "sécantes",
+                "confondues"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de Thalès niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 3",
+              "question": "Dans une configuration de Thalès, si AB = 6, AC = 9 et AD = 4, que vaut AE ?",
+              "correctAnswer": "6",
+              "explanation": "D'après Thalès : AB/AD = AC/AE, donc 6/4 = 9/AE. En résolvant : AE = (9×4)/6 = 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "8",
+                "5",
+                "7"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de Thalès niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 4",
+              "question": "Dans un triangle ABC, M est sur [AB] tel que AM = 3 et MB = 2. N est sur [AC] tel que (MN) // (BC). Si AC = 10, que vaut AN ?",
+              "correctAnswer": "6",
+              "explanation": "D'après Thalès : AM/AB = AN/AC, donc 3/5 = AN/10, d'où AN = (3×10)/5 = 6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "4",
+                "8",
+                "5"
               ]
             },
             {
@@ -254,60 +254,60 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 1",
+              "question": "Développer l'expression 3(x + 2)",
+              "correctAnswer": "3x + 6",
+              "explanation": "On applique la distributivité : 3(x + 2) = 3 × x + 3 × 2 = 3x + 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3x + 6",
+                "3x + 2",
+                "x + 6",
+                "3x + 5"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 2",
+              "question": "Factoriser l'expression 2x + 6",
+              "correctAnswer": "2(x + 3)",
+              "explanation": "On met en facteur le facteur commun 2 : 2x + 6 = 2(x + 3).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2(x + 3)",
+                "(2x + 6)",
+                "2x(1 + 3)",
+                "x(2 + 6)"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de calcul littéral niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 3",
+              "question": "Développer (x + 3)(x + 2)",
+              "correctAnswer": "x² + 5x + 6",
+              "explanation": "(x + 3)(x + 2) = x² + 2x + 3x + 6 = x² + 5x + 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x² + 5x + 6",
+                "x² + 6x + 5",
+                "x² + x + 6",
+                "x² + 6"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de calcul littéral niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour calcul littéral - Question 4",
+              "question": "Factoriser x² - 9",
+              "correctAnswer": "(x - 3)(x + 3)",
+              "explanation": "x² - 9 = x² - 3² est une différence de carrés : a² - b² = (a - b)(a + b).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "(x - 3)(x + 3)",
+                "(x - 9)(x + 1)",
+                "x(x - 9)",
+                "(x - 3)²"
               ]
             },
             {
@@ -383,60 +383,60 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 1",
+              "question": "Résoudre l'équation 2x + 5 = 13",
+              "correctAnswer": "x = 4",
+              "explanation": "2x + 5 = 13 ⟺ 2x = 13 - 5 ⟺ 2x = 8 ⟺ x = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 9",
+                "x = 6",
+                "x = 2"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 2",
+              "question": "Résoudre l'équation 3x - 4 = 8",
+              "correctAnswer": "x = 4",
+              "explanation": "3x - 4 = 8 ⟺ 3x = 8 + 4 ⟺ 3x = 12 ⟺ x = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 3",
+                "x = 12",
+                "x = 2"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 3",
+              "question": "Résoudre l'équation 5x = 20",
+              "correctAnswer": "x = 4",
+              "explanation": "Pour résoudre 5x = 20, on divise les deux membres par 5 : x = 20/5 = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 5",
+                "x = 15",
+                "x = 100"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 4",
+              "question": "Résoudre l'équation 2(x - 1) = 3x + 4",
+              "correctAnswer": "x = -6",
+              "explanation": "2(x - 1) = 3x + 4 ⟺ 2x - 2 = 3x + 4 ⟺ -x = 6 ⟺ x = -6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = -6",
+                "x = 6",
+                "x = 2",
+                "x = -2"
               ]
             },
             {
@@ -512,45 +512,45 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 1",
+              "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté adjacent / hypoténuse",
+              "explanation": "Le cosinus d'un angle aigu dans un triangle rectangle est le rapport du côté adjacent à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté adjacent / hypoténuse",
+                "côté opposé / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté adjacent"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 2",
+              "question": "Dans un triangle rectangle ABC rectangle en C, si cos(A) = 0,6 et AC = 3, que vaut AB ?",
+              "correctAnswer": "5",
+              "explanation": "cos(A) = AC/AB, donc 0,6 = 3/AB, d'où AB = 3/0,6 = 5.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5",
+                "1,8",
+                "4",
+                "6"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 3",
+              "question": "Que vaut cos(60°) ?",
+              "correctAnswer": "0,5",
+              "explanation": "cos(60°) = 1/2 = 0,5. C'est une valeur remarquable à connaître.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "0,5",
+                "0,866",
+                "1",
+                "0"
               ]
             },
             {
@@ -641,60 +641,60 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 1",
+              "question": "Que vaut 2³ ?",
+              "correctAnswer": "8",
+              "explanation": "2³ = 2 × 2 × 2 = 8",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "6",
+                "9",
+                "4"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 2",
+              "question": "Calculer 10⁴",
+              "correctAnswer": "10 000",
+              "explanation": "10⁴ = 10 × 10 × 10 × 10 = 10 000",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "10 000",
+                "1 000",
+                "40",
+                "100 000"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 3",
+              "question": "Simplifier 3² × 3³",
+              "correctAnswer": "3⁵",
+              "explanation": "3² × 3³ = 3^(2+3) = 3⁵ (on additionne les exposants).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3⁵",
+                "3⁶",
+                "9³",
+                "6⁵"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 4",
+              "question": "Calculer (2³)²",
+              "correctAnswer": "64",
+              "explanation": "(2³)² = 2^(3×2) = 2⁶ = 64.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "64",
+                "36",
+                "32",
+                "12"
               ]
             },
             {
@@ -770,30 +770,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 1",
+              "question": "Qu'est-ce que la médiane d'une série statistique ?",
+              "correctAnswer": "La valeur qui partage la série en deux parties égales",
+              "explanation": "La médiane est la valeur qui sépare la série ordonnée en deux parties de même effectif.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La valeur qui partage la série en deux parties égales",
+                "La valeur la plus fréquente",
+                "La moyenne des valeurs",
+                "La différence entre max et min"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 2",
+              "question": "Dans la série {2, 4, 6, 8, 10}, quelle est la moyenne ?",
+              "correctAnswer": "6",
+              "explanation": "Moyenne = (2 + 4 + 6 + 8 + 10) ÷ 5 = 30 ÷ 5 = 6.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "5",
+                "7",
+                "8"
               ]
             },
             {
@@ -899,30 +899,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de volumes niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour volumes - Question 1",
+              "question": "Quelle est la formule du volume d'un cube d'arête a ?",
+              "correctAnswer": "a³",
+              "explanation": "Le volume d'un cube d'arête a est a × a × a = a³.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "a³",
+                "3a",
+                "6a²",
+                "a²"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de volumes niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour volumes - Question 2",
+              "question": "Quelle est la formule du volume d'un parallélépipède rectangle de dimensions a, b et c ?",
+              "correctAnswer": "a × b × c",
+              "explanation": "Le volume d'un parallélépipède rectangle est le produit de ses trois dimensions : V = longueur × largeur × hauteur.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "a × b × c",
+                "a + b + c",
+                "2(a + b + c)",
+                "a² + b² + c²"
               ]
             },
             {
@@ -1037,45 +1037,45 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 1",
+              "question": "Qu'est-ce qu'une didascalie au théâtre ?",
+              "correctAnswer": "Une indication scénique",
+              "explanation": "Les didascalies sont les indications de mise en scène écrites par l'auteur (gestes, décors, costumes...).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une indication scénique",
+                "Un dialogue entre personnages",
+                "Un monologue",
+                "Une chanson"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 2",
+              "question": "Qui a écrit 'Le Bourgeois gentilhomme' ?",
+              "correctAnswer": "Molière",
+              "explanation": "'Le Bourgeois gentilhomme' est une comédie-ballet de Molière créée en 1670.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Molière",
+                "Corneille",
+                "Racine",
+                "Marivaux"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 3",
+              "question": "Qu'est-ce qu'un aparté au théâtre ?",
+              "correctAnswer": "Une réplique que seul le public entend",
+              "explanation": "L'aparté est une réplique qu'un personnage prononce et que seul le public est censé entendre, pas les autres personnages.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une réplique que seul le public entend",
+                "Un dialogue entre deux personnages",
+                "Une indication de décor",
+                "Un changement de scène"
               ]
             },
             {
@@ -1424,30 +1424,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 1",
+              "question": "Conjuguez le verbe 'finir' à la 3e personne du pluriel du présent de l'indicatif.",
+              "correctAnswer": "ils finissent",
+              "explanation": "Le verbe 'finir' du 2e groupe se conjugue : ils finissent (radical + iss + ent).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ils finissent",
+                "ils finisent",
+                "ils finiront",
+                "ils ont fini"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de conjugaison niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 2",
+              "question": "Conjuguez 'voir' à la 1ère personne du singulier du passé composé.",
+              "correctAnswer": "j'ai vu",
+              "explanation": "Le verbe 'voir' se conjugue avec l'auxiliaire avoir : j'ai vu (participe passé : vu).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "j'ai vu",
+                "j'ai voir",
+                "je vois",
+                "j'ai voyé"
               ]
             },
             {

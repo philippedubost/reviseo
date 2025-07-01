@@ -125,75 +125,75 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 1",
+              "question": "Résoudre l'équation 3x - 7 = 2x + 5",
+              "correctAnswer": "x = 12",
+              "explanation": "3x - 7 = 2x + 5 ⟺ 3x - 2x = 5 + 7 ⟺ x = 12.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 12",
+                "x = 2",
+                "x = -2",
+                "x = 6"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 2",
+              "question": "Résoudre l'inéquation 2x + 3 > 7",
+              "correctAnswer": "x > 2",
+              "explanation": "2x + 3 > 7 ⟺ 2x > 7 - 3 ⟺ 2x > 4 ⟺ x > 2.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x > 2",
+                "x < 2",
+                "x > 5",
+                "x < 5"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 3",
+              "question": "Résoudre l'équation x² = 25",
+              "correctAnswer": "x = 5 ou x = -5",
+              "explanation": "x² = 25 ⟺ x = √25 ou x = -√25 ⟺ x = 5 ou x = -5.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 5 ou x = -5",
+                "x = 5",
+                "x = 25",
+                "x = -5"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 4",
+              "question": "Résoudre l'équation x² - 5x + 6 = 0",
+              "correctAnswer": "x = 2 ou x = 3",
+              "explanation": "On factorise : x² - 5x + 6 = (x - 2)(x - 3) = 0, donc x = 2 ou x = 3.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 2 ou x = 3",
+                "x = 1 ou x = 6",
+                "x = -2 ou x = -3",
+                "x = 5 ou x = 6"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 5",
+              "question": "Résoudre l'inéquation -2x + 6 ≤ 0",
+              "correctAnswer": "x ≥ 3",
+              "explanation": "-2x + 6 ≤ 0 ⟺ -2x ≤ -6 ⟺ x ≥ 3 (on change le sens de l'inégalité en divisant par -2).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x ≥ 3",
+                "x ≤ 3",
+                "x ≥ -3",
+                "x ≤ -3"
               ]
             },
             {
@@ -254,15 +254,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théorème de thalès niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 1",
+              "question": "Dans un triangle ABC, si (MN) // (BC) avec M sur [AB] et N sur [AC], alors :",
+              "correctAnswer": "AM/AB = AN/AC = MN/BC",
+              "explanation": "C'est l'énoncé du théorème de Thalès : les rapports des segments correspondants sont égaux.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "AM/AB = AN/AC = MN/BC",
+                "AM = AN = MN",
+                "AB = AC = BC",
+                "AM × AB = AN × AC"
               ]
             },
             {
@@ -383,75 +383,75 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 1",
+              "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté adjacent / hypoténuse",
+              "explanation": "Le cosinus d'un angle aigu dans un triangle rectangle est le rapport du côté adjacent à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté adjacent / hypoténuse",
+                "côté opposé / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté adjacent"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 2",
+              "question": "Dans un triangle rectangle, le sinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté opposé / hypoténuse",
+              "explanation": "Le sinus d'un angle aigu dans un triangle rectangle est le rapport du côté opposé à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté opposé / hypoténuse",
+                "côté adjacent / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté opposé"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 3",
+              "question": "Dans un triangle rectangle, la tangente d'un angle aigu est égale à :",
+              "correctAnswer": "côté opposé / côté adjacent",
+              "explanation": "La tangente d'un angle aigu dans un triangle rectangle est le rapport du côté opposé au côté adjacent.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté opposé / côté adjacent",
+                "côté adjacent / côté opposé",
+                "côté opposé / hypoténuse",
+                "côté adjacent / hypoténuse"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 4",
+              "question": "Dans un triangle rectangle, si sin(30°) = 0,5, que vaut cos(60°) ?",
+              "correctAnswer": "0,5",
+              "explanation": "Dans un triangle rectangle, sin(α) = cos(90° - α). Donc sin(30°) = cos(60°) = 0,5.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "0,5",
+                "0,866",
+                "1",
+                "0"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 5",
+              "question": "Dans un triangle rectangle ABC rectangle en C, si AB = 10 et sin(A) = 0,6, que vaut BC ?",
+              "correctAnswer": "6",
+              "explanation": "sin(A) = BC/AB, donc 0,6 = BC/10, d'où BC = 0,6 × 10 = 6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "4",
+                "8",
+                "16"
               ]
             },
             {

@@ -1634,120 +1634,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 1",
+              "question": "Qu'est-ce qu'un narrateur ?",
+              "correctAnswer": "Celui qui raconte l'histoire",
+              "explanation": "Le narrateur est la voix qui raconte l'histoire. Il peut être un personnage (narrateur interne) ou extérieur à l'histoire (narrateur externe).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Celui qui raconte l'histoire",
+                "Le personnage principal",
+                "L'auteur du livre",
+                "Le lecteur"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 2",
+              "question": "Quelle est la différence entre l'auteur et le narrateur ?",
+              "correctAnswer": "L'auteur écrit le livre, le narrateur raconte l'histoire",
+              "explanation": "L'auteur est la personne réelle qui a écrit le livre. Le narrateur est un personnage fictif ou une voix créée par l'auteur pour raconter l'histoire.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'auteur écrit le livre, le narrateur raconte l'histoire",
+                "C'est la même personne",
+                "L'auteur raconte, le narrateur écrit",
+                "Il n'y a pas de différence"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 3",
+              "question": "Qu'est-ce qu'un personnage principal ?",
+              "correctAnswer": "Le héros de l'histoire",
+              "explanation": "Le personnage principal (ou protagoniste) est le héros de l'histoire, celui autour duquel s'organise l'intrigue et qui vit les événements les plus importants.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le héros de l'histoire",
+                "Celui qui parle le plus",
+                "Le plus méchant",
+                "Le narrateur"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 4",
+              "question": "Qu'est-ce que le schéma narratif ?",
+              "correctAnswer": "La structure d'un récit en 5 étapes",
+              "explanation": "Le schéma narratif organise un récit en 5 étapes : situation initiale, élément perturbateur, péripéties, résolution, situation finale.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La structure d'un récit en 5 étapes",
+                "Le résumé de l'histoire",
+                "La description des personnages",
+                "La morale de l'histoire"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 5",
+              "question": "Qu'est-ce qu'un dialogue dans un récit ?",
+              "correctAnswer": "Les paroles échangées entre personnages",
+              "explanation": "Le dialogue reproduit les paroles échangées entre les personnages. Il est généralement marqué par des guillemets ou des tirets.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les paroles échangées entre personnages",
+                "La description du décor",
+                "Les pensées du narrateur",
+                "Le résumé de l'action"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 6",
+              "question": "Qu'est-ce qu'une description dans un récit ?",
+              "correctAnswer": "Le portrait d'un personnage ou d'un lieu",
+              "explanation": "La description donne des détails sur l'apparence des personnages, des lieux ou des objets pour aider le lecteur à se les représenter.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le portrait d'un personnage ou d'un lieu",
+                "Les actions des personnages",
+                "Les paroles des personnages",
+                "La fin de l'histoire"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de analyse de texte niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 7",
+              "question": "Qu'est-ce qu'une ellipse narrative ?",
+              "correctAnswer": "Un saut dans le temps du récit",
+              "explanation": "L'ellipse narrative consiste à passer sous silence une période de temps dans le récit. Par exemple : 'Trois ans plus tard...'",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un saut dans le temps du récit",
+                "Une figure de style",
+                "Un retour en arrière",
+                "Une répétition"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de analyse de texte niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 8",
+              "question": "Qu'est-ce qu'un retour en arrière (analepse) ?",
+              "correctAnswer": "Un récit d'événements antérieurs",
+              "explanation": "Le retour en arrière (ou analepse) interrompt le récit principal pour raconter des événements qui se sont passés avant. Exemple : un flash-back.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un récit d'événements antérieurs",
+                "Une anticipation du futur",
+                "Un dialogue",
+                "Une description"
               ]
             }
           ]
@@ -1763,120 +1763,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 1",
+              "question": "Que doit-on faire avant d'écrire un texte ?",
+              "correctAnswer": "Faire un plan",
+              "explanation": "Avant d'écrire, il faut organiser ses idées en faisant un plan avec une introduction, un développement et une conclusion.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Faire un plan",
+                "Écrire directement",
+                "Compter les mots",
+                "Recopier un modèle"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 2",
+              "question": "Qu'est-ce qu'un paragraphe ?",
+              "correctAnswer": "Un ensemble de phrases sur une même idée",
+              "explanation": "Un paragraphe regroupe plusieurs phrases qui développent une même idée. Il commence par un alinéa et se termine par un point.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un ensemble de phrases sur une même idée",
+                "Une seule phrase",
+                "Un mot important",
+                "Le titre du texte"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 3",
+              "question": "Quel est le rôle de l'introduction dans un texte ?",
+              "correctAnswer": "Présenter le sujet",
+              "explanation": "L'introduction sert à présenter le sujet, à situer le contexte et à annoncer le plan du développement qui va suivre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Présenter le sujet",
+                "Conclure le texte",
+                "Donner des exemples",
+                "Raconter une histoire"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 4",
+              "question": "Qu'est-ce qu'un connecteur logique ?",
+              "correctAnswer": "Un mot qui relie les idées",
+              "explanation": "Les connecteurs logiques (donc, mais, car, ensuite...) relient les phrases et les idées entre elles pour structurer le raisonnement.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un mot qui relie les idées",
+                "Un verbe d'action",
+                "Un adjectif qualificatif",
+                "Un nom propre"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 5",
+              "question": "Quel connecteur exprime l'opposition ?",
+              "correctAnswer": "mais",
+              "explanation": "'Mais' exprime l'opposition ou la nuance. Autres connecteurs d'opposition : cependant, pourtant, néanmoins, toutefois.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "mais",
+                "donc",
+                "car",
+                "ensuite"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 6",
+              "question": "Quel est le rôle de la conclusion ?",
+              "correctAnswer": "Résumer et donner son avis",
+              "explanation": "La conclusion résume les idées principales développées et peut donner un avis personnel ou ouvrir sur une réflexion plus large.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Résumer et donner son avis",
+                "Présenter le sujet",
+                "Donner des exemples",
+                "Poser des questions"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de expression écrite niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 7",
+              "question": "Comment éviter les répétitions dans un texte ?",
+              "correctAnswer": "Utiliser des synonymes et des pronoms",
+              "explanation": "Pour éviter les répétitions, on peut utiliser des synonymes, des pronoms de reprise, des périphrases ou reformuler différemment.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Utiliser des synonymes et des pronoms",
+                "Répéter le même mot",
+                "Écrire des phrases courtes",
+                "Ne pas utiliser de connecteurs"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de expression écrite niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 8",
+              "question": "Qu'est-ce qui caractérise un bon texte argumentatif ?",
+              "correctAnswer": "Des arguments avec des exemples",
+              "explanation": "Un bon texte argumentatif présente des arguments clairs et convaincants, soutenus par des exemples précis et des connecteurs logiques.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des arguments avec des exemples",
+                "Beaucoup de descriptions",
+                "Des dialogues nombreux",
+                "Aucune structure"
               ]
             }
           ]
@@ -1892,120 +1892,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 1",
+              "question": "Qu'est-ce qu'un vers ?",
+              "correctAnswer": "Une ligne de poésie",
+              "explanation": "Un vers est une ligne de poésie. Plusieurs vers forment une strophe, et plusieurs strophes forment un poème.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une ligne de poésie",
+                "Un poème entier",
+                "Une rime",
+                "Un mot"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 2",
+              "question": "Qu'est-ce qu'une strophe ?",
+              "correctAnswer": "Un groupe de vers",
+              "explanation": "Une strophe est un groupe de vers séparés des autres par un blanc. Les strophes organisent le poème.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un groupe de vers",
+                "Un seul vers",
+                "Une rime",
+                "Le titre du poème"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 3",
+              "question": "Qu'est-ce qu'une rime ?",
+              "correctAnswer": "La répétition de sons à la fin des vers",
+              "explanation": "Une rime est la répétition de sons identiques ou semblables à la fin de deux ou plusieurs vers.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de sons à la fin des vers",
+                "Le nombre de syllabes",
+                "Le rythme du poème",
+                "Le sens du vers"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 4",
+              "question": "Comment appelle-t-on une strophe de 4 vers ?",
+              "correctAnswer": "Un quatrain",
+              "explanation": "Une strophe de 4 vers s'appelle un quatrain. Autres types : tercet (3 vers), quintil (5 vers), sizain (6 vers).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un quatrain",
+                "Un tercet",
+                "Un distique",
+                "Un sizain"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 5",
+              "question": "Qu'est-ce qu'un alexandrin ?",
+              "correctAnswer": "Un vers de 12 syllabes",
+              "explanation": "L'alexandrin est un vers de 12 syllabes, très utilisé dans la poésie classique française (Corneille, Racine, Hugo...).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un vers de 12 syllabes",
+                "Un vers de 10 syllabes",
+                "Un vers de 8 syllabes",
+                "Un vers libre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 6",
+              "question": "Qu'est-ce qu'une rime embrassée ?",
+              "correctAnswer": "ABBA",
+              "explanation": "Les rimes embrassées suivent le schéma ABBA : la première rime avec la quatrième, la deuxième avec la troisième.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ABBA",
+                "ABAB",
+                "AABB",
+                "ABCD"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de poésie niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 7",
+              "question": "Qu'est-ce qu'une allitération ?",
+              "correctAnswer": "La répétition de consonnes",
+              "explanation": "L'allitération est la répétition de consonnes identiques dans un vers ou une phrase. Exemple : 'Pour qui sont ces serpents qui sifflent sur vos têtes ?'",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de consonnes",
+                "La répétition de voyelles",
+                "La répétition de mots",
+                "La répétition de vers"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de poésie niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 8",
+              "question": "Qu'est-ce qu'une assonance ?",
+              "correctAnswer": "La répétition de voyelles",
+              "explanation": "L'assonance est la répétition de voyelles identiques dans un vers ou une phrase. Exemple : 'Je fais souvent ce rêve étrange et pénétrant' (é/an).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de voyelles",
+                "La répétition de consonnes",
+                "La répétition de syllabes",
+                "La répétition de rimes"
               ]
             }
           ]
@@ -2030,90 +2030,90 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "question": "Quand a eu lieu la chute de l'Empire romain d'Occident ?",
+              "correctAnswer": "476 après J.-C.",
+              "explanation": "L'Empire romain d'Occident s'effondre en 476 après J.-C. quand le dernier empereur Romulus Augustule est déposé par Odoacre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "476 après J.-C.",
+                "410 après J.-C.",
+                "500 après J.-C.",
+                "395 après J.-C."
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "question": "Qui était Clovis ?",
+              "correctAnswer": "Le premier roi des Francs converti au christianisme",
+              "explanation": "Clovis (vers 466-511) fut le premier roi des Francs à se convertir au christianisme, vers 496. Il unifie une grande partie de la Gaule.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le premier roi des Francs converti au christianisme",
+                "Un empereur romain",
+                "Un chef gaulois",
+                "Un roi wisigoth"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "question": "Qu'est-ce que le Moyen Âge ?",
+              "correctAnswer": "La période entre l'Antiquité et les Temps modernes",
+              "explanation": "Le Moyen Âge est la période historique qui s'étend de la chute de Rome (476) à la découverte de l'Amérique (1492), entre l'Antiquité et les Temps modernes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La période entre l'Antiquité et les Temps modernes",
+                "La période romaine",
+                "La période contemporaine",
+                "La préhistoire"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "question": "Qui était Charlemagne ?",
+              "correctAnswer": "L'empereur qui a créé l'Empire carolingien",
+              "explanation": "Charlemagne (742-814) est couronné empereur en 800 par le pape. Il crée l'Empire carolingien et favorise la renaissance culturelle.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'empereur qui a créé l'Empire carolingien",
+                "Un roi de France",
+                "Un empereur romain",
+                "Un chef viking"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "question": "Qu'est-ce que la féodalité ?",
+              "correctAnswer": "Un système social basé sur les liens personnels",
+              "explanation": "La féodalité est un système social médiéval basé sur les liens personnels entre seigneurs et vassaux, avec échange de protection contre service militaire.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un système social basé sur les liens personnels",
+                "Une religion",
+                "Un type de château",
+                "Une guerre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "question": "Qu'est-ce qu'un vassal ?",
+              "correctAnswer": "Un homme libre qui se met au service d'un seigneur",
+              "explanation": "Le vassal est un homme libre qui prête serment de fidélité à un seigneur (son suzerain) et reçoit en échange un fief (terre).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un homme libre qui se met au service d'un seigneur",
+                "Un esclave",
+                "Un paysan",
+                "Un roi"
               ]
             },
             {

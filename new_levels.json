@@ -9721,45 +9721,45 @@
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 6",
+                  "question": "Quelle est l'identité remarquable (a + b)² ?",
+                  "correctAnswer": "a² + 2ab + b²",
+                  "explanation": "(a + b)² = (a + b)(a + b) = a² + ab + ba + b² = a² + 2ab + b²",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "a² + 2ab + b²",
+                    "a² + b²",
+                    "a² - 2ab + b²",
+                    "2a² + 2b²"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 7",
+                  "question": "Que vaut (x - 5)² développé ?",
+                  "correctAnswer": "x² - 10x + 25",
+                  "explanation": "(x - 5)² = x² - 2×x×5 + 5² = x² - 10x + 25 en utilisant l'identité (a - b)².",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x² - 10x + 25",
+                    "x² + 10x + 25",
+                    "x² - 25",
+                    "x² - 5x + 25"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 8",
+                  "question": "Comment factoriser x² - 9 ?",
+                  "correctAnswer": "(x - 3)(x + 3)",
+                  "explanation": "x² - 9 = x² - 3² = (x - 3)(x + 3) en utilisant l'identité a² - b² = (a - b)(a + b).",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "(x - 3)(x + 3)",
+                    "(x - 9)(x + 1)",
+                    "x(x - 9)",
+                    "(x - 3)²"
                   ]
                 }
               ]
@@ -9775,15 +9775,15 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de équations niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour équations - Question 1",
+                  "question": "Qu'est-ce qu'une équation ?",
+                  "correctAnswer": "Une égalité contenant une inconnue",
+                  "explanation": "Une équation est une égalité mathématique qui contient une ou plusieurs inconnues à déterminer.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une égalité contenant une inconnue",
+                    "Une expression littérale",
+                    "Une formule mathématique",
+                    "Un calcul numérique"
                   ]
                 },
                 {

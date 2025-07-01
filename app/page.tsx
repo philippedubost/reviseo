@@ -16,16 +16,12 @@ export default function Home() {
     }
   };
 
-  // Niveaux disponibles (cliquables)
-  const availableLevels = ['troisieme', 'terminale'];
+  // Niveaux disponibles (cliquables) - TOUS DÉBLOQUÉS
+  const availableLevels = ['sixieme', 'cinquieme', 'quatrieme', 'troisieme', 'seconde', 'premiere', 'terminale'];
   
-  // Niveaux à venir (grisés)
-  const upcomingLevels = [
-    { id: 'sixieme', name: 'Sixième', emoji: '📚', description: 'Début du collège' },
-    { id: 'cinquieme', name: 'Cinquième', emoji: '🎯', description: 'Collège' },
-    { id: 'quatrieme', name: 'Quatrième', emoji: '⚡', description: 'Collège' },
-    { id: 'seconde', name: 'Seconde', emoji: '🚀', description: 'Début du lycée' },
-    { id: 'premiere', name: 'Première', emoji: '💎', description: 'Lycée' }
+  // Niveaux à venir (grisés) - Aucun pour le moment
+  const upcomingLevels: { id: string; name: string; emoji: string; description: string }[] = [
+    // Tous les niveaux sont maintenant disponibles
   ];
 
   return (

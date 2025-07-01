@@ -155,15 +155,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations et inéquations niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 3",
+              "question": "Résoudre l'équation x² = 25",
+              "correctAnswer": "x = 5 ou x = -5",
+              "explanation": "x² = 25 ⟺ x = √25 ou x = -√25 ⟺ x = 5 ou x = -5.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 5 ou x = -5",
+                "x = 5",
+                "x = 25",
+                "x = -5"
               ]
             },
             {
@@ -413,15 +413,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de trigonométrie niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 3",
+              "question": "Dans un triangle rectangle, la tangente d'un angle aigu est égale à :",
+              "correctAnswer": "côté opposé / côté adjacent",
+              "explanation": "La tangente d'un angle aigu dans un triangle rectangle est le rapport du côté opposé au côté adjacent.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté opposé / côté adjacent",
+                "côté adjacent / côté opposé",
+                "côté opposé / hypoténuse",
+                "côté adjacent / hypoténuse"
               ]
             },
             {

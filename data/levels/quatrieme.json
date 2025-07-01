@@ -170,15 +170,15 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de Thalès niveau quatrieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour Thalès - Question 4",
+              "question": "Dans un triangle ABC, M est sur [AB] tel que AM = 3 et MB = 2. N est sur [AC] tel que (MN) // (BC). Si AC = 10, que vaut AN ?",
+              "correctAnswer": "6",
+              "explanation": "D'après Thalès : AM/AB = AN/AC, donc 3/5 = AN/10, d'où AN = (3×10)/5 = 6.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6",
+                "4",
+                "8",
+                "5"
               ]
             },
             {
@@ -413,15 +413,15 @@
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de équations niveau quatrieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations - Question 3",
+              "question": "Résoudre l'équation 5x = 20",
+              "correctAnswer": "x = 4",
+              "explanation": "Pour résoudre 5x = 20, on divise les deux membres par 5 : x = 20/5 = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 4",
+                "x = 5",
+                "x = 15",
+                "x = 100"
               ]
             },
             {
@@ -512,15 +512,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de cosinus niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour cosinus - Question 1",
+              "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
+              "correctAnswer": "côté adjacent / hypoténuse",
+              "explanation": "Le cosinus d'un angle aigu dans un triangle rectangle est le rapport du côté adjacent à l'hypoténuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "côté adjacent / hypoténuse",
+                "côté opposé / hypoténuse",
+                "côté opposé / côté adjacent",
+                "hypoténuse / côté adjacent"
               ]
             },
             {
@@ -641,30 +641,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 1",
+              "question": "Que vaut 2³ ?",
+              "correctAnswer": "8",
+              "explanation": "2³ = 2 × 2 × 2 = 8",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "6",
+                "9",
+                "4"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances - Question 2",
+              "question": "Calculer 10⁴",
+              "correctAnswer": "10 000",
+              "explanation": "10⁴ = 10 × 10 × 10 × 10 = 10 000",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "10 000",
+                "1 000",
+                "40",
+                "100 000"
               ]
             },
             {
@@ -1037,30 +1037,30 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 1",
+              "question": "Qu'est-ce qu'une didascalie au théâtre ?",
+              "correctAnswer": "Une indication scénique",
+              "explanation": "Les didascalies sont les indications de mise en scène écrites par l'auteur (gestes, décors, costumes...).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une indication scénique",
+                "Un dialogue entre personnages",
+                "Un monologue",
+                "Une chanson"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théâtre niveau quatrieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théâtre - Question 2",
+              "question": "Qui a écrit 'Le Bourgeois gentilhomme' ?",
+              "correctAnswer": "Molière",
+              "explanation": "'Le Bourgeois gentilhomme' est une comédie-ballet de Molière créée en 1670.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Molière",
+                "Corneille",
+                "Racine",
+                "Marivaux"
               ]
             },
             {

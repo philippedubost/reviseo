@@ -140,15 +140,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de dérivation avancée niveau terminale - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour dérivation avancée - Question 2",
+              "question": "Quelle est la dérivée de f(x) = x·ln(x) ?",
+              "correctAnswer": "ln(x) + 1",
+              "explanation": "En utilisant la règle du produit : f'(x) = 1·ln(x) + x·(1/x) = ln(x) + 1.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ln(x) + 1",
+                "ln(x)",
+                "1/x",
+                "x/ln(x)"
               ]
             },
             {
@@ -269,15 +269,15 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de intégration niveau terminale - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour intégration - Question 2",
+              "question": "Que vaut ∫ 2x dx ?",
+              "correctAnswer": "x² + C",
+              "explanation": "L'intégrale de 2x est x² + C où C est une constante d'intégration.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x² + C",
+                "2x² + C",
+                "x + C",
+                "2 + C"
               ]
             },
             {
@@ -383,15 +383,15 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de fonctions exponentielles niveau terminale - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour fonctions exponentielles - Question 1",
+              "question": "Quelle est la limite de eˣ quand x tend vers +∞ ?",
+              "correctAnswer": "+∞",
+              "explanation": "La fonction exponentielle tend vers +∞ quand x tend vers +∞.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "+∞",
+                "0",
+                "1",
+                "e"
               ]
             },
             {

@@ -5887,120 +5887,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 1",
+                  "question": "Qu'est-ce que le narrateur d'un récit ?",
+                  "correctAnswer": "Celui qui raconte l'histoire",
+                  "explanation": "Le narrateur est la voix qui raconte l'histoire, il peut être un personnage ou extérieur au récit.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Celui qui raconte l'histoire",
+                    "Le héros principal",
+                    "L'auteur du livre",
+                    "Le lecteur"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 2",
+                  "question": "Quel pronom indique une narration à la première personne ?",
+                  "correctAnswer": "Je",
+                  "explanation": "Quand le narrateur utilise 'je', il s'agit d'une narration à la première personne.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Je",
+                    "Il",
+                    "Tu",
+                    "Nous"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 3",
+                  "question": "Qu'est-ce que le cadre spatio-temporel d'un récit ?",
+                  "correctAnswer": "Le lieu et l'époque de l'action",
+                  "explanation": "Le cadre spatio-temporel désigne où et quand se déroule l'histoire (espace et temps).",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le lieu et l'époque de l'action",
+                    "Les personnages principaux",
+                    "Le thème du récit",
+                    "Le style de l'auteur"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 4",
+                  "question": "Qu'est-ce qu'une description dans un récit ?",
+                  "correctAnswer": "Un passage qui présente un lieu ou un personnage",
+                  "explanation": "La description permet de présenter en détail les lieux, les personnages ou les objets.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un passage qui présente un lieu ou un personnage",
+                    "Un dialogue entre personnages",
+                    "Une action importante",
+                    "La conclusion du récit"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 5",
+                  "question": "Comment appelle-t-on les paroles rapportées des personnages ?",
+                  "correctAnswer": "Le dialogue",
+                  "explanation": "Le dialogue reproduit les paroles échangées entre les personnages, souvent entre guillemets.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le dialogue",
+                    "La narration",
+                    "La description",
+                    "Le monologue"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 6",
+                  "question": "Qu'est-ce que le schéma narratif d'un récit ?",
+                  "correctAnswer": "Les étapes de l'histoire",
+                  "explanation": "Le schéma narratif présente les étapes du récit : situation initiale, élément perturbateur, péripéties, résolution, situation finale.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Les étapes de l'histoire",
+                    "Les personnages principaux",
+                    "Le style d'écriture",
+                    "Les figures de style"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 7",
+                  "question": "Qu'est-ce qu'une métaphore ?",
+                  "correctAnswer": "Une comparaison sans outil de comparaison",
+                  "explanation": "La métaphore compare deux éléments sans utiliser d'outil de comparaison (comme, tel que...).",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une comparaison sans outil de comparaison",
+                    "Une exagération volontaire",
+                    "Une répétition de sons",
+                    "Une question sans réponse"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de analyse de texte niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour analyse de texte - Question 8",
+                  "question": "Quel temps verbal est souvent utilisé dans les récits au passé ?",
+                  "correctAnswer": "Le passé simple",
+                  "explanation": "Le passé simple est le temps de la narration au passé, il exprime des actions accomplies et délimitées.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Le passé simple",
+                    "Le présent",
+                    "Le futur",
+                    "Le conditionnel"
                   ]
                 }
               ]
@@ -6016,120 +6016,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de expression écrite niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 1",
+                  "question": "Qu'est-ce qu'un paragraphe dans un texte ?",
+                  "correctAnswer": "Un ensemble de phrases sur une même idée",
+                  "explanation": "Un paragraphe regroupe plusieurs phrases qui développent une même idée ou un même aspect du sujet.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un ensemble de phrases sur une même idée",
+                    "Une seule phrase",
+                    "Le titre du texte",
+                    "La conclusion"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de expression écrite niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 2",
+                  "question": "Quel connecteur logique exprime l'opposition ?",
+                  "correctAnswer": "Mais",
+                  "explanation": "'Mais' est un connecteur d'opposition qui introduit une idée contraire à la précédente.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Mais",
+                    "Donc",
+                    "Puis",
+                    "Car"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de expression écrite niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 3",
+                  "question": "Qu'est-ce qu'une introduction dans un texte argumentatif ?",
+                  "correctAnswer": "La partie qui présente le sujet",
+                  "explanation": "L'introduction présente le sujet, pose la problématique et annonce le plan du développement.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La partie qui présente le sujet",
+                    "La partie qui conclut",
+                    "Un exemple précis",
+                    "Un argument principal"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de expression écrite niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 4",
+                  "question": "Quel connecteur exprime la conséquence ?",
+                  "correctAnswer": "Donc",
+                  "explanation": "'Donc' est un connecteur logique qui exprime la conséquence, le résultat d'une cause.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Donc",
+                    "Parce que",
+                    "Malgré",
+                    "Ensuite"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de expression écrite niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 5",
+                  "question": "Qu'est-ce qu'un argument dans un texte ?",
+                  "correctAnswer": "Une raison qui justifie une opinion",
+                  "explanation": "Un argument est une raison, une preuve qui soutient et justifie une opinion ou une thèse.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une raison qui justifie une opinion",
+                    "Un exemple concret",
+                    "Une question posée",
+                    "Une description détaillée"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de expression écrite niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 6",
+                  "question": "Quelle est la fonction d'un exemple dans un texte argumentatif ?",
+                  "correctAnswer": "Illustrer et renforcer un argument",
+                  "explanation": "L'exemple sert à illustrer concrètement un argument et à le rendre plus convaincant.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Illustrer et renforcer un argument",
+                    "Remplacer l'argument",
+                    "Introduire le sujet",
+                    "Conclure le texte"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de expression écrite niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 7",
+                  "question": "Qu'est-ce qu'une thèse dans un texte argumentatif ?",
+                  "correctAnswer": "L'opinion défendue par l'auteur",
+                  "explanation": "La thèse est l'opinion principale, l'idée que l'auteur veut défendre et faire accepter au lecteur.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "L'opinion défendue par l'auteur",
+                    "Un argument secondaire",
+                    "Un exemple précis",
+                    "La conclusion du texte"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de expression écrite niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour expression écrite - Question 8",
+                  "question": "Quel type de phrase utilise-t-on pour donner un ordre ?",
+                  "correctAnswer": "La phrase impérative",
+                  "explanation": "La phrase impérative (ou injonctive) sert à donner un ordre, un conseil ou une interdiction.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La phrase impérative",
+                    "La phrase interrogative",
+                    "La phrase exclamative",
+                    "La phrase déclarative"
                   ]
                 }
               ]
@@ -6145,120 +6145,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de poésie niveau cinquieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 1",
+                  "question": "Comment appelle-t-on une ligne de poésie ?",
+                  "correctAnswer": "Un vers",
+                  "explanation": "Dans un poème, chaque ligne s'appelle un vers. Plusieurs vers forment une strophe.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un vers",
+                    "Une strophe",
+                    "Une rime",
+                    "Un pied"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de poésie niveau cinquieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 2",
+                  "question": "Qu'est-ce qu'une strophe ?",
+                  "correctAnswer": "Un groupe de vers",
+                  "explanation": "Une strophe est un groupe de vers séparés des autres par un blanc typographique.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un groupe de vers",
+                    "Un seul vers",
+                    "Une rime",
+                    "Le titre du poème"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de poésie niveau cinquieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 3",
+                  "question": "Qu'est-ce qu'une rime ?",
+                  "correctAnswer": "La répétition de sons à la fin des vers",
+                  "explanation": "Une rime est la répétition de sons identiques à la fin de deux ou plusieurs vers.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La répétition de sons à la fin des vers",
+                    "Le nombre de syllabes",
+                    "Le rythme du vers",
+                    "Le sens du poème"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de poésie niveau cinquieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 4",
+                  "question": "Comment s'appelle un vers de douze syllabes ?",
+                  "correctAnswer": "Un alexandrin",
+                  "explanation": "L'alexandrin est un vers de douze syllabes, très utilisé dans la poésie française classique.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un alexandrin",
+                    "Un octosyllabe",
+                    "Un décasyllabe",
+                    "Un hexasyllabe"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de poésie niveau cinquieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 5",
+                  "question": "Qu'est-ce qu'une allitération ?",
+                  "correctAnswer": "La répétition d'un même son consonne",
+                  "explanation": "L'allitération est la répétition d'un même son consonne dans des mots rapprochés.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La répétition d'un même son consonne",
+                    "La répétition d'un même son voyelle",
+                    "Une rime parfaite",
+                    "Un vers sans rime"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de poésie niveau cinquieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 6",
+                  "question": "Qu'est-ce qu'un quatrain ?",
+                  "correctAnswer": "Une strophe de quatre vers",
+                  "explanation": "Un quatrain est une strophe composée de quatre vers, très courante en poésie française.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Une strophe de quatre vers",
+                    "Une strophe de trois vers",
+                    "Une strophe de six vers",
+                    "Une strophe de huit vers"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de poésie niveau cinquieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 7",
+                  "question": "Qu'est-ce qu'une assonance ?",
+                  "correctAnswer": "La répétition d'un même son voyelle",
+                  "explanation": "L'assonance est la répétition d'un même son voyelle dans des mots rapprochés, créant un effet sonore.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "La répétition d'un même son voyelle",
+                    "La répétition d'un même son consonne",
+                    "Une rime riche",
+                    "Un rythme régulier"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de poésie niveau cinquieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour poésie - Question 8",
+                  "question": "Qu'est-ce qu'un sonnet ?",
+                  "correctAnswer": "Un poème de quatorze vers",
+                  "explanation": "Un sonnet est un poème de quatorze vers, généralement composé de deux quatrains et deux tercets.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Un poème de quatorze vers",
+                    "Un poème de douze vers",
+                    "Un poème de seize vers",
+                    "Un poème de dix vers"
                   ]
                 }
               ]
@@ -9517,120 +9517,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de Thalès niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 1",
+                  "question": "Que dit le théorème de Thalès ?",
+                  "correctAnswer": "Si deux droites sont parallèles, alors elles forment des triangles proportionnels",
+                  "explanation": "Le théorème de Thalès établit une relation de proportionnalité dans des triangles formés par des droites parallèles.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Si deux droites sont parallèles, alors elles forment des triangles proportionnels",
+                    "La somme des angles d'un triangle vaut 180°",
+                    "Le carré de l'hypoténuse égale la somme des carrés des côtés",
+                    "Deux triangles égaux ont la même aire"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de Thalès niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 2",
+                  "question": "Dans un triangle ABC, si (DE) // (BC), que peut-on dire des rapports AD/AB et AE/AC ?",
+                  "correctAnswer": "Ils sont égaux",
+                  "explanation": "D'après le théorème de Thalès, si (DE) // (BC), alors AD/AB = AE/AC = DE/BC.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Ils sont égaux",
+                    "Ils sont opposés",
+                    "Leur somme vaut 1",
+                    "Ils sont inversement proportionnels"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de Thalès niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 3",
+                  "question": "Que permet de calculer le théorème de Thalès ?",
+                  "correctAnswer": "Des longueurs manquantes dans des triangles",
+                  "explanation": "Le théorème de Thalès permet de calculer des longueurs inconnues grâce aux rapports de proportionnalité.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Des longueurs manquantes dans des triangles",
+                    "Des angles dans un triangle",
+                    "L'aire d'un triangle",
+                    "Le périmètre d'un triangle"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de Thalès niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 4",
+                  "question": "Si AB = 6 cm, AD = 4 cm et AC = 9 cm, et si (DE) // (BC), que vaut AE ?",
+                  "correctAnswer": "6 cm",
+                  "explanation": "D'après Thalès : AD/AB = AE/AC, donc 4/6 = AE/9, d'où AE = (4×9)/6 = 6 cm.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "6 cm",
+                    "8 cm",
+                    "12 cm",
+                    "3 cm"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de Thalès niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 5",
+                  "question": "Comment vérifier si deux droites sont parallèles avec le théorème de Thalès ?",
+                  "correctAnswer": "En vérifiant si les rapports sont égaux",
+                  "explanation": "Si AD/AB = AE/AC, alors par la réciproque de Thalès, les droites (DE) et (BC) sont parallèles.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "En vérifiant si les rapports sont égaux",
+                    "En mesurant les angles",
+                    "En calculant les aires",
+                    "En traçant les perpendiculaires"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de Thalès niveau quatrieme - Question 6",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 6",
+                  "question": "Dans quelles configurations peut-on appliquer le théorème de Thalès ?",
+                  "correctAnswer": "Triangle avec droite parallèle à un côté",
+                  "explanation": "Le théorème de Thalès s'applique quand une droite est parallèle à un côté d'un triangle.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Triangle avec droite parallèle à un côté",
+                    "Triangle rectangle uniquement",
+                    "Triangle isocèle uniquement",
+                    "Tous les quadrilatères"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de Thalès niveau quatrieme - Question 7",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 7",
+                  "question": "Si dans un triangle ABC, AD = 3 cm, DB = 2 cm, AE = 4,5 cm et EC = 3 cm, les droites (DE) et (BC) sont-elles parallèles ?",
+                  "correctAnswer": "Oui",
+                  "explanation": "AD/AB = 3/5 = 0,6 et AE/AC = 4,5/7,5 = 0,6. Les rapports sont égaux donc (DE) // (BC).",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Oui",
+                    "Non",
+                    "Impossible à déterminer",
+                    "Seulement si ABC est rectangle"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Question de Thalès niveau quatrieme - Question 8",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour Thalès - Question 8",
+                  "question": "Qu'est-ce que la contraposée du théorème de Thalès ?",
+                  "correctAnswer": "Si les rapports ne sont pas égaux, alors les droites ne sont pas parallèles",
+                  "explanation": "La contraposée permet de prouver que deux droites ne sont pas parallèles si les rapports sont différents.",
                   "points": 20,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Si les rapports ne sont pas égaux, alors les droites ne sont pas parallèles",
+                    "Si les droites sont parallèles, alors les rapports sont égaux",
+                    "Si les triangles sont semblables, alors ils sont égaux",
+                    "Si les angles sont égaux, alors les côtés sont proportionnels"
                   ]
                 }
               ]
@@ -9646,75 +9646,75 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 1",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 1",
+                  "question": "Que signifie 'développer' une expression ?",
+                  "correctAnswer": "Supprimer les parenthèses en appliquant la distributivité",
+                  "explanation": "Développer consiste à transformer un produit en somme en utilisant la distributivité.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Supprimer les parenthèses en appliquant la distributivité",
+                    "Mettre en facteur commun",
+                    "Résoudre une équation",
+                    "Calculer une valeur numérique"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 2",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 2",
+                  "question": "Que vaut 3(x + 2) développé ?",
+                  "correctAnswer": "3x + 6",
+                  "explanation": "3(x + 2) = 3 × x + 3 × 2 = 3x + 6 par distributivité.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3x + 6",
+                    "3x + 2",
+                    "x + 6",
+                    "3x + 5"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 3",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 3",
+                  "question": "Que signifie 'factoriser' une expression ?",
+                  "correctAnswer": "Mettre en facteur commun pour obtenir un produit",
+                  "explanation": "Factoriser consiste à transformer une somme en produit en mettant en facteur commun.",
                   "points": 10,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "Mettre en facteur commun pour obtenir un produit",
+                    "Développer les parenthèses",
+                    "Calculer la valeur numérique",
+                    "Résoudre l'équation"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 4",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 4",
+                  "question": "Comment factoriser 6x + 9 ?",
+                  "correctAnswer": "3(2x + 3)",
+                  "explanation": "Le facteur commun est 3 car 6x = 3 × 2x et 9 = 3 × 3, donc 6x + 9 = 3(2x + 3).",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "3(2x + 3)",
+                    "6(x + 9)",
+                    "x(6 + 9)",
+                    "3x(2 + 3)"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Question de calcul littéral niveau quatrieme - Question 5",
-                  "correctAnswer": "Option A",
-                  "explanation": "Explication pour calcul littéral - Question 5",
+                  "question": "Que vaut (x + 3)(x - 2) développé ?",
+                  "correctAnswer": "x² + x - 6",
+                  "explanation": "(x + 3)(x - 2) = x² - 2x + 3x - 6 = x² + x - 6 par double distributivité.",
                   "points": 15,
                   "options": [
-                    "Option A",
-                    "Option B",
-                    "Option C",
-                    "Option D"
+                    "x² + x - 6",
+                    "x² - x - 6",
+                    "x² + 5x - 6",
+                    "x² - 5x + 6"
                   ]
                 },
                 {

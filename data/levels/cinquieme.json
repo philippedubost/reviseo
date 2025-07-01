@@ -533,75 +533,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 4",
+              "question": "Combien d'axes de symétrie possède un rectangle (qui n'est pas un carré) ?",
+              "correctAnswer": "2",
+              "explanation": "Un rectangle possède 2 axes de symétrie : les médiatrices de ses côtés opposés (une horizontale et une verticale).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2",
+                "1",
+                "4",
+                "0"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 5",
+              "question": "Quelle est la particularité d'un triangle isocèle ?",
+              "correctAnswer": "Il a deux côtés de même longueur",
+              "explanation": "Un triangle isocèle a deux côtés de même longueur et deux angles égaux (les angles à la base).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Il a deux côtés de même longueur",
+                "Il a trois côtés de même longueur",
+                "Il a un angle droit",
+                "Il a tous ses angles différents"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 6",
+              "question": "Dans un parallélogramme, que peut-on dire des côtés opposés ?",
+              "correctAnswer": "Ils sont parallèles et de même longueur",
+              "explanation": "Dans un parallélogramme, les côtés opposés sont parallèles et de même longueur. C'est la définition même du parallélogramme.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Ils sont parallèles et de même longueur",
+                "Ils sont perpendiculaires",
+                "Ils sont seulement parallèles",
+                "Ils sont seulement de même longueur"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de géométrie niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 7",
+              "question": "Quel est le centre de symétrie d'un parallélogramme ?",
+              "correctAnswer": "Le point d'intersection de ses diagonales",
+              "explanation": "Le centre de symétrie d'un parallélogramme est le point d'intersection de ses diagonales. Toute rotation de 180° autour de ce point laisse la figure invariante.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le point d'intersection de ses diagonales",
+                "Le milieu d'un côté",
+                "Un sommet",
+                "Il n'en a pas"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de géométrie niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 8",
+              "question": "Comment construire la médiatrice d'un segment [AB] ?",
+              "correctAnswer": "Tracer la droite perpendiculaire à [AB] passant par son milieu",
+              "explanation": "La médiatrice d'un segment est la droite perpendiculaire à ce segment passant par son milieu. Tous les points de cette droite sont équidistants des extrémités du segment.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Tracer la droite perpendiculaire à [AB] passant par son milieu",
+                "Tracer la droite passant par A et B",
+                "Tracer une droite parallèle à [AB]",
+                "Tracer la bissectrice de l'angle AOB"
               ]
             }
           ]
@@ -662,75 +662,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 4",
+              "question": "Quelle est la moyenne de la série : 8, 12, 10, 14, 16 ?",
+              "correctAnswer": "12",
+              "explanation": "Moyenne = (8 + 12 + 10 + 14 + 16) ÷ 5 = 60 ÷ 5 = 12",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12",
+                "10",
+                "14",
+                "11"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 5",
+              "question": "Dans la série 4, 7, 9, 11, 13, 15, quelle est l'étendue ?",
+              "correctAnswer": "11",
+              "explanation": "L'étendue est la différence entre la plus grande et la plus petite valeur : 15 - 4 = 11",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "11",
+                "9",
+                "15",
+                "4"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 6",
+              "question": "Comment lit-on un diagramme en bâtons ?",
+              "correctAnswer": "La hauteur de chaque bâton indique l'effectif",
+              "explanation": "Dans un diagramme en bâtons, chaque modalité est représentée par un bâton dont la hauteur est proportionnelle à son effectif.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La hauteur de chaque bâton indique l'effectif",
+                "La largeur de chaque bâton indique l'effectif",
+                "Tous les bâtons ont la même hauteur",
+                "On ne peut pas lire les effectifs"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 7",
+              "question": "Dans un diagramme circulaire, si une modalité représente 25% des données, quel angle occupe-t-elle ?",
+              "correctAnswer": "90°",
+              "explanation": "Dans un diagramme circulaire, 100% = 360°. Donc 25% = (25 × 360°) ÷ 100 = 90°",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "90°",
+                "45°",
+                "180°",
+                "120°"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 8",
+              "question": "Dans la série 2, 5, 5, 7, 8, 10, 10, 10, 12, quelle est la médiane ?",
+              "correctAnswer": "8",
+              "explanation": "On classe la série : 2, 5, 5, 7, 8, 10, 10, 10, 12. Avec 9 valeurs, la médiane est la 5ème valeur : 8",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "7",
+                "10",
+                "7,5"
               ]
             }
           ]
@@ -821,45 +821,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de angles niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 6",
+              "question": "Dans un triangle, la somme des trois angles vaut :",
+              "correctAnswer": "180°",
+              "explanation": "La somme des angles d'un triangle est toujours égale à 180°. C'est une propriété fondamentale des triangles.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "180°",
+                "90°",
+                "360°",
+                "270°"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de angles niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 7",
+              "question": "Si un angle mesure 35°, que mesure son complément ?",
+              "correctAnswer": "55°",
+              "explanation": "Le complément d'un angle est l'angle qui, ajouté au premier, donne 90°. Donc 90° - 35° = 55°.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "55°",
+                "145°",
+                "65°",
+                "125°"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de angles niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 8",
+              "question": "Si un angle mesure 120°, que mesure son supplément ?",
+              "correctAnswer": "60°",
+              "explanation": "Le supplément d'un angle est l'angle qui, ajouté au premier, donne 180°. Donc 180° - 120° = 60°.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "60°",
+                "240°",
+                "80°",
+                "30°"
               ]
             }
           ]
@@ -920,75 +920,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 4",
+              "question": "Quelle est l'aire d'un carré de côté 7 cm ?",
+              "correctAnswer": "49 cm²",
+              "explanation": "L'aire d'un carré = côté × côté. Donc A = 7 × 7 = 49 cm².",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "49 cm²",
+                "28 cm²",
+                "14 cm²",
+                "35 cm²"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 5",
+              "question": "Quelle est l'aire d'un rectangle de longueur 9 cm et de largeur 4 cm ?",
+              "correctAnswer": "36 cm²",
+              "explanation": "L'aire d'un rectangle = longueur × largeur. Donc A = 9 × 4 = 36 cm².",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "36 cm²",
+                "26 cm²",
+                "13 cm²",
+                "18 cm²"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 6",
+              "question": "Un terrain rectangulaire a une longueur de 25 m et une largeur de 15 m. Quel est son périmètre ?",
+              "correctAnswer": "80 m",
+              "explanation": "Périmètre = 2 × (longueur + largeur) = 2 × (25 + 15) = 2 × 40 = 80 m.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "80 m",
+                "40 m",
+                "375 m",
+                "50 m"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de périmètres niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 7",
+              "question": "Quelle est l'aire d'un triangle de base 12 cm et de hauteur 8 cm ?",
+              "correctAnswer": "48 cm²",
+              "explanation": "L'aire d'un triangle = (base × hauteur) ÷ 2 = (12 × 8) ÷ 2 = 96 ÷ 2 = 48 cm².",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "48 cm²",
+                "96 cm²",
+                "20 cm²",
+                "40 cm²"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de périmètres niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 8",
+              "question": "Un jardin carré a une aire de 144 m². Quel est son périmètre ?",
+              "correctAnswer": "48 m",
+              "explanation": "Si l'aire = 144 m², alors côté = √144 = 12 m. Le périmètre = 4 × 12 = 48 m.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "48 m",
+                "36 m",
+                "144 m",
+                "12 m"
               ]
             }
           ]
@@ -1193,45 +1193,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de conjugaison niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 6",
+              "question": "Quelle est la terminaison du verbe 'finir' à la 2ème personne du pluriel au présent ?",
+              "correctAnswer": "vous finissez",
+              "explanation": "Les verbes du 2ème groupe comme 'finir' ont la terminaison '-issez' à la 2ème personne du pluriel : vous finissez.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "vous finissez",
+                "vous finisez",
+                "vous finites",
+                "vous finir"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de conjugaison niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 7",
+              "question": "Conjuguez le verbe 'aller' à la 1ère personne du singulier au futur simple :",
+              "correctAnswer": "j'irai",
+              "explanation": "Le verbe 'aller' est irrégulier. Au futur simple, 1ère personne du singulier : j'irai.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "j'irai",
+                "j'allerai",
+                "je vais",
+                "j'irais"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de conjugaison niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 8",
+              "question": "Quel est le participe passé du verbe 'prendre' ?",
+              "correctAnswer": "pris",
+              "explanation": "Le participe passé du verbe 'prendre' est 'pris'. C'est un verbe irrégulier du 3ème groupe.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "pris",
+                "prit",
+                "prend",
+                "prendu"
               ]
             }
           ]
@@ -1322,45 +1322,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de orthographe niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 6",
+              "question": "Quelle est la bonne orthographe ?",
+              "correctAnswer": "Les fleurs que j'ai cueillies",
+              "explanation": "Avec l'auxiliaire avoir, le participe passé s'accorde avec le COD placé avant : 'que' (= les fleurs, féminin pluriel) → cueillies.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les fleurs que j'ai cueillies",
+                "Les fleurs que j'ai cueilli",
+                "Les fleurs que j'ai cueillis",
+                "Les fleurs que j'ai cueillir"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de orthographe niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 7",
+              "question": "Quelle phrase contient une erreur d'accord ?",
+              "correctAnswer": "Elles se sont lavé les mains",
+              "explanation": "Avec un verbe pronominal et un COD après, pas d'accord : 'Elles se sont lavé les mains' (COD = les mains). Correct serait : 'Elles se sont lavées' (sans COD).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Elles se sont lavé les mains",
+                "Elles se sont lavées",
+                "Elles ont lavé leurs mains",
+                "Elles lavent leurs mains"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de orthographe niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 8",
+              "question": "Complétez : 'Cent vingt euros' ou 'Cents vingt euros' ?",
+              "correctAnswer": "Cent vingt euros",
+              "explanation": "'Cent' ne prend pas de 's' quand il est suivi d'un autre nombre. On écrit donc 'cent vingt euros'.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Cent vingt euros",
+                "Cents vingt euros",
+                "Cent vingts euros",
+                "Cents vingts euros"
               ]
             }
           ]
@@ -1451,45 +1451,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de vocabulaire niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 6",
+              "question": "Quel mot appartient à la famille du mot 'terre' ?",
+              "correctAnswer": "terrestre",
+              "explanation": "Les mots de la même famille partagent le même radical. 'Terrestre' vient de 'terre' : terrain, terrasse, terrestre, territoire...",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "terrestre",
+                "terrible",
+                "terrier",
+                "terrain"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de vocabulaire niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 7",
+              "question": "Quel est le sens du préfixe 'pré-' dans le mot 'préhistoire' ?",
+              "correctAnswer": "avant",
+              "explanation": "Le préfixe 'pré-' signifie 'avant'. La préhistoire est la période avant l'histoire écrite.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "avant",
+                "après",
+                "pendant",
+                "sans"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de vocabulaire niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 8",
+              "question": "Quel est le sens du suffixe '-tion' dans le mot 'construction' ?",
+              "correctAnswer": "action de",
+              "explanation": "Le suffixe '-tion' exprime l'action ou le résultat d'une action. Construction = action de construire.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "action de",
+                "lieu où",
+                "qui fait",
+                "sans"
               ]
             }
           ]
@@ -1565,60 +1565,60 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 5",
+              "question": "Qu'est-ce que le Graal dans les romans de chevalerie ?",
+              "correctAnswer": "Un objet sacré recherché par les chevaliers",
+              "explanation": "Le Graal est présenté comme la coupe ayant recueilli le sang du Christ. Sa quête est un thème central des romans arthuriens.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un objet sacré recherché par les chevaliers",
+                "Une épée magique",
+                "Un château fort",
+                "Un cheval de guerre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 6",
+              "question": "Quel est le nom de l'épée du roi Arthur ?",
+              "correctAnswer": "Excalibur",
+              "explanation": "Excalibur est l'épée légendaire du roi Arthur, symbole de sa légitimité royale et de sa puissance.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Excalibur",
+                "Durandal",
+                "Joyeuse",
+                "Hauteclaire"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 7",
+              "question": "Qui est Chrétien de Troyes ?",
+              "correctAnswer": "Un écrivain de romans de chevalerie du XIIe siècle",
+              "explanation": "Chrétien de Troyes (vers 1135-1185) est l'auteur des premiers romans arthuriens en français : Perceval, Lancelot, Yvain...",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un écrivain de romans de chevalerie du XIIe siècle",
+                "Un chevalier de la Table Ronde",
+                "Un roi du Moyen Âge",
+                "Un troubadour provençal"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 8",
+              "question": "Quelle est la différence entre une chanson de geste et un roman de chevalerie ?",
+              "correctAnswer": "La chanson de geste est plus ancienne et en vers",
+              "explanation": "Les chansons de geste (XIe-XIIe s.) sont en vers et racontent des exploits guerriers. Les romans de chevalerie (XIIe-XIIIe s.) sont en prose et mettent l'accent sur l'amour courtois.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La chanson de geste est plus ancienne et en vers",
+                "Le roman de chevalerie est plus court",
+                "Il n'y a aucune différence",
+                "La chanson de geste parle d'amour"
               ]
             }
           ]

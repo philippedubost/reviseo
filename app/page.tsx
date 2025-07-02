@@ -1,10 +1,40 @@
 "use client";
 import { dataService } from "@/src/data/simplified-service";
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const router = useRouter();
   const levels = dataService.getAllLevels();
+  const [isLoading, setIsLoading] = useState(true);
+  const [visibleElements, setVisibleElements] = useState({
+    title: false,
+    levels: Array(7).fill(false)
+  });
+
+  useEffect(() => {
+    // Start the staggered animation sequence
+    const timer1 = setTimeout(() => setVisibleElements(prev => ({ ...prev, title: true })), 200);
+    
+    // Animate levels one by one with 200ms intervals
+    const levelTimers = [1, 2, 3, 4, 5, 6, 7].map((_, index) => 
+      setTimeout(() => {
+        setVisibleElements(prev => ({
+          ...prev,
+          levels: prev.levels.map((level, i) => i === index ? true : level)
+        }));
+      }, 600 + (index * 200))
+    );
+
+    // End loading state after all animations
+    const finalTimer = setTimeout(() => setIsLoading(false), 600 + (7 * 200) + 300);
+
+    return () => {
+      clearTimeout(timer1);
+      levelTimers.forEach(timer => clearTimeout(timer));
+      clearTimeout(finalTimer);
+    };
+  }, []);
 
   const getLevelGradient = (levelId: string) => {
     switch (levelId) {
@@ -66,7 +96,16 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-[#181c24]">
       {/* Header */}
       <div className="px-4 py-4 border-b border-gray-700">
-        <h1 className="text-xl font-bold text-white text-center">Choisis ton niveau</h1>
+        {/* Title */}
+        <h1 
+          className={`text-xl font-bold text-white text-center transition-all duration-700 ease-out ${
+            visibleElements.title 
+              ? 'opacity-100 transform translate-y-0' 
+              : 'opacity-0 transform translate-y-4'
+          }`}
+        >
+          Choisis ton niveau
+        </h1>
       </div>
 
       {/* Main Content */}
@@ -76,10 +115,14 @@ export default function Home() {
           {levelOrder
             .map(levelId => levels.find(level => level.id === levelId))
             .filter(level => level && availableLevels.includes(level.id))
-            .map((level) => (
+            .map((level, index) => (
             <button
               key={level!.id}
-              className="card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl text-white border border-white/20 shadow-lg"
+              className={`card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-700 ease-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl text-white border border-white/20 shadow-lg ${
+                visibleElements.levels[index]
+                  ? 'opacity-100 transform translate-x-0' 
+                  : 'opacity-0 transform -translate-x-full'
+              }`}
               style={{ background: getLevelGradient(level!.id) }}
               onClick={() => router.push(`/${level!.id}`)}
             >

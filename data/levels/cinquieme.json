@@ -533,75 +533,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 4",
+              "question": "Combien d'axes de symétrie possède un rectangle (qui n'est pas un carré) ?",
+              "correctAnswer": "2",
+              "explanation": "Un rectangle possède 2 axes de symétrie : les médiatrices de ses côtés opposés (une horizontale et une verticale).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2",
+                "1",
+                "4",
+                "0"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 5",
+              "question": "Quelle est la particularité d'un triangle isocèle ?",
+              "correctAnswer": "Il a deux côtés de même longueur",
+              "explanation": "Un triangle isocèle a deux côtés de même longueur et deux angles égaux (les angles à la base).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Il a deux côtés de même longueur",
+                "Il a trois côtés de même longueur",
+                "Il a un angle droit",
+                "Il a tous ses angles différents"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de géométrie niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 6",
+              "question": "Dans un parallélogramme, que peut-on dire des côtés opposés ?",
+              "correctAnswer": "Ils sont parallèles et de même longueur",
+              "explanation": "Dans un parallélogramme, les côtés opposés sont parallèles et de même longueur. C'est la définition même du parallélogramme.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Ils sont parallèles et de même longueur",
+                "Ils sont perpendiculaires",
+                "Ils sont seulement parallèles",
+                "Ils sont seulement de même longueur"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de géométrie niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 7",
+              "question": "Quel est le centre de symétrie d'un parallélogramme ?",
+              "correctAnswer": "Le point d'intersection de ses diagonales",
+              "explanation": "Le centre de symétrie d'un parallélogramme est le point d'intersection de ses diagonales. Toute rotation de 180° autour de ce point laisse la figure invariante.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le point d'intersection de ses diagonales",
+                "Le milieu d'un côté",
+                "Un sommet",
+                "Il n'en a pas"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de géométrie niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour géométrie - Question 8",
+              "question": "Comment construire la médiatrice d'un segment [AB] ?",
+              "correctAnswer": "Tracer la droite perpendiculaire à [AB] passant par son milieu",
+              "explanation": "La médiatrice d'un segment est la droite perpendiculaire à ce segment passant par son milieu. Tous les points de cette droite sont équidistants des extrémités du segment.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Tracer la droite perpendiculaire à [AB] passant par son milieu",
+                "Tracer la droite passant par A et B",
+                "Tracer une droite parallèle à [AB]",
+                "Tracer la bissectrice de l'angle AOB"
               ]
             }
           ]
@@ -662,75 +662,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 4",
+              "question": "Quelle est la moyenne de la série : 8, 12, 10, 14, 16 ?",
+              "correctAnswer": "12",
+              "explanation": "Moyenne = (8 + 12 + 10 + 14 + 16) ÷ 5 = 60 ÷ 5 = 12",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12",
+                "10",
+                "14",
+                "11"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 5",
+              "question": "Dans la série 4, 7, 9, 11, 13, 15, quelle est l'étendue ?",
+              "correctAnswer": "11",
+              "explanation": "L'étendue est la différence entre la plus grande et la plus petite valeur : 15 - 4 = 11",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "11",
+                "9",
+                "15",
+                "4"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 6",
+              "question": "Comment lit-on un diagramme en bâtons ?",
+              "correctAnswer": "La hauteur de chaque bâton indique l'effectif",
+              "explanation": "Dans un diagramme en bâtons, chaque modalité est représentée par un bâton dont la hauteur est proportionnelle à son effectif.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La hauteur de chaque bâton indique l'effectif",
+                "La largeur de chaque bâton indique l'effectif",
+                "Tous les bâtons ont la même hauteur",
+                "On ne peut pas lire les effectifs"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 7",
+              "question": "Dans un diagramme circulaire, si une modalité représente 25% des données, quel angle occupe-t-elle ?",
+              "correctAnswer": "90°",
+              "explanation": "Dans un diagramme circulaire, 100% = 360°. Donc 25% = (25 × 360°) ÷ 100 = 90°",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "90°",
+                "45°",
+                "180°",
+                "120°"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques - Question 8",
+              "question": "Dans la série 2, 5, 5, 7, 8, 10, 10, 10, 12, quelle est la médiane ?",
+              "correctAnswer": "8",
+              "explanation": "On classe la série : 2, 5, 5, 7, 8, 10, 10, 10, 12. Avec 9 valeurs, la médiane est la 5ème valeur : 8",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "7",
+                "10",
+                "7,5"
               ]
             }
           ]
@@ -821,45 +821,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de angles niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 6",
+              "question": "Dans un triangle, la somme des trois angles vaut :",
+              "correctAnswer": "180°",
+              "explanation": "La somme des angles d'un triangle est toujours égale à 180°. C'est une propriété fondamentale des triangles.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "180°",
+                "90°",
+                "360°",
+                "270°"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de angles niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 7",
+              "question": "Si un angle mesure 35°, que mesure son complément ?",
+              "correctAnswer": "55°",
+              "explanation": "Le complément d'un angle est l'angle qui, ajouté au premier, donne 90°. Donc 90° - 35° = 55°.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "55°",
+                "145°",
+                "65°",
+                "125°"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de angles niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour angles - Question 8",
+              "question": "Si un angle mesure 120°, que mesure son supplément ?",
+              "correctAnswer": "60°",
+              "explanation": "Le supplément d'un angle est l'angle qui, ajouté au premier, donne 180°. Donc 180° - 120° = 60°.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "60°",
+                "240°",
+                "80°",
+                "30°"
               ]
             }
           ]
@@ -920,75 +920,75 @@
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 4",
+              "question": "Quelle est l'aire d'un carré de côté 7 cm ?",
+              "correctAnswer": "49 cm²",
+              "explanation": "L'aire d'un carré = côté × côté. Donc A = 7 × 7 = 49 cm².",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "49 cm²",
+                "28 cm²",
+                "14 cm²",
+                "35 cm²"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 5",
+              "question": "Quelle est l'aire d'un rectangle de longueur 9 cm et de largeur 4 cm ?",
+              "correctAnswer": "36 cm²",
+              "explanation": "L'aire d'un rectangle = longueur × largeur. Donc A = 9 × 4 = 36 cm².",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "36 cm²",
+                "26 cm²",
+                "13 cm²",
+                "18 cm²"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de périmètres niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 6",
+              "question": "Un terrain rectangulaire a une longueur de 25 m et une largeur de 15 m. Quel est son périmètre ?",
+              "correctAnswer": "80 m",
+              "explanation": "Périmètre = 2 × (longueur + largeur) = 2 × (25 + 15) = 2 × 40 = 80 m.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "80 m",
+                "40 m",
+                "375 m",
+                "50 m"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de périmètres niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 7",
+              "question": "Quelle est l'aire d'un triangle de base 12 cm et de hauteur 8 cm ?",
+              "correctAnswer": "48 cm²",
+              "explanation": "L'aire d'un triangle = (base × hauteur) ÷ 2 = (12 × 8) ÷ 2 = 96 ÷ 2 = 48 cm².",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "48 cm²",
+                "96 cm²",
+                "20 cm²",
+                "40 cm²"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de périmètres niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour périmètres - Question 8",
+              "question": "Un jardin carré a une aire de 144 m². Quel est son périmètre ?",
+              "correctAnswer": "48 m",
+              "explanation": "Si l'aire = 144 m², alors côté = √144 = 12 m. Le périmètre = 4 × 12 = 48 m.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "48 m",
+                "36 m",
+                "144 m",
+                "12 m"
               ]
             }
           ]
@@ -1193,45 +1193,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de conjugaison niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 6",
+              "question": "Quelle est la terminaison du verbe 'finir' à la 2ème personne du pluriel au présent ?",
+              "correctAnswer": "vous finissez",
+              "explanation": "Les verbes du 2ème groupe comme 'finir' ont la terminaison '-issez' à la 2ème personne du pluriel : vous finissez.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "vous finissez",
+                "vous finisez",
+                "vous finites",
+                "vous finir"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de conjugaison niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 7",
+              "question": "Conjuguez le verbe 'aller' à la 1ère personne du singulier au futur simple :",
+              "correctAnswer": "j'irai",
+              "explanation": "Le verbe 'aller' est irrégulier. Au futur simple, 1ère personne du singulier : j'irai.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "j'irai",
+                "j'allerai",
+                "je vais",
+                "j'irais"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de conjugaison niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour conjugaison - Question 8",
+              "question": "Quel est le participe passé du verbe 'prendre' ?",
+              "correctAnswer": "pris",
+              "explanation": "Le participe passé du verbe 'prendre' est 'pris'. C'est un verbe irrégulier du 3ème groupe.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "pris",
+                "prit",
+                "prend",
+                "prendu"
               ]
             }
           ]
@@ -1322,45 +1322,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de orthographe niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 6",
+              "question": "Quelle est la bonne orthographe ?",
+              "correctAnswer": "Les fleurs que j'ai cueillies",
+              "explanation": "Avec l'auxiliaire avoir, le participe passé s'accorde avec le COD placé avant : 'que' (= les fleurs, féminin pluriel) → cueillies.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les fleurs que j'ai cueillies",
+                "Les fleurs que j'ai cueilli",
+                "Les fleurs que j'ai cueillis",
+                "Les fleurs que j'ai cueillir"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de orthographe niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 7",
+              "question": "Quelle phrase contient une erreur d'accord ?",
+              "correctAnswer": "Elles se sont lavé les mains",
+              "explanation": "Avec un verbe pronominal et un COD après, pas d'accord : 'Elles se sont lavé les mains' (COD = les mains). Correct serait : 'Elles se sont lavées' (sans COD).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Elles se sont lavé les mains",
+                "Elles se sont lavées",
+                "Elles ont lavé leurs mains",
+                "Elles lavent leurs mains"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de orthographe niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour orthographe - Question 8",
+              "question": "Complétez : 'Cent vingt euros' ou 'Cents vingt euros' ?",
+              "correctAnswer": "Cent vingt euros",
+              "explanation": "'Cent' ne prend pas de 's' quand il est suivi d'un autre nombre. On écrit donc 'cent vingt euros'.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Cent vingt euros",
+                "Cents vingt euros",
+                "Cent vingts euros",
+                "Cents vingts euros"
               ]
             }
           ]
@@ -1451,45 +1451,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de vocabulaire niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 6",
+              "question": "Quel mot appartient à la famille du mot 'terre' ?",
+              "correctAnswer": "terrestre",
+              "explanation": "Les mots de la même famille partagent le même radical. 'Terrestre' vient de 'terre' : terrain, terrasse, terrestre, territoire...",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "terrestre",
+                "terrible",
+                "terrier",
+                "terrain"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de vocabulaire niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 7",
+              "question": "Quel est le sens du préfixe 'pré-' dans le mot 'préhistoire' ?",
+              "correctAnswer": "avant",
+              "explanation": "Le préfixe 'pré-' signifie 'avant'. La préhistoire est la période avant l'histoire écrite.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "avant",
+                "après",
+                "pendant",
+                "sans"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de vocabulaire niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour vocabulaire - Question 8",
+              "question": "Quel est le sens du suffixe '-tion' dans le mot 'construction' ?",
+              "correctAnswer": "action de",
+              "explanation": "Le suffixe '-tion' exprime l'action ou le résultat d'une action. Construction = action de construire.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "action de",
+                "lieu où",
+                "qui fait",
+                "sans"
               ]
             }
           ]
@@ -1565,60 +1565,60 @@
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 5",
+              "question": "Qu'est-ce que le Graal dans les romans de chevalerie ?",
+              "correctAnswer": "Un objet sacré recherché par les chevaliers",
+              "explanation": "Le Graal est présenté comme la coupe ayant recueilli le sang du Christ. Sa quête est un thème central des romans arthuriens.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un objet sacré recherché par les chevaliers",
+                "Une épée magique",
+                "Un château fort",
+                "Un cheval de guerre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 6",
+              "question": "Quel est le nom de l'épée du roi Arthur ?",
+              "correctAnswer": "Excalibur",
+              "explanation": "Excalibur est l'épée légendaire du roi Arthur, symbole de sa légitimité royale et de sa puissance.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Excalibur",
+                "Durandal",
+                "Joyeuse",
+                "Hauteclaire"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 7",
+              "question": "Qui est Chrétien de Troyes ?",
+              "correctAnswer": "Un écrivain de romans de chevalerie du XIIe siècle",
+              "explanation": "Chrétien de Troyes (vers 1135-1185) est l'auteur des premiers romans arthuriens en français : Perceval, Lancelot, Yvain...",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un écrivain de romans de chevalerie du XIIe siècle",
+                "Un chevalier de la Table Ronde",
+                "Un roi du Moyen Âge",
+                "Un troubadour provençal"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de littérature médiévale niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour littérature médiévale - Question 8",
+              "question": "Quelle est la différence entre une chanson de geste et un roman de chevalerie ?",
+              "correctAnswer": "La chanson de geste est plus ancienne et en vers",
+              "explanation": "Les chansons de geste (XIe-XIIe s.) sont en vers et racontent des exploits guerriers. Les romans de chevalerie (XIIe-XIIIe s.) sont en prose et mettent l'accent sur l'amour courtois.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La chanson de geste est plus ancienne et en vers",
+                "Le roman de chevalerie est plus court",
+                "Il n'y a aucune différence",
+                "La chanson de geste parle d'amour"
               ]
             }
           ]
@@ -1634,120 +1634,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 1",
+              "question": "Qu'est-ce qu'un narrateur ?",
+              "correctAnswer": "Celui qui raconte l'histoire",
+              "explanation": "Le narrateur est la voix qui raconte l'histoire. Il peut être un personnage (narrateur interne) ou extérieur à l'histoire (narrateur externe).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Celui qui raconte l'histoire",
+                "Le personnage principal",
+                "L'auteur du livre",
+                "Le lecteur"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 2",
+              "question": "Quelle est la différence entre l'auteur et le narrateur ?",
+              "correctAnswer": "L'auteur écrit le livre, le narrateur raconte l'histoire",
+              "explanation": "L'auteur est la personne réelle qui a écrit le livre. Le narrateur est un personnage fictif ou une voix créée par l'auteur pour raconter l'histoire.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'auteur écrit le livre, le narrateur raconte l'histoire",
+                "C'est la même personne",
+                "L'auteur raconte, le narrateur écrit",
+                "Il n'y a pas de différence"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de analyse de texte niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 3",
+              "question": "Qu'est-ce qu'un personnage principal ?",
+              "correctAnswer": "Le héros de l'histoire",
+              "explanation": "Le personnage principal (ou protagoniste) est le héros de l'histoire, celui autour duquel s'organise l'intrigue et qui vit les événements les plus importants.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le héros de l'histoire",
+                "Celui qui parle le plus",
+                "Le plus méchant",
+                "Le narrateur"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 4",
+              "question": "Qu'est-ce que le schéma narratif ?",
+              "correctAnswer": "La structure d'un récit en 5 étapes",
+              "explanation": "Le schéma narratif organise un récit en 5 étapes : situation initiale, élément perturbateur, péripéties, résolution, situation finale.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La structure d'un récit en 5 étapes",
+                "Le résumé de l'histoire",
+                "La description des personnages",
+                "La morale de l'histoire"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 5",
+              "question": "Qu'est-ce qu'un dialogue dans un récit ?",
+              "correctAnswer": "Les paroles échangées entre personnages",
+              "explanation": "Le dialogue reproduit les paroles échangées entre les personnages. Il est généralement marqué par des guillemets ou des tirets.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les paroles échangées entre personnages",
+                "La description du décor",
+                "Les pensées du narrateur",
+                "Le résumé de l'action"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de analyse de texte niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 6",
+              "question": "Qu'est-ce qu'une description dans un récit ?",
+              "correctAnswer": "Le portrait d'un personnage ou d'un lieu",
+              "explanation": "La description donne des détails sur l'apparence des personnages, des lieux ou des objets pour aider le lecteur à se les représenter.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le portrait d'un personnage ou d'un lieu",
+                "Les actions des personnages",
+                "Les paroles des personnages",
+                "La fin de l'histoire"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de analyse de texte niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 7",
+              "question": "Qu'est-ce qu'une ellipse narrative ?",
+              "correctAnswer": "Un saut dans le temps du récit",
+              "explanation": "L'ellipse narrative consiste à passer sous silence une période de temps dans le récit. Par exemple : 'Trois ans plus tard...'",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un saut dans le temps du récit",
+                "Une figure de style",
+                "Un retour en arrière",
+                "Une répétition"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de analyse de texte niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour analyse de texte - Question 8",
+              "question": "Qu'est-ce qu'un retour en arrière (analepse) ?",
+              "correctAnswer": "Un récit d'événements antérieurs",
+              "explanation": "Le retour en arrière (ou analepse) interrompt le récit principal pour raconter des événements qui se sont passés avant. Exemple : un flash-back.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un récit d'événements antérieurs",
+                "Une anticipation du futur",
+                "Un dialogue",
+                "Une description"
               ]
             }
           ]
@@ -1763,120 +1763,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 1",
+              "question": "Que doit-on faire avant d'écrire un texte ?",
+              "correctAnswer": "Faire un plan",
+              "explanation": "Avant d'écrire, il faut organiser ses idées en faisant un plan avec une introduction, un développement et une conclusion.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Faire un plan",
+                "Écrire directement",
+                "Compter les mots",
+                "Recopier un modèle"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 2",
+              "question": "Qu'est-ce qu'un paragraphe ?",
+              "correctAnswer": "Un ensemble de phrases sur une même idée",
+              "explanation": "Un paragraphe regroupe plusieurs phrases qui développent une même idée. Il commence par un alinéa et se termine par un point.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un ensemble de phrases sur une même idée",
+                "Une seule phrase",
+                "Un mot important",
+                "Le titre du texte"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de expression écrite niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 3",
+              "question": "Quel est le rôle de l'introduction dans un texte ?",
+              "correctAnswer": "Présenter le sujet",
+              "explanation": "L'introduction sert à présenter le sujet, à situer le contexte et à annoncer le plan du développement qui va suivre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Présenter le sujet",
+                "Conclure le texte",
+                "Donner des exemples",
+                "Raconter une histoire"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 4",
+              "question": "Qu'est-ce qu'un connecteur logique ?",
+              "correctAnswer": "Un mot qui relie les idées",
+              "explanation": "Les connecteurs logiques (donc, mais, car, ensuite...) relient les phrases et les idées entre elles pour structurer le raisonnement.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un mot qui relie les idées",
+                "Un verbe d'action",
+                "Un adjectif qualificatif",
+                "Un nom propre"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 5",
+              "question": "Quel connecteur exprime l'opposition ?",
+              "correctAnswer": "mais",
+              "explanation": "'Mais' exprime l'opposition ou la nuance. Autres connecteurs d'opposition : cependant, pourtant, néanmoins, toutefois.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "mais",
+                "donc",
+                "car",
+                "ensuite"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de expression écrite niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 6",
+              "question": "Quel est le rôle de la conclusion ?",
+              "correctAnswer": "Résumer et donner son avis",
+              "explanation": "La conclusion résume les idées principales développées et peut donner un avis personnel ou ouvrir sur une réflexion plus large.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Résumer et donner son avis",
+                "Présenter le sujet",
+                "Donner des exemples",
+                "Poser des questions"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de expression écrite niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 7",
+              "question": "Comment éviter les répétitions dans un texte ?",
+              "correctAnswer": "Utiliser des synonymes et des pronoms",
+              "explanation": "Pour éviter les répétitions, on peut utiliser des synonymes, des pronoms de reprise, des périphrases ou reformuler différemment.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Utiliser des synonymes et des pronoms",
+                "Répéter le même mot",
+                "Écrire des phrases courtes",
+                "Ne pas utiliser de connecteurs"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de expression écrite niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour expression écrite - Question 8",
+              "question": "Qu'est-ce qui caractérise un bon texte argumentatif ?",
+              "correctAnswer": "Des arguments avec des exemples",
+              "explanation": "Un bon texte argumentatif présente des arguments clairs et convaincants, soutenus par des exemples précis et des connecteurs logiques.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des arguments avec des exemples",
+                "Beaucoup de descriptions",
+                "Des dialogues nombreux",
+                "Aucune structure"
               ]
             }
           ]
@@ -1892,120 +1892,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 1",
+              "question": "Qu'est-ce qu'un vers ?",
+              "correctAnswer": "Une ligne de poésie",
+              "explanation": "Un vers est une ligne de poésie. Plusieurs vers forment une strophe, et plusieurs strophes forment un poème.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une ligne de poésie",
+                "Un poème entier",
+                "Une rime",
+                "Un mot"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 2",
+              "question": "Qu'est-ce qu'une strophe ?",
+              "correctAnswer": "Un groupe de vers",
+              "explanation": "Une strophe est un groupe de vers séparés des autres par un blanc. Les strophes organisent le poème.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un groupe de vers",
+                "Un seul vers",
+                "Une rime",
+                "Le titre du poème"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de poésie niveau cinquieme - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 3",
+              "question": "Qu'est-ce qu'une rime ?",
+              "correctAnswer": "La répétition de sons à la fin des vers",
+              "explanation": "Une rime est la répétition de sons identiques ou semblables à la fin de deux ou plusieurs vers.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de sons à la fin des vers",
+                "Le nombre de syllabes",
+                "Le rythme du poème",
+                "Le sens du vers"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 4",
+              "question": "Comment appelle-t-on une strophe de 4 vers ?",
+              "correctAnswer": "Un quatrain",
+              "explanation": "Une strophe de 4 vers s'appelle un quatrain. Autres types : tercet (3 vers), quintil (5 vers), sizain (6 vers).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un quatrain",
+                "Un tercet",
+                "Un distique",
+                "Un sizain"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 5",
+              "question": "Qu'est-ce qu'un alexandrin ?",
+              "correctAnswer": "Un vers de 12 syllabes",
+              "explanation": "L'alexandrin est un vers de 12 syllabes, très utilisé dans la poésie classique française (Corneille, Racine, Hugo...).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un vers de 12 syllabes",
+                "Un vers de 10 syllabes",
+                "Un vers de 8 syllabes",
+                "Un vers libre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de poésie niveau cinquieme - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 6",
+              "question": "Qu'est-ce qu'une rime embrassée ?",
+              "correctAnswer": "ABBA",
+              "explanation": "Les rimes embrassées suivent le schéma ABBA : la première rime avec la quatrième, la deuxième avec la troisième.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "ABBA",
+                "ABAB",
+                "AABB",
+                "ABCD"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de poésie niveau cinquieme - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 7",
+              "question": "Qu'est-ce qu'une allitération ?",
+              "correctAnswer": "La répétition de consonnes",
+              "explanation": "L'allitération est la répétition de consonnes identiques dans un vers ou une phrase. Exemple : 'Pour qui sont ces serpents qui sifflent sur vos têtes ?'",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de consonnes",
+                "La répétition de voyelles",
+                "La répétition de mots",
+                "La répétition de vers"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de poésie niveau cinquieme - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour poésie - Question 8",
+              "question": "Qu'est-ce qu'une assonance ?",
+              "correctAnswer": "La répétition de voyelles",
+              "explanation": "L'assonance est la répétition de voyelles identiques dans un vers ou une phrase. Exemple : 'Je fais souvent ce rêve étrange et pénétrant' (é/an).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La répétition de voyelles",
+                "La répétition de consonnes",
+                "La répétition de syllabes",
+                "La répétition de rimes"
               ]
             }
           ]
@@ -2030,120 +2030,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 1",
+              "question": "Quand a eu lieu la chute de l'Empire romain d'Occident ?",
+              "correctAnswer": "476 après J.-C.",
+              "explanation": "L'Empire romain d'Occident s'effondre en 476 après J.-C. quand le dernier empereur Romulus Augustule est déposé par Odoacre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "476 après J.-C.",
+                "410 après J.-C.",
+                "500 après J.-C.",
+                "395 après J.-C."
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 2",
+              "question": "Qui était Clovis ?",
+              "correctAnswer": "Le premier roi des Francs converti au christianisme",
+              "explanation": "Clovis (vers 466-511) fut le premier roi des Francs à se convertir au christianisme, vers 496. Il unifie une grande partie de la Gaule.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le premier roi des Francs converti au christianisme",
+                "Un empereur romain",
+                "Un chef gaulois",
+                "Un roi wisigoth"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 3",
+              "question": "Qu'est-ce que le Moyen Âge ?",
+              "correctAnswer": "La période entre l'Antiquité et les Temps modernes",
+              "explanation": "Le Moyen Âge est la période historique qui s'étend de la chute de Rome (476) à la découverte de l'Amérique (1492), entre l'Antiquité et les Temps modernes.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La période entre l'Antiquité et les Temps modernes",
+                "La période romaine",
+                "La période contemporaine",
+                "La préhistoire"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 4",
+              "question": "Qui était Charlemagne ?",
+              "correctAnswer": "L'empereur qui a créé l'Empire carolingien",
+              "explanation": "Charlemagne (742-814) est couronné empereur en 800 par le pape. Il crée l'Empire carolingien et favorise la renaissance culturelle.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'empereur qui a créé l'Empire carolingien",
+                "Un roi de France",
+                "Un empereur romain",
+                "Un chef viking"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 5",
+              "question": "Qu'est-ce que la féodalité ?",
+              "correctAnswer": "Un système social basé sur les liens personnels",
+              "explanation": "La féodalité est un système social médiéval basé sur les liens personnels entre seigneurs et vassaux, avec échange de protection contre service militaire.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un système social basé sur les liens personnels",
+                "Une religion",
+                "Un type de château",
+                "Une guerre"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 6",
+              "question": "Qu'est-ce qu'un vassal ?",
+              "correctAnswer": "Un homme libre qui se met au service d'un seigneur",
+              "explanation": "Le vassal est un homme libre qui prête serment de fidélité à un seigneur (son suzerain) et reçoit en échange un fief (terre).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un homme libre qui se met au service d'un seigneur",
+                "Un esclave",
+                "Un paysan",
+                "Un roi"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 7",
+              "question": "Qu'est-ce que l'hommage dans la société féodale ?",
+              "correctAnswer": "La cérémonie où le vassal jure fidélité à son seigneur",
+              "explanation": "L'hommage est la cérémonie solennelle où le vassal s'agenouille, place ses mains dans celles du seigneur et lui jure fidélité.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La cérémonie où le vassal jure fidélité à son seigneur",
+                "Un impôt payé au roi",
+                "Une fête religieuse",
+                "Un combat entre chevaliers"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 1 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 1 - Question 8",
+              "question": "Qu'est-ce qu'un fief ?",
+              "correctAnswer": "Une terre donnée par le seigneur à son vassal",
+              "explanation": "Le fief est une terre (domaine) que le seigneur donne à son vassal en échange de ses services militaires et de sa fidélité.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une terre donnée par le seigneur à son vassal",
+                "Un château fort",
+                "Une armée",
+                "Une monnaie"
               ]
             }
           ]
@@ -2159,120 +2159,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 1",
+              "question": "Qu'est-ce qu'un seigneur au Moyen Âge ?",
+              "correctAnswer": "Un noble qui possède des terres et exerce le pouvoir",
+              "explanation": "Le seigneur est un noble qui possède des terres (seigneurie) et exerce le pouvoir politique, militaire et judiciaire sur ses domaines.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un noble qui possède des terres et exerce le pouvoir",
+                "Un paysan riche",
+                "Un prêtre",
+                "Un marchand"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 2",
+              "question": "Où vit le seigneur ?",
+              "correctAnswer": "Dans un château fort",
+              "explanation": "Le seigneur vit dans un château fort, construction défensive qui lui permet de protéger ses terres et sa famille des attaques.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Dans un château fort",
+                "Dans une ferme",
+                "Dans une église",
+                "Dans une ville"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 3",
+              "question": "Qu'est-ce qu'un serf ?",
+              "correctAnswer": "Un paysan qui appartient au seigneur",
+              "explanation": "Le serf est un paysan qui appartient au seigneur avec la terre. Il ne peut pas quitter la seigneurie sans autorisation.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un paysan qui appartient au seigneur",
+                "Un chevalier",
+                "Un marchand",
+                "Un artisan libre"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 4",
+              "question": "Quelles sont les trois parties d'un château fort ?",
+              "correctAnswer": "La basse-cour, la haute-cour et le donjon",
+              "explanation": "Un château fort comprend la basse-cour (écuries, ateliers), la haute-cour (logis seigneurial) et le donjon (tour de défense ultime).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La basse-cour, la haute-cour et le donjon",
+                "Les remparts, les tours et les ponts",
+                "La chapelle, la cuisine et la chambre",
+                "L'entrée, le milieu et la sortie"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 5",
+              "question": "Qu'est-ce que la corvée ?",
+              "correctAnswer": "Le travail gratuit que doivent les paysans au seigneur",
+              "explanation": "La corvée est le travail gratuit (généralement 3 jours par semaine) que les paysans doivent effectuer sur les terres du seigneur.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le travail gratuit que doivent les paysans au seigneur",
+                "Un impôt en argent",
+                "Une fête religieuse",
+                "Un combat"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 6",
+              "question": "Qu'est-ce que le cens ?",
+              "correctAnswer": "Un impôt payé par les paysans au seigneur",
+              "explanation": "Le cens est un impôt annuel (souvent en nature : blé, œufs, poules) que les paysans payent au seigneur pour cultiver sa terre.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un impôt payé par les paysans au seigneur",
+                "Un travail gratuit",
+                "Une cérémonie religieuse",
+                "Un tournoi"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 7",
+              "question": "Qu'est-ce que le droit de ban ?",
+              "correctAnswer": "Le pouvoir du seigneur de commander et punir",
+              "explanation": "Le droit de ban est le pouvoir du seigneur de donner des ordres, de rendre la justice et de punir dans sa seigneurie.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pouvoir du seigneur de commander et punir",
+                "Le droit de chasser",
+                "Le droit de se marier",
+                "Le droit de voyager"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 2 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 2 - Question 8",
+              "question": "Qu'est-ce que la réserve seigneuriale ?",
+              "correctAnswer": "Les terres que le seigneur garde pour lui",
+              "explanation": "La réserve seigneuriale est la partie du domaine que le seigneur garde pour lui et fait cultiver par les corvées des paysans.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les terres que le seigneur garde pour lui",
+                "Les terres données aux paysans",
+                "La forêt interdite",
+                "Le trésor du château"
               ]
             }
           ]
@@ -2288,120 +2288,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 1",
+              "question": "Qu'est-ce que l'Église au Moyen Âge ?",
+              "correctAnswer": "L'institution religieuse chrétienne dirigée par le pape",
+              "explanation": "L'Église est l'institution religieuse chrétienne dirigée par le pape à Rome. Elle a un pouvoir spirituel et temporel immense au Moyen Âge.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'institution religieuse chrétienne dirigée par le pape",
+                "Un bâtiment religieux",
+                "Une école",
+                "Un marché"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 2",
+              "question": "Qui dirige l'Église catholique ?",
+              "correctAnswer": "Le pape",
+              "explanation": "Le pape, installé à Rome, est le chef suprême de l'Église catholique. Il est considéré comme le successeur de saint Pierre.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pape",
+                "Le roi",
+                "L'empereur",
+                "L'évêque"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 3",
+              "question": "Qu'est-ce qu'un moine ?",
+              "correctAnswer": "Un homme qui consacre sa vie à Dieu dans un monastère",
+              "explanation": "Un moine est un homme qui renonce au monde pour consacrer sa vie à Dieu. Il vit dans un monastère selon une règle religieuse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un homme qui consacre sa vie à Dieu dans un monastère",
+                "Un prêtre de paroisse",
+                "Un chevalier chrétien",
+                "Un marchand"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 4",
+              "question": "Qu'est-ce que la dîme ?",
+              "correctAnswer": "Un impôt payé à l'Église",
+              "explanation": "La dîme est un impôt représentant le dixième des récoltes que tous les chrétiens doivent payer à l'Église.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un impôt payé à l'Église",
+                "Un impôt payé au roi",
+                "Une prière",
+                "Une cérémonie"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 5",
+              "question": "Qu'est-ce qu'un pèlerinage ?",
+              "correctAnswer": "Un voyage vers un lieu saint",
+              "explanation": "Un pèlerinage est un voyage effectué par les chrétiens vers un lieu saint (Jérusalem, Rome, Saint-Jacques-de-Compostelle) pour prier.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un voyage vers un lieu saint",
+                "Une guerre sainte",
+                "Une fête religieuse",
+                "Une construction d'église"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 6",
+              "question": "Qu'est-ce qu'une cathédrale ?",
+              "correctAnswer": "L'église principale d'un évêché",
+              "explanation": "Une cathédrale est l'église principale d'un évêché, où siège l'évêque. C'est le centre religieux d'un diocèse.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'église principale d'un évêché",
+                "Une église de village",
+                "Un monastère",
+                "Une chapelle de château"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 7",
+              "question": "Qu'est-ce que l'art roman ?",
+              "correctAnswer": "Un style architectural avec des murs épais et des voûtes en berceau",
+              "explanation": "L'art roman (Xe-XIIe siècles) se caractérise par des murs épais, des voûtes en berceau, des fenêtres petites et des sculptures sur les portails.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un style architectural avec des murs épais et des voûtes en berceau",
+                "Un style avec de grandes fenêtres",
+                "Un art de la peinture",
+                "Un style musical"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 3 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 3 - Question 8",
+              "question": "Qu'est-ce que l'art gothique ?",
+              "correctAnswer": "Un style architectural avec de grandes fenêtres et des voûtes sur croisées d'ogives",
+              "explanation": "L'art gothique (XIIe-XVe siècles) se caractérise par des voûtes sur croisées d'ogives, de grandes fenêtres avec vitraux, et des murs plus fins.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un style architectural avec de grandes fenêtres et des voûtes sur croisées d'ogives",
+                "Un style avec des murs très épais",
+                "Un art de la sculpture uniquement",
+                "Un style antique"
               ]
             }
           ]
@@ -2417,120 +2417,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 1",
+              "question": "Qu'est-ce que les Croisades ?",
+              "correctAnswer": "Des expéditions militaires pour reconquérir Jérusalem",
+              "explanation": "Les Croisades sont des expéditions militaires organisées par l'Église catholique pour reconquérir la Terre sainte (Jérusalem) aux musulmans.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des expéditions militaires pour reconquérir Jérusalem",
+                "Des pèlerinages pacifiques",
+                "Des constructions d'églises",
+                "Des missions d'évangélisation"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 2",
+              "question": "Qui a lancé la première Croisade en 1095 ?",
+              "correctAnswer": "Le pape Urbain II",
+              "explanation": "Le pape Urbain II a lancé la première Croisade en 1095 lors du concile de Clermont, appelant les chrétiens à libérer Jérusalem.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le pape Urbain II",
+                "Le roi de France",
+                "L'empereur byzantin",
+                "Saint Bernard"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 3",
+              "question": "Qu'est-ce qu'un ordre religieux militaire ?",
+              "correctAnswer": "Des moines-soldats qui combattent pour la foi",
+              "explanation": "Les ordres religieux militaires comme les Templiers ou les Hospitaliers sont des communautés de moines-soldats qui combattent pour défendre la foi chrétienne.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Des moines-soldats qui combattent pour la foi",
+                "Des prêtres de paroisse",
+                "Des ermites dans le désert",
+                "Des marchands chrétiens"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 4",
+              "question": "Qu'est-ce que l'Inquisition ?",
+              "correctAnswer": "Un tribunal religieux pour lutter contre l'hérésie",
+              "explanation": "L'Inquisition est un tribunal religieux créé par l'Église pour identifier, juger et punir les hérétiques (ceux qui s'opposent aux dogmes chrétiens).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un tribunal religieux pour lutter contre l'hérésie",
+                "Un ordre monastique",
+                "Une université",
+                "Un pèlerinage"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 5",
+              "question": "Qu'est-ce qu'une hérésie ?",
+              "correctAnswer": "Une doctrine contraire aux enseignements de l'Église",
+              "explanation": "Une hérésie est une doctrine ou une croyance qui s'oppose aux enseignements officiels de l'Église catholique. Les hérétiques étaient persécutés.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une doctrine contraire aux enseignements de l'Église",
+                "Une nouvelle église",
+                "Un livre religieux",
+                "Une fête religieuse"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 6",
+              "question": "Qu'est-ce que la querelle des investitures ?",
+              "correctAnswer": "Un conflit entre le pape et l'empereur sur la nomination des évêques",
+              "explanation": "La querelle des investitures (XIe-XIIe siècles) oppose le pape et l'empereur germanique sur le droit de nommer les évêques et de leur donner leurs pouvoirs.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un conflit entre le pape et l'empereur sur la nomination des évêques",
+                "Une guerre entre chrétiens et musulmans",
+                "Un débat théologique",
+                "Une réforme monastique"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 7",
+              "question": "Quel pape a affirmé la supériorité du pouvoir spirituel sur le pouvoir temporel ?",
+              "correctAnswer": "Grégoire VII",
+              "explanation": "Le pape Grégoire VII (1073-1085) a affirmé dans le Dictatus papae la supériorité du pouvoir spirituel (l'Église) sur le pouvoir temporel (les rois).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Grégoire VII",
+                "Urbain II",
+                "Innocent III",
+                "Alexandre III"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 4 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 4 - Question 8",
+              "question": "Qu'est-ce que la croisade des Albigeois ?",
+              "correctAnswer": "Une croisade contre les hérétiques cathares dans le sud de la France",
+              "explanation": "La croisade des Albigeois (1209-1229) est une croisade lancée contre les cathares, considérés comme hérétiques, dans le Languedoc (sud de la France).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une croisade contre les hérétiques cathares dans le sud de la France",
+                "Une expédition vers Jérusalem",
+                "Une guerre contre l'Angleterre",
+                "Une conquête de l'Espagne"
               ]
             }
           ]
@@ -2546,120 +2546,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 1",
+              "question": "Qu'est-ce qu'un bourg au Moyen Âge ?",
+              "correctAnswer": "Un village qui s'est développé autour d'un château ou d'une abbaye",
+              "explanation": "Un bourg est un village qui s'est développé et enrichi, souvent autour d'un château, d'une abbaye ou d'un carrefour commercial.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un village qui s'est développé autour d'un château ou d'une abbaye",
+                "Une grande ville",
+                "Un château fort",
+                "Une cathédrale"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 2",
+              "question": "Qu'est-ce qu'un bourgeois au Moyen Âge ?",
+              "correctAnswer": "Un habitant d'un bourg qui fait du commerce",
+              "explanation": "Un bourgeois est un habitant d'un bourg qui exerce une activité commerciale ou artisanale et qui a acquis une certaine richesse.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un habitant d'un bourg qui fait du commerce",
+                "Un noble",
+                "Un serf",
+                "Un moine"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 3",
+              "question": "Qu'est-ce qu'une corporation au Moyen Âge ?",
+              "correctAnswer": "Une association d'artisans du même métier",
+              "explanation": "Une corporation est une association qui regroupe tous les artisans exerçant le même métier dans une ville pour défendre leurs intérêts.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une association d'artisans du même métier",
+                "Une grande entreprise",
+                "Un marché",
+                "Une banque"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 4",
+              "question": "Qu'est-ce qu'une charte de franchise ?",
+              "correctAnswer": "Un document qui accorde des libertés à une ville",
+              "explanation": "Une charte de franchise est un document accordé par un seigneur qui donne des libertés et des privilèges aux habitants d'une ville.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un document qui accorde des libertés à une ville",
+                "Un contrat commercial",
+                "Une loi royale",
+                "Un traité de paix"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 5",
+              "question": "Qu'est-ce qu'une foire au Moyen Âge ?",
+              "correctAnswer": "Un grand marché qui se tient plusieurs fois par an",
+              "explanation": "Une foire est un grand marché qui se tient périodiquement (quelques fois par an) et qui attire des marchands de régions lointaines.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Un grand marché qui se tient plusieurs fois par an",
+                "Un marché quotidien",
+                "Une fête religieuse",
+                "Un tournoi"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 6",
+              "question": "Qu'est-ce qu'un beffroi ?",
+              "correctAnswer": "Une tour qui symbolise les libertés communales",
+              "explanation": "Un beffroi est une tour construite par les bourgeois d'une ville pour symboliser leurs libertés et leur indépendance face au seigneur.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une tour qui symbolise les libertés communales",
+                "Une église",
+                "Un château",
+                "Un marché couvert"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 7",
+              "question": "Quelles sont les foires les plus célèbres du Moyen Âge en France ?",
+              "correctAnswer": "Les foires de Champagne",
+              "explanation": "Les foires de Champagne (Troyes, Provins, Lagny, Bar-sur-Aube) sont les plus importantes d'Europe occidentale aux XIIe-XIIIe siècles.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Les foires de Champagne",
+                "Les foires de Normandie",
+                "Les foires de Bretagne",
+                "Les foires de Provence"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 5 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 5 - Question 8",
+              "question": "Qu'est-ce qu'une commune au Moyen Âge ?",
+              "correctAnswer": "Une ville qui s'est révoltée pour obtenir son indépendance",
+              "explanation": "Une commune est une ville dont les habitants (bourgeois) se sont révoltés contre leur seigneur pour obtenir des libertés et une autonomie de gouvernement.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Une ville qui s'est révoltée pour obtenir son indépendance",
+                "Un village agricole",
+                "Un château fort",
+                "Une abbaye"
               ]
             }
           ]
@@ -2675,75 +2675,75 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 1",
+              "question": "Quel roi de France a unifié le royaume au XIIIe siècle ?",
+              "correctAnswer": "Philippe Auguste",
+              "explanation": "Philippe Auguste (1180-1223) a considérablement agrandi le domaine royal en conquérant la Normandie, l'Anjou et le Poitou sur les Anglais.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Philippe Auguste",
+                "Louis VII",
+                "Saint Louis",
+                "Charles le Chauve"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 2",
+              "question": "Quel empire domine l'Europe centrale au Moyen Âge ?",
+              "correctAnswer": "Le Saint-Empire romain germanique",
+              "explanation": "Le Saint-Empire romain germanique, fondé en 962 par Otton Ier, domine l'Europe centrale (Allemagne, Autriche, une partie de l'Italie).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Le Saint-Empire romain germanique",
+                "L'Empire byzantin",
+                "L'Empire romain",
+                "L'Empire ottoman"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 3",
+              "question": "Quelle est la capitale de l'Empire byzantin ?",
+              "correctAnswer": "Constantinople",
+              "explanation": "Constantinople (actuelle Istanbul) est la capitale de l'Empire byzantin, héritier de l'Empire romain d'Orient.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Constantinople",
+                "Rome",
+                "Athènes",
+                "Alexandrie"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 4",
+              "question": "Qu'est-ce que la Reconquista ?",
+              "correctAnswer": "La reconquête de l'Espagne par les chrétiens sur les musulmans",
+              "explanation": "La Reconquista est la reconquête progressive de la péninsule ibérique par les royaumes chrétiens sur les musulmans (VIIIe-XVe siècles).",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "La reconquête de l'Espagne par les chrétiens sur les musulmans",
+                "La conquête de l'Angleterre",
+                "La guerre de Cent Ans",
+                "Les croisades"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de histoire-géographie niveau cinquieme - Leçon 6 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour histoire-géographie - Leçon 6 - Question 5",
+              "question": "Qui a conquis l'Angleterre en 1066 ?",
+              "correctAnswer": "Guillaume le Conquérant",
+              "explanation": "Guillaume le Conquérant, duc de Normandie, a conquis l'Angleterre en 1066 en battant le roi Harold à la bataille d'Hastings.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Guillaume le Conquérant",
+                "Charlemagne",
+                "Philippe Auguste",
+                "Richard Cœur de Lion"
               ]
             },
             {

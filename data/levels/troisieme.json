@@ -200,45 +200,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de équations et inéquations niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 6",
+              "question": "Résoudre l'équation : 3x + 7 = 2x - 5",
+              "correctAnswer": "x = -12",
+              "explanation": "3x + 7 = 2x - 5 ⟺ 3x - 2x = -5 - 7 ⟺ x = -12",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = -12",
+                "x = 12",
+                "x = -2",
+                "x = 2"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de équations et inéquations niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 7",
+              "question": "Résoudre l'inéquation : 2x - 3 > 5x + 6",
+              "correctAnswer": "x < -3",
+              "explanation": "2x - 3 > 5x + 6 ⟺ 2x - 5x > 6 + 3 ⟺ -3x > 9 ⟺ x < -3 (on change le sens car on divise par -3)",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x < -3",
+                "x > -3",
+                "x < 3",
+                "x > 3"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de équations et inéquations niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour équations et inéquations - Question 8",
+              "question": "Résoudre l'équation : x² - 5x + 6 = 0",
+              "correctAnswer": "x = 2 ou x = 3",
+              "explanation": "On factorise : x² - 5x + 6 = (x - 2)(x - 3) = 0. Donc x - 2 = 0 ou x - 3 = 0, soit x = 2 ou x = 3.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "x = 2 ou x = 3",
+                "x = -2 ou x = -3",
+                "x = 1 ou x = 6",
+                "x = -1 ou x = -6"
               ]
             }
           ]
@@ -269,105 +269,105 @@
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théorème de thalès niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 2",
+              "question": "Dans un triangle ABC, M est sur [AB] et N sur [AC]. Si (MN) // (BC), et AM = 3, AB = 9, AC = 12, que vaut AN ?",
+              "correctAnswer": "4",
+              "explanation": "D'après le théorème de Thalès : AM/AB = AN/AC. Donc 3/9 = AN/12, ce qui donne AN = (3 × 12)/9 = 4.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "4",
+                "6",
+                "8",
+                "9"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de théorème de thalès niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 3",
+              "question": "Si dans un triangle ABC, (DE) // (BC) avec D sur [AB] et E sur [AC], et si AD = 2, DB = 4, que vaut le rapport AE/AC ?",
+              "correctAnswer": "1/3",
+              "explanation": "D'après Thalès : AD/AB = AE/AC. AB = AD + DB = 2 + 4 = 6. Donc AE/AC = AD/AB = 2/6 = 1/3.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/3",
+                "1/2",
+                "2/3",
+                "3/4"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de théorème de thalès niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 4",
+              "question": "Dans un triangle ABC, M est sur [AB] tel que AM = 4 cm et MB = 6 cm. N est sur [AC] tel que (MN) // (BC). Si BC = 15 cm, que vaut MN ?",
+              "correctAnswer": "6 cm",
+              "explanation": "AB = AM + MB = 4 + 6 = 10 cm. D'après Thalès : AM/AB = MN/BC. Donc 4/10 = MN/15, ce qui donne MN = (4 × 15)/10 = 6 cm.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "6 cm",
+                "8 cm",
+                "9 cm",
+                "12 cm"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de théorème de thalès niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 5",
+              "question": "Dans la configuration de Thalès, si AM = 3, MN = 2 et BC = 8, que vaut AB ?",
+              "correctAnswer": "12",
+              "explanation": "D'après Thalès : AM/AB = MN/BC. Donc 3/AB = 2/8, ce qui donne AB = (3 × 8)/2 = 12.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12",
+                "10",
+                "15",
+                "16"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de théorème de thalès niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 6",
+              "question": "Comment peut-on démontrer que deux droites sont parallèles en utilisant le théorème de Thalès réciproque ?",
+              "correctAnswer": "Si AM/AB = AN/AC, alors (MN) // (BC)",
+              "explanation": "La réciproque du théorème de Thalès permet de démontrer le parallélisme : si les rapports sont égaux, alors les droites sont parallèles.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Si AM/AB = AN/AC, alors (MN) // (BC)",
+                "Si AM = AN, alors (MN) // (BC)",
+                "Si AB = AC, alors (MN) // (BC)",
+                "Si MN = BC, alors (MN) // (BC)"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de théorème de thalès niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 7",
+              "question": "Dans un triangle ABC, D est sur [AB] et E sur [AC]. Si AD = 5, DB = 3, AE = 7,5 et EC = 4,5, les droites (DE) et (BC) sont-elles parallèles ?",
+              "correctAnswer": "Oui, car AD/AB = AE/AC",
+              "explanation": "AD/AB = 5/(5+3) = 5/8 et AE/AC = 7,5/(7,5+4,5) = 7,5/12 = 5/8. Les rapports sont égaux donc (DE) // (BC).",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Oui, car AD/AB = AE/AC",
+                "Non, car AD ≠ AE",
+                "Oui, car AB = AC",
+                "Non, car les rapports sont différents"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de théorème de thalès niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour théorème de thalès - Question 8",
+              "question": "Dans la figure où (MN) // (BC), si AM/AB = 2/5 et que AC = 20 cm, quelle est la longueur de NC ?",
+              "correctAnswer": "12 cm",
+              "explanation": "Si AM/AB = 2/5, alors AN/AC = 2/5 aussi. Donc AN = (2/5) × 20 = 8 cm. Par conséquent NC = AC - AN = 20 - 8 = 12 cm.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12 cm",
+                "8 cm",
+                "10 cm",
+                "15 cm"
               ]
             }
           ]
@@ -458,45 +458,45 @@
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de trigonométrie niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 6",
+              "question": "Dans un triangle rectangle, si cos(α) = 0,8 et l'hypoténuse mesure 10 cm, que vaut le côté adjacent à l'angle α ?",
+              "correctAnswer": "8 cm",
+              "explanation": "cos(α) = côté adjacent / hypoténuse. Donc 0,8 = côté adjacent / 10, d'où côté adjacent = 0,8 × 10 = 8 cm.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8 cm",
+                "6 cm",
+                "10 cm",
+                "12 cm"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de trigonométrie niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 7",
+              "question": "Dans un triangle rectangle ABC rectangle en C, si tan(A) = 3/4 et BC = 12 cm, que vaut AC ?",
+              "correctAnswer": "16 cm",
+              "explanation": "tan(A) = BC/AC. Donc 3/4 = 12/AC, d'où AC = (12 × 4)/3 = 16 cm.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "16 cm",
+                "9 cm",
+                "15 cm",
+                "20 cm"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de trigonométrie niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour trigonométrie - Question 8",
+              "question": "Si dans un triangle rectangle, un angle aigu mesure 37° et l'hypoténuse mesure 25 cm, quelle est la longueur du côté opposé à cet angle (sin(37°) ≈ 0,6) ?",
+              "correctAnswer": "15 cm",
+              "explanation": "sin(37°) = côté opposé / hypoténuse. Donc 0,6 = côté opposé / 25, d'où côté opposé = 0,6 × 25 = 15 cm.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "15 cm",
+                "20 cm",
+                "12 cm",
+                "18 cm"
               ]
             }
           ]
@@ -512,120 +512,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 1",
+              "question": "Dans un sac contenant 3 billes rouges et 7 billes bleues, quelle est la probabilité de tirer une bille rouge ?",
+              "correctAnswer": "3/10",
+              "explanation": "Il y a 3 billes rouges sur un total de 3 + 7 = 10 billes. La probabilité est donc 3/10.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3/10",
+                "3/7",
+                "7/10",
+                "1/2"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 2",
+              "question": "Quelle est la médiane de la série : 5, 8, 12, 15, 20 ?",
+              "correctAnswer": "12",
+              "explanation": "La médiane est la valeur centrale d'une série ordonnée. Ici, avec 5 valeurs, la médiane est la 3ème valeur : 12.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "12",
+                "10",
+                "11",
+                "13"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 3",
+              "question": "Quelle est la moyenne de la série : 10, 12, 14, 16 ?",
+              "correctAnswer": "13",
+              "explanation": "Moyenne = (10 + 12 + 14 + 16) ÷ 4 = 52 ÷ 4 = 13.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "13",
+                "12",
+                "14",
+                "15"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 4",
+              "question": "On lance un dé équilibré. Quelle est la probabilité d'obtenir un nombre pair ?",
+              "correctAnswer": "1/2",
+              "explanation": "Les nombres pairs sur un dé sont 2, 4, 6. Il y a donc 3 issues favorables sur 6 possibles : 3/6 = 1/2.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/2",
+                "1/3",
+                "2/3",
+                "1/6"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 5",
+              "question": "Dans la série 3, 5, 5, 7, 9, 5, 11, quel est le mode ?",
+              "correctAnswer": "5",
+              "explanation": "Le mode est la valeur qui apparaît le plus souvent. Ici, 5 apparaît 3 fois, plus que toute autre valeur.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5",
+                "7",
+                "3",
+                "9"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 6",
+              "question": "Quelle est l'étendue de la série : 8, 12, 5, 20, 15 ?",
+              "correctAnswer": "15",
+              "explanation": "L'étendue est la différence entre la plus grande et la plus petite valeur : 20 - 5 = 15.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "15",
+                "12",
+                "8",
+                "20"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 7",
+              "question": "Dans une urne contenant 4 boules rouges et 6 boules vertes, on tire 2 boules successivement sans remise. Quelle est la probabilité que les deux boules soient rouges ?",
+              "correctAnswer": "2/15",
+              "explanation": "P(1ère rouge) = 4/10. P(2ème rouge sachant 1ère rouge) = 3/9. P(les deux rouges) = (4/10) × (3/9) = 12/90 = 2/15.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2/15",
+                "4/25",
+                "1/5",
+                "3/10"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de statistiques et probabilités niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour statistiques et probabilités - Question 8",
+              "question": "Dans un diagramme en boîte, que représente la longueur de la boîte ?",
+              "correctAnswer": "L'écart interquartile",
+              "explanation": "La longueur de la boîte représente l'écart interquartile (Q3 - Q1), qui contient 50% des données centrales.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'écart interquartile",
+                "L'étendue",
+                "La médiane",
+                "L'écart-type"
               ]
             }
           ]
@@ -641,120 +641,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances et racines niveau troisième - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 1",
+              "question": "Que vaut 2³ ?",
+              "correctAnswer": "8",
+              "explanation": "2³ = 2 × 2 × 2 = 8",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "8",
+                "6",
+                "9",
+                "12"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances et racines niveau troisième - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 2",
+              "question": "Que vaut √16 ?",
+              "correctAnswer": "4",
+              "explanation": "√16 = 4 car 4² = 16",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "4",
+                "8",
+                "2",
+                "6"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de puissances et racines niveau troisième - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 3",
+              "question": "Que vaut 5⁰ ?",
+              "correctAnswer": "1",
+              "explanation": "Toute puissance à l'exposant 0 vaut 1 (sauf 0⁰ qui n'est pas défini).",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1",
+                "0",
+                "5",
+                "10"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances et racines niveau troisième - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 4",
+              "question": "Que vaut 3² × 3⁴ ?",
+              "correctAnswer": "3⁶",
+              "explanation": "Pour multiplier des puissances de même base, on additionne les exposants : 3² × 3⁴ = 3²⁺⁴ = 3⁶.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "3⁶",
+                "3⁸",
+                "9⁶",
+                "6⁶"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances et racines niveau troisième - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 5",
+              "question": "Que vaut √50 sous forme simplifiée ?",
+              "correctAnswer": "5√2",
+              "explanation": "√50 = √(25 × 2) = √25 × √2 = 5√2",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "5√2",
+                "25√2",
+                "2√5",
+                "√25"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de puissances et racines niveau troisième - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 6",
+              "question": "Que vaut (2³)² ?",
+              "correctAnswer": "2⁶",
+              "explanation": "Pour élever une puissance à une puissance, on multiplie les exposants : (2³)² = 2³ˣ² = 2⁶.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "2⁶",
+                "2⁵",
+                "4⁶",
+                "6²"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de puissances et racines niveau troisième - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 7",
+              "question": "Que vaut √72 + √32 sous forme simplifiée ?",
+              "correctAnswer": "10√2",
+              "explanation": "√72 = √(36 × 2) = 6√2 et √32 = √(16 × 2) = 4√2. Donc √72 + √32 = 6√2 + 4√2 = 10√2.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "10√2",
+                "√104",
+                "12√2",
+                "8√2"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de puissances et racines niveau troisième - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour puissances et racines - Question 8",
+              "question": "Que vaut 2⁻³ ?",
+              "correctAnswer": "1/8",
+              "explanation": "2⁻³ = 1/2³ = 1/8. Une puissance négative est l'inverse de la puissance positive.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "1/8",
+                "-8",
+                "1/6",
+                "-6"
               ]
             }
           ]
@@ -1037,120 +1037,120 @@
               "id": 1,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 1",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 1",
+              "question": "Quel est le genre littéraire de 'Roméo et Juliette' de Shakespeare ?",
+              "correctAnswer": "Tragédie",
+              "explanation": "Roméo et Juliette est une tragédie car elle présente la mort des héros et un dénouement malheureux.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Tragédie",
+                "Comédie",
+                "Drame",
+                "Épopée"
               ]
             },
             {
               "id": 2,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 2",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 2",
+              "question": "Quelle est la fonction grammaticale du mot souligné : 'Le chat mange sa pâtée' ?",
+              "correctAnswer": "Sujet",
+              "explanation": "Le chat est le sujet du verbe 'mange'. Il répond à la question 'Qui mange ?'",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Sujet",
+                "COD",
+                "COI",
+                "Attribut"
               ]
             },
             {
               "id": 3,
               "type": "multiple-choice",
               "difficulty": 1,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 3",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 3",
+              "question": "Quel est le temps du verbe dans : 'Il avait terminé son travail' ?",
+              "correctAnswer": "Plus-que-parfait",
+              "explanation": "Le plus-que-parfait exprime une action accomplie avant une autre action passée. Il se forme avec l'auxiliaire à l'imparfait + participe passé.",
               "points": 10,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Plus-que-parfait",
+                "Passé composé",
+                "Imparfait",
+                "Passé simple"
               ]
             },
             {
               "id": 4,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 4",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 4",
+              "question": "Dans 'Les Misérables' de Victor Hugo, quel est le registre littéraire dominant ?",
+              "correctAnswer": "Pathétique",
+              "explanation": "Le registre pathétique vise à émouvoir le lecteur par la représentation de la souffrance et de la misère des personnages.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Pathétique",
+                "Comique",
+                "Satirique",
+                "Fantastique"
               ]
             },
             {
               "id": 5,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 5",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 5",
+              "question": "Quelle figure de style est utilisée dans : 'Ses yeux sont des étoiles' ?",
+              "correctAnswer": "Métaphore",
+              "explanation": "La métaphore est une comparaison implicite sans outil de comparaison. Elle identifie directement les yeux aux étoiles.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Métaphore",
+                "Comparaison",
+                "Personnification",
+                "Hyperbole"
               ]
             },
             {
               "id": 6,
               "type": "multiple-choice",
               "difficulty": 2,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 6",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 6",
+              "question": "Quel est le mode du verbe dans : 'Il faut que tu viennes' ?",
+              "correctAnswer": "Subjonctif",
+              "explanation": "Le subjonctif exprime une action envisagée, souhaitée ou douteuse. Il est introduit ici par 'il faut que'.",
               "points": 15,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Subjonctif",
+                "Indicatif",
+                "Conditionnel",
+                "Impératif"
               ]
             },
             {
               "id": 7,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 7",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 7",
+              "question": "Dans quelle œuvre de Molière trouve-t-on le personnage d'Harpagon ?",
+              "correctAnswer": "L'Avare",
+              "explanation": "Harpagon est le personnage principal de 'L'Avare' de Molière, incarnant la passion excessive pour l'argent.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "L'Avare",
+                "Le Bourgeois gentilhomme",
+                "Le Malade imaginaire",
+                "Tartuffe"
               ]
             },
             {
               "id": 8,
               "type": "multiple-choice",
               "difficulty": 3,
-              "question": "Question de français niveau troisième - Leçon 1 - Question 8",
-              "correctAnswer": "Option A",
-              "explanation": "Explication pour français - Leçon 1 - Question 8",
+              "question": "Quelle est la particularité de l'alexandrin classique ?",
+              "correctAnswer": "Vers de 12 syllabes avec césure à l'hémistiche",
+              "explanation": "L'alexandrin classique compte 12 syllabes avec une césure (pause) au milieu du vers, divisant celui-ci en deux hémistiches de 6 syllabes.",
               "points": 20,
               "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
+                "Vers de 12 syllabes avec césure à l'hémistiche",
+                "Vers de 10 syllabes",
+                "Vers de 8 syllabes",
+                "Vers libre sans contrainte"
               ]
             }
           ]

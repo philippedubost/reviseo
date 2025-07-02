@@ -5719,30 +5719,30 @@
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Quel est le synonyme de 'fatigué' ?",
-                  "correctAnswer": "épuisé",
-                  "explanation": "'Épuisé' est un synonyme de 'fatigué' qui exprime une grande fatigue.",
+                  "question": "Question de vocabulaire niveau cinquieme - Question 7",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour vocabulaire - Question 7",
                   "points": 20,
                   "options": [
-                    "épuisé",
-                    "énergique",
-                    "actif",
-                    "dynamique"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Quel est l'antonyme de 'riche' ?",
-                  "correctAnswer": "pauvre",
-                  "explanation": "'Pauvre' est l'antonyme de 'riche', ils expriment des situations financières opposées.",
+                  "question": "Question de vocabulaire niveau cinquieme - Question 8",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour vocabulaire - Question 8",
                   "points": 20,
                   "options": [
-                    "pauvre",
-                    "moyen",
-                    "aisé",
-                    "modeste"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 }
               ]
@@ -5758,120 +5758,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'un troubadour au Moyen Âge ?",
-                  "correctAnswer": "Un poète-musicien",
-                  "explanation": "Un troubadour est un poète-musicien qui compose et chante des poèmes d'amour.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 1",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 1",
                   "points": 10,
                   "options": [
-                    "Un poète-musicien",
-                    "Un chevalier",
-                    "Un moine",
-                    "Un paysan"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'une chanson de geste ?",
-                  "correctAnswer": "Un poème épique",
-                  "explanation": "Une chanson de geste est un poème épique qui raconte les exploits des chevaliers.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 2",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 2",
                   "points": 10,
                   "options": [
-                    "Un poème épique",
-                    "Un roman d'amour",
-                    "Une fable",
-                    "Un conte"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Quel est le héros de la Chanson de Roland ?",
-                  "correctAnswer": "Roland",
-                  "explanation": "Roland est le héros principal de la Chanson de Roland, un chevalier de Charlemagne.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 3",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 3",
                   "points": 10,
                   "options": [
-                    "Roland",
-                    "Charlemagne",
-                    "Olivier",
-                    "Ganelon"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un roman courtois ?",
-                  "correctAnswer": "Un roman d'amour chevaleresque",
-                  "explanation": "Un roman courtois est un roman d'amour chevaleresque qui met en scène des chevaliers et des dames.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 4",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 4",
                   "points": 15,
                   "options": [
-                    "Un roman d'amour chevaleresque",
-                    "Un roman historique",
-                    "Un roman d'aventures",
-                    "Un roman policier"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Quel est l'auteur du Roman de Renart ?",
-                  "correctAnswer": "Anonyme",
-                  "explanation": "Le Roman de Renart est une œuvre anonyme, écrite par plusieurs auteurs.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 5",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 5",
                   "points": 15,
                   "options": [
-                    "Anonyme",
-                    "Chrétien de Troyes",
-                    "Marie de France",
-                    "Guillaume de Lorris"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un fabliau ?",
-                  "correctAnswer": "Un récit comique",
-                  "explanation": "Un fabliau est un récit comique et satirique du Moyen Âge.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 6",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 6",
                   "points": 15,
                   "options": [
-                    "Un récit comique",
-                    "Un poème d'amour",
-                    "Un roman d'aventures",
-                    "Une chanson de geste"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Quel est l'auteur de Perceval ou le Conte du Graal ?",
-                  "correctAnswer": "Chrétien de Troyes",
-                  "explanation": "Chrétien de Troyes est l'auteur de Perceval ou le Conte du Graal.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 7",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 7",
                   "points": 20,
                   "options": [
-                    "Chrétien de Troyes",
-                    "Marie de France",
-                    "Guillaume de Lorris",
-                    "Anonyme"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Qu'est-ce que la courtoisie au Moyen Âge ?",
-                  "correctAnswer": "Un code de conduite",
-                  "explanation": "La courtoisie est un code de conduite qui régit les relations entre chevaliers et dames.",
+                  "question": "Question de littérature médiévale niveau cinquieme - Question 8",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour littérature médiévale - Question 8",
                   "points": 20,
                   "options": [
-                    "Un code de conduite",
-                    "Un style architectural",
-                    "Un type de musique",
-                    "Un genre littéraire"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 }
               ]
@@ -5887,120 +5887,120 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'un narrateur ?",
-                  "correctAnswer": "Celui qui raconte l'histoire",
-                  "explanation": "Le narrateur est celui qui raconte l'histoire, qui fait le récit.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 1",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 1",
                   "points": 10,
                   "options": [
-                    "Celui qui raconte l'histoire",
-                    "Le personnage principal",
-                    "L'auteur du livre",
-                    "Le lecteur"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'un dialogue ?",
-                  "correctAnswer": "Une conversation entre personnages",
-                  "explanation": "Un dialogue est une conversation entre deux ou plusieurs personnages.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 2",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 2",
                   "points": 10,
                   "options": [
-                    "Une conversation entre personnages",
-                    "Un monologue",
-                    "Une description",
-                    "Un récit"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'une description ?",
-                  "correctAnswer": "Un passage qui décrit",
-                  "explanation": "Une description est un passage qui décrit un lieu, un personnage ou un objet.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 3",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 3",
                   "points": 10,
                   "options": [
-                    "Un passage qui décrit",
-                    "Une action",
-                    "Un dialogue",
-                    "Une réflexion"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un point de vue interne ?",
-                  "correctAnswer": "Le narrateur voit par les yeux d'un personnage",
-                  "explanation": "En point de vue interne, le narrateur voit et ressent par les yeux d'un personnage.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 4",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 4",
                   "points": 15,
                   "options": [
-                    "Le narrateur voit par les yeux d'un personnage",
-                    "Le narrateur voit tout",
-                    "Le narrateur ne voit rien",
-                    "Le narrateur est omniscient"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un point de vue omniscient ?",
-                  "correctAnswer": "Le narrateur sait tout",
-                  "explanation": "En point de vue omniscient, le narrateur sait tout sur tous les personnages.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 5",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 5",
                   "points": 15,
                   "options": [
-                    "Le narrateur sait tout",
-                    "Le narrateur ne sait rien",
-                    "Le narrateur voit partiellement",
-                    "Le narrateur est aveugle"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un champ lexical ?",
-                  "correctAnswer": "Un ensemble de mots liés",
-                  "explanation": "Un champ lexical est un ensemble de mots qui se rapportent à un même thème.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 6",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 6",
                   "points": 15,
                   "options": [
-                    "Un ensemble de mots liés",
-                    "Un seul mot",
-                    "Une phrase",
-                    "Un paragraphe"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Qu'est-ce qu'une métaphore ?",
-                  "correctAnswer": "Une comparaison sans mot de liaison",
-                  "explanation": "Une métaphore est une comparaison implicite, sans mot de liaison comme 'comme'.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 7",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 7",
                   "points": 20,
                   "options": [
-                    "Une comparaison sans mot de liaison",
-                    "Une comparaison avec 'comme'",
-                    "Une répétition",
-                    "Une opposition"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 8,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Qu'est-ce qu'une comparaison ?",
-                  "correctAnswer": "Un rapprochement entre deux éléments",
-                  "explanation": "Une comparaison est un rapprochement entre deux éléments avec 'comme' ou 'tel'.",
+                  "question": "Question de analyse de texte niveau cinquieme - Question 8",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour analyse de texte - Question 8",
                   "points": 20,
                   "options": [
-                    "Un rapprochement entre deux éléments",
-                    "Une opposition",
-                    "Une répétition",
-                    "Une énumération"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 }
               ]
@@ -6016,105 +6016,105 @@
                   "id": 1,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'un paragraphe ?",
-                  "correctAnswer": "Un ensemble de phrases",
-                  "explanation": "Un paragraphe est un ensemble de phrases qui développent une même idée.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 1",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 1",
                   "points": 10,
                   "options": [
-                    "Un ensemble de phrases",
-                    "Une seule phrase",
-                    "Un mot",
-                    "Un texte entier"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 2,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'une introduction ?",
-                  "correctAnswer": "Le début d'un texte",
-                  "explanation": "Une introduction est le début d'un texte qui présente le sujet.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 2",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 2",
                   "points": 10,
                   "options": [
-                    "Le début d'un texte",
-                    "La fin d'un texte",
-                    "Le milieu d'un texte",
-                    "Un paragraphe"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 3,
                   "type": "multiple-choice",
                   "difficulty": 1,
-                  "question": "Qu'est-ce qu'une conclusion ?",
-                  "correctAnswer": "La fin d'un texte",
-                  "explanation": "Une conclusion est la fin d'un texte qui résume les idées principales.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 3",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 3",
                   "points": 10,
                   "options": [
-                    "La fin d'un texte",
-                    "Le début d'un texte",
-                    "Le milieu d'un texte",
-                    "Un paragraphe"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 4,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un connecteur logique ?",
-                  "correctAnswer": "Un mot qui relie les idées",
-                  "explanation": "Un connecteur logique est un mot qui relie les idées et les phrases entre elles.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 4",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 4",
                   "points": 15,
                   "options": [
-                    "Un mot qui relie les idées",
-                    "Un verbe",
-                    "Un nom",
-                    "Un adjectif"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 5,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un argument ?",
-                  "correctAnswer": "Une idée qui justifie",
-                  "explanation": "Un argument est une idée qui justifie ou défend une opinion.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 5",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 5",
                   "points": 15,
                   "options": [
-                    "Une idée qui justifie",
-                    "Une question",
-                    "Une conclusion",
-                    "Une introduction"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 6,
                   "type": "multiple-choice",
                   "difficulty": 2,
-                  "question": "Qu'est-ce qu'un exemple ?",
-                  "correctAnswer": "Un cas concret",
-                  "explanation": "Un exemple est un cas concret qui illustre une idée générale.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 6",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 6",
                   "points": 15,
                   "options": [
-                    "Un cas concret",
-                    "Une théorie",
-                    "Une conclusion",
-                    "Une question"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {
                   "id": 7,
                   "type": "multiple-choice",
                   "difficulty": 3,
-                  "question": "Qu'est-ce qu'un texte argumentatif ?",
-                  "correctAnswer": "Un texte qui défend une thèse",
-                  "explanation": "Un texte argumentatif défend une thèse en utilisant des arguments.",
+                  "question": "Question de expression écrite niveau cinquieme - Question 7",
+                  "correctAnswer": "Option A",
+                  "explanation": "Explication pour expression écrite - Question 7",
                   "points": 20,
                   "options": [
-                    "Un texte qui défend une thèse",
-                    "Un texte qui raconte",
-                    "Un texte qui décrit",
-                    "Un texte qui explique"
+                    "Option A",
+                    "Option B",
+                    "Option C",
+                    "Option D"
                   ]
                 },
                 {

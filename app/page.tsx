@@ -9,21 +9,21 @@ export default function Home() {
   const getLevelGradient = (levelId: string) => {
     switch (levelId) {
       case 'sixieme':
-        return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; // Soft purple-blue
+        return 'linear-gradient(135deg, #3d4fcc 0%, #5a2b8a 100%)'; // Dark saturated purple-blue
       case 'cinquieme':
-        return 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'; // Pink to coral
+        return 'linear-gradient(135deg, #c04dd8 0%, #c02a4a 100%)'; // Dark saturated pink to coral
       case 'quatrieme':
-        return 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'; // Light blue
+        return 'linear-gradient(135deg, #1a6ad8 0%, #00a4b4 100%)'; // Dark saturated light blue
       case 'troisieme':
-        return 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'; // Green to turquoise
+        return 'linear-gradient(135deg, #1aa053 0%, #0ab08d 100%)'; // Dark saturated green to turquoise
       case 'seconde':
-        return 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'; // Pink to yellow
+        return 'linear-gradient(135deg, #c03a6a 0%, #c08a2a 100%)'; // Dark saturated pink to yellow
       case 'premiere':
-        return 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'; // Mint to pink
+        return 'linear-gradient(135deg, #4a9a97 0%, #aa6570 100%)'; // Dark saturated mint to pink
       case 'terminale':
-        return 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%, #fecfef 100%)'; // Rose gold
+        return 'linear-gradient(135deg, #c04a5e 0%, #aa6594 100%)'; // Dark saturated rose gold
       default:
-        return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        return 'linear-gradient(135deg, #3d4fcc 0%, #5a2b8a 100%)';
     }
   };
 
@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="flex-1 px-2 pb-16">
-        <div className="w-full flex flex-col gap-3">
+        <div className="w-full flex flex-col gap-1">
           {/* Available levels in order */}
           {levelOrder
             .map(levelId => levels.find(level => level.id === levelId))

@@ -12,6 +12,7 @@ interface FlagButtonProps {
   isPracticeMode?: boolean;
   className?: string;
   questionType?: 'multiple-choice' | 'calculation' | 'input';
+  onPopupStateChange?: (isOpen: boolean) => void;
 }
 
 export default function FlagButton({ 
@@ -21,7 +22,8 @@ export default function FlagButton({
   questionText,
   isPracticeMode = false,
   className = '',
-  questionType
+  questionType,
+  onPopupStateChange
 }: FlagButtonProps) {
   const [showPopup, setShowPopup] = useState(false);
   const [reason, setReason] = useState('');
@@ -36,6 +38,7 @@ export default function FlagButton({
       setIsFlagged(false);
     } else {
       setShowPopup(true);
+      onPopupStateChange?.(true); // Notify parent that popup opened
     }
   };
 
@@ -45,12 +48,14 @@ export default function FlagButton({
       setIsFlagged(true);
       setShowPopup(false);
       setReason('');
+      onPopupStateChange?.(false); // Notify parent that popup closed
     }
   };
 
   const handleCancel = () => {
     setShowPopup(false);
     setReason('');
+    onPopupStateChange?.(false); // Notify parent that popup closed
   };
 
   // Suggestions rapides basées sur le type de question

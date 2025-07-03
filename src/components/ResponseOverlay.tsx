@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import FlagButton from './FlagButton';
 
 interface ResponseOverlayProps {
@@ -38,6 +41,36 @@ export default function ResponseOverlay({
   isPracticeMode = false,
   questionType
 }: ResponseOverlayProps) {
+  const [isFlagPopupOpen, setIsFlagPopupOpen] = useState(false);
+  const [wasAutoPaused, setWasAutoPaused] = useState(false);
+
+  // Handle flag popup state changes
+  const handleFlagPopupStateChange = (isOpen: boolean) => {
+    setIsFlagPopupOpen(isOpen);
+    
+    if (isOpen && !isPaused) {
+      // Flag popup opened and timer is not already paused
+      // Auto-pause the timer
+      onTogglePause();
+      setWasAutoPaused(true);
+    } else if (!isOpen && wasAutoPaused) {
+      // Flag popup closed and we had auto-paused
+      // Resume the timer only if it was auto-paused by us
+      if (isPaused) {
+        onTogglePause();
+      }
+      setWasAutoPaused(false);
+    }
+  };
+
+  // Reset auto-pause tracking when overlay is hidden
+  useEffect(() => {
+    if (!show) {
+      setWasAutoPaused(false);
+      setIsFlagPopupOpen(false);
+    }
+  }, [show]);
+
   if (!show) return null;
 
   // Determine background color and text based on result type
@@ -71,6 +104,7 @@ export default function ResponseOverlay({
               isPracticeMode={isPracticeMode}
               questionType={questionType}
               className="!bg-black/20 hover:!bg-black/30"
+              onPopupStateChange={handleFlagPopupStateChange}
             />
           </div>
         )}
@@ -93,13 +127,16 @@ export default function ResponseOverlay({
         </div>
         <div className={`text-sm mb-6 ${isSkipped ? 'text-white/60' : isCorrect ? 'text-[#181c24]/60' : 'text-white/60'}`}>
           {isPaused ? (
-            <span>⏸️ Pause - Cliquez sur Suivant pour continuer</span>
+            <span>
+              ⏸️ Pause
+              {isFlagPopupOpen ? ' - En cours de signalement' : ' - Cliquez sur Suivant pour continuer'}
+            </span>
           ) : (
             <span>Question suivante dans {countdown} seconde{countdown !== 1 ? 's' : ''}</span>
           )}
         </div>
         <div className="flex gap-3 justify-center">
-          {!isPaused && (
+          {!isPaused && !isFlagPopupOpen && (
             <button
               onClick={onTogglePause}
               className={`px-4 py-2 rounded-lg font-semibold transition-colors ${

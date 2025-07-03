@@ -63,8 +63,49 @@ export default function ActionButton({
     >
       {!showResult ? (
         <div className="flex flex-row gap-2 w-full">
-          {/* Skip button - visible seulement si pas de réponse sélectionnée */}
-          {!selectedAnswer && onSkip && (
+          {/* Skip button - visible pour les questions calculation et input */}
+          {(questionType === 'calculation' || questionType === 'input') && onSkip && (
+            <motion.button
+              className="btn bg-[#6c757d] text-white text-sm hover:bg-[#5a6268] transition-colors border border-[#495057] flex-1 relative overflow-hidden"
+              onClick={onSkip}
+              style={{ minWidth: 0 }}
+              whileHover={{ 
+                scale: 1.02,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ 
+                scale: 0.98,
+                transition: { duration: 0.1 }
+              }}
+              disabled={isLoading}
+            >
+              {/* Ripple effect */}
+              <motion.div
+                className="absolute inset-0 bg-white opacity-0"
+                whileHover={{ opacity: 0.1 }}
+                transition={{ duration: 0.2 }}
+              />
+              
+              {/* Animated emoji */}
+              <motion.span
+                animate={{ 
+                  rotate: [0, -10, 10, 0],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }}
+              >
+                ⏭️
+              </motion.span>
+              <span className="ml-1">Passer</span>
+            </motion.button>
+          )}
+          
+          {/* Skip button for multiple choice when no answer selected */}
+          {questionType === 'multiple-choice' && !selectedAnswer && onSkip && (
             <motion.button
               className="btn bg-[#6c757d] text-white text-sm hover:bg-[#5a6268] transition-colors border border-[#495057] flex-1 relative overflow-hidden"
               onClick={onSkip}

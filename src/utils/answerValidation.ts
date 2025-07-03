@@ -1,7 +1,10 @@
-// Fonction pour normaliser une réponse (gérer virgules, points, fractions)
+// Fonction pour normaliser une réponse (gérer virgules, points, fractions, expressions mathématiques)
 export function normalizeAnswer(answer: string): string {
-  // Nettoyer les espaces
+  // Nettoyer les espaces et normaliser
   let cleanAnswer = answer.trim();
+  
+  // Normaliser les expressions mathématiques avec variables
+  cleanAnswer = normalizeMathExpression(cleanAnswer);
   
   // Remplacer les virgules par des points pour les décimaux
   cleanAnswer = cleanAnswer.replace(',', '.');
@@ -20,6 +23,38 @@ export function normalizeAnswer(answer: string): string {
   }
   
   return cleanAnswer;
+}
+
+// Fonction pour normaliser les expressions mathématiques
+function normalizeMathExpression(expression: string): string {
+  let normalized = expression.trim();
+  
+  // Supprimer les espaces autour des égalités et dans les fonctions
+  normalized = normalized.replace(/\s*=\s*/g, '=');
+  normalized = normalized.replace(/\s*\(\s*/g, '(');
+  normalized = normalized.replace(/\s*\)\s*/g, ')');
+  
+  // Normaliser les espaces multiples
+  normalized = normalized.replace(/\s+/g, ' ');
+  
+  // Gérer les cas comme "x = ln(7)" → "ln(7)"
+  // Si l'expression contient "= " suivi d'une expression, extraire juste l'expression
+  const equalMatch = normalized.match(/^[a-zA-Z]\s*=\s*(.+)$/);
+  if (equalMatch) {
+    normalized = equalMatch[1].trim();
+  }
+  
+  // Supprimer les espaces dans les fonctions mathématiques courantes
+  const mathFunctions = ['ln', 'log', 'sin', 'cos', 'tan', 'exp', 'sqrt', 'abs'];
+  for (const func of mathFunctions) {
+    // Remplacer "ln( 7 )" par "ln(7)"
+    const regex = new RegExp(`${func}\\s*\\(\\s*([^)]+)\\s*\\)`, 'gi');
+    normalized = normalized.replace(regex, (match, content) => {
+      return `${func}(${content.trim()})`;
+    });
+  }
+  
+  return normalized;
 }
 
 // Fonction pour normaliser le texte (accents, casse, caractères spéciaux)
@@ -82,13 +117,31 @@ function calculateSimilarity(str1: string, str2: string): number {
 
 // Fonction pour comparer deux réponses en tenant compte des différentes formes
 export function compareAnswers(userAnswer: string, correctAnswer: string): boolean {
-  // Normalisation pour les réponses numériques
+  // Normalisation pour les réponses numériques et mathématiques
   const normalizedUser = normalizeAnswer(userAnswer);
   const normalizedCorrect = normalizeAnswer(correctAnswer);
   
-  // Comparaison directe
+  // Comparaison directe après normalisation
   if (normalizedUser === normalizedCorrect) {
     return true;
+  }
+  
+  // Vérifier toutes les variations acceptées de la réponse correcte
+  const acceptedVariations = getCommonVariations(correctAnswer);
+  for (const variation of acceptedVariations) {
+    const normalizedVariation = normalizeAnswer(variation);
+    if (normalizedUser === normalizedVariation) {
+      return true;
+    }
+  }
+  
+  // Vérifier les variations de la réponse utilisateur contre la réponse correcte
+  const userVariations = getCommonVariations(userAnswer);
+  for (const userVariation of userVariations) {
+    const normalizedUserVariation = normalizeAnswer(userVariation);
+    if (normalizedUserVariation === normalizedCorrect) {
+      return true;
+    }
   }
   
   // Comparaison numérique
@@ -100,7 +153,7 @@ export function compareAnswers(userAnswer: string, correctAnswer: string): boole
     return Math.abs(userNum - correctNum) < 0.01;
   }
   
-  // Si ce n'est pas numérique, utiliser la comparaison textuelle
+  // Si ce n'est pas numérique, utiliser la comparaison textuelle avec tolérance
   return compareTextAnswers(userAnswer, correctAnswer);
 }
 
@@ -180,11 +233,21 @@ function getCommonVariations(answer: string): string[] {
     variations.push(answer.replace(/\s+/g, ''));
   }
   
+  // Variations d'expressions mathématiques
+  variations.push(...getMathExpressionVariations(answer));
+  
   // Variations spécifiques pour les mots avec déterminants
   const normalizedAnswer = normalizeText(answer);
   
-  // Gérer les variations avec/sans déterminants (le, la, les, l', un, une, des)
-  const determinants = ['le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des '];
+  // Déterminants étendus avec plus de variantes
+  const determinants = [
+    'le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des ',
+    'du ', 'de la ', 'de l\' ', 'de ', 'd\'',
+    'ce ', 'cette ', 'ces ', 'cet ',
+    'mon ', 'ma ', 'mes ', 'ton ', 'ta ', 'tes ', 'son ', 'sa ', 'ses ',
+    'notre ', 'votre ', 'leur ', 'leurs ',
+    'quelque ', 'quelques ', 'chaque ', 'tout ', 'toute ', 'tous ', 'toutes '
+  ];
   
   // Si la réponse correcte contient un déterminant, accepter aussi sans déterminant
   for (const det of determinants) {
@@ -205,10 +268,70 @@ function getCommonVariations(answer: string): string[] {
   // Si la réponse correcte ne contient pas de déterminant, accepter aussi avec déterminants
   const hasNoDeterminant = !determinants.some(det => normalizeText(answer).startsWith(normalizeText(det)));
   if (hasNoDeterminant) {
-    for (const det of determinants) {
+    // Ajouter les déterminants les plus courants
+    const commonDeterminants = ['le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des '];
+    for (const det of commonDeterminants) {
       variations.push(det + answer);
       variations.push(det + answer.toLowerCase());
     }
+  }
+  
+  // Variations avec prépositions courantes
+  const prepositions = ['à ', 'de ', 'en ', 'dans ', 'sur ', 'avec ', 'pour ', 'par '];
+  for (const prep of prepositions) {
+    const normalizedPrep = normalizeText(prep);
+    if (normalizedAnswer.startsWith(normalizedPrep)) {
+      const withoutPreposition = normalizedAnswer.substring(normalizedPrep.length).trim();
+      if (withoutPreposition) {
+        variations.push(withoutPreposition);
+      }
+    }
+  }
+  
+  return [...new Set(variations)]; // Supprimer les doublons
+}
+
+// Fonction pour obtenir les variations d'expressions mathématiques
+function getMathExpressionVariations(answer: string): string[] {
+  const variations: string[] = [];
+  
+  // Variations avec/sans variable
+  const withVariableMatch = answer.match(/^([a-zA-Z])\s*=\s*(.+)$/);
+  if (withVariableMatch) {
+    const variable = withVariableMatch[1];
+    const expression = withVariableMatch[2];
+    
+    // Ajouter la version sans variable
+    variations.push(expression);
+    variations.push(expression.trim());
+    
+    // Ajouter des variations d'espacement
+    variations.push(`${variable}=${expression}`);
+    variations.push(`${variable} = ${expression}`);
+    variations.push(`${variable}  =  ${expression}`);
+  }
+  
+  // Variations d'espacement dans les fonctions mathématiques
+  const mathFunctionRegex = /(ln|log|sin|cos|tan|exp|sqrt|abs)\s*\(\s*([^)]+)\s*\)/gi;
+  let match;
+  while ((match = mathFunctionRegex.exec(answer)) !== null) {
+    const func = match[1];
+    const content = match[2];
+    
+    // Différentes variations d'espacement
+    variations.push(`${func}(${content})`);
+    variations.push(`${func}( ${content} )`);
+    variations.push(`${func}(  ${content}  )`);
+    variations.push(`${func} (${content})`);
+    variations.push(`${func} ( ${content} )`);
+  }
+  
+  // Variations de parenthèses pour les nombres
+  const numberInParensRegex = /\(\s*([0-9.,-]+)\s*\)/g;
+  while ((match = numberInParensRegex.exec(answer)) !== null) {
+    const number = match[1];
+    variations.push(number);
+    variations.push(number.trim());
   }
   
   return variations;

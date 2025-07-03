@@ -10,7 +10,7 @@ import ResponseOverlay from './ResponseOverlay';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import BackToLessonsButton from './BackToLessonsButton';
-import FlagButton from './FlagButton';
+
 import ActionButton from './ActionButton';
 import AnswerOptions from './AnswerOptions';
 import ExitButton from './ExitButton';
@@ -252,9 +252,6 @@ export default function GenericLessonPage({
               onAnswerChange={setSelectedAnswer}
               onAnswerSelect={handleAnswerSelect}
               onSubmit={handleSubmit}
-              questionId={currentQuestion.id}
-              subjectId={subject}
-              lessonId={lessonId}
             />
 
             {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (
@@ -297,6 +294,11 @@ export default function GenericLessonPage({
             isPaused={isPaused}
             onTogglePause={togglePause}
             onNext={handleNext}
+            questionId={currentQuestion.id}
+            subjectId={subject}
+            lessonId={lessonId}
+            questionText={currentQuestion.question}
+            isPracticeMode={false}
           />
         )}
       </div>

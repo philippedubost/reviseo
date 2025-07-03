@@ -1,3 +1,5 @@
+import FlagButton from './FlagButton';
+
 interface ResponseOverlayProps {
   show: boolean;
   isExiting: boolean;
@@ -9,6 +11,12 @@ interface ResponseOverlayProps {
   isPaused: boolean;
   onTogglePause: () => void;
   onNext: () => void;
+  // Flagging props
+  questionId?: number;
+  subjectId?: string;
+  lessonId?: number;
+  questionText?: string;
+  isPracticeMode?: boolean;
 }
 
 export default function ResponseOverlay({
@@ -21,7 +29,12 @@ export default function ResponseOverlay({
   emoji,
   isPaused,
   onTogglePause,
-  onNext
+  onNext,
+  questionId,
+  subjectId,
+  lessonId,
+  questionText,
+  isPracticeMode = false
 }: ResponseOverlayProps) {
   if (!show) return null;
 
@@ -44,7 +57,21 @@ export default function ResponseOverlay({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
-      <div className={`${backgroundColor} p-8 rounded-2xl shadow-2xl text-center max-w-sm mx-4 pointer-events-auto ${isExiting ? 'animate-jumpOut' : 'animate-jumpIn'}`}>
+      <div className={`${backgroundColor} p-8 rounded-2xl shadow-2xl text-center max-w-sm mx-4 pointer-events-auto relative ${isExiting ? 'animate-jumpOut' : 'animate-jumpIn'}`}>
+        {/* Flag Button - Top Right */}
+        {questionId && subjectId && questionText && (
+          <div className="absolute top-3 right-3">
+            <FlagButton
+              questionId={questionId}
+              subjectId={subjectId}
+              lessonId={lessonId}
+              questionText={questionText}
+              isPracticeMode={isPracticeMode}
+              className="!bg-black/20 hover:!bg-black/30"
+            />
+          </div>
+        )}
+        
         <div className="text-6xl mb-6 animate-bounceLoop">
           {isSkipped ? '⏭️' : emoji}
         </div>

@@ -10,7 +10,7 @@ import ResponseOverlay from './ResponseOverlay';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import BackToLessonsButton from './BackToLessonsButton';
-import FlagButton from './FlagButton';
+
 import ActionButton from '@/src/components/ActionButton';
 import AnswerOptions from './AnswerOptions';
 import ExitButton from './ExitButton';
@@ -210,9 +210,6 @@ export default function GenericPracticePage({
               onAnswerChange={setSelectedAnswer}
               onAnswerSelect={handleAnswerSelect}
               onSubmit={handleSubmit}
-              questionId={currentQuestion.id}
-              subjectId={subject}
-              isPracticeMode={true}
             />
 
             {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (
@@ -255,6 +252,10 @@ export default function GenericPracticePage({
             isPaused={isPaused}
             onTogglePause={togglePause}
             onNext={handleNext}
+            questionId={currentQuestion.id}
+            subjectId={subject}
+            questionText={currentQuestion.question}
+            isPracticeMode={true}
           />
         )}
       </div>

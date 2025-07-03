@@ -12,7 +12,7 @@ import StatsBadges from '@/src/components/StatsBadges';
 import ConfettiManager from '@/src/components/ConfettiManager';
 import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
-import FlagButton from '@/src/components/FlagButton';
+
 import ActionButton from '@/src/components/ActionButton';
 import type { Question } from '@/src/data/simplified-service';
 
@@ -172,9 +172,6 @@ export default function LessonPage() {
             onSubmit={handleSubmit}
             options={currentQuestion.options}
             correctAnswer={currentQuestion.correctAnswer}
-            questionId={currentQuestion.id}
-            subjectId={subjectId}
-            lessonId={lessonId}
             difficulty={currentQuestion.difficulty}
           />
         )}
@@ -192,6 +189,11 @@ export default function LessonPage() {
         isPaused={isPaused}
         onTogglePause={togglePause}
         onNext={handleNext}
+        questionId={currentQuestion?.id}
+        subjectId={subjectId}
+        lessonId={lessonId}
+        questionText={currentQuestion?.question}
+        isPracticeMode={false}
       />
 
       {/* Action Button */}

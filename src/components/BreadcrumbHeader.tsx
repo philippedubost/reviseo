@@ -49,45 +49,57 @@ export default function BreadcrumbHeader({
   const subjectColors = detectedSubject ? getSubjectColors(detectedSubject) : null;
   const levelColor = detectedLevel ? getLevelColor(detectedLevel) : null;
   
-  // Build breadcrumb items
+  // Build breadcrumb items - More concise for lesson/question pages
   const breadcrumbs: BreadcrumbItem[] = [];
   
-  // Add level breadcrumb
-  if (levelData) {
-    breadcrumbs.push({
-      label: levelData.name,
-      href: `/${detectedLevel}`,
-      icon: "🎓",
-      color: levelColor || undefined
-    });
-  }
-  
-  // Add subject breadcrumb
-  if (subjectData && detectedLevel) {
-    breadcrumbs.push({
-      label: subjectData.name,
-      href: `/${detectedLevel}/${detectedSubject}`,
-      icon: getSubjectIcon(detectedSubject),
-      color: subjectColors?.gradient
-    });
-  }
-  
-  // Add lesson breadcrumb
+  // For lesson pages, show concise navigation: Subject > Lesson
   if (lesson) {
+    // Only show subject > lesson for lessons (more concise)
+    if (subjectData && detectedLevel) {
+      breadcrumbs.push({
+        label: subjectData.name,
+        href: `/${detectedLevel}/${detectedSubject}`,
+        icon: getSubjectIcon(detectedSubject),
+        color: subjectColors?.gradient
+      });
+    }
+    
     breadcrumbs.push({
       label: lesson.title,
       isActive: true,
       icon: "📖"
     });
-  }
-  
-  // Add custom title if provided
-  if (customTitle && !lesson) {
-    breadcrumbs.push({
-      label: customTitle,
-      isActive: true,
-      icon: "📚"
-    });
+  } else {
+    // For level/subject pages, show full navigation
+    
+    // Add level breadcrumb
+    if (levelData) {
+      breadcrumbs.push({
+        label: levelData.name,
+        href: `/${detectedLevel}`,
+        icon: "🎓",
+        color: levelColor || undefined
+      });
+    }
+    
+    // Add subject breadcrumb
+    if (subjectData && detectedLevel) {
+      breadcrumbs.push({
+        label: subjectData.name,
+        href: `/${detectedLevel}/${detectedSubject}`,
+        icon: getSubjectIcon(detectedSubject),
+        color: subjectColors?.gradient
+      });
+    }
+    
+    // Add custom title if provided
+    if (customTitle) {
+      breadcrumbs.push({
+        label: customTitle,
+        isActive: true,
+        icon: "📚"
+      });
+    }
   }
   
   // Determine back navigation
@@ -106,16 +118,34 @@ export default function BreadcrumbHeader({
     return '/';
   };
 
+  // Determine if this is a level page (no subject specified)
+  const isLevelPage = detectedLevel && !detectedSubject;
+  
+  // Get background style
+  const getBackgroundStyle = () => {
+    if (isLevelPage && levelColor) {
+      // Use level gradient for level pages
+      return {
+        background: levelColor,
+        borderBottomColor: '#ffffff20'
+      };
+    } else if (subjectColors) {
+      // Use subject colors for subject/lesson pages
+      return {
+        borderBottomColor: subjectColors.border,
+        backgroundColor: `${subjectColors.bg}08`
+      };
+    }
+    return {};
+  };
+
   return (
     <motion.header 
       className="bg-[#181c24] border-b border-gray-700 px-4 py-3"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      style={subjectColors ? {
-        borderBottomColor: subjectColors.border,
-        backgroundColor: `${subjectColors.bg}08` // Very subtle background tint
-      } : {}}
+      style={getBackgroundStyle()}
     >
       <div className="flex items-center justify-between max-w-4xl mx-auto">
         {/* Back Button */}
@@ -128,8 +158,8 @@ export default function BreadcrumbHeader({
             <Link 
               href={getBackHref()}
               className="text-white hover:scale-110 transition-all duration-200 p-2 rounded-full"
-              style={subjectColors ? {
-                color: subjectColors.light,
+              style={(isLevelPage || subjectColors) ? {
+                color: isLevelPage ? '#ffffff' : subjectColors?.light,
               } : {}}
             >
               <motion.span
@@ -168,8 +198,8 @@ export default function BreadcrumbHeader({
                     )}
                     <span 
                       className="font-medium truncate max-w-24 sm:max-w-32"
-                      style={subjectColors && index === 1 ? {
-                        color: subjectColors.light
+                      style={(isLevelPage || (subjectColors && index === 1)) ? {
+                        color: isLevelPage ? '#ffffff' : subjectColors?.light
                       } : {
                         color: '#b0b8c1'
                       }}
@@ -184,8 +214,8 @@ export default function BreadcrumbHeader({
                     )}
                     <span 
                       className="font-bold text-white truncate max-w-32 sm:max-w-48"
-                      style={subjectColors ? {
-                        color: subjectColors.light
+                      style={(isLevelPage || subjectColors) ? {
+                        color: isLevelPage ? '#ffffff' : subjectColors?.light
                       } : {}}
                     >
                       {crumb.label}

@@ -20,16 +20,20 @@ export default function LevelPage() {
   return (
     <PageTransition>
       <div className="flex flex-col">
-        {/* Enhanced Header with Breadcrumb */}
+        {/* Enhanced Header with Breadcrumb - Level gradient background */}
         <BreadcrumbHeader 
           level={levelId}
-          customTitle="Mes Matières"
         />
 
         {/* Main Content */}
         <div className="flex-1 px-2 pb-16">
+          {/* Section Title */}
+          <div className="text-center py-4">
+            <h2 className="text-lg font-bold text-white">Mes Matières</h2>
+          </div>
+          
           {/* Subject Cards */}
-          <div className="w-full flex flex-col gap-3 pt-4">
+          <div className="w-full flex flex-col gap-3">
             {level.subjects.map((subject, index) => (
               <SubjectCard 
                 key={subject.id} 

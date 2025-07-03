@@ -10,12 +10,12 @@ export interface SubjectColors {
   text: string;           // Text color for contrast
 }
 
-// Subject color definitions
+// Subject color definitions - Each subject has unique colors
 export const SUBJECT_COLORS: Record<string, SubjectColors> = {
   maths: {
-    gradient: 'from-[#00baff] to-[#2ecc71]',
+    gradient: 'from-[#00baff] to-[#2196f3]',
     primary: '#00baff',
-    secondary: '#2ecc71', 
+    secondary: '#2196f3', 
     light: '#66d9ff',
     dark: '#0099cc',
     border: '#00baff40',
@@ -32,7 +32,7 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     bg: '#e74c3c10',
     text: '#ffffff'
   },
-  sciences: {
+  'histoire-geo': {
     gradient: 'from-[#d35400] to-[#e67e22]',
     primary: '#d35400',
     secondary: '#e67e22',
@@ -42,7 +42,7 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     bg: '#d3540010',
     text: '#ffffff'
   },
-  'histoire-geo': {
+  svt: {
     gradient: 'from-[#27ae60] to-[#2ecc71]',
     primary: '#27ae60',
     secondary: '#2ecc71',
@@ -52,8 +52,7 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     bg: '#27ae6010',
     text: '#ffffff'
   },
-  // Additional subjects
-  physique: {
+  anglais: {
     gradient: 'from-[#2980b9] to-[#3498db]',
     primary: '#2980b9',
     secondary: '#3498db',
@@ -63,6 +62,7 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     bg: '#2980b910',
     text: '#ffffff'
   },
+  // Additional subjects for future use
   chimie: {
     gradient: 'from-[#8e44ad] to-[#9b59b6]',
     primary: '#8e44ad',
@@ -71,6 +71,16 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     dark: '#6c3483',
     border: '#8e44ad40',
     bg: '#8e44ad10',
+    text: '#ffffff'
+  },
+  physique: {
+    gradient: 'from-[#34495e] to-[#2c3e50]',
+    primary: '#34495e',
+    secondary: '#2c3e50',
+    light: '#7f8c8d',
+    dark: '#2c3e50',
+    border: '#34495e40',
+    bg: '#34495e10',
     text: '#ffffff'
   }
 };
@@ -115,8 +125,9 @@ export function getSubjectIcon(subjectId: string): string {
   const icons: Record<string, string> = {
     maths: '🔢',
     francais: '📝',
-    sciences: '🧪',
     'histoire-geo': '🌍',
+    svt: '🌱',
+    anglais: '🇬�',
     physique: '⚡',
     chimie: '⚗️'
   };

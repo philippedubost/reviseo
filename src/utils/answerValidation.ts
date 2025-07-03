@@ -29,6 +29,9 @@ export function normalizeAnswer(answer: string): string {
 function normalizeMathExpression(expression: string): string {
   let normalized = expression.trim();
   
+  // Normaliser π et pi
+  normalized = normalizePi(normalized);
+  
   // Supprimer les espaces autour des égalités et dans les fonctions
   normalized = normalized.replace(/\s*=\s*/g, '=');
   normalized = normalized.replace(/\s*\(\s*/g, '(');
@@ -53,6 +56,19 @@ function normalizeMathExpression(expression: string): string {
       return `${func}(${content.trim()})`;
     });
   }
+  
+  return normalized;
+}
+
+// Fonction pour normaliser π et pi
+function normalizePi(expression: string): string {
+  let normalized = expression;
+  
+  // Convertir "pi" en "π" (insensible à la casse)
+  normalized = normalized.replace(/\bpi\b/gi, 'π');
+  
+  // Gérer les cas avec espaces autour de pi
+  normalized = normalized.replace(/\b\s*pi\s*\b/gi, 'π');
   
   return normalized;
 }
@@ -334,6 +350,68 @@ function getMathExpressionVariations(answer: string): string[] {
     variations.push(number.trim());
   }
   
+  // Variations de π et pi
+  variations.push(...getPiVariations(answer));
+  
+  return variations;
+}
+
+// Fonction pour obtenir les variations de π et pi
+function getPiVariations(answer: string): string[] {
+  const variations: string[] = [];
+  
+  // Si l'answer contient π, ajouter les variations avec pi
+  if (answer.includes('π')) {
+    // Remplacer π par pi (différentes variations)
+    variations.push(answer.replace(/π/g, 'pi'));
+    variations.push(answer.replace(/π/g, 'PI'));
+    variations.push(answer.replace(/π/g, 'Pi'));
+    
+    // Variations avec espaces
+    variations.push(answer.replace(/π/g, ' pi '));
+    variations.push(answer.replace(/π/g, ' PI '));
+    
+    // Cas spéciaux comme π/2 vs pi/2
+    if (answer.includes('π/')) {
+      variations.push(answer.replace(/π\//g, 'pi/'));
+      variations.push(answer.replace(/π\//g, 'PI/'));
+      variations.push(answer.replace(/π\//g, 'pi /'));
+      variations.push(answer.replace(/π\//g, ' pi/'));
+    }
+    
+    // Cas comme 2π vs 2pi
+    const piWithNumberRegex = /(\d+)π/g;
+    let numberMatch;
+    while ((numberMatch = piWithNumberRegex.exec(answer)) !== null) {
+      const number = numberMatch[1];
+      variations.push(answer.replace(numberMatch[0], `${number}pi`));
+      variations.push(answer.replace(numberMatch[0], `${number}*pi`));
+      variations.push(answer.replace(numberMatch[0], `${number} * pi`));
+      variations.push(answer.replace(numberMatch[0], `${number} pi`));
+    }
+  }
+  
+  // Si l'answer contient pi, ajouter les variations avec π
+  if (/\bpi\b/i.test(answer)) {
+    variations.push(answer.replace(/\bpi\b/gi, 'π'));
+    
+    // Cas comme 2*pi vs 2π
+    const piWithMultRegex = /(\d+)\s*\*\s*pi\b/gi;
+    let multMatch;
+    while ((multMatch = piWithMultRegex.exec(answer)) !== null) {
+      const number = multMatch[1];
+      variations.push(answer.replace(multMatch[0], `${number}π`));
+    }
+    
+    // Cas comme 2 pi vs 2π
+    const piWithSpaceRegex = /(\d+)\s+pi\b/gi;
+    let spaceMatch;
+    while ((spaceMatch = piWithSpaceRegex.exec(answer)) !== null) {
+      const number = spaceMatch[1];
+      variations.push(answer.replace(spaceMatch[0], `${number}π`));
+    }
+  }
+  
   return variations;
 }
 
@@ -396,6 +474,9 @@ function decimalToFraction(decimal: number, maxDenominator: number = 100): strin
 
 // Fonction pour formater une réponse pour l'affichage
 export function formatAnswerForDisplay(answer: string): string {
+  // D'abord appliquer le formatage mathématique spécial
+  let formatted = formatMathForDisplay(answer);
+  
   const normalized = normalizeAnswer(answer);
   const num = parseFloat(normalized);
   
@@ -403,51 +484,122 @@ export function formatAnswerForDisplay(answer: string): string {
     return decimalToFraction(num);
   }
   
-  return answer;
+  return formatted;
+}
+
+// Fonction pour formater les expressions mathématiques pour l'affichage
+export function formatMathForDisplay(answer: string): string {
+  let formatted = answer;
+  
+  // Convertir pi en π pour l'affichage
+  formatted = formatted.replace(/\bpi\b/gi, 'π');
+  
+  // Ajouter des indices pour π dans certains contextes
+  formatted = formatPiWithSubscripts(formatted);
+  
+  // Autres formatages mathématiques possibles (fractions, exposants, etc.)
+  formatted = formatMathSymbols(formatted);
+  
+  return formatted;
+}
+
+// Fonction pour formater π avec des indices appropriés
+function formatPiWithSubscripts(expression: string): string {
+  let formatted = expression;
+  
+  // Cas spéciaux où π mérite un indice ou une mise en forme spéciale
+  // Par exemple: π/2, π/3, π/4, π/6, 2π, 3π, etc.
+  
+  // Fractions avec π au numérateur
+  formatted = formatted.replace(/π\/(\d+)/g, 'π/$1');
+  
+  // Multiples de π
+  formatted = formatted.replace(/(\d+)π/g, '$1π');
+  
+  // π dans les fonctions trigonométriques - peut être mis en évidence
+  formatted = formatted.replace(/(sin|cos|tan)\(([^)]*π[^)]*)\)/gi, '$1($2)');
+  
+  return formatted;
+}
+
+// Fonction pour formater d'autres symboles mathématiques
+function formatMathSymbols(expression: string): string {
+  let formatted = expression;
+  
+  // Ici on peut ajouter d'autres formatages comme :
+  // - Conversion des fractions en notation avec barre de fraction
+  // - Conversion des exposants (x^2 → x²)
+  // - Conversion des indices (H_2O → H₂O)
+  // - Autres symboles mathématiques
+  
+  // Exemple: convertir les exposants simples
+  formatted = formatted.replace(/\^2/g, '²');
+  formatted = formatted.replace(/\^3/g, '³');
+  formatted = formatted.replace(/\^(-?\d+)/g, (match, exp) => {
+    const superscripts = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+    const minus = '⁻';
+    
+    if (exp.startsWith('-')) {
+      const num = exp.substring(1);
+      return minus + num.split('').map((digit: string) => superscripts[parseInt(digit)]).join('');
+    } else {
+      return exp.split('').map((digit: string) => superscripts[parseInt(digit)]).join('');
+    }
+  });
+  
+  return formatted;
 }
 
 // Fonction pour obtenir toutes les formes acceptables d'une réponse
 export function getAcceptedForms(answer: string): string[] {
-  const normalized = normalizeAnswer(answer);
-  const num = parseFloat(normalized);
-  
-  if (isNaN(num)) {
-    return [answer];
-  }
-  
   const forms = new Set<string>();
   
   // Forme originale
   forms.add(answer);
   
+  // Ajouter toutes les variations communes (y compris pi/π)
+  const variations = getCommonVariations(answer);
+  variations.forEach(variation => forms.add(variation));
+  
   // Forme normalisée
+  const normalized = normalizeAnswer(answer);
   forms.add(normalized);
   
-  // Forme avec point décimal
-  if (normalized.includes('.')) {
-    forms.add(normalized.replace('.', ','));
+  // Si c'est numérique, ajouter les formes numériques
+  const num = parseFloat(normalized);
+  if (!isNaN(num)) {
+    // Forme avec point décimal
+    if (normalized.includes('.')) {
+      forms.add(normalized.replace('.', ','));
+    }
+    
+    // Forme avec virgule
+    if (normalized.includes(',')) {
+      forms.add(normalized.replace(',', '.'));
+    }
+    
+    // Forme fractionnaire
+    const fractionForm = decimalToFraction(num);
+    if (fractionForm !== normalized) {
+      forms.add(fractionForm);
+    }
+    
+    // Forme entière si applicable
+    if (Number.isInteger(num)) {
+      forms.add(num.toString());
+    }
+    
+    // Forme avec zéros inutiles supprimés
+    const cleanDecimal = num.toFixed(2).replace(/\.?0+$/, '');
+    if (cleanDecimal !== normalized) {
+      forms.add(cleanDecimal);
+    }
   }
   
-  // Forme avec virgule
-  if (normalized.includes(',')) {
-    forms.add(normalized.replace(',', '.'));
-  }
-  
-  // Forme fractionnaire
-  const fractionForm = decimalToFraction(num);
-  if (fractionForm !== normalized) {
-    forms.add(fractionForm);
-  }
-  
-  // Forme entière si applicable
-  if (Number.isInteger(num)) {
-    forms.add(num.toString());
-  }
-  
-  // Forme avec zéros inutiles supprimés
-  const cleanDecimal = num.toFixed(2).replace(/\.?0+$/, '');
-  if (cleanDecimal !== normalized) {
-    forms.add(cleanDecimal);
+  // Ajouter les formes formatées pour l'affichage
+  const displayFormatted = formatMathForDisplay(answer);
+  if (displayFormatted !== answer) {
+    forms.add(displayFormatted);
   }
   
   return Array.from(forms);

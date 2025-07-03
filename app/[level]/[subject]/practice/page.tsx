@@ -66,6 +66,7 @@ export default function PracticePage() {
     isLastQuestion,
     isPaused,
     skippedQuestions,
+    isLoading,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
@@ -193,6 +194,7 @@ export default function PracticePage() {
           countdown={countdown}
           isLastQuestion={isLastQuestion}
           isPaused={isPaused}
+          isLoading={isLoading}
           onVerify={handleSubmit}
           onNext={handleNext}
           onSkip={handleSkip}

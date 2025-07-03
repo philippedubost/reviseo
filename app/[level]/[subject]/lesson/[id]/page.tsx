@@ -71,6 +71,7 @@ export default function LessonPage() {
     isLastQuestion,
     isPaused,
     skippedQuestions,
+    isLoading,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
@@ -204,6 +205,7 @@ export default function LessonPage() {
           countdown={countdown}
           isLastQuestion={isLastQuestion}
           isPaused={isPaused}
+          isLoading={isLoading}
           onVerify={handleSubmit}
           onNext={handleNext}
           onSkip={handleSkip}

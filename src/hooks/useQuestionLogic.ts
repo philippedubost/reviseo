@@ -24,6 +24,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
   const [currentEmoji, setCurrentEmoji] = useState('🎉');
   const [isPaused, setIsPaused] = useState(false);
   const [skippedQuestions, setSkippedQuestions] = useState<number[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -57,23 +58,30 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
   };
 
   const handleSubmit = () => {
-    if (!selectedAnswer) return;
-    const correct = compareAnswers(selectedAnswer, currentQuestion.correctAnswer);
-    setIsCorrect(correct);
-    setIsSkipped(false);
-    setShowResult(true);
+    if (!selectedAnswer || isLoading) return;
     
-    if (correct) {
-      setCorrectAnswers(prev => prev + 1);
-      setStreak(prev => prev + 1);
-    } else {
-      setStreak(0);
-    }
+    setIsLoading(true);
     
-    // Call the onAnswer callback for XP and streak updates (only for actual answers, not skips)
-    if (onAnswer) {
-      onAnswer(correct);
-    }
+    // Simuler un délai pour les connexions lentes (500ms minimum)
+    setTimeout(() => {
+      const correct = compareAnswers(selectedAnswer, currentQuestion.correctAnswer);
+      setIsCorrect(correct);
+      setIsSkipped(false);
+      setShowResult(true);
+      setIsLoading(false);
+      
+      if (correct) {
+        setCorrectAnswers(prev => prev + 1);
+        setStreak(prev => prev + 1);
+      } else {
+        setStreak(0);
+      }
+      
+      // Call the onAnswer callback for XP and streak updates (only for actual answers, not skips)
+      if (onAnswer) {
+        onAnswer(correct);
+      }
+    }, 500);
   };
 
   const handleSkip = () => {
@@ -182,6 +190,7 @@ export function useQuestionLogic({ questions, onComplete, onAnswer }: UseQuestio
     isLastQuestion,
     isPaused,
     skippedQuestions,
+    isLoading,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,

@@ -12,6 +12,7 @@ import StatsBadges from '@/src/components/StatsBadges';
 import ConfettiManager from '@/src/components/ConfettiManager';
 import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
+import BreadcrumbHeader from '@/src/components/BreadcrumbHeader';
 
 import ActionButton from '@/src/components/ActionButton';
 import type { Question } from '@/src/data/simplified-service';
@@ -125,22 +126,17 @@ export default function LessonPage() {
         subjectColor={subject.color}
       />
 
-      {/* Header */}
-      <div className="px-4 py-4 border-b border-gray-700">
-        <div className="flex items-center justify-between">
-          <div className="flex-1 min-w-0">
-            <div className="text-sm text-gray-400 truncate">
-              {subject?.name}
-            </div>
-            <div className="text-base font-semibold text-white truncate">
-              {lesson?.title}
-            </div>
-          </div>
-          <div className="flex items-center gap-2 flex-shrink-0">
-            <ExitButton onExit={handleExit} />
-          </div>
-        </div>
-      </div>
+      {/* Enhanced Header with Breadcrumb - Level > Subject > Lesson */}
+      <BreadcrumbHeader 
+        level={levelId}
+        subject={subjectId}
+        lesson={{
+          id: lessonId,
+          title: lesson.title
+        }}
+        showBackButton={true}
+        backHref={`/${levelId}/${subjectId}`}
+      />
 
       {/* Stats Badges */}
       <div className="px-4 mt-4">

@@ -1707,7 +1707,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Antiquité, géographie de la France",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -6222,7 +6222,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Moyen Âge, géographie de l'Europe",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -10473,7 +10473,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "XVIIIe-XIXe siècles, mondialisation",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -14718,7 +14718,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "XXe siècle, géopolitique mondiale",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -18970,7 +18970,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Méditerranée antique, France contemporaine",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -23219,7 +23219,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Révolutions, métropolisation",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,
@@ -27470,7 +27470,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Monde contemporain, géopolitique",
-          "color": "from-[#d35400] to-[#e67e22]",
+          "color": "from-[#8B4513] to-[#D2691E]",
           "lessons": [
             {
               "id": 1,

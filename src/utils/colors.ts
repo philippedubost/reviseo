@@ -33,13 +33,13 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     text: '#ffffff'
   },
   'histoire-geo': {
-    gradient: 'from-[#d35400] to-[#e67e22]',
-    primary: '#d35400',
-    secondary: '#e67e22',
-    light: '#ff8c42',
-    dark: '#a04000',
-    border: '#d3540040',
-    bg: '#d3540010',
+    gradient: 'from-[#8B4513] to-[#D2691E]',
+    primary: '#8B4513',
+    secondary: '#D2691E',
+    light: '#CD853F',
+    dark: '#654321',
+    border: '#8B451340',
+    bg: '#8B451310',
     text: '#ffffff'
   },
   svt: {
@@ -74,13 +74,13 @@ export const SUBJECT_COLORS: Record<string, SubjectColors> = {
     text: '#ffffff'
   },
   physique: {
-    gradient: 'from-[#34495e] to-[#2c3e50]',
-    primary: '#34495e',
-    secondary: '#2c3e50',
-    light: '#7f8c8d',
-    dark: '#2c3e50',
-    border: '#34495e40',
-    bg: '#34495e10',
+    gradient: 'from-[#1e3a8a] to-[#3b82f6]',
+    primary: '#1e3a8a',
+    secondary: '#3b82f6',
+    light: '#60a5fa',
+    dark: '#1e40af',
+    border: '#1e3a8a40',
+    bg: '#1e3a8a10',
     text: '#ffffff'
   }
 };

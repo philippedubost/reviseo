@@ -256,6 +256,7 @@ export default function GenericPracticePage({
             subjectId={subject}
             questionText={currentQuestion.question}
             isPracticeMode={true}
+            questionType={currentQuestion.type}
           />
         )}
       </div>

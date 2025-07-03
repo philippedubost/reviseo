@@ -17,6 +17,7 @@ interface ResponseOverlayProps {
   lessonId?: number;
   questionText?: string;
   isPracticeMode?: boolean;
+  questionType?: 'multiple-choice' | 'calculation' | 'input';
 }
 
 export default function ResponseOverlay({
@@ -34,7 +35,8 @@ export default function ResponseOverlay({
   subjectId,
   lessonId,
   questionText,
-  isPracticeMode = false
+  isPracticeMode = false,
+  questionType
 }: ResponseOverlayProps) {
   if (!show) return null;
 
@@ -67,6 +69,7 @@ export default function ResponseOverlay({
               lessonId={lessonId}
               questionText={questionText}
               isPracticeMode={isPracticeMode}
+              questionType={questionType}
               className="!bg-black/20 hover:!bg-black/30"
             />
           </div>

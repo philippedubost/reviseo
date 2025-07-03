@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import type { Subject } from '../data/simplified-service';
 import { useLessonProgress, SubjectType } from '../hooks/useLessonProgress';
+import { getSubjectColors } from '../utils/colors';
 import ProgressCircle from './ProgressCircle';
 
 interface SubjectCardProps {
@@ -16,10 +17,9 @@ export default function SubjectCard({ subject, levelId, index = 0 }: SubjectCard
   const { globalProgress } = useLessonProgress(subject.id as SubjectType, levelId || 'troisieme');
   const lessonCount = subject.lessons.length;
 
-  const colors = subject.color.split(' ');
-  const fromColor = colors[0].replace('from-[', '').replace(']', '');
-  const toColor = colors[1].replace('to-[', '').replace(']', '');
-  const gradient = `linear-gradient(to right, ${fromColor}, ${toColor})`;
+  // Use centralized color system
+  const subjectColors = getSubjectColors(subject.id);
+  const gradient = `linear-gradient(to right, ${subjectColors.primary}, ${subjectColors.secondary})`;
 
   // Construire le lien avec le levelId si fourni
   const linkHref = levelId ? `/${levelId}/${subject.id}` : `/${subject.id}`;
@@ -59,9 +59,20 @@ export default function SubjectCard({ subject, levelId, index = 0 }: SubjectCard
             transition={{ duration: 0.3 }}
           />
           
+          {/* Subject color border */}
+          <motion.div
+            className="absolute inset-0 border-2 border-transparent rounded-2xl"
+            whileHover={{ 
+              borderColor: subjectColors.light,
+              opacity: 0.6
+            }}
+            transition={{ duration: 0.3 }}
+          />
+          
           {/* Floating particles effect */}
           <motion.div
-            className="absolute top-2 right-2 w-2 h-2 bg-white rounded-full opacity-60"
+            className="absolute top-2 right-2 w-2 h-2 rounded-full opacity-60"
+            style={{ backgroundColor: subjectColors.light }}
             animate={{
               y: [0, -10, 0],
               opacity: [0.6, 0.2, 0.6],

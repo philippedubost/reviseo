@@ -10,6 +10,7 @@ import ResponseOverlay from './ResponseOverlay';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import BackToLessonsButton from './BackToLessonsButton';
+import BreadcrumbHeader from './BreadcrumbHeader';
 
 import ActionButton from './ActionButton';
 import AnswerOptions from './AnswerOptions';
@@ -207,15 +208,19 @@ export default function GenericLessonPage({
         isCorrect={lastAnswerCorrect ?? undefined}
       />
 
-      {/* Lesson title with exit button */}
-      <div className="relative text-center pt-2 pb-1 px-4">
+      {/* Enhanced Header with Breadcrumb */}
+      <div className="relative">
+        <BreadcrumbHeader 
+          subject={subject}
+          lesson={{
+            id: lessonId,
+            title: lesson.title
+          }}
+        />
         {/* Exit Button - Top Right */}
-        <div className="absolute right-4 top-2 z-10">
+        <div className="absolute right-4 top-3 z-20">
           <ExitButton onExit={handleExit} />
         </div>
-        
-        <h1 className="text-lg font-bold text-white mb-1">{lesson.title}</h1>
-        <p className="text-[#b0b8c1] text-xs">{lesson.description}</p>
       </div>
 
       {/* Progress Bar */}

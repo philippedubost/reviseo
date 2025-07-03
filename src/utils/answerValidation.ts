@@ -1,7 +1,10 @@
-// Fonction pour normaliser une réponse (gérer virgules, points, fractions)
+// Fonction pour normaliser une réponse (gérer virgules, points, fractions, expressions mathématiques)
 export function normalizeAnswer(answer: string): string {
-  // Nettoyer les espaces
+  // Nettoyer les espaces et normaliser
   let cleanAnswer = answer.trim();
+  
+  // Normaliser les expressions mathématiques avec variables
+  cleanAnswer = normalizeMathExpression(cleanAnswer);
   
   // Remplacer les virgules par des points pour les décimaux
   cleanAnswer = cleanAnswer.replace(',', '.');
@@ -20,6 +23,54 @@ export function normalizeAnswer(answer: string): string {
   }
   
   return cleanAnswer;
+}
+
+// Fonction pour normaliser les expressions mathématiques
+function normalizeMathExpression(expression: string): string {
+  let normalized = expression.trim();
+  
+  // Normaliser π et pi
+  normalized = normalizePi(normalized);
+  
+  // Supprimer les espaces autour des égalités et dans les fonctions
+  normalized = normalized.replace(/\s*=\s*/g, '=');
+  normalized = normalized.replace(/\s*\(\s*/g, '(');
+  normalized = normalized.replace(/\s*\)\s*/g, ')');
+  
+  // Normaliser les espaces multiples
+  normalized = normalized.replace(/\s+/g, ' ');
+  
+  // Gérer les cas comme "x = ln(7)" → "ln(7)"
+  // Si l'expression contient "= " suivi d'une expression, extraire juste l'expression
+  const equalMatch = normalized.match(/^[a-zA-Z]\s*=\s*(.+)$/);
+  if (equalMatch) {
+    normalized = equalMatch[1].trim();
+  }
+  
+  // Supprimer les espaces dans les fonctions mathématiques courantes
+  const mathFunctions = ['ln', 'log', 'sin', 'cos', 'tan', 'exp', 'sqrt', 'abs'];
+  for (const func of mathFunctions) {
+    // Remplacer "ln( 7 )" par "ln(7)"
+    const regex = new RegExp(`${func}\\s*\\(\\s*([^)]+)\\s*\\)`, 'gi');
+    normalized = normalized.replace(regex, (match, content) => {
+      return `${func}(${content.trim()})`;
+    });
+  }
+  
+  return normalized;
+}
+
+// Fonction pour normaliser π et pi
+function normalizePi(expression: string): string {
+  let normalized = expression;
+  
+  // Convertir "pi" en "π" (insensible à la casse)
+  normalized = normalized.replace(/\bpi\b/gi, 'π');
+  
+  // Gérer les cas avec espaces autour de pi
+  normalized = normalized.replace(/\b\s*pi\s*\b/gi, 'π');
+  
+  return normalized;
 }
 
 // Fonction pour normaliser le texte (accents, casse, caractères spéciaux)
@@ -82,13 +133,31 @@ function calculateSimilarity(str1: string, str2: string): number {
 
 // Fonction pour comparer deux réponses en tenant compte des différentes formes
 export function compareAnswers(userAnswer: string, correctAnswer: string): boolean {
-  // Normalisation pour les réponses numériques
+  // Normalisation pour les réponses numériques et mathématiques
   const normalizedUser = normalizeAnswer(userAnswer);
   const normalizedCorrect = normalizeAnswer(correctAnswer);
   
-  // Comparaison directe
+  // Comparaison directe après normalisation
   if (normalizedUser === normalizedCorrect) {
     return true;
+  }
+  
+  // Vérifier toutes les variations acceptées de la réponse correcte
+  const acceptedVariations = getCommonVariations(correctAnswer);
+  for (const variation of acceptedVariations) {
+    const normalizedVariation = normalizeAnswer(variation);
+    if (normalizedUser === normalizedVariation) {
+      return true;
+    }
+  }
+  
+  // Vérifier les variations de la réponse utilisateur contre la réponse correcte
+  const userVariations = getCommonVariations(userAnswer);
+  for (const userVariation of userVariations) {
+    const normalizedUserVariation = normalizeAnswer(userVariation);
+    if (normalizedUserVariation === normalizedCorrect) {
+      return true;
+    }
   }
   
   // Comparaison numérique
@@ -100,7 +169,7 @@ export function compareAnswers(userAnswer: string, correctAnswer: string): boole
     return Math.abs(userNum - correctNum) < 0.01;
   }
   
-  // Si ce n'est pas numérique, utiliser la comparaison textuelle
+  // Si ce n'est pas numérique, utiliser la comparaison textuelle avec tolérance
   return compareTextAnswers(userAnswer, correctAnswer);
 }
 
@@ -180,11 +249,21 @@ function getCommonVariations(answer: string): string[] {
     variations.push(answer.replace(/\s+/g, ''));
   }
   
+  // Variations d'expressions mathématiques
+  variations.push(...getMathExpressionVariations(answer));
+  
   // Variations spécifiques pour les mots avec déterminants
   const normalizedAnswer = normalizeText(answer);
   
-  // Gérer les variations avec/sans déterminants (le, la, les, l', un, une, des)
-  const determinants = ['le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des '];
+  // Déterminants étendus avec plus de variantes
+  const determinants = [
+    'le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des ',
+    'du ', 'de la ', 'de l\' ', 'de ', 'd\'',
+    'ce ', 'cette ', 'ces ', 'cet ',
+    'mon ', 'ma ', 'mes ', 'ton ', 'ta ', 'tes ', 'son ', 'sa ', 'ses ',
+    'notre ', 'votre ', 'leur ', 'leurs ',
+    'quelque ', 'quelques ', 'chaque ', 'tout ', 'toute ', 'tous ', 'toutes '
+  ];
   
   // Si la réponse correcte contient un déterminant, accepter aussi sans déterminant
   for (const det of determinants) {
@@ -205,9 +284,131 @@ function getCommonVariations(answer: string): string[] {
   // Si la réponse correcte ne contient pas de déterminant, accepter aussi avec déterminants
   const hasNoDeterminant = !determinants.some(det => normalizeText(answer).startsWith(normalizeText(det)));
   if (hasNoDeterminant) {
-    for (const det of determinants) {
+    // Ajouter les déterminants les plus courants
+    const commonDeterminants = ['le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des '];
+    for (const det of commonDeterminants) {
       variations.push(det + answer);
       variations.push(det + answer.toLowerCase());
+    }
+  }
+  
+  // Variations avec prépositions courantes
+  const prepositions = ['à ', 'de ', 'en ', 'dans ', 'sur ', 'avec ', 'pour ', 'par '];
+  for (const prep of prepositions) {
+    const normalizedPrep = normalizeText(prep);
+    if (normalizedAnswer.startsWith(normalizedPrep)) {
+      const withoutPreposition = normalizedAnswer.substring(normalizedPrep.length).trim();
+      if (withoutPreposition) {
+        variations.push(withoutPreposition);
+      }
+    }
+  }
+  
+  return [...new Set(variations)]; // Supprimer les doublons
+}
+
+// Fonction pour obtenir les variations d'expressions mathématiques
+function getMathExpressionVariations(answer: string): string[] {
+  const variations: string[] = [];
+  
+  // Variations avec/sans variable
+  const withVariableMatch = answer.match(/^([a-zA-Z])\s*=\s*(.+)$/);
+  if (withVariableMatch) {
+    const variable = withVariableMatch[1];
+    const expression = withVariableMatch[2];
+    
+    // Ajouter la version sans variable
+    variations.push(expression);
+    variations.push(expression.trim());
+    
+    // Ajouter des variations d'espacement
+    variations.push(`${variable}=${expression}`);
+    variations.push(`${variable} = ${expression}`);
+    variations.push(`${variable}  =  ${expression}`);
+  }
+  
+  // Variations d'espacement dans les fonctions mathématiques
+  const mathFunctionRegex = /(ln|log|sin|cos|tan|exp|sqrt|abs)\s*\(\s*([^)]+)\s*\)/gi;
+  let match;
+  while ((match = mathFunctionRegex.exec(answer)) !== null) {
+    const func = match[1];
+    const content = match[2];
+    
+    // Différentes variations d'espacement
+    variations.push(`${func}(${content})`);
+    variations.push(`${func}( ${content} )`);
+    variations.push(`${func}(  ${content}  )`);
+    variations.push(`${func} (${content})`);
+    variations.push(`${func} ( ${content} )`);
+  }
+  
+  // Variations de parenthèses pour les nombres
+  const numberInParensRegex = /\(\s*([0-9.,-]+)\s*\)/g;
+  while ((match = numberInParensRegex.exec(answer)) !== null) {
+    const number = match[1];
+    variations.push(number);
+    variations.push(number.trim());
+  }
+  
+  // Variations de π et pi
+  variations.push(...getPiVariations(answer));
+  
+  return variations;
+}
+
+// Fonction pour obtenir les variations de π et pi
+function getPiVariations(answer: string): string[] {
+  const variations: string[] = [];
+  
+  // Si l'answer contient π, ajouter les variations avec pi
+  if (answer.includes('π')) {
+    // Remplacer π par pi (différentes variations)
+    variations.push(answer.replace(/π/g, 'pi'));
+    variations.push(answer.replace(/π/g, 'PI'));
+    variations.push(answer.replace(/π/g, 'Pi'));
+    
+    // Variations avec espaces
+    variations.push(answer.replace(/π/g, ' pi '));
+    variations.push(answer.replace(/π/g, ' PI '));
+    
+    // Cas spéciaux comme π/2 vs pi/2
+    if (answer.includes('π/')) {
+      variations.push(answer.replace(/π\//g, 'pi/'));
+      variations.push(answer.replace(/π\//g, 'PI/'));
+      variations.push(answer.replace(/π\//g, 'pi /'));
+      variations.push(answer.replace(/π\//g, ' pi/'));
+    }
+    
+    // Cas comme 2π vs 2pi
+    const piWithNumberRegex = /(\d+)π/g;
+    let numberMatch;
+    while ((numberMatch = piWithNumberRegex.exec(answer)) !== null) {
+      const number = numberMatch[1];
+      variations.push(answer.replace(numberMatch[0], `${number}pi`));
+      variations.push(answer.replace(numberMatch[0], `${number}*pi`));
+      variations.push(answer.replace(numberMatch[0], `${number} * pi`));
+      variations.push(answer.replace(numberMatch[0], `${number} pi`));
+    }
+  }
+  
+  // Si l'answer contient pi, ajouter les variations avec π
+  if (/\bpi\b/i.test(answer)) {
+    variations.push(answer.replace(/\bpi\b/gi, 'π'));
+    
+    // Cas comme 2*pi vs 2π
+    const piWithMultRegex = /(\d+)\s*\*\s*pi\b/gi;
+    let multMatch;
+    while ((multMatch = piWithMultRegex.exec(answer)) !== null) {
+      const number = multMatch[1];
+      variations.push(answer.replace(multMatch[0], `${number}π`));
+    }
+    
+    // Cas comme 2 pi vs 2π
+    const piWithSpaceRegex = /(\d+)\s+pi\b/gi;
+    let spaceMatch;
+    while ((spaceMatch = piWithSpaceRegex.exec(answer)) !== null) {
+      const number = spaceMatch[1];
+      variations.push(answer.replace(spaceMatch[0], `${number}π`));
     }
   }
   
@@ -273,6 +474,9 @@ function decimalToFraction(decimal: number, maxDenominator: number = 100): strin
 
 // Fonction pour formater une réponse pour l'affichage
 export function formatAnswerForDisplay(answer: string): string {
+  // D'abord appliquer le formatage mathématique spécial
+  let formatted = formatMathForDisplay(answer);
+  
   const normalized = normalizeAnswer(answer);
   const num = parseFloat(normalized);
   
@@ -280,51 +484,122 @@ export function formatAnswerForDisplay(answer: string): string {
     return decimalToFraction(num);
   }
   
-  return answer;
+  return formatted;
+}
+
+// Fonction pour formater les expressions mathématiques pour l'affichage
+export function formatMathForDisplay(answer: string): string {
+  let formatted = answer;
+  
+  // Convertir pi en π pour l'affichage
+  formatted = formatted.replace(/\bpi\b/gi, 'π');
+  
+  // Ajouter des indices pour π dans certains contextes
+  formatted = formatPiWithSubscripts(formatted);
+  
+  // Autres formatages mathématiques possibles (fractions, exposants, etc.)
+  formatted = formatMathSymbols(formatted);
+  
+  return formatted;
+}
+
+// Fonction pour formater π avec des indices appropriés
+function formatPiWithSubscripts(expression: string): string {
+  let formatted = expression;
+  
+  // Cas spéciaux où π mérite un indice ou une mise en forme spéciale
+  // Par exemple: π/2, π/3, π/4, π/6, 2π, 3π, etc.
+  
+  // Fractions avec π au numérateur
+  formatted = formatted.replace(/π\/(\d+)/g, 'π/$1');
+  
+  // Multiples de π
+  formatted = formatted.replace(/(\d+)π/g, '$1π');
+  
+  // π dans les fonctions trigonométriques - peut être mis en évidence
+  formatted = formatted.replace(/(sin|cos|tan)\(([^)]*π[^)]*)\)/gi, '$1($2)');
+  
+  return formatted;
+}
+
+// Fonction pour formater d'autres symboles mathématiques
+function formatMathSymbols(expression: string): string {
+  let formatted = expression;
+  
+  // Ici on peut ajouter d'autres formatages comme :
+  // - Conversion des fractions en notation avec barre de fraction
+  // - Conversion des exposants (x^2 → x²)
+  // - Conversion des indices (H_2O → H₂O)
+  // - Autres symboles mathématiques
+  
+  // Exemple: convertir les exposants simples
+  formatted = formatted.replace(/\^2/g, '²');
+  formatted = formatted.replace(/\^3/g, '³');
+  formatted = formatted.replace(/\^(-?\d+)/g, (match, exp) => {
+    const superscripts = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+    const minus = '⁻';
+    
+    if (exp.startsWith('-')) {
+      const num = exp.substring(1);
+      return minus + num.split('').map((digit: string) => superscripts[parseInt(digit)]).join('');
+    } else {
+      return exp.split('').map((digit: string) => superscripts[parseInt(digit)]).join('');
+    }
+  });
+  
+  return formatted;
 }
 
 // Fonction pour obtenir toutes les formes acceptables d'une réponse
 export function getAcceptedForms(answer: string): string[] {
-  const normalized = normalizeAnswer(answer);
-  const num = parseFloat(normalized);
-  
-  if (isNaN(num)) {
-    return [answer];
-  }
-  
   const forms = new Set<string>();
   
   // Forme originale
   forms.add(answer);
   
+  // Ajouter toutes les variations communes (y compris pi/π)
+  const variations = getCommonVariations(answer);
+  variations.forEach(variation => forms.add(variation));
+  
   // Forme normalisée
+  const normalized = normalizeAnswer(answer);
   forms.add(normalized);
   
-  // Forme avec point décimal
-  if (normalized.includes('.')) {
-    forms.add(normalized.replace('.', ','));
+  // Si c'est numérique, ajouter les formes numériques
+  const num = parseFloat(normalized);
+  if (!isNaN(num)) {
+    // Forme avec point décimal
+    if (normalized.includes('.')) {
+      forms.add(normalized.replace('.', ','));
+    }
+    
+    // Forme avec virgule
+    if (normalized.includes(',')) {
+      forms.add(normalized.replace(',', '.'));
+    }
+    
+    // Forme fractionnaire
+    const fractionForm = decimalToFraction(num);
+    if (fractionForm !== normalized) {
+      forms.add(fractionForm);
+    }
+    
+    // Forme entière si applicable
+    if (Number.isInteger(num)) {
+      forms.add(num.toString());
+    }
+    
+    // Forme avec zéros inutiles supprimés
+    const cleanDecimal = num.toFixed(2).replace(/\.?0+$/, '');
+    if (cleanDecimal !== normalized) {
+      forms.add(cleanDecimal);
+    }
   }
   
-  // Forme avec virgule
-  if (normalized.includes(',')) {
-    forms.add(normalized.replace(',', '.'));
-  }
-  
-  // Forme fractionnaire
-  const fractionForm = decimalToFraction(num);
-  if (fractionForm !== normalized) {
-    forms.add(fractionForm);
-  }
-  
-  // Forme entière si applicable
-  if (Number.isInteger(num)) {
-    forms.add(num.toString());
-  }
-  
-  // Forme avec zéros inutiles supprimés
-  const cleanDecimal = num.toFixed(2).replace(/\.?0+$/, '');
-  if (cleanDecimal !== normalized) {
-    forms.add(cleanDecimal);
+  // Ajouter les formes formatées pour l'affichage
+  const displayFormatted = formatMathForDisplay(answer);
+  if (displayFormatted !== answer) {
+    forms.add(displayFormatted);
   }
   
   return Array.from(forms);

@@ -221,32 +221,7 @@ export default function QuestionDisplay({
                 }}
                 transition={{ duration: 0.2 }}
               />
-              {!showResult && onSubmit && (
-                <motion.button
-                  className="btn bg-[#2ecc71] text-[#181c24] text-lg font-bold px-6 mt-2 relative overflow-hidden"
-                  onClick={onSubmit}
-                  disabled={!selectedAnswer.trim()}
-                  whileHover={{ 
-                    scale: 1.05,
-                    transition: { duration: 0.2 }
-                  }}
-                  whileTap={{ 
-                    scale: 0.95,
-                    transition: { duration: 0.1 }
-                  }}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.6 }}
-                >
-                  {/* Ripple effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-white opacity-0"
-                    whileHover={{ opacity: 0.1 }}
-                    transition={{ duration: 0.2 }}
-                  />
-                  <span className="relative z-10">Valider</span>
-                </motion.button>
-              )}
+
             </motion.div>
           </>
         ) : (

@@ -12,7 +12,7 @@ import StatsBadges from '@/src/components/StatsBadges';
 import ConfettiManager from '@/src/components/ConfettiManager';
 import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
-import FlagButton from '@/src/components/FlagButton';
+
 import ActionButton from '@/src/components/ActionButton';
 import BackToLessonsButton from '@/src/components/BackToLessonsButton';
 import type { Question } from '@/src/data/simplified-service';
@@ -124,14 +124,6 @@ export default function PracticePage() {
             subject={subjectId}
           />
           <div className="flex items-center gap-2">
-            {currentQuestion && (
-              <FlagButton
-                questionId={currentQuestion.id}
-                subjectId={subjectId}
-                questionText={currentQuestion.question}
-                isPracticeMode={true}
-              />
-            )}
             <ExitButton onExit={handleExit} />
           </div>
         </div>
@@ -162,9 +154,6 @@ export default function PracticePage() {
             showResult={showResult}
             onAnswerChange={setSelectedAnswer}
             onAnswerSelect={handleAnswerSelect}
-            questionId={currentQuestion.id}
-            subjectId={subjectId}
-            isPracticeMode={true}
           />
         )}
       </div>
@@ -181,6 +170,10 @@ export default function PracticePage() {
         isPaused={isPaused}
         onTogglePause={togglePause}
         onNext={handleNext}
+        questionId={currentQuestion?.id}
+        subjectId={subjectId}
+        questionText={currentQuestion?.question}
+        isPracticeMode={true}
       />
 
       {/* Action Button */}

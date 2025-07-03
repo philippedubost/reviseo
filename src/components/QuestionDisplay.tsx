@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
-import FlagButton from './FlagButton';
 import AnswerOptions from './AnswerOptions';
 
 interface QuestionDisplayProps {
@@ -20,11 +19,6 @@ interface QuestionDisplayProps {
   // Multiple choice props
   options?: string[];
   correctAnswer?: string;
-  // Flagging props
-  questionId?: number;
-  subjectId?: string;
-  lessonId?: number;
-  isPracticeMode?: boolean;
   // Difficulty prop
   difficulty?: number;
 }
@@ -102,10 +96,6 @@ export default function QuestionDisplay({
   onSubmit,
   options = [],
   correctAnswer = '',
-  questionId,
-  subjectId,
-  lessonId,
-  isPracticeMode = false,
   difficulty = 1
 }: QuestionDisplayProps) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -165,35 +155,13 @@ export default function QuestionDisplay({
         {(type === 'calculation' || type === 'input') ? (
           <>
             <motion.div 
-              className="flex items-center justify-center gap-2 mb-3"
+              className="text-lg font-bold mb-3"
+              style={{ color: 'var(--mascot-color)' }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <motion.div 
-                className="text-lg font-bold"
-                style={{ color: 'var(--mascot-color)' }}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {question}
-              </motion.div>
-              {questionId && subjectId && (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                >
-                  <FlagButton
-                    questionId={questionId}
-                    subjectId={subjectId}
-                    lessonId={lessonId}
-                    questionText={question}
-                    isPracticeMode={isPracticeMode}
-                  />
-                </motion.div>
-              )}
+              {question}
             </motion.div>
             {latex && (
               <motion.div 
@@ -284,35 +252,13 @@ export default function QuestionDisplay({
         ) : (
           <>
             <motion.div 
-              className="flex items-center justify-center gap-2 mb-3"
+              className="text-lg font-bold mb-3"
+              style={{ color: 'var(--mascot-color)' }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <motion.div 
-                className="text-lg font-bold"
-                style={{ color: 'var(--mascot-color)' }}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {question}
-              </motion.div>
-              {questionId && subjectId && (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                >
-                  <FlagButton
-                    questionId={questionId}
-                    subjectId={subjectId}
-                    lessonId={lessonId}
-                    questionText={question}
-                    isPracticeMode={isPracticeMode}
-                  />
-                </motion.div>
-              )}
+              {question}
             </motion.div>
             {latex && (
               <motion.div 

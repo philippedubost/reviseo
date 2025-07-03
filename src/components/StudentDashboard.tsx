@@ -4,8 +4,28 @@ import { useState, useEffect } from 'react';
 import { useLessonProgress } from '../hooks/useLessonProgress';
 import { dataService } from '../data/simplified-service';
 
+// Function to generate random animal + adjective combinations
+const generateRandomNickname = () => {
+  const animals = [
+    'Hibou', 'Renard', 'Chat', 'Loup', 'Ours', 'Lapin', 'Écureuil', 
+    'Panda', 'Koala', 'Tigre', 'Lion', 'Éléphant', 'Dauphin', 'Pingouin',
+    'Aigle', 'Chouette', 'Castor', 'Raton laveur', 'Loutre'
+  ];
+  
+  const adjectives = [
+    'sérieux', 'curieux', 'malin', 'astucieux', 'studieux', 'brillant',
+    'génial', 'futé', 'sage', 'vif', 'doué', 'créatif', 'motivé',
+    'persévérant', 'intrépide', 'audacieux', 'réfléchi', 'ingénieux'
+  ];
+  
+  const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+  const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  
+  return `${randomAnimal} ${randomAdjective}`;
+};
+
 export default function StudentDashboard() {
-  const [studentName, setStudentName] = useState('Philou');
+  const [studentName, setStudentName] = useState(() => generateRandomNickname());
   const [isEditing, setIsEditing] = useState(false);
   const [tempName, setTempName] = useState('');
   const [isFirstVisit, setIsFirstVisit] = useState(true);
@@ -50,7 +70,7 @@ export default function StudentDashboard() {
   };
 
   const handleSave = () => {
-    const finalName = tempName.trim() || 'Philou';
+    const finalName = tempName.trim() || generateRandomNickname();
     setStudentName(finalName);
     saveStudentName(finalName);
     setIsEditing(false);

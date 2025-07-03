@@ -2,6 +2,7 @@
 import { dataService } from "@/src/data/simplified-service";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import StudentDashboard from "@/src/components/StudentDashboard";
 
 export default function Home() {
   const router = useRouter();
@@ -108,8 +109,11 @@ export default function Home() {
         </h1>
       </div>
 
+      {/* Student Dashboard */}
+      <StudentDashboard />
+
       {/* Main Content */}
-      <div className="flex-1 px-2 pb-16">
+      <div className="flex-1 px-2 pb-16 pt-2">
         <div className="w-full flex flex-col gap-1">
           {/* Available levels in order */}
           {levelOrder

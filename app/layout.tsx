@@ -26,11 +26,11 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   
-  // Hide header for maths lesson and practice pages, and subject pages
+  // Hide header for pages that use BreadcrumbHeader instead
   const shouldHideHeader = pathname?.includes('/lesson/') || 
-                        pathname === '/maths/practice' ||
-                        pathname?.match(/^\/[^\/]+$/) || // Hide for level pages like /maths, /francais, etc.
-                        pathname?.match(/^\/[^\/]+\/[^\/]+$/); // Hide for subject pages like /maths/francais, /maths/mathematiques, etc.
+                        pathname?.includes('/practice') ||
+                        pathname?.match(/^\/[^\/]+$/) || // Hide for level pages like /sixieme, /cinquieme, etc.
+                        pathname?.match(/^\/[^\/]+\/[^\/]+$/); // Hide for subject pages like /sixieme/maths, etc.
   
   return (
     <html lang="fr" data-theme="dark" className="dark">

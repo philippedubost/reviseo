@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react';
 import { getSubjectById, getAllLessonsForSubject } from '@/src/data/simplified-service';
 import type { Lesson } from '@/src/data/simplified-service';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
-import SubjectCard from './SubjectCard';
+import { getSubjectColors, getDifficultyBgColor } from '@/src/utils/colors';
+import BreadcrumbHeader from './BreadcrumbHeader';
 import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import QuestionSelector from './QuestionSelector';
@@ -53,23 +54,16 @@ export default function GenericSubjectPage({
 
   // Calculate subject progress percentage
   const subjectProgressPercentage = calculateSubjectProgress();
+  
+  // Get consistent colors
+  const subjectColors = getSubjectColors(subject);
 
   return (
     <div className="min-h-screen bg-[#181c24] flex flex-col">
-      {/* Header */}
-      <div className="relative text-center pt-4 pb-2 px-4">
-        {/* Back Arrow */}
-        <Link href="/" className="absolute left-4 top-4 text-white hover:text-[#00baff] transition-colors duration-200">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </Link>
-        
-        <h1 className="text-xl font-bold text-white mb-1">{subjectName}</h1>
-        {subjectData && (
-          <p className="text-[#b0b8c1] text-sm">{subjectData.description}</p>
-        )}
-      </div>
+      {/* Enhanced Header with Breadcrumb */}
+      <BreadcrumbHeader 
+        subject={subject}
+      />
 
       {/* Progress Bar */}
       <ProgressBar 
@@ -139,18 +133,17 @@ export default function GenericSubjectPage({
 
                   {/* Difficulty Badge */}
                   <div className="absolute top-2 right-2">
-                    <span className={`text-xs px-2 py-1 rounded-full ${
-                      lesson.difficulty === 'easy' ? 'bg-[#2ecc71] text-[#181c24]' :
-                      lesson.difficulty === 'medium' ? 'bg-[#f39c12] text-[#181c24]' :
-                      'bg-[#e74c3c] text-white'
-                    }`}>
+                    <span className={`text-xs px-2 py-1 rounded-full ${getDifficultyBgColor(lesson.difficulty)}`}>
                       {lesson.difficulty === 'easy' ? 'Facile' :
                        lesson.difficulty === 'medium' ? 'Moyen' : 'Difficile'}
                     </span>
                   </div>
 
                   {/* Hover Effect */}
-                  <div className={`absolute inset-0 bg-gradient-to-r ${subjectColor} opacity-0 hover:opacity-10 transition-opacity duration-200 pointer-events-none`}></div>
+                  <div 
+                    className="absolute inset-0 opacity-0 hover:opacity-10 transition-opacity duration-200 pointer-events-none rounded-lg"
+                    style={{ background: `linear-gradient(to right, ${subjectColors.primary}, ${subjectColors.secondary})` }}
+                  ></div>
                 </div>
               </Link>
             );

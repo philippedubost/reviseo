@@ -95,9 +95,11 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#181c24]">
-      {/* Header */}
-      <div className="px-4 py-4 border-b border-gray-700">
-        {/* Title */}
+      {/* Student Dashboard */}
+      <StudentDashboard />
+
+      {/* Level Selection Header */}
+      <div className="px-4 py-4">
         <h1 
           className={`text-xl font-bold text-white text-center transition-all duration-700 ease-out ${
             visibleElements.title 
@@ -109,11 +111,8 @@ export default function Home() {
         </h1>
       </div>
 
-      {/* Student Dashboard */}
-      <StudentDashboard />
-
       {/* Main Content */}
-      <div className="flex-1 px-2 pb-16 pt-2">
+      <div className="flex-1 px-2 pb-16">
         <div className="w-full flex flex-col gap-1">
           {/* Available levels in order */}
           {levelOrder

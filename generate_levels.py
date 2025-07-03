@@ -87,7 +87,7 @@ def generate_complete_structure():
             "subjects": {
                 "maths": {"name": "Mathématiques", "icon": "🔢", "description": "Nombres décimaux, géométrie, proportionnalité", "color": "from-[#00baff] to-[#2ecc71]"},
                 "francais": {"name": "Français", "icon": "📝", "description": "Grammaire, orthographe, littérature", "color": "from-[#e74c3c] to-[#f39c12]"},
-                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Antiquité, géographie de la France", "color": "from-[#d35400] to-[#e67e22]"},
+                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Antiquité, géographie de la France", "color": "from-[#8B4513] to-[#D2691E]"},
                 "svt": {"name": "Sciences et Vie de la Terre", "icon": "🌱", "description": "Environnement, êtres vivants", "color": "from-[#27ae60] to-[#2ecc71]"},
                 "anglais": {"name": "Anglais", "icon": "🇬🇧", "description": "Bases de la langue anglaise", "color": "from-[#2980b9] to-[#3498db]"}
             }
@@ -97,7 +97,7 @@ def generate_complete_structure():
             "subjects": {
                 "maths": {"name": "Mathématiques", "icon": "🔢", "description": "Nombres relatifs, calcul littéral", "color": "from-[#00baff] to-[#2ecc71]"},
                 "francais": {"name": "Français", "icon": "📝", "description": "Classes grammaticales, littérature médiévale", "color": "from-[#e74c3c] to-[#f39c12]"},
-                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Moyen Âge, géographie de l'Europe", "color": "from-[#d35400] to-[#e67e22]"},
+                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Moyen Âge, géographie de l'Europe", "color": "from-[#8B4513] to-[#D2691E]"},
                 "svt": {"name": "Sciences et Vie de la Terre", "icon": "🌱", "description": "Respiration, géologie", "color": "from-[#27ae60] to-[#2ecc71]"},
                 "anglais": {"name": "Anglais", "icon": "🇬🇧", "description": "Temps verbaux, vie quotidienne", "color": "from-[#2980b9] to-[#3498db]"}
             }
@@ -107,7 +107,7 @@ def generate_complete_structure():
             "subjects": {
                 "maths": {"name": "Mathématiques", "icon": "🔢", "description": "Pythagore, calcul littéral avancé", "color": "from-[#00baff] to-[#2ecc71]"},
                 "francais": {"name": "Français", "icon": "📝", "description": "Nouvelle fantastique, théâtre", "color": "from-[#e74c3c] to-[#f39c12]"},
-                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "XVIIIe-XIXe siècles, mondialisation", "color": "from-[#d35400] to-[#e67e22]"},
+                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "XVIIIe-XIXe siècles, mondialisation", "color": "from-[#8B4513] to-[#D2691E]"},
                 "svt": {"name": "Sciences et Vie de la Terre", "icon": "🌱", "description": "Nutrition, reproduction", "color": "from-[#27ae60] to-[#2ecc71]"},
                 "anglais": {"name": "Anglais", "icon": "🇬🇧", "description": "Temps complexes, voix passive", "color": "from-[#2980b9] to-[#3498db]"}
             }
@@ -117,7 +117,7 @@ def generate_complete_structure():
             "subjects": {
                 "maths": {"name": "Mathématiques", "icon": "🔢", "description": "Fonctions, géométrie dans l'espace", "color": "from-[#00baff] to-[#2ecc71]"},
                 "francais": {"name": "Français", "icon": "📝", "description": "Poésie, roman, théâtre", "color": "from-[#e74c3c] to-[#f39c12]"},
-                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Méditerranée antique, France contemporaine", "color": "from-[#d35400] to-[#e67e22]"},
+                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Méditerranée antique, France contemporaine", "color": "from-[#8B4513] to-[#D2691E]"},
                 "svt": {"name": "Sciences et Vie de la Terre", "icon": "🌱", "description": "Cellules, géosciences", "color": "from-[#27ae60] to-[#2ecc71]"},
                 "anglais": {"name": "Anglais", "icon": "🇬🇧", "description": "Littérature, société contemporaine", "color": "from-[#2980b9] to-[#3498db]"}
             }
@@ -127,7 +127,7 @@ def generate_complete_structure():
             "subjects": {
                 "maths": {"name": "Mathématiques", "icon": "🔢", "description": "Dérivées, suites, probabilités", "color": "from-[#00baff] to-[#2ecc71]"},
                 "francais": {"name": "Français", "icon": "📝", "description": "Bac français, commentaire, dissertation", "color": "from-[#e74c3c] to-[#f39c12]"},
-                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Révolutions, métropolisation", "color": "from-[#d35400] to-[#e67e22]"},
+                "histoire-geo": {"name": "Histoire-Géographie", "icon": "🌍", "description": "Révolutions, métropolisation", "color": "from-[#8B4513] to-[#D2691E]"},
                 "svt": {"name": "Sciences et Vie de la Terre", "icon": "🌱", "description": "Génétique, dynamique terrestre", "color": "from-[#27ae60] to-[#2ecc71]"},
                 "anglais": {"name": "Anglais", "icon": "🇬🇧", "description": "Thèmes culturels avancés", "color": "from-[#2980b9] to-[#3498db]"}
             }

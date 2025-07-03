@@ -299,6 +299,7 @@ export default function GenericLessonPage({
             lessonId={lessonId}
             questionText={currentQuestion.question}
             isPracticeMode={false}
+            questionType={currentQuestion.type}
           />
         )}
       </div>

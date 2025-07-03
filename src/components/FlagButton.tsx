@@ -11,6 +11,7 @@ interface FlagButtonProps {
   questionText: string;
   isPracticeMode?: boolean;
   className?: string;
+  questionType?: 'multiple-choice' | 'calculation' | 'input';
 }
 
 export default function FlagButton({ 
@@ -19,7 +20,8 @@ export default function FlagButton({
   lessonId, 
   questionText,
   isPracticeMode = false,
-  className = ''
+  className = '',
+  questionType
 }: FlagButtonProps) {
   const [showPopup, setShowPopup] = useState(false);
   const [reason, setReason] = useState('');
@@ -49,6 +51,28 @@ export default function FlagButton({
   const handleCancel = () => {
     setShowPopup(false);
     setReason('');
+  };
+
+  // Suggestions rapides basées sur le type de question
+  const getQuickSuggestions = () => {
+    const commonSuggestions = [
+      'Erreur dans la question',
+      'Réponse incorrecte',
+      'Question trop difficile',
+      'Question trop facile',
+      'Formulation peu claire'
+    ];
+
+    // Ajouter "proposer en choix multiple" pour les questions de saisie manuelle
+    if (questionType === 'input' || questionType === 'calculation') {
+      return ['Proposer en choix multiple', ...commonSuggestions];
+    }
+
+    return commonSuggestions;
+  };
+
+  const handleQuickSuggestion = (suggestion: string) => {
+    setReason(suggestion);
   };
 
   return (
@@ -100,7 +124,7 @@ export default function FlagButton({
             transition={{ duration: 0.3 }}
           >
             <motion.div 
-              className="bg-[#232a36] p-6 rounded-lg max-w-md w-full mx-4"
+              className="bg-[#232a36] p-6 rounded-lg max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"
               initial={{ scale: 0.8, opacity: 0, y: 50 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0, y: 50 }}
@@ -126,12 +150,42 @@ export default function FlagButton({
                   {questionText}
                 </p>
               </motion.div>
-              
+
+              {/* Quick suggestions */}
               <motion.div 
                 className="mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
+              >
+                <p className="text-gray-300 text-sm mb-2">Suggestions rapides :</p>
+                <div className="flex flex-wrap gap-2">
+                  {getQuickSuggestions().map((suggestion, index) => (
+                    <motion.button
+                      key={suggestion}
+                      onClick={() => handleQuickSuggestion(suggestion)}
+                      className={`px-3 py-1 text-sm rounded transition-colors ${
+                        suggestion === 'Proposer en choix multiple' 
+                          ? 'bg-blue-600 hover:bg-blue-700 text-white border-2 border-blue-400' 
+                          : 'bg-[#181c24] hover:bg-[#2a3441] text-gray-300 border border-[#374151]'
+                      } ${reason === suggestion ? 'ring-2 ring-blue-500' : ''}`}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.2, delay: 0.1 * index }}
+                    >
+                      {suggestion}
+                    </motion.button>
+                  ))}
+                </div>
+              </motion.div>
+              
+              <motion.div 
+                className="mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
               >
                 <label className="block text-gray-300 text-sm mb-2">
                   Raison du signalement :
@@ -139,7 +193,7 @@ export default function FlagButton({
                 <motion.textarea
                   value={reason}
                   onChange={(e) => setReason(e.target.value)}
-                  placeholder="Expliquez pourquoi cette question pose problème..."
+                  placeholder="Expliquez pourquoi cette question pose problème ou sélectionnez une suggestion ci-dessus..."
                   className="w-full p-3 bg-[#181c24] text-white rounded border border-[#232a36] resize-none"
                   rows={4}
                   autoFocus
@@ -155,7 +209,7 @@ export default function FlagButton({
                 className="flex gap-2 justify-end"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.4 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
               >
                 <motion.button
                   onClick={handleCancel}

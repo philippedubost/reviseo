@@ -194,6 +194,7 @@ export default function LessonPage() {
         lessonId={lessonId}
         questionText={currentQuestion?.question}
         isPracticeMode={false}
+        questionType={currentQuestion?.type}
       />
 
       {/* Action Button */}

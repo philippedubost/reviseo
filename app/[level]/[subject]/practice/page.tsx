@@ -174,6 +174,7 @@ export default function PracticePage() {
         subjectId={subjectId}
         questionText={currentQuestion?.question}
         isPracticeMode={true}
+        questionType={currentQuestion?.type}
       />
 
       {/* Action Button */}

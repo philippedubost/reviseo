@@ -180,6 +180,37 @@ function getCommonVariations(answer: string): string[] {
     variations.push(answer.replace(/\s+/g, ''));
   }
   
+  // Variations spécifiques pour les mots avec déterminants
+  const normalizedAnswer = normalizeText(answer);
+  
+  // Gérer les variations avec/sans déterminants (le, la, les, l', un, une, des)
+  const determinants = ['le ', 'la ', 'les ', "l'", 'un ', 'une ', 'des '];
+  
+  // Si la réponse correcte contient un déterminant, accepter aussi sans déterminant
+  for (const det of determinants) {
+    const normalizedDet = normalizeText(det);
+    if (normalizedAnswer.startsWith(normalizedDet)) {
+      const withoutDeterminant = normalizedAnswer.substring(normalizedDet.length).trim();
+      if (withoutDeterminant) {
+        variations.push(withoutDeterminant);
+        // Ajouter aussi la version originale sans déterminant
+        const originalWithoutDet = answer.substring(det.length).trim();
+        if (originalWithoutDet) {
+          variations.push(originalWithoutDet);
+        }
+      }
+    }
+  }
+  
+  // Si la réponse correcte ne contient pas de déterminant, accepter aussi avec déterminants
+  const hasNoDeterminant = !determinants.some(det => normalizeText(answer).startsWith(normalizeText(det)));
+  if (hasNoDeterminant) {
+    for (const det of determinants) {
+      variations.push(det + answer);
+      variations.push(det + answer.toLowerCase());
+    }
+  }
+  
   return variations;
 }
 

@@ -131,6 +131,7 @@ export default function GenericLessonPage({
     isLastQuestion,
     isPaused,
     skippedQuestions,
+    isLoading,
     setSelectedAnswer,
     handleAnswerSelect,
     handleSubmit,
@@ -275,6 +276,7 @@ export default function GenericLessonPage({
               countdown={countdown}
               isLastQuestion={isLastQuestion}
               isPaused={isPaused}
+              isLoading={isLoading}
               onVerify={handleSubmit}
               onNext={handleNext}
               onSkip={handleSkipFromHook}

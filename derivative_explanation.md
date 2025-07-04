@@ -12,6 +12,26 @@ Pour une fonction \(f(x)\) et un point \(a\), la dérivée en \(a\) est notée \
 
 Cette limite, si elle existe, donne la **pente de la tangente** à la courbe au point \((a, f(a))\).
 
+## Bonnes pratiques LaTeX
+
+**Important**: Dans les expressions mathématiques, les mots doivent être formatés comme du texte:
+
+### Exemples de formatage correct:
+- ✅ Fonctions: \(\sin(x)\), \(\cos(x)\), \(\ln(x)\), \(\exp(x)\)
+- ✅ Limites: \(\lim_{h \to 0}\), \(\lim_{x \to \infty}\)
+- ✅ Conditions: \(\text{si } x > 0\), \(\text{pour tout } x \in \mathbb{R}\)
+- ✅ Unités: \(5\,\text{m/s}\), \(10\,\text{kg}\)
+
+### Exemples incorrects:
+- ❌ \(lim_{h \to 0}\) (traite "lim" comme le produit l×i×m)
+- ❌ \(sin(x)\) (traite "sin" comme s×i×n)
+- ❌ \(si x > 0\) (traite "si" comme s×i)
+
+### Commandes utiles:
+- `\text{}` pour du texte normal
+- `\mathrm{}` pour du texte en romain
+- `\sin, \cos, \ln, \exp, \lim` pour les fonctions standard
+
 ## Interprétation géométrique
 
 - **Géométriquement**: La dérivée \(f'(a)\) est la pente de la droite tangente à la courbe \(y = f(x)\) au point \((a, f(a))\)

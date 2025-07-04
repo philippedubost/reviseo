@@ -6,6 +6,7 @@ import 'katex/dist/katex.min.css';
 // @ts-ignore
 import { BlockMath } from 'react-katex';
 import AnswerOptions from './AnswerOptions';
+import { renderMathText } from '../utils/mathRenderer';
 
 interface QuestionDisplayProps {
   question: string;
@@ -207,7 +208,7 @@ export default function QuestionDisplay({
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {question}
+              {renderMathText(question)}
             </motion.div>
             {latex && (
               <motion.div 
@@ -389,7 +390,7 @@ export default function QuestionDisplay({
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {question}
+              {renderMathText(question)}
             </motion.div>
             {latex && (
               <motion.div 

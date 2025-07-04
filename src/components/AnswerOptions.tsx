@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { renderMathText } from '../utils/mathRenderer';
 
 interface AnswerOptionsProps {
   options: string[];
@@ -146,7 +147,7 @@ export default function AnswerOptions({
                 </motion.div>
               )}
               
-              <span className="relative z-10">{option}</span>
+              <span className="relative z-10">{renderMathText(option)}</span>
             </motion.button>
           );
         })}

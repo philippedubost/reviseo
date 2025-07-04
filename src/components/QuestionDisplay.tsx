@@ -2,11 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import 'katex/dist/katex.min.css';
-// @ts-ignore
-import { BlockMath } from 'react-katex';
 import AnswerOptions from './AnswerOptions';
-import { renderMathText } from '../utils/mathRenderer';
 
 interface QuestionDisplayProps {
   question: string;
@@ -32,6 +28,61 @@ interface QuestionDisplayProps {
   onVerify?: () => void;
   onNext?: () => void;
   onSkip?: () => void;
+}
+
+// Simple math renderer for basic mathematical expressions
+function renderMathText(text: string) {
+  // Simple math symbol replacements
+  const mathText = text
+    .replace(/\^2/g, '²')
+    .replace(/\^3/g, '³')
+    .replace(/\^4/g, '⁴')
+    .replace(/\^5/g, '⁵')
+    .replace(/\^6/g, '⁶')
+    .replace(/\^7/g, '⁷')
+    .replace(/\^8/g, '⁸')
+    .replace(/\^9/g, '⁹')
+    .replace(/\*\s*pi\b/gi, 'π')
+    .replace(/\bpi\b/gi, 'π')
+    .replace(/\+\-/g, '±')
+    .replace(/sqrt/gi, '√')
+    .replace(/infinity/gi, '∞')
+    .replace(/>=?/g, '≥')
+    .replace(/<=?/g, '≤')
+    .replace(/!=/g, '≠')
+    .replace(/\*\*/g, '×')
+    .replace(/\*/g, '×');
+  
+  return <span className="font-normal">{mathText}</span>;
+}
+
+// Simple math formula renderer
+function renderMathFormula(formula: string) {
+  const processedFormula = formula
+    .replace(/\^2/g, '²')
+    .replace(/\^3/g, '³')
+    .replace(/\^4/g, '⁴')
+    .replace(/\^5/g, '⁵')
+    .replace(/\^6/g, '⁶')
+    .replace(/\^7/g, '⁷')
+    .replace(/\^8/g, '⁸')
+    .replace(/\^9/g, '⁹')
+    .replace(/\*\s*pi\b/gi, 'π')
+    .replace(/\bpi\b/gi, 'π')
+    .replace(/\+\-/g, '±')
+    .replace(/sqrt/gi, '√')
+    .replace(/infinity/gi, '∞')
+    .replace(/>=?/g, '≥')
+    .replace(/<=?/g, '≤')
+    .replace(/!=/g, '≠')
+    .replace(/\*\*/g, '×')
+    .replace(/\*/g, '×');
+  
+  return (
+    <div className="bg-gray-50 p-3 rounded-lg border text-center text-xl font-mono">
+      {processedFormula}
+    </div>
+  );
 }
 
 // Composant pour afficher le label de difficulté
@@ -186,7 +237,6 @@ export default function QuestionDisplay({
   };
 
   const keyboardType = getKeyboardType();
-  const shouldShowNumericPattern = keyboardType === 'decimal';
 
   return (
     <motion.div 
@@ -220,7 +270,7 @@ export default function QuestionDisplay({
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                  <BlockMath math={latex} />
+                  {renderMathFormula(latex)}
                 </motion.div>
                 <motion.span 
                   className="text-2xl font-bold"
@@ -407,7 +457,7 @@ export default function QuestionDisplay({
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                  <BlockMath math={latex} />
+                  {renderMathFormula(latex)}
                 </motion.div>
               </motion.div>
             )}

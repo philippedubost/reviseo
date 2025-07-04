@@ -83,7 +83,7 @@ export default function Header({ showBackButton = false }: HeaderProps) {
                   transition={{ duration: 0.3 }}
                   className="inline-block"
                 >
-                  �
+                  ⚙️
                 </motion.span>
               </Link>
             </motion.div>

@@ -130,8 +130,8 @@ export default function ProfilePage() {
     }
   };
 
-  // Reset history
-  const resetHistory = () => {
+  // Delete profile completely
+  const deleteProfile = () => {
     if (typeof window !== 'undefined') {
       // Clear all progress data
       const levels = ['sixieme', 'cinquieme', 'quatrieme', 'troisieme', 'seconde', 'premiere', 'terminale'];
@@ -146,13 +146,12 @@ export default function ProfilePage() {
       // Clear flags
       localStorage.removeItem('flaggedQuestions');
       
-      // Keep student name but mark as new visitor
+      // Clear student name and mark as new visitor
+      localStorage.removeItem('studentName');
       localStorage.removeItem('hasVisitedBefore');
       
-      setFlaggedQuestions([]);
-      setShowResetConfirmation(false);
-      
-      alert('Historique réinitialisé avec succès !');
+      // Redirect to home page
+      window.location.href = '/';
     }
   };
 
@@ -199,13 +198,13 @@ export default function ProfilePage() {
               </div>
             ) : (
               <div className="flex items-center justify-between">
-                <span className="text-white text-lg">{studentName}</span>
-                <button
+                <span 
+                  className="text-white text-lg cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-2"
                   onClick={handleEditName}
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
+                  title="Cliquer pour modifier"
                 >
-                  ✏️ Modifier
-                </button>
+                  {studentName} ✏️
+                </span>
               </div>
             )}
           </div>
@@ -248,7 +247,7 @@ export default function ProfilePage() {
                         onClick={() => handleUnflag(flag)}
                         className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition-colors"
                       >
-                        ✕ Retirer
+                        🗑️ ✕
                       </button>
                     </div>
                   </div>
@@ -257,33 +256,33 @@ export default function ProfilePage() {
             )}
           </div>
 
-          {/* Reset History Section */}
+          {/* Delete Profile Section */}
           <div className="bg-[#232a36] rounded-xl p-6">
-            <h2 className="text-xl font-semibold text-white mb-4">🗑️ Réinitialiser l'historique</h2>
+            <h2 className="text-xl font-semibold text-white mb-4">🗑️ Supprimer le profil</h2>
             <p className="text-gray-400 mb-4">
-              Cette action supprimera définitivement tous vos progrès, flags et statistiques. 
-              Votre nom d'utilisateur sera conservé.
+              Cette action supprimera définitivement tous vos progrès, flags, statistiques et votre nom d'utilisateur. 
+              Vous serez redirigé vers la page d'accueil comme un nouvel utilisateur.
             </p>
             
             {!showResetConfirmation ? (
               <button
                 onClick={() => setShowResetConfirmation(true)}
-                className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition-colors font-medium"
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors font-medium"
               >
-                🗑️ Réinitialiser l'historique
+                🗑️ Supprimer le profil
               </button>
             ) : (
               <div className="bg-red-900/20 border border-red-500 rounded-lg p-4">
                 <p className="text-red-400 font-medium mb-4">⚠️ Êtes-vous sûr(e) ?</p>
                 <p className="text-gray-300 text-sm mb-4">
-                  Cette action est irréversible et supprimera tous vos progrès.
+                  Cette action est irréversible et supprimera complètement votre profil.
                 </p>
                 <div className="flex gap-4">
                   <button
-                    onClick={resetHistory}
+                    onClick={deleteProfile}
                     className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors"
                   >
-                    ✓ Oui, réinitialiser
+                    ✓ Oui, supprimer le profil
                   </button>
                   <button
                     onClick={() => setShowResetConfirmation(false)}

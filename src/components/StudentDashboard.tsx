@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useLessonProgress } from '../hooks/useLessonProgress';
 import { dataService } from '../data/simplified-service';
 
-// Function to generate random animal + adjective combinations
+// Function to generate random animal + adjective combinations (kept for fallback)
 const generateRandomNickname = () => {
   const animals = [
     'Hibou', 'Renard', 'Chat', 'Loup', 'Ours', 'Lapin', 'Écureuil', 
@@ -68,7 +68,7 @@ const getLevelDisplayName = (levelId: string) => {
 };
 
 export default function StudentDashboard() {
-  const [studentName, setStudentName] = useState(() => generateRandomNickname());
+  const [studentName, setStudentName] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [tempName, setTempName] = useState('');
   const [isFirstVisit, setIsFirstVisit] = useState(true);
@@ -93,11 +93,6 @@ export default function StudentDashboard() {
       
       if (hasVisitedBefore) {
         setIsFirstVisit(false);
-      } else {
-        // Mark as visited after a delay to show welcome content
-        setTimeout(() => {
-          localStorage.setItem('hasVisitedBefore', 'true');
-        }, 3000);
       }
     }
   }, []);
@@ -106,6 +101,7 @@ export default function StudentDashboard() {
   const saveStudentName = (name: string) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('studentName', name);
+      localStorage.setItem('hasVisitedBefore', 'true');
     }
   };
 
@@ -116,17 +112,13 @@ export default function StudentDashboard() {
   };
 
   const handleSave = () => {
-    const finalName = tempName.trim() || generateRandomNickname();
-    setStudentName(finalName);
-    saveStudentName(finalName);
-    setIsEditing(false);
-    // If user is editing name, they're no longer a first-time visitor
-    if (isFirstVisit) {
+    const finalName = tempName.trim();
+    if (finalName) {
+      setStudentName(finalName);
+      saveStudentName(finalName);
       setIsFirstVisit(false);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('hasVisitedBefore', 'true');
-      }
     }
+    setIsEditing(false);
   };
 
   const handleCancel = () => {
@@ -139,6 +131,17 @@ export default function StudentDashboard() {
       handleSave();
     } else if (e.key === 'Escape') {
       handleCancel();
+    }
+  };
+
+  // Handle first time name input
+  const handleFirstTimeNameSave = () => {
+    const finalName = tempName.trim();
+    if (finalName) {
+      setStudentName(finalName);
+      saveStudentName(finalName);
+      setIsFirstVisit(false);
+      setTempName('');
     }
   };
 
@@ -161,9 +164,37 @@ export default function StudentDashboard() {
 
   return (
     <div className="px-4 py-6 mb-4">
-      {/* Editable Student Name */}
+      {/* Student Name Section */}
       <div className="mb-6 text-center">
-        {isEditing ? (
+        {!studentName && isFirstVisit ? (
+          // First time: ask for name
+          <div className="space-y-4">
+            <h2 className="text-xl font-bold text-white">Salut ! 👋</h2>
+            <div className="flex items-center justify-center gap-2">
+              <input
+                type="text"
+                value={tempName}
+                onChange={(e) => setTempName(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handleFirstTimeNameSave();
+                  }
+                }}
+                className="bg-[#232a36] text-white text-lg px-4 py-2 rounded-lg border border-gray-600 focus:border-blue-400 focus:outline-none text-center"
+                placeholder="Comment tu t'appelles ?"
+                autoFocus
+                maxLength={20}
+              />
+              <button
+                onClick={handleFirstTimeNameSave}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        ) : isEditing ? (
+          // Editing existing name
           <div className="flex items-center justify-center gap-2">
             <input
               type="text"
@@ -178,6 +209,7 @@ export default function StudentDashboard() {
             />
           </div>
         ) : (
+          // Display name with edit option
           <div
             onClick={handleEditClick}
             className="inline-flex items-center gap-2 cursor-pointer hover:bg-[#232a36] px-3 py-1 rounded-lg transition-colors group"
@@ -193,21 +225,10 @@ export default function StudentDashboard() {
       </div>
 
       {/* Welcome Content for First Visit or Stats Dashboard */}
-      {isFirstVisit ? (
-        <div className="text-center space-y-4">
-          <div className="bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl p-6 text-white shadow-lg">
-            <div className="text-4xl mb-3">🚀</div>
-            <h3 className="text-lg font-bold mb-2">Bienvenue sur Reviseo !</h3>
-            <p className="text-sm opacity-90">
-              Ton coach personnel pour réviser et progresser
-            </p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-4 text-white shadow-lg">
-            <div className="text-2xl mb-2">📚</div>
-            <p className="text-sm font-medium">
-              C'est parti pour apprendre ! 🌟
-            </p>
+      {isFirstVisit && !studentName ? (
+        <div className="text-center">
+          <div className="text-gray-400 text-sm">
+            <p>Ton coach personnel pour réviser et progresser 📚</p>
           </div>
         </div>
       ) : (

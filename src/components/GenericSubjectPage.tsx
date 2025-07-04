@@ -8,7 +8,6 @@ import type { Lesson } from '@/src/data/simplified-service';
 import { useLessonProgress, SubjectType } from '@/src/hooks/useLessonProgress';
 import { getSubjectColors, getDifficultyBgColor } from '@/src/utils/colors';
 import BreadcrumbHeader from './BreadcrumbHeader';
-import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import QuestionSelector from './QuestionSelector';
 import BackToLessonsButton from './BackToLessonsButton';
@@ -65,13 +64,6 @@ export default function GenericSubjectPage({
         subject={subject}
       />
 
-      {/* Progress Bar */}
-      <ProgressBar 
-        progress={globalProgress}
-        score={0}
-        showScore={false}
-      />
-
       {/* Stats Badges */}
       <StatsBadges 
         xp={isClient ? totalXP : 0}
@@ -82,6 +74,7 @@ export default function GenericSubjectPage({
         showProgress={false}
         showStreaks={true}
         subjectProgress={isClient ? subjectProgressPercentage : 0}
+        progress={globalProgress}
       />
 
       {/* Lessons Grid */}

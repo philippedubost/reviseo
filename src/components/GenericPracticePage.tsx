@@ -7,7 +7,6 @@ import { getSubjectById, getAllLessonsForSubject, getRandomQuestionsFromAllLesso
 import type { Question } from '@/src/data/simplified-service';
 import QuestionDisplay from './QuestionDisplay';
 import ResponseOverlay from './ResponseOverlay';
-import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import BackToLessonsButton from './BackToLessonsButton';
 
@@ -176,13 +175,6 @@ export default function GenericPracticePage({
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <ProgressBar 
-        progress={progress}
-        score={survivalScore}
-        showScore={false}
-      />
-
       {/* Stats Badges */}
       <StatsBadges 
         xp={totalXP}
@@ -196,6 +188,7 @@ export default function GenericPracticePage({
         lastAnswerCorrect={lastAnswerCorrect}
         showAnswerFeedback={showAnswerFeedback}
         isSkipped={isSkipped}
+        progress={progress}
       />
 
       {/* Main Content */}

@@ -7,7 +7,6 @@ import { getSubjectById, getAllLessonsForSubject, getLessonById, getRandomQuesti
 import type { Question, Lesson } from '@/src/data/simplified-service';
 import QuestionDisplay from './QuestionDisplay';
 import ResponseOverlay from './ResponseOverlay';
-import ProgressBar from './ProgressBar';
 import StatsBadges from './StatsBadges';
 import BackToLessonsButton from './BackToLessonsButton';
 import BreadcrumbHeader from './BreadcrumbHeader';
@@ -223,13 +222,6 @@ export default function GenericLessonPage({
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <ProgressBar 
-        progress={progress}
-        score={currentSessionScore}
-        showScore={false}
-      />
-
       {/* Stats Badges */}
       <StatsBadges 
         xp={totalXP}
@@ -243,6 +235,7 @@ export default function GenericLessonPage({
         lastAnswerCorrect={lastAnswerCorrect}
         showAnswerFeedback={showAnswerFeedback}
         isSkipped={isSkipped}
+        progress={progress}
       />
 
       {/* Main Content */}

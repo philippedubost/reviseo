@@ -10,7 +10,6 @@ import QuestionDisplay from '@/src/components/QuestionDisplay';
 import ResponseOverlay from '@/src/components/ResponseOverlay';
 import StatsBadges from '@/src/components/StatsBadges';
 import ConfettiManager from '@/src/components/ConfettiManager';
-import ProgressBar from '@/src/components/ProgressBar';
 import ExitButton from '@/src/components/ExitButton';
 import BreadcrumbHeader from '@/src/components/BreadcrumbHeader';
 
@@ -149,11 +148,9 @@ export default function LessonPage() {
           lastAnswerCorrect={lastAnswerCorrect}
           showAnswerFeedback={showAnswerFeedback}
           isSkipped={isSkipped}
+          progress={progress}
         />
       </div>
-
-      {/* Progress Bar */}
-      <ProgressBar progress={progress} />
 
       {/* Main Content */}
       <div className="flex-1 px-4 pb-24">

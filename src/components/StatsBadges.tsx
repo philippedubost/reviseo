@@ -17,6 +17,8 @@ interface StatsBadgesProps {
   lastAnswerCorrect?: boolean | null;
   showAnswerFeedback?: boolean;
   isSkipped?: boolean;
+  // Add progress bar props
+  progress?: number;
 }
 
 interface PopupAnimation {
@@ -39,7 +41,8 @@ export default function StatsBadges({
   subjectProgress,
   lastAnswerCorrect = null,
   showAnswerFeedback = false,
-  isSkipped = false
+  isSkipped = false,
+  progress = 0
 }: StatsBadgesProps) {
   const [xpAnimation, setXpAnimation] = useState(false);
   const [streakAnimation, setStreakAnimation] = useState(false);
@@ -88,80 +91,79 @@ export default function StatsBadges({
     }
   }, [showAnswerFeedback, lastAnswerCorrect, showStreaks, isSkipped]);
 
-  const getProgressPercentage = () => {
-    if (subjectProgress !== undefined) {
-      return subjectProgress;
-    }
-    if (showProgress && totalLessons && completedLessons !== undefined) {
-      return totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
-    }
-    if (currentQuestion && totalQuestions) {
-      return totalQuestions > 0 ? Math.round((currentQuestion / totalQuestions) * 100) : 0;
-    }
-    return 0;
-  };
-
   const getProgressDisplay = () => {
     if (currentQuestion && totalQuestions) {
       return `${currentQuestion}/${totalQuestions}`;
     }
-    return `${getProgressPercentage()}%`;
+    if (subjectProgress !== undefined) {
+      return `${subjectProgress}%`;
+    }
+    if (showProgress && totalLessons && completedLessons !== undefined) {
+      return totalLessons > 0 ? `${Math.round((completedLessons / totalLessons) * 100)}%` : '0%';
+    }
+    return '0%';
   };
 
   return (
     <div className="mx-2 mb-2 relative">
-      <div className="flex justify-between mb-2">
-        {/* XP Badge */}
-        <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
-          xpAnimation ? 'bg-yellow-500 scale-110 shadow-lg shadow-yellow-500/50 animate-badgeFlash' : ''
-        }`}>
-          <span className="text-lg">⭐</span>
-          <div className="text-white text-sm font-semibold">{xp || 0}</div>
-          
-          {/* XP Popup */}
-          {popups.filter(p => p.type === 'xp').map((popup) => (
-            <div
-              key={popup.id}
-              className={`absolute -top-4 left-1/2 transform -translate-x-1/2 text-sm font-bold animate-popupFloat ${
-                popup.isCorrect ? 'text-yellow-400' : 'text-red-400'
-              }`}
-            >
-              {popup.text}
-            </div>
-          ))}
-        </div>
-        
-        {/* Current Streak Badge */}
-        {showStreaks && (
+      <div className="flex justify-between items-center">
+        {/* Left side: Badges */}
+        <div className="flex gap-2">
+          {/* XP Badge */}
           <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
-            streakAnimation ? 'bg-orange-500 scale-110 shadow-lg shadow-orange-500/50 animate-badgeFlash' : ''
+            xpAnimation ? 'bg-yellow-500 scale-110 shadow-lg shadow-yellow-500/50 animate-badgeFlash' : ''
           }`}>
-            <span className="text-lg">🔥</span>
-            <div className="text-white text-sm font-semibold">{currentStreak || 0}</div>
+            <span className="text-lg">⭐</span>
+            <div className="text-white text-sm font-semibold">{xp || 0}</div>
             
-            {/* Streak Popup */}
-            {popups.filter(p => p.type === 'streak').map((popup) => (
+            {/* XP Popup */}
+            {popups.filter(p => p.type === 'xp').map((popup) => (
               <div
                 key={popup.id}
                 className={`absolute -top-4 left-1/2 transform -translate-x-1/2 text-sm font-bold animate-popupFloat ${
-                  popup.isCorrect ? 'text-orange-400' : 'text-red-400'
+                  popup.isCorrect ? 'text-yellow-400' : 'text-red-400'
                 }`}
               >
                 {popup.text}
               </div>
             ))}
           </div>
-        )}
+          
+          {/* Current Streak Badge */}
+          {showStreaks && (
+            <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
+              streakAnimation ? 'bg-orange-500 scale-110 shadow-lg shadow-orange-500/50 animate-badgeFlash' : ''
+            }`}>
+              <span className="text-lg">🔥</span>
+              <div className="text-white text-sm font-semibold">{currentStreak || 0}</div>
+              
+              {/* Streak Popup */}
+              {popups.filter(p => p.type === 'streak').map((popup) => (
+                <div
+                  key={popup.id}
+                  className={`absolute -top-4 left-1/2 transform -translate-x-1/2 text-sm font-bold animate-popupFloat ${
+                    popup.isCorrect ? 'text-orange-400' : 'text-red-400'
+                  }`}
+                >
+                  {popup.text}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
         
-        {/* Progress Badge */}
-        <div className="flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2">
-          <span className="text-lg">📊</span>
-          <div className="text-white text-sm font-semibold">{getProgressDisplay()}</div>
+        {/* Right side: Progress bar with count */}
+        <div className="flex items-center gap-2 flex-1 max-w-xs">
+          <div className="relative flex-1">
+            <div className="progress-bar">
+              <div className="progress-bar-inner" style={{ width: `${progress}%` }}></div>
+            </div>
+          </div>
+          <div className="text-white text-sm font-semibold whitespace-nowrap">
+            {getProgressDisplay()}
+          </div>
         </div>
       </div>
-      
-      {/* Separator line */}
-      <div className="h-px bg-gray-600"></div>
     </div>
   );
 } 

@@ -61,16 +61,14 @@ export default function FlagButton({
   // Suggestions rapides basées sur le type de question
   const getQuickSuggestions = () => {
     const commonSuggestions = [
-      'Erreur dans la question',
-      'Réponse incorrecte',
-      'Question trop difficile',
-      'Question trop facile',
-      'Formulation peu claire'
+      'Erreur',
+      'Trop difficile',
+      'Peu claire'
     ];
 
-    // Ajouter "proposer en choix multiple" pour les questions de saisie manuelle
+    // Ajouter "préférer choix multiples" pour les questions de saisie manuelle
     if (questionType === 'input' || questionType === 'calculation') {
-      return ['Proposer en choix multiple', ...commonSuggestions];
+      return ['Préférer choix multiples', ...commonSuggestions];
     }
 
     return commonSuggestions;
@@ -158,19 +156,19 @@ export default function FlagButton({
 
               {/* Quick suggestions */}
               <motion.div 
-                className="mb-4"
+                className="mb-3"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
-                <p className="text-gray-300 text-sm mb-2">Suggestions rapides :</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-gray-300 text-sm mb-1">Suggestions rapides :</p>
+                <div className="flex flex-wrap gap-1.5">
                   {getQuickSuggestions().map((suggestion, index) => (
                     <motion.button
                       key={suggestion}
                       onClick={() => handleQuickSuggestion(suggestion)}
-                      className={`px-3 py-1 text-sm rounded transition-colors ${
-                        suggestion === 'Proposer en choix multiple' 
+                      className={`px-2 py-1 text-xs rounded-full transition-colors ${
+                        suggestion === 'Préférer choix multiples' 
                           ? 'bg-blue-600 hover:bg-blue-700 text-white border-2 border-blue-400' 
                           : 'bg-[#181c24] hover:bg-[#2a3441] text-gray-300 border border-[#374151]'
                       } ${reason === suggestion ? 'ring-2 ring-blue-500' : ''}`}

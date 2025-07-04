@@ -12,40 +12,69 @@ import { InlineMath } from 'react-katex';
 export function renderMathText(text: string) {
   // Patterns pour identifier UNIQUEMENT les structures mathématiques complexes
   const mathPatterns = [
-    // Limites: lim, lim_{x->a}, lim_{n->∞}, etc.
-    /\blim\s*(?:_{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>]+/gi,
-    // Sommations: ∑, sum, Σ avec indices
+    // Limites: lim, lim_{x->a}, lim_{n->∞}, etc. (avec contexte mathématique)
+    /\blim\s*(?:_{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>→∞]+/gi,
+    
+    // Sommations: ∑, sum, Σ avec indices (avec contexte mathématique)
     /(?:∑|sum|Σ)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>]+/gi,
-    // Intégrales: ∫, int avec bornes (seulement si int est un mot complet)
-    /(?:∫|\bint\b)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>dx]+/gi,
+    
+    // Intégrales: seulement si "int" ou "∫" est suivi d'une expression mathématique claire
+    // Évite "Point f" en nécessitant des opérateurs mathématiques ou parenthèses
+    /(?:∫|(?:\bint\b(?=\s*(?:\^|_|\s*[a-zA-Z0-9(][^a-zA-Z\s]*[dx\s+\-*/=<>]))))\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>dx]+/gi,
+    
     // Dérivées: d/dx, ∂/∂x, f'(x), etc.
     /(?:d\/d[a-zA-Z]|∂\/∂[a-zA-Z]|[a-zA-Z]'+\([^)]*\))/g,
+    
     // Fonctions mathématiques définies: f(x) = expression, g(t) = expression, etc.
     /\b[a-zA-Z]+\s*\([^)]*\)\s*=\s*[a-zA-Z0-9()\s\-+*/\^]+/g,
-    // Expressions avec produits scalaires: a·b + c·d, a×b - c×d, etc.
+    
+    // Expressions avec produits scalaires/vectoriels: a·b + c·d, a×b - c×d, etc.
     /[a-zA-Z]\s*[·×]\s*[a-zA-Z](?:\s*[+\-]\s*[a-zA-Z]\s*[·×]\s*[a-zA-Z])+/g,
+    
+    // Expressions avec produits scalaires simples mais dans un contexte mathématique
+    /[a-zA-Z]\s*[·×]\s*[a-zA-Z](?=\s*[+\-=])/g,
+    
     // Polynômes avec variables (au moins 2 termes): 3x + 5y, 2x² - 3x + 1, etc.
-    /\b(?:\d+[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)+|[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?){2,})(?:\s*[+\-]\s*\d+)?\b/g,
-    // Expressions avec au moins un opérateur et des coefficients: 2x, 3y², etc. (seulement si coefficient numérique)
-    /\b\d+[a-zA-Z](?:\^\d+)?\b/g,
+    /\b(?:\d+[a-zA-Z](?:\^?\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^?\d+)?)+|[a-zA-Z](?:\^?\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^?\d+)?){2,})(?:\s*[+\-]\s*\d+)?\b/g,
+    
+    // Expressions avec coefficients numériques: 2x, 3y², etc.
+    /\b\d+[a-zA-Z](?:\^?\d+)?\b/g,
+    
+    // Expressions avec puissances suivies d'opérateurs: x² + 1, y³ - 2, etc.
+    /[a-zA-Z]\^?\d+\s*[+\-]\s*\d+/g,
+    
+    // Variables avec puissances dans un contexte mathématique
+    /[a-zA-Z]\^?\d+(?=\s*[+\-*/=<>])/g,
+    
     // Racines complexes: √(...), sqrt(...) avec expressions
     /(?:√|sqrt)\s*\([^)]*[a-zA-Z+\-*/][^)]*\)/g,
+    
     // Fractions complexes avec variables: (a+b)/(c+d), sin(x)/cos(x), etc.
     /\([^)]*[a-zA-Z][^)]*\)\s*\/\s*\([^)]*[a-zA-Z][^)]*\)/g,
+    
+    // Fractions simples avec variables: a/b, x/y (seulement si dans un contexte mathématique)
+    /[a-zA-Z]\s*\/\s*[a-zA-Z](?=\s*[+\-=])/g,
+    
     // Puissances avec expressions complexes: (a+b)^{n}, e^{-x}, etc.
     /(?:\([^)]*[a-zA-Z][^)]*\)|\b[a-zA-Z]+)\s*\^\s*\{[^}]*[a-zA-Z+\-*/][^}]*\}/g,
-    // Variables avec puissances: x², y³, etc.
-    /\b[a-zA-Z]\^\d+\b/g,
-    // Expressions avec puissances et opérateurs: x² + 1, y³ - 2, etc.
-    /[a-zA-Z]\^\d+\s*[+\-]\s*\d+/g,
+    
     // Fonctions transcendantes avec arguments complexes: sin(2x+1), ln(x²+1), etc.
     /\b(?:sin|cos|tan|ln|log|exp|arcsin|arccos|arctan|sinh|cosh|tanh)\s*\([^)]*[a-zA-Z+\-*/\^][^)]*\)/gi,
+    
     // Équations complexes avec au moins 3 éléments mathématiques
     /(?:[a-zA-Z0-9()\^\s\-+*/]{3,})\s*(?:=|≠|<|>|≤|≥|≡)\s*(?:[a-zA-Z0-9()\^\s\-+*/]{3,})/g,
+    
     // Matrices et vecteurs avec notation complexe: |a×b|, det(A), etc.
     /(?:\|[^|]*[a-zA-Z×\s+\-*/][^|]*\||det\s*\([^)]*\)|tr\s*\([^)]*\))/g,
+    
     // Produits scalaires et vectoriels avec notation vectorielle: a⃗·b⃗, vec(a)×vec(b), etc.
     /(?:[a-zA-Z]\s*(?:⃗|vec)\s*[·×]\s*[a-zA-Z]\s*(?:⃗|vec)|vec\s*\([^)]+\)\s*[·×]\s*vec\s*\([^)]+\))/g,
+    
+    // Expressions avec dérivées partielles: ∂f/∂x, ∂²f/∂x², etc.
+    /∂[^∂]*\/∂[a-zA-Z]/g,
+    
+    // Expressions avec opérateurs mathématiques multiples: a + b - c, x * y / z, etc.
+    /[a-zA-Z0-9]\s*[+\-*/]\s*[a-zA-Z0-9]\s*[+\-*/]\s*[a-zA-Z0-9]/g,
   ];
 
   // Collecter toutes les expressions mathématiques
@@ -117,8 +146,8 @@ export function renderMathText(text: string) {
       // Convertir les valeurs absolues et déterminants
       .replace(/det\s*\(([^)]*)\)/g, '\\det($1)')
       .replace(/tr\s*\(([^)]*)\)/g, '\\text{tr}($1)')
-      // Convertir les exposants simples
-      .replace(/\^(\w+)/g, '^{$1}')
+      // Convertir les exposants simples - seulement si suivis d'un chiffre
+      .replace(/\^(\d+)/g, '^{$1}')
       // Convertir les indices simples
       .replace(/_(\w+)/g, '_{$1}')
       // Convertir la multiplication par un point

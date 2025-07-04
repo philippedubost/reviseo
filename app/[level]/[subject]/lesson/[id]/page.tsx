@@ -186,6 +186,7 @@ export default function LessonPage() {
         isCorrect={isCorrect}
         isSkipped={isSkipped}
         explanation={currentQuestion?.explanation || ''}
+        correctAnswer={currentQuestion?.correctAnswer}
         emoji={currentEmoji}
         countdown={countdown}
         isExiting={isExiting}

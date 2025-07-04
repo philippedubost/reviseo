@@ -246,6 +246,7 @@ export default function GenericPracticePage({
             isCorrect={isCorrect}
             isSkipped={isSkippedFromHook}
             explanation={currentQuestion.explanation}
+            correctAnswer={currentQuestion.correctAnswer}
             countdown={countdown}
             emoji={currentEmoji}
             isPaused={isPaused}

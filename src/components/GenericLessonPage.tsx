@@ -293,6 +293,7 @@ export default function GenericLessonPage({
             isCorrect={isCorrect}
             isSkipped={isSkippedFromHook}
             explanation={currentQuestion.explanation}
+            correctAnswer={currentQuestion.correctAnswer}
             countdown={countdown}
             emoji={currentEmoji}
             isPaused={isPaused}

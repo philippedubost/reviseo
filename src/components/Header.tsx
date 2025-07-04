@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ showBackButton = false }: HeaderProps) {
   const pathname = usePathname();
-  const isFlaggedQuestionsPage = pathname === '/flagged-questions';
+  const isUserProfilePage = pathname === '/profile';
 
   return (
     <motion.header 
@@ -64,27 +64,26 @@ export default function Header({ showBackButton = false }: HeaderProps) {
         </motion.div>
         
         <div className="flex items-center gap-2">
-          {!isFlaggedQuestionsPage && (
+          {!isUserProfilePage && (
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Link 
-                href="/flagged-questions" 
+                href="/profile" 
                 className="text-[#b0b8c1] hover:text-white transition-colors p-2 rounded-full hover:bg-[#232a36] block"
-                title="Questions signalées"
+                title="Profil utilisateur"
               >
                 <motion.span
                   whileHover={{ 
-                    rotate: [0, -10, 10, 0],
                     scale: 1.2
                   }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ duration: 0.3 }}
                   className="inline-block"
                 >
-                  🚩
+                  �
                 </motion.span>
               </Link>
             </motion.div>

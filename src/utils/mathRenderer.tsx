@@ -1,53 +1,97 @@
 import 'katex/dist/katex.min.css';
+import React from 'react';
 // @ts-ignore
 import { InlineMath } from 'react-katex';
 
 /**
  * Converts mathematical notation to LaTeX and renders it appropriately
+ * Renders French text in standard font, math expressions in LaTeX
  * @param text - The text containing mathematical notation
- * @returns Either a LaTeX-rendered component or the original text
+ * @returns React element with mixed text and math rendering
  */
 export function renderMathText(text: string) {
-  // Convert common mathematical notation to LaTeX
-  let processedText = text
-    // Convert * to \cdot for multiplication in expressions like a*b
-    .replace(/(\w)\*(\w)/g, '$1 \\cdot $2')
-    // Convert ^ to proper superscript notation
-    .replace(/\^(\w+)/g, '^{$1}')
-    // Convert x to \times when used as multiplication
-    .replace(/(\w) x (\w)/g, '$1 \\times $2')
-    // Handle fractions like 1/2, 1/6 etc
-    .replace(/(\d+)\/(\d+)/g, '\\frac{$1}{$2}')
-    // Handle vector dot product notation a.b = ...
-    .replace(/([a-zA-Z])\.([a-zA-Z])/g, '\\vec{$1} \\cdot \\vec{$2}')
-    // Handle subscripts like ax, bx, etc in vector components
-    .replace(/([a-zA-Z])([xyz])/g, '$1_{$2}')
-    // Handle absolute value notation |...|
-    .replace(/\|([^|]+)\|/g, '|$1|')
-    // Handle parentheses in expressions
-    .replace(/\(([^)]+)\)/g, '($1)');
+  // Patterns pour identifier les expressions mathématiques
+  const mathPatterns = [
+    // Fonctions mathématiques: f(x), g(t), sin(x), etc.
+    /\b[a-zA-Z]+\([^)]*\)/g,
+    // Fractions: 1/2, 3/4, etc.
+    /\b\d+\/\d+\b/g,
+    // Exposants: x^2, a^n, etc.
+    /\b[a-zA-Z]\^\w+/g,
+    // Variables avec indices: x_1, a_n, etc.
+    /\b[a-zA-Z]_\w+/g,
+    // Expressions avec opérateurs mathématiques entourées d'espaces
+    /\b[a-zA-Z0-9]+\s*[+\-*/=<>]\s*[a-zA-Z0-9]+/g,
+    // Variables isolées (une seule lettre suivie d'un espace ou fin de phrase)
+    /\b[a-zA-Z]\b(?=\s|$|[,.])/g,
+    // Nombres avec unités ou symboles mathématiques
+    /\b\d+[°%π]\b/g,
+    // Expressions entre parenthèses avec variables
+    /\([^)]*[a-zA-Z][^)]*\)/g,
+  ];
 
-  // More conservative check for mathematical notation that truly needs LaTeX
-  const hasMath = /[\\^_{}\cdot\times\frac\vec]/.test(processedText) || 
-                  /\d+\/\d+/.test(text) || // fractions
-                  /\^\d+/.test(text) || // clear exponents
-                  /\b[a-z]\s*\.\s*[a-z]\b/.test(text) || // dot products like a.b
-                  /\b[a-z][xyz]\b/.test(text); // vector components like ax, by, cz
-
-  if (hasMath) {
-    try {
-      return (
-        <span className="font-normal">
-          <InlineMath math={processedText} />
-        </span>
-      );
-    } catch (error) {
-      // Fallback to original text if LaTeX parsing fails
-      console.warn('LaTeX parsing error:', error);
-      return <span className="font-normal">{text}</span>;
+  // Collecter toutes les expressions mathématiques
+  const mathExpressions = new Set<string>();
+  mathPatterns.forEach(pattern => {
+    const matches = text.match(pattern);
+    if (matches) {
+      matches.forEach(match => mathExpressions.add(match));
     }
+  });
+
+  // Si aucune expression mathématique trouvée, retourner le texte normal
+  if (mathExpressions.size === 0) {
+    return <span className="font-normal">{text}</span>;
   }
 
-  // Return text with standard font for non-math content
-  return <span className="font-normal">{text}</span>;
+  // Créer un pattern pour diviser le texte
+  const allMathExpressions = Array.from(mathExpressions);
+  const escapedExpressions = allMathExpressions.map(expr => 
+    expr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  );
+  const splitPattern = new RegExp(`(${escapedExpressions.join('|')})`, 'g');
+
+  // Diviser le texte en segments
+  const segments = text.split(splitPattern).filter(segment => segment.length > 0);
+
+  // Fonction pour convertir les expressions mathématiques en LaTeX
+  const convertToLatex = (expr: string): string => {
+    return expr
+      // Convertir les fractions
+      .replace(/(\d+)\/(\d+)/g, '\\frac{$1}{$2}')
+      // Convertir les exposants
+      .replace(/\^(\w+)/g, '^{$1}')
+      // Convertir les indices
+      .replace(/_(\w+)/g, '_{$1}')
+      // Convertir la multiplication par un point
+      .replace(/\*/g, '\\cdot ')
+      // Garder les autres expressions telles quelles
+      ;
+  };
+
+  // Rendre les segments
+  return (
+    <span className="font-normal">
+      {segments.map((segment, index) => {
+        if (mathExpressions.has(segment)) {
+          // C'est une expression mathématique, la rendre en LaTeX
+          try {
+            return (
+              <InlineMath 
+                key={index} 
+                math={convertToLatex(segment)} 
+              />
+            );
+          } catch (error) {
+            // Si LaTeX échoue, retourner le texte original
+            console.warn('LaTeX parsing error for:', segment, error);
+            return <span key={index}>{segment}</span>;
+          }
+        } else {
+          // C'est du texte normal, le rendre en police standard
+          return <span key={index}>{segment}</span>;
+        }
+      })}
+    </span>
+  );
 }

@@ -16,28 +16,36 @@ export function renderMathText(text: string) {
     /\blim\s*(?:_{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>]+/gi,
     // Sommations: ∑, sum, Σ avec indices
     /(?:∑|sum|Σ)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>]+/gi,
-    // Intégrales: ∫, int avec bornes
-    /(?:∫|int)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>dx]+/gi,
+    // Intégrales: ∫, int avec bornes (seulement si int est un mot complet)
+    /(?:∫|\bint\b)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>dx]+/gi,
     // Dérivées: d/dx, ∂/∂x, f'(x), etc.
     /(?:d\/d[a-zA-Z]|∂\/∂[a-zA-Z]|[a-zA-Z]'+\([^)]*\))/g,
     // Fonctions mathématiques définies: f(x) = expression, g(t) = expression, etc.
     /\b[a-zA-Z]+\s*\([^)]*\)\s*=\s*[a-zA-Z0-9()\s\-+*/\^]+/g,
-    // Polynômes avec variables: 3x + 5y + 1, 2x² - 3x + 1, etc.
-    /\b(?:\d*[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)*|[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)+)(?:\s*[+\-]\s*\d+)?\b/g,
+    // Expressions avec produits scalaires: a·b + c·d, a×b - c×d, etc.
+    /[a-zA-Z]\s*[·×]\s*[a-zA-Z](?:\s*[+\-]\s*[a-zA-Z]\s*[·×]\s*[a-zA-Z])+/g,
+    // Polynômes avec variables (au moins 2 termes): 3x + 5y, 2x² - 3x + 1, etc.
+    /\b(?:\d+[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)+|[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?){2,})(?:\s*[+\-]\s*\d+)?\b/g,
+    // Expressions avec au moins un opérateur et des coefficients: 2x, 3y², etc. (seulement si coefficient numérique)
+    /\b\d+[a-zA-Z](?:\^\d+)?\b/g,
     // Racines complexes: √(...), sqrt(...) avec expressions
     /(?:√|sqrt)\s*\([^)]*[a-zA-Z+\-*/][^)]*\)/g,
     // Fractions complexes avec variables: (a+b)/(c+d), sin(x)/cos(x), etc.
     /\([^)]*[a-zA-Z][^)]*\)\s*\/\s*\([^)]*[a-zA-Z][^)]*\)/g,
     // Puissances avec expressions complexes: (a+b)^{n}, e^{-x}, etc.
     /(?:\([^)]*[a-zA-Z][^)]*\)|\b[a-zA-Z]+)\s*\^\s*\{[^}]*[a-zA-Z+\-*/][^}]*\}/g,
+    // Variables avec puissances: x², y³, etc.
+    /\b[a-zA-Z]\^\d+\b/g,
+    // Expressions avec puissances et opérateurs: x² + 1, y³ - 2, etc.
+    /[a-zA-Z]\^\d+\s*[+\-]\s*\d+/g,
     // Fonctions transcendantes avec arguments complexes: sin(2x+1), ln(x²+1), etc.
     /\b(?:sin|cos|tan|ln|log|exp|arcsin|arccos|arctan|sinh|cosh|tanh)\s*\([^)]*[a-zA-Z+\-*/\^][^)]*\)/gi,
-    // Équations et inéquations complexes avec plusieurs termes
-    /[a-zA-Z0-9()\s\-+*/\^]+\s*(?:=|≠|<|>|≤|≥|≡)\s*[a-zA-Z0-9()\s\-+*/\^]*[a-zA-Z()\^][a-zA-Z0-9()\s\-+*/\^]*/g,
+    // Équations complexes avec au moins 3 éléments mathématiques
+    /(?:[a-zA-Z0-9()\^\s\-+*/]{3,})\s*(?:=|≠|<|>|≤|≥|≡)\s*(?:[a-zA-Z0-9()\^\s\-+*/]{3,})/g,
     // Matrices et vecteurs avec notation complexe: |a×b|, det(A), etc.
     /(?:\|[^|]*[a-zA-Z×\s+\-*/][^|]*\||det\s*\([^)]*\)|tr\s*\([^)]*\))/g,
-    // Produits scalaires et vectoriels complexes: a⃗·b⃗, a×b, etc.
-    /[a-zA-Z]\s*(?:⃗|vec)\s*[·×]\s*[a-zA-Z]\s*(?:⃗|vec)|[a-zA-Z]\s*[·×]\s*[a-zA-Z]/g,
+    // Produits scalaires et vectoriels avec notation vectorielle: a⃗·b⃗, vec(a)×vec(b), etc.
+    /(?:[a-zA-Z]\s*(?:⃗|vec)\s*[·×]\s*[a-zA-Z]\s*(?:⃗|vec)|vec\s*\([^)]+\)\s*[·×]\s*vec\s*\([^)]+\))/g,
   ];
 
   // Collecter toutes les expressions mathématiques

@@ -187,7 +187,7 @@ export default function StudentDashboard() {
               />
               <button
                 onClick={handleFirstTimeNameSave}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
+                className="bg-blue-500 hover:bg-blue-600 text-white text-lg px-4 py-2 rounded-lg transition-colors h-full flex items-center"
               >
                 OK
               </button>

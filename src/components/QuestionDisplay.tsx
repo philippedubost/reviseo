@@ -205,7 +205,7 @@ export default function QuestionDisplay({
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div>{renderMathText(question)}</div>
+              <div className="font-normal">{renderMathText(question)}</div>
               <DifficultyLabel difficulty={difficulty} />
             </motion.div>
             {latex && (
@@ -248,7 +248,7 @@ export default function QuestionDisplay({
               <motion.input
                 ref={inputRef}
                 type="text"
-                inputMode={getKeyboardType()}
+                inputMode={getKeyboardType() as any}
                 pattern={getKeyboardType() === 'decimal' ? "[0-9,.]*" : undefined}
                 autoComplete="off"
                 autoCorrect="off"
@@ -257,7 +257,7 @@ export default function QuestionDisplay({
                 className="input text-center text-lg font-bold w-full max-w-md mb-4"
                 placeholder="Votre réponse"
                 value={selectedAnswer}
-                onChange={e => !showResult && onAnswerChange(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => !showResult && onAnswerChange(e.target.value)}
                 onKeyDown={handleInputKeyDown}
                 disabled={showResult}
                 whileFocus={{ 
@@ -317,25 +317,29 @@ export default function QuestionDisplay({
                       </motion.button>
                     )}
                     
-                    {/* Verify button - visible when answer is entered */}
-                    {selectedAnswer && onVerify && (
+                    {/* Valider button - always visible but disabled when no answer */}
+                    {onVerify && (
                       <motion.button
-                        className="btn bg-[#2ecc71] text-white text-lg font-bold hover:bg-[#27ae60] transition-colors flex-1 relative overflow-hidden"
-                        onClick={onVerify}
-                        disabled={isLoading}
+                        className={`btn text-lg font-bold transition-colors flex-1 relative overflow-hidden ${
+                          selectedAnswer.trim() 
+                            ? 'bg-[#2ecc71] text-white hover:bg-[#27ae60]' 
+                            : 'bg-[#6c757d] text-gray-400 cursor-not-allowed'
+                        }`}
+                        onClick={selectedAnswer.trim() ? onVerify : undefined}
+                        disabled={isLoading || !selectedAnswer.trim()}
                         whileHover={{ 
-                          scale: isLoading ? 1 : 1.02,
+                          scale: isLoading || !selectedAnswer.trim() ? 1 : 1.02,
                           transition: { duration: 0.2 }
                         }}
                         whileTap={{ 
-                          scale: isLoading ? 1 : 0.98,
+                          scale: isLoading || !selectedAnswer.trim() ? 1 : 0.98,
                           transition: { duration: 0.1 }
                         }}
                       >
                         {/* Ripple effect */}
                         <motion.div
                           className="absolute inset-0 bg-white opacity-0"
-                          whileHover={{ opacity: isLoading ? 0 : 0.1 }}
+                          whileHover={{ opacity: isLoading || !selectedAnswer.trim() ? 0 : 0.1 }}
                           transition={{ duration: 0.2 }}
                         />
                         
@@ -357,9 +361,9 @@ export default function QuestionDisplay({
                           ) : (
                             <>
                               <motion.span
-                                animate={{ 
+                                animate={selectedAnswer.trim() ? { 
                                   scale: [1, 1.2, 1]
-                                }}
+                                } : {}}
                                 transition={{
                                   duration: 1.5,
                                   repeat: Infinity,
@@ -388,7 +392,7 @@ export default function QuestionDisplay({
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div>{renderMathText(question)}</div>
+              <div className="font-normal">{renderMathText(question)}</div>
               <DifficultyLabel difficulty={difficulty} />
             </motion.div>
             {latex && (

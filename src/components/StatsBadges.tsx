@@ -155,8 +155,8 @@ export default function StatsBadges({
         )}
       </div>
       
-      {/* Right side: Progress bar with count */}
-      <div className="flex items-center gap-2 flex-1 max-w-xs">
+      {/* Right side: Progress bar with count - Added gap with ml-4 */}
+      <div className="flex items-center gap-2 flex-1 max-w-xs ml-4">
         <div className="relative flex-1">
           <div className="progress-bar">
             <div 

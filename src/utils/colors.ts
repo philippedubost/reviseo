@@ -10,90 +10,90 @@ export interface SubjectColors {
   text: string;           // Text color for contrast
 }
 
-// Subject color definitions - Each subject has unique colors
+// Subject color definitions - Using shades of green, cyan, and pink
 export const SUBJECT_COLORS: Record<string, SubjectColors> = {
   maths: {
-    gradient: 'from-[#00baff] to-[#2196f3]',
-    primary: '#00baff',
-    secondary: '#2196f3', 
-    light: '#66d9ff',
-    dark: '#0099cc',
-    border: '#00baff40',
-    bg: '#00baff10',
+    gradient: 'from-[#06b6d4] to-[#0891b2]',
+    primary: '#06b6d4',
+    secondary: '#0891b2', 
+    light: '#22d3ee',
+    dark: '#0e7490',
+    border: '#06b6d440',
+    bg: '#06b6d410',
     text: '#ffffff'
   },
   francais: {
-    gradient: 'from-[#e74c3c] to-[#f39c12]',
-    primary: '#e74c3c',
-    secondary: '#f39c12',
-    light: '#ff6b6b',
-    dark: '#c0392b',
-    border: '#e74c3c40',
-    bg: '#e74c3c10',
+    gradient: 'from-[#ec4899] to-[#db2777]',
+    primary: '#ec4899',
+    secondary: '#db2777',
+    light: '#f472b6',
+    dark: '#be185d',
+    border: '#ec489940',
+    bg: '#ec489910',
     text: '#ffffff'
   },
   'histoire-geo': {
-    gradient: 'from-[#8B4513] to-[#D2691E]',
-    primary: '#8B4513',
-    secondary: '#D2691E',
-    light: '#CD853F',
-    dark: '#654321',
-    border: '#8B451340',
-    bg: '#8B451310',
+    gradient: 'from-[#10b981] to-[#059669]',
+    primary: '#10b981',
+    secondary: '#059669',
+    light: '#34d399',
+    dark: '#047857',
+    border: '#10b98140',
+    bg: '#10b98110',
     text: '#ffffff'
   },
   svt: {
-    gradient: 'from-[#27ae60] to-[#2ecc71]',
-    primary: '#27ae60',
-    secondary: '#2ecc71',
-    light: '#58d68d',
-    dark: '#1e8449',
-    border: '#27ae6040',
-    bg: '#27ae6010',
+    gradient: 'from-[#22c55e] to-[#16a34a]',
+    primary: '#22c55e',
+    secondary: '#16a34a',
+    light: '#4ade80',
+    dark: '#15803d',
+    border: '#22c55e40',
+    bg: '#22c55e10',
     text: '#ffffff'
   },
   anglais: {
-    gradient: 'from-[#2980b9] to-[#3498db]',
-    primary: '#2980b9',
-    secondary: '#3498db',
-    light: '#5dade2',
-    dark: '#1f618d',
-    border: '#2980b940',
-    bg: '#2980b910',
+    gradient: 'from-[#0891b2] to-[#0e7490]',
+    primary: '#0891b2',
+    secondary: '#0e7490',
+    light: '#06b6d4',
+    dark: '#164e63',
+    border: '#0891b240',
+    bg: '#0891b210',
     text: '#ffffff'
   },
   // Additional subjects for future use
   chimie: {
-    gradient: 'from-[#8e44ad] to-[#9b59b6]',
-    primary: '#8e44ad',
-    secondary: '#9b59b6',
-    light: '#bb8fce',
-    dark: '#6c3483',
-    border: '#8e44ad40',
-    bg: '#8e44ad10',
+    gradient: 'from-[#f472b6] to-[#ec4899]',
+    primary: '#f472b6',
+    secondary: '#ec4899',
+    light: '#f9a8d4',
+    dark: '#db2777',
+    border: '#f472b640',
+    bg: '#f472b610',
     text: '#ffffff'
   },
   physique: {
-    gradient: 'from-[#1e3a8a] to-[#3b82f6]',
-    primary: '#1e3a8a',
-    secondary: '#3b82f6',
-    light: '#60a5fa',
-    dark: '#1e40af',
-    border: '#1e3a8a40',
-    bg: '#1e3a8a10',
+    gradient: 'from-[#06b6d4] to-[#0284c7]',
+    primary: '#06b6d4',
+    secondary: '#0284c7',
+    light: '#22d3ee',
+    dark: '#0369a1',
+    border: '#06b6d440',
+    bg: '#06b6d410',
     text: '#ffffff'
   }
 };
 
-// Level color definitions (for level-specific theming)
+// Level color definitions - Using shades of blue and orange gradients
 export const LEVEL_COLORS: Record<string, string> = {
-  sixieme: 'linear-gradient(135deg, #3d4fcc 0%, #5a2b8a 100%)',
-  cinquieme: 'linear-gradient(135deg, #c04dd8 0%, #c02a4a 100%)',
-  quatrieme: 'linear-gradient(135deg, #1a6ad8 0%, #00a4b4 100%)',
-  troisieme: 'linear-gradient(135deg, #1aa053 0%, #0ab08d 100%)',
-  seconde: 'linear-gradient(135deg, #c03a6a 0%, #c08a2a 100%)',
-  premiere: 'linear-gradient(135deg, #4a9a97 0%, #aa6570 100%)',
-  terminale: 'linear-gradient(135deg, #c04a5e 0%, #aa6594 100%)'
+  sixieme: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+  cinquieme: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)',
+  quatrieme: 'linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%)',
+  troisieme: 'linear-gradient(135deg, #1e3a8a 0%, #312e81 100%)',
+  seconde: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+  premiere: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)',
+  terminale: 'linear-gradient(135deg, #dc2626 0%, #b91c1c 100%)'
 };
 
 // Get subject colors with fallback

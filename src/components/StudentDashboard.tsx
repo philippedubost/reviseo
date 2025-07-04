@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useLessonProgress } from '../hooks/useLessonProgress';
 import { dataService } from '../data/simplified-service';
 
-// Function to generate random animal + adjective combinations
+// Function to generate random animal + adjective combinations (kept for fallback)
 const generateRandomNickname = () => {
   const animals = [
     'Hibou', 'Renard', 'Chat', 'Loup', 'Ours', 'Lapin', 'Écureuil', 
@@ -24,16 +24,62 @@ const generateRandomNickname = () => {
   return `${randomAnimal} ${randomAdjective}`;
 };
 
+// Function to get the most advanced level with actual progress
+const getMostAdvancedLevel = () => {
+  const levels = ['sixieme', 'cinquieme', 'quatrieme', 'troisieme', 'seconde', 'premiere', 'terminale'];
+  const subjects = ['maths', 'francais', 'sciences'];
+  
+  // Check each level starting from the most advanced
+  for (let i = levels.length - 1; i >= 0; i--) {
+    const level = levels[i];
+    
+    // Check if there's any progress in any subject for this level
+    for (const subject of subjects) {
+      const storageKey = `${subject}Progress_${level}`;
+      if (typeof window !== 'undefined') {
+        const savedProgress = localStorage.getItem(storageKey);
+        if (savedProgress) {
+          const progress = JSON.parse(savedProgress);
+          // If there's any meaningful progress (XP > 0 or questions answered)
+          if (progress.totalXP > 0 || progress.totalQuestionsAnswered > 0) {
+            return level;
+          }
+        }
+      }
+    }
+  }
+  
+  // Default to troisieme if no progress found
+  return 'troisieme';
+};
+
+// Function to get level display name
+const getLevelDisplayName = (levelId: string) => {
+  switch (levelId) {
+    case 'sixieme': return '6ème';
+    case 'cinquieme': return '5ème';
+    case 'quatrieme': return '4ème';
+    case 'troisieme': return '3ème';
+    case 'seconde': return '2nde';
+    case 'premiere': return '1ère';
+    case 'terminale': return 'Term.';
+    default: return '3ème';
+  }
+};
+
 export default function StudentDashboard() {
-  const [studentName, setStudentName] = useState(() => generateRandomNickname());
+  const [studentName, setStudentName] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [tempName, setTempName] = useState('');
   const [isFirstVisit, setIsFirstVisit] = useState(true);
 
-  // Get stats from all subjects (using troisieme as default level)
-  const mathsProgress = useLessonProgress('maths', 'troisieme');
-  const francaisProgress = useLessonProgress('francais', 'troisieme');
-  const sciencesProgress = useLessonProgress('sciences', 'troisieme');
+  // Get the most advanced level with actual progress
+  const mostAdvancedLevel = getMostAdvancedLevel();
+  
+  // Get stats from all subjects for the most advanced level
+  const mathsProgress = useLessonProgress('maths', mostAdvancedLevel);
+  const francaisProgress = useLessonProgress('francais', mostAdvancedLevel);
+  const sciencesProgress = useLessonProgress('sciences', mostAdvancedLevel);
 
   // Load student name from localStorage and check if first visit
   useEffect(() => {
@@ -47,11 +93,6 @@ export default function StudentDashboard() {
       
       if (hasVisitedBefore) {
         setIsFirstVisit(false);
-      } else {
-        // Mark as visited after a delay to show welcome content
-        setTimeout(() => {
-          localStorage.setItem('hasVisitedBefore', 'true');
-        }, 3000);
       }
     }
   }, []);
@@ -60,6 +101,7 @@ export default function StudentDashboard() {
   const saveStudentName = (name: string) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('studentName', name);
+      localStorage.setItem('hasVisitedBefore', 'true');
     }
   };
 
@@ -70,17 +112,13 @@ export default function StudentDashboard() {
   };
 
   const handleSave = () => {
-    const finalName = tempName.trim() || generateRandomNickname();
-    setStudentName(finalName);
-    saveStudentName(finalName);
-    setIsEditing(false);
-    // If user is editing name, they're no longer a first-time visitor
-    if (isFirstVisit) {
+    const finalName = tempName.trim();
+    if (finalName) {
+      setStudentName(finalName);
+      saveStudentName(finalName);
       setIsFirstVisit(false);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('hasVisitedBefore', 'true');
-      }
     }
+    setIsEditing(false);
   };
 
   const handleCancel = () => {
@@ -96,14 +134,26 @@ export default function StudentDashboard() {
     }
   };
 
-  // Calculate overall stats
+  // Handle first time name input
+  const handleFirstTimeNameSave = () => {
+    const finalName = tempName.trim();
+    if (finalName) {
+      setStudentName(finalName);
+      saveStudentName(finalName);
+      setIsFirstVisit(false);
+      setTempName('');
+    }
+  };
+
+  // Calculate stats for the most advanced level only
   const totalStreak = Math.max(
     mathsProgress.currentStreak,
     francaisProgress.currentStreak,
     sciencesProgress.currentStreak
   );
 
-  const overallProgress = Math.round(
+  // Calculate mastery for the most advanced level only
+  const levelMastery = Math.round(
     (mathsProgress.globalProgress + francaisProgress.globalProgress + sciencesProgress.globalProgress) / 3
   );
 
@@ -114,9 +164,37 @@ export default function StudentDashboard() {
 
   return (
     <div className="px-4 py-6 mb-4">
-      {/* Editable Student Name */}
+      {/* Student Name Section */}
       <div className="mb-6 text-center">
-        {isEditing ? (
+        {!studentName && isFirstVisit ? (
+          // First time: ask for name
+          <div className="space-y-4">
+            <h2 className="text-xl font-bold text-white">Salut ! 👋</h2>
+            <div className="flex items-center justify-center gap-2">
+              <input
+                type="text"
+                value={tempName}
+                onChange={(e) => setTempName(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handleFirstTimeNameSave();
+                  }
+                }}
+                className="bg-[#232a36] text-white text-lg px-4 py-2 rounded-lg border border-gray-600 focus:border-blue-400 focus:outline-none text-center"
+                placeholder="Comment tu t'appelles ?"
+                autoFocus
+                maxLength={20}
+              />
+              <button
+                onClick={handleFirstTimeNameSave}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        ) : isEditing ? (
+          // Editing existing name
           <div className="flex items-center justify-center gap-2">
             <input
               type="text"
@@ -131,6 +209,7 @@ export default function StudentDashboard() {
             />
           </div>
         ) : (
+          // Display name with edit option
           <div
             onClick={handleEditClick}
             className="inline-flex items-center gap-2 cursor-pointer hover:bg-[#232a36] px-3 py-1 rounded-lg transition-colors group"
@@ -146,21 +225,10 @@ export default function StudentDashboard() {
       </div>
 
       {/* Welcome Content for First Visit or Stats Dashboard */}
-      {isFirstVisit ? (
-        <div className="text-center space-y-4">
-          <div className="bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl p-6 text-white shadow-lg">
-            <div className="text-4xl mb-3">🚀</div>
-            <h3 className="text-lg font-bold mb-2">Bienvenue sur Reviseo !</h3>
-            <p className="text-sm opacity-90">
-              Ton coach personnel pour réviser et progresser
-            </p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-4 text-white shadow-lg">
-            <div className="text-2xl mb-2">📚</div>
-            <p className="text-sm font-medium">
-              C'est parti pour apprendre ! 🌟
-            </p>
+      {isFirstVisit && !studentName ? (
+        <div className="text-center">
+          <div className="text-gray-400 text-sm">
+            <p>Ton coach personnel pour réviser et progresser 📚</p>
           </div>
         </div>
       ) : (
@@ -176,12 +244,12 @@ export default function StudentDashboard() {
               </div>
             </div>
             
-            {/* Overall Progress Card */}
+            {/* Level Mastery Card */}
             <div className="bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform">
               <div className="text-center">
                 <div className="text-2xl mb-2">🎯</div>
-                <div className="text-2xl font-bold">{overallProgress}%</div>
-                <div className="text-xs opacity-90 font-medium">Maîtrise</div>
+                <div className="text-2xl font-bold">{levelMastery}%</div>
+                <div className="text-xs opacity-90 font-medium">Maîtrise {getLevelDisplayName(mostAdvancedLevel)}</div>
               </div>
             </div>
             
@@ -199,9 +267,9 @@ export default function StudentDashboard() {
           <div className="mt-4 text-center">
             <p className="text-gray-400 text-sm">
               {totalStreak > 5 && "Tu es en feu ! 🔥"}
-              {totalStreak <= 5 && overallProgress > 70 && "Excellent travail ! 💪"}
-              {totalStreak <= 5 && overallProgress <= 70 && overallProgress > 30 && "Continue comme ça ! 🌟"}
-              {totalStreak <= 5 && overallProgress <= 30 && "C'est parti pour apprendre ! 🚀"}
+              {totalStreak <= 5 && levelMastery > 70 && "Excellent travail ! 💪"}
+              {totalStreak <= 5 && levelMastery <= 70 && levelMastery > 30 && "Continue comme ça ! 🌟"}
+              {totalStreak <= 5 && levelMastery <= 30 && "C'est parti pour apprendre ! 🚀"}
             </p>
           </div>
         </>

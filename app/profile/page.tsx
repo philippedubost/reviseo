@@ -91,14 +91,14 @@ export default function ProfilePage() {
     try {
       // Create CSV content
       const csvHeaders = ['Question ID', 'Matière', 'Leçon', 'Question', 'Raison', 'Date'];
-      const csvRows = flaggedQuestions.map(flag => [
-        flag.questionId,
-        flag.subjectId,
-        flag.lessonId,
-        `"${flag.questionText.replace(/"/g, '""')}"`, // Escape quotes in CSV
-        `"${flag.reason.replace(/"/g, '""')}"`,
-        new Date(flag.flaggedAt).toLocaleDateString('fr-FR')
-      ]);
+             const csvRows = flaggedQuestions.map(flag => [
+         flag.questionId,
+         flag.subjectId,
+         flag.lessonId,
+         `"${flag.questionText.replace(/"/g, '""')}"`, // Escape quotes in CSV
+         `"${flag.reason.replace(/"/g, '""')}"`,
+         new Date(flag.timestamp).toLocaleDateString('fr-FR')
+       ]);
       
       const csvContent = [csvHeaders, ...csvRows]
         .map(row => row.join(','))
@@ -240,9 +240,9 @@ export default function ProfilePage() {
                         </div>
                         <p className="text-white mb-2">{flag.questionText}</p>
                         <p className="text-yellow-400 text-sm">Raison: {flag.reason}</p>
-                        <p className="text-gray-500 text-xs mt-1">
-                          Signalée le {new Date(flag.flaggedAt).toLocaleDateString('fr-FR')}
-                        </p>
+                                                 <p className="text-gray-500 text-xs mt-1">
+                           Signalée le {new Date(flag.timestamp).toLocaleDateString('fr-FR')}
+                         </p>
                       </div>
                       <button
                         onClick={() => handleUnflag(flag)}

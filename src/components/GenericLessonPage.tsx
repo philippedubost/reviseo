@@ -223,14 +223,7 @@ export default function GenericLessonPage({
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <ProgressBar 
-        progress={progress}
-        score={currentSessionScore}
-        showScore={false}
-      />
-
-      {/* Stats Badges */}
+      {/* Stats Badges with integrated progress bar */}
       <StatsBadges 
         xp={totalXP}
         currentStreak={currentStreak}

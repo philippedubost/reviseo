@@ -109,8 +109,9 @@ export default function StatsBadges({
   };
 
   return (
-    <div className="mx-2 mb-2 relative">
-      <div className="flex justify-between mb-2">
+    <div className="mx-2 mb-2 flex justify-between items-center">
+      {/* Left side: XP and Streak badges */}
+      <div className="flex gap-2">
         {/* XP Badge */}
         <div className={`flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2 relative transition-all duration-300 ${
           xpAnimation ? 'bg-yellow-500 scale-110 shadow-lg shadow-yellow-500/50 animate-badgeFlash' : ''
@@ -152,16 +153,22 @@ export default function StatsBadges({
             ))}
           </div>
         )}
-        
-        {/* Progress Badge */}
-        <div className="flex items-center gap-2 bg-[#232a36] rounded-lg px-3 py-2">
-          <span className="text-lg">📊</span>
-          <div className="text-white text-sm font-semibold">{getProgressDisplay()}</div>
-        </div>
       </div>
       
-      {/* Separator line */}
-      <div className="h-px bg-gray-600"></div>
+      {/* Right side: Progress bar with count */}
+      <div className="flex items-center gap-2 flex-1 max-w-xs">
+        <div className="relative flex-1">
+          <div className="progress-bar">
+            <div 
+              className="progress-bar-inner" 
+              style={{ width: `${getProgressPercentage()}%` }}
+            />
+          </div>
+        </div>
+        <div className="text-white text-sm font-semibold bg-[#232a36] rounded-lg px-2 py-1 min-w-[3rem] text-center">
+          {getProgressDisplay()}
+        </div>
+      </div>
     </div>
   );
 } 

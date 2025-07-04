@@ -138,7 +138,7 @@ export default function LessonPage() {
         backHref={`/${levelId}/${subjectId}`}
       />
 
-      {/* Stats Badges */}
+      {/* Stats Badges with integrated progress bar */}
       <div className="px-4 mt-4">
         <StatsBadges
           xp={totalXP}
@@ -151,9 +151,6 @@ export default function LessonPage() {
           isSkipped={isSkipped}
         />
       </div>
-
-      {/* Progress Bar */}
-      <ProgressBar progress={progress} />
 
       {/* Main Content */}
       <div className="flex-1 px-4 pb-24">

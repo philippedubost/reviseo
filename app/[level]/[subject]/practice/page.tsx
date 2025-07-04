@@ -129,7 +129,7 @@ export default function PracticePage() {
         </div>
       </div>
 
-      {/* Stats Badges */}
+      {/* Stats Badges with integrated progress bar */}
       <StatsBadges
         xp={totalXP}
         currentStreak={currentStreak}
@@ -140,9 +140,6 @@ export default function PracticePage() {
         showAnswerFeedback={showAnswerFeedback}
         isSkipped={isSkipped}
       />
-
-      {/* Progress Bar */}
-      <ProgressBar progress={progress} />
 
       {/* Main Content */}
       <div className="flex-1 px-4 pb-24">

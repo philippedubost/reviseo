@@ -176,14 +176,7 @@ export default function GenericPracticePage({
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <ProgressBar 
-        progress={progress}
-        score={survivalScore}
-        showScore={false}
-      />
-
-      {/* Stats Badges */}
+      {/* Stats Badges with integrated progress bar */}
       <StatsBadges 
         xp={totalXP}
         currentStreak={currentStreak}

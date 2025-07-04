@@ -196,19 +196,17 @@ export default function QuestionDisplay({
       transition={{ duration: 0.6, ease: [0.4, 0.0, 0.2, 1] }}
     >
       <div className="text-center max-w-2xl w-full">
-        {/* Difficulty Label */}
-        <DifficultyLabel difficulty={difficulty} />
-        
         {(type === 'calculation' || type === 'input') ? (
           <>
             <motion.div 
-              className="text-lg font-bold mb-3"
+              className="text-lg font-bold mb-3 flex items-center justify-center gap-3"
               style={{ color: 'var(--mascot-color)' }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {renderMathText(question)}
+              <div>{renderMathText(question)}</div>
+              <DifficultyLabel difficulty={difficulty} />
             </motion.div>
             {latex && (
               <motion.div 
@@ -384,13 +382,14 @@ export default function QuestionDisplay({
         ) : (
           <>
             <motion.div 
-              className="text-lg font-bold mb-3"
+              className="text-lg font-bold mb-3 flex items-center justify-center gap-3"
               style={{ color: 'var(--mascot-color)' }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {renderMathText(question)}
+              <div>{renderMathText(question)}</div>
+              <DifficultyLabel difficulty={difficulty} />
             </motion.div>
             {latex && (
               <motion.div 

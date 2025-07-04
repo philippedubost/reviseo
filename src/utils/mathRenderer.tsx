@@ -27,22 +27,27 @@ export function renderMathText(text: string) {
     // Handle parentheses in expressions
     .replace(/\(([^)]+)\)/g, '($1)');
 
-  // Check if the text contains mathematical notation that should be rendered with LaTeX
+  // More conservative check for mathematical notation that truly needs LaTeX
   const hasMath = /[\\^_{}\cdot\times\frac\vec]/.test(processedText) || 
-                  /\b[a-z][xyz]\b/.test(text) || // vector components like ax, by, cz
-                  /\b[a-z]\s*\.\s*[a-z]\b/.test(text) || // dot products like a.b
                   /\d+\/\d+/.test(text) || // fractions
-                  /\^/.test(text); // exponents
+                  /\^\d+/.test(text) || // clear exponents
+                  /\b[a-z]\s*\.\s*[a-z]\b/.test(text) || // dot products like a.b
+                  /\b[a-z][xyz]\b/.test(text); // vector components like ax, by, cz
 
   if (hasMath) {
     try {
-      return <InlineMath math={processedText} />;
+      return (
+        <span className="font-normal">
+          <InlineMath math={processedText} />
+        </span>
+      );
     } catch (error) {
       // Fallback to original text if LaTeX parsing fails
       console.warn('LaTeX parsing error:', error);
-      return text;
+      return <span className="font-normal">{text}</span>;
     }
   }
 
-  return text;
+  // Return text with standard font for non-math content
+  return <span className="font-normal">{text}</span>;
 }

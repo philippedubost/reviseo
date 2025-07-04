@@ -127,15 +127,15 @@ def generate_sixieme():
         maths_lessons.append(create_lesson(i, lesson_titles[i-3], f"Description de {lesson_titles[i-3]}", lesson_icons[i-3], "easy", questions))
     
     # Créer la matière mathématiques complète
-    maths_subject = create_subject("maths", "Mathématiques", "🔢", "Nombres décimaux, géométrie, proportionnalité", "from-[#00baff] to-[#2ecc71]", maths_lessons)
+    maths_subject = create_subject("maths", "Mathématiques", "🔢", "Nombres décimaux, géométrie, proportionnalité", "from-[#06b6d4] to-[#0891b2]", maths_lessons)
     
     # Créer les autres matières (structure simplifiée pour l'exemple)
     other_subjects = []
     subjects_data = [
-        ("francais", "Français", "📝", "Grammaire, orthographe, littérature", "from-[#e74c3c] to-[#f39c12]"),
-        ("histoire-geo", "Histoire-Géographie", "🌍", "Antiquité, géographie de la France", "from-[#d35400] to-[#e67e22]"),
-        ("svt", "Sciences et Vie de la Terre", "🌱", "Environnement, êtres vivants", "from-[#27ae60] to-[#2ecc71]"),
-        ("anglais", "Anglais", "🇬🇧", "Bases de la langue anglaise", "from-[#2980b9] to-[#3498db]")
+        ("francais", "Français", "📝", "Grammaire, orthographe, littérature", "from-[#ec4899] to-[#db2777]"),
+        ("histoire-geo", "Histoire-Géographie", "🌍", "Antiquité, géographie de la France", "from-[#10b981] to-[#059669]"),
+        ("svt", "Sciences et Vie de la Terre", "🌱", "Environnement, êtres vivants", "from-[#22c55e] to-[#16a34a]"),
+        ("anglais", "Anglais", "🇬🇧", "Bases de la langue anglaise", "from-[#0891b2] to-[#0e7490]")
     ]
     
     for subject_id, name, icon, description, color in subjects_data:

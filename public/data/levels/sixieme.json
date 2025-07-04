@@ -7,7 +7,7 @@
       "name": "Mathématiques",
       "icon": "🔢",
       "description": "Nombres décimaux, géométrie, proportionnalité",
-      "color": "from-[#00baff] to-[#2ecc71]",
+      "color": "from-[#06b6d4] to-[#0891b2]",
       "lessons": [
         {
           "id": 1,
@@ -856,7 +856,7 @@
       "name": "Français",
       "icon": "📝",
       "description": "Grammaire, orthographe, littérature",
-      "color": "from-[#e74c3c] to-[#f39c12]",
+      "color": "from-[#ec4899] to-[#db2777]",
       "lessons": [
         {
           "id": 1,
@@ -1705,7 +1705,7 @@
       "name": "Histoire-Géographie",
       "icon": "🌍",
       "description": "Antiquité, géographie de la France",
-      "color": "from-[#d35400] to-[#e67e22]",
+      "color": "from-[#10b981] to-[#059669]",
       "lessons": [
         {
           "id": 1,
@@ -2554,7 +2554,7 @@
       "name": "Sciences et Vie de la Terre",
       "icon": "🌱",
       "description": "Environnement, êtres vivants",
-      "color": "from-[#27ae60] to-[#2ecc71]",
+      "color": "from-[#22c55e] to-[#16a34a]",
       "lessons": [
         {
           "id": 1,
@@ -3403,7 +3403,7 @@
       "name": "Anglais",
       "icon": "🇬🇧",
       "description": "Bases de la langue anglaise",
-      "color": "from-[#2980b9] to-[#3498db]",
+      "color": "from-[#0891b2] to-[#0e7490]",
       "lessons": [
         {
           "id": 1,

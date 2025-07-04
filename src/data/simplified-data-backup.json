@@ -9,7 +9,7 @@
           "name": "Mathématiques",
           "icon": "🔢",
           "description": "Algèbre, géométrie, statistiques",
-          "color": "from-[#00baff] to-[#2ecc71]",
+          "color": "from-[#06b6d4] to-[#0891b2]",
           "lessons": [
             {
               "id": 1,
@@ -359,7 +359,7 @@
           "name": "Français",
           "icon": "📝",
           "description": "Grammaire, littérature, expression",
-          "color": "from-[#e74c3c] to-[#f39c12]",
+          "color": "from-[#ec4899] to-[#db2777]",
           "lessons": [
             {
               "id": 1,
@@ -793,7 +793,7 @@
           "name": "Histoire-Géographie",
           "icon": "🌍",
           "description": "Histoire de France et géographie mondiale",
-          "color": "from-[#1e3a8a] to-[#3b82f6]",
+          "color": "from-[#06b6d4] to-[#0284c7]",
           "lessons": [
             {
               "id": 1,
@@ -960,7 +960,7 @@
           "name": "Mathématiques",
           "icon": "🔢",
           "description": "Analyse, géométrie, probabilités",
-          "color": "from-[#8e44ad] to-[#9b59b6]",
+          "color": "from-[#f472b6] to-[#ec4899]",
           "lessons": [
             {
               "id": 1,

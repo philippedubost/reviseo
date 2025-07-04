@@ -210,23 +210,11 @@ export default function GenericPracticePage({
               onAnswerChange={setSelectedAnswer}
               onAnswerSelect={handleAnswerSelect}
               onSubmit={handleSubmit}
-            />
-
-            {currentQuestion.type === 'multiple-choice' && currentQuestion.options && (
-              <AnswerOptions
-                options={currentQuestion.options}
-                selectedAnswer={selectedAnswer}
-                showResult={showResult}
-                correctAnswer={currentQuestion.correctAnswer}
-                onAnswerSelect={handleAnswerSelect}
-              />
-            )}
-
-            <ActionButton
-              showResult={showResult}
+              options={currentQuestion.options}
+              correctAnswer={currentQuestion.correctAnswer}
+              difficulty={currentQuestion.difficulty}
+              // Action button props for calculation and input types
               showOverlay={showOverlay}
-              questionType={currentQuestion.type}
-              selectedAnswer={selectedAnswer}
               isCorrect={isCorrect}
               countdown={countdown}
               isLastQuestion={isLastQuestion}
@@ -236,6 +224,24 @@ export default function GenericPracticePage({
               onNext={handleNext}
               onSkip={handleSkipFromHook}
             />
+
+            {/* Action button only for multiple-choice questions */}
+            {currentQuestion.type === 'multiple-choice' && (
+              <ActionButton
+                showResult={showResult}
+                showOverlay={showOverlay}
+                questionType={currentQuestion.type}
+                selectedAnswer={selectedAnswer}
+                isCorrect={isCorrect}
+                countdown={countdown}
+                isLastQuestion={isLastQuestion}
+                isPaused={isPaused}
+                isLoading={isLoading}
+                onVerify={handleSubmit}
+                onNext={handleNext}
+                onSkip={handleSkipFromHook}
+              />
+            )}
           </>
         )}
 

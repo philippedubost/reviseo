@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import 'katex/dist/katex.min.css';
 // @ts-ignore
@@ -21,6 +21,16 @@ interface QuestionDisplayProps {
   correctAnswer?: string;
   // Difficulty prop
   difficulty?: number;
+  // Action button props for calculation and input types
+  showOverlay?: boolean;
+  isCorrect?: boolean;
+  countdown?: number | null;
+  isLastQuestion?: boolean;
+  isPaused?: boolean;
+  isLoading?: boolean;
+  onVerify?: () => void;
+  onNext?: () => void;
+  onSkip?: () => void;
 }
 
 // Composant pour afficher le label de difficulté
@@ -96,7 +106,17 @@ export default function QuestionDisplay({
   onSubmit,
   options = [],
   correctAnswer = '',
-  difficulty = 1
+  difficulty = 1,
+  // Action button props
+  showOverlay = false,
+  isCorrect = false,
+  countdown = null,
+  isLastQuestion = false,
+  isPaused = false,
+  isLoading = false,
+  onVerify,
+  onNext,
+  onSkip
 }: QuestionDisplayProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -112,7 +132,33 @@ export default function QuestionDisplay({
     }
   }, [type, showResult]);
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  // Handle Enter key for input/calculation questions
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        
+        if (showOverlay && onNext) {
+          // If overlay is showing, trigger Suivant
+          onNext();
+        } else if (!showResult) {
+          // If not showing result, trigger Vérifier for input/calculation
+          if ((type === 'calculation' || type === 'input') && onVerify) {
+            if (selectedAnswer.trim()) {
+              onVerify();
+            }
+          }
+        }
+      }
+    };
+
+    if (type === 'calculation' || type === 'input') {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [showOverlay, showResult, type, selectedAnswer, onVerify, onNext]);
+
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showResult && e.key === 'Enter' && selectedAnswer.trim()) {
       if ((type === 'calculation' || type === 'input') && onSubmit) {
         onSubmit();
@@ -203,17 +249,17 @@ export default function QuestionDisplay({
               <motion.input
                 ref={inputRef}
                 type="text"
-                inputMode={keyboardType}
-                pattern={shouldShowNumericPattern ? "[0-9,.]*" : undefined}
+                inputMode={getKeyboardType()}
+                pattern={getKeyboardType() === 'decimal' ? "[0-9,.]*" : undefined}
                 autoComplete="off"
                 autoCorrect="off"
                 autoCapitalize="off"
                 spellCheck="false"
-                className="input text-center text-lg font-bold w-full max-w-md"
+                className="input text-center text-lg font-bold w-full max-w-md mb-4"
                 placeholder="Votre réponse"
                 value={selectedAnswer}
                 onChange={e => !showResult && onAnswerChange(e.target.value)}
-                onKeyDown={handleKeyDown}
+                onKeyDown={handleInputKeyDown}
                 disabled={showResult}
                 whileFocus={{ 
                   scale: 1.02,
@@ -222,6 +268,116 @@ export default function QuestionDisplay({
                 transition={{ duration: 0.2 }}
               />
 
+              {/* Action buttons directly below input for calculation and input types */}
+              {!showResult && (
+                <motion.div 
+                  className="flex flex-col gap-2 w-full max-w-md"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.7 }}
+                >
+                  <div className="flex flex-row gap-2 w-full">
+                    {/* Skip button */}
+                    {onSkip && (
+                      <motion.button
+                        className="btn bg-[#6c757d] text-white text-sm hover:bg-[#5a6268] transition-colors border border-[#495057] flex-1 relative overflow-hidden"
+                        onClick={onSkip}
+                        style={{ minWidth: 0 }}
+                        whileHover={{ 
+                          scale: 1.02,
+                          transition: { duration: 0.2 }
+                        }}
+                        whileTap={{ 
+                          scale: 0.98,
+                          transition: { duration: 0.1 }
+                        }}
+                        disabled={isLoading}
+                      >
+                        {/* Ripple effect */}
+                        <motion.div
+                          className="absolute inset-0 bg-white opacity-0"
+                          whileHover={{ opacity: 0.1 }}
+                          transition={{ duration: 0.2 }}
+                        />
+                        
+                        {/* Animated emoji */}
+                        <motion.span
+                          animate={{ 
+                            rotate: [0, -10, 10, 0],
+                            scale: [1, 1.1, 1]
+                          }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            repeatType: "reverse"
+                          }}
+                        >
+                          ⏭️
+                        </motion.span>
+                        <span className="ml-1">Passer</span>
+                      </motion.button>
+                    )}
+                    
+                    {/* Verify button - visible when answer is entered */}
+                    {selectedAnswer && onVerify && (
+                      <motion.button
+                        className="btn bg-[#2ecc71] text-white text-lg font-bold hover:bg-[#27ae60] transition-colors flex-1 relative overflow-hidden"
+                        onClick={onVerify}
+                        disabled={isLoading}
+                        whileHover={{ 
+                          scale: isLoading ? 1 : 1.02,
+                          transition: { duration: 0.2 }
+                        }}
+                        whileTap={{ 
+                          scale: isLoading ? 1 : 0.98,
+                          transition: { duration: 0.1 }
+                        }}
+                      >
+                        {/* Ripple effect */}
+                        <motion.div
+                          className="absolute inset-0 bg-white opacity-0"
+                          whileHover={{ opacity: isLoading ? 0 : 0.1 }}
+                          transition={{ duration: 0.2 }}
+                        />
+                        
+                        {/* Loading spinner ou texte */}
+                        <div className="flex items-center justify-center gap-2 relative z-10">
+                          {isLoading ? (
+                            <>
+                              <motion.div
+                                className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
+                                animate={{ rotate: 360 }}
+                                transition={{
+                                  duration: 1,
+                                  repeat: Infinity,
+                                  ease: "linear"
+                                }}
+                              />
+                              <span>Vérification...</span>
+                            </>
+                          ) : (
+                            <>
+                              <motion.span
+                                animate={{ 
+                                  scale: [1, 1.2, 1]
+                                }}
+                                transition={{
+                                  duration: 1.5,
+                                  repeat: Infinity,
+                                  repeatType: "reverse"
+                                }}
+                              >
+                                ✓
+                              </motion.span>
+                              <span>Valider</span>
+                            </>
+                          )}
+                        </div>
+                      </motion.button>
+                    )}
+                  </div>
+                </motion.div>
+              )}
             </motion.div>
           </>
         ) : (

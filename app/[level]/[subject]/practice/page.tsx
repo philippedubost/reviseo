@@ -154,6 +154,20 @@ export default function PracticePage() {
             showResult={showResult}
             onAnswerChange={setSelectedAnswer}
             onAnswerSelect={handleAnswerSelect}
+            onSubmit={handleSubmit}
+            options={currentQuestion.options}
+            correctAnswer={currentQuestion.correctAnswer}
+            difficulty={currentQuestion.difficulty}
+            // Action button props for calculation and input types
+            showOverlay={showOverlay}
+            isCorrect={isCorrect}
+            countdown={countdown}
+            isLastQuestion={isLastQuestion}
+            isPaused={isPaused}
+            isLoading={isLoading}
+            onVerify={handleSubmit}
+            onNext={handleNext}
+            onSkip={handleSkip}
           />
         )}
       </div>
@@ -177,23 +191,25 @@ export default function PracticePage() {
         questionType={currentQuestion?.type}
       />
 
-      {/* Action Button */}
-      <div className="fixed bottom-4 left-0 right-0 flex justify-center px-4">
-        <ActionButton
-          showResult={showResult}
-          showOverlay={showOverlay}
-          questionType={currentQuestion?.type || 'multiple-choice'}
-          selectedAnswer={selectedAnswer}
-          isCorrect={isCorrect}
-          countdown={countdown}
-          isLastQuestion={isLastQuestion}
-          isPaused={isPaused}
-          isLoading={isLoading}
-          onVerify={handleSubmit}
-          onNext={handleNext}
-          onSkip={handleSkip}
-        />
-      </div>
+      {/* Action Button - only for multiple-choice questions */}
+      {currentQuestion?.type === 'multiple-choice' && (
+        <div className="fixed bottom-4 left-0 right-0 flex justify-center px-4">
+          <ActionButton
+            showResult={showResult}
+            showOverlay={showOverlay}
+            questionType={currentQuestion.type}
+            selectedAnswer={selectedAnswer}
+            isCorrect={isCorrect}
+            countdown={countdown}
+            isLastQuestion={isLastQuestion}
+            isPaused={isPaused}
+            isLoading={isLoading}
+            onVerify={handleSubmit}
+            onNext={handleNext}
+            onSkip={handleSkip}
+          />
+        </div>
+      )}
     </div>
   );
 } 

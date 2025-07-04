@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FlagButton from './FlagButton';
+import { renderMathText } from '../utils/mathRenderer';
 
 interface ResponseOverlayProps {
   show: boolean;
@@ -9,6 +10,7 @@ interface ResponseOverlayProps {
   isCorrect: boolean;
   isSkipped?: boolean;
   explanation: string;
+  correctAnswer?: string;
   countdown: number | null;
   emoji: string;
   isPaused: boolean;
@@ -29,6 +31,7 @@ export default function ResponseOverlay({
   isCorrect,
   isSkipped = false,
   explanation,
+  correctAnswer,
   countdown,
   emoji,
   isPaused,
@@ -119,7 +122,27 @@ export default function ResponseOverlay({
           {isSkipped ? (
             <div>
               <div className="mb-3">Vous avez passé cette question. Aucun point n'a été modifié.</div>
+              {correctAnswer && (
+                <div className="bg-white/10 border border-white/20 rounded-lg p-3 mb-3">
+                  <div className="text-white/90 font-semibold mb-1">Bonne réponse :</div>
+                  <div className="text-white text-base font-medium">
+                    {renderMathText(correctAnswer)}
+                  </div>
+                </div>
+              )}
               <div className="border-t border-white/20 pt-3">{explanation}</div>
+            </div>
+          ) : !isCorrect ? (
+            <div>
+              {correctAnswer && (
+                <div className="bg-white/10 border border-white/20 rounded-lg p-3 mb-3">
+                  <div className="text-white/90 font-semibold mb-1">Bonne réponse :</div>
+                  <div className="text-white text-base font-medium">
+                    {renderMathText(correctAnswer)}
+                  </div>
+                </div>
+              )}
+              {explanation}
             </div>
           ) : (
             explanation

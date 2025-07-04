@@ -175,6 +175,7 @@ export default function PracticePage() {
         isCorrect={isCorrect}
         isSkipped={isSkipped}
         explanation={currentQuestion?.explanation || ''}
+        correctAnswer={currentQuestion?.correctAnswer}
         emoji={currentEmoji}
         countdown={countdown}
         isExiting={isExiting}

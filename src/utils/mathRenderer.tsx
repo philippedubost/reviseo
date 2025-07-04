@@ -20,6 +20,10 @@ export function renderMathText(text: string) {
     /(?:∫|int)\s*(?:_{[^}]*})?\s*(?:\^{[^}]*})?\s*[a-zA-Z0-9()/\s\-+*=<>dx]+/gi,
     // Dérivées: d/dx, ∂/∂x, f'(x), etc.
     /(?:d\/d[a-zA-Z]|∂\/∂[a-zA-Z]|[a-zA-Z]'+\([^)]*\))/g,
+    // Fonctions mathématiques définies: f(x) = expression, g(t) = expression, etc.
+    /\b[a-zA-Z]+\s*\([^)]*\)\s*=\s*[a-zA-Z0-9()\s\-+*/\^]+/g,
+    // Polynômes avec variables: 3x + 5y + 1, 2x² - 3x + 1, etc.
+    /\b(?:\d*[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)*|[a-zA-Z](?:\^\d+)?(?:\s*[+\-]\s*\d*[a-zA-Z](?:\^\d+)?)+)(?:\s*[+\-]\s*\d+)?\b/g,
     // Racines complexes: √(...), sqrt(...) avec expressions
     /(?:√|sqrt)\s*\([^)]*[a-zA-Z+\-*/][^)]*\)/g,
     // Fractions complexes avec variables: (a+b)/(c+d), sin(x)/cos(x), etc.

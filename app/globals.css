@@ -327,3 +327,300 @@ input, .input {
   width: auto !important;
   box-shadow: none !important;
 }
+
+/* Math Rendering Styles */
+.math-renderer {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.math-content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inline-math {
+  display: inline;
+  vertical-align: middle;
+  margin: 0 0.1em;
+}
+
+.display-math {
+  display: block;
+  text-align: center;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* KaTeX Dark Theme Overrides */
+.katex {
+  color: var(--foreground) !important;
+  font-size: 1.1em !important;
+}
+
+.katex-display {
+  color: var(--foreground) !important;
+  margin: 0.5em 0 !important;
+}
+
+.katex .base {
+  color: var(--foreground) !important;
+}
+
+.katex .mord {
+  color: var(--foreground) !important;
+}
+
+.katex .mbin {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mrel {
+  color: var(--accent-green) !important;
+}
+
+.katex .mop {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mopen, .katex .mclose {
+  color: var(--accent-green) !important;
+}
+
+.katex .mpunct {
+  color: var(--foreground) !important;
+}
+
+.katex .mfrac {
+  color: var(--foreground) !important;
+}
+
+.katex .sqrt {
+  color: var(--accent-blue) !important;
+}
+
+.katex .sqrt > .root {
+  color: var(--accent-green) !important;
+}
+
+.katex .sizing {
+  color: var(--foreground) !important;
+}
+
+.katex .msupsub {
+  color: var(--foreground) !important;
+}
+
+.katex .msubsup {
+  color: var(--foreground) !important;
+}
+
+.katex .delimsizing {
+  color: var(--accent-blue) !important;
+}
+
+.katex .accent {
+  color: var(--accent-green) !important;
+}
+
+.katex .overline {
+  color: var(--accent-blue) !important;
+}
+
+.katex .underline {
+  color: var(--accent-blue) !important;
+}
+
+/* Greek letters and symbols */
+.katex .mathdefault {
+  color: var(--foreground) !important;
+}
+
+.katex .mathit {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mathrm {
+  color: var(--foreground) !important;
+}
+
+.katex .mathbf {
+  color: var(--foreground) !important;
+  font-weight: bold !important;
+}
+
+.katex .mathbb {
+  color: var(--accent-green) !important;
+}
+
+.katex .mathcal {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mathfrak {
+  color: var(--accent-green) !important;
+}
+
+.katex .mathscr {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mathsf {
+  color: var(--foreground) !important;
+}
+
+.katex .mathtt {
+  color: var(--foreground) !important;
+  font-family: monospace !important;
+}
+
+/* Special symbols and operators */
+.katex .mord.mtight {
+  color: var(--foreground) !important;
+}
+
+.katex .mbin.mtight {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mrel.mtight {
+  color: var(--accent-green) !important;
+}
+
+.katex .mop.mtight {
+  color: var(--accent-blue) !important;
+}
+
+/* Limits and integrals */
+.katex .mop.op-limits {
+  color: var(--accent-blue) !important;
+}
+
+.katex .mop.op-symbol {
+  color: var(--accent-blue) !important;
+}
+
+/* Fraction lines */
+.katex .frac-line {
+  border-bottom-color: var(--foreground) !important;
+}
+
+.katex .frac-line::after {
+  border-bottom-color: var(--foreground) !important;
+}
+
+/* Square root vinculum */
+.katex .sqrt-line {
+  border-top-color: var(--accent-blue) !important;
+}
+
+/* Delimiters */
+.katex .delimsizing.size1,
+.katex .delimsizing.size2,
+.katex .delimsizing.size3,
+.katex .delimsizing.size4 {
+  color: var(--accent-green) !important;
+}
+
+/* Matrix and array environments */
+.katex .arraycolsep {
+  color: var(--foreground) !important;
+}
+
+.katex .mtable {
+  color: var(--foreground) !important;
+}
+
+.katex .mtd {
+  color: var(--foreground) !important;
+}
+
+.katex .mtr {
+  color: var(--foreground) !important;
+}
+
+/* Spacing and alignment */
+.katex .mspace {
+  color: var(--foreground) !important;
+}
+
+.katex .mpadded {
+  color: var(--foreground) !important;
+}
+
+/* Error styling for invalid LaTeX */
+.katex-error {
+  color: var(--destructive) !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+  border: 1px solid var(--destructive) !important;
+  border-radius: var(--radius) !important;
+  padding: 0.2em 0.4em !important;
+  font-family: monospace !important;
+}
+
+/* Responsive adjustments for math */
+@media (max-width: 600px) {
+  .katex {
+    font-size: 1em !important;
+  }
+  
+  .display-math {
+    margin: 0.3em 0;
+    padding: 0.3em;
+  }
+  
+  .katex-display {
+    margin: 0.3em 0 !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .katex {
+    font-size: 1.2em !important;
+  }
+  
+  .display-math {
+    margin: 0.7em 0;
+    padding: 0.7em;
+  }
+  
+  .katex-display {
+    margin: 0.7em 0 !important;
+  }
+}
+
+/* Animation for math content */
+.math-content {
+  animation: mathFadeIn 0.3s ease-out;
+}
+
+@keyframes mathFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects for interactive math */
+.answer-option .math-content {
+  transition: transform 0.2s ease;
+}
+
+.answer-option:hover .math-content {
+  transform: scale(1.05);
+}
+
+/* Focus styles for math in inputs */
+input:focus + .math-content,
+.input:focus + .math-content {
+  color: var(--accent-blue) !important;
+  filter: brightness(1.2);
+}

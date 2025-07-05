@@ -2,9 +2,6 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import 'katex/dist/katex.min.css';
-// @ts-ignore
-import { BlockMath } from 'react-katex';
 import AnswerOptions from './AnswerOptions';
 import { renderMathText } from '../utils/mathRenderer';
 
@@ -219,8 +216,9 @@ export default function QuestionDisplay({
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
+                  className="text-lg font-mono bg-gray-100 p-2 rounded"
                 >
-                  <BlockMath math={latex} />
+                  {latex}
                 </motion.div>
                 <motion.span 
                   className="text-2xl font-bold"
@@ -406,8 +404,9 @@ export default function QuestionDisplay({
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
+                  className="text-lg font-mono bg-gray-100 p-2 rounded"
                 >
-                  <BlockMath math={latex} />
+                  {latex}
                 </motion.div>
               </motion.div>
             )}

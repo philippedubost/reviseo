@@ -99,9 +99,9 @@ export default function Home() {
       <StudentDashboard />
 
       {/* Level Selection Header */}
-      <div className="px-4 py-4">
+      <div className="px-4 py-3">
         <h1 
-          className={`text-xl font-bold text-white text-center transition-all duration-700 ease-out ${
+          className={`text-lg font-bold text-white text-center transition-all duration-700 ease-out ${
             visibleElements.title 
               ? 'opacity-100 transform translate-y-0' 
               : 'opacity-0 transform translate-y-4'
@@ -113,7 +113,7 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="flex-1 px-2 pb-16">
-        <div className="w-full flex flex-col gap-1">
+        <div className="w-full flex flex-col gap-0.5">
           {/* Available levels in order */}
           {levelOrder
             .map(levelId => levels.find(level => level.id === levelId))
@@ -121,7 +121,7 @@ export default function Home() {
             .map((level, index) => (
             <button
               key={level!.id}
-              className={`card flex items-center justify-between p-4 w-full cursor-pointer transition-all duration-700 ease-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-2xl text-white border border-white/20 shadow-lg ${
+              className={`card flex items-center justify-between p-3 w-full cursor-pointer transition-all duration-700 ease-out hover:scale-[1.03] hover:shadow-2xl relative overflow-hidden rounded-xl text-white border border-white/20 shadow-lg ${
                 visibleElements.levels[index]
                   ? 'opacity-100 transform translate-x-0' 
                   : 'opacity-0 transform -translate-x-full'
@@ -129,18 +129,18 @@ export default function Home() {
               style={{ background: getLevelGradient(level!.id) }}
               onClick={() => router.push(`/${level!.id}`)}
             >
-              <div className="flex items-center gap-4">
-                <div className="text-3xl drop-shadow-lg">
+              <div className="flex items-center gap-3">
+                <div className="text-2xl drop-shadow-lg">
                   {getLevelEmoji(level!.id)}
                 </div>
                 <div>
-                  <div className="text-lg font-bold drop-shadow-md">{level!.name}</div>
-                  <div className="text-white/90 text-sm font-medium">
+                  <div className="text-base font-bold drop-shadow-md leading-tight">{level!.name}</div>
+                  <div className="text-white/90 text-xs font-medium leading-tight">
                     {getLevelDescription(level!.id)}
                   </div>
                 </div>
               </div>
-              <div className="text-2xl drop-shadow-lg">→</div>
+              <div className="text-xl drop-shadow-lg">→</div>
             </button>
           ))}
 
@@ -148,16 +148,16 @@ export default function Home() {
           {upcomingLevels.map((level) => (
             <div
               key={level.id}
-              className="card flex items-center justify-between p-4 w-full relative overflow-hidden rounded-2xl text-gray-400 border border-gray-600 bg-gray-800 opacity-60 cursor-not-allowed"
+              className="card flex items-center justify-between p-3 w-full relative overflow-hidden rounded-xl text-gray-400 border border-gray-600 bg-gray-800 opacity-60 cursor-not-allowed"
             >
-              <div className="flex items-center gap-4">
-                <div className="text-3xl">{level.emoji}</div>
+              <div className="flex items-center gap-3">
+                <div className="text-2xl">{level.emoji}</div>
                 <div>
-                  <div className="text-lg font-bold">{level.name}</div>
-                  <div className="text-gray-500 text-sm">{level.description}</div>
+                  <div className="text-base font-bold leading-tight">{level.name}</div>
+                  <div className="text-gray-500 text-xs leading-tight">{level.description}</div>
                 </div>
               </div>
-              <div className="text-2xl text-gray-500">🔒</div>
+              <div className="text-xl text-gray-500">🔒</div>
             </div>
           ))}
         </div>

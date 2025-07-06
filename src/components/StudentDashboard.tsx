@@ -163,9 +163,9 @@ export default function StudentDashboard() {
   const weeklyXP = Math.min(totalXP, 150 + Math.floor(totalXP * 0.3));
 
   return (
-    <div className="px-4 py-6 mb-4">
+    <div className="px-4 py-4 mb-2">
       {/* Student Name Section */}
-      <div className="mb-6 text-center">
+      <div className="mb-4 text-center">
         {!studentName && isFirstVisit ? (
           // First time: ask for name
           <div className="space-y-4">
@@ -234,37 +234,37 @@ export default function StudentDashboard() {
       ) : (
         <>
           {/* Stats Dashboard */}
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-2">
             {/* Learning Streak Card */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-3 text-white shadow-lg hover:scale-105 transition-transform">
               <div className="text-center">
-                <div className="text-2xl mb-2">🔥</div>
-                <div className="text-2xl font-bold">{totalStreak}</div>
+                <div className="text-xl mb-1">🔥</div>
+                <div className="text-xl font-bold leading-tight">{totalStreak}</div>
                 <div className="text-xs opacity-90 font-medium">Série</div>
               </div>
             </div>
             
             {/* Level Mastery Card */}
-            <div className="bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl p-3 text-white shadow-lg hover:scale-105 transition-transform">
               <div className="text-center">
-                <div className="text-2xl mb-2">🎯</div>
-                <div className="text-2xl font-bold">{levelMastery}%</div>
-                <div className="text-xs opacity-90 font-medium">Maîtrise {getLevelDisplayName(mostAdvancedLevel)}</div>
+                <div className="text-xl mb-1">🎯</div>
+                <div className="text-xl font-bold leading-tight">{levelMastery}%</div>
+                <div className="text-xs opacity-90 font-medium">Maîtrise<br />{getLevelDisplayName(mostAdvancedLevel)}</div>
               </div>
             </div>
             
             {/* Weekly XP Growth Card */}
-            <div className="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-4 text-white shadow-lg hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-3 text-white shadow-lg hover:scale-105 transition-transform">
               <div className="text-center">
-                <div className="text-2xl mb-2">📈</div>
-                <div className="text-xl font-bold">+{weeklyXP}</div>
-                <div className="text-xs opacity-90 font-medium">Cette semaine</div>
+                <div className="text-xl mb-1">📈</div>
+                <div className="text-lg font-bold leading-tight">+{weeklyXP}</div>
+                <div className="text-xs opacity-90 font-medium">Cette<br />semaine</div>
               </div>
             </div>
           </div>
 
           {/* Quick motivation message */}
-          <div className="mt-4 text-center">
+          <div className="mt-3 text-center">
             <p className="text-gray-400 text-sm">
               {totalStreak > 5 && "Tu es en feu ! 🔥"}
               {totalStreak <= 5 && levelMastery > 70 && "Excellent travail ! 💪"}

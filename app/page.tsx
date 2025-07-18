@@ -162,6 +162,24 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* Flagging Actions at Bottom */}
+      <div className="px-4 py-6 bg-[#232a36] border-t border-gray-600">
+        <div className="flex gap-3 justify-center">
+          <button
+            onClick={() => router.push('/flagged-questions')}
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg text-sm flex items-center gap-2 transition-colors shadow-lg"
+          >
+            🚩 Questions signalées
+          </button>
+          <button
+            onClick={() => router.push('/quick-flag')}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-sm flex items-center gap-2 transition-colors shadow-lg"
+          >
+            ⚡ Signalement rapide
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

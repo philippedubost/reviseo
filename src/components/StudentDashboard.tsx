@@ -272,6 +272,8 @@ export default function StudentDashboard() {
               {totalStreak <= 5 && levelMastery <= 30 && "C'est parti pour apprendre ! 🚀"}
             </p>
           </div>
+
+
         </>
       )}
     </div>

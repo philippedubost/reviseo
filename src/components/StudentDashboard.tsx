@@ -273,21 +273,7 @@ export default function StudentDashboard() {
             </p>
           </div>
 
-          {/* Quick Actions */}
-          <div className="mt-4 flex gap-2 justify-center">
-            <a
-              href="/flagged-questions"
-              className="bg-[#232a36] hover:bg-[#2a3441] text-white px-3 py-2 rounded-lg text-sm flex items-center gap-2 transition-colors"
-            >
-              🚩 Questions signalées
-            </a>
-            <a
-              href="/quick-flag"
-              className="bg-[#232a36] hover:bg-[#2a3441] text-white px-3 py-2 rounded-lg text-sm flex items-center gap-2 transition-colors"
-            >
-              ⚡ Signalement rapide
-            </a>
-          </div>
+
         </>
       )}
     </div>
